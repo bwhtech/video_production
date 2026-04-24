@@ -52,3 +52,9 @@ Primary palette is **indigo**.
 - `tabSize`: `3`
 - `horizontalPadding`: `60`
 - `verticalPadding`: `84`
+
+### Icons
+
+Only use https://lucide.dev/  (there is an NPM package)
+
+If a relevant icon is not found, please consult the user.
