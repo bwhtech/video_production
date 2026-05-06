@@ -11,6 +11,10 @@ This is a video production pipeline / tools for the Build With Hussain YouTube c
 * eleven labs for generating captions (video use has the skils for this too)
 * and hyperframes for motion/info graphics. (there is a skill for this too)
 
+### Synced multi-cam sources
+
+When a project has two videos for the same recording (e.g. a facecam + a screen recording from the same take), they share identical audio. Transcribe only **one** of them — the other will produce the exact same transcript and waste credits/time. Use the screen-recording file as the canonical audio source unless told otherwise.
+
 REFER for video-use skill: /Users/mdhussain/Developer/video-use/SKILL.md if not loaded via claude code directly.
 
 Refer to @DESIGN.md for our design system.
