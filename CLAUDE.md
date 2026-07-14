@@ -32,6 +32,12 @@ REFER for video-use skill: /Users/mdhussain/Developer/video-use/SKILL.md if not 
 
 Refer to @DESIGN.md for our design system.
 
+## YouTube chapters
+
+Always generate YouTube chapters in `HH:MM:SS Title` format (zero-padded,
+e.g. `00:00:00`, `01:07:13`) — even for videos under an hour. First chapter
+must be `00:00:00`.
+
 ## Animations
 
 IMPORTANT: always consult `/animations-dev` skill after planning any animations
