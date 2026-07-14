@@ -9,7 +9,17 @@ This is a video production pipeline / tools for the Build With Hussain YouTube c
 
 * We will use video-use for edits (cuts, cropping, etc.)
 * eleven labs for generating captions (video use has the skils for this too)
-* and hyperframes for motion/info graphics. (there is a skill for this too)
+* and hyperframes for motion/info graphics + thumbnails. (there is a skill for this too)
+
+### Graphics & thumbnails — `graphics/` (HyperFrames)
+
+Thumbnails and motion graphics live in the **`graphics/`** HyperFrames project
+(replaces the old Remotion `~/Learning/bwh-video`). Theme = **frappe-ui**
+espresso tokens: **violet** brand, **dark** default, **Inter** — see
+**`graphics/THEME.md`**. Use `var(--…)` tokens, never hex. Reference component:
+the thumbnail at `graphics/index.html`. Port more old Remotion components on
+demand with `/remotion-to-hyperframes`. Always `cd graphics && npm run check`
+after editing a composition.
 
 ### Synced multi-cam sources
 

@@ -1,0 +1,5 @@
+source: frappe/frappe-ui tailwind/generated/
+local-checkout: /Users/mdhussain/Frappe/frappe-ui
+checkout-HEAD: 0900b79494cb39b054f47a986e0ea136b7edc89b
+origin/main: 9c2fc0f4b2001dee01462bc4f2b2e513c196a722
+copied: 2026-07-13

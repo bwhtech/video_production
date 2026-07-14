@@ -1,0 +1,9 @@
+Vendored frappe-ui design reference docs (do not edit — mirror upstream).
+source: /Users/mdhussain/Frappe/frappe-ui
+checkout-HEAD: 0900b79494cb39b054f47a986e0ea136b7edc89b
+copied: 2026-07-13
+files:
+  frappe-ui-DESIGN.md      <- skills/frappe-ui/DESIGN.md   (design language)
+  frappe-ui-TOKENS.md      <- skills/frappe-ui/TOKENS.md   (semantic token ref)
+  frappe-ui-COMPONENTS.md  <- skills/frappe-ui/COMPONENTS.md
+  frappe-ui-foundations.md <- spec/foundations.md          (token spec)
