@@ -27,3 +27,4 @@ accounting-course/**/.DS_Store
 !accounting-course/lessons/*/assets/vo-hi/*.mp3
 !accounting-course/lessons/shared/audio/sfx/*.mp3
 !accounting-course/lessons/shared/audio/music/*.mp3
+accounting-course/research/repos/
