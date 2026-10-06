@@ -46,7 +46,7 @@
     K.ink(brk.inner, [[bx0, 1000], [bx0, 1012], [bx1, 1012], [bx1, 1000]].map(([x, y]) => [x + 960, y]), 6, C.ink);
     const eqLab = L4.chip(p2, 960 + (bx0 + bx1) / 2, 1042, "Equity", { bg: C.cr, size: 36 });
     eqLab.outer.setAttribute("opacity", "0");
-    const ring = K.el("path", { d: K.cutRect(-120, -250, 240, 262, 0.8, 30), fill: "none", stroke: C.gold, "stroke-width": 9, opacity: 0 }, hud.pans.R.g);
+    const ring = K.el("path", { d: K.cutRect(-178, -256, 356, 270, 0.8, 30), fill: "none", stroke: C.gold, "stroke-width": 9, opacity: 0 }, hud.pans.R.g);
     gsap.set(p2, { autoAlpha: 0 });
 
     // ====================================================================================== phase 1 (on top)
