@@ -22,6 +22,11 @@ Notation: `A = L + E` snapshots are after the transaction. Dr = debit (left page
 
 ---
 
+> **Checkpoint rule (2026-10-06):** every checkpoint is solved in its own lesson, each answer restating its question;
+> the following lesson's "Last time" covers only the Your Turn questions (L4 s3, L6 s02g, L8 s3, L12 s3 removed).
+> **L5 vocabulary (2026-10-06):** the second needle is **Money** (galla + bank); **Cash** = notes in the galla, **Bank** = money
+> the bank keeps for Meera — the same split L6 uses for the deposit entry.
+
 ## Module 1 · The Big Picture
 
 ### L2 · What You Have, What You Owe  (~5:30)

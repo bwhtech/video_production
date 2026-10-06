@@ -1,11 +1,133 @@
 [
- {"sfx": "paper_slide", "at": {"seg": "s03a", "word": "@sms", "offset": 0.1}, "vol": 0.45},
- {"sfx": "page_flip", "at": {"seg": "s03a", "word": "@sms", "offset": 0.3}, "vol": 0.3},
- {"sfx": "paper_whoosh", "at": {"seg": "s03a", "word": "@bad"}, "vol": 0.25},
- {"sfx": "paper_whoosh", "at": {"seg": "s03a", "word": "@good"}, "vol": 0.25},
- {"sfx": "paper_whoosh", "at": {"seg": "s03b", "word": "@mean"}, "vol": 0.3},
- {"sfx": "tink_low", "at": {"seg": "s03b", "word": "@left"}, "vol": 0.6},
- {"sfx": "tink_high", "at": {"seg": "s03b", "word": "@right"}, "vol": 0.6},
- {"sfx": "pop", "at": {"seg": "s03c", "word": "@first"}, "vol": 0.35},
- {"sfx": "sparkle", "at": {"seg": "s03c", "word": "@this", "offset": 0.1}, "vol": 0.35}
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03a",
+   "word": "@sms",
+   "offset": 0.1
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "page_flip",
+  "at": {
+   "seg": "s03a",
+   "word": "@sms",
+   "offset": 0.3
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03a",
+   "word": "@bad",
+   "offset": -0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s03a",
+   "word": "@bad",
+   "offset": 0.35
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03a",
+   "word": "@good",
+   "offset": -0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s03a",
+   "word": "@good",
+   "offset": 0.35
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03a",
+   "word": "@out",
+   "offset": -0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s03a",
+   "word": "@out",
+   "offset": 0.35
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03a",
+   "word": "@minus",
+   "offset": -0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s03a",
+   "word": "@minus",
+   "offset": 0.35
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s03b",
+   "word": "@mean"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s03b",
+   "word": "@left"
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s03b",
+   "word": "@right"
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03c",
+   "word": "@first"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "sparkle",
+  "at": {
+   "seg": "s03c",
+   "word": "@this",
+   "offset": 0.1
+  },
+  "vol": 0.35
+ }
 ]

@@ -27,19 +27,19 @@
   "id": "s03a",
   "scene": 3,
   "gap_after": 0.5,
-  "text": "Today, Khata pins two needles on the stall's wall. The first is Profit. It moves when Meera earns money, or uses it up. The second is Cash — everything in the galla, plus everything in the bank."
+  "text": "Today, Khata pins two needles on the stall's wall. The first is Profit. It moves when Meera earns money, or uses it up. The second is Money — everything in the galla, plus everything in the bank."
  },
  {
   "id": "s03b",
   "scene": 3,
   "gap_after": 0.6,
-  "text": "Right now, profit reads thirteen thousand. Cash reads fifty-one thousand. It's bigger, because it also holds Meera's savings and Ravi Mama's loan. [curious] Most people think these two needles move together. Let's watch."
+  "text": "Right now, profit reads thirteen thousand. Money reads fifty-one thousand. It's bigger, because it also holds Meera's savings and Ravi Mama's loan. [curious] Most people think these two needles move together. Let's watch."
  },
  {
   "id": "s04",
   "scene": 4,
   "gap_after": 0.6,
-  "text": "First, rewind one day. April fifteenth. Meera carries fifteen thousand rupees from the galla to the bank. Profit? No change. Cash? Also no change. The money just moved from one pocket to another."
+  "text": "First, rewind one day. April fifteenth. Meera carries fifteen thousand rupees from the galla to the bank. Profit? No change. Money? Also no change. But in the books, these are two different accounts. Cash is the notes in the galla. Bank is money the bank keeps for her, and gives back whenever she asks. Cash went down fifteen thousand. Bank went up fifteen thousand. So the money needle doesn't move."
  },
  {
   "id": "s05a",
@@ -51,13 +51,13 @@
   "id": "s05b",
   "scene": 5,
   "gap_after": 0.5,
-  "text": "Sales went up by six thousand. The chai has been drunk, so Meera has earned it. But on the left, no cash came in. Instead, Infotech now owes the stall six thousand rupees. Money that customers owe you is an asset, called a receivable."
+  "text": "Sales went up by six thousand. The chai has been drunk, so Meera has earned it. But on the left, no money came in. Instead, Infotech now owes the stall six thousand rupees. Money that customers owe you is an asset, called a receivable."
  },
  {
   "id": "s05c",
   "scene": 5,
   "gap_after": 1.5,
-  "text": "So the profit needle jumps, from thirteen thousand to nineteen thousand. And the cash needle? [softly] It doesn't move at all."
+  "text": "So the profit needle jumps, from thirteen thousand to nineteen thousand. And the money needle? [softly] It doesn't move at all."
  },
  {
   "id": "s05d",
@@ -81,7 +81,7 @@
   "id": "s06c",
   "scene": 6,
   "gap_after": 0.8,
-  "text": "Only cash. Down five thousand. Profit stays at nineteen thousand. The payment shrinks a liability. Money the stall owes a supplier is a payable — the mirror of a receivable."
+  "text": "Only the money needle. Down five thousand. Profit stays at nineteen thousand. The payment shrinks a liability. Money the stall owes a supplier is a payable — the mirror of a receivable."
  },
  {
   "id": "s07a",
@@ -99,31 +99,31 @@
   "id": "s07c",
   "scene": 7,
   "gap_after": 0.8,
-  "text": "Only cash. Up four thousand. Profit stays at nineteen thousand."
+  "text": "Only the money needle. Up four thousand. Profit stays at nineteen thousand."
  },
  {
   "id": "s08a",
   "scene": 8,
   "gap_after": 3.2,
-  "text": "Now you, on your own. April twenty-fifth. Infotech pays four thousand rupees of its tab, by UPI. Profit? Cash?"
+  "text": "Now you, on your own. April twenty-fifth. Infotech pays four thousand rupees of its tab, by UPI. Profit? Money?"
  },
  {
   "id": "s08b",
   "scene": 8,
   "gap_after": 0.8,
-  "text": "Cash goes up by four thousand, straight into the bank. Profit doesn't move. Meera earned that money back on April sixteenth. Today, she's only collecting it. The receivable shrinks, and the bank grows."
+  "text": "Money goes up by four thousand — straight into the bank. The galla never even sees it. Profit doesn't move. Meera earned that money back on April sixteenth. Today, she's only collecting it. The receivable shrinks, and the bank grows."
  },
  {
   "id": "s09a",
   "scene": 9,
   "gap_after": 0.6,
-  "text": "Since April fifteenth, the profit needle moved once — on the day no money came in. The cash needle moved three times — and not one of those was profit."
+  "text": "Since April fifteenth, the profit needle moved once — on the day no money came in. The money needle moved three times — and not one of those was profit."
  },
  {
   "id": "s09b",
   "scene": 9,
   "gap_after": 0.8,
-  "text": "Profit: nineteen thousand rupees. Cash: fifty-four thousand. Two needles. Two different stories."
+  "text": "Profit: nineteen thousand rupees. Money: fifty-four thousand. Two needles. Two different stories."
  },
  {
   "id": "s09c",
@@ -159,7 +159,7 @@
   "id": "s12c",
   "scene": 12,
   "gap_after": 0.8,
-  "text": "Ready? One. Profit and cash both go up nine thousand. Two. Both go down two thousand. Three. Profit up fifteen hundred. Cash, nothing. Four. Cash down two thousand. Profit, nothing — it's a debt being paid. Five. Cash up one thousand. Profit, nothing — it's an advance. Aman's profit so far: eight thousand five hundred rupees."
+  "text": "Ready? One. Nine thousand of cash sales. Profit and cash both go up nine thousand. Two. Two thousand of stall rent. Both go down two thousand. Three. Fifteen hundred of samosas to the school canteen, on credit. Profit up fifteen hundred. Cash, nothing. Four. Paying Sharma Kirana two thousand. Cash down two thousand. Profit, nothing — it's a debt being paid. Five. The thousand-rupee birthday advance. Cash up one thousand. Profit, nothing — it isn't earned yet. Aman's profit so far: eight thousand five hundred rupees."
  },
  {
   "id": "s13",

@@ -226,3 +226,7 @@ A7 ₹1,500 · A9 ₹1,000.)*
 ## Line 14 — End card (Scene 14, 12 s, no VO)
 
     [ON SCREEN: series wordmark · "Up next — Lesson 8 · The Journal" · two blank end-screen panels · Khata waving]
+
+---
+
+**Revision 2026-10-06b (user review):** Checkpoint 3's answers are numbered and restate each transaction with its amount before the entry. `vo-segments.json` is the source of truth for the exact lines.

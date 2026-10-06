@@ -202,3 +202,7 @@ Capital 20,000 · Sales 10,500 · Stall rent 2,000.
     Did she make a profit — or a loss? This time, we can finally answer.
 
 ## (End card — Scene 12, 12 s, no VO)
+
+---
+
+**Revision 2026-10-06b (user review):** Checkpoint 4's reveal restates the task before the totals. `vo-segments.json` is the source of truth for the exact lines.

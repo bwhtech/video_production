@@ -1,0 +1,15 @@
+[
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@three", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@three", "offset": 0.08}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@three", "offset": 0.26}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s11", "word": "@one", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s11", "word": "@two", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s11", "word": "@three", "nth": 2, "offset": 0.0}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@debited", "offset": -0.1}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@credited", "offset": -0.1}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@debit", "offset": -0.1}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@sms", "offset": -0.1}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@credited", "nth": 2, "offset": -0.2}, "vol": 0.25},
+ {"sfx": "sparkle", "at": {"seg": "s11", "word": "@answers", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "page_flip", "at": {"seg": "s11", "word": "@next", "offset": -0.2}, "vol": 0.3}
+]

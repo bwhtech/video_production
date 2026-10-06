@@ -1,0 +1,10 @@
+[
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@debit", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s10", "word": "@debit", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s10", "word": "@credit", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@grow", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@other", "offset": -0.1}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@sms", "offset": -0.3}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s10", "word": "@sms", "offset": 0.25}, "vol": 0.25},
+ {"sfx": "ding_yes", "at": {"seg": "s10", "word": "@books", "offset": 0.1}, "vol": 0.4}
+]

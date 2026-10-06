@@ -232,3 +232,7 @@ the equals sign and it sits on the left with the assets. 3 — Credited: Bank is
 ## Line 13 — End card (Scene 13, 12 s, no VO)
 
     [ON SCREEN: series wordmark · "Up next — Lesson 7 · The Golden Rules, Decoded" · two blank end-screen panels · Khata waving]
+
+---
+
+**Revision 2026-10-06b (user review):** s02g (Aman Checkpoint 2 headline) removed — L5 now reveals its own checkpoint answers. `vo-segments.json` is the source of truth for the exact lines.

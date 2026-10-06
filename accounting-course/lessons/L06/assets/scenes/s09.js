@@ -1,5 +1,7 @@
-// s09 — Worked → faded → solo (T7, T9, T10). The practice board: Khata open centre-right, a shelf of jars (left) and tags (right) above it,
+// s09 — Warm-up → worked → faded → solo (T7, T9, T10). The practice board: Khata open centre-right, a shelf of jars (left) and tags (right) above it,
 // Meera at left, the little scale HUD top-left (tips on the first line of each pair, settles on the second).
+//   Warm-up (s09w): four single-account chips (Loan from Ravi Mama ↑ · Rent ↑ · Sales ↑ · Infotech ↓), one at a time over the spine; each slides to its page on
+//        the answer word (Cr · Dr · Cr · Cr — the receivable DECREASE is the one learners miss), then they all lift off before the full entries.
 //   T7 (worked, Khata): ₹18,000 cash sales — "which two things changed?" → Dr Cash, Cr Sales.
 //   T9 (faded, Meera): Infotech's ₹6,000 chai tab — the SIDE is blank: she pushes the coin toward the RIGHT page, Khata raises a hand and the
 //        coin stops at the spine (gentle correction, bwomp_no); 2.4 s of dead stillness; "No." → Infotech is an ASSET → LEFT.
@@ -21,6 +23,21 @@
     const tGop = K.claimTag(svg, 1340, 658, 0.7, { face: "gopal", size: 40, hidden: true });
     const sales = L6.hide(L6.node(K, svg, 1490, 616)); L6.chip(K, sales, "Sales", { size: 48, bg: C.cr, h: 68 });
     L6.allow(jCash.g); L6.allow(jInf.g);
+    // ---- warm-up chips (one account at a time): paper chip + direction arrow; a coloured strip fades in when it lands on its page
+    const WC = [
+      ["Loan from Ravi Mama", "up", "R", 0, "@ravi", "@credit", 1],
+      ["Rent", "up", "L", 0, "@rent", "@debit", 1],
+      ["Sales", "up", "R", 1, "@sale", "@credit", 2],
+      ["Infotech", "down", "R", 2, "@infotech", "@credit", 3],
+    ].map(([label, dir, side, row, aAppear, aAns, nth]) => {
+      const r = L6.rig(K, svg, KX, 440); L6.hide(r.inner);
+      const tw = K.textW(label, 34), w = tw + 84, h = 66, col = side === "L" ? C.dr : C.cr;
+      K.paper(K.shadow(r.inner, 1), K.cutRect(-w / 2, -h / 2, w, h, 1.6, 20), C.cream);
+      const strip = K.g(r.inner, { opacity: 0 }); K.paper(strip, K.cutRect(-w / 2 + 8, h / 2 - 10, w - 16, 6, 0.5, 12), col);
+      K.text(r.inner, -w / 2 + 22, 3, label, { size: 34, weight: 800, anchor: "start" }).setAttribute("data-layout-allow-overlap", "true");
+      L6.arrow(K, r.inner, w / 2 - 32, 0, dir, side === "L" ? C.drText : C.crText, 36, 13);
+      return { r, strip, side, row, aAppear, aAns, nth, land: Math.min(0.85, 322 / w) };
+    });
     // ---- slips on the rail
     const slipA = L6.slip(K, svg, 640, 300, { icon: "coffee", amount: 18000 }); L6.hide(slipA.inner);
     const slipB = L6.slip(K, svg, 640, 300, { face: "infotech", amount: 6000 }); L6.hide(slipB.inner);
@@ -43,11 +60,23 @@
     // ======================================================================================= timeline
     k.blink(tl, T0 + 3).blink(tl, T0 + 30).blink(tl, T0 + 55); m.blinks(tl, T0 + 1.2, sc.end, 3.7);
     // ---- the board arrives: "Let's practise. Khata goes first."
-    const tLet = cue("s09a", "@full");
+    const tLet = cue("s09w", "@practise");
     K.dropIn(tl, plank, tLet - 0.2, { dur: 0.3 }); hud.enter(tl, tLet);
     jCash.enter(tl, tLet + 0.1); jInf.enter(tl, tLet + 0.25); tGop.enter(tl, tLet + 0.4); K.dropIn(tl, sales, tLet + 0.55, { dur: 0.3 });
     m.expr(tl, tLet, "happy").look(tl, tLet, 6, 0);
     k.expr(tl, cue("s09a", "@khata"), "happy"); k.arm(tl, cue("s09a", "@khata") - 0.1, "L", 80, 0.25); k.arm(tl, cue("s09a", "@khata") + 0.8, "L", 20, 0.3);
+    // ---- warm-up (s09w): each chip drops in as its account is named, waits through the thinking pause, slides to its page on the answer
+    WC.forEach((c, i) => {
+      const tA = cue("s09w", c.aAppear), tB = cue("s09w", c.aAns, c.nth), [tx, ty] = rowAt(c.side, c.row);
+      K.dropIn(tl, c.r.inner, tA - 0.05, { dur: 0.34 });
+      L6.mv(tl, c.r, tB, 0.65, { x: tx - KX, y: ty - 440 }, "power2.inOut");
+      L6.mv(tl, c.r, tB, 0.65, { scale: c.land }, "power2.inOut");
+      tl.to(c.strip, { opacity: 1, duration: 0.2 }, tB + 0.55);
+      K.liftOff(tl, c.r.inner, segStart("s09a") - 0.2, { dur: 0.25 });
+    });
+    K.pulseNode(tl, WC[3].r.sc, cue("s09w", "@shrinks") - 0.3, 1.06);
+    m.expr(tl, cue("s09w", "@careful"), "thinking").look(tl, cue("s09w", "@careful"), 4, -3);
+    m.expr(tl, cue("s09w", "@asset"), "happy").look(tl, cue("s09w", "@asset"), 6, 0);
     // ---- T7 worked: slip, device, Dr Cash / Cr Sales
     K.dropIn(tl, slipA.inner, cue("s09a", "@half") - 0.2, { dur: 0.4 });
     const tCashW = cue("s09b", "@cash"), tSalesW = cue("s09b", "@sales");
@@ -95,6 +124,7 @@
     m.expr(tl, cue("s09c", "@wasn't"), "thinking");
     // ---- the correction: "No. Gopal is owed by the stall. Infotech owes the stall. An asset…"
     const tNo = segStart("s09d");
+    m.arm(tl, tNo + 0.3, "R", 12, 8, 0.3);
     k.expr(tl, tNo, "happy"); k.arm(tl, tNo + 0.3, "R", 20, 0.3); k.arm(tl, tNo + 0.3, "L", 20, 0.3);
     tGop.light(tl, cue("s09d", "@gopal"), { color: C.cr, hold: 1.2 });
     jInf.light(tl, cue("s09d", "@infotech"), { color: C.dr, hold: 1.5 });

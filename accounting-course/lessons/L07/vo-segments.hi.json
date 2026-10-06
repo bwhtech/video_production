@@ -1,0 +1,230 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.6,
+  "text": "[excited] {@meera's}मीरा की {@friend}दोस्त एक chartered accountant हैं। वो {@chai}चाय के लिए रुकती हैं, खाते पर {@spots}नज़र पड़ती है, और वो {@starts}शुरू हो जाती हैं — rules की बौछार। {@debit}Debit the {@receiver}receiver! {@credit}Credit the {@giver}giver! {@debit#2}Debit what comes in, {@credit#2}credit what goes out! {@debit#3}Debit all {@expenses}expenses, {@credit#3}credit all incomes!"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[playful] मीरा का सिर {@spinning}घूम रहा है। क्या ये {@whole}पूरी तरह नया {@system}system है?"
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[softly] {@isn't}नहीं, ऐसा नहीं है। ये {@same}वही {@language}language है, बस {@another}दूसरी बोली में। आज हम इसे {@translate}translate करेंगे।"
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "पहले, पिछली बार के सवाल। {@one}एक। मीरा {@six}छह हज़ार रुपये की {@tea}चायपत्ती, {@milk}दूध और {@sugar}चीनी ख़रीदती हैं, और cash में पैसे देती हैं। क्या {@debited}debit होगा, और क्या credit?"
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "{@debit}Debit {@stock}Stock, छह हज़ार। एक asset {@grows}बढ़ा, अपनी home side पर। Credit {@cash}Cash, छह हज़ार। एक asset {@shrinks}घटा।"
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "{@two}दो। Expense एक debit क्यों होता है?"
+ },
+ {
+  "id": "s02d",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "क्योंकि expense, equity को {@shrinks}घटा देता है। उसे {@across}पार ले जाइए, {@sign}equals sign के उस तरफ़, और वो {@left}left side पर, assets के साथ बैठ जाता है।"
+ },
+ {
+  "id": "s02e",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "{@three}तीन। कल्पना कीजिए, मीरा bank से एक {@bill}bill चुकाती हैं। {@sms}SMS में लिखा आता है {@debited}debited। मीरा की books में?"
+ },
+ {
+  "id": "s02f",
+  "scene": 2,
+  "gap_after": 0.8,
+  "text": "{@credited}Credited। {@bank}Bank एक asset है, और वो {@shrank}घट गया, इसलिए right side पर जाता है।"
+ },
+ {
+  "id": "s03",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "तो, भारतीय व्यापारी double-entry books रखते आए हैं — {@bahi-khata}बही-खाता — {@centuries}सदियों से। {@naam}नाम, यानी debit। {@jama}जमा, यानी credit। और {@khata}खाता का मतलब है account। [playful] इसी से हमारे खाता को अपना {@name}नाम {@gets}मिला।"
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "Golden rules की शुरुआत होती है हर account को तीन families में से एक में रखने से। Personal accounts यानी लोग और संस्थाएँ: {@ravi}रवि मामा, {@gopal}गोपाल Dairy, {@infotech}Infotech। Real accounts यानी चीज़ें: {@cash}cash, {@cart}cart, {@stock}stock। और Nominal accounts यानी कमाया और ख़र्च हुआ पैसा: {@sales}sales, {@rent}rent, {@salary}salary।"
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 1.6,
+  "text": "{@quick}जल्दी बताइए। रवि मामा का loan?"
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 1.6,
+  "text": "{@personal}Personal। वो एक इंसान हैं। {@kettle}Kettle?"
+ },
+ {
+  "id": "s04d",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "{@real}Real। आप इसे हाथ में पकड़ सकते हैं।"
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "हर family का एक {@rule}rule है। {@real}Real: {@debit}debit what {@comes}comes in, {@credit}credit what {@goes}goes {p@out}out. तो {@translation}translation क्या है? Real accounts यानी {@assets}assets। जब कुछ अंदर आता है, तो asset {@grows}बढ़ता है, और assets {@left}left side पर बढ़ते हैं। {@same}वही बात।"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "{@personal}Personal: {@debit}debit the {@receiver}receiver, {@credit}credit the {@giver}{p@giver}giver. जब कोई stall को कुछ {@gives}देता है — जैसे एक {@loan}loan — तो stall पर अब उसका पैसा बकाया हो जाता है। एक liability बढ़ती है, right side पर। एक {@credit#2}{p@credit#2}credit। और जब कोई stall से कुछ {@receives}पाता है, तो या तो उसे हमें देना है, या हमें उसे {@less}कम देना है। वो {@left}left side है। एक debit।"
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "{@nominal}Nominal: {@debit}debit all {@expenses}expenses, {@credit}credit all {@incomes}{p@incomes}incomes. Expenses equity को {@shrink}घटाते हैं, इसलिए वो {@debits}debit हैं। Incomes उसे {@grow}बढ़ाते हैं, इसलिए वो {@credits}credit हैं।"
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "चलिए ये साबित करते हैं। फिर से दो cameras। इस तरफ़ {@golden}golden rules, और {@scale}तराज़ू {@that}उस तरफ़।"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 2.0,
+  "text": "{@cart}Cart, {@thirty-six}छत्तीस हज़ार रुपये। {@which}कौन सी दो चीज़ें बदलीं?"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "Golden rules: cart {@comes}comes in, debit Equipment। Cash {@goes}goes out, credit {@cash#2}{p@cash#2}Cash। {@scale}तराज़ू पर: एक asset {@grows}बढ़ता है, एक {@shrinks}घटता है।"
+ },
+ {
+  "id": "s06d",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "{@gopal's}गोपाल का {@stock}stock उधार पर, {@eight}आठ हज़ार। Stock {@comes}comes in: debit। {@gopal}गोपाल {@giver}giver हैं: credit। तराज़ू पर: एक {@asset}asset ऊपर, एक {@liability}liability {@up#2}ऊपर।"
+ },
+ {
+  "id": "s06e",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "{@cash}Cash sales, {@eighteen}अट्ठारह हज़ार। Cash {@comes}comes in: debit। Sales एक {@income}income है: credit। तराज़ू पर: एक {@asset}asset ऊपर, {@equity}equity ऊपर। {@every}हर बार, दोनों तरीक़े बिल्कुल वही entry लिखते हैं।"
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "दो {@traps}traps हैं जिनमें लगभग हर कोई फँसता है। पहला, {@bank}bank। मीरा का पैसा उसमें रखा है, तो bank एक {@thing}चीज़ जैसा लगता है। एक {@real}Real account, है ना?"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "[firmly] {@nope}नहीं। Bank एक organisation है, इसलिए वो {@personal}Personal {p@personal}है। जब मीरा ने पंद्रह हज़ार रुपये जमा किए, तो bank {@receiver}receiver था। Debit {@bank#3}Bank। {@exactly}बिल्कुल वही, जो हमें {@sms}SMS में मिला था।"
+ },
+ {
+  "id": "s07c",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "दूसरा trap: capital। ये मीरा का {@money}पैसा है, तो क्या ये {@real}Real है? {@no}नहीं। {@capital#2}Capital मीरा का अपना account है, और मीरा एक इंसान हैं। {@day}Day one पर, वो {@giver}giver थीं। {@credit}Credit Capital, {@fifty}पचास हज़ार।"
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "तो ये है आपका {@translation}translation card। {@real}Real मतलब {@assets}assets। {@personal}Personal मतलब लोग: जिन पर हमारा पैसा {@owes}बकाया है, जिन्हें हमें {@owe}चुकाना है, {@bank}bank, मालिक का {@capital}capital और {@drawings}{p@drawings}drawings। और {@advances}advances: जिस customer का stall पर कुछ बकाया है, वो भी Personal है। {@nominal}Nominal मतलब incomes और expenses: वो सब कुछ जो आख़िर में {@profit}Profit and {@loss}Loss में पहुँचता है।"
+ },
+ {
+  "id": "s09a",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "चलिए practice करते हैं। {@khata}खाता पहले करेगा। {@ravi}रवि मामा {@lends}उधार देते हैं — {@thirty}तीस हज़ार रुपये।"
+ },
+ {
+  "id": "s09b",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "{@cash}Cash {@comes}comes in। Real है, इसलिए {@debit}debit Cash, तीस {p@thousand}हज़ार। रवि मामा {@giver}giver हैं। Personal, इसलिए {@credit}credit उनका loan, तीस हज़ार। और तराज़ू? एक {@asset}asset ऊपर, एक {@liability}liability ऊपर। {@match}Match।"
+ },
+ {
+  "id": "s09c",
+  "scene": 9,
+  "gap_after": 2.4,
+  "text": "{@meera's}मीरा की बारी। {@rent}Rent, {@five}पाँच हज़ार रुपये। Rent एक {@expense}expense है। {@nominal}Nominal, इसलिए debit Rent। अब {@other}दूसरी line। Cash गल्ले से बाहर जाता है। {@which}कौन सी family? कौन सा rule?"
+ },
+ {
+  "id": "s09d",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "{@real}Real, और ये goes out। {@credit}Credit Cash, पाँच हज़ार।"
+ },
+ {
+  "id": "s09e",
+  "scene": 9,
+  "gap_after": 3.2,
+  "text": "[inviting] अब, सिर्फ़ आप। पच्चीस अप्रैल। {@infotech}Infotech UPI से अपना {@four}चार हज़ार रुपये का bill चुकाता है। {@debit}Debit Bank, {@credit}credit Infotech — ये हिस्सा आप जानते हैं। अब {@tag}tag कीजिए — दोनों {@lines}lines को।"
+ },
+ {
+  "id": "s09f",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "Bank को पैसे मिलते हैं। Personal, {@receiver}receiver — इसलिए debit Bank। Infotech देता है। Personal, {@giver}giver — इसलिए credit Infotech। दोनों {@personal#3}{p@personal#3}Personal! और तराज़ू भी यही कहता है: एक asset {@grows}बढ़ता है, एक {@shrinks}घटता है। Left पर बस एक {@swap}swap।"
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.6,
+  "text": "तो। तीन {@families}families: {@personal}Personal, {@real}Real, {@nominal}Nominal। तीन {@rules}rules, और हर एक {@scale}तराज़ू को ही {@words}दूसरे शब्दों में कहता है। दो {@dialects}बोलियाँ, वही {@entries}entries।"
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 0.8,
+  "text": "[inviting] आपकी {@turn}बारी। तीन छोटे सवाल। {@one}एक। {@four}चार हज़ार रुपये का catering {@advance}advance। कौन सा golden {@rule}rule लगेगा, हर {@line}line पर? {@two}दो। {@bank}Bank {@real}Real है, या {@personal}Personal? {@three#2}तीन। {@rent}Rent किस {@family}family में {@belong}आता है? {@answers}जवाब अगले lesson की शुरुआत में।"
+ },
+ {
+  "id": "s12a",
+  "scene": 12,
+  "gap_after": 3.0,
+  "text": "[excited] और अब — {@checkpoint}Checkpoint तीन। ये हैं अमन के {@six}छह {@transactions}transactions। हर एक के लिए, {@debit}debit लिखिए, credit लिखिए, और हर line के पीछे का golden rule। अब video को {@pause}pause कीजिए, और {@now#2}इन्हें अभी try कीजिए।"
+ },
+ {
+  "id": "s12b",
+  "scene": 12,
+  "gap_after": 0.6,
+  "text": "{@ready}तैयार? {@bank}Bank loan: debit Cash, {@real}Real, comes in। Credit Bank loan, {@personal}Personal, giver। {@cart}Cart और fryer: debit Cart, credit Cash। {@real#2}Real in, {@real#3}Real out। {@cash#3}Cash sales: {@cash#4}debit Cash, credit Sales, {@nominal}Nominal income।"
+ },
+ {
+  "id": "s12c",
+  "scene": 12,
+  "gap_after": 0.8,
+  "text": "{@rent}Rent: debit Stall rent, {@nominal}Nominal expense। {@credit}Credit Cash। {@school}School canteen: debit the canteen, {@personal}Personal, receiver। {@credit#2}Credit Sales। और {@birthday}birthday advance: {@cash#2}debit Cash। Credit Advance from customer, Personal, {@giver}giver। [warmly] आपके {@many}कितने सही हुए?"
+ },
+ {
+  "id": "s13",
+  "scene": 13,
+  "gap_after": 1.0,
+  "text": "[teasing] अगली {@time}बार। {@april}तीस अप्रैल। लंच से पहले {@five}पाँच चीज़ें होती हैं, और मीरा {@grabs}पकड़ लेती हैं एक {@tissue}tissue, उन सबको {@write}लिखने के लिए।"
+ }
+]

@@ -1,25 +1,203 @@
 [
- {"sfx": "pop", "at": {"seg": "s07a", "word": "@debits"}, "vol": 0.3},
- {"sfx": "tink_low", "at": {"seg": "s07a", "word": "@expenses"}, "vol": 0.35},
- {"sfx": "tink_low", "at": {"seg": "s07a", "word": "@assets"}, "vol": 0.35},
- {"sfx": "tink_low", "at": {"seg": "s07a", "word": "@drawings"}, "vol": 0.35},
- {"sfx": "pop", "at": {"seg": "s07b", "word": "@credits"}, "vol": 0.3},
- {"sfx": "tink_high", "at": {"seg": "s07b", "word": "@liabilities"}, "vol": 0.35},
- {"sfx": "tink_high", "at": {"seg": "s07b", "word": "@income"}, "vol": 0.35},
- {"sfx": "paper_slide", "at": {"seg": "s07b", "word": "@or"}, "vol": 0.35},
- {"sfx": "tink_high", "at": {"seg": "s07b", "word": "@capital"}, "vol": 0.35},
- {"sfx": "pop", "at": {"seg": "s07b", "word": "@dead"}, "vol": 0.3},
- {"sfx": "pop", "at": {"seg": "s07b", "word": "@dead", "offset": 0.13}, "vol": 0.25},
- {"sfx": "pop", "at": {"seg": "s07b", "word": "@dead", "offset": 0.26}, "vol": 0.25},
- {"sfx": "pop", "at": {"seg": "s07b", "word": "@dead", "offset": 0.39}, "vol": 0.25},
- {"sfx": "pop", "at": {"seg": "s07b", "word": "@clic"}, "vol": 0.3},
- {"sfx": "pop", "at": {"seg": "s07b", "word": "@clic", "offset": 0.13}, "vol": 0.25},
- {"sfx": "pop", "at": {"seg": "s07b", "word": "@clic", "offset": 0.26}, "vol": 0.25},
- {"sfx": "pop", "at": {"seg": "s07b", "word": "@clic", "offset": 0.39}, "vol": 0.25},
- {"sfx": "ka_ching", "at": {"seg": "s07b", "word": "@read"}, "vol": 0.25},
- {"sfx": "paper_slide", "at": {"seg": "s07c", "word": "@left"}, "vol": 0.4},
- {"sfx": "coin_clink", "at": {"seg": "s07c", "word": "@equals", "offset": 0.4}, "vol": 0.35},
- {"sfx": "coin_clink", "at": {"seg": "s07c", "word": "@equals", "offset": 0.5}, "vol": 0.35},
- {"sfx": "rise_three", "at": {"seg": "s07c", "word": "@double"}, "vol": 0.45},
- {"sfx": "paper_slide", "at": {"scene": "s07", "t": 36.5}, "vol": 0.4}
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07a",
+   "word": "@debits"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07a",
+   "word": "@expenses"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07a",
+   "word": "@assets"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07a",
+   "word": "@drawings"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@credits"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s07b",
+   "word": "@liabilities"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s07b",
+   "word": "@income"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s07b",
+   "word": "@or"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s07b",
+   "word": "@capital"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@dead"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@dead",
+   "offset": 0.13
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@dead",
+   "offset": 0.26
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@dead",
+   "offset": 0.39
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@clic"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@clic",
+   "offset": 0.13
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@clic",
+   "offset": 0.26
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@clic",
+   "offset": 0.39
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "ka_ching",
+  "at": {
+   "seg": "s07b",
+   "word": "@read"
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s07c",
+   "word": "@left"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s07c",
+   "word": "@equals",
+   "offset": 0.4
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s07c",
+   "word": "@equals",
+   "offset": 0.5
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "rise_three",
+  "at": {
+   "seg": "s07c",
+   "word": "@double"
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "scene": "s07",
+   "t": 36.5
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s07b",
+   "word": "@read",
+   "offset": 0.55
+  },
+  "vol": 0.25
+ }
 ]

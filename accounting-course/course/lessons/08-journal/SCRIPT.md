@@ -146,3 +146,7 @@ pointing at each as Khata writes it. "A-slash-c" is said exactly like that.
 
     Next time, Meera has one simple question. How much cash is in the galla right now? The journal knows… but the answer is in pieces.
     [PAUSE 1s]
+
+---
+
+**Revision 2026-10-06b (user review):** Scene 3 (Checkpoint 3 quick check) removed — L7 reveals and explains its own checkpoint answers. `vo-segments.json` is the source of truth for the exact lines.

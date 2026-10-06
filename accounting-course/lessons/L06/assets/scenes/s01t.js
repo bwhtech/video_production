@@ -7,7 +7,7 @@
   window.OWN_SEAM_IN.s01t = true;   // s01 owns the clasp rush
   window.OWN_SEAM_IN.s02 = true;    // this scene owns the page push into s02
 
-  const LESSON = "Lesson 6", TITLE_A = "The Scale", TITLE_B = "That Never Tips";
+  const LESSON = "Lesson 6", TITLE_A = "Debit & Credit Are", TITLE_B = "Just Left & Right";
 
   window.SCENES.s01t = ({ svg, tl, K, sc }) => {
     const C = K.C;

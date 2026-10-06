@@ -121,3 +121,7 @@
 **Segments:** `s12`
 
     [teasing] Next time, the movie is over. Time to take the photo.
+
+---
+
+**Revision 2026-10-06b (user review):** Scene 3 (Checkpoint 4 trial-balance walk) removed — L11 reveals its own checkpoint answers. `vo-segments.json` is the source of truth for the exact lines.

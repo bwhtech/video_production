@@ -13,7 +13,7 @@
     K.jarRig(rig.pans.L.g, 0, 0, 0.9, { label: "Cash", contents: "coins", fill: 0.6, edge: C.dr });
     K.claimTag(rig.pans.R.g, 0, 0, 0.8, { face: "customer", size: 54 });
     rig.g.setAttribute("opacity", "0");
-    rig.hud(tl, T0, true, { dur: 0.01, right: 1420, top: 140 });
+    rig.hud(tl, T0, true, { dur: 0.01, right: 1420, top: 140, text: 36 });
     tl.set(rig.g, { opacity: 1 }, T0 + 0.05);
 
     // ---- cast: banner, Aman, his cart, Khata (+ the gold seal for the end)
@@ -105,6 +105,6 @@
     khata.arm(tl, tHow, "R", 125, 0.3).expr(tl, tHow, "happy"); L7.drop(tl, seal, tHow + 0.1, { dur: 0.35 });
     // exit: Aman waves, the cart rolls out right
     const tOut = sc.end - 1.3;
-    aman.wave(tl, tOut - 0.2, "R", 2); cart.moveTo(tl, tOut, 2300, 1.2);
+    tl.to(board, { opacity: 0, duration: 0.4, ease: "power1.in" }, tOut - 0.3); aman.wave(tl, tOut - 0.2, "R", 2); cart.moveTo(tl, tOut, 2300, 1.2);
   };
 })();

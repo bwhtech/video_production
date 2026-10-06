@@ -51,7 +51,7 @@
     };
     const cNaam = chip(1180, 250, "naam", "Dr", C.dr, "#fff"), cJama = chip(1180, 380, "jama", "Cr", C.cr, C.ink);
     const cKhata = L7.node(svg, 1180, 510); L7.hide(cKhata);
-    K.tex(K.shadow(cKhata, 2), K.cutRect(-270, -50, 540, 100, 2, 22), "pat-paper");
+    K.tex(K.shadow(cKhata, 2), K.cutRect(-300, -50, 600, 100, 2, 22), "pat-paper");
     K.text(cKhata, -44, 3, "khata", { size: 62, weight: 800, anchor: "end" }); K.text(cKhata, 0, 3, "=", { size: 62, weight: 800 }); K.text(cKhata, 44, 3, "account", { size: 62, weight: 800, anchor: "start" });
 
     // the string's three loops (exit)

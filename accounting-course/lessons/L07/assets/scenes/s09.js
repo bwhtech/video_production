@@ -57,7 +57,7 @@
       tl.to(E.seal, { y: y - S.ENT_Y, scale: 0.55, svgOrigin: O, duration: 0.5, ease: "power2.inOut" }, t);
     };
     // countdown ring (solo)
-    const pm = K.pauseMedallion(world, 960, 640, 0.5, { hidden: true });
+    const pm = K.pauseMedallion(world, 520, 700, 0.5, { hidden: true });
     L7.allow(world);
 
     // ======================================================================================= timeline

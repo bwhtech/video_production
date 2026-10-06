@@ -139,3 +139,7 @@ after T5 `₹88,000 = ₹38,000 + ₹50,000` · after T6 `₹83,000 = ₹38,000 
 
     [teasing] Next time, the office next door takes chai for the whole floor, every single day. Just one catch. They pay later.
     [→ end card, 12s, no VO]
+
+---
+
+**Revision 2026-10-06b (user review):** Scene 3 (Checkpoint 1 solution walk) removed — L3 now reveals and explains its own checkpoint answers. `vo-segments.json` is the source of truth for the exact lines.

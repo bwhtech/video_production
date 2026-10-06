@@ -83,7 +83,7 @@
     const jS = K.jarRig(rig.pans.L.g, 75, 0, 0.8, { label: "Stock", contents: "leaves", fill: 0.6, edge: C.dr });
     const tM = K.claimTag(rig.pans.R.g, -75, 0, 0.6, { face: "meera", size: 54 }), tR = K.claimTag(rig.pans.R.g, 75, 0, 0.6, { face: "ravi", size: 54 });
     rig.g.setAttribute("opacity", "0");
-    rig.hud(tl, T0, true, { dur: 0.01 });
+    rig.hud(tl, T0, true, { dur: 0.01, text: 36 });
     tl.set(rig.g, { opacity: 1 }, T0 + 0.05);
 
     // ======================================================================================= timeline

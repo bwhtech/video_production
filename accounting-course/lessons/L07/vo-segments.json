@@ -213,13 +213,13 @@
   "id": "s12b",
   "scene": 12,
   "gap_after": 0.6,
-  "text": "Ready? The bank loan: debit Cash, Real, it comes in. Credit Bank loan, Personal, the giver. The cart and fryer: debit Cart, credit Cash. Real in, Real out. Cash sales: debit Cash, credit Sales, a Nominal income."
+  "text": "Ready? One. The ten-thousand-rupee bank loan. Debit Cash, Real, it comes in. Credit Bank loan, Personal, the giver. Two. The cart and fryer, eighteen thousand. Debit Cart, credit Cash. Real in, Real out. Three. Nine thousand of cash sales. Debit Cash, credit Sales, a Nominal income."
  },
  {
   "id": "s12c",
   "scene": 12,
   "gap_after": 0.8,
-  "text": "Rent: debit Stall rent, a Nominal expense. Credit Cash. The school canteen: debit the canteen, Personal, the receiver. Credit Sales. And the birthday advance: debit Cash. Credit Advance from customer, Personal, the giver. [warmly] How many did you get?"
+  "text": "Four. Two thousand of stall rent. Debit Stall rent, a Nominal expense. Credit Cash. Five. Fifteen hundred of samosas to the school canteen, on credit. Debit the canteen, Personal, the receiver. Credit Sales. Six. The thousand-rupee birthday advance. Debit Cash. Credit Advance from customer, Personal, the giver. [warmly] How many did you get?"
  },
  {
   "id": "s13",

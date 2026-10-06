@@ -84,6 +84,9 @@
     const dbl = L6.hide(L6.node(K, kb.inner, 960, 662)); L6.chip(K, dbl, "Double entry", { size: 44, bg: C.saffron, h: 62 });
     L6.allow(totL.g); L6.allow(totR.g);
 
+    // ---- the Frappe-course cross-reference (visual only, 2 s): a small chip `= AED-LIC` slides in right of the strip and lifts off
+    const aedR = L6.rig(K, svg, 1690, 438); L6.hide(aedR.inner); L6.chip(K, aedR.inner, "= AED-LIC", { size: 46, bg: C.cream, h: 68 });
+    const aed = aedR.inner;
     // ---- seam tail: divider, ledger sliding in on a night-blue half
     const night = L6.rig(K, svg, 0, 0);                        // the ledger rides in with the night wall
     tl.set(night.pos, { x: 960 }, 0);
@@ -128,6 +131,9 @@
     // "You read it straight off the equation." — the row sticks (a soft press) and the strip reads under it
     const tRead = cue("s07b", "@read");
     tiles.forEach((t, j) => K.pulseNode(tl, t.r.sc, tRead + (j % 4) * 0.08 + (j < 4 ? 0 : 0.4), 1.1));
+    // the cross-reference chip: slides in from the right beside the strip, rests ~2 s, lifts off
+    tl.fromTo(aedR.pos, { x: 260 }, { x: 0, duration: 0.5, ease: "power2.out", immediateRender: false }, tRead + 0.55);
+    K.dropIn(tl, aed, tRead + 0.55, { dur: 0.35 }); K.liftOff(tl, aed, tRead + 2.55, { dur: 0.3 });
     // ---- "…the left total equals the right total." — everything else steps away, the scale flattens into the pages
     const tTx = cue("s07c", "@transaction"), tLeftT = cue("s07c", "@left");
     const lift = (n, t) => K.liftOff(tl, n, t, { dur: 0.22 });
@@ -140,7 +146,7 @@
     tl.to(rig.g, { opacity: 0.0, duration: 0.3, ease: "power1.in" }, tFlat + 0.95);
     tl.to(k.tints.L, { opacity: 0.5, duration: 0.6 }, tFlat + 0.5); tl.to(k.tints.R, { opacity: 0.5, duration: 0.6 }, tFlat + 0.5);
     // T1 replays alone: ₹50,000 flies onto each page; the totals tick to ₹50,000 = ₹50,000
-    const tEqual = cue("s07c", "@equals"), tRightT = cue("s07c", "@right");
+    const tEqual = cue("s07c", "@equals"), tRightT = Math.max(cue("s07c", "@right"), tEqual + 0.3);   // (Hindi says "right" before "equals")
     const L0 = L6.rowXY("L", 0), R0 = L6.rowXY("R", 0);
     L6.flyChip(K, tl, kb.inner, tEqual - 0.1, 0.65, [L6.panXY("L")[0], base - 30], [L0[0], L0[1] + 0], "₹50,000", { color: C.drText, lift: 60 });
     L6.flyChip(K, tl, kb.inner, tEqual - 0.1, 0.65, [L6.panXY("R")[0], base - 30], [R0[0], R0[1]], "₹50,000", { color: C.crText, lift: 60 });

@@ -54,18 +54,6 @@
   "text": "Nominal. It's an expense."
  },
  {
-  "id": "s03a",
-  "scene": 3,
-  "gap_after": 3.2,
-  "text": "[curious] And Aman's checkpoint. Here are all six. Check yours as they land."
- },
- {
-  "id": "s03b",
-  "scene": 3,
-  "gap_after": 0.8,
-  "text": "Two of them trip people up. The school canteen will pay later — Personal, the receiver. Debit. And the birthday advance isn't income yet — credit Advance from customer. Personal, the giver."
- },
- {
   "id": "s04a",
   "scene": 4,
   "gap_after": 0.6,

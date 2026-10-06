@@ -1,0 +1,260 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[excited] {@april}पंद्रह अप्रैल। मीरा bank में पंद्रह हज़ार रुपये {@deposits}जमा करती हैं। उनका phone {@buzzes}बज उठता है। {@your}आपके {@account}account में पंद्रह हज़ार रुपये {@credited}credit किए गए हैं।"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "[playful] {@credited}Credit हो गया! {@credit}Credit का मतलब पैसा अंदर आना, और पैसा आना {@good}अच्छी बात है। है ना?"
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 1.2,
+  "text": "[teasing] {@khata}खाता के पास ख़बर है। {@meera's}मीरा की अपनी books में, वही deposit एक {@debit}debit है।"
+ },
+ {
+  "id": "s01d",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[softly] तो {@who's}कौन {@right}सही है?"
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "सबसे पहले, पिछली बार के सवाल। {@one}एक। चार {@thousand}हज़ार रुपये का catering advance। क्या ये {@april's}April का revenue है?"
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "नहीं। Stall पर उस customer का एक event अब भी बकाया है। ये एक {@liability}liability है।"
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "{@two}दो। गोपाल Dairy को {@five}पाँच हज़ार रुपये देना। क्या ये एक {@expense}expense है?"
+ },
+ {
+  "id": "s02d",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "नहीं। गोपाल को पैसे देने से, stall पर उनका जो बकाया है, वो बस {@shrinks}घट जाता है।"
+ },
+ {
+  "id": "s02e",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "{@three}तीन। Infotech के चार हज़ार रुपये देने के बाद, उन पर अब भी {@how}कितना बकाया है?"
+ },
+ {
+  "id": "s02f",
+  "scene": 2,
+  "gap_after": 0.8,
+  "text": "दो हज़ार रुपये। {@six}छह हज़ार का bill, {@four}चार हज़ार चुकाए।"
+ },
+ {
+  "id": "s02g",
+  "scene": 2,
+  "gap_after": 0.8,
+  "text": "और {@aman's}अमन की samosa {@challenge}challenge? {@only}सिर्फ़ {@cash}cash sale और {@rent}किराए ने {@both}दोनों needles को हिलाया। [warmly] {@aman's#2}अमन का profit अब तक: {@eight}साढ़े आठ हज़ार {@rupees}रुपये।"
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "{@now}अब, उस {@sms}SMS की बात। पहले, चार myths छोड़ने हैं। Debit {@bad}बुरा नहीं होता। Credit {@good}अच्छा नहीं {p@good}होता। दोनों में से कोई भी पैसा आना, या पैसा {@out}जाना नहीं है। और दोनों में से कोई भी plus, या {@minus}minus नहीं है।"
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.8,
+  "text": "[curious] तो असल में इनका {@mean}मतलब क्या है। Accounting में, debit का मतलब बस {@left}बाईं {p@left}तरफ़। और credit का मतलब बस {@right}दाईं तरफ़।"
+ },
+ {
+  "id": "s03c",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "[playful] याद है खाता के दो पन्ने, बिल्कुल {@first}पहले lesson से? {@this}यही है इसकी {@why}वजह।"
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "तो किस तरफ़ लिखें? तराज़ू को {@look}देखिए। {@assets}Assets {@left}बाईं तरफ़। {@liabilities}Liabilities {@and}और {@equity}equity {@right}दाईं तरफ़। हर account की एक {@home}home side होती है: वो तरफ़ जहाँ वो रहता है।"
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 1.0,
+  "text": "और ये रहा {@whole}पूरा नियम। जब कोई account {@grows}बढ़ता है, तो उसे उसकी {@home}home side पर {p@side}लिखिए। जब वो {@shrinks}घटता है, तो उसे दूसरी तरफ़ लिखिए।"
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 2.0,
+  "text": "{@april}पहली अप्रैल। मीरा पचास हज़ार रुपये लगाती हैं। {@which}कौन सी दो चीज़ें बदलीं?"
+ },
+ {
+  "id": "s04d",
+  "scene": 4,
+  "gap_after": 0.8,
+  "text": "{@cash}Cash बढ़ा। एक asset, जिसका home बाईं तरफ़ है। {@debit}Debit {@cash#2}{p@cash#2}Cash। {@capital}Capital बढ़ा। Equity, जिसका home दाईं तरफ़ है। {@credit}Credit Capital। पचास हज़ार {@left#2}बाईं तरफ़, पचास हज़ार {@right#2}दाईं तरफ़।"
+ },
+ {
+  "id": "s04e",
+  "scene": 4,
+  "gap_after": 2.0,
+  "text": "{@now}अब cart, छत्तीस हज़ार रुपये की। {@which}कौन सी दो चीज़ें बदलीं?"
+ },
+ {
+  "id": "s04f",
+  "scene": 4,
+  "gap_after": 1.6,
+  "text": "{@equipment}Equipment बढ़ता है। एक asset, home बाईं तरफ़। {@debit}Debit {@equipment#2}{p@equipment#2}Equipment। पर {@cash}Cash {@shrinks}घटता है। Cash बाईं तरफ़ रहता है, तो उसे घटाने के लिए, दाईं तरफ़ लिखिए। {@credit}Credit Cash।"
+ },
+ {
+  "id": "s04g",
+  "scene": 4,
+  "gap_after": 0.8,
+  "text": "तो {@debit}debit का मतलब हमेशा {@up}बढ़ना नहीं {p@up}होता। ये home पर निर्भर करता है।"
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 1.6,
+  "text": "Liabilities भी इसी तरह काम करती हैं, बस दूसरी तरफ़ से। गोपाल Dairy आठ हज़ार रुपये का stock {@sends}भेजता है, पैसे बाद में। Stock बढ़ा। {@debit}Debit Stock। और {@gopal#2}गोपाल का? {@debit#2}Debit, या credit?"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "Credit। Stall पर गोपाल का जो बकाया है, वो बढ़ा, और liabilities {@right}दाईं तरफ़ रहती हैं।"
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "{@fifth}पाँच अप्रैल। {@rent}Rent, पाँच हज़ार रुपये। Cash {@shrinks}घटता है। {@credit}Credit {@cash#2}{p@cash#2}Cash। और {@rent#2}Rent? [curious] Rent {@grew}बढ़ा। पर उसका home {@where}कहाँ है?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "लंबी {@equation}equation याद है? {@assets}Assets बराबर {@liabilities}liabilities, जमा {@capital}capital, जमा {@revenue}revenue, माइनस {@expenses}{p@expenses}expenses। वो {@minus#2}माइनस ही {@clue}इशारा है। Expenses को equals sign के {@across}पार {@move}ले जाइए, और {@minus#3}माइनस प्लस बन जाता है।"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "{@assets}Assets, जमा {@expenses}expenses, बराबर {@liabilities}liabilities, जमा {@capital}capital, जमा {@revenue}{p@revenue}revenue। तो expenses बाईं तरफ़ रहते हैं, {@assets#2}assets के साथ। {@rent}Rent बढ़ा, और {@left}बाईं तरफ़ ही उसका {@home}home है। Debit {@rent#2}{p@rent#2}Rent। {@every}हर expense एक debit है।"
+ },
+ {
+  "id": "s06d",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "{@revenue}Revenue कभी नहीं हिला, तो उसका home {@right}दाईं तरफ़ ही रहता है, capital के साथ। हर {@sale}sale एक {@credit}credit है।"
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "अब सब जोड़िए। {@debits}Debits बाईं तरफ़ रहते हैं: {@expenses}Expenses, {@assets}Assets, और {@drawings}Drawings — वो पैसा जो मीरा घर ले जाती हैं। {@they}ये expenses जैसे ही {@behave}behave करते हैं।"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "{@credits}Credits दाईं तरफ़ रहते हैं: {@liabilities}Liabilities, {@income}Income — यानी {@revenue}revenue, {@or}या income, एक ही बात — और {@capital}Capital। छोटे में: {@dead}DEAD {@clic}CLIC। आपने इसे रटा नहीं। आपने इसे सीधे equation से {@read}पढ़ लिया।"
+ },
+ {
+  "id": "s07c",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "और हर {@transaction}transaction में, {@left}बाईं तरफ़ का total, {@right}दाईं तरफ़ के total के {@equals}बराबर होता है। {@always}{p@always}हमेशा। यही {@double}double entry है: हर रुपया दो बार लिखा जाता है — {@once}एक बार {@each}हर तरफ़। वही {@scale}तराज़ू, बस नए कपड़ों में।"
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "तो, वो {@sms}SMS। दो {@cameras}cameras, एक deposit। मीरा की books में, पैसा गल्ले से bank में {@moved}चला गया। Bank {@grows}बढ़ा। {@debit}Debit Bank। Cash {@shrinks}घटा। {@credit}Credit Cash।"
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "{@bank's}Bank की books में, {@notes}नोट उसकी vault में जाते हैं। वो उसका {@debit}debit है। पर मीरा के पंद्रह हज़ार bank के पैसे नहीं हैं। ये वो पैसे हैं जो bank पर मीरा का {@owes}बकाया हैं, जिस {@day}दिन भी वो माँगें। Bank के लिए, ये एक {@liability}liability है। ये बढ़ती है, इसलिए bank इसे {@credits}credit करता है।"
+ },
+ {
+  "id": "s08c",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "वही {@money}पैसा। उलटी {@books}{p@books}books। {@your}आपका SMS bank का खाता पढ़ रहा है, आपका {@not}नहीं। [firmly] {@credit}Credit का {@mean}मतलब अच्छा नहीं होता। {@debit}Debit का मतलब {@bad}बुरा नहीं होता। इनका मतलब {@just}बस {@right}दाएँ, और {@left}बाएँ है।"
+ },
+ {
+  "id": "s09w",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "[playful] चलिए {@practise}practise करते हैं। पहले warm-up: एक बार में एक account। किस तरफ़? {@ravi}रवि मामा का loan {@grows}{p@grows}बढ़ा। {@credit}Credit। {@rent}Rent {@grows#2}{p@grows#2}बढ़ा। {@debit}Debit। एक {@sale}{p@sale}sale। {@credit#2}Credit। अब, {@careful}ध्यान से। {@infotech}Infotech अपना बकाया चुकाता है, तो Infotech account {@shrinks}घटता {p@shrinks}है। {@credit#3}Credit। जब कोई {@asset}asset घटे, तो वो दाईं तरफ़ जाता है।"
+ },
+ {
+  "id": "s09a",
+  "scene": 9,
+  "gap_after": 2.0,
+  "text": "अब पूरी entries। पहले {@khata}खाता की बारी। April के पहले {@half}आधे महीने की cash sales: अठारह हज़ार रुपये। {@which}कौन सी दो चीज़ें बदलीं?"
+ },
+ {
+  "id": "s09b",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "{@cash}Cash बढ़ा। {@debit}Debit Cash, अठारह हज़ार। {@sales}Sales बढ़ीं। ये revenue है, इसलिए {@credit}credit Sales, अठारह हज़ार। {@left}बाईं तरफ़ और दाईं तरफ़, {@equals}बराबर।"
+ },
+ {
+  "id": "s09c",
+  "scene": 9,
+  "gap_after": 2.4,
+  "text": "{@meera's}मीरा की बारी। {@infotech's}Infotech की चाय का tab: छह हज़ार रुपये, पैसे {@later}बाद में। चाय बिकी, तो {@credit}credit Sales, छह हज़ार। अब {@infotech}Infotech। उन पर stall का बकाया है। मीरा इसे दाईं तरफ़ वाले पन्ने की ओर {@slides}सरकाती हैं। बकाया होना — वो तो {@gopal's}गोपाल वाली तरफ़ थी। {@wasn't}है ना?"
+ },
+ {
+  "id": "s09d",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "नहीं। Stall पर {@gopal}गोपाल का बकाया है। {@infotech}Infotech पर stall का {@owes}बकाया है। एक asset, और वो {@grew}बढ़ा। Home side, {@left}बाईं। {@debit}Debit Infotech, छह हज़ार।"
+ },
+ {
+  "id": "s09e",
+  "scene": 9,
+  "gap_after": 3.2,
+  "text": "[inviting] {@now}अब, {@just}सिर्फ़ आप। मीरा {@gopal}गोपाल Dairy को पाँच हज़ार रुपये देती हैं। {@debit}Debit क्या? {@credit}Credit क्या?"
+ },
+ {
+  "id": "s09f",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "{@debit}Debit गोपाल Dairy। {@liability}Liability घटती है, तो वो बाईं तरफ़ जाती है। {@credit}Credit Cash। {@five}पाँच हज़ार रुपये गल्ले से निकल गए।"
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.6,
+  "text": "तो। {@debit}Debit यानी बाईं तरफ़, {@credit}credit यानी दाईं तरफ़। Account {@grow}बढ़े तो उसकी home side पर लिखिए, {@shrink}घटे तो {@other}दूसरी तरफ़। और bank का {@sms}SMS, bank की {@books}books से बोलता है।"
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 0.8,
+  "text": "[inviting] आपकी {@turn}बारी। {@three}तीन छोटे सवाल। {@one}एक। मीरा {@six}छह हज़ार रुपये की {@tea}चायपत्ती, {@milk}दूध और {@sugar}चीनी ख़रीदती हैं, और cash में देती हैं। क्या {@debited}debit होगा, और क्या {@credited}credit? {@two}दो। एक {@expense}expense {@debit}debit क्यों होता है? {@three#2}तीन। कल्पना कीजिए, मीरा bank से एक {@bill}bill भरती हैं, और {@sms}SMS में लिखा आता है, debited। मीरा की {@books}books में, Bank debit होगा, या {@credited#2}credit? {@answers}जवाब {@next}अगले lesson में।"
+ },
+ {
+  "id": "s12",
+  "scene": 12,
+  "gap_after": 1.0,
+  "text": "[teasing] अगली बार, मीरा की CA {@friend}दोस्त stall पर आती हैं, अपने {@rules}नियमों के साथ। {@debit}Debit पाने वाले को! {@credit}Credit देने वाले को! क्या ये सीखने के लिए एक {@whole}पूरा नया system है?"
+ }
+]

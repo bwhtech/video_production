@@ -172,3 +172,7 @@ Checkpoint 2 (`course/data/aman-samosa.json`, A5–A9): profit / cash = +₹9,00
 
     [teasing] Next time — remember that bank deposit? Meera's phone buzzed. Your account is credited with fifteen thousand rupees. Credited! Great news… right?
     [→ end card, 12s, no VO]
+
+---
+
+**Revision 2026-10-06b (user review):** The second needle is now **Money** (galla + bank); **Cash** means only the notes in the galla and **Bank** the money the bank keeps for Meera — so L5 and L6 agree (L6 records the deposit as Cr Cash / Dr Bank). The deposit line names the two accounts. Checkpoint 2's answer reveal restates each question before answering it. On screen: needle label `Money`; sub-chips `Cash` (galla icon) and `Bank` (landmark). `vo-segments.json` is the source of truth for the exact lines.

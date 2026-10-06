@@ -53,7 +53,7 @@
     const s1 = strip(620, 1.0), s2 = strip(850, 0.72);
     // row 1: A (earned) tumblers drunk · B (money arrives) coin + clock
     const a1 = K.g(s1, { transform: "translate(-280 0)" }), b1 = K.g(s1, { transform: "translate(280 0)" });
-    const tr1 = L5.tumblerRow(K, a1, 0, 70, 2.1, 4, 84);
+    const tr1 = L5.tumblerRow(K, a1, 0, 62, 1.45, 4, 84);   // fits inside the left half (was 2.1 → overflowed the card + divider)
     K.coin(b1, -70, 0, 62); K.medallion(b1, 60, -6, 50, "clock", C.coral);
     // row 2: A (used up) leaves thinning · B coin leaving + clock
     const a2 = K.g(s2, { transform: "translate(-280 0)" }), b2 = K.g(s2, { transform: "translate(280 0)" });
@@ -141,7 +141,7 @@
     L5.drop(tl, K, s1, tRev - 0.2, { dur: 0.4 });
     // the tick starts on the coin panel (the common assumption), then hops to the tumbler panel on "earned"
     // the tick starts on the coin panel (the common assumption), then hops to the tumbler panel on "earned" and stays there
-    const tkB = [960 + 280, 620 - 90], tkA = [960 - 280 - 120, 620 - 100];
+    const tkB = [960 + 280, 620 - 90], tkA = [960 - 280, 620 - 100];   // ✓ centred over the whole glass group
     L5.drop(tl, K, tk, tRev + 0.3, { dur: 0.3 });
     tl.set(tk, { x: tkB[0], y: tkB[1] }, tRev + 0.3 - 0.02);
     L5.fly(tl, tk, tEarn - 0.1, tkB, tkA, 0.5, { lift: 70 });
@@ -150,7 +150,7 @@
     const tExp = cue("s05d", "@expenses"), tInc = cue("s05d", "@incurred"), tUsed = cue("s05d", "@used"), tPaid = cue("s05d", "@paid");
     L5.drop(tl, K, s2, tExp - 0.2, { dur: 0.4 });
     // the second tick starts the expense row on the money panel too, and hops to the used-up panel on "incurred"
-    const tkB2 = [960 + 280 * 0.72, 850 - 66], tkA2 = [960 - 280 * 0.72 - 90, 850 - 66];
+    const tkB2 = [960 + 280 * 0.72, 850 - 66], tkA2 = [960 - 280 * 0.72, 850 - 66];
     L5.drop(tl, K, tk2, tExp + 0.4, { dur: 0.3 });
     tl.set(tk2, { x: tkB2[0], y: tkB2[1] }, tExp + 0.4 - 0.02);
     L5.fly(tl, tk2, tInc - 0.05, tkB2, tkA2, 0.5, { lift: 60 });

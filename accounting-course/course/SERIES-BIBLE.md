@@ -69,8 +69,9 @@ teaching beat, to hit a number. (L6 runs ≈ 8:10 after the four-myths and warm-
   business — **Aman's Samosa Cart** — so the viewer transfers the idea instead of
   pattern-matching Meera's numbers. 5 transactions + a downloadable worksheet
   (PDF/Sheet linked in description + pinned comment quiz). The viewer pauses, the **answer
-  sheet is revealed in the same lesson** (so the video is self-contained), and the next
-  lesson re-checks it in ~30–60s with the two items that trip people up. Everything the
+  sheet is revealed in the same lesson** (so the video is self-contained). **Each answer restates its
+  question first** ("Two. Two thousand of stall rent. Both go down two thousand.") — by the time the pause ends the
+  viewer has forgotten the question (user, 2026-10-06). The next lesson does **not** re-walk the checkpoint. Everything the
   challenge needs (opening balances, account names) must be **on screen** during the pause —
   the worksheet is a backup, not the source.
 - **Timeline anchor:** L1's night is **Apr 2**, Meera's first *trading* day (cart bought that
@@ -85,7 +86,7 @@ teaching beat, to hit a number. (L6 runs ≈ 8:10 after the four-myths and warm-
 |---|---|---|
 | **Cold open** | 15–25s | A moment from Meera's day that creates the question this lesson answers. Never a title card first. |
 | **Title sting** | 3s | Lesson number + title on the Khata book cover flipping open. |
-| **Last time** | 30–45s | Answers to the previous "Your Turn" (L1 skips this). Checkpoint solutions run ~60s. |
+| **Last time** | 30–45s | Answers to the previous "Your Turn" (L1 skips this). Checkpoint answers are NOT repeated here — the checkpoint lesson already revealed them. |
 | **Build** | 2.5–3.5 min | Story → picture → *then* the word. One new idea. Includes 1–3 **"Which two things changed?"** pause beats and one **misconception moment**. |
 | **Worked → faded → solo** | 60–90s | Khata does one fully; Meera does one with a blank ("pause — which side?"); viewer does one alone, answer revealed after a 3s countdown. **The faded beat must show Meera making a visible choice or slip** (reaching for the wrong jar, hesitating over a slot) — otherwise it is just a second solo. **The solo must test the lesson's new idea**, never bare arithmetic, and its answer must not have been shown earlier in the same lesson (or as the previous lesson's Your Turn answer). |
 | **Recap** | 20s | Three pictures, one short label each. |

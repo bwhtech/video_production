@@ -172,3 +172,7 @@ A4 Ingredients stock +₹3,000 / Sharma Kirana +₹3,000 → ₹33,000 = ₹13,0
     Will the scale finally tip?
 
 ## — End card (Scene 12, no VO, 12 s) — series wordmark · "Up next: Lesson 4 · Making Money"
+
+---
+
+**Revision 2026-10-06b (user review):** Checkpoint 1's reveal now restates each transaction, names its two changes, then gives the equation (the walk-through that used to open L4 moved here). 'Next lesson, we'll walk through every step' removed. `vo-segments.json` is the source of truth for the exact lines.

@@ -1,6 +1,6 @@
 // s03 — The two scary words. The SMS card (from s02's flip) sits top-centre; Khata rises under it, opens, and its pages tint
-// debit-blue / credit-orange BEFORE any word exists. Two root icons (hand-coins = debere, handshake = credere) float up out of the SMS
-// and fall away — "forget those meanings". Then the tiles land: DEBIT on the blue left page, CREDIT on the orange right page.
+// debit-blue / credit-orange BEFORE any word exists. FOUR MYTHS (thumbs-down, thumbs-up, arrow-down-up, diff) lift off the SMS one per
+// sentence and get a small red ✗ — then flutter away on "what they really mean". Then the tiles land: DEBIT on the blue left page, CREDIT on the orange right page.
 // In:  s02 ends on a cream plate with the SMS card centred (this scene owns its seam-in); the plate fades, the card rises to top-centre.
 // Out: default torn-paper wipe → s04 (Khata stays where it is; the scale lowers onto it there).
 (function () {
@@ -32,8 +32,12 @@
     // ---- the SMS card (top-centre) and the two root icons that float out of it
     const smsR = L6.rig(K, svg, 960, 540); gsap.set(smsR.sc, { scale: 1.5, svgOrigin: O });
     K.smsCard(smsR.inner, 0, 0, 300, 210, { kind: "CREDITED", amount: "₹15,000" });
-    const mkRoot = (name) => { const r = L6.rig(K, svg, 0, 0); L6.hide(r.inner); K.medallion(r.inner, 0, 0, 64, name); return r; };
-    const rDebere = mkRoot("hand-coins"), rCredere = mkRoot("handshake");
+    // the four myths: sticker medallions that lift off the SMS card, fly to a row beside it and get a small red ✗
+    const MY = [["thumbs-down", C.coral, 330, "@bad"], ["thumbs-up", C.leaf, 540, "@good"], ["arrow-down-up", C.sky, 1380, "@out"], ["diff", C.saffron, 1590, "@minus"]];
+    const myths = MY.map(([name, col, x, anchor]) => {
+      const r = L6.rig(K, svg, 0, 0); L6.hide(r.inner); K.medallion(r.inner, 0, 0, 62, name, col, C.white);
+      return { r, x, anchor };
+    });
 
     // ---- "Lesson 1" keepsake: a small photo card with Khata open, clipped to the corner
     const keep = L6.hide(L6.node(K, svg, 1600, 330));
@@ -63,20 +67,22 @@
     // soften the tint a little once both are down (ink + tiles read clearly)
     tl.to(k.tints.L, { opacity: 0.62, duration: 0.5 }, cue("s03a", "@sms") + 1.5); tl.to(k.tints.R, { opacity: 0.62, duration: 0.5 }, cue("s03a", "@sms") + 1.5);
 
-    // roots: "Debere, to owe." / "Credere, to trust." — each icon lifts out of the SMS word, hovers, then flutters down on "Forget those meanings."
-    const tD = cue("s03a", "@bad"), tCr = cue("s03a", "@good"), tFall = cue("s03b", "@mean");
-    [[rDebere, tD, -1], [rCredere, tCr, 1]].forEach(([r, t, sd]) => {
-      tl.set(r.pos, { x: 960 + sd * 40, y: 280 }, 0); gsap.set(r.sc, { scale: 0.45, svgOrigin: O });
+    // four myths: each sticker lifts out of the SMS card on its sentence and lands in the row beside it; a small ✗ stamps it. They flutter down on "what they really mean".
+    const tFall = cue("s03b", "@mean");
+    myths.forEach(({ r, x, anchor }, i) => {
+      const t = cue("s03a", anchor) - 0.5, sd = x < 960 ? -1 : 1;
+      tl.set(r.pos, { x: 960 + sd * 60, y: 300 }, 0); gsap.set(r.sc, { scale: 0.5, svgOrigin: O });
       K.dropIn(tl, r.inner, t, { dur: 0.3 });
-      L6.mv(tl, r, t, 0.9, { x: 960 + sd * 420, y: 250 }, "power2.out");
-      L6.mv(tl, r, t, 0.9, { scale: 1.0 }, "power2.out");
+      L6.mv(tl, r, t, 0.75, { x, y: 300 }, "power2.out");
+      L6.mv(tl, r, t, 0.75, { scale: 1.0 }, "power2.out");
+      K.pulseNode(tl, smsR.inner, t - 0.05, 1.03);
+      K.stamp(tl, r.inner, 40, 40, t + 0.8, 0.5, { rot: i % 2 ? 8 : -9 });
       // flutter down and out of frame (paper sway), after the pause
-      const tf = tFall + (sd < 0 ? 0 : 0.18);
-      tl.to(r.pos, { x: 960 + sd * 820, duration: 1.1, ease: "power1.in" }, tf);
+      const tf = tFall + i * 0.1;
+      tl.to(r.pos, { x: x + sd * 220, duration: 1.1, ease: "power1.in" }, tf);
       tl.to(r.pos, { y: 1230, duration: 1.1, ease: "power2.in" }, tf);
       tl.to(r.sc, { rotation: sd * 38, svgOrigin: O, duration: 1.1, ease: "power1.inOut" }, tf);
     });
-    K.pulseNode(tl, smsR.inner, tD - 0.1, 1.04); K.pulseNode(tl, smsR.inner, tCr - 0.1, 1.04);
 
     // the tiles: "debit just means LEFT" / "credit just means RIGHT"
     const tL = cue("s03b", "@left"), tR = cue("s03b", "@right");

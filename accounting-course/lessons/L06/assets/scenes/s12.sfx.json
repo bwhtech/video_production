@@ -1,0 +1,10 @@
+[
+ {"sfx": "pop", "at": {"seg": "s12", "word": "@friend", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s12", "word": "@rules", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s12", "word": "@debit", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "tink_low", "at": {"seg": "s12", "word": "@debit", "offset": 0.45}, "vol": 0.45},
+ {"sfx": "paper_slide", "at": {"seg": "s12", "word": "@credit", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s12", "word": "@credit", "offset": 0.45}, "vol": 0.45},
+ {"sfx": "pop", "at": {"seg": "s12", "word": "@whole", "offset": 0.0}, "vol": 0.4},
+ {"sfx": "book_thump", "at": {"seg": "s12", "edge": "end", "offset": 0.8}, "vol": 0.7}
+]
