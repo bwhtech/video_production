@@ -11,7 +11,7 @@ usage: python3 lessons/shared/patch_question_beat.py
 from pathlib import Path
 
 LESSONS = Path(__file__).resolve().parent.parent
-EN_RENDERED = {"L01", "L02", "L04"}       # English already rendered: don't shift its timeline under the finished video
+EN_RENDERED = set()                      # all English re-rendered with question beats (2026-10-07)
 
 ANCHOR = "                cuts.sort()\n"
 BLOCK = '''                if LANG in AUTO_Q_BEAT_LANGS:          # thinking beat after a question that runs into the next words

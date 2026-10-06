@@ -15,10 +15,10 @@
       K.text(gi, -350, -55, "Lesson 5", { size: 44, weight: 800, color: C.coralText, anchor: "start" });
       K.text(gi, -350, 22, "Profit Is", { size: 56, weight: 800, anchor: "start" });
       K.text(gi, -350, 104, "Not Cash", { size: 56, weight: 800, anchor: "start" });
-      K.gauge(gi, 130, 90, 84, 0.88, { color: C.cr });
-      K.gauge(gi, 320, 90, 84, 0.12, { color: C.dr });
-      K.label(gi, 130, 158, "Profit", { size: 34, bg: "paper" });
-      K.label(gi, 320, 158, "Cash", { size: 34, bg: "paper" });
+      K.gauge(gi, 90, 90, 84, 0.88, { color: C.cr });
+      K.gauge(gi, 270, 90, 84, 0.12, { color: C.dr });
+      K.label(gi, 90, 158, "Profit", { size: 34, bg: "paper" });
+      K.label(gi, 270, 158, "Money", { size: 34, bg: "paper" });
     }
     const panels = [[1450, 300], [1450, 720]].map(([x, y]) => {
       const n = L4.node(svg, x, y);

@@ -37,14 +37,19 @@ English VO first (ElevenLabs), Hindi later. Built in HyperFrames.
 
 ## Status (2026-10-06)
 
-| Lesson | Script + storyboard | Build (`lessons/L0N/`) |
+| Lesson | Script + storyboard | Build (`lessons/L0N/` EN · `lessons/L0N-hi/` HI) |
 |---|---|---|
-| L1 Why Bother? | reviewed, re-specced | **v5 rendered** 5:27 (EN + HI build) |
-| L2 What You Have, What You Owe | reviewed | **rendered** 5:37 — polish pass pending (sparse staging) |
-| L3 The Scale That Never Tips | reviewed | **rendered** 6:37 |
-| L4 Making Money | reviewed | **rendered** 6:32 |
-| L5–L7 | reviewed; VO generated | building |
+| L1 Why Bother? | reviewed | **HI rendered** 6:14 · EN 5:29 re-render queued |
+| L2 What You Have, What You Owe | reviewed | **HI rendered** 6:19 · EN 5:40 re-render queued |
+| L3 The Scale That Never Tips | reviewed | **HI rendered** 7:49 · EN 7:02 re-render queued |
+| L4 Making Money | reviewed | **HI rendered** 6:29 · EN 5:55 re-render queued |
+| L5 Profit Is Not Cash | reviewed | **HI rendered** 8:18 · EN 7:24 render queued |
+| L6 Debit and Credit | reviewed | **HI rendered** 9:11 · EN 8:05 render queued |
+| L7 The Golden Rules, Decoded | reviewed | **HI rendered** 8:59 · EN 8:09 render queued |
 | L8–L14 | reviewed, trimmed | not started |
+
+Render queue: `lessons/shared/render_queue.sh L01:en L05:hi …` (check → render under the lock → mix → mux → 720p
+review copy → verify; log in `lessons/shared/render_queue.log`).
 
 - `course/REVIEW-2026-10-06.md` — the pedagogy review and what was applied; bible §5 = shared-component spec, §6.11 = vocabulary locks.
 - `course/lessons/NN-slug/` — SCRIPT.md · STORYBOARD.md · vo-segments.json (EN build input) · pauses.json

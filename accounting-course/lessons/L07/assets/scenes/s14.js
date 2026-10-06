@@ -12,7 +12,7 @@
     const next = L7.node(svg, 540, 490);
     K.card(next, 0, 0, 780, 400, { header: C.saffron, title: "Up next", titleSize: 44, headerH: 76 });
     // a small open journal page: two ruled leaves, a Dr (blue) and a Cr (orange) column
-    const jp = K.g(next, { transform: "translate(-250 150)" });
+    const jp = K.g(next, { transform: "translate(-240 52)" });
     K.tex(K.shadow(jp, 1), K.cutRect(-120, -92, 112, 150, 1.4, 14), "pat-paper"); K.tex(K.shadow(jp, 1), K.cutRect(8, -92, 112, 150, 1.4, 14), "pat-paper");
     K.paper(jp, K.cutRect(-120, -92, 112, 16, 0.6, 10), C.dr); K.paper(jp, K.cutRect(8, -92, 112, 16, 0.6, 10), C.cr);
     for (let i = 0; i < 4; i++) { K.ink(jp, [[-108, -52 + i * 28], [-20, -52 + i * 28]], 3, "#a39684"); K.ink(jp, [[20, -52 + i * 28], [108, -52 + i * 28]], 3, "#a39684"); }

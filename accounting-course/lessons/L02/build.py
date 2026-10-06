@@ -127,7 +127,7 @@ def snap_cut(path, words, i):
     return round(lo + (k * hop + hop / 2) / sr, 3)
 
 # ---- thinking beat after questions (see lessons/shared/patch_question_beat.py)
-AUTO_Q_BEAT_LANGS = {"hi"}
+AUTO_Q_BEAT_LANGS = {"hi", "en"}
 Q_LIST_NEXT = {"two", "three", "four", "five", "six", "दो", "तीन", "चार", "पाँच", "छह"}
 
 def _cut_in_speech(path, c):

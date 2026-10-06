@@ -24,7 +24,7 @@
     const m = K.meera(cam, 780, GY, 0.95, { expr: "happy" });
     // the big bank SMS card (flies out of the phone, grows)
     const bigO = L5.hide(L5.node(K, cam, 0, 0)), bigI = K.g(bigO, {});
-    K.smsCard(K.g(bigI, { transform: "scale(2)" }), 0, 0, 300, 190, { kind: "CREDITED", amount: "₹15,000", acct: "A/c XX12", type: "sms" });
+    K.smsCard(K.g(bigI, { transform: "scale(1.7)" }), 0, 0, 300, 190, { kind: "CREDITED", amount: "₹15,000", acct: "A/c XX12", type: "sms" });
     const cover = L5.cover(K, svg, 6);
     const fade = K.el("rect", { x: 0, y: 0, width: 1920, height: 1080, fill: C.navy }, svg);
 
@@ -40,11 +40,11 @@
     const tBuzz = cue("s13", "@buzzed");
     m.look(tl, tBuzz - 0.2, 9, 3);
     phone.buzz(tl, tBuzz);
-    // "Your account is credited with fifteen thousand rupees." — the SMS lands on the phone; the big card pops out
+    // "Your account is credited with fifteen thousand rupees." — the SMS lands on the phone; the big card pops out over the sky, left of Meera (clear of the stall)
     const tAcc = cue("s13", "@account"), tCr = cue("s13", "@credited");
     phone.show(tl, tAcc, { kind: "CREDITED", amount: "₹15,000", acct: "A/c XX12" });
     tl.set(bigO, { autoAlpha: 1, x: PH[0], y: PH[1] }, tCr);
-    tl.fromTo(bigO, { x: PH[0], y: PH[1] }, { x: 1400, y: 300, duration: 0.55, ease: "power2.out", immediateRender: false }, tCr);
+    tl.fromTo(bigO, { x: PH[0], y: PH[1] }, { x: 420, y: 270, duration: 0.55, ease: "power2.out", immediateRender: false }, tCr);
     tl.fromTo(bigI, { scale: 0.18, svgOrigin: O }, { scale: 1, svgOrigin: O, duration: 0.55, ease: "power2.out", immediateRender: false }, tCr);
     m.expr(tl, tCr, "amazed");
     // "Credited! Great news…" — Meera cheers

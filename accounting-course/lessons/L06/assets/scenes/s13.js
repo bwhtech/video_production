@@ -15,7 +15,7 @@
     K.text(next, -90, 5, "The Golden Rules,", { size: 54, weight: 800, anchor: "start" });
     K.text(next, -90, 78, "Decoded", { size: 54, weight: 800, anchor: "start" });
     // the small gold rule-card illustration (Dr / Cr)
-    [["L", -318, 150, -6], ["R", -232, 160, 7]].forEach(([side, x, y, rot]) => { const g = K.g(next, { transform: `translate(${x} ${y}) rotate(${rot}) scale(0.5)` }); L6.goldCard(K, g, side); });
+    [["L", -300, 30, -6], ["R", -196, 44, 7]].forEach(([side, x, y, rot]) => { const g = K.g(next, { transform: `translate(${x} ${y}) rotate(${rot}) scale(0.6)` }); L6.goldCard(K, g, side); });
     // YouTube end-screen safe zones (videos on the right) as clean paper panels
     const panels = [[1450, 300], [1450, 720]].map(([x, y]) => { const n = L6.node(K, svg, x, y); K.tex(K.shadow(n, 2), K.cutRect(-330, -190, 660, 380, 2, 30), "pat-paper"); return n; });
     const k = K.khataRig(svg, 330, 1020, 0.5, { expr: "happy" });
