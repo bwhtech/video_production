@@ -5,40 +5,41 @@
     const C = K.C, DH = window.DH, O = "0 0", T0 = sc.start, L = window.S910;
     const cam = K.g(svg, { id: "s10-cam" });
     K.wall(cam, C.teal, 860);
+    window.skyline(cam, C.teal, 880, 13, { minH: 150, maxH: 200, dark: 0.14 });
     K.table(cam, 880);
     const cal = DH.calendar(cam, 1);
     const cards = L.X.map((x, i) => {
       const n = DH.node(cam, x, L.Y);
       K.tex(K.shadow(n.inner, 2), K.cutRect(-L.W / 2, -L.H / 2, L.W, L.H, 2.4, 26), "pat-paper");
-      K.paper(K.shadow(n.inner, 1), K.cutEll(-L.W / 2 + 52, -L.H / 2 + 52, 36, 36, 1.4), C.coral);
-      K.text(n.inner, -L.W / 2 + 52, -L.H / 2 + 55, String(i + 1), { size: 48, weight: 800, color: "#ffffff" });
-      n.art = K.g(n.inner, { transform: "translate(0 20)" });
+      K.paper(K.shadow(n.inner, 1), K.cutEll(-L.W / 2 + 56, -L.H / 2 + 56, 40, 40, 1.4), C.coral);
+      K.text(n.inner, -L.W / 2 + 56, -L.H / 2 + 59, String(i + 1), { size: 54, weight: 800, color: "#ffffff" });
+      n.art = K.g(n.inner, { transform: "translate(0 30)" });
       return n;
     });
     const sub = (parent, x, y, s = 1) => K.g(K.g(parent, { transform: `translate(${x} ${y}) scale(${s})` }), {});
     // card 1: Gopal Dairy milk cans + ₹8,000 + clock (pay later)
     const a1 = cards[0].art;
-    const cans = sub(a1, -20, 200, 1.7); K.milkCans(cans, 0, 0, 1);
-    const p8 = sub(a1, 0, -110); K.label(p8, 0, 0, "₹8,000", { size: 64, bg: "paper", shadow: 2 });
-    const clk = sub(a1, 160, 70); K.medallion(clk, 0, 0, 52, "clock", C.coral);
+    const cans = sub(a1, 0, 250, 1.85); K.milkCans(cans, 0, 0, 1);
+    const p8 = sub(a1, 0, -215); K.label(p8, 0, 0, "₹8,000", { size: 80, bg: "paper", shadow: 2 });
+    const clk = sub(a1, 175, -90); K.medallion(clk, 0, 0, 66, "clock", C.coral);
     const gtag = sub(a1, -120, -190); K.faceTag(gtag, 0, 0, "meera", 1, 0); gtag.setAttribute("opacity", "0");
     // card 2: Meera's scooter + her face tag + ?
     const a2 = cards[1].art;
-    const sc2 = sub(a2, 0, 190, 0.85); K.scooter(sc2, 0, 0, 1);
-    const mt = sub(a2, -110, -120, 1.5); K.faceTag(mt, 0, 0, "meera", 1, 0);
-    const q2 = sub(a2, 120, -110); K.qmark(q2, 0, 0, 1.4, C.cr);
+    const sc2 = sub(a2, 0, 270, 1.1); K.scooter(sc2, 0, 0, 1);
+    const mt = sub(a2, -115, -185, 2.2); K.faceTag(mt, 0, 0, "meera", 1, 0);
+    const q2 = sub(a2, 150, -165); K.qmark(q2, 0, 0, 2.0, C.cr);
     // card 3: galla ₹80,000, Ravi tag ₹30,000, Meera tag ₹?
     const a3 = cards[2].art;
-    const g3 = sub(a3, -100, 30, 0.95); K.galla(g3, 0, 0, 1, { open: true, overflow: true });
-    const l3 = sub(a3, -100, -140); K.label(l3, 0, 0, "₹80,000", { size: 46, bg: "paper", shadow: 2 });
-    const r3 = sub(a3, 105, 0, 1.05); K.claimTag(r3, 0, 0, 1, { face: "ravi", amount: 30000 });
-    const m3 = sub(a3, 0, 245, 1.05); K.claimTag(m3, 0, 0, 1, { face: "meera" }); K.label(m3, 0, -70, "₹?", { size: 48, bg: "paper", shadow: 1 });
+    const g3 = sub(a3, -90, 85, 1.25); K.galla(g3, 0, 0, 1, { open: true, overflow: true });
+    const l3 = sub(a3, -50, -222); K.label(l3, 0, 0, "₹80,000", { size: 60, bg: "paper", shadow: 2 });
+    const r3 = sub(a3, 120, 70, 1.25); K.claimTag(r3, 0, 0, 1, { face: "ravi", amount: 30000 });
+    const m3 = sub(a3, 0, 300, 1.2); K.claimTag(m3, 0, 0, 1, { face: "meera" }); K.label(m3, 0, -80, "₹?", { size: 60, bg: "paper", shadow: 1 });
     const arts = [[cans, p8, clk], [sc2, mt, q2], [g3, l3, r3, m3]];
     arts.flat().forEach((e) => DH.hide(e));
     // Khata + "?" card + calendar-flip icon
-    const k = K.khataRig(cam, 120, 1050, 0.5, { expr: "awake" });
-    const sign = DH.node(cam, 270, 935); K.tex(K.shadow(sign.inner, 1), K.cutRect(-44, -56, 88, 112, 1.8, 18), "pat-paper"); K.qmark(sign.inner, 2, 18, 1, C.coral); DH.hide(sign.inner);
-    const calIcon = DH.node(cam, 1780, 960); K.medallion(calIcon.inner, 0, 0, 56, "calendar", C.coral); DH.hide(calIcon.inner);
+    const k = K.khataRig(cam, window.KH.x, window.KH.y, window.KH.s, { expr: "awake" });
+    const sign = DH.node(cam, 300, 960); const signA = K.g(sign.inner, { transform: "scale(1.35)" }); K.tex(K.shadow(signA, 1), K.cutRect(-44, -56, 88, 112, 1.8, 18), "pat-paper"); K.qmark(signA, 2, 18, 1, C.coral); DH.hide(sign.inner);
+    const calIcon = DH.node(cam, 1760, 975); K.medallion(calIcon.inner, 0, 0, 76, "calendar", C.coral); DH.hide(calIcon.inner);
 
     // ======================================================================== timeline
     cards.forEach((n) => { tl.fromTo(n.inner, { scaleX: 0.02, svgOrigin: O }, { scaleX: 1, svgOrigin: O, duration: 0.3, ease: "power2.out", immediateRender: true }, T0); });

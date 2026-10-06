@@ -58,5 +58,28 @@
   // Series wordmark (Shrikhand). Hinglish build gets its own series name.
   window.SERIES_NAME = () => ((window.TL && TL.lang) === "hi" ? "Hisaab Kitaab" : "Double Entry, Single Chai");
 
+  // v2 polish: one deliberate "Khata watches" spot for the whole lesson (bottom-left, ~22 % of frame height) + paper tape set-dressing.
+  window.KH = { x: 125, y: 1064, s: 0.62 };
+  window.tape = (parent, x, y, rot = -6, w = 90, h = 30) => {
+    const K = window.KIT, g = K.g(parent, { transform: `translate(${x} ${y}) rotate(${rot})`, "data-layout-allow-overlap": "true" });
+    K.paper(g, K.cutRect(-w / 2, -h / 2, w, h, 1.4, 10), "#e6d3a0", { opacity: 0.8 });
+    return g;
+  };
+
+  // tone-on-tone skyline behind a wall (colour = wall darkened); seeded, static
+  window.skyline = (parent, wall, y0 = 860, seed = 1, o = {}) => {
+    const K = window.KIT, g = K.g(parent, { "data-layout-allow-overlap": "true" });
+    const col = K.mixColor(wall, o.to ?? "#10202a", o.dark ?? 0.16), win = K.mixColor(wall, "#ffffff", 0.14);
+    let x = o.x0 ?? -20;
+    for (let i = 0; x < (o.x1 ?? 1960); i++) {
+      const w = 120 + K.sh(seed * 17 + i) * 60 + 40, h = (o.minH ?? 130) + (K.sh(seed * 29 + i * 3) + 1) * 0.5 * (o.maxH ?? 200);
+      K.paper(g, K.cutRect(x, y0 - h, w, h + 6, 1.6, 14), col);
+      for (let r = 0; r < Math.floor((h - 30) / 52); r++) for (let c = 0; c < Math.floor((w - 24) / 44); c++)
+        if (K.sh(seed * 7 + i * 31 + r * 5 + c) > -0.2) K.paper(g, K.cutRect(x + 18 + c * 44, y0 - h + 22 + r * 52, 22, 28, 0.8, 8), win, { opacity: 0.55 });
+      x += w + 10;
+    }
+    return g;
+  };
+
   window.localClock = (sc) => (t) => sc.start + t;
 })();

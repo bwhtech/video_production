@@ -10,12 +10,13 @@
     const T0 = sc.start;
     const GX = 520, GY = 770, GS = 2.0;            // galla (assets side, left)
     const BX = GX, BY = 500;                       // the bundle on top of it
-    const TX = 930, TY = 790, TS = 1.3;            // Meera's tag (bottom centre), hole ≈ (930, 595)
+    const TX = 960, TY = 810, TS = 1.85;            // Meera's tag (bottom centre), hole ≈ (930, 595)
     const HAND = [1325, 622];                      // Meera's left hand when she holds the string (pose [52, 60], s = 1, x = 1560)
 
     const cam = K.g(svg, { id: "s04-cam" });
     K.wall(cam, C.saffron, 860);
     K.paper(cam, K.cutRect(1900, -40, 2400, 1000, 0, 80), C.saffron);        // saffron continues to the right for the whip pan
+    window.skyline(cam, C.saffron, 860, 5, { x0: -20, x1: 2400, minH: 110, maxH: 150, dark: 0.1 });
     K.table(cam, 860);
     K.paper(cam, K.cutRect(1900, 856, 2400, 330, 0, 80), "#b7895a");
     K.crate(cam, GX, 960, 540, 190);
@@ -25,7 +26,7 @@
     // Meera enters stage-right (orange side) — she is now a claimant
     const m = K.meera(cam, 1560, 985, 1.0, { expr: "neutral", aL: [12, 8], aR: [12, 8] });
     gsap.set(m.mover, { x: 2250 - 1560 });
-    const k = K.khataRig(cam, 120, 1050, 0.5, { expr: "awake" });
+    const k = K.khataRig(cam, window.KH.x, window.KH.y, window.KH.s, { expr: "awake" });
 
     // the tag: blank first, then Meera's face tag (= the folded Equity card)
     const blank = DH.node(cam, BX, BY - 12); const blankArt = K.g(blank.inner, {}); DH.blankTag(K.g(blankArt, { transform: `scale(${TS})` }), 220, 176);
@@ -36,7 +37,7 @@
     gsap.set(eq.card.children[0], { scaleX: (210 + 48) / (2 * 210 + 16 + 48), svgOrigin: O });
     eq.g.setAttribute("data-layout-allow-overlap", "true"); eq.g.querySelectorAll("text").forEach((t) => t.setAttribute("data-layout-allow-overlap", "true"));
     const stub = K.g(cam, {});                                           // twine hanging free from the blank tag
-    const equityChip = DH.node(cam, 1185, 560); K.label(equityChip.inner, 0, 0, "Equity", { size: 62, bg: C.cr, shadow: 2 });
+    const equityChip = DH.node(cam, 1300, 575); K.label(equityChip.inner, 0, 0, "Equity", { size: 72, bg: C.cr, shadow: 2 });
     const ghostB = DH.node(cam, BX, BY); const gI = K.g(ghostB.inner, {}); K.bundle(gI, 0, 0, 1.5, 0); DH.hide(ghostB.outer);
     const cal = DH.calendar(cam, 1);
 

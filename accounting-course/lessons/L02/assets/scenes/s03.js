@@ -8,51 +8,52 @@
 
   window.SCENES.s03 = ({ svg, tl, K, sc }) => {
     const C = K.C, DH = window.DH, O = "0 0", T0 = sc.start;
-    const GX = 860, GY = 770, GS = 1.9;
+    const GX = 700, GS = 2.4, GY = 760;
     const cam = K.g(svg, { id: "s03-cam" });
     const first = K.g(cam, { id: "s03-first" });
     K.wall(first, C.teal, 860);
+    window.skyline(first, C.teal, 860, 3, { x0: 1000, minH: 150, maxH: 230 });       // tone-on-tone set dressing, right half only (the left stays calm behind the galla)
     K.table(first, 860);
-    const ghost = K.cartGhost(first, 1700, 985, 0.72, { lineOpacity: 0.5 });
-    K.crate(first, GX, 960, 540, 190);
+    const ghost = K.cartGhost(first, 1730, 985, 0.85, { lineOpacity: 0.5 });
+    K.crate(first, GX, 975, 540, 215);
     const galla = K.galla(first, GX, GY, GS, { open: true, overflow: true });
 
     // ticker above the galla (counts 0 → 50,000)
-    const tick = K.ticker(cam, GX, 235, 1, { value: 0, size: 80, chip: true, w: 440, h: 112, edge: C.dr, hidden: true });
+    const tick = K.ticker(cam, GX, 215, 1, { value: 0, size: 84, chip: true, w: 470, h: 118, edge: C.dr, hidden: true });
     // Cash label on the galla (ties on at "Cash.")
     const cashL = DH.node(cam, GX, GY - 30 * GS);
-    const cashS = K.g(cashL.inner, {}); K.label(cashS, 0, 0, "Cash", { size: 64, bg: "paper", shadow: 2 });
+    const cashS = K.g(cashL.inner, {}); K.label(cashS, 0, 0, "Cash", { size: 80, bg: "paper", shadow: 2 });
     // use-cases: milk, rent, cart — each a medallion with a dotted line back to the galla
     const med = [
-      { x: GX - 360, y: 540, ic: "milk", w: "@milk" },
-      { x: GX + 360, y: 540, ic: "key", w: "@rent" },
-      { x: GX, y: 400, ic: "cart", w: "@cart" },
+      { x: GX - 450, y: 540, ic: "milk", w: "@milk" },
+      { x: GX + 450, y: 540, ic: "key", w: "@rent" },
+      { x: GX + 470, y: 790, ic: "cart", w: "@cart" },
     ].map((d) => {
       const n = DH.node(cam, d.x, d.y);
-      const toward = [d.x < GX ? d.x + 170 : d.x > GX ? d.x - 170 : GX, d.y < 500 ? d.y + 100 : d.y + 80];
-      DH.dots(n.inner, 0, 0, toward[0] - d.x, toward[1] - d.y, 6, 5);
-      if (d.ic === "cart") K.cartArt(K.g(n.inner, { transform: "scale(1.2)" })); else K.medallion(n.inner, 0, 0, 64, d.ic);
+      const toward = [d.x < GX ? d.x + 210 : d.x - 210, d.y + (d.y > 700 ? -30 : 40)];
+      DH.dots(n.inner, 0, 0, toward[0] - d.x, toward[1] - d.y, 6, 6);
+      if (d.ic === "cart") K.cartArt(K.g(n.inner, { transform: "scale(1.7)" })); else K.medallion(n.inner, 0, 0, 86, d.ic);
       return { ...d, n };
     });
     // "Asset" chip on the crate front
-    const assetChip = DH.node(cam, GX, 885); K.label(assetChip.inner, 0, 0, "Asset", { size: 76, bg: C.dr, shadow: 2 });
+    const assetChip = DH.node(cam, GX, 905); K.label(assetChip.inner, 0, 0, "Asset", { size: 88, bg: C.dr, shadow: 2 });
     // ghost jar of tea leaves + the glass jar outline that drops over the galla
-    const jar = K.jarRig(cam, 1420, 960, 1.5, { contents: "leaves", label: "Stock", icon: "leaf", fill: 0.7, labelHidden: true, hidden: true });
-    const outline = DH.node(cam, GX, 805);
+    const jar = K.jarRig(cam, 1400, 960, 2.0, { contents: "leaves", label: "Stock", icon: "leaf", fill: 0.7, labelHidden: true, hidden: true });
+    const outline = DH.node(cam, GX, GY + 20);
     {
-      const g = outline.inner;
+      const g = K.g(outline.inner, { transform: "scale(1.08)" });
       K.paper(g, K.cutRect(-245, -390, 490, 390, 2, 20), C.glass, { opacity: 0.34 });
       K.el("path", { d: K.cutRect(-245, -390, 490, 390, 2, 20), fill: "none", stroke: "#ffffff", "stroke-width": 7, opacity: 0.9, "stroke-linejoin": "round" }, g);
       K.paper(K.shadow(g, 1), K.cutRect(-262, -436, 524, 46, 2, 18), C.woodDark);
       K.paper(g, K.cutRect(-218, -350, 18, 320, 1, 20), "#ffffff", { opacity: 0.6 });
     }
     DH.hide(outline.inner);
-    const accChip = DH.node(cam, 1085, 350); K.label(accChip.inner, 0, 0, "Account", { size: 66, bg: "paper", shadow: 2 });
+    const accChip = DH.node(cam, 1090, 410); K.label(accChip.inner, 0, 0, "Account", { size: 80, bg: "paper", shadow: 2 });
     const cal = DH.calendar(cam, 1, { hidden: true });
 
     // note that flips at the seam (K.note face → blank-tag back)
     const NT = window.S03_NOTE;
-    const note = DH.node(cam, GX - 20, 560);
+    const note = DH.node(cam, GX - 20, 600);
     const nFace = K.g(note.inner, {}); K.note(nFace, 0, 0, NT.w, NT.h * 0.95, -6);
     const nBack = K.g(note.inner, {});
     K.paper(K.shadow(nBack, 1), K.cutRect(-NT.w / 2, -NT.h / 2, NT.w, NT.h, 1.8, 16), NT.color);
@@ -86,7 +87,7 @@
 
     // "every asset gets its own jar" — the ghost jar slides next to the galla; a glass jar outline drops over the galla and dissolves
     const tEvery = cue("s03", "@every");
-    tl.to(jar.g, { x: 1260, duration: 0.7, ease: "power2.inOut" }, tEvery);
+    tl.to(jar.g, { x: GX + 570, duration: 0.7, ease: "power2.inOut" }, tEvery);
     const tGets = cue("s03", "@gets");
     tl.fromTo(outline.inner, { autoAlpha: 0, y: -150, scale: 1.07, svgOrigin: O }, { autoAlpha: 1, y: 0, scale: 1, svgOrigin: O, duration: 0.4, ease: "power2.in", immediateRender: false }, tGets);
     tl.to(outline.inner, { autoAlpha: 0, duration: 0.5, ease: "power1.in" }, tGets + 0.7);
@@ -108,7 +109,7 @@
     // ---- seam: push into the galla; one note lifts, flips (blank tag on its back), grows to fill the frame
     const tSeam = tThat - 0.2, tEnd = sc.end;
     const NZ = NT.ZOOM;
-    tl.to(cam, { scale: 1.12, svgOrigin: `${GX} 560`, duration: tEnd - tSeam - 0.3, ease: "power1.inOut" }, tSeam);
+    tl.to(cam, { scale: 1.07, svgOrigin: `${GX} 600`, duration: tEnd - tSeam - 0.3, ease: "power1.inOut" }, tSeam);
     const tN = tSeam + 0.1;
     tl.fromTo(note.inner, { autoAlpha: 0, scale: 1.0, svgOrigin: O }, { autoAlpha: 1, scale: 1.0, svgOrigin: O, duration: 0.05, immediateRender: false }, tN);
     tl.to(note.outer, { y: 470, duration: 0.45, ease: "power2.out" }, tN);

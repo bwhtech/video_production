@@ -45,3 +45,20 @@
 - `renders/L02-review-720p.en.mp4` — 1280×720, crf 23, same duration.
 - `npm run check`: 0 errors (65 lint warnings = same sub-composition / duplicate-track notes as L1). Render ≈ 16 min (screenshot capture, 4 workers).
 - Snapshots: `snapshots/<scene>/contact-sheet*.jpg` per scene, `snapshots/v*/` after the last fixes, `snapshots/final/contact-sheet-final.png` from the final render.
+
+## 2026-10-06 — v2 polish (staging only; VO, pauses, SFX, seams, cue timing untouched)
+Goal: characters/props big in frame (hero 45–60 % height), set dressing so walls are not empty, readable numbers, one deliberate Khata spot.
+- `_shared.js`: new helpers `window.KH` (Khata spot x125 y1064 s0.62 ≈ 22 % height, used by every scene that shows her), `window.tape()` (paper tape on cards), `window.skyline()` (seeded tone-on-tone skyline; colour = wall darkened).
+- s02: cards 560×740 (was 620 tall, art ×1.2 → ×1.5), pinboard panel + tape, polaroid 410 wide (window still exactly 16:9, seam math unchanged), Khata 22 % and fades out as the polaroid grows so the window equals #s03-first.
+- s03: galla ×2.4 on a 540 crate (hero ≈ 58 % of frame height), ticker/Cash/Asset/Account text 80–88 px, medallions r86, jar ×2, ghost cart bigger, skyline behind the right half; push 1.12 → 1.07. Glass-jar outline rescaled to the bigger galla.
+- s04: tag/Equity card ×1.85 (card ≈ 460 px wide; "Capital ₹50,000" ≈ 50 px), Equity chip 72 px, skyline, Khata at the shared spot (with `?`).
+- s05: galla ×2.3, Meera + Ravi 0.9 → 1.0 (≈ 57 %), tags ×1.3 (₹ text ≈ 46 px), proper furled navy umbrella (local helper, tip on the ground, was a 184 px dark stick), ₹30,000 chip 64 px, Liability chip 72 px on the give-back arrow, thought bubble moved above both heads, skyline. No Khata (nothing for her to do).
+- s06: daydream galla ×2.3, Meera 1.0, tickers 92 px (were 70), +30,000 columns 88 px, bundle-worker ×2.3, faint dream skyline clipped to the bubble, Khata at the shared spot + `!` when she stamps.
+- s07: bar pair ×2.0, people 0.6 → 0.95, galla in front of the blue bar, equation chip 68 px, clouds + skyline, ghost scale ×1.3, Khata hops on the level line.
+- s08: crates 430 × 215 with 68 px labels, cards ×1.55 with the art scaled to fill them (galla 1.5, tag 1.4, glasses 1.6, key 100), landed cards sit above the label, Meera 0.95, bell ×1.5, countdown medallion ×1.0, string lights + skyline.
+- s09/s10: tiles/cards 520 × 730 (was 480 × 600), art ×1.4–2×, headers 74 px, ₹ labels 60–80 px, skyline, Khata at the shared spot (thumbs-up / "?" card bigger).
+- s11: price tag ×1.6 (₹36,000 ≈ 50 px), Meera/cart-wala 1.0, bigger `?`, skyline. s01 / s01t / s12 untouched.
+- Checks: `npm run check` 0 errors (65 lint warnings = same sub-composition/duplicate-track notes as v1), contrast 132/132.
+- Snapshots: `snapshots/v2/<scene>/contact-sheet*.jpg`.
+- Outputs (v2): `renders/L02-final.en.mp4` 1080p, 5:36.87 (336.87 s), video+audio start_time 0.000, mix unchanged (−14 LUFS); `renders/L02-review-720p.en.mp4` 1280×720 crf 23, same duration. Render 8 min (3 workers). Final contact sheet: `snapshots/final-v2/contact-sheet-final-v2.png`.
+- Left: s01 / s01t / s12 not touched; s06's daydream is still a single big cream bubble (left half is bare during the two-column beat); the s03/s04 note-plate seam and s02 polaroid seam were only re-timed through unchanged math (checked at the seam frames).

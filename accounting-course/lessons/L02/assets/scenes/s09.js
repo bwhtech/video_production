@@ -2,29 +2,30 @@
 // Out: the tiles flip edge-on; s10's question cards flip open in the same spots (hand-authored, as L1 s08→s09).
 (function () {
   window.OWN_SEAM_IN.s10 = true;
-  window.S910 = { X: [380, 960, 1540], Y: 560, W: 480, H: 600 };
+  window.S910 = { X: [350, 960, 1570], Y: 495, W: 520, H: 730 };
 
   window.SCENES.s09 = ({ svg, tl, K, sc }) => {
     const C = K.C, DH = window.DH, O = "0 0", T0 = sc.start, L = window.S910;
     const cam = K.g(svg, { id: "s09-cam" });
     K.wall(cam, C.teal, 860);
+    window.skyline(cam, C.teal, 880, 13, { minH: 150, maxH: 200, dark: 0.14 });   // tone-on-tone set dressing
     K.table(cam, 880);
     const cal = DH.calendar(cam, 1);
     const defs = [["Asset", C.dr], ["Liability", C.cr], ["Equity", C.cr]];
     const tiles = defs.map(([name, col], i) => {
       const n = DH.node(cam, L.X[i], L.Y);
       K.tex(K.shadow(n.inner, 2), K.cutRect(-L.W / 2, -L.H / 2, L.W, L.H, 2.4, 26), "pat-paper");
-      K.paper(n.inner, K.cutRect(-L.W / 2 + 10, -L.H / 2 + 10, L.W - 20, 96, 1.6, 22), col);
-      K.text(n.inner, 0, -L.H / 2 + 60, name, { size: 60, weight: 800, color: K.onColor(col) });
-      n.art = K.g(n.inner, { transform: "translate(0 40)" });
+      K.paper(n.inner, K.cutRect(-L.W / 2 + 10, -L.H / 2 + 10, L.W - 20, 112, 1.6, 22), col);
+      K.text(n.inner, 0, -L.H / 2 + 68, name, { size: 74, weight: 800, color: K.onColor(col) });
+      n.art = K.g(n.inner, { transform: "translate(0 55)" });
       return n;
     });
-    K.jarRig(tiles[0].art, 0, 230, 1.5, { contents: "coins", label: "Cash", fill: 0.75 });
-    const rv = K.raviMama(tiles[1].art, -40, 260, 0.5, { expr: "proud", aL: [12, 8], aR: [12, 8] });
-    K.claimTag(tiles[1].art, 100, 260, 0.8, { face: "ravi", amount: 30000 });
-    K.claimTag(tiles[2].art, 0, 200, 1.35, { face: "meera", amount: 50000 });
-    const k = K.khataRig(cam, 120, 1050, 0.5, { expr: "awake" });
-    const thumb = DH.node(cam, 260, 930); K.medallion(thumb.inner, 0, 0, 46, "thumbs-up", C.leaf); DH.hide(thumb.inner);
+    K.jarRig(tiles[0].art, 0, 255, 2.0, { contents: "coins", label: "Cash", fill: 0.75 });
+    const rv = K.raviMama(tiles[1].art, -90, 300, 0.8, { expr: "proud", aL: [12, 8], aR: [12, 8] });
+    K.claimTag(tiles[1].art, 135, 300, 1.15, { face: "ravi", amount: 30000 });
+    K.claimTag(tiles[2].art, 0, 285, 2.0, { face: "meera", amount: 50000 });
+    const k = K.khataRig(cam, window.KH.x, window.KH.y, window.KH.s, { expr: "awake" });
+    const thumb = DH.node(cam, 290, 975); K.medallion(thumb.inner, 0, 0, 56, "thumbs-up", C.leaf); DH.hide(thumb.inner);
 
     // ======================================================================== timeline
     tiles.forEach((n, i) => { DH.pop(tl, n.inner, T0 + 0.15 + i * 0.15); tl.to(n.outer, { opacity: 0.7, duration: 0.01 }, T0 + 0.1); });

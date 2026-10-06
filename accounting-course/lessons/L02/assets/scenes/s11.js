@@ -23,6 +23,7 @@
     const cam = K.g(svg, { id: "s11-cam" });
     K.wall(cam, C.saffron, 860);
     K.paper(cam, K.cutRect(-40, 440, 2000, 420, 0, 80), "#e49430", { opacity: 0.35 });    // street row
+    window.skyline(cam, C.saffron, 860, 17, { minH: 110, maxH: 150, dark: 0.1 });   // tone-on-tone street skyline
     K.table(cam, 860);
     const cal = DH.calendar(cam, 1);
     // new cart (stall; its stove, glasses, tag arrive on the VO) + cart-wala
@@ -31,14 +32,14 @@
     const stove = K.g(cam, { opacity: 0 }); K.kettle(stove, SX + 120, 985 - 300 * 1.05, 1.05);
     const glasses = K.tumblerStack(cam, SX - 120, 985 - 300 * 1.05, 1.05, { n: 5 });
     glasses.items.forEach((it) => it.setAttribute("opacity", "0"));
-    const ptag = K.priceTag(cam, SX - 240, 560, 1.0, { amount: 36000, rot: -4, hidden: true });
-    const cw = K.cartWala(cam, 1750, 985, 0.9, { expr: "happy" });
+    const ptag = K.priceTag(cam, SX - 250, 470, 1.6, { amount: 36000, rot: -4, hidden: true });
+    const cw = K.cartWala(cam, 1760, 985, 1.0, { expr: "happy" });
     // Meera + the open galla on a crate, notes in hand
     K.crate(cam, 420, 975, 360, 200);
     const galla = K.galla(cam, 420, 775, 1.5, { open: true, overflow: true });
-    const m = K.meera(cam, 800, 985, 0.95, { expr: "happy", aL: [12, 8], aR: [20, 70] });
+    const m = K.meera(cam, 800, 985, 1.0, { expr: "happy", aL: [12, 8], aR: [20, 70] });
     const hold = DH.node(m.handAnchor("R"), 0, 0); K.bundle(hold.inner, 10, -10, 0.9, -8);
-    const qm = DH.node(cam, 790, 330); K.qmark(qm.inner, 0, 0, 1.6, C.cr); DH.hide(qm.inner);
+    const qm = DH.node(cam, 790, 300); K.qmark(qm.inner, 0, 0, 2.2, C.cr); DH.hide(qm.inner);
     const cover = window.DH.cover(svg, K, "3");
 
     // ======================================================================== timeline

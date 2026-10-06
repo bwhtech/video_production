@@ -11,28 +11,32 @@
     const plate = K.g(cam, {});
     K.paper(K.shadow(plate, 2), K.cutEll(960, 565, 920, 505, 3, 60), "#fff4e2");
     plate.setAttribute("data-layout-allow-overlap", "true");
+    // tone-on-tone dream skyline, clipped to the bubble
+    const bclip = K.el("clipPath", { id: "s06-bclip" }, svg); K.el("ellipse", { cx: 960, cy: 565, rx: 880, ry: 470 }, bclip);
+    const sky = K.g(plate, { "clip-path": "url(#s06-bclip)" });
+    window.skyline(sky, "#fff4e2", 975, 7, { x0: 60, x1: 1860, minH: 130, maxH: 170, dark: 0.07, to: "#c9764f" });
     const stuff = K.g(cam, {});            // everything inside the daydream
     // ground line inside the bubble
-    K.paper(stuff, K.cutRect(330, 975, 1260, 14, 0.5, 60), "#e7d3b0");
+    K.paper(stuff, K.cutRect(200, 975, 1520, 14, 0.5, 60), "#e7d3b0");
 
     // galla (left) + its ticker; Meera (centre) + her own ticker
-    const GX = 470;
-    const galla = K.galla(stuff, GX, 880, 1.2, { open: true, overflow: true });
-    const gt = K.ticker(stuff, GX, 330, 1, { value: 50000, size: 70, chip: true, w: 380, h: 100, edge: C.dr });
-    const m = K.meera(stuff, 960, 985, 0.85, { expr: "joy", aL: [12, 8], aR: [12, 8] });
-    const mt = K.ticker(stuff, 960, 380, 1, { value: 50000, size: 70, chip: true, w: 380, h: 100, edge: C.cr });
-    const up = DH.node(stuff, 1170, 380); K.arrowShape(up.inner, 0, 0, 90, C.ink, -1, -90, 26); DH.hide(up.inner);   // ink ↑ (never red/green)
-    const eqChip = DH.node(stuff, 960, 470); K.label(eqChip.inner, 0, 0, "Equity", { size: 50, bg: C.cr, shadow: 2 }); DH.hide(eqChip.inner);
+    const GX = 470, MXX = 960;
+    const galla = K.galla(stuff, GX, 975, 2.3, { open: true, overflow: true });
+    const gt = K.ticker(stuff, GX, 410, 1, { value: 50000, size: 92, chip: true, w: 470, h: 126, edge: C.dr });
+    const m = K.meera(stuff, MXX, 985, 1.0, { expr: "joy", aL: [12, 8], aR: [12, 8] });
+    const mt = K.ticker(stuff, MXX, 235, 1, { value: 50000, size: 92, chip: true, w: 470, h: 126, edge: C.cr });
+    const up = DH.node(stuff, MXX + 310, 235); K.arrowShape(up.inner, 0, 0, 120, C.ink, -1, -90, 26); DH.hide(up.inner);   // ink ↑ (never red/green)
+    const eqChip = DH.node(stuff, MXX + 400, 238); K.label(eqChip.inner, 0, 0, "Equity", { size: 64, bg: C.cr, shadow: 2 }); DH.hide(eqChip.inner);
     // the truth: two level chips
-    const colL = DH.node(stuff, 560, 300), colR = DH.node(stuff, 1360, 300);
-    K.label(colL.inner, 0, -80, "Cash", { size: 50, bg: C.dr, shadow: 2 });
-    K.label(colR.inner, 0, -80, "Liability", { size: 50, bg: C.cr, shadow: 2 });
+    const colL = DH.node(stuff, 480, 360), colR = DH.node(stuff, 1440, 360);
+    K.label(colL.inner, 0, -120, "Cash", { size: 72, bg: C.dr, shadow: 2 });
+    K.label(colR.inner, 0, -120, "Liability", { size: 72, bg: C.cr, shadow: 2 });
     DH.hide(colL.inner); DH.hide(colR.inner);
-    const tL = K.ticker(colL.inner, 0, 10, 1, { value: 0, size: 64, signed: true, chip: true, w: 340, h: 96, edge: C.dr });
-    const tR = K.ticker(colR.inner, 0, 10, 1, { value: 0, size: 64, signed: true, chip: true, w: 340, h: 96, edge: C.cr });
+    const tL = K.ticker(colL.inner, 0, 10, 1, { value: 0, size: 88, signed: true, chip: true, w: 470, h: 124, edge: C.dr });
+    const tR = K.ticker(colR.inner, 0, 10, 1, { value: 0, size: 88, signed: true, chip: true, w: 470, h: 124, edge: C.cr });
     // the Ravi-tagged bundle that grows arms and carries a kettle across (the "someone else's money, working" gag)
-    const wk = DH.node(stuff, 400, 960); DH.hide(wk.outer);
-    const wsc = K.g(wk.inner, { transform: "scale(1.6)" });
+    const wk = DH.node(stuff, 330, 960); DH.hide(wk.outer);
+    const wsc = K.g(wk.inner, { transform: "scale(2.3)" });
     const wb = K.g(wsc, {});
     K.bundle(wb, 0, -40, 1.1, 0);
     K.faceTag(wb, 8, -92, "ravi", 0.9, 0);
@@ -40,7 +44,7 @@
     K.ink(armL, [[-46, -50], [-82, -90], [-70, -128]], 11, C.skin); K.ink(armR, [[46, -50], [82, -90], [70, -128]], 11, C.skin);
     const kt = K.g(wsc, { transform: "translate(0 -150) scale(0.6)" }); K.kettle(kt, 0, 0, 1);
     // Khata (outside the bubble, bottom-left) — stamps
-    const k = K.khataRig(cam, 130, 1055, 0.45, { expr: "awake" });
+    const k = K.khataRig(cam, window.KH.x, window.KH.y, window.KH.s, { expr: "awake" });
 
     // ======================================================================== timeline
     // the bubble contracts from "full frame" to its resting size; the daydream fades in
@@ -61,7 +65,8 @@
     // the gap: Khata stamps the ✗ on her ticker
     const tStamp = segEnd("s06a") + 0.35;
     k.arm(tl, tStamp - 0.25, "R", 120, 0.2).arm(tl, tStamp, "R", 15, 0.2);
-    const stamp = K.stamp(tl, stuff, 960, 380, tStamp, 1.5);
+    const stamp = K.stamp(tl, stuff, MXX, 235, tStamp, 2.0);
+    k.emote(tl, tStamp + 0.15, "!", 1.2);
     m.pose(tl, tStamp + 0.2, { aL: [12, 8], aR: [12, 8], dur: 0.3 });
     // s06b
     const tNope = cue("s06b", "@nope");
@@ -90,14 +95,14 @@
     tl.to(mt.body, { autoAlpha: 0, duration: 0.25 }, tLiab - 0.2);
     m.expr(tl, tLiab, "happy");
     const tCross = cue("s06b", "@someone");
-    tl.fromTo(wk.outer, { autoAlpha: 0, x: 400 }, { autoAlpha: 1, duration: 0.2, immediateRender: false }, tCross - 0.1);
+    tl.fromTo(wk.outer, { autoAlpha: 0, x: 330 }, { autoAlpha: 1, duration: 0.2, immediateRender: false }, tCross - 0.1);
     const dur = tWork + 0.9 - tCross;
-    tl.to(wk.outer, { x: 1480, duration: dur, ease: K.stepEase(dur, "none", tCross) }, tCross);
+    tl.to(wk.outer, { x: 1570, duration: dur, ease: K.stepEase(dur, "none", tCross) }, tCross);
     const steps = Math.round(dur / 0.27);
     for (let i = 0; i < steps; i++) { const t = tCross + (i * dur) / steps; tl.set(wk.inner, { y: i % 2 ? 0 : -8 }, t); tl.set(armL, { rotation: i % 2 ? 14 : -14, svgOrigin: "-46 -50" }, t); tl.set(armR, { rotation: i % 2 ? -14 : 14, svgOrigin: "46 -50" }, t); }
     tl.set(wk.inner, { y: 0 }, tCross + dur);
     // "remember it isn't yours" — its string goes taut toward the right edge (Ravi, off-screen)
-    DH.string(tl, stuff, cue("s06b", "@remember"), [1480, 860], [1900, 800], 0.7, 8);
+    DH.string(tl, stuff, cue("s06b", "@remember"), [1570, 820], [1900, 760], 0.7, 8);
     m.expr(tl, cue("s06b", "@remember"), "thinking").look(tl, cue("s06b", "@remember"), 9, 2);
     m.jitter(tl, T0, sc.end); k.jitter(tl, T0, sc.end);
   };

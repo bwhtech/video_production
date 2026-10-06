@@ -6,28 +6,30 @@
     const C = K.C, DH = window.DH, O = "0 0", T0 = sc.start;
     const cam = K.g(svg, { id: "s07-cam" });
     K.wall(cam, C.sky, 860);
+    [[300, 300, 1], [1330, 250, 0.9], [1790, 250, 0.7]].forEach(([x, y, k]) => K.cloud(K.g(cam, { opacity: 0.4 }), x, y, k * 1.4));   // tone-on-tone clouds
+    window.skyline(cam, C.sky, 860, 9, { minH: 130, maxH: 190, dark: 0.14 });
     K.table(cam, 860);
     const cal = DH.calendar(cam, 1);
 
     // ghost scale (behind everything), shown for ~1 s at the end
     const gs = K.g(cam, { opacity: 0 });
-    K.scaleRig(gs, 900, 1000, 1.0, { totals: false });
+    K.scaleRig(gs, 640, 1000, 1.3, { totals: false });
 
-    const BX = 900, BYY = 975, BS = 1.9;
-    // Cash galla (left)
-    const galla = K.galla(cam, 330, 900, 1.45, { open: true, overflow: true });
-    const cashL = DH.node(cam, 330, 900 - 30 * 1.45); K.label(cashL.inner, 0, 0, "Cash", { size: 54, bg: "paper", shadow: 2 });
+    const BX = 600, BYY = 975, BS = 2.0;
     const bars = K.barPair(cam, BX, BYY, BS, { max: 100000, refH: 380, faces: ["ravi", "meera"] });
+    // Cash galla (left)
+    const galla = K.galla(cam, BX - 260, 965, 1.5, { open: true, overflow: true });
+    const cashL = DH.node(cam, BX - 260, 965 - 30 * 1.5); K.label(cashL.inner, 0, 0, "Cash", { size: 66, bg: "paper", shadow: 2 });
 
     // people at the right edge, holding strings (strings first so they sit behind)
-    const MX = 1700, RX = 1840, PS = 0.6;
+    const MX = 1530, RX = 1770, PS = 0.95;
     const hand = (x) => [x - PS * 235, 985 - PS * 365];
     const ravi = K.raviMama(cam, RX, 985, PS, { expr: "proud", aL: [52, 60], aR: [12, 8] });
     const meera = K.meera(cam, MX, 985, PS, { expr: "happy", aL: [52, 60], aR: [12, 8] });
     const ravi_mid = [BX + 130 * BS, BYY - 15000 * (380 / 100000) * BS], meera_mid = [BX + 130 * BS, BYY - 55000 * (380 / 100000) * BS];
 
-    const eq = DH.node(cam, 960, 215); K.label(eq.inner, 0, 0, "₹80,000 = ₹30,000 + ₹50,000", { size: 56, bg: "paper", shadow: 2 }); DH.hide(eq.inner);
-    const k = K.khataRig(cam, 120, 1050, 0.5, { expr: "awake" });
+    const eq = DH.node(cam, 900, 190); K.label(eq.inner, 0, 0, "₹80,000 = ₹30,000 + ₹50,000", { size: 68, bg: "paper", shadow: 2 }); DH.hide(eq.inner);
+    const k = K.khataRig(cam, window.KH.x, window.KH.y, window.KH.s, { expr: "awake" });
 
     // ======================================================================== timeline
     meera.blinks(tl, T0 + 1, sc.end, 3.3); ravi.blinks(tl, T0 + 2, sc.end, 3.7);
@@ -46,6 +48,7 @@
     // level line across both tops
     const tLevel = cue("s07", "@meera.");
     bars.level(tl, tLevel + 0.75, { dur: 0.5, hold: 1.2 });
+    k.hop(tl, tLevel + 0.9, { height: 30 }).expr(tl, tLevel + 0.9, "happy");
     // "Every rupee … belongs to someone" — a string from each block to each person, tightening in sequence
     const tEvery = cue("s07", "@every");
     const sR = DH.string(tl, cam, tEvery, ravi_mid, hand(RX), 0.6, 10);

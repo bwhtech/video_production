@@ -3,44 +3,57 @@
 // Out: Meera's happy thought bubble swells to fill the frame (s06 owns the continuation).
 (function () {
   window.OWN_SEAM_IN.s06 = true;
-  window.S05_BUBBLE = { x: 1180, y: 330, color: "#fff4e2" };
+  window.S05_BUBBLE = { x: 1440, y: 232, color: "#fff4e2" };
 
   window.SCENES.s05 = ({ svg, tl, K, sc }) => {
     const C = K.C, DH = window.DH, O = "0 0", W = window.S_WHIP, T0 = sc.start;
-    const GX = 400, GY = 770, GS = 1.8, BY = 505;
+    const GX = 360, GY = 770, GS = 2.3, BY = 395, PS = 1.0, TG = 1.3;
+    // a proper furled umbrella (navy canopy, wooden crook, brass tip) — grip point at (0,0), tip ~330 px below at PS = 1
+    const umbrella = (parent) => {
+      const g = K.shadow(K.g(parent, { transform: "scale(1.12)" }), 1);
+      K.ink(g, [[0, -4], [0, 40]], 12, "#6e4422");
+      K.ink(g, K.arc(-17, -4, 17, 0, Math.PI, 10), 12, "#6e4422");
+      K.paper(g, K.cutPoly([[0, 30], [24, 90], [27, 150], [12, 218], [0, 236], [-12, 218], [-27, 150], [-24, 90]], 1.4, 14), C.navy);
+      K.ink(g, [[-6, 60], [-12, 200]], 4, "#4a5f86", { opacity: 0.8 });
+      K.paper(g, K.cutRect(-27, 112, 54, 14, 1, 8), C.cream);
+      K.paper(g, K.cutRect(-4, 232, 8, 14, 0.8, 6), C.brass);
+      return g;
+    };
     const cam = K.g(svg, { id: "s05-cam" });
     K.wall(cam, C.saffron, 860);
     K.paper(cam, K.cutRect(-1500, -40, 1500, 1000, 0, 80), C.saffron);                 // set continues left for the whip-pan settle
+    window.skyline(cam, C.saffron, 860, 5, { x0: -1500, x1: 2100, minH: 110, maxH: 150, dark: 0.1 });
     K.table(cam, 860);
     K.paper(cam, K.cutRect(-1500, 856, 1500, 330, 0, 80), "#b7895a");
-    K.crate(cam, GX, 960, 500, 190);
+    K.crate(cam, GX, 960, 580, 200);
     const galla = K.galla(cam, GX, GY, GS, { open: true, overflow: true });
-    const tick = K.ticker(cam, GX, 235, 1, { value: 50000, size: 80, chip: true, w: 440, h: 112, edge: C.dr });
+    const tick = K.ticker(cam, GX, 215, 1, { value: 50000, size: 84, chip: true, w: 470, h: 118, edge: C.dr });
     const cal = DH.calendar(cam, 1);
 
     // claim tags + strings live BEHIND the people
-    const MX = 1280, RX = 1690, HM = [MX - 0.9 * 235, 985 - 0.9 * 365], HR = [RX - 0.9 * 235, 985 - 0.9 * 365];
-    const eq = K.equityCard(cam, 760, 730, 1, { pockets: 2, capital: 50000 });         // folded: Meera's face tag
-    DH.string(tl, cam, 0, [760, 580], HM, 0.01, 30);
-    const ravi = K.claimTag(cam, 1030, 840, 1, { face: "ravi", amount: 30000, hidden: true });
-    const secondM = K.claimTag(cam, GX + 330, 720, 0.8, { face: "meera", amount: 50000, hidden: true });
+    const MX = 1290, RX = 1700, HM = [MX - PS * 235, 985 - PS * 365], HR = [RX - PS * 235, 985 - PS * 365];
+    const ETX = 770, ETY = 735, RTX = 1010, RTY = 905;     // Meera's tag / Ravi's tag (bottom centres)
+    const eq = K.equityCard(cam, ETX, ETY, TG, { pockets: 2, capital: 50000 });         // folded: Meera's face tag
+    DH.string(tl, cam, 0, [ETX, ETY - 150 * TG], HM, 0.01, 30);
+    const ravi = K.claimTag(cam, RTX, RTY, TG, { face: "ravi", amount: 30000, hidden: true });
+    const secondM = K.claimTag(cam, GX + 330, 560, 1.1, { face: "meera", amount: 50000, hidden: true });
 
     [eq.g, secondM.g, ravi.g].forEach((e) => { e.setAttribute("data-layout-allow-overlap", "true"); e.querySelectorAll("text").forEach((t) => t.setAttribute("data-layout-allow-overlap", "true")); });
-    const m = K.meera(cam, MX, 985, 0.9, { expr: "happy", aL: [52, 60], aR: [12, 8] });
-    const r = K.raviMama(cam, RX, 985, 0.9, { expr: "proud", aL: [12, 8], aR: [12, 8] });
+    const m = K.meera(cam, MX, 985, PS, { expr: "happy", aL: [52, 60], aR: [12, 8] });
+    const r = K.raviMama(cam, RX, 985, PS, { expr: "proud", aL: [12, 8], aR: [12, 8] });
     gsap.set(r.mover, { x: 600 });
-    const um = K.g(r.handAnchor("R"), {}); K.umbrella(um, 0, 0, 0.8, 0); K.holdProp(r, "R", um, [12, 8]);
+    const um = K.g(r.handAnchor("R"), {}); umbrella(um); K.holdProp(r, "R", um, [12, 8]);
 
     // new money: the ₹30,000 bundle (flies from Ravi to the galla), its chip, the blank tag
-    const bun = DH.node(cam, RX - 160, 690); K.bundle(bun.inner, 0, 0, 1.4, -8); DH.hide(bun.outer);
-    const chip = DH.node(cam, 1560, 520); K.label(chip.inner, 0, 0, "₹30,000", { size: 52, bg: "paper", rot: -3, shadow: 2 }); DH.hide(chip.inner);
-    const slip = DH.node(cam, MX + 60, 760); K.slip(slip.inner, 0, 0, 0.9, 6, "handshake"); DH.hide(slip.outer);
-    const blank = DH.node(cam, GX + 135, BY + 30); DH.blankTag(blank.inner, 190, 150); DH.hide(blank.outer);
-    const liab = DH.node(cam, 1010, 520); K.label(liab.inner, 0, 0, "Liability", { size: 60, bg: C.cr, shadow: 2 }); DH.hide(liab.inner);
+    const bun = DH.node(cam, RX - 170, 700); K.bundle(bun.inner, 0, 0, 1.9, -8); DH.hide(bun.outer);
+    const chip = DH.node(cam, 1590, 300); K.label(chip.inner, 0, 0, "₹30,000", { size: 64, bg: "paper", rot: -3, shadow: 2 }); DH.hide(chip.inner);
+    const slip = DH.node(cam, MX + 80, 780); K.slip(slip.inner, 0, 0, 1.3, 6, "handshake"); DH.hide(slip.outer);
+    const blank = DH.node(cam, GX + 200, BY + 40); DH.blankTag(K.g(blank.inner, { transform: `scale(${TG})` }), 190, 150); DH.hide(blank.outer);
+    const liab = DH.node(cam, 1010, 345); K.label(liab.inner, 0, 0, "Liability", { size: 72, bg: C.cr, shadow: 2 }); DH.hide(liab.inner);
     // "give it back" arrow (revealed left → right by a clip)
-    const clip = K.el("clipPath", { id: "s05-arrowclip" }, svg), clipR = K.el("rect", { x: 0, y: 330, width: 0, height: 260 }, clip);
+    const clip = K.el("clipPath", { id: "s05-arrowclip" }, svg), clipR = K.el("rect", { x: 0, y: 180, width: 0, height: 340 }, clip);
     const back = K.g(cam, { "clip-path": "url(#s05-arrowclip)" });
-    K.curveArrow(back, [[GX + 220, 470], [700, 380], [1150, 350], [1480, 400], [1590, 470]], C.cr, 14);
+    K.curveArrow(back, [[GX + 290, 430], [800, 290], [1150, 250], [1480, 300], [1640, 360]], C.cr, 16);
     // thought bubble (seam out): Meera's happy daydream
     const BB = window.S05_BUBBLE;
     const bub = DH.node(cam, BB.x, BB.y);
@@ -71,7 +84,7 @@
     const tThirty = cue("s05a", "@thirty");
     DH.pop(tl, chip.inner, tThirty - 0.1);
     tl.fromTo(bun.outer, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.05, immediateRender: false }, tThirty);
-    DH.fly(tl, bun.outer, tThirty + 0.2, [RX - 160, 690], [GX, BY + 20], 1.1, 230);
+    DH.fly(tl, bun.outer, tThirty + 0.2, [RX - 170, 700], [GX, BY + 20], 1.1, 260);
     DH.out(tl, chip.inner, tThirty + 0.9, 0.25);
     const tLand = tThirty + 1.3;
     galla.open(tl, tLand - 0.2, { notes: false });
@@ -81,15 +94,15 @@
     // "She'll pay it back" — Meera hands over a small IOU slip; he pockets it
     const tPay = cue("s05a", "@pay");
     m.arm(tl, tPay - 0.2, "R", 48, 40, 0.25);
-    tl.fromTo(slip.outer, { autoAlpha: 0, x: MX + 60, y: 770 }, { autoAlpha: 1, duration: 0.1, immediateRender: false }, tPay);
-    DH.fly(tl, slip.outer, tPay, [MX + 60, 770], [HR[0], HR[1] + 20], 0.7, 60);
+    tl.fromTo(slip.outer, { autoAlpha: 0, x: MX + 80, y: 780 }, { autoAlpha: 1, duration: 0.1, immediateRender: false }, tPay);
+    DH.fly(tl, slip.outer, tPay, [MX + 80, 780], [HR[0], HR[1] + 20], 0.7, 60);
     tl.to(slip.outer, { autoAlpha: 0, duration: 0.15 }, tPay + 0.75);
     m.arm(tl, tPay + 0.5, "R", 12, 8, 0.3);
 
     // s05b — "what tag goes on this new money?" a blank tag on the bundle; Meera's face tag slides off; Ravi's sticks
     const tTag = cue("s05b", "@tag");
     tick.pulse(tl, cue("s05b", "@eighty"), 1.06);
-    tl.fromTo(blank.outer, { autoAlpha: 0, y: BY - 20 }, { autoAlpha: 1, y: BY + 30, duration: 0.3, ease: "power2.in", immediateRender: false }, tTag - 0.1);
+    tl.fromTo(blank.outer, { autoAlpha: 0, y: BY + 20 }, { autoAlpha: 1, y: BY + 40, duration: 0.3, ease: "power2.in", immediateRender: false }, tTag - 0.1);
     const tNot = cue("s05b", "@not");
     secondM.enter(tl, tNot - 0.1);
     m.expr(tl, tNot, "worried");
@@ -97,9 +110,9 @@
     tl.to(secondM.body, { autoAlpha: 0, duration: 0.3 }, tNot + 0.9);
     // "It came from Ravi Mama" — the tag leaves the bundle, Ravi's face stamps on, its string runs to his hand
     const tCame = cue("s05b", "@came"), tMama = cue("s05b", "@mama,");
-    tl.to(blank.outer, { x: 1030, duration: 0.8, ease: "power1.inOut" }, tCame);
-    tl.to(blank.outer, { y: 840 - 150 - 60, duration: 0.4, ease: "power2.out" }, tCame);
-    tl.to(blank.outer, { y: 840 - 150, duration: 0.4, ease: "power2.in" }, tCame + 0.4);
+    tl.to(blank.outer, { x: RTX, duration: 0.8, ease: "power1.inOut" }, tCame);
+    tl.to(blank.outer, { y: RTY - 150 * TG - 60, duration: 0.4, ease: "power2.out" }, tCame);
+    tl.to(blank.outer, { y: RTY - 150 * TG, duration: 0.4, ease: "power2.in" }, tCame + 0.4);
     tl.to(blank.outer, { autoAlpha: 0, duration: 0.1 }, tMama);
     ravi.enter(tl, tMama);
     ravi.stringTo(tl, cue("s05b", "@and") + 0.1, HR[0], HR[1], { dur: 0.7 });
