@@ -1,0 +1,158 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.6,
+  "text": "[softly] April fifth. Rent day. Meera counts out five thousand rupees and hands it to the landlord."
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.2,
+  "text": "Last time, every rupee that left the galla came back as something — a cart, some tea and sugar. But this time? No new asset arrives. No debt gets smaller. Nothing comes back."
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "[curious] The scale tips. So what's on the other side?"
+ },
+ {
+  "id": "s02",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "[warmly] First, last time's answers. One. After Gopal's delivery, the equation reads: eighty-eight thousand equals thirty-eight thousand, plus fifty thousand. Two. Buying the cart for cash doesn't move the scale. Cash goes down, the cart comes in — a swap on the left. Three. Paying back part of Ravi Mama's loan? Cash goes down, and so does what Meera owes. Both sides go down together, and the scale stays level. And paying back a loan is not an expense — the debt just got smaller."
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.5,
+  "text": "And Checkpoint one — Aman's samosa cart. One. Aman puts in twenty thousand of his savings. Cash up, capital up. Twenty thousand equals zero, plus twenty thousand. Two. A ten-thousand-rupee bank loan. Cash up, liability up. Thirty thousand equals ten thousand, plus twenty thousand."
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.7,
+  "text": "Three. A cart and fryer for eighteen thousand, in cash. A swap on the left, so the totals don't change. Four. Three thousand rupees of potatoes, flour and oil, on credit from Sharma Kirana. Stock up, and what he owes goes up. Thirty-three thousand equals thirteen thousand, plus twenty thousand. [playful] Four out of four? Your scale never tipped either."
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 2.0,
+  "text": "So, back to rent day. Freeze. Which two things changed?"
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 0.5,
+  "text": "The first one is easy. Cash went down by five thousand. But the second? Ravi Mama is still owed thirty thousand. Gopal is still owed eight thousand. Nobody's debt got smaller. So the change has to land on the only thing left — Meera's own share. Equity."
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "[curious] Let's unfold Meera's tag. It opens into a card — the equity card — with two pockets. Capital: the fifty thousand Meera put in. And a new, empty pocket. The rent comes out of that new pocket. For now, it reads minus five thousand."
+ },
+ {
+  "id": "s04d",
+  "scene": 4,
+  "gap_after": 0.8,
+  "text": "Eighty-three thousand equals thirty-eight thousand, plus forty-five thousand. The scale settles. Money that is used up to run the business, gone for good, is called an expense. An expense shrinks the owner's share."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.4,
+  "text": "[excited] Now the fun part. Meera opens for business. Raju, her new helper, keeps the glasses moving. Two weeks of chai — glass after glass after glass."
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 2.0,
+  "text": "By April fifteenth, the galla has collected eighteen thousand rupees from sales. Cash goes up by eighteen thousand. Meera, your turn. Where's the second change?"
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 0.5,
+  "text": "She didn't borrow it, so there's no new debt. She didn't add her savings, so capital stays at fifty thousand. She earned it. So it goes into the new pocket — right beside the rent."
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "One lakh one thousand equals thirty-eight thousand, plus sixty-three thousand. Money the business earns by selling what it sells is called revenue. Revenue grows the owner's share."
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 1.8,
+  "text": "Now peek inside that new pocket. Eighteen thousand came in as revenue. Five thousand went out as an expense. What's left?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "Thirteen thousand rupees. That's profit, so far — revenue, minus expenses. Now the pocket has a name. [warmly] And look where it lives. Inside equity, right next to Meera's capital. Ravi Mama and Gopal are owed fixed amounts. But every rupee of profit belongs to the owner."
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "So our equation gets a little longer. Assets equal liabilities, plus capital, plus revenue, minus expenses. Same scale. We just looked inside Meera's share."
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 0.4,
+  "text": "Now, here's the trap most new owners fall into. Money left the galla, so it must be an expense."
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "[firmly] Nope. Remember the cart? Thirty-six thousand rupees left the galla for that too. So ask one question. Is it used up — gone for good? The rent? Yes. April is paid for, and May will need more. The cart? No. It's still standing right there, making chai. That's an asset."
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "Your turn. Just imagine this — it's not in Meera's books. Meera pays three hundred rupees for a gas refill. Which two things changed?"
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "Cash, down three hundred. And the profit pocket, down three hundred. The gas burns away making chai — it's used up. An expense."
+ },
+ {
+  "id": "s08c",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "One more. Meera buys a second kettle for fifteen hundred rupees. Which two things changed?"
+ },
+ {
+  "id": "s08d",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "Cash, down fifteen hundred. And Equipment, up fifteen hundred — a swap on the left. The profit pocket doesn't move. The kettle stays, and keeps making chai for years. An asset."
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "So — Meera's share has two pockets. Revenue fills the profit pocket. Expenses drain it. And profit is the difference."
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. Is the thirty-six-thousand-rupee cart an expense? Two. What's Meera's profit after the rent and the first two weeks of sales? Three. Which side of the scale does profit live on? Answers at the start of the next lesson."
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time, the office next door takes chai for the whole floor, every single day. Just one catch. They pay later."
+ }
+]

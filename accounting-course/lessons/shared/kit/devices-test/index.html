@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Paper devices — test sheet</title>
+    <link rel="stylesheet" href="kit/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="kit/icons.js"></script>
+    <script src="kit/kit.js"></script>
+    <script src="kit/rig.js"></script>
+    <script src="kit/devices.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #b7895a; }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+      .layer { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+      svg { display: block; }
+      .fontwarm { position: absolute; left: -9999px; font-family: "Baloo 2", Kalam; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="12" data-width="1920" data-height="1080">
+      <!-- shared paper materials (copied from lessons/L01/index.template) -->
+      <svg width="0" height="0" style="position:absolute">
+        <defs>
+          <pattern id="pat-cover" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/cover.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-paper" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/paper.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-kraft" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/kraft.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-grain" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/construction.jpg" width="768" height="432" /></pattern>
+          <filter id="sh1" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="3" dy="4" stdDeviation="2" flood-color="#3b2614" flood-opacity="0.35" /></filter>
+          <filter id="sh2" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="6" dy="8" stdDeviation="3.5" flood-color="#3b2614" flood-opacity="0.38" /></filter>
+          <filter id="rough" x="-15%" y="-15%" width="130%" height="130%"><feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" seed="3" result="n" /><feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G" /></filter>
+          <filter id="sh3" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="10" dy="14" stdDeviation="6" flood-color="#3b2614" flood-opacity="0.4" /></filter>
+        </defs>
+      </svg>
+      <div class="fontwarm"><span style="font-family:'Baloo 2';font-weight:800">₹1,06,700</span><span style="font-family:Kalam">30 Apr</span></div>
+      <section id="p" class="clip" data-start="0" data-duration="12" data-track-index="1"><svg id="svg" class="layer" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg></section>
+    </div>
+    <script>
+      const K = window.KIT, C = K.C;
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const svg = document.getElementById("svg");
+
+      // ---- stage groups (hard-cut windows; the devices themselves are what is under test) ----
+      const mkStage = (t0, t1, wall, wallY) => {
+        const st = K.g(svg, {});
+        K.wall(st, wall, wallY ?? 880); K.table(st, wallY ?? 880);
+        if (t0 > 0) { st.setAttribute("opacity", "0"); tl.set(st, { autoAlpha: 1 }, t0); }   // (never two sets on one target at the same time: reverse seeks run them backwards)
+        tl.set(st, { autoAlpha: 0 }, t1);
+        return st;
+      };
+      const A = mkStage(0, 4.2, C.teal), B = mkStage(4.2, 7.4, C.teal), Cc = mkStage(7.4, 10.0, C.sky, 1000), D = mkStage(10.0, 11.1, C.saffron), E = mkStage(11.1, 12.01, C.leaf, 1000);
+
+      // ===================================================== A · scaleRig hero (0 – 4.2) → HUD (3.3)
+      const sc = K.scaleRig(A, 960, 880, 1.0, { tint: true, L: 50000, R: 50000, equation: "₹50,000 = ₹0 + ₹50,000" });
+      sc.equation(tl, 0.05, "₹50,000 = ₹0 + ₹50,000", { plain: false });
+      sc.labelPan(tl, 0.1, "L", ["Assets"], { stagger: 0.001 });
+      sc.labelPan(tl, 0.1, "R", [{ text: "Liabilities", value: 0 }, { text: "Equity", value: 50000 }], { stagger: 0.001 });
+      const cash = K.jarRig(sc.pans.L.g, -80, 0, 0.85, { label: "Cash", contents: "coins", amount: 50000, edge: C.dr });
+      const stock = K.jarRig(sc.pans.L.g, 80, 0, 0.85, { label: "Stock", contents: "leaves", amount: 0, fill: 0, edge: C.dr, hidden: true });
+      const meeraTag = K.claimTag(sc.pans.R.g, -78, 0, 0.62, { face: "meera", amount: 50000 });
+      const gopalTag = K.claimTag(sc.pans.R.g, 78, 0, 0.62, { face: "gopal", amount: 0, hidden: true });
+      stock.enter(tl, 0.7);
+      stock.fill(tl, 0.9, 1.0);
+      stock.tick(tl, 0.9, 0, 6000, 0.7);
+      sc.setTotals(tl, 0.9, 56000, undefined, { dur: 0.7 });
+      sc.tilt(tl, 0.9, 5);                                   // left heavy, ≤ 6°, smooth
+      gopalTag.enter(tl, 1.8);
+      gopalTag.tick(tl, 1.9, 0, 6000, 0.6);
+      sc.setTotals(tl, 1.9, undefined, 56000, { dur: 0.7 });
+      sc.settle(tl, 2.1);                                    // power2.inOut back to level, no overshoot, 1.5 s hold flag
+      sc.levelFlash(tl, 3.0);
+      sc.equation(tl, 2.3, "₹56,000 = ₹6,000 + ₹50,000");
+      sc.pulseTotal(tl, 3.1, "both");
+      sc.hud(tl, 3.3, true);                                 // → top-right ~28 %
+
+      // ===================================================== B · props shelf + whichTwo (4.2 – 7.4)
+      K.label(B, 960, 300, "jars & tags", { size: 40, bg: "paper" });
+      const jc = K.jarRig(B, 190, 960, 0.8, { label: "Cash", contents: "coins", amount: 44000, edge: C.dr });
+      const jeq = K.jarRig(B, 390, 960, 0.8, { label: "Equipment", contents: "cart", amount: 0, fill: 0, labelHidden: true, edge: C.dr });
+      const jst = K.jarRig(B, 590, 960, 0.8, { label: "Stock", contents: "leaves", amount: 6000, fill: 1, edge: C.dr });
+      const jic = K.jarRig(B, 790, 960, 0.8, { contents: "sticker", icon: "package", icon_: 1, amount: 12000, edge: C.dr });
+      const faces = [["ravi", 30000], ["gopal", 8000], ["meera", 50000], ["infotech", 12000], ["customer", 5000], ["electricity", 1800]];
+      const tags = faces.map(([f, a], i) => K.claimTag(B, 1010 + i * 160, 960, 0.7, { face: f, amount: a, rot: (i % 2 ? 2 : -2) }));
+      tags[1].stringTo(tl, 4.4, 1150, 520, { dur: 0.6 });
+      jeq.landSticker(tl, 4.45, { dx: 300, dy: -140 });
+      jeq.tieLabel(tl, 5.15);
+      jeq.tick(tl, 5.1, 0, 36000, 0.6);
+      jc.tick(tl, 4.5, 44000, 8000, 0.6);
+      const w2 = K.whichTwo(B, { veil: true });
+      const slots = w2.run(tl, 4.4, { slots: 2, gap: 1.3, fill: [{ label: "Cash", delta: -36000, side: "L" }, { label: "Equipment", delta: 36000, side: "R" }] });
+      jc.light(tl, slots.tDing); jeq.light(tl, slots.tDing); tags[0].light(tl, slots.tDing);
+      w2.clear(tl, 7.0);
+      K.stamp(tl, B, 1500, 640, 6.7, 1.1);                   // ✗ rubber stamp (1.25 → 1.0, no shake)
+
+      // ===================================================== C · equity card + bar pair + mini scales (7.4 – 10)
+      const eq = K.equityCard(Cc, 520, 1000, 1.0, { pockets: 2, unnamed: true, capital: 50000, hidden: true });
+      eq.enter(tl, 7.45);
+      eq.unfold(tl, 7.7);
+      eq.slip(tl, 8.3, "Profit", -5000, { icon: "key" });
+      eq.slip(tl, 8.6, "Profit", 18000, { icon: "coffee" });
+      eq.light(tl, 8.9, "Profit");
+      eq.namePocket(tl, 9.1, "Profit", { value: 13000 });
+      eq.addPocket(tl, 9.45, "Drawings", { amount: 0 });
+      const bp = K.barPair(Cc, 1430, 1000, 0.82, { max: 100000, hidden: false });
+      bp.grow(tl, 7.6, 80000, [30000, 50000]);
+      bp.level(tl, 8.6, { hold: 1 });
+      const minis = [["upup", 300], ["downdown", 700], ["swapL", 1100], ["swapR", 1500]].map(([kind, mx], i) => {
+        const m = K.scaleRig.mini(Cc, mx, 470, 0.3, { hidden: true });
+        K.jarRig(m.pans.L.g, 0, 0, 1.2, { contents: "coins", w: 120, h: 130 });
+        K.claimTag(m.pans.R.g, 0, 0, 0.8, { face: i === 1 ? "ravi" : "customer" });
+        m.enter(tl, 7.5 + i * 0.1);
+        m.arrows(tl, 8.0 + i * 0.15, kind);
+        return m;
+      });
+      minis[0].tilt(tl, 8.2, -4);
+      minis[0].settle(tl, 8.9);
+      K.icon(minis[1].slot.g, "coins", 0, 0, 74, C.ink, 2.4);
+
+      // ===================================================== D · calendar, pause, banner, imagine, stamp (10 – 11.1)
+      const cal = K.calendarStrip(D, 960, 70, 1.0, { highlight: 2 });
+      cal.tickTo(tl, 10.15, 9, { dur: 0.7, stepped: true });
+      const pm = K.pauseMedallion(D, 460, 560, 0.95, {});
+      pm.countdown(tl, 10.05, { dur: 0.9 });   // (real countdown = 3.2 s; shortened so the test timeline stays 12 s)
+      K.checkpointBanner(D, 1330, 290, 0.95, 3, {});
+      const im = K.imagineCard(D, 1330, 700, 620, 330, { rot: -1 });
+      K.text(im.area.g, 0, -20, "?", { size: 120, color: C.ink });
+      K.ticker(im.area.g, 0, 80, 1, { value: 4000, size: 64 });
+      K.stamp(tl, D, 1560, 760, 10.7, 1.0);
+      K.text(D, 460, 880, "pause + 3-2-1", { size: 38, color: C.white });
+
+      // ===================================================== E · props, report props, tickers, 3-slot (11.1 – 12)
+      K.tumblerStack(E, 190, 1000, 1.0, {});
+      K.priceTag(E, 430, 1000, 1.0, { amount: 36000, rot: -3 });
+      K.gasCylinder(E, 660, 1000, 0.9, {});
+      K.cartSticker(E, 880, 920, 1.0, {});
+      K.filmStrip(E, 1080, 640, 600, 190, ["coins", "coffee"], 0, { resultFrames: 2 });
+      K.polaroid(E, 1600, 700, 380, 470, 3, { twoColumn: true });
+      const big = K.ticker(E, 960, 370, 1, { value: 0, size: 84, chip: true, w: 560, h: 130 });
+      big.to(tl, 11.1, 106700, 0.8);
+      const w3 = K.whichTwo(E, { veil: false });
+      w3.run(tl, 11.1, { slots: 3, gap: 0, veil: false, fill: [{ label: "Cash", delta: 8000, side: "L", at: 11.25 }, { label: "Sales", delta: 8000, side: "R", at: 11.35 }, { label: "Gopal Dairy", delta: -2000, side: "R", at: 11.45 }] });
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

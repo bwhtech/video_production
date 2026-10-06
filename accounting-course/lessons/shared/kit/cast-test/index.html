@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Cast + props — motion test</title>
+    <link rel="stylesheet" href="kit/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="kit/icons.js"></script>
+    <script src="kit/kit.js"></script>
+    <script src="kit/rig.js"></script>
+    <script src="kit/cast.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #b7895a; }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+      .layer { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+      #bg { background: #b7895a; }
+      svg { display: block; }
+      .fontwarm { position: absolute; left: -9999px; font-family: "Baloo 2", Kalam; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="10" data-width="1920" data-height="1080">
+      <div id="bg" class="layer"></div>
+      <!-- shared paper materials (same defs block as lessons/L01/index.template) -->
+      <svg width="0" height="0" style="position:absolute">
+        <defs>
+          <pattern id="pat-cover" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/cover.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-paper" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/paper.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-kraft" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/kraft.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-grain" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/construction.jpg" width="768" height="432" /></pattern>
+          <filter id="sh1" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="3" dy="4" stdDeviation="2" flood-color="#3b2614" flood-opacity="0.35" /></filter>
+          <filter id="sh2" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="6" dy="8" stdDeviation="3.5" flood-color="#3b2614" flood-opacity="0.38" /></filter>
+          <filter id="rough" x="-15%" y="-15%" width="130%" height="130%"><feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" seed="3" result="n" /><feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G" /></filter>
+          <filter id="sh3" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="10" dy="14" stdDeviation="6" flood-color="#3b2614" flood-opacity="0.4" /></filter>
+        </defs>
+      </svg>
+      <div class="fontwarm"><span style="font-family:'Baloo 2';font-weight:800">₹1,06,700</span><span style="font-family:Kalam">Credit the giver ₹</span></div>
+      <section id="people" class="clip" data-start="0" data-duration="4.6" data-track-index="1"><svg id="svgP" class="layer" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg></section>
+      <section id="propsA" class="clip" data-start="4.6" data-duration="2.8" data-track-index="2"><svg id="svgA" class="layer" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg></section>
+      <section id="propsB" class="clip" data-start="7.4" data-duration="2.6" data-track-index="1"><svg id="svgB" class="layer" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg></section>
+    </div>
+    <script>
+      const K = window.KIT, C = K.C;
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const nm = (p, x, t) => K.label(p, x, 1020, t, { size: 34, bg: "paper", shadow: 1 });
+
+      // ============================================================ A · people (0 – 4.6 s)  — expr + wave + walkTo for every new rig
+      {
+        const svg = document.getElementById("svgP");
+        K.wall(svg, C.teal, 900); K.table(svg, 880);
+        const GY = 975, S = 0.8;
+        const list = [
+          ["Aman", K.aman(svg, 170, GY, S)],
+          ["Gopal", K.gopal(svg, 490, GY, S)],
+          ["Raju", K.raju(svg, 800, GY, S)],
+          ["Landlord", K.landlord(svg, 1110, GY, S)],
+          ["Cart-wala", K.cartWala(svg, 1420, GY, S)],
+          ["CA friend", K.caFriend(svg, 1730, GY, S)],
+        ];
+        list.forEach(([n, r], i) => {
+          const x = [170, 490, 800, 1110, 1420, 1730][i];
+          nm(svg, x, n);
+          const d = i * 0.09;
+          r.blinks(tl, 0, 4.4, 2.4 + i * 0.1, 3 + i);
+          r.expr(tl, 0.7 + d, ["grin", "happy", "amazed", "neutral", "puzzled", "grin"][i]);
+          r.wave(tl, 1.3 + d, "R", 2);
+          r.walkTo(tl, 2.6 + d, x - 52, 0.9);
+          r.expr(tl, 3.7 + d, "proud");
+        });
+        list[2][1].carry(tl, 0.2);
+        list[3][1].jingle(tl, 2.0).jingle(tl, 3.4);
+        list[0][1].look(tl, 1.0, -8, 0);
+        list[5][1].pose(tl, 3.7, { aR: [40, -66] });
+      }
+
+      // ============================================================ B1 · props A (4.6 – 7.4 s)
+      {
+        const svg = document.getElementById("svgA");
+        K.wall(svg, C.sky, 900); K.table(svg, 880);
+        const T0 = 4.6;
+        // dawn panel (top right)
+        const dp = K.dawnBand(svg, 1470, 50, 0.215, {});   // full-frame art (1920×1080) shrunk to a thumbnail
+        dp.rise(tl, T0 + 0.3, T0 + 1.9).moonOff(tl, T0 + 2.0, 0.7);
+        // building + Priya in a window
+        const b = K.infotechBuilding(svg, 230, 960, 0.8);
+        b.lightAll(tl, T0 + 0.2, 0.09, [0, 2, 1, 5, 3, 4, 8, 6, 7, 9, 11, 10]);
+        const win = b.windowAnchor(4);
+        const pr = K.priya(win, 0, b.bustY(0.38), 0.38, { expr: "happy" });
+        // Priya hidden until her window lights
+        win.setAttribute("opacity", 0); tl.set(win, { opacity: 1 }, T0 + 0.9);
+        pr.expr(tl, T0 + 1.2, "grin").wave(tl, T0 + 1.5, "R", 2);
+        // samosa cart + Aman
+        const cart = K.samosaCart(svg, 800, 960, 0.9);
+        cart.sizzle(tl, T0 + 0.2, T0 + 2.5).ring(tl, T0 + 1.1);
+        const am = K.aman(svg, 1160, 960, 0.8, { expr: "happy" });
+        am.wave(tl, T0 + 0.8, "R", 3).expr(tl, T0 + 0.7, "grin");
+        // chalk ghost of the stall
+        const gh = K.cartGhost(svg, 1560, 960, 0.5, { ghost: false });
+        gh.show(tl, T0 + 0.1, 0.6).fill(tl, T0 + 1.6, 0.4);
+        nm(svg, 230, "Infotech"); nm(svg, 800, "Samosa cart"); nm(svg, 1560, "Cart ghost");
+      }
+
+      // ============================================================ B2 · props B (7.4 – 10 s)
+      {
+        const svg = document.getElementById("svgB");
+        K.wall(svg, "#f2a33a", 900); K.table(svg, 880);
+        const T0 = 7.4;
+        const cans = K.milkCans(svg, 270, 960, 1.35);
+        cans.tip(tl, T0 + 0.6, 1, 62, 0.6);
+        const sk = K.sacks(svg, 780, 960, 1.25);
+        const sc = K.scooter(svg, 1250, 960, 1.05);
+        sc.rollTo(tl, T0 + 0.5, 1330, 1.6);
+        const ph = K.phone(svg, 1740, 560, 1.25, { screen: "sms" });
+        ph.buzz(tl, T0 + 0.3).show(tl, T0 + 0.7, { kind: "CREDITED", amount: "₹15,000" });
+        ph.show(tl, T0 + 1.6, { type: "upi", kind: "RECEIVED", amount: "₹1,500", from: "Priya" });
+        nm(svg, 270, "Milk cans"); nm(svg, 760, "Sacks + tin"); nm(svg, 1290, "Scooter"); nm(svg, 1740, "Phone");
+        // new Lucide glyphs as medallions + stickers
+        const names = Object.keys(K.ICON_COLORS);
+        names.forEach((n, i) => {
+          const x = 90 + i * 93;
+          K.medallion(svg, x, 110, 36, n);
+          K.icon(svg, n, x, 200, 56, C.ink, 2.2);
+        });
+        K.medallion(svg, 90 + names.length * 93, 110, 36, "trending-down"); K.icon(svg, "trending-down", 90 + names.length * 93, 200, 56, C.ink, 2.2);
+      }
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

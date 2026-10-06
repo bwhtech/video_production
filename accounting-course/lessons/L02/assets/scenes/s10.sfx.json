@@ -1,0 +1,76 @@
+[
+ {
+  "sfx": "page_flip",
+  "at": {
+   "scene": "s10",
+   "t": 0.0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@turn",
+   "offset": -0.05
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s10",
+   "word": "@one"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s10",
+   "word": "@milk"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s10",
+   "word": "@two"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@scooter"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s10",
+   "word": "@three",
+   "nth": 2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s10",
+   "word": "@share"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "page_flip",
+  "at": {
+   "seg": "s10",
+   "word": "@next"
+  },
+  "vol": 0.45
+ }
+]

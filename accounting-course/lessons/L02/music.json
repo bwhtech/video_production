@@ -1,0 +1,62 @@
+{
+ "_doc": "DRAFT \u2014 tune by ear. start/end = absolute seconds or '<scene>.start|end[+/-offset]'; duck = sidechain under VO; loop = repeat the file to fill the span. Optional: \"hush\": {\"seg\": \"s05a\", \"word\": \"@same\", \"offset\": 0.0} dips the bed at a VO word.",
+ "tracks": [
+  {
+   "f": "music/night.mp3",
+   "start": "s01.start",
+   "end": "s01t.start+0.4",
+   "vol": 0.2,
+   "fi": 1.5,
+   "fo": 1.0,
+   "duck": true
+  },
+  {
+   "f": "music/intro_sting.mp3",
+   "start": "s01t.start+0.1",
+   "end": "s01t.end+0.6",
+   "vol": 0.55,
+   "fi": 0.0,
+   "fo": 0.6,
+   "duck": false
+  },
+  {
+   "f": "music/main.mp3",
+   "start": "s02.start+0.2",
+   "end": "s11.end",
+   "vol": 0.16,
+   "fi": 1.5,
+   "fo": 1.5,
+   "duck": true,
+   "loop": true
+  },
+  {
+   "f": "music/outro.mp3",
+   "start": "s12.start-0.3",
+   "end": "s12.end",
+   "vol": 0.45,
+   "fi": 0.3,
+   "fo": 2.0,
+   "duck": false
+  },
+  {
+   "f": "sfx/night_street.mp3",
+   "start": "s01.start",
+   "end": "s01.start+13",
+   "vol": 0.28,
+   "fi": 1.0,
+   "fo": 1.5,
+   "duck": false,
+   "loop": true
+  },
+  {
+   "f": "sfx/dawn_birds.mp3",
+   "start": "s01.start+12.6",
+   "end": "s01t.start",
+   "vol": 0.22,
+   "fi": 1.0,
+   "fo": 0.8,
+   "duck": false,
+   "loop": true
+  }
+ ]
+}

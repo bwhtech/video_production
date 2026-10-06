@@ -1,0 +1,1470 @@
+{
+ "sfx": [
+  {
+   "sfx": "note_rustle",
+   "t": 4.12,
+   "vol": 0.22,
+   "dur": 0.9,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 2.4,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 4.5,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 6.31,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "tink_low",
+   "t": 6.41,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 12.429,
+   "vol": 0.18,
+   "dur": null,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 13.149,
+   "vol": 0.18,
+   "dur": null,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 13.629,
+   "vol": 0.18,
+   "dur": null,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 16.169,
+   "vol": 0.2,
+   "dur": null,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 17.609,
+   "vol": 0.2,
+   "dur": null,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "scale_creak",
+   "t": 22.092,
+   "vol": 0.55,
+   "dur": null,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 24.342,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "swoosh_transition",
+   "t": 25.731,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s01.sfx.json"
+  },
+  {
+   "sfx": "book_thump",
+   "t": 26.551,
+   "vol": 0.7,
+   "dur": null,
+   "fade": 0,
+   "src": "s01t.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 26.711,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s01t.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 26.961,
+   "vol": 0.5,
+   "dur": null,
+   "fade": 0,
+   "src": "s01t.sfx.json"
+  },
+  {
+   "sfx": "sparkle",
+   "t": 27.231,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s01t.sfx.json"
+  },
+  {
+   "sfx": "cover_swing",
+   "t": 29.031,
+   "vol": 0.7,
+   "dur": null,
+   "fade": 0,
+   "src": "s01t.sfx.json"
+  },
+  {
+   "sfx": "cover_swing",
+   "t": 33.821,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s02.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 37.711,
+   "vol": 0.2,
+   "dur": null,
+   "fade": 0,
+   "src": "s02.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 41.371,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s02.sfx.json"
+  },
+  {
+   "sfx": "cover_swing",
+   "t": 42.661,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s02.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 46.471,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s02.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 49.191,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s02.sfx.json"
+  },
+  {
+   "sfx": "cover_swing",
+   "t": 50.781,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s02.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 54.111,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s02.sfx.json"
+  },
+  {
+   "sfx": "tink_low",
+   "t": 57.391,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s02.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 59.731,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s02.sfx.json"
+  },
+  {
+   "sfx": "pen_scratch",
+   "t": 62.321,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s02.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 73.019,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 73.739,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "coin_clink",
+   "t": 74.779,
+   "vol": 0.22,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 77.799,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 81.839,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 82.559,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "coin_clink",
+   "t": 83.759,
+   "vol": 0.22,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 87.019,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 88.704,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 92.184,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 94.094,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 100.464,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 101.744,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "coin_clink",
+   "t": 103.304,
+   "vol": 0.22,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 106.764,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "boing_hop",
+   "t": 108.204,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "bell_ring",
+   "t": 108.454,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "cover_swing",
+   "t": 110.674,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 111.124,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s03.sfx.json"
+  },
+  {
+   "sfx": "tick_tock",
+   "t": 116.49,
+   "vol": 0.5,
+   "dur": 2.6,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 121.8,
+   "vol": 0.5,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "note_rustle",
+   "t": 120.7,
+   "vol": 0.2,
+   "dur": 0.8,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 120.9,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "scale_creak",
+   "t": 121.2,
+   "vol": 0.5,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "stamp_thunk",
+   "t": 123.96,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "stamp_thunk",
+   "t": 126.64,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 134.62,
+   "vol": 0.5,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "paper_unfold",
+   "t": 138.254,
+   "vol": 0.55,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 143.074,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "tink_high",
+   "t": 144.844,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "tink_low",
+   "t": 148.214,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 150.014,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 153.304,
+   "vol": 0.5,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "scale_creak",
+   "t": 160.867,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "tink_high",
+   "t": 161.817,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 167.147,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s04.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 176.594,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "tray_clatter",
+   "t": 177.904,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "glass_clink",
+   "t": 179.904,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "coin_clink",
+   "t": 180.254,
+   "vol": 0.18,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "glass_clink",
+   "t": 180.684,
+   "vol": 0.22,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "coin_clink",
+   "t": 181.184,
+   "vol": 0.18,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "glass_clink",
+   "t": 181.204,
+   "vol": 0.22,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "coin_clink",
+   "t": 181.804,
+   "vol": 0.18,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "glass_clink",
+   "t": 182.264,
+   "vol": 0.22,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "ka_ching",
+   "t": 187.382,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "scale_creak",
+   "t": 190.442,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 190.442,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "tick_tock",
+   "t": 194.531,
+   "vol": 0.5,
+   "dur": 2.0,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 196.831,
+   "vol": 0.5,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "stamp_thunk",
+   "t": 197.211,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "stamp_thunk",
+   "t": 197.511,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "stamp_thunk",
+   "t": 200.741,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 206.331,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "ka_ching",
+   "t": 206.881,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "tink_high",
+   "t": 207.931,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 218.401,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s05.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 225.316,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 226.096,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "coin_clink",
+   "t": 226.396,
+   "vol": 0.2,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 228.416,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 232.99,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "note_rustle",
+   "t": 233.59,
+   "vol": 0.18,
+   "dur": 0.6,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "ka_ching",
+   "t": 233.84,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "cover_swing",
+   "t": 241.1,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 242.84,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "tink_high",
+   "t": 252.72,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 257.631,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 258.511,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 259.871,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 260.911,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 262.191,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "rise_three",
+   "t": 263.811,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s06.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 268.838,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "note_rustle",
+   "t": 272.858,
+   "vol": 0.18,
+   "dur": 0.8,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 274.598,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "stamp_thunk",
+   "t": 275.681,
+   "vol": 0.7,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "bwomp_no",
+   "t": 275.781,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 277.041,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 280.721,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 285.401,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "pen_scratch",
+   "t": 286.901,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 288.321,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 289.301,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 290.101,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "kettle_bubble",
+   "t": 291.401,
+   "vol": 0.18,
+   "dur": 1.8,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 294.681,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 295.381,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s07.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 298.029,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 301.949,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "tick_tock",
+   "t": 306.116,
+   "vol": 0.5,
+   "dur": 3.0,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 310.016,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "bell_ring",
+   "t": 310.116,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "scale_creak",
+   "t": 310.016,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 312.696,
+   "vol": 0.28,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 313.296,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "bell_ring",
+   "t": 313.396,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "tink_high",
+   "t": 314.196,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 315.316,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 317.776,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 320.042,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 322.682,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "tick_tock",
+   "t": 326.172,
+   "vol": 0.5,
+   "dur": 3.0,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 330.072,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "bell_ring",
+   "t": 330.172,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "glass_clink",
+   "t": 332.832,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 333.232,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "bell_ring",
+   "t": 333.332,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "stamp_thunk",
+   "t": 336.372,
+   "vol": 0.25,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 341.132,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "ding_yes",
+   "t": 342.032,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s08.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 344.207,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s09.sfx.json"
+  },
+  {
+   "sfx": "rise_three",
+   "t": 345.387,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s09.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 346.117,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s09.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 350.277,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s09.sfx.json"
+  },
+  {
+   "sfx": "ka_ching",
+   "t": 351.327,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s09.sfx.json"
+  },
+  {
+   "sfx": "boing_hop",
+   "t": 352.327,
+   "vol": 0.4,
+   "dur": null,
+   "fade": 0,
+   "src": "s09.sfx.json"
+  },
+  {
+   "sfx": "cover_swing",
+   "t": 352.629,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s09.sfx.json"
+  },
+  {
+   "sfx": "cover_swing",
+   "t": 352.829,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 353.599,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 355.439,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 359.359,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "tink_low",
+   "t": 364.159,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "tink_high",
+   "t": 364.409,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "page_flip",
+   "t": 368.839,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 374.13,
+   "vol": 0.1,
+   "dur": null,
+   "fade": 0,
+   "src": "s11.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 374.63,
+   "vol": 0.1,
+   "dur": null,
+   "fade": 0,
+   "src": "s11.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 375.13,
+   "vol": 0.1,
+   "dur": null,
+   "fade": 0,
+   "src": "s11.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 375.67,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s11.sfx.json"
+  },
+  {
+   "sfx": "glass_clink",
+   "t": 375.87,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s11.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 377.21,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s11.sfx.json"
+  },
+  {
+   "sfx": "book_thump",
+   "t": 379.849,
+   "vol": 0.7,
+   "dur": null,
+   "fade": 0,
+   "src": "s11.sfx.json"
+  },
+  {
+   "sfx": "cover_swing",
+   "t": 380.199,
+   "vol": 0.6,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 380.499,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "boing_hop",
+   "t": 381.049,
+   "vol": 0.45,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "sparkle",
+   "t": 387.199,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 25.781,
+   "vol": 0.32,
+   "dur": null,
+   "fade": 0,
+   "src": "seams"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 30.381,
+   "vol": 0.32,
+   "dur": null,
+   "fade": 0,
+   "src": "seams"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 65.129,
+   "vol": 0.32,
+   "dur": null,
+   "fade": 0,
+   "src": "seams"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 111.214,
+   "vol": 0.32,
+   "dur": null,
+   "fade": 0,
+   "src": "seams"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 171.834,
+   "vol": 0.32,
+   "dur": null,
+   "fade": 0,
+   "src": "seams"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 222.766,
+   "vol": 0.32,
+   "dur": null,
+   "fade": 0,
+   "src": "seams"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 267.348,
+   "vol": 0.32,
+   "dur": null,
+   "fade": 0,
+   "src": "seams"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 296.019,
+   "vol": 0.32,
+   "dur": null,
+   "fade": 0,
+   "src": "seams"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 342.657,
+   "vol": 0.32,
+   "dur": null,
+   "fade": 0,
+   "src": "seams"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 352.429,
+   "vol": 0.32,
+   "dur": null,
+   "fade": 0,
+   "src": "seams"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 370.16,
+   "vol": 0.32,
+   "dur": null,
+   "fade": 0,
+   "src": "seams"
+  },
+  {
+   "sfx": "paper_whoosh",
+   "t": 379.549,
+   "vol": 0.32,
+   "dur": null,
+   "fade": 0,
+   "src": "seams"
+  }
+ ],
+ "music": [
+  {
+   "f": "music/intro_sting.mp3",
+   "start": 26.231,
+   "end": 31.331000000000003,
+   "vol": 0.55,
+   "fi": 0.0,
+   "fo": 0.6,
+   "duck": false
+  },
+  {
+   "f": "music/m2_main.mp3",
+   "start": 30.931,
+   "end": 379.899,
+   "vol": 0.16,
+   "fi": 1.5,
+   "fo": 1.5,
+   "duck": true,
+   "loop": true
+  },
+  {
+   "f": "music/outro.mp3",
+   "start": 379.599,
+   "end": 391.899,
+   "vol": 0.45,
+   "fi": 0.3,
+   "fo": 2.0,
+   "duck": false
+  },
+  {
+   "f": "sfx/day_street.mp3",
+   "start": 0.0,
+   "end": 26.431,
+   "vol": 0.14,
+   "fi": 1.0,
+   "fo": 0.6,
+   "duck": false,
+   "loop": true
+  },
+  {
+   "f": "sfx/day_street.mp3",
+   "start": 172.184,
+   "end": 185.184,
+   "vol": 0.12,
+   "fi": 0.8,
+   "fo": 1.2,
+   "duck": false,
+   "loop": true
+  }
+ ]
+}

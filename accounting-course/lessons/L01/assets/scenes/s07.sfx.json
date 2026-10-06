@@ -1,0 +1,18 @@
+[
+ {"sfx": "pop", "at": {"seg": "s07", "word": "@record", "offset": -0.15}, "vol": 0.5},
+ {"sfx": "paper_slide", "at": {"seg": "s07", "word": "@record", "offset": 0.35}, "vol": 0.55},
+ {"sfx": "paper_slide", "at": {"seg": "s07", "word": "@record", "offset": 0.55}, "vol": 0.45},
+ {"sfx": "quill_scratch", "at": {"seg": "s07", "word": "@record", "offset": 0.75}, "vol": 0.35, "dur": 1.1},
+ {"sfx": "pop", "at": {"seg": "s07", "word": "@sort", "offset": -0.15}, "vol": 0.5},
+ {"sfx": "glass_clink", "at": {"seg": "s07", "word": "@sort", "offset": 0.72}, "vol": 0.5},
+ {"sfx": "glass_clink", "at": {"seg": "s07", "word": "@sort", "offset": 1.04}, "vol": 0.45},
+ {"sfx": "pop", "at": {"seg": "s07", "word": "@sum", "offset": -0.15}, "vol": 0.5},
+ {"sfx": "coin_clink", "at": {"seg": "s07", "word": "@sum", "offset": 0.7}, "vol": 0.55},
+ {"sfx": "pop", "at": {"seg": "s07", "word": "@movie", "offset": -0.1}, "vol": 0.45},
+ {"sfx": "shutter", "at": {"seg": "s07", "word": "@photo", "offset": -0.1}, "vol": 0.55},
+ {"sfx": "rise_three", "at": {"seg": "s07", "word": "@record", "nth": 2, "offset": -0.05}, "vol": 0.55},
+ {"sfx": "paper_whoosh", "at": {"seg": "s07", "word": "@next", "offset": -0.15}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s07", "word": "@month"}, "vol": 0.45},
+ {"sfx": "tink_low", "at": {"seg": "s07", "word": "@day"}, "vol": 0.35},
+ {"sfx": "tink_high", "at": {"seg": "s07", "word": "@time"}, "vol": 0.35}
+]

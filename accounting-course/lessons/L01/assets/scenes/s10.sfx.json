@@ -1,0 +1,7 @@
+[
+ {"sfx": "galla_clack", "at": {"seg": "s10", "word": "@opens"}, "vol": 0.4},
+ {"sfx": "note_rustle", "at": {"seg": "s10", "word": "@fifty", "offset": -0.1}, "vol": 0.45, "dur": 1.0},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@fifty", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s10", "word": "@whose", "offset": 0.2}, "vol": 0.45},
+ {"sfx": "book_thump", "at": {"scene": "s11", "t": -0.2}, "vol": 0.8}
+]

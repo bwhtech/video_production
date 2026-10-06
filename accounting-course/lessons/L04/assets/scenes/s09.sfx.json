@@ -1,0 +1,9 @@
+[
+ {"sfx": "pop", "at": {"seg": "s09", "word": "@meera's", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "rise_three", "at": {"seg": "s09", "word": "@pockets", "offset": -0.2}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s09", "word": "@revenue", "offset": -0.35}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s09", "word": "@profit", "nth": 2, "offset": -0.35}, "vol": 0.3},
+ {"sfx": "ka_ching", "at": {"seg": "s09", "word": "@difference", "offset": -0.1}, "vol": 0.35},
+ {"sfx": "boing_hop", "at": {"seg": "s09", "word": "@difference", "offset": 0.9}, "vol": 0.4},
+ {"sfx": "cover_swing", "at": {"seg": "s09", "edge": "end", "offset": 0.45}, "vol": 0.3}
+]

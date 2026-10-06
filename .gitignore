@@ -7,3 +7,23 @@ edit/
 downloads/
 graphics/renders/
 .claude/settings.local.json
+
+# accounting-course: heavy build products stay local; VO + SFX mp3s are tracked so cloud agents can build without the TTS key
+accounting-course/lessons/*/renders/
+accounting-course/lessons/*/snapshots/
+accounting-course/lessons/*/review/
+accounting-course/lessons/*/icon-lab/
+accounting-course/lessons/shared/kit/*-test/snapshots/
+accounting-course/lessons/*/assets/sfx-norm/
+accounting-course/course/look/renders/
+accounting-course/research/reference-video/
+accounting-course/research/voice-candidates/
+accounting-course/studio/renders/
+accounting-course/studio/snapshots/
+accounting-course/motion-tests/*/renders/
+accounting-course/**/__pycache__/
+accounting-course/**/.DS_Store
+!accounting-course/lessons/*/assets/vo/*.mp3
+!accounting-course/lessons/*/assets/vo-hi/*.mp3
+!accounting-course/lessons/shared/audio/sfx/*.mp3
+!accounting-course/lessons/shared/audio/music/*.mp3

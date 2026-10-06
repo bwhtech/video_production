@@ -1,0 +1,594 @@
+{
+ "accounts": {
+  "Cash": "A",
+  "Bank": "A",
+  "Infotech (receivable)": "A",
+  "Stock": "A",
+  "Equipment": "A",
+  "Accumulated depreciation": "CA",
+  "Loan from Ravi Mama": "L",
+  "Gopal Dairy (payable)": "L",
+  "Advance from customer": "L",
+  "Electricity payable": "L",
+  "Capital": "E",
+  "Drawings": "D",
+  "Sales": "R",
+  "Catering revenue": "R",
+  "Rent": "X",
+  "Salary": "X",
+  "Interest": "X",
+  "Electricity": "X",
+  "Cost of supplies used": "X",
+  "Depreciation": "X"
+ },
+ "transactions": [
+  {
+   "id": "T1",
+   "date": "Apr 1",
+   "text": "Meera puts ₹50,000 of her savings into the stall",
+   "debit": [
+    [
+     "Cash",
+     50000
+    ]
+   ],
+   "credit": [
+    [
+     "Capital",
+     50000
+    ]
+   ],
+   "lesson": 2
+  },
+  {
+   "id": "T2",
+   "date": "Apr 1",
+   "text": "Ravi Mama lends ₹30,000",
+   "debit": [
+    [
+     "Cash",
+     30000
+    ]
+   ],
+   "credit": [
+    [
+     "Loan from Ravi Mama",
+     30000
+    ]
+   ],
+   "lesson": 2
+  },
+  {
+   "id": "T3",
+   "date": "Apr 2",
+   "text": "Buys cart, stove, kettles, glasses for ₹36,000 cash",
+   "debit": [
+    [
+     "Equipment",
+     36000
+    ]
+   ],
+   "credit": [
+    [
+     "Cash",
+     36000
+    ]
+   ],
+   "lesson": 3
+  },
+  {
+   "id": "T4",
+   "date": "Apr 2",
+   "text": "Buys tea, milk, sugar stock for ₹6,000 cash",
+   "debit": [
+    [
+     "Stock",
+     6000
+    ]
+   ],
+   "credit": [
+    [
+     "Cash",
+     6000
+    ]
+   ],
+   "lesson": 3
+  },
+  {
+   "id": "T5",
+   "date": "Apr 3",
+   "text": "Buys ₹8,000 stock on credit from Gopal Dairy",
+   "debit": [
+    [
+     "Stock",
+     8000
+    ]
+   ],
+   "credit": [
+    [
+     "Gopal Dairy (payable)",
+     8000
+    ]
+   ],
+   "lesson": 3
+  },
+  {
+   "id": "T6",
+   "date": "Apr 5",
+   "text": "Pays April rent ₹5,000 cash",
+   "debit": [
+    [
+     "Rent",
+     5000
+    ]
+   ],
+   "credit": [
+    [
+     "Cash",
+     5000
+    ]
+   ],
+   "lesson": 4
+  },
+  {
+   "id": "T7",
+   "date": "Apr 15",
+   "text": "Cash sales Apr 2–15: ₹18,000",
+   "debit": [
+    [
+     "Cash",
+     18000
+    ]
+   ],
+   "credit": [
+    [
+     "Sales",
+     18000
+    ]
+   ],
+   "lesson": 4
+  },
+  {
+   "id": "T8",
+   "date": "Apr 15",
+   "text": "Deposits ₹15,000 cash in bank",
+   "debit": [
+    [
+     "Bank",
+     15000
+    ]
+   ],
+   "credit": [
+    [
+     "Cash",
+     15000
+    ]
+   ],
+   "lesson": 5
+  },
+  {
+   "id": "T9",
+   "date": "Apr 16",
+   "text": "Bills Infotech ₹6,000 on credit",
+   "debit": [
+    [
+     "Infotech (receivable)",
+     6000
+    ]
+   ],
+   "credit": [
+    [
+     "Sales",
+     6000
+    ]
+   ],
+   "lesson": 5
+  },
+  {
+   "id": "T10",
+   "date": "Apr 20",
+   "text": "Pays Gopal Dairy ₹5,000 of ₹8,000",
+   "debit": [
+    [
+     "Gopal Dairy (payable)",
+     5000
+    ]
+   ],
+   "credit": [
+    [
+     "Cash",
+     5000
+    ]
+   ],
+   "lesson": 5
+  },
+  {
+   "id": "T11",
+   "date": "Apr 22",
+   "text": "₹4,000 cash advance for May 5 catering",
+   "debit": [
+    [
+     "Cash",
+     4000
+    ]
+   ],
+   "credit": [
+    [
+     "Advance from customer",
+     4000
+    ]
+   ],
+   "lesson": 5
+  },
+  {
+   "id": "T12",
+   "date": "Apr 25",
+   "text": "Infotech pays ₹4,000 by UPI",
+   "debit": [
+    [
+     "Bank",
+     4000
+    ]
+   ],
+   "credit": [
+    [
+     "Infotech (receivable)",
+     4000
+    ]
+   ],
+   "lesson": 5
+  },
+  {
+   "id": "T13",
+   "date": "Apr 30",
+   "text": "Cash sales Apr 16–30: ₹22,000",
+   "debit": [
+    [
+     "Cash",
+     22000
+    ]
+   ],
+   "credit": [
+    [
+     "Sales",
+     22000
+    ]
+   ],
+   "lesson": 8
+  },
+  {
+   "id": "T14",
+   "date": "Apr 30",
+   "text": "Bills Infotech ₹4,000 on credit",
+   "debit": [
+    [
+     "Infotech (receivable)",
+     4000
+    ]
+   ],
+   "credit": [
+    [
+     "Sales",
+     4000
+    ]
+   ],
+   "lesson": 8
+  },
+  {
+   "id": "T15",
+   "date": "Apr 30",
+   "text": "Pays Raju's salary ₹8,000 by UPI",
+   "debit": [
+    [
+     "Salary",
+     8000
+    ]
+   ],
+   "credit": [
+    [
+     "Bank",
+     8000
+    ]
+   ],
+   "lesson": 8
+  },
+  {
+   "id": "T16",
+   "date": "Apr 30",
+   "text": "Pays Ravi Mama ₹3,300 (₹3,000 loan + ₹300 interest)",
+   "debit": [
+    [
+     "Loan from Ravi Mama",
+     3000
+    ],
+    [
+     "Interest",
+     300
+    ]
+   ],
+   "credit": [
+    [
+     "Cash",
+     3300
+    ]
+   ],
+   "lesson": 8
+  },
+  {
+   "id": "T17",
+   "date": "Apr 30",
+   "text": "Meera takes ₹3,000 home",
+   "debit": [
+    [
+     "Drawings",
+     3000
+    ]
+   ],
+   "credit": [
+    [
+     "Cash",
+     3000
+    ]
+   ],
+   "lesson": 8
+  },
+  {
+   "id": "T18",
+   "date": "Apr 30",
+   "text": "April electricity bill ₹1,000, unpaid",
+   "debit": [
+    [
+     "Electricity",
+     1000
+    ]
+   ],
+   "credit": [
+    [
+     "Electricity payable",
+     1000
+    ]
+   ],
+   "lesson": 10
+  },
+  {
+   "id": "T19",
+   "date": "Apr 30",
+   "text": "Stock count ₹4,000 left → ₹10,000 used",
+   "debit": [
+    [
+     "Cost of supplies used",
+     10000
+    ]
+   ],
+   "credit": [
+    [
+     "Stock",
+     10000
+    ]
+   ],
+   "lesson": 10
+  },
+  {
+   "id": "T20",
+   "date": "Apr 30",
+   "text": "Depreciation ₹36,000 ÷ 36 months",
+   "debit": [
+    [
+     "Depreciation",
+     1000
+    ]
+   ],
+   "credit": [
+    [
+     "Accumulated depreciation",
+     1000
+    ]
+   ],
+   "lesson": 10
+  }
+ ],
+ "snapshots": [
+  {
+   "id": "T1",
+   "assets": 50000,
+   "liabilities": 0,
+   "equity": 50000,
+   "profit": 0,
+   "cash": 50000,
+   "bank": 0
+  },
+  {
+   "id": "T2",
+   "assets": 80000,
+   "liabilities": 30000,
+   "equity": 50000,
+   "profit": 0,
+   "cash": 80000,
+   "bank": 0
+  },
+  {
+   "id": "T3",
+   "assets": 80000,
+   "liabilities": 30000,
+   "equity": 50000,
+   "profit": 0,
+   "cash": 44000,
+   "bank": 0
+  },
+  {
+   "id": "T4",
+   "assets": 80000,
+   "liabilities": 30000,
+   "equity": 50000,
+   "profit": 0,
+   "cash": 38000,
+   "bank": 0
+  },
+  {
+   "id": "T5",
+   "assets": 88000,
+   "liabilities": 38000,
+   "equity": 50000,
+   "profit": 0,
+   "cash": 38000,
+   "bank": 0
+  },
+  {
+   "id": "T6",
+   "assets": 83000,
+   "liabilities": 38000,
+   "equity": 45000,
+   "profit": -5000,
+   "cash": 33000,
+   "bank": 0
+  },
+  {
+   "id": "T7",
+   "assets": 101000,
+   "liabilities": 38000,
+   "equity": 63000,
+   "profit": 13000,
+   "cash": 51000,
+   "bank": 0
+  },
+  {
+   "id": "T8",
+   "assets": 101000,
+   "liabilities": 38000,
+   "equity": 63000,
+   "profit": 13000,
+   "cash": 36000,
+   "bank": 15000
+  },
+  {
+   "id": "T9",
+   "assets": 107000,
+   "liabilities": 38000,
+   "equity": 69000,
+   "profit": 19000,
+   "cash": 36000,
+   "bank": 15000
+  },
+  {
+   "id": "T10",
+   "assets": 102000,
+   "liabilities": 33000,
+   "equity": 69000,
+   "profit": 19000,
+   "cash": 31000,
+   "bank": 15000
+  },
+  {
+   "id": "T11",
+   "assets": 106000,
+   "liabilities": 37000,
+   "equity": 69000,
+   "profit": 19000,
+   "cash": 35000,
+   "bank": 15000
+  },
+  {
+   "id": "T12",
+   "assets": 106000,
+   "liabilities": 37000,
+   "equity": 69000,
+   "profit": 19000,
+   "cash": 35000,
+   "bank": 19000
+  },
+  {
+   "id": "T13",
+   "assets": 128000,
+   "liabilities": 37000,
+   "equity": 91000,
+   "profit": 41000,
+   "cash": 57000,
+   "bank": 19000
+  },
+  {
+   "id": "T14",
+   "assets": 132000,
+   "liabilities": 37000,
+   "equity": 95000,
+   "profit": 45000,
+   "cash": 57000,
+   "bank": 19000
+  },
+  {
+   "id": "T15",
+   "assets": 124000,
+   "liabilities": 37000,
+   "equity": 87000,
+   "profit": 37000,
+   "cash": 57000,
+   "bank": 11000
+  },
+  {
+   "id": "T16",
+   "assets": 120700,
+   "liabilities": 34000,
+   "equity": 86700,
+   "profit": 36700,
+   "cash": 53700,
+   "bank": 11000
+  },
+  {
+   "id": "T17",
+   "assets": 117700,
+   "liabilities": 34000,
+   "equity": 83700,
+   "profit": 36700,
+   "cash": 50700,
+   "bank": 11000
+  },
+  {
+   "id": "T18",
+   "assets": 117700,
+   "liabilities": 35000,
+   "equity": 82700,
+   "profit": 35700,
+   "cash": 50700,
+   "bank": 11000
+  },
+  {
+   "id": "T19",
+   "assets": 107700,
+   "liabilities": 35000,
+   "equity": 72700,
+   "profit": 25700,
+   "cash": 50700,
+   "bank": 11000
+  },
+  {
+   "id": "T20",
+   "assets": 106700,
+   "liabilities": 35000,
+   "equity": 71700,
+   "profit": 24700,
+   "cash": 50700,
+   "bank": 11000
+  }
+ ],
+ "closing": {
+  "Cash": 50700,
+  "Bank": 11000,
+  "Infotech (receivable)": 6000,
+  "Stock": 4000,
+  "Equipment": 36000,
+  "Accumulated depreciation": -1000,
+  "Loan from Ravi Mama": -27000,
+  "Gopal Dairy (payable)": -3000,
+  "Advance from customer": -4000,
+  "Electricity payable": -1000,
+  "Capital": -50000,
+  "Drawings": 3000,
+  "Sales": -50000,
+  "Rent": 5000,
+  "Salary": 8000,
+  "Interest": 300,
+  "Electricity": 1000,
+  "Cost of supplies used": 10000,
+  "Depreciation": 1000
+ },
+ "trial_balance_total": 136000
+}

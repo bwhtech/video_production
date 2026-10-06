@@ -1,0 +1,17 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s03a", "word": "@what"}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s03a", "word": "@meet"}, "vol": 0.4},
+ {"sfx": "scale_settle", "at": {"seg": "s03a", "word": "@meet", "offset": 0.55}, "vol": 0.5},
+ {"sfx": "tink_low", "at": {"seg": "s03a", "word": "@left"}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s03a", "word": "@right"}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s03a", "word": "@assets"}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s03a", "word": "@liabilities"}, "vol": 0.25},
+ {"sfx": "tink_low", "at": {"seg": "s03b", "word": "@puts"}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s03b", "word": "@puts", "offset": 0.08}, "vol": 0.4},
+ {"sfx": "scale_settle", "at": {"seg": "s03b", "word": "@level"}, "vol": 0.6},
+ {"sfx": "coin_clink", "at": {"seg": "s03b", "word": "@lends", "offset": 0.55}, "vol": 0.5},
+ {"sfx": "scale_creak", "at": {"seg": "s03b", "word": "@eighty", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s03b", "word": "@lands"}, "vol": 0.4},
+ {"sfx": "scale_settle", "at": {"seg": "s03b", "word": "@again"}, "vol": 0.6},
+ {"sfx": "rise_three", "at": {"seg": "s03b", "word": "@accounting"}, "vol": 0.45}
+]

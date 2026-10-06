@@ -1,0 +1,9 @@
+[
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@whole"}, "vol": 0.1},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@whole", "offset": 0.5}, "vol": 0.1},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@whole", "offset": 1.0}, "vol": 0.1},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@single", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "glass_clink", "at": {"seg": "s11", "word": "@single", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s11", "word": "@catch"}, "vol": 0.35},
+ {"sfx": "book_thump", "at": {"seg": "s11", "edge": "end", "offset": 0.95}, "vol": 0.7}
+]

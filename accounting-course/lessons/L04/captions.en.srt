@@ -1,0 +1,711 @@
+1
+00:00:00,660 --> 00:00:01,820
+April fifth.
+
+2
+00:00:02,100 --> 00:00:03,140
+Rent day.
+
+3
+00:00:03,540 --> 00:00:05,780
+Meera counts out five thousand rupees and
+
+4
+00:00:05,860 --> 00:00:07,140
+hands it to the landlord.
+
+5
+00:00:07,709 --> 00:00:10,349
+Last time, every rupee that left the galla
+
+6
+00:00:10,509 --> 00:00:13,389
+came back as something — a cart, some tea
+
+7
+00:00:13,469 --> 00:00:14,029
+and sugar.
+
+8
+00:00:14,509 --> 00:00:15,509
+But this time?
+
+9
+00:00:15,789 --> 00:00:17,389
+No new asset arrives.
+
+10
+00:00:17,469 --> 00:00:18,989
+No debt gets smaller.
+
+11
+00:00:19,069 --> 00:00:20,269
+Nothing comes back.
+
+12
+00:00:21,555 --> 00:00:22,902
+The scale tips.
+
+13
+00:00:23,182 --> 00:00:25,182
+So what's on the other side?
+
+14
+00:00:31,391 --> 00:00:33,551
+First, last time's answers.
+
+15
+00:00:33,871 --> 00:00:34,471
+One.
+
+16
+00:00:34,751 --> 00:00:37,511
+After Gopal's delivery, the equation reads:
+
+17
+00:00:37,711 --> 00:00:39,551
+eighty-eight thousand equals thirty-eight
+
+18
+00:00:39,711 --> 00:00:42,031
+thousand, plus fifty thousand.
+
+19
+00:00:42,711 --> 00:00:43,231
+Two.
+
+20
+00:00:43,511 --> 00:00:45,511
+Buying the cart for cash doesn't move the
+
+21
+00:00:45,591 --> 00:00:46,311
+scale.
+
+22
+00:00:46,471 --> 00:00:49,031
+Cash goes down, the cart comes in — a swap
+
+23
+00:00:49,071 --> 00:00:50,151
+on the left.
+
+24
+00:00:50,831 --> 00:00:51,391
+Three.
+
+25
+00:00:51,631 --> 00:00:53,871
+Paying back part of Ravi Mama's loan?
+
+26
+00:00:54,111 --> 00:00:57,071
+Cash goes down, and so does what Meera owes.
+
+27
+00:00:57,191 --> 00:00:59,231
+Both sides go down together, and the scale
+
+28
+00:00:59,311 --> 00:01:00,351
+stays level.
+
+29
+00:01:00,931 --> 00:01:02,931
+And paying back a loan is not an expense
+
+30
+00:01:03,251 --> 00:01:04,931
+— the debt just got smaller.
+
+31
+00:01:05,979 --> 00:01:09,099
+And Checkpoint one — Aman's samosa cart.
+
+32
+00:01:09,419 --> 00:01:09,739
+One.
+
+33
+00:01:10,219 --> 00:01:12,819
+Aman puts in twenty thousand of his savings.
+
+34
+00:01:13,019 --> 00:01:14,699
+Cash up, capital up.
+
+35
+00:01:14,779 --> 00:01:17,339
+Twenty thousand equals zero, plus twenty
+
+36
+00:01:17,419 --> 00:01:18,379
+thousand.
+
+37
+00:01:18,959 --> 00:01:19,599
+Two.
+
+38
+00:01:19,679 --> 00:01:21,679
+A ten-thousand-rupee bank loan.
+
+39
+00:01:21,839 --> 00:01:23,679
+Cash up, liability up.
+
+40
+00:01:23,759 --> 00:01:26,239
+Thirty thousand equals ten thousand, plus
+
+41
+00:01:26,319 --> 00:01:27,359
+twenty thousand.
+
+42
+00:01:27,824 --> 00:01:28,544
+Three.
+
+43
+00:01:28,584 --> 00:01:30,944
+A cart and fryer for eighteen thousand,
+
+44
+00:01:31,024 --> 00:01:31,984
+in cash.
+
+45
+00:01:32,024 --> 00:01:33,904
+A swap on the left, so the totals don't
+
+46
+00:01:34,104 --> 00:01:34,784
+change.
+
+47
+00:01:34,864 --> 00:01:35,584
+Four.
+
+48
+00:01:35,664 --> 00:01:37,664
+Three thousand rupees of potatoes, flour
+
+49
+00:01:37,744 --> 00:01:40,264
+and oil, on credit from Sharma Kirana.
+
+50
+00:01:40,464 --> 00:01:43,184
+Stock up, and what he owes goes up.
+
+51
+00:01:43,304 --> 00:01:45,664
+Thirty-three thousand equals thirteen thousand,
+
+52
+00:01:45,824 --> 00:01:47,184
+plus twenty thousand.
+
+53
+00:01:47,864 --> 00:01:49,064
+Four out of four?
+
+54
+00:01:49,144 --> 00:01:50,904
+Your scale never tipped either.
+
+55
+00:01:52,064 --> 00:01:53,584
+So, back to rent day.
+
+56
+00:01:54,064 --> 00:01:54,904
+Freeze.
+
+57
+00:01:55,184 --> 00:01:56,784
+Which two things changed?
+
+58
+00:01:58,740 --> 00:02:00,340
+The first one is easy.
+
+59
+00:02:00,500 --> 00:02:02,580
+Cash went down by five thousand.
+
+60
+00:02:02,660 --> 00:02:03,780
+But the second?
+
+61
+00:02:03,860 --> 00:02:06,500
+Ravi Mama is still owed thirty thousand.
+
+62
+00:02:06,540 --> 00:02:08,980
+Gopal is still owed eight thousand.
+
+63
+00:02:09,180 --> 00:02:10,900
+Nobody's debt got smaller.
+
+64
+00:02:11,540 --> 00:02:13,740
+So the change has to land on the only thing
+
+65
+00:02:13,820 --> 00:02:16,140
+left — Meera's own share.
+
+66
+00:02:16,260 --> 00:02:16,940
+Equity.
+
+67
+00:02:17,474 --> 00:02:19,394
+Let's unfold Meera's tag.
+
+68
+00:02:19,634 --> 00:02:22,674
+It opens into a card — the equity card —
+
+69
+00:02:22,754 --> 00:02:23,954
+with two pockets.
+
+70
+00:02:24,694 --> 00:02:27,254
+Capital: the fifty thousand Meera put in.
+
+71
+00:02:27,334 --> 00:02:29,254
+And a new, empty pocket.
+
+72
+00:02:29,794 --> 00:02:31,914
+The rent comes out of that new pocket.
+
+73
+00:02:31,994 --> 00:02:34,794
+For now, it reads minus five thousand.
+
+74
+00:02:35,347 --> 00:02:37,667
+Eighty-three thousand equals thirty-eight
+
+75
+00:02:37,827 --> 00:02:40,707
+thousand, plus forty-five thousand.
+
+76
+00:02:40,747 --> 00:02:41,907
+The scale settles.
+
+77
+00:02:42,987 --> 00:02:45,227
+Money that is used up to run the business,
+
+78
+00:02:45,307 --> 00:02:48,027
+gone for good, is called an expense.
+
+79
+00:02:48,867 --> 00:02:51,427
+An expense shrinks the owner's share.
+
+80
+00:02:52,844 --> 00:02:54,244
+Now the fun part.
+
+81
+00:02:54,444 --> 00:02:56,244
+Meera opens for business.
+
+82
+00:02:56,444 --> 00:02:58,764
+Raju, her new helper, keeps the glasses
+
+83
+00:02:58,844 --> 00:02:59,404
+moving.
+
+84
+00:02:59,644 --> 00:03:02,844
+Two weeks of chai — glass after glass after
+
+85
+00:03:03,004 --> 00:03:03,724
+glass.
+
+86
+00:03:04,082 --> 00:03:06,802
+By April fifteenth, the galla has collected
+
+87
+00:03:06,882 --> 00:03:09,282
+eighteen thousand rupees from sales.
+
+88
+00:03:09,442 --> 00:03:11,682
+Cash goes up by eighteen thousand.
+
+89
+00:03:11,762 --> 00:03:13,122
+Meera, your turn.
+
+90
+00:03:13,202 --> 00:03:14,482
+Where's the second change?
+
+91
+00:03:16,531 --> 00:03:18,691
+She didn't borrow it, so there's no new
+
+92
+00:03:18,771 --> 00:03:19,491
+debt.
+
+93
+00:03:19,571 --> 00:03:22,291
+She didn't add her savings, so capital stays
+
+94
+00:03:22,371 --> 00:03:23,651
+at fifty thousand.
+
+95
+00:03:23,811 --> 00:03:24,851
+She earned it.
+
+96
+00:03:24,971 --> 00:03:27,411
+So it goes into the new pocket — right beside
+
+97
+00:03:27,491 --> 00:03:28,211
+the rent.
+
+98
+00:03:28,681 --> 00:03:31,401
+One lakh one thousand equals thirty-eight
+
+99
+00:03:31,561 --> 00:03:34,441
+thousand, plus sixty-three thousand.
+
+100
+00:03:35,161 --> 00:03:36,961
+Money the business earns by selling what
+
+101
+00:03:37,041 --> 00:03:39,361
+it sells is called revenue.
+
+102
+00:03:40,041 --> 00:03:42,361
+Revenue grows the owner's share.
+
+103
+00:03:43,616 --> 00:03:45,856
+Now peek inside that new pocket.
+
+104
+00:03:46,096 --> 00:03:48,336
+Eighteen thousand came in as revenue.
+
+105
+00:03:48,416 --> 00:03:50,816
+Five thousand went out as an expense.
+
+106
+00:03:50,896 --> 00:03:51,776
+What's left?
+
+107
+00:03:53,540 --> 00:03:55,140
+Thirteen thousand rupees.
+
+108
+00:03:55,340 --> 00:03:59,460
+That's profit, so far — revenue, minus expenses.
+
+109
+00:04:00,400 --> 00:04:02,080
+Now the pocket has a name.
+
+110
+00:04:02,940 --> 00:04:04,380
+And look where it lives.
+
+111
+00:04:04,580 --> 00:04:07,620
+Inside equity, right next to Meera's capital.
+
+112
+00:04:08,360 --> 00:04:11,040
+Ravi Mama and Gopal are owed fixed amounts.
+
+113
+00:04:11,240 --> 00:04:13,560
+But every rupee of profit belongs to the
+
+114
+00:04:13,640 --> 00:04:14,280
+owner.
+
+115
+00:04:14,831 --> 00:04:17,351
+So our equation gets a little longer.
+
+116
+00:04:17,631 --> 00:04:20,591
+Assets equal liabilities, plus capital,
+
+117
+00:04:20,711 --> 00:04:22,911
+plus revenue, minus expenses.
+
+118
+00:04:23,911 --> 00:04:24,631
+Same scale.
+
+119
+00:04:24,791 --> 00:04:26,951
+We just looked inside Meera's share.
+
+120
+00:04:28,198 --> 00:04:30,838
+Now, here's the trap most new owners fall
+
+121
+00:04:30,998 --> 00:04:31,238
+into.
+
+122
+00:04:31,798 --> 00:04:35,158
+Money left the galla, so it must be an expense.
+
+123
+00:04:35,681 --> 00:04:36,201
+Nope.
+
+124
+00:04:36,401 --> 00:04:37,441
+Remember the cart?
+
+125
+00:04:37,681 --> 00:04:39,521
+Thirty-six thousand rupees left the galla
+
+126
+00:04:39,601 --> 00:04:40,561
+for that too.
+
+127
+00:04:40,641 --> 00:04:42,161
+So ask one question.
+
+128
+00:04:42,801 --> 00:04:44,881
+Is it used up — gone for good?
+
+129
+00:04:45,121 --> 00:04:45,841
+The rent?
+
+130
+00:04:46,081 --> 00:04:46,601
+Yes.
+
+131
+00:04:46,801 --> 00:04:49,521
+April is paid for, and May will need more.
+
+132
+00:04:49,601 --> 00:04:50,321
+The cart?
+
+133
+00:04:50,561 --> 00:04:51,121
+No.
+
+134
+00:04:51,161 --> 00:04:53,041
+It's still standing right there, making
+
+135
+00:04:53,121 --> 00:04:53,841
+chai.
+
+136
+00:04:54,461 --> 00:04:55,621
+That's an asset.
+
+137
+00:04:56,869 --> 00:04:57,709
+Your turn.
+
+138
+00:04:57,989 --> 00:05:00,229
+Just imagine this — it's not in Meera's
+
+139
+00:05:00,309 --> 00:05:00,909
+books.
+
+140
+00:05:01,189 --> 00:05:03,349
+Meera pays three hundred rupees for a gas
+
+141
+00:05:03,429 --> 00:05:04,109
+refill.
+
+142
+00:05:04,389 --> 00:05:06,149
+Which two things changed?
+
+143
+00:05:09,316 --> 00:05:11,636
+Cash, down three hundred.
+
+144
+00:05:11,676 --> 00:05:14,356
+And the profit pocket, down three hundred.
+
+145
+00:05:14,836 --> 00:05:17,476
+The gas burns away making chai — it's used
+
+146
+00:05:17,556 --> 00:05:17,796
+up.
+
+147
+00:05:18,116 --> 00:05:19,076
+An expense.
+
+148
+00:05:19,642 --> 00:05:20,482
+One more.
+
+149
+00:05:20,762 --> 00:05:23,402
+Meera buys a second kettle for fifteen hundred
+
+150
+00:05:23,482 --> 00:05:24,242
+rupees.
+
+151
+00:05:24,522 --> 00:05:26,202
+Which two things changed?
+
+152
+00:05:29,372 --> 00:05:31,772
+Cash, down fifteen hundred.
+
+153
+00:05:31,812 --> 00:05:34,492
+And Equipment, up fifteen hundred — a swap
+
+154
+00:05:34,532 --> 00:05:35,452
+on the left.
+
+155
+00:05:35,932 --> 00:05:37,692
+The profit pocket doesn't move.
+
+156
+00:05:37,732 --> 00:05:40,012
+The kettle stays, and keeps making chai
+
+157
+00:05:40,092 --> 00:05:41,212
+for years.
+
+158
+00:05:41,292 --> 00:05:42,252
+An asset.
+
+159
+00:05:43,507 --> 00:05:46,267
+So — Meera's share has two pockets.
+
+160
+00:05:46,467 --> 00:05:48,507
+Revenue fills the profit pocket.
+
+161
+00:05:48,707 --> 00:05:50,387
+Expenses drain it.
+
+162
+00:05:50,427 --> 00:05:52,227
+And profit is the difference.
+
+163
+00:05:53,359 --> 00:05:54,079
+Your turn.
+
+164
+00:05:54,239 --> 00:05:55,239
+Three quick ones.
+
+165
+00:05:55,439 --> 00:05:55,919
+One.
+
+166
+00:05:56,159 --> 00:05:58,159
+Is the thirty-six-thousand-rupee cart an
+
+167
+00:05:58,239 --> 00:05:59,079
+expense?
+
+168
+00:05:59,359 --> 00:05:59,999
+Two.
+
+169
+00:06:00,079 --> 00:06:02,239
+What's Meera's profit after the rent and
+
+170
+00:06:02,319 --> 00:06:04,079
+the first two weeks of sales?
+
+171
+00:06:04,159 --> 00:06:04,879
+Three.
+
+172
+00:06:04,959 --> 00:06:06,879
+Which side of the scale does profit live
+
+173
+00:06:06,959 --> 00:06:07,599
+on?
+
+174
+00:06:07,839 --> 00:06:09,759
+Answers at the start of the next lesson.
+
+175
+00:06:11,170 --> 00:06:13,570
+Next time, the office next door takes chai
+
+176
+00:06:13,650 --> 00:06:16,370
+for the whole floor, every single day.
+
+177
+00:06:16,610 --> 00:06:17,610
+Just one catch.
+
+178
+00:06:17,810 --> 00:06:18,850
+They pay later.

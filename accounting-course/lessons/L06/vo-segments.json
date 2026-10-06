@@ -1,0 +1,254 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[excited] April fifteenth. Meera deposits fifteen thousand rupees at the bank. Her phone buzzes. Your account is credited with fifteen thousand rupees."
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "[playful] Credited! Credit means money in, and money in is good. Right?"
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 1.2,
+  "text": "[teasing] Khata has news. In Meera's own books, that same deposit is a debit."
+ },
+ {
+  "id": "s01d",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[softly] So who's right?"
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "First, last time's questions. One. The four thousand rupee catering advance. Is it April's revenue?"
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "No. The stall still owes that customer an event. It's a liability."
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "Two. Paying Gopal Dairy five thousand rupees. Is that an expense?"
+ },
+ {
+  "id": "s02d",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "No. Paying Gopal just shrinks what the stall owes him."
+ },
+ {
+  "id": "s02e",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "Three. After Infotech pays four thousand, how much do they still owe?"
+ },
+ {
+  "id": "s02f",
+  "scene": 2,
+  "gap_after": 0.8,
+  "text": "Two thousand. Six thousand billed, four thousand paid."
+ },
+ {
+  "id": "s02g",
+  "scene": 2,
+  "gap_after": 0.8,
+  "text": "And Aman's samosa challenge? Only the cash sale and the rent moved both needles. [warmly] Aman's profit so far: eight thousand five hundred rupees."
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "Now, that SMS. Debit and credit come from Latin. Debere, to owe. Credere, to trust."
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.8,
+  "text": "[curious] But here's the secret. Forget those meanings. In accounting, debit just means left. And credit just means right."
+ },
+ {
+  "id": "s03c",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "[playful] Remember Khata's two pages, from the very first lesson? This is why."
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "So which side do you write on? Look at the scale. Assets on the left. Liabilities and equity on the right. Every account has a home side: the side where it lives."
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 1.0,
+  "text": "And here's the whole rule. When an account grows, write it on its home side. When it shrinks, write it on the other side."
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 2.0,
+  "text": "April first. Meera puts in fifty thousand rupees. Which two things changed?"
+ },
+ {
+  "id": "s04d",
+  "scene": 4,
+  "gap_after": 0.8,
+  "text": "Cash went up. An asset, home on the left. Debit Cash. Capital went up. Equity, home on the right. Credit Capital. Fifty thousand left, fifty thousand right."
+ },
+ {
+  "id": "s04e",
+  "scene": 4,
+  "gap_after": 2.0,
+  "text": "Now the cart, thirty-six thousand rupees. Which two things changed?"
+ },
+ {
+  "id": "s04f",
+  "scene": 4,
+  "gap_after": 1.6,
+  "text": "Equipment grows. An asset, home on the left. Debit Equipment. But Cash shrinks. Cash lives on the left, so to shrink it, write on the right. Credit Cash."
+ },
+ {
+  "id": "s04g",
+  "scene": 4,
+  "gap_after": 0.8,
+  "text": "So debit doesn't always mean up. It depends on the home."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 1.6,
+  "text": "Liabilities work the same way, from the other side. Gopal Dairy sends eight thousand rupees of stock, pay later. Stock grows. Debit Stock. And Gopal? Debit, or credit?"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "Credit. What the stall owes Gopal grew, and liabilities live on the right."
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "April fifth. Rent, five thousand rupees. Cash shrinks. Credit Cash. And Rent? [curious] Rent grew. But where is its home?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "Remember the long equation? Assets equal liabilities, plus capital, plus revenue, minus expenses. That minus is the clue. Move Expenses across the equals sign, and the minus becomes a plus."
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "Assets, plus expenses, equal liabilities, plus capital, plus revenue. So expenses live on the left, with the assets. Rent grew, and the left is its home. Debit Rent. Every expense is a debit."
+ },
+ {
+  "id": "s06d",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "Revenue never moved, so its home stays on the right, with capital. Every sale is a credit."
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "Put it together. Debits live on the left: Expenses, Assets, and Drawings, the money Meera takes home. They behave like expenses."
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "Credits live on the right: Liabilities, Income, that's revenue, or income, same thing, and Capital. In short: DEAD CLIC. You didn't memorise this. You read it straight off the equation."
+ },
+ {
+  "id": "s07c",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "And in every transaction, the left total equals the right total. Always. That's double entry: every rupee written twice, once on each side. The same scale, in a new costume."
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "So, the SMS. Two cameras, one deposit. In Meera's books, money moved from the galla to the bank. Bank grows. Debit Bank. Cash shrinks. Credit Cash."
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "In the bank's books, the notes land in its vault. That's its debit. But Meera's fifteen thousand isn't the bank's money. It's money the bank owes her, any day she asks. For the bank, that's a liability. It grows, so the bank credits it."
+ },
+ {
+  "id": "s08c",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "Same money. Opposite books. Your SMS is reading the bank's khata, not yours. [firmly] Credit doesn't mean good. Debit doesn't mean bad. They just mean right, and left."
+ },
+ {
+  "id": "s09a",
+  "scene": 9,
+  "gap_after": 2.0,
+  "text": "Let's practise. Khata goes first. Cash sales for the first half of April: eighteen thousand rupees. Which two things changed?"
+ },
+ {
+  "id": "s09b",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "Cash grew. Debit Cash, eighteen thousand. Sales grew. That's revenue, so credit Sales, eighteen thousand. Left equals right."
+ },
+ {
+  "id": "s09c",
+  "scene": 9,
+  "gap_after": 2.4,
+  "text": "Meera's turn. Infotech's chai tab: six thousand rupees, pay later. The chai was sold, so credit Sales, six thousand. Now Infotech. They owe the stall. Meera slides it toward the right page. Owing money, that was Gopal's side. Wasn't it?"
+ },
+ {
+  "id": "s09d",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "No. Gopal is owed by the stall. Infotech owes the stall. An asset, and it grew. Home side, left. Debit Infotech, six thousand."
+ },
+ {
+  "id": "s09e",
+  "scene": 9,
+  "gap_after": 3.2,
+  "text": "[inviting] Now, just you. Meera pays Gopal Dairy five thousand rupees. Debit what? Credit what?"
+ },
+ {
+  "id": "s09f",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "Debit Gopal Dairy. The liability shrinks, so it goes on the left. Credit Cash. Five thousand leaves the galla."
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.6,
+  "text": "So. Debit is left, credit is right. Grow an account on its home side, shrink it on the other. And the bank's SMS speaks from the bank's books."
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. Meera buys six thousand rupees of tea, milk and sugar, and pays cash. What's debited, and what's credited? Two. Why is an expense a debit? Three. Imagine Meera pays a bill from the bank, and the SMS says debited. In Meera's books, is Bank debited, or credited? Answers next lesson."
+ },
+ {
+  "id": "s12",
+  "scene": 12,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time, Meera's CA friend drops by the stall, with rules. Debit the receiver! Credit the giver! Is that a whole new system to learn?"
+ }
+]

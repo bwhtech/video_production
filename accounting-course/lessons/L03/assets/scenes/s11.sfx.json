@@ -1,0 +1,8 @@
+[
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@rent"}, "vol": 0.35},
+ {"sfx": "paper_whoosh", "at": {"seg": "s11", "word": "@leave"}, "vol": 0.4},
+ {"sfx": "coin_clink", "at": {"seg": "s11", "word": "@leave", "offset": 1.0}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@nothing", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "scale_creak", "at": {"seg": "s11", "word": "@finally", "offset": 0.1}, "vol": 0.55},
+ {"sfx": "book_thump", "at": {"seg": "s11", "edge": "end", "offset": 0.82}, "vol": 0.8}
+]

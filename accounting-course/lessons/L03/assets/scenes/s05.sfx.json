@@ -1,0 +1,12 @@
+[
+ {"sfx": "pop", "at": {"seg": "s05a", "word": "@tea"}, "vol": 0.3},
+ {"sfx": "glass_clink", "at": {"seg": "s05a", "word": "@tea", "offset": 0.4}, "vol": 0.4},
+ {"sfx": "glass_clink", "at": {"seg": "s05a", "word": "@sugar", "offset": 0.4}, "vol": 0.35},
+ {"sfx": "tick_tock", "at": {"seg": "s05a", "word": "@got", "offset": -2.1}, "vol": 0.5, "dur": 2.0},
+ {"sfx": "pop", "at": {"seg": "s05a", "word": "@stock", "nth": 2, "offset": 0.5}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s05a", "word": "@can"}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s05b", "word": "@cash", "offset": 0.1}, "vol": 0.55},
+ {"sfx": "coin_clink", "at": {"seg": "s05b", "word": "@cash", "offset": 0.15}, "vol": 0.35},
+ {"sfx": "scale_settle", "at": {"seg": "s05b", "word": "@stays"}, "vol": 0.5},
+ {"sfx": "tink_low", "at": {"seg": "s05b", "edge": "end", "offset": 0.1}, "vol": 0.3}
+]

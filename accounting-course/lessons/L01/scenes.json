@@ -1,0 +1,14 @@
+[
+  {"id": "s01",  "title": "Night at the stall (cold open)", "lead": 1.2},
+  {"id": "s01t", "title": "Title sting",                    "fixed": 4.6},
+  {"id": "s02",  "title": "Accounting is counting",         "lead": 0.6},
+  {"id": "s03",  "title": "Meet Khata",                     "lead": 1.2},
+  {"id": "s04",  "title": "Two questions, two reports",     "lead": 0.5},
+  {"id": "s05",  "title": "The business is its own person", "lead": 0.5},
+  {"id": "s06",  "title": "Is it a transaction?",           "lead": 0.5},
+  {"id": "s07",  "title": "Record · Sort · Summarise",      "lead": 0.4},
+  {"id": "s08",  "title": "Recap",                          "lead": 0.3},
+  {"id": "s09",  "title": "Your Turn",                      "lead": 0.4},
+  {"id": "s10",  "title": "Next time",                      "lead": 0.3},
+  {"id": "s11",  "title": "Outro / end card",               "fixed": 12.0}
+]

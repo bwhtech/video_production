@@ -1,0 +1,15 @@
+[
+  {"id": "s01", "title": "Rent day (cold open)", "lead": 0.5},
+  {"id": "s01t", "title": "Title sting", "fixed": 4.6},
+  {"id": "s02", "title": "Last time: Lesson 3's answers", "lead": 0.5},
+  {"id": "s03", "title": "Checkpoint 1 solution: Aman's Samosa Cart", "lead": 0.5},
+  {"id": "s04", "title": "Rent day, frozen: which two things changed? (WORKED)", "lead": 0.5},
+  {"id": "s05", "title": "Two weeks of chai (FADED: Meera finds the second change)", "lead": 0.5},
+  {"id": "s06", "title": "Profit belongs to the owner", "lead": 0.5},
+  {"id": "s07", "title": "Misconception: \"every rupee out is an expense\"", "lead": 0.5},
+  {"id": "s08", "title": "Solo: \"just imagine\" (SOLO — which two things changed?)", "lead": 0.5},
+  {"id": "s09", "title": "Recap", "lead": 0.5},
+  {"id": "s10", "title": "Your Turn", "lead": 0.5},
+  {"id": "s11", "title": "Next time", "lead": 0.5},
+  {"id": "s12", "title": "End card (12s, no VO)", "fixed": 12.0}
+]

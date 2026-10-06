@@ -1,0 +1,15 @@
+[
+  {"id": "s01", "title": "Before sunrise: the bundle goes in (cold open)", "lead": 1.2},
+  {"id": "s01t", "title": "Title sting", "fixed": 4.6},
+  {"id": "s02", "title": "Last time (L1 answers)", "lead": 0.5},
+  {"id": "s03", "title": "Assets: what the stall has", "lead": 0.5},
+  {"id": "s04", "title": "Where did it come from? Meera's tag (equity, capital)", "lead": 0.5},
+  {"id": "s05", "title": "Ravi Mama's ₹30,000 (liability)", "lead": 0.5},
+  {"id": "s06", "title": "Misconception: \"Meera's ₹30,000 richer!\"", "lead": 0.5},
+  {"id": "s07", "title": "The claims picture", "lead": 0.5},
+  {"id": "s08", "title": "Sort it: Has · Owes · Owner's (worked → faded → solo)", "lead": 0.5},
+  {"id": "s09", "title": "Recap", "lead": 0.5},
+  {"id": "s10", "title": "Your Turn", "lead": 0.5},
+  {"id": "s11", "title": "Next time", "lead": 0.5},
+  {"id": "s12", "title": "End card", "fixed": 12.0}
+]

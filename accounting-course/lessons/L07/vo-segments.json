@@ -1,0 +1,230 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.6,
+  "text": "[excited] Meera's friend is a chartered accountant. She stops by for chai, spots Meera's khata, and starts firing rules. Debit the receiver! Credit the giver! Debit what comes in, credit what goes out! Debit all expenses, credit all incomes!"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[playful] Meera's head is spinning. Is this a whole new system?"
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[softly] It isn't. It's the same language, in another dialect. Today, we translate it."
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "First, last time's questions. One. Meera buys six thousand rupees of tea, milk and sugar, and pays cash. What's debited, and what's credited?"
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "Debit Stock, six thousand. An asset grows, on its home side. Credit Cash, six thousand. An asset shrinks."
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "Two. Why is an expense a debit?"
+ },
+ {
+  "id": "s02d",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "Because an expense shrinks equity. Move it across the equals sign, and it sits on the left, with the assets."
+ },
+ {
+  "id": "s02e",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "Three. Imagine Meera pays a bill from the bank. The SMS says debited. In Meera's books?"
+ },
+ {
+  "id": "s02f",
+  "scene": 2,
+  "gap_after": 0.8,
+  "text": "Credited. Bank is an asset, and it shrank, so it goes on the right."
+ },
+ {
+  "id": "s03",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "Now, Indian traders have kept double-entry books, the bahi-khata, for centuries. Naam, for debit. Jama, for credit. And khata means account. [playful] That's where our Khata gets its name."
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "The golden rules start by sorting every account into one of three families. Personal accounts are people and organisations: Ravi Mama, Gopal Dairy, Infotech. Real accounts are things: cash, the cart, the stock. And Nominal accounts are money made and money spent: sales, rent, salary."
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 1.6,
+  "text": "Quick. Ravi Mama's loan?"
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 1.6,
+  "text": "Personal. He's a person. The kettle?"
+ },
+ {
+  "id": "s04d",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "Real. You can hold it."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "Each family has one rule. Real: debit what comes in, credit what goes out. The translation? Real accounts are assets. Something coming in grows an asset, and assets grow on the left. Same thing."
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "Personal: debit the receiver, credit the giver. When someone gives the stall something, like a loan, the stall now owes them. A liability grows, on the right. A credit. And when someone receives from the stall, they owe us, or we owe them less. That's the left. A debit."
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "Nominal: debit all expenses, credit all incomes. Expenses shrink equity, so they're debits. Incomes grow it, so they're credits."
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "Let's prove it. Two cameras again. Golden rules on this side, the scale on that side."
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 2.0,
+  "text": "The cart, thirty-six thousand rupees. Which two things changed?"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "Golden rules: the cart comes in, debit Equipment. Cash goes out, credit Cash. The scale: one asset grows, one shrinks."
+ },
+ {
+  "id": "s06d",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "Gopal's stock on credit, eight thousand. Stock comes in: debit. Gopal is the giver: credit. The scale: an asset up, a liability up."
+ },
+ {
+  "id": "s06e",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "Cash sales, eighteen thousand. Cash comes in: debit. Sales is an income: credit. The scale: an asset up, equity up. Every time, both methods write exactly the same entry."
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "Two traps catch almost everyone. First, the bank. Meera's money sits in it, so the bank feels like a thing. A Real account, right?"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "[firmly] Nope. The bank is an organisation, so it's Personal. When Meera deposited fifteen thousand rupees, the bank was the receiver. Debit Bank. Exactly what we found with the SMS."
+ },
+ {
+  "id": "s07c",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "Second trap: capital. It's Meera's money, so is it Real? No. Capital is Meera's own account, and Meera is a person. On day one, she was the giver. Credit Capital, fifty thousand."
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "So here's your translation card. Real means assets. Personal means people: anyone who owes us, anyone we owe, the bank, the owner's capital and drawings. And advances: a customer the stall owes something to counts as Personal too. Nominal means incomes and expenses: everything that ends up in the Profit and Loss."
+ },
+ {
+  "id": "s09a",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "Let's practise. Khata goes first. Ravi Mama lends thirty thousand rupees."
+ },
+ {
+  "id": "s09b",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "Cash comes in. Real, so debit Cash, thirty thousand. Ravi Mama is the giver. Personal, so credit his loan, thirty thousand. And the scale? An asset up, a liability up. Match."
+ },
+ {
+  "id": "s09c",
+  "scene": 9,
+  "gap_after": 2.4,
+  "text": "Meera's turn. Rent, five thousand rupees. Rent is an expense. Nominal, so debit Rent. Now the other line. Cash leaves the galla. Which family? Which rule?"
+ },
+ {
+  "id": "s09d",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "Real, and it goes out. Credit Cash, five thousand."
+ },
+ {
+  "id": "s09e",
+  "scene": 9,
+  "gap_after": 3.2,
+  "text": "[inviting] Now, just you. April twenty-fifth. Infotech pays its four thousand rupee bill by UPI. Debit Bank, credit Infotech, that part you know. Now tag both lines."
+ },
+ {
+  "id": "s09f",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "The bank receives the money. Personal, the receiver, so debit Bank. Infotech gives it. Personal, the giver, so credit Infotech. Both Personal! And the scale agrees: one asset grows, one shrinks. A swap on the left."
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.6,
+  "text": "So. Three families: Personal, Real, Nominal. Three rules, and each one is the scale in other words. Two dialects, the same entries."
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. The four thousand rupee catering advance. Which golden rule goes on each line? Two. Is the bank Real, or Personal? Three. Which family does rent belong to? Answers next lesson."
+ },
+ {
+  "id": "s12a",
+  "scene": 12,
+  "gap_after": 3.0,
+  "text": "[excited] And now, Checkpoint three. Here are six of Aman's transactions. For each one, write the debit, the credit, and the golden rule behind each line. Pause the video, and try them now."
+ },
+ {
+  "id": "s12b",
+  "scene": 12,
+  "gap_after": 0.6,
+  "text": "Ready? The bank loan: debit Cash, Real, it comes in. Credit Bank loan, Personal, the giver. The cart and fryer: debit Cart, credit Cash. Real in, Real out. Cash sales: debit Cash, credit Sales, a Nominal income."
+ },
+ {
+  "id": "s12c",
+  "scene": 12,
+  "gap_after": 0.8,
+  "text": "Rent: debit Stall rent, a Nominal expense. Credit Cash. The school canteen: debit the canteen, Personal, the receiver. Credit Sales. And the birthday advance: debit Cash. Credit Advance from customer, Personal, the giver. [warmly] How many did you get?"
+ },
+ {
+  "id": "s13",
+  "scene": 13,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time. April thirtieth. Five things happen before lunch, and Meera grabs a tissue to write them all down."
+ }
+]

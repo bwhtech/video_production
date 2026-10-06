@@ -1,0 +1,209 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08a",
+   "word": "@imagine",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08a",
+   "word": "@three"
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s08a",
+   "edge": "end"
+  },
+  "vol": 0.5,
+  "dur": 3.0
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s08b",
+   "word": "@cash",
+   "offset": 0.7
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "bell_ring",
+  "at": {
+   "seg": "s08b",
+   "word": "@cash",
+   "offset": 0.8
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "scale_creak",
+  "at": {
+   "seg": "s08b",
+   "word": "@cash",
+   "offset": 0.7
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08b",
+   "word": "@down",
+   "nth": 2,
+   "offset": -0.3
+  },
+  "vol": 0.28
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s08b",
+   "word": "@down",
+   "nth": 2,
+   "offset": 0.3
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "bell_ring",
+  "at": {
+   "seg": "s08b",
+   "word": "@down",
+   "nth": 2,
+   "offset": 0.4
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s08b",
+   "word": "@down",
+   "nth": 2,
+   "offset": 1.2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08b",
+   "word": "@burns"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08b",
+   "word": "@expense",
+   "offset": -0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08c",
+   "word": "@more"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08c",
+   "word": "@fifteen"
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s08c",
+   "edge": "end"
+  },
+  "vol": 0.5,
+  "dur": 3.0
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s08d",
+   "word": "@cash",
+   "offset": 0.7
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "bell_ring",
+  "at": {
+   "seg": "s08d",
+   "word": "@cash",
+   "offset": 0.8
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s08d",
+   "word": "@equipment",
+   "offset": 0.9
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s08d",
+   "word": "@equipment",
+   "offset": 1.3
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "bell_ring",
+  "at": {
+   "seg": "s08d",
+   "word": "@equipment",
+   "offset": 1.4
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s08d",
+   "word": "@profit",
+   "offset": 0.2
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08d",
+   "word": "@asset",
+   "offset": -0.4
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s08d",
+   "word": "@asset",
+   "offset": 0.5
+  },
+  "vol": 0.4
+ }
+]

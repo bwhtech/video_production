@@ -1,0 +1,9 @@
+[
+ {"sfx": "pop", "at": {"scene": "s08", "t": 0.34}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s08", "word": "@movie", "offset": 0.2}, "vol": 0.4},
+ {"sfx": "projector", "at": {"seg": "s08", "word": "@movie", "offset": 0.0}, "vol": 0.18, "dur": 1.6},
+ {"sfx": "shutter", "at": {"seg": "s08", "word": "@photo"}, "vol": 0.5},
+ {"sfx": "pop", "at": {"seg": "s08", "word": "@business", "offset": 0.2}, "vol": 0.4},
+ {"sfx": "boing_hop", "at": {"seg": "s08", "word": "@person", "offset": 0.1}, "vol": 0.45},
+ {"sfx": "ding_yes", "at": {"seg": "s08", "word": "@person", "offset": 0.2}, "vol": 0.35}
+]

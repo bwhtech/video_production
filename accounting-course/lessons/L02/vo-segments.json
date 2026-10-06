@@ -1,0 +1,146 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 1.2,
+  "text": "[softly] April the first — the day before her first cup of chai. The sun isn't up yet. Meera is holding fifty thousand rupees — years of her savings."
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "And just like that, it's in the galla. [curious] So — whose money is it now? Meera's? Or the stall's? [playful] The answer is… a bit of both."
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "First, the answers from last time. One. Meera pays her personal phone bill from her own bank account. Does it go in the stall's books? No. Her money, her bill. The stall is its own person."
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "Two. A customer asks the price of chai, then walks away. Not a transaction. Nothing changed hands."
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "Three. Which report is the photo? The Balance Sheet. [warmly] And today, we start filling in that photo."
+ },
+ {
+  "id": "s03",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "Let's start with what the stall has. Right now, that's fifty thousand rupees in the galla. Cash. And cash is useful. Meera can buy milk with it, pay rent with it, buy a cart with it. Anything a business has that is useful to it is called an asset. Cash is an asset. Soon the cart will be an asset too, and so will the tea leaves. From now on, every asset gets its own jar. Each jar is what accountants call an account. And the cash jar — the cash account? That's the galla."
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 0.8,
+  "text": "But accountants always ask one more question. Where did it come from? Every asset has a source. So let's tag the money."
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "This fifty thousand came from Meera. The stall holds the money, but Meera has a claim on it. If the stall ever closed, this share would go back to her. The owner's share of a business is called equity. And the money an owner puts in has its own name — capital. Meera's capital: fifty thousand rupees."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "Later that morning, someone else turns up. Ravi Mama. Umbrella. Moustache. Very proud of his niece. He hands Meera thirty thousand rupees — a loan. She'll pay it back once the stall is doing well."
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "The galla now holds eighty thousand rupees. So what tag goes on this new money? Not Meera's face. It came from Ravi Mama, and the stall has to give it back. Money a business owes to someone else is called a liability. Ravi Mama's loan is a liability."
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 1.0,
+  "text": "Now, here's where a lot of people slip. The galla went from fifty thousand to eighty thousand. So Meera is thirty thousand rupees richer!"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "[firmly] Nope. Yes, the cash went up by thirty thousand. But what the stall owes went up by thirty thousand too. Meera's own share? Still fifty thousand. Not one rupee more. [warmly] And a liability isn't a bad thing. It's someone else's money, working for your business. You just have to remember it isn't yours."
+ },
+ {
+  "id": "s07",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "So let's look at the whole picture. The stall has eighty thousand rupees. Thirty thousand of it is claimed by Ravi Mama. Fifty thousand is claimed by Meera. Every rupee in the business belongs to someone. In one sentence: what you have equals what you owe, plus what's yours. Remember that sentence. Next lesson, it gets a scale."
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 1.4,
+  "text": "Let's sort some things into three boxes. What the stall has — assets. What it owes — liabilities. And what belongs to the owner — equity. Khata goes first. The cash in the galla."
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "[excited] Asset! The stall has it, and it's useful."
+ },
+ {
+  "id": "s08c",
+  "scene": 8,
+  "gap_after": 1.6,
+  "text": "Meera's turn. Ravi Mama's loan."
+ },
+ {
+  "id": "s08d",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "Careful. The cash he gave is an asset. But the loan is what the stall owes. Liability."
+ },
+ {
+  "id": "s08e",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "[inviting] Your turn. A stack of glasses Meera buys tomorrow."
+ },
+ {
+  "id": "s08f",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "Asset. The stall will have them, and use them every day."
+ },
+ {
+  "id": "s08g",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "And one more. April's rent — she owes it, but hasn't paid it yet."
+ },
+ {
+  "id": "s08h",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "Liability. That money is owed to the landlord."
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "So. Assets are what the business has. Liabilities are what it owes to others. Equity is what belongs to the owner. And every rupee in the business belongs to someone."
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. Gopal Dairy delivers eight thousand rupees of milk, and Meera will pay later. What does the stall now have, and what does it owe? Two. Is Meera's personal scooter an asset of the stall? Three. The stall has eighty thousand rupees, and owes Ravi Mama thirty thousand. What's Meera's share? Answers at the start of the next lesson."
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time, Meera spends thirty-six thousand rupees on a cart, a stove and a stack of glasses. So — did she just lose thirty-six thousand rupees?"
+ }
+]

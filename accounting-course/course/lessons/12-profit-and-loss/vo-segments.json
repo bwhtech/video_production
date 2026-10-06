@@ -1,0 +1,134 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 1.2,
+  "text": "[softly] Remember this night? That first night at the stall — April second. A galla full of notes, and one question. Once you count the milk, the sugar, and the stall's rent — did Meera make a profit? Or a loss?"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[softly] Back then, she had no way to know. Now she has a whole month of books, and a trial balance that matches. [curious] So tonight, Khata opens."
+ },
+ {
+  "id": "s02",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "First, last time's questions. One: the trial balance totals? One lakh thirty-six thousand rupees, on each side. Two: can a trial balance catch a transaction you forgot completely? No. Both sides are missing it, so both sides still match. Three: which column does Drawings go in? The debit column — on the same side as the expenses. [teasing] But drawings are not an expense. Hold that thought."
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.5,
+  "text": "And Aman's samosa cart. Six entries. Cash sales of eleven thousand: debit Cash, credit Sales. Three thousand for his helper: debit Helper wages, credit Cash. Fifteen hundred taken home: debit Drawings. The school canteen pays its fifteen hundred: debit Cash, credit the canteen. Then two month-end adjustments: two thousand five hundred of ingredients used, and five hundred of depreciation."
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.8,
+  "text": "Post them, balance every account, and the trial balance comes to fifty-four thousand rupees, on both sides. [excited] If yours matched, you can build a trial balance from scratch."
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 1.4,
+  "text": "Here's Meera's trial balance. Nineteen accounts. But in Lesson 1, we promised a movie — the Profit and Loss statement. A movie of April. So which accounts get a part in it?"
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "Only the ones that tell the story of earning and spending. Revenue, and expenses. Everything else stays behind. Sales comes first: fifty thousand rupees. Forty thousand in cash, and ten thousand on credit to Infotech. If it was earned in April, it belongs to April — paid or not."
+ },
+ {
+  "id": "s05",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "Khata does the first cut. Remember the milk and the sugar from that first night? Here they are. The milk, sugar and tea leaves Meera actually used up in April cost ten thousand rupees. Bigger businesses call this line cost of goods sold. Fifty thousand, minus ten thousand, leaves forty thousand. That's called gross profit. Gross profit is what's left after paying for the chai itself."
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "Now Meera takes over. Running the stall costs money too. Rent — there's the rent from that first night — five thousand. Raju's salary, eight thousand. Electricity, one thousand. Depreciation on the cart, one thousand. And interest to Ravi Mama, three hundred. Together, fifteen thousand three hundred rupees."
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 2.8,
+  "text": "[curious] Forty thousand, minus fifteen thousand three hundred. Pause, and work it out."
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 1.6,
+  "text": "[excited] Twenty-four thousand seven hundred rupees. That's net profit — what's left after running the whole stall for a month."
+ },
+ {
+  "id": "s06d",
+  "scene": 6,
+  "gap_after": 1.0,
+  "text": "[warmly] So, Lesson 1's question. Did Meera make a profit, or a loss? A profit. Twenty-four thousand seven hundred rupees, in April. She finally knows."
+ },
+ {
+  "id": "s07",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "Now read the movie top to bottom, like a story. Fifty thousand came in from chai. Ten thousand went into the chai itself. Fifteen thousand three hundred kept the stall running. What's left is the stall's net profit. Out of every hundred rupees of chai, Meera keeps about forty-nine."
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 0.5,
+  "text": "But here's where people slip. They think every rupee that moved in April belongs in the movie. [playful] Watch Khata at the door. Ravi Mama's thirty thousand rupee loan wants in. Turned away — it's borrowed, not earned. And the three thousand he got back isn't a cost either — only his three hundred of interest is. The cart, thirty-six thousand. Turned away — it's something Meera owns. Only its one thousand of depreciation got a ticket."
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "Meera's three thousand for home. Turned away — that's the owner taking money out, not a cost of running the stall. The four thousand advance for May's catering — not earned yet. And Infotech's four thousand payment? Already counted, the day Meera billed them. [firmly] The movie only shows what April earned, and what April used up."
+ },
+ {
+  "id": "s09a",
+  "scene": 9,
+  "gap_after": 3.2,
+  "text": "[inviting] Your turn. Imagine April's rent had been seven thousand, not five. Does gross profit change too?"
+ },
+ {
+  "id": "s09b",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "No. Rent sits below the gross profit line, so gross profit stays at forty thousand. Only net profit moves — down to twenty-two thousand seven hundred."
+ },
+ {
+  "id": "s09c",
+  "scene": 9,
+  "gap_after": 1.0,
+  "text": "[curious] One more. Imagine the whole floor had stopped drinking chai, and April's sales were only fifteen thousand. Fifteen, minus ten for the chai itself, is five of gross profit. Minus fifteen thousand three hundred to run the stall…"
+ },
+ {
+  "id": "s09d",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "Minus ten thousand three hundred. A loss. That's the L in Profit and Loss. And Meera's share would shrink."
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.6,
+  "text": "So — the Profit and Loss statement is the movie of a period. Sales, minus the supplies used, is gross profit. Take away the cost of running the stall, and you get net profit. And only what was earned or used up gets in."
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. Why aren't Meera's drawings in the Profit and Loss statement? Two. Is the four thousand rupee advance in April's Profit and Loss? Three. What was Meera's gross profit? Answers at the start of the next lesson."
+ },
+ {
+  "id": "s12",
+  "scene": 12,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time, the movie is over. Time to take the photo."
+ }
+]

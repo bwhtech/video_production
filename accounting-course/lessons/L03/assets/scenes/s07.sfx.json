@@ -1,0 +1,16 @@
+[
+ {"sfx": "tink_low", "at": {"seg": "s07a", "word": "@two"}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s07a", "word": "@two", "offset": 0.3}, "vol": 0.4},
+ {"sfx": "coin_clink", "at": {"seg": "s07a", "word": "@from", "offset": 0.3}, "vol": 0.4},
+ {"sfx": "coin_clink", "at": {"seg": "s07a", "word": "@somewhere", "nth": 2, "offset": 0.1}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s07a", "word": "@dual", "offset": 0.1}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s07b", "word": "@ways", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s07b", "word": "@ways", "offset": 0.22}, "vol": 0.3},
+ {"sfx": "coin_clink", "at": {"seg": "s07b", "word": "@up"}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s07b", "word": "@down"}, "vol": 0.3},
+ {"sfx": "coin_clink", "at": {"seg": "s07b", "word": "@swap", "offset": 0.7}, "vol": 0.4},
+ {"sfx": "paper_whoosh", "at": {"seg": "s07b", "word": "@another", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "tink_high", "at": {"seg": "s07b", "word": "@may", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "scale_settle", "at": {"seg": "s07b", "word": "@never"}, "vol": 0.5},
+ {"sfx": "rise_three", "at": {"seg": "s07b", "word": "@never", "offset": -0.2}, "vol": 0.4}
+]

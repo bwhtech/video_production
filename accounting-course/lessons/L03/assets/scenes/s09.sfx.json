@@ -1,0 +1,9 @@
+[
+ {"sfx": "pop", "at": {"scene": "s09", "t": 0.25}, "vol": 0.3},
+ {"sfx": "pop", "at": {"scene": "s09", "t": 0.4}, "vol": 0.3},
+ {"sfx": "pop", "at": {"scene": "s09", "t": 0.55}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s09", "word": "@one"}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s09", "word": "@two"}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s09", "word": "@three", "nth": 2}, "vol": 0.3},
+ {"sfx": "sparkle", "at": {"seg": "s09", "word": "@next"}, "vol": 0.3}
+]

@@ -1,0 +1,19 @@
+[
+ {"sfx": "clay_tap", "at": {"seg": "s02", "word": "@counting"}, "vol": 0.55, "dur": 0.45},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@five"}, "vol": 0.45},
+ {"sfx": "boing_hop", "at": {"seg": "s02", "word": "@mesopotamia"}, "vol": 0.25},
+ {"sfx": "boing_hop", "at": {"seg": "s02", "word": "@mesopotamia", "offset": 0.45}, "vol": 0.22},
+ {"sfx": "clay_tap", "at": {"seg": "s02", "word": "@count", "offset": 0.1}, "vol": 0.55},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@grain"}, "vol": 0.4},
+ {"sfx": "swoosh_transition", "at": {"seg": "s02", "word": "@about", "offset": -0.5}, "vol": 0.28},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@venice"}, "vol": 0.45},
+ {"sfx": "quill_scratch", "at": {"seg": "s02", "word": "@wrote"}, "vol": 0.5},
+ {"sfx": "coin_clink", "at": {"seg": "s02", "word": "@money", "offset": 0.22}, "vol": 0.5},
+ {"sfx": "swoosh_transition", "at": {"seg": "s02", "word": "@and", "nth": 2, "offset": -0.45}, "vol": 0.28},
+ {"sfx": "tabla_dha", "at": {"seg": "s02", "word": "@bahi-khata"}, "vol": 0.6},
+ {"sfx": "paper_whoosh", "at": {"seg": "s02", "word": "@centuries"}, "vol": 0.3},
+ {"sfx": "swoosh_transition", "at": {"seg": "s02", "word": "@today", "offset": -0.55}, "vol": 0.28},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@today", "offset": 0.2}, "vol": 0.4},
+ {"sfx": "phone_buzz", "at": {"seg": "s02", "word": "@apps"}, "vol": 0.5},
+ {"sfx": "tink_high", "at": {"seg": "s02", "word": "@changed", "offset": -0.25}, "vol": 0.45}
+]

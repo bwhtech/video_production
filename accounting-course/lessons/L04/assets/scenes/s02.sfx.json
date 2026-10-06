@@ -1,0 +1,13 @@
+[
+ {"sfx": "cover_swing", "at": {"seg": "s02", "word": "@one", "offset": -0.05}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@eighty-eight"}, "vol": 0.2},
+ {"sfx": "ding_yes", "at": {"seg": "s02", "word": "@fifty", "offset": 0.7}, "vol": 0.4},
+ {"sfx": "cover_swing", "at": {"seg": "s02", "word": "@two", "offset": -0.05}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s02", "word": "@cash", "nth": 2}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s02", "word": "@swap", "offset": 0.4}, "vol": 0.4},
+ {"sfx": "cover_swing", "at": {"seg": "s02", "word": "@three", "offset": -0.05}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s02", "word": "@cash", "nth": 3}, "vol": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s02", "word": "@both", "offset": 0.2}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s02", "word": "@level", "offset": 0.1}, "vol": 0.35},
+ {"sfx": "pen_scratch", "at": {"seg": "s02", "word": "@expense", "offset": -0.05}, "vol": 0.35}
+]

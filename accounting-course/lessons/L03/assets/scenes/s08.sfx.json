@@ -1,0 +1,7 @@
+[
+ {"sfx": "pop", "at": {"scene": "s08", "t": 0.2}, "vol": 0.3},
+ {"sfx": "scale_settle", "at": {"seg": "s08", "word": "@scale"}, "vol": 0.4},
+ {"sfx": "ding_yes", "at": {"seg": "s08", "word": "@every"}, "vol": 0.4},
+ {"sfx": "rise_three", "at": {"seg": "s08", "word": "@four", "offset": -0.1}, "vol": 0.35},
+ {"sfx": "ding_yes", "at": {"seg": "s08", "word": "@level"}, "vol": 0.4}
+]

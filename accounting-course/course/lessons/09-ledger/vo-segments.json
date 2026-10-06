@@ -1,0 +1,164 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.6,
+  "text": "[playful] Meera has one simple question. How much cash is in the galla right now? The answer is in the journal. Somewhere. Cash came in on April first. Went out on the second. Came in on the fifteenth. Went out again on the twentieth…"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "Seventeen entries. Twelve of them touch cash. And they're scattered across every page."
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[softly] There has to be a faster way to find one number."
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 1.4,
+  "text": "[warmly] First, last time's answers. One. Why isn't all of Ravi Mama's three thousand three hundred an expense?"
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "Because three thousand of it just repays the loan. Only the three hundred rupees of interest is an expense."
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 1.4,
+  "text": "Two. Infotech pays four thousand rupees by UPI. What's the entry?"
+ },
+ {
+  "id": "s02d",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "Bank, debit, four thousand. To Infotech, four thousand. Money came into the bank, and Infotech owes less."
+ },
+ {
+  "id": "s02e",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "Three. Are drawings an expense?"
+ },
+ {
+  "id": "s02f",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "No. They're the owner taking money out. They shrink equity, but never touch profit."
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "Here's the trick. The journal sorts money by date. But Meera's question is about one account — Cash. So let's sort a second way: by account."
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "[curious] Remember the account jars? Watch. Each jar becomes a little book. Cash gets one. Bank gets one. Sales, Rent, Ravi Mama's loan — every account gets its own page, with a debit side on the left and a credit side on the right. This set of books is called the ledger. [playful] Remember why our friend is called Khata? Khata means account."
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "Copying each journal line onto its account's page is called posting. And the rule is easy. A debit in the journal goes on the left side of that account. A credit goes on the right."
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "Watch the very first entry. Cash, debit, fifty thousand — onto the left side of Cash. Capital, credit, fifty thousand — onto the right side of Capital. Beside each amount, Khata writes the date and the other account, so you can always trace where it came from. Then Khata ticks the journal line, so nothing gets posted twice."
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 2.4,
+  "text": "Now the rest. Seventeen entries, one line at a time. Left… right. Left… right."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "Now open the Cash page. On the left — everything that came in. Fifty thousand from Meera. Thirty thousand from Ravi Mama. Two batches of sales — eighteen thousand, and twenty-two thousand. And the four thousand rupee advance. Total: one lakh, twenty-four thousand rupees."
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 1.4,
+  "text": "On the right — everything that went out. The cart, the stock, the rent, the bank deposit, Gopal, Ravi Mama's loan, his interest, and Meera's drawings. Total: seventy-three thousand three hundred. The left side is heavier. So how much cash is left?"
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "Fifty thousand seven hundred rupees. To level the page, Khata writes that difference on the lighter side, so both sides total one lakh, twenty-four thousand. That's the balance carried down. Then it drops to the heavier side, to start May. A balance always belongs to the heavier side. So Cash has a debit balance of fifty thousand seven hundred."
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 1.0,
+  "text": "Meera counts the galla. [excited] Fifty thousand seven hundred! The ledger and the galla agree."
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 2.4,
+  "text": "[inviting] Meera's turn. Gopal Dairy's page. April third — eight thousand of stock, on credit, on the right. April twentieth — she pays five thousand, on the left. Which side is heavier, and what's the balance?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "The right side. Three thousand rupees — a credit balance."
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.4,
+  "text": "Meera beams. A credit balance! That sounds like money for her."
+ },
+ {
+  "id": "s06d",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "[firmly] Nope. On Gopal's page, a credit balance means the stall still owes Gopal three thousand rupees. Gopal is a liability, and a liability's home is the right side. That's where its balance normally sits."
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 3.2,
+  "text": "[excited] Your turn. Infotech's page. On the left — six thousand on April sixteenth, and four thousand on April thirtieth. On the right — four thousand on April twenty-fifth. What's the balance, and which side?"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "Six thousand rupees, on the left — a debit balance. Infotech still owes the stall six thousand. It's an asset, sitting on its home side. And that's the pattern: every account's balance usually lands on its home side."
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "So — the ledger gives every account its own page. Posting moves each journal line there: debits on the left, credits on the right. And balancing tells you what's left in each account, in one number."
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. What's the balance of the Sales account? Two. What's the balance of the Bank account? Three. Where does a liability's balance usually sit — on the debit side, or the credit side? Answers at the start of the next lesson."
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time, Meera adds up April's profit. Thirty-six thousand seven hundred rupees! She reaches for the confetti… and Khata clears its throat. Not so fast."
+ }
+]

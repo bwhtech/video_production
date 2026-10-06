@@ -1,0 +1,111 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "scene": "s03",
+   "t": 0.3
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s03",
+   "word": "@fifty"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03",
+   "word": "@cash"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03",
+   "word": "@milk"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03",
+   "word": "@rent"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03",
+   "word": "@cart"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s03",
+   "word": "@asset"
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03",
+   "word": "@tea"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s03",
+   "word": "@gets"
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03",
+   "word": "@account"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03",
+   "word": "@that's",
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03",
+   "word": "@that's",
+   "nth": 2,
+   "offset": 0.4
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "swoosh_transition",
+  "at": {
+   "seg": "s03",
+   "word": "@that's",
+   "nth": 2,
+   "offset": 0.9
+  },
+  "vol": 0.3
+ }
+]

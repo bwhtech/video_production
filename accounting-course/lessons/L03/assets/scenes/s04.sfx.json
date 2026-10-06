@@ -1,0 +1,15 @@
+[
+ {"sfx": "coin_clink", "at": {"seg": "s04a", "word": "@left"}, "vol": 0.4},
+ {"sfx": "tick_tock", "at": {"seg": "s04a", "edge": "end", "offset": 0.0}, "vol": 0.5, "dur": 2.0},
+ {"sfx": "tink_low", "at": {"seg": "s04b", "word": "@cash"}, "vol": 0.4},
+ {"sfx": "paper_whoosh", "at": {"seg": "s04b", "word": "@has"}, "vol": 0.35},
+ {"sfx": "ding_yes", "at": {"seg": "s04b", "word": "@has", "offset": 0.91}, "vol": 0.55},
+ {"sfx": "scale_settle", "at": {"seg": "s04b", "word": "@move", "offset": 0.15}, "vol": 0.5},
+ {"sfx": "paper_slide", "at": {"seg": "s04c", "word": "@spent"}, "vol": 0.35},
+ {"sfx": "stamp_thunk", "at": {"seg": "s04c", "edge": "end", "offset": 0.95}, "vol": 0.7},
+ {"sfx": "paper_slide", "at": {"seg": "s04d", "word": "@used", "offset": -0.2}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s04d", "word": "@gone"}, "vol": 0.4},
+ {"sfx": "kettle_bubble", "at": {"seg": "s04d", "word": "@standing"}, "vol": 0.3, "dur": 1.6},
+ {"sfx": "paper_slide", "at": {"seg": "s04d", "word": "@wear"}, "vol": 0.3},
+ {"sfx": "swoosh_transition", "at": {"seg": "s04d", "edge": "end", "offset": -0.55}, "vol": 0.35}
+]

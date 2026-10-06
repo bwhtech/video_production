@@ -1,0 +1,21 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s03a", "word": "@cash", "nth": 1}, "vol": 0.28},
+ {"sfx": "paper_slide", "at": {"seg": "s03a", "word": "@capital"}, "vol": 0.28},
+ {"sfx": "coin_clink", "at": {"seg": "s03a", "word": "@twenty", "nth": 2}, "vol": 0.22},
+ {"sfx": "ding_yes", "at": {"seg": "s03a", "word": "@twenty", "nth": 3, "offset": 0.7}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s03a", "word": "@cash", "nth": 2}, "vol": 0.28},
+ {"sfx": "paper_slide", "at": {"seg": "s03a", "word": "@liability"}, "vol": 0.28},
+ {"sfx": "coin_clink", "at": {"seg": "s03a", "word": "@thirty"}, "vol": 0.22},
+ {"sfx": "ding_yes", "at": {"seg": "s03a", "word": "@twenty", "nth": 4, "offset": 0.7}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s03b", "word": "@cart"}, "vol": 0.28},
+ {"sfx": "paper_slide", "at": {"seg": "s03b", "word": "@swap"}, "vol": 0.28},
+ {"sfx": "ding_yes", "at": {"seg": "s03b", "word": "@totals", "offset": 0.75}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s03b", "word": "@stock"}, "vol": 0.28},
+ {"sfx": "paper_slide", "at": {"seg": "s03b", "word": "@owes"}, "vol": 0.28},
+ {"sfx": "coin_clink", "at": {"seg": "s03b", "word": "@thirty-three"}, "vol": 0.22},
+ {"sfx": "ding_yes", "at": {"seg": "s03b", "word": "@twenty", "offset": 0.7}, "vol": 0.4},
+ {"sfx": "boing_hop", "at": {"seg": "s03b", "word": "@out", "offset": 0.1}, "vol": 0.45},
+ {"sfx": "bell_ring", "at": {"seg": "s03b", "word": "@out", "offset": 0.35}, "vol": 0.3},
+ {"sfx": "cover_swing", "at": {"seg": "s03b", "word": "@either", "offset": 0.25}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s03b", "word": "@either", "offset": 0.7}, "vol": 0.35}
+]

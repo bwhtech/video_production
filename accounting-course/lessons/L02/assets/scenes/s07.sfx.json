@@ -1,0 +1,44 @@
+[
+ {
+  "sfx": "rise_three",
+  "at": {
+   "seg": "s07",
+   "word": "@fifty",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s07",
+   "word": "@meera.",
+   "offset": 0.9
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "twine_tug",
+  "at": {
+   "seg": "s07",
+   "word": "@every"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s07",
+   "word": "@sentence:"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "sparkle",
+  "at": {
+   "seg": "s07",
+   "word": "@scale"
+  },
+  "vol": 0.4
+ }
+]

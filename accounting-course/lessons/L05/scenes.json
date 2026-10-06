@@ -1,0 +1,17 @@
+[
+  {"id": "s01", "title": "The first bill (cold open)", "lead": 0.5},
+  {"id": "s01t", "title": "Title sting", "fixed": 4.6},
+  {"id": "s02", "title": "Last time: Lesson 4's answers", "lead": 0.5},
+  {"id": "s03", "title": "Two needles", "lead": 0.5},
+  {"id": "s04", "title": "Rewind: the bank deposit (T8 warm-up)", "lead": 0.5},
+  {"id": "s05", "title": "The tab: which two things changed? (WORKED, part 1 — the receivable)", "lead": 0.5},
+  {"id": "s06", "title": "Paying Gopal (FADED + misconception → payable)", "lead": 0.5},
+  {"id": "s07", "title": "The catering advance (FADED + misconception)", "lead": 0.5},
+  {"id": "s08", "title": "Infotech pays by UPI (SOLO)", "lead": 0.5},
+  {"id": "s09", "title": "Two needles, two stories (cash basis vs accrual basis)", "lead": 0.5},
+  {"id": "s10", "title": "Recap", "lead": 0.5},
+  {"id": "s11", "title": "Your Turn", "lead": 0.5},
+  {"id": "s12", "title": "Checkpoint 2: Aman's Samosa Cart (pause + reveal)", "lead": 0.5},
+  {"id": "s13", "title": "Next time", "lead": 0.5},
+  {"id": "s14", "title": "End card (12s, no VO)", "fixed": 12.0}
+]

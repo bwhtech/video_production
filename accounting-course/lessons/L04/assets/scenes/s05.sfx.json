@@ -1,0 +1,192 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05a",
+   "word": "@raju",
+   "offset": 0.15
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tray_clatter",
+  "at": {
+   "seg": "s05a",
+   "word": "@helper",
+   "offset": 0.5
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s05a",
+   "word": "@weeks",
+   "offset": 0.1
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s05a",
+   "word": "@weeks",
+   "offset": 0.45
+  },
+  "vol": 0.18
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s05a",
+   "word": "@chai",
+   "offset": 0.4
+  },
+  "vol": 0.22
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s05a",
+   "word": "@chai",
+   "offset": 0.9
+  },
+  "vol": 0.18
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s05a",
+   "word": "@glass",
+   "offset": 0.2
+  },
+  "vol": 0.22
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s05a",
+   "word": "@glass",
+   "offset": 0.8
+  },
+  "vol": 0.18
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s05a",
+   "word": "@glass",
+   "nth": 2,
+   "offset": 0.3
+  },
+  "vol": 0.22
+ },
+ {
+  "sfx": "ka_ching",
+  "at": {
+   "seg": "s05b",
+   "word": "@eighteen",
+   "offset": 0.5
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "scale_creak",
+  "at": {
+   "seg": "s05b",
+   "word": "@cash",
+   "offset": 1.0
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s05b",
+   "word": "@cash",
+   "offset": 1.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s05b",
+   "edge": "end",
+   "offset": 0.0
+  },
+  "vol": 0.5,
+  "dur": 2.0
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s05b",
+   "edge": "end",
+   "offset": 2.3
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s05c",
+   "word": "@borrow",
+   "offset": 0.2
+  },
+  "vol": 0.28
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s05c",
+   "word": "@borrow",
+   "offset": 0.5
+  },
+  "vol": 0.28
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s05c",
+   "word": "@savings",
+   "offset": 0.25
+  },
+  "vol": 0.28
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05c",
+   "word": "@pocket",
+   "offset": 0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ka_ching",
+  "at": {
+   "seg": "s05c",
+   "word": "@pocket",
+   "offset": 0.75
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05c",
+   "word": "@pocket",
+   "offset": 1.8
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05d",
+   "word": "@revenue"
+  },
+  "vol": 0.35
+ }
+]

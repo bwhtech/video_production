@@ -1,0 +1,527 @@
+1
+00:00:01,360 --> 00:00:02,440
+This is Meera.
+
+2
+00:00:02,720 --> 00:00:05,120
+Today was the first day of her chai stall.
+
+3
+00:00:05,200 --> 00:00:07,733
+She served chai all day, and the galla —
+
+4
+00:00:07,787 --> 00:00:10,240
+her cash box — is full of notes.
+
+5
+00:00:10,320 --> 00:00:12,480
+But once she pays for the milk, the sugar,
+
+6
+00:00:12,560 --> 00:00:14,800
+and the stall's rent — did Meera actually
+
+7
+00:00:14,880 --> 00:00:16,160
+make a profit today?
+
+8
+00:00:16,240 --> 00:00:17,200
+Or a loss?
+
+9
+00:00:18,801 --> 00:00:19,881
+She doesn't know.
+
+10
+00:00:20,161 --> 00:00:21,121
+And honestly?
+
+11
+00:00:21,441 --> 00:00:23,681
+Most people who start a business don't either.
+
+12
+00:00:24,189 --> 00:00:26,269
+By the end of this course, you'll be able
+
+13
+00:00:26,349 --> 00:00:28,989
+to answer that question — for Meera, and
+
+14
+00:00:29,149 --> 00:00:30,429
+for your own business.
+
+15
+00:00:36,376 --> 00:00:38,376
+Accounting sounds scary.
+
+16
+00:00:38,616 --> 00:00:40,616
+But it started with something you already
+
+17
+00:00:40,696 --> 00:00:42,376
+know how to do — counting.
+
+18
+00:00:43,456 --> 00:00:46,096
+Five thousand years ago, in Mesopotamia,
+
+19
+00:00:46,176 --> 00:00:48,496
+farmers pressed little marks into clay to
+
+20
+00:00:48,576 --> 00:00:50,416
+count their sheep and grain.
+
+21
+00:00:51,176 --> 00:00:53,496
+About five hundred years ago, in Venice,
+
+22
+00:00:53,576 --> 00:00:56,376
+a monk named Luca Pacioli wrote down a clever
+
+23
+00:00:56,456 --> 00:00:58,456
+system for keeping track of money.
+
+24
+00:00:59,136 --> 00:01:01,216
+And Indian traders have kept the same kind
+
+25
+00:01:01,296 --> 00:01:04,336
+of books — the bahi-khata — for centuries.
+
+26
+00:01:05,096 --> 00:01:07,416
+Today, the books live inside apps.
+
+27
+00:01:07,856 --> 00:01:09,736
+But the idea hasn't changed.
+
+28
+00:01:11,467 --> 00:01:12,467
+Meet Khata.
+
+29
+00:01:12,747 --> 00:01:15,067
+Khata is a ledger book, and it'll be your
+
+30
+00:01:15,227 --> 00:01:16,547
+guide through this course.
+
+31
+00:01:17,540 --> 00:01:18,287
+Notice something?
+
+32
+00:01:18,527 --> 00:01:20,687
+An open book has two sides.
+
+33
+00:01:20,727 --> 00:01:23,327
+A left page, and a right page.
+
+34
+00:01:24,327 --> 00:01:24,927
+Remember that.
+
+35
+00:01:25,667 --> 00:01:27,747
+It's going to matter more than you think.
+
+36
+00:01:28,811 --> 00:01:32,011
+Every business owner — a chai stall, a startup,
+
+37
+00:01:32,051 --> 00:01:34,651
+a giant company — really wants the answers
+
+38
+00:01:34,731 --> 00:01:36,411
+to just two questions.
+
+39
+00:01:37,091 --> 00:01:38,691
+One: am I making money?
+
+40
+00:01:39,871 --> 00:01:42,591
+Two: what do I own, and what do I owe?
+
+41
+00:01:44,071 --> 00:01:47,031
+Accounting answers both, with two reports.
+
+42
+00:01:47,811 --> 00:01:49,571
+The first is called the Profit and Loss
+
+43
+00:01:49,651 --> 00:01:50,531
+statement.
+
+44
+00:01:51,011 --> 00:01:52,451
+Think of it as a movie.
+
+45
+00:01:52,531 --> 00:01:55,091
+It plays the story of a period — a day,
+
+46
+00:01:55,144 --> 00:01:57,331
+a month, a year — and tells you whether
+
+47
+00:01:57,451 --> 00:01:59,411
+you earned more than you spent.
+
+48
+00:02:00,491 --> 00:02:02,411
+The second is the Balance Sheet.
+
+49
+00:02:02,491 --> 00:02:03,531
+That's a photo.
+
+50
+00:02:04,111 --> 00:02:05,871
+One moment, frozen.
+
+51
+00:02:06,711 --> 00:02:09,111
+Everything you own, and everything you owe,
+
+52
+00:02:09,231 --> 00:02:10,071
+right now.
+
+53
+00:02:11,151 --> 00:02:12,911
+A movie, and a photo.
+
+54
+00:02:13,071 --> 00:02:15,151
+Profit and Loss, and Balance Sheet.
+
+55
+00:02:15,791 --> 00:02:17,831
+We'll build both for Meera, by the end of
+
+56
+00:02:17,911 --> 00:02:18,551
+April.
+
+57
+00:02:19,617 --> 00:02:22,577
+But first, the most important idea in this
+
+58
+00:02:22,737 --> 00:02:24,017
+whole lesson.
+
+59
+00:02:24,097 --> 00:02:27,217
+Meera and Meera's Chai are not the same.
+
+60
+00:02:28,167 --> 00:02:30,887
+To an accountant, the stall is its own little
+
+61
+00:02:30,967 --> 00:02:31,847
+person.
+
+62
+00:02:32,527 --> 00:02:34,927
+It has its own money, its own things, its
+
+63
+00:02:35,007 --> 00:02:36,127
+own debts.
+
+64
+00:02:36,867 --> 00:02:38,827
+So when Meera takes fifty thousand rupees
+
+65
+00:02:38,907 --> 00:02:41,387
+out of her savings and puts it in the galla,
+
+66
+00:02:41,467 --> 00:02:43,787
+the money now belongs to the stall.
+
+67
+00:02:44,427 --> 00:02:46,467
+And the stall remembers that it came from
+
+68
+00:02:46,547 --> 00:02:47,427
+Meera.
+
+69
+00:02:48,447 --> 00:02:50,727
+Here's where most new founders slip.
+
+70
+00:02:51,307 --> 00:02:54,427
+It's my stall, so its money is my money.
+
+71
+00:02:55,036 --> 00:02:55,556
+Nope.
+
+72
+00:02:55,756 --> 00:02:57,836
+If Meera pays her home electricity bill
+
+73
+00:02:57,916 --> 00:03:00,823
+from the galla, that's not a stall expense.
+
+74
+00:03:01,549 --> 00:03:03,096
+And if she buys sugar for the stall with
+
+75
+00:03:03,176 --> 00:03:05,496
+her own phone, the stall still needs to
+
+76
+00:03:05,576 --> 00:03:06,576
+know about it.
+
+77
+00:03:07,416 --> 00:03:08,269
+Two people.
+
+78
+00:03:08,623 --> 00:03:09,836
+Two sets of money.
+
+79
+00:03:10,776 --> 00:03:12,896
+This is called the business entity idea,
+
+80
+00:03:12,936 --> 00:03:14,936
+and every rule you'll learn sits on top
+
+81
+00:03:15,016 --> 00:03:15,496
+of it.
+
+82
+00:03:16,544 --> 00:03:18,784
+So what goes into the stall's books?
+
+83
+00:03:19,024 --> 00:03:21,664
+Only transactions — events that change what
+
+84
+00:03:21,704 --> 00:03:24,304
+the business has or owes, and that you can
+
+85
+00:03:24,384 --> 00:03:25,584
+measure in rupees.
+
+86
+00:03:26,724 --> 00:03:27,724
+Let's play a game.
+
+87
+00:03:27,924 --> 00:03:29,204
+Is it a transaction?
+
+88
+00:03:29,673 --> 00:03:32,553
+Meera sells a cup of chai for twenty rupees.
+
+89
+00:03:34,280 --> 00:03:34,960
+Yes!
+
+90
+00:03:35,160 --> 00:03:37,400
+Money came in, chai went out.
+
+91
+00:03:38,194 --> 00:03:40,194
+Meera smiles at a customer.
+
+92
+00:03:41,753 --> 00:03:42,593
+Lovely.
+
+93
+00:03:42,793 --> 00:03:44,473
+But no rupees moved.
+
+94
+00:03:44,633 --> 00:03:45,993
+Not a transaction.
+
+95
+00:03:46,559 --> 00:03:47,399
+Your turn.
+
+96
+00:03:47,679 --> 00:03:49,759
+Meera buys a bag of sugar.
+
+97
+00:03:52,920 --> 00:03:53,600
+Yes.
+
+98
+00:03:53,800 --> 00:03:56,200
+Money went out, sugar came in.
+
+99
+00:03:56,759 --> 00:03:57,719
+And one more.
+
+100
+00:03:57,959 --> 00:04:00,279
+A milk supplier calls to say hello.
+
+101
+00:04:03,433 --> 00:04:04,753
+Not a transaction.
+
+102
+00:04:04,953 --> 00:04:06,433
+Nothing changed hands.
+
+103
+00:04:06,713 --> 00:04:07,593
+Yet.
+
+104
+00:04:08,761 --> 00:04:10,881
+That's really all accounting is.
+
+105
+00:04:11,481 --> 00:04:14,041
+You record every transaction, you sort them
+
+106
+00:04:14,121 --> 00:04:16,041
+into the right buckets, and you sum them
+
+107
+00:04:16,121 --> 00:04:17,881
+up into the movie and the photo.
+
+108
+00:04:19,061 --> 00:04:19,621
+Record.
+
+109
+00:04:19,941 --> 00:04:20,341
+Sort.
+
+110
+00:04:20,661 --> 00:04:21,581
+Summarise.
+
+111
+00:04:22,661 --> 00:04:24,741
+Over the next lessons, we'll follow Meera
+
+112
+00:04:24,821 --> 00:04:27,701
+through her first month — one day at a time.
+
+113
+00:04:28,567 --> 00:04:31,127
+So — accounting answers two questions.
+
+114
+00:04:31,927 --> 00:04:34,167
+The movie tells you if you made money.
+
+115
+00:04:34,647 --> 00:04:37,367
+The photo shows what you own and owe.
+
+116
+00:04:37,847 --> 00:04:40,087
+And the business is its own person.
+
+117
+00:04:41,193 --> 00:04:41,833
+Your turn.
+
+118
+00:04:41,993 --> 00:04:42,993
+Three quick ones.
+
+119
+00:04:43,593 --> 00:04:44,113
+One.
+
+120
+00:04:44,393 --> 00:04:46,313
+Meera pays her personal phone bill from
+
+121
+00:04:46,433 --> 00:04:47,833
+her own bank account.
+
+122
+00:04:47,913 --> 00:04:49,833
+Does it go in the stall's books?
+
+123
+00:04:51,793 --> 00:04:52,353
+Two.
+
+124
+00:04:52,393 --> 00:04:54,753
+A customer asks the price of chai, then
+
+125
+00:04:54,833 --> 00:04:55,713
+walks away.
+
+126
+00:04:56,073 --> 00:04:57,553
+Transaction, or not?
+
+127
+00:04:59,513 --> 00:05:00,073
+Three.
+
+128
+00:05:00,153 --> 00:05:02,073
+Which report is the photo?
+
+129
+00:05:04,113 --> 00:05:06,033
+Answers at the start of the next lesson.
+
+130
+00:05:07,320 --> 00:05:10,200
+Next time, Meera opens the galla with fifty
+
+131
+00:05:10,360 --> 00:05:12,440
+thousand rupees of her own savings.
+
+132
+00:05:12,520 --> 00:05:14,040
+So whose money is it now?

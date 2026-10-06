@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Paper rig — motion test</title>
+    <link rel="stylesheet" href="../kit/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="../kit/icons.js"></script>
+    <script src="../kit/kit.js"></script>
+    <script src="../kit/rig.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #b7895a; }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+      .layer { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+      svg { display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="6" data-width="1920" data-height="1080">
+      <svg width="0" height="0" style="position:absolute">
+        <defs>
+          <pattern id="pat-cover" patternUnits="userSpaceOnUse" width="768" height="432"><image href="../kit/tex/cover.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-paper" patternUnits="userSpaceOnUse" width="768" height="432"><image href="../kit/tex/paper.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-kraft" patternUnits="userSpaceOnUse" width="768" height="432"><image href="../kit/tex/kraft.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-grain" patternUnits="userSpaceOnUse" width="768" height="432"><image href="../kit/tex/construction.jpg" width="768" height="432" /></pattern>
+          <filter id="sh1" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="3" dy="4" stdDeviation="2" flood-color="#3b2614" flood-opacity="0.35" /></filter>
+          <filter id="sh2" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="6" dy="8" stdDeviation="3.5" flood-color="#3b2614" flood-opacity="0.38" /></filter>
+          <filter id="sh3" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="10" dy="14" stdDeviation="6" flood-color="#3b2614" flood-opacity="0.4" /></filter>
+        </defs>
+      </svg>
+      <section id="stage" class="clip" data-start="0" data-duration="6" data-track-index="1"><svg id="svgS" class="layer" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg></section>
+    </div>
+    <script>
+      const K = window.KIT, C = K.C;
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const r = document.getElementById("svgS");
+      K.wall(r, C.teal, 900); K.table(r, 880);
+      const cam = K.g(r, {});
+      K.crate(cam, 960, 980, 220, 130);
+      const gl = K.galla(cam, 960, 852, 1.05, { open: false, overflow: true });
+      const m = K.meera(cam, 470, 1010, 1.0, { expr: "happy" });
+      const k = K.khataRig(cam, 1480, 1000, 0.95, { expr: "sleep" });
+      // Meera: look → amazed take → wave → shrug → point → joy
+      m.look(tl, 0.4, 8, -4).expr(tl, 0.7, "amazed").wave(tl, 1.0, "R", 2);
+      m.expr(tl, 2.3, "puzzled").shrug(tl, 2.4, 0.6);
+      m.expr(tl, 3.7, "grin").point(tl, 3.7, "R", 95);
+      m.look(tl, 3.7, 9, 0).expr(tl, 4.9, "joy").pose(tl, 4.9, { aL: [160, 12], aR: [160, 12] });
+      m.blink(tl, 0.2); m.blink(tl, 3.3);
+      // Khata: z's → wake → hop → open → wink + sparkles
+      k.emote(tl, 0.0, "z", 0.9);
+      k.expr(tl, 1.1, "wow").emote(tl, 1.15, "!", 0.6).hop(tl, 1.4);
+      k.expr(tl, 2.2, "awake").open(tl, 2.6, 0.55);
+      k.arm(tl, 3.4, "L", 60).pageTint(tl, 3.4, "left", true);
+      k.arm(tl, 4.0, "R", 60).pageTint(tl, 4.0, "right", true);
+      k.look(tl, 3.4, -9, 0).look(tl, 4.0, 9, 0).look(tl, 4.7, 0, 0);
+      k.expr(tl, 4.8, "wink").emote(tl, 4.85, "sparkle", 0.8);
+      // galla
+      gl.open(tl, 1.2); gl.shut(tl, 5.2);
+      // paper wobble on every puppet + a smooth camera push
+      m.jitter(tl, 0, 6); k.jitter(tl, 0, 6); K.jitter(tl, [gl.jit], 0, 6, { seed: 5, rot: 0.4, px: 1 });
+      tl.fromTo(cam, { scale: 1, svgOrigin: "960 700" }, { scale: 1.04, svgOrigin: "960 700", duration: 6, ease: "none" }, 0);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

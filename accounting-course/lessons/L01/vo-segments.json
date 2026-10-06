@@ -1,0 +1,134 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 1.4,
+  "text": "[softly] This is Meera. Today was the first day of her chai stall. She served chai all day, and the galla — her cash box — is full of notes. But once she pays for the milk, the sugar, and the stall's rent — did Meera actually make a profit today? Or a loss?"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.4,
+  "text": "[softly] She doesn't know. And honestly? Most people who start a business don't either."
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[warmly] By the end of this course, you'll be able to answer that question — for Meera, and for your own business."
+ },
+ {
+  "id": "s02",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "Accounting sounds scary. But it started with something you already know how to do — counting. Five thousand years ago, in Mesopotamia, farmers pressed little marks into clay to count their sheep and grain. About five hundred years ago, in Venice, a monk named Luca Pacioli wrote down a clever system for keeping track of money. And Indian traders have kept the same kind of books — the bahi-khata — for centuries. Today, the books live inside apps. But the idea hasn't changed."
+ },
+ {
+  "id": "s03",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "[curious] Meet Khata. Khata is a ledger book, and it'll be your guide through this course. ... Notice something? An open book has two sides. A left page, ... and a right page. Remember that. [playful] It's going to matter more than you think."
+ },
+ {
+  "id": "s04",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "Every business owner — a chai stall, a startup, a giant company — really wants the answers to just two questions. One: am I making money? Two: what do I own, and what do I owe? Accounting answers both, with two reports. The first is called the Profit and Loss statement. Think of it as a movie. It plays the story of a period — a day, a month, a year — and tells you whether you earned more than you spent. The second is the Balance Sheet. That's a photo. One moment, frozen. Everything you own, and everything you owe, right now. A movie, and a photo. Profit and Loss, and Balance Sheet. We'll build both for Meera, by the end of April."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 1.0,
+  "text": "But first, the most important idea in this whole lesson. Meera and Meera's Chai are not the same."
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.5,
+  "text": "To an accountant, the stall is its own little person. It has its own money, its own things, its own debts. So when Meera takes fifty thousand rupees out of her savings and puts it in the galla, the money now belongs to the stall. And the stall remembers that it came from Meera. Here's where most new founders slip. It's my stall, so its money is my money."
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "[firmly] Nope. If Meera pays her home electricity bill from the galla, that's not a stall expense. And if she buys sugar for the stall with her own phone, the stall still needs to know about it. Two people. Two sets of money. This is called the business entity idea, and every rule you'll learn sits on top of it."
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.5,
+  "text": "So what goes into the stall's books? Only transactions — events that change what the business has or owes, and that you can measure in rupees. [excited] Let's play a game. Is it a transaction?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 1.6,
+  "text": "Meera sells a cup of chai for twenty rupees."
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "[excited] Yes! Money came in, chai went out."
+ },
+ {
+  "id": "s06d",
+  "scene": 6,
+  "gap_after": 1.6,
+  "text": "Meera smiles at a customer."
+ },
+ {
+  "id": "s06e",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "Lovely. But no rupees moved. Not a transaction."
+ },
+ {
+  "id": "s06f",
+  "scene": 6,
+  "gap_after": 3.2,
+  "text": "Your turn. Meera buys a bag of sugar."
+ },
+ {
+  "id": "s06g",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "Yes. Money went out, sugar came in."
+ },
+ {
+  "id": "s06h",
+  "scene": 6,
+  "gap_after": 3.2,
+  "text": "And one more. A milk supplier calls to say hello."
+ },
+ {
+  "id": "s06i",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "Not a transaction. Nothing changed hands. [playful] Yet."
+ },
+ {
+  "id": "s07",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "That's really all accounting is. You record every transaction, you sort them into the right buckets, and you sum them up into the movie and the photo. Record. Sort. Summarise. Over the next lessons, we'll follow Meera through her first month — one day at a time."
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "So — accounting answers two questions. The movie tells you if you made money. The photo shows what you own and owe. And the business is its own person."
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. Meera pays her personal phone bill from her own bank account. Does it go in the stall's books? Two. A customer asks the price of chai, then walks away. Transaction, or not? Three. Which report is the photo? Answers at the start of the next lesson."
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time, Meera opens the galla with fifty thousand rupees of her own savings. So whose money is it now?"
+ }
+]

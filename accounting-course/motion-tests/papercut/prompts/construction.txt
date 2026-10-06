@@ -1,0 +1,1 @@
+Seamless tileable texture, top-down, flat even lighting: plain light grey-white construction paper with a slightly rough matte surface and visible fibre grain (it will be colour-tinted later). Fills the whole frame. No objects, no text, no shadows, no vignette. Square.

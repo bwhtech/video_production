@@ -1,0 +1,293 @@
+{
+ "accounts": {
+  "Cash": "A",
+  "School canteen (receivable)": "A",
+  "Ingredients stock": "A",
+  "Cart & fryer": "A",
+  "Accumulated depreciation": "CA",
+  "Bank loan": "L",
+  "Sharma Kirana (payable)": "L",
+  "Advance from customer": "L",
+  "Capital": "E",
+  "Drawings": "D",
+  "Sales": "R",
+  "Stall rent": "X",
+  "Helper wages": "X",
+  "Ingredients used": "X",
+  "Depreciation": "X"
+ },
+ "transactions": [
+  {
+   "id": "A1",
+   "text": "Aman puts ₹20,000 of savings into the cart business",
+   "debit": [
+    [
+     "Cash",
+     20000
+    ]
+   ],
+   "credit": [
+    [
+     "Capital",
+     20000
+    ]
+   ],
+   "checkpoint": 1
+  },
+  {
+   "id": "A2",
+   "text": "Takes a ₹10,000 bank loan",
+   "debit": [
+    [
+     "Cash",
+     10000
+    ]
+   ],
+   "credit": [
+    [
+     "Bank loan",
+     10000
+    ]
+   ],
+   "checkpoint": 1
+  },
+  {
+   "id": "A3",
+   "text": "Buys cart and fryer for ₹18,000 cash",
+   "debit": [
+    [
+     "Cart & fryer",
+     18000
+    ]
+   ],
+   "credit": [
+    [
+     "Cash",
+     18000
+    ]
+   ],
+   "checkpoint": 1
+  },
+  {
+   "id": "A4",
+   "text": "Buys ₹3,000 potatoes, flour, oil on credit from Sharma Kirana",
+   "debit": [
+    [
+     "Ingredients stock",
+     3000
+    ]
+   ],
+   "credit": [
+    [
+     "Sharma Kirana (payable)",
+     3000
+    ]
+   ],
+   "checkpoint": 1
+  },
+  {
+   "id": "A5",
+   "text": "Cash sales ₹9,000",
+   "debit": [
+    [
+     "Cash",
+     9000
+    ]
+   ],
+   "credit": [
+    [
+     "Sales",
+     9000
+    ]
+   ],
+   "checkpoint": 2
+  },
+  {
+   "id": "A6",
+   "text": "Pays stall-spot rent ₹2,000",
+   "debit": [
+    [
+     "Stall rent",
+     2000
+    ]
+   ],
+   "credit": [
+    [
+     "Cash",
+     2000
+    ]
+   ],
+   "checkpoint": 2
+  },
+  {
+   "id": "A7",
+   "text": "Supplies school canteen ₹1,500 on credit",
+   "debit": [
+    [
+     "School canteen (receivable)",
+     1500
+    ]
+   ],
+   "credit": [
+    [
+     "Sales",
+     1500
+    ]
+   ],
+   "checkpoint": 2
+  },
+  {
+   "id": "A8",
+   "text": "Pays Sharma Kirana ₹2,000",
+   "debit": [
+    [
+     "Sharma Kirana (payable)",
+     2000
+    ]
+   ],
+   "credit": [
+    [
+     "Cash",
+     2000
+    ]
+   ],
+   "checkpoint": 2
+  },
+  {
+   "id": "A9",
+   "text": "Gets ₹1,000 advance for a birthday-party order next month",
+   "debit": [
+    [
+     "Cash",
+     1000
+    ]
+   ],
+   "credit": [
+    [
+     "Advance from customer",
+     1000
+    ]
+   ],
+   "checkpoint": 2
+  },
+  {
+   "id": "A10",
+   "text": "Cash sales ₹11,000",
+   "debit": [
+    [
+     "Cash",
+     11000
+    ]
+   ],
+   "credit": [
+    [
+     "Sales",
+     11000
+    ]
+   ],
+   "checkpoint": 4
+  },
+  {
+   "id": "A11",
+   "text": "Pays helper ₹3,000",
+   "debit": [
+    [
+     "Helper wages",
+     3000
+    ]
+   ],
+   "credit": [
+    [
+     "Cash",
+     3000
+    ]
+   ],
+   "checkpoint": 4
+  },
+  {
+   "id": "A12",
+   "text": "Aman takes ₹1,500 home",
+   "debit": [
+    [
+     "Drawings",
+     1500
+    ]
+   ],
+   "credit": [
+    [
+     "Cash",
+     1500
+    ]
+   ],
+   "checkpoint": 4
+  },
+  {
+   "id": "A13",
+   "text": "School canteen pays ₹1,500",
+   "debit": [
+    [
+     "Cash",
+     1500
+    ]
+   ],
+   "credit": [
+    [
+     "School canteen (receivable)",
+     1500
+    ]
+   ],
+   "checkpoint": 4
+  },
+  {
+   "id": "A14",
+   "text": "Stock count: ₹500 left → ₹2,500 used",
+   "debit": [
+    [
+     "Ingredients used",
+     2500
+    ]
+   ],
+   "credit": [
+    [
+     "Ingredients stock",
+     2500
+    ]
+   ],
+   "checkpoint": 4
+  },
+  {
+   "id": "A15",
+   "text": "Depreciation ₹18,000 ÷ 36 months",
+   "debit": [
+    [
+     "Depreciation",
+     500
+    ]
+   ],
+   "credit": [
+    [
+     "Accumulated depreciation",
+     500
+    ]
+   ],
+   "checkpoint": 4
+  }
+ ],
+ "closing": {
+  "Cash": 26000,
+  "Ingredients stock": 500,
+  "Cart & fryer": 18000,
+  "Accumulated depreciation": -500,
+  "Bank loan": -10000,
+  "Sharma Kirana (payable)": -1000,
+  "Advance from customer": -1000,
+  "Capital": -20000,
+  "Drawings": 1500,
+  "Sales": -21500,
+  "Stall rent": 2000,
+  "Helper wages": 3000,
+  "Ingredients used": 2500,
+  "Depreciation": 500
+ },
+ "trial_balance_total": 54000
+}

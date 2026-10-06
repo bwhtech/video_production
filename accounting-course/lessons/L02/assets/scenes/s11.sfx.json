@@ -1,0 +1,60 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "scene": "s11",
+   "t": 0.3
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "seg": "s11",
+   "word": "@spends"
+  },
+  "vol": 0.2
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@thirty-six"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@stove"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s11",
+   "word": "@glasses"
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@lose",
+   "offset": 0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "book_thump",
+  "at": {
+   "seg": "s11",
+   "edge": "end",
+   "offset": -0.15
+  },
+  "vol": 0.8
+ }
+]

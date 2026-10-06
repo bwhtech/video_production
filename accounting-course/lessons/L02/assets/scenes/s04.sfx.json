@@ -1,0 +1,87 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "scene": "s04",
+   "t": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@where"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04a",
+   "word": "@tag"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04a",
+   "word": "@where",
+   "offset": 0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s04b",
+   "word": "@meera"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "twine_tug",
+  "at": {
+   "seg": "s04b",
+   "word": "@claim",
+   "offset": -0.2
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04b",
+   "word": "@equity"
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04b",
+   "word": "@capital"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ka_ching",
+  "at": {
+   "seg": "s04b",
+   "word": "@fifty",
+   "nth": 2,
+   "offset": 0.6
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "swoosh_transition",
+  "at": {
+   "seg": "s04b",
+   "edge": "end",
+   "offset": 0.3
+  },
+  "vol": 0.45
+ }
+]

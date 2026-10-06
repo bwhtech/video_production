@@ -1,0 +1,9 @@
+[
+ {"sfx": "cover_swing", "at": {"scene": "s10", "t": 0.05}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@turn"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@one"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@two"}, "vol": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s10", "word": "@three", "nth": 2}, "vol": 0.3},
+ {"sfx": "tink_high", "at": {"seg": "s10", "word": "@three", "nth": 2, "offset": 0.25}, "vol": 0.3},
+ {"sfx": "page_flip", "at": {"seg": "s10", "word": "@answers", "offset": 1.0}, "vol": 0.35}
+]

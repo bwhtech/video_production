@@ -1,0 +1,55 @@
+{
+ "s03b": [
+  ["@left", 0.4, 1],
+  ["@right", 0.4, 1],
+  ["@nineteen", 0.5]
+ ],
+ "s03e": [
+  ["@balance", 0.6, 1],
+  ["@right", 0.5]
+ ],
+ "s04": [
+  ["@halves", 0.6, 1],
+  ["@right", 0.6]
+ ],
+ "s05b": [
+  ["@true", 0.7]
+ ],
+ "s05d": [
+  ["@account", 0.5]
+ ],
+ "s05e": [
+  ["@backwards", 0.5],
+  ["@each", 0.6]
+ ],
+ "s06c": [
+  ["@gopal", 0.6, 1],
+  ["@arrived", 0.6]
+ ],
+ "s08": [
+  ["@balance", 0.5, 2],
+  ["@halves", 0.5],
+  ["@clue", 0.6]
+ ],
+ "s09": [
+  ["@ones", 0.4],
+  ["@balance", 1.8, 1],
+  ["@completely", 1.8],
+  ["@in", 1.8]
+ ],
+ "s10a": [
+  ["@transactions", 0.6],
+  ["@rupees", 0.4, 1],
+  ["@helper", 0.4],
+  ["@home", 0.4],
+  ["@hundred", 0.4, 2],
+  ["@thousand", 0.4, 3]
+ ],
+ "s10b": [
+  ["@worksheet", 0.8]
+ ],
+ "s10c": [
+  ["@rupees", 0.8],
+  ["@line", 0.8]
+ ]
+}

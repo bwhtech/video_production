@@ -1,0 +1,68 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "scene": "s06",
+   "t": 0.3
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ka_ching",
+  "at": {
+   "seg": "s06a",
+   "word": "@richer"
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s06a",
+   "edge": "end",
+   "offset": 0.35
+  },
+  "vol": 0.7
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06b",
+   "word": "@cash"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06b",
+   "word": "@owes"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06b",
+   "word": "@still",
+   "offset": 0.4
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06b",
+   "word": "@someone"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "twine_tug",
+  "at": {
+   "seg": "s06b",
+   "word": "@remember"
+  },
+  "vol": 0.4
+ }
+]

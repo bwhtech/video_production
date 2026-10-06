@@ -1,0 +1,17 @@
+[
+  {"id": "s01", "title": "The rule barrage (cold open)", "lead": 0.5},
+  {"id": "s01t", "title": "Title sting (`s01t`)", "fixed": 4.6},
+  {"id": "s02", "title": "Last time", "lead": 0.5},
+  {"id": "s03", "title": "Deep roots: bahi-khata, naam and jama", "lead": 0.5},
+  {"id": "s04", "title": "Three families", "lead": 0.5},
+  {"id": "s05", "title": "Three rules, translated", "lead": 0.5},
+  {"id": "s06", "title": "Two cameras: proof (T3, T5, T7)", "lead": 0.5},
+  {"id": "s07", "title": "Two traps: the Bank and Capital (T8, T1) — misconception moment", "lead": 0.5},
+  {"id": "s08", "title": "The translation card", "lead": 0.5},
+  {"id": "s09", "title": "Worked → faded → solo (T2, T6, T12)", "lead": 0.5},
+  {"id": "s10", "title": "Recap", "lead": 0.5},
+  {"id": "s11", "title": "Your Turn", "lead": 0.5},
+  {"id": "s12", "title": "Checkpoint 3: Aman's Samosa Cart", "lead": 0.5},
+  {"id": "s13", "title": "Next time", "lead": 0.5},
+  {"id": "s14", "title": "End card (12 s, no VO)", "fixed": 12.0}
+]

@@ -1,0 +1,11 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s02a", "word": "@one"}, "vol": 0.3},
+ {"sfx": "glass_clink", "at": {"seg": "s02a", "word": "@stock", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "tink_low", "at": {"seg": "s02a", "word": "@asset"}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s02a", "word": "@owes", "offset": -0.05}, "vol": 0.3},
+ {"sfx": "tink_high", "at": {"seg": "s02a", "word": "@liability"}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s02b", "word": "@two"}, "vol": 0.3},
+ {"sfx": "paper_whoosh", "at": {"seg": "s02b", "word": "@not", "offset": 0.2}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s02c", "word": "@three"}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s02c", "word": "@fifty", "offset": 0.7}, "vol": 0.5}
+]

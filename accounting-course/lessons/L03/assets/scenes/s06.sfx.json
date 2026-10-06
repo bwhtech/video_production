@@ -1,0 +1,16 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s06a", "word": "@gopal", "offset": -0.4}, "vol": 0.25},
+ {"sfx": "paper_slide", "at": {"seg": "s06a", "word": "@gopal", "offset": 0.1}, "vol": 0.2},
+ {"sfx": "paper_slide", "at": {"seg": "s06a", "word": "@eight", "offset": -0.4}, "vol": 0.2},
+ {"sfx": "pop", "at": {"seg": "s06a", "word": "@changes"}, "vol": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s06a", "word": "@stock"}, "vol": 0.35},
+ {"sfx": "tink_high", "at": {"seg": "s06a", "word": "@owed"}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s06a", "word": "@each"}, "vol": 0.3},
+ {"sfx": "tick_tock", "at": {"seg": "s06a", "edge": "end"}, "vol": 0.5, "dur": 3.0},
+ {"sfx": "glass_clink", "at": {"seg": "s06b", "word": "@stock", "offset": 1.2}, "vol": 0.45},
+ {"sfx": "scale_creak", "at": {"seg": "s06b", "word": "@stock", "offset": 1.4}, "vol": 0.5},
+ {"sfx": "tink_high", "at": {"seg": "s06b", "word": "@catches", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "scale_settle", "at": {"seg": "s06b", "word": "@catches", "offset": 1.7}, "vol": 0.55},
+ {"sfx": "ding_yes", "at": {"seg": "s06b", "word": "@level"}, "vol": 0.55},
+ {"sfx": "paper_whoosh", "at": {"seg": "s06b", "edge": "end", "offset": -0.7}, "vol": 0.35}
+]

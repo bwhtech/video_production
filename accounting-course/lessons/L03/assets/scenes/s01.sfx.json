@@ -1,0 +1,11 @@
+[
+ {"sfx": "pop", "at": {"seg": "s01a", "word": "@stove"}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s01a", "word": "@kettles"}, "vol": 0.25},
+ {"sfx": "glass_clink", "at": {"seg": "s01a", "word": "@stack"}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s01a", "word": "@price"}, "vol": 0.3},
+ {"sfx": "note_rustle", "at": {"seg": "s01a", "edge": "end", "offset": 0.3}, "vol": 0.22, "dur": 0.9},
+ {"sfx": "coin_clink", "at": {"seg": "s01a", "edge": "end", "offset": 1.2}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s01b", "word": "@lose", "offset": 0.15}, "vol": 0.4},
+ {"sfx": "galla_clack", "at": {"seg": "s01b", "edge": "end", "offset": -0.3}, "vol": 0.7},
+ {"sfx": "swoosh_transition", "at": {"seg": "s01b", "edge": "end", "offset": 0.0}, "vol": 0.45}
+]

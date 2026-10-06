@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Khata clay test</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #f6e3cf; }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+      #three-layer { position: absolute; inset: 0; width: 1920px; height: 1080px; display: block; }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.181.2/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-no-timeline data-start="0" data-duration="17" data-width="1920" data-height="1080">
+      <canvas id="three-layer" class="clip" data-start="0" data-duration="17" data-track-index="1"></canvas>
+      <audio id="vo" class="clip" data-start="1" data-duration="14.48" data-track-index="2" src="assets/vo/l01-line04.mp3"></audio>
+    </div>
+
+    <script type="module">
+      import * as THREE from "three";
+      import { RoundedBoxGeometry } from "three/addons/geometries/RoundedBoxGeometry.js";
+
+      // ---------- palette
+      const C = {
+        red: 0xc8372d, redDark: 0x8e2a22, gold: 0xe9b949, page: 0xfffaf0, ink: 0x2b2233,
+        white: 0xffffff, cheek: 0xf29a8f, dr: 0x3d7fd9, cr: 0xe8862e, set: 0xf6e3cf,
+      };
+
+      // ---------- deterministic noise (clay surface)
+      function mulberry32(a) {
+        return () => {
+          a |= 0; a = (a + 0x6d2b79f5) | 0;
+          let t = Math.imul(a ^ (a >>> 15), 1 | a);
+          t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+          return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+        };
+      }
+      function clayBump(seed) {
+        const s = 256, cv = document.createElement("canvas");
+        cv.width = cv.height = s;
+        const g = cv.getContext("2d"), rnd = mulberry32(seed);
+        g.fillStyle = "#808080"; g.fillRect(0, 0, s, s);
+        for (let i = 0; i < 1400; i++) {            // thumb-smudge blobs
+          const v = 100 + rnd() * 60;
+          g.fillStyle = `rgba(${v},${v},${v},0.18)`;
+          g.beginPath(); g.ellipse(rnd() * s, rnd() * s, 2 + rnd() * 9, 1 + rnd() * 5, rnd() * Math.PI, 0, Math.PI * 2); g.fill();
+        }
+        const t = new THREE.CanvasTexture(cv);
+        t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(2, 2);
+        return t;
+      }
+      const BUMP = clayBump(11);
+      const clay = (color, extra = {}) =>
+        new THREE.MeshStandardMaterial({ color, roughness: 0.86, metalness: 0, bumpMap: BUMP, bumpScale: 0.6, ...extra });
+
+      function pageTexture(marginLeft) {
+        const w = 512, h = 496, cv = document.createElement("canvas");
+        cv.width = w; cv.height = h;
+        const g = cv.getContext("2d");
+        g.fillStyle = "#fffaf0"; g.fillRect(0, 0, w, h);
+        g.strokeStyle = "#e6d0ae"; g.lineWidth = 5;
+        for (let y = 90; y < h - 30; y += 62) { g.beginPath(); g.moveTo(24, y); g.lineTo(w - 24, y); g.stroke(); }
+        g.strokeStyle = "#e7a49a"; g.lineWidth = 5;
+        const mx = marginLeft ? 80 : w - 80;
+        g.beginPath(); g.moveTo(mx, 16); g.lineTo(mx, h - 16); g.stroke();
+        const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace;
+        return t;
+      }
+
+      // ---------- renderer / scene / camera
+      const canvas = document.getElementById("three-layer");
+      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+      renderer.setSize(1920, 1080, false);
+      renderer.setPixelRatio(1);
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+      renderer.shadowMap.enabled = true;
+      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color(C.set);
+      const camera = new THREE.PerspectiveCamera(30, 1920 / 1080, 0.1, 200);
+
+      // ---------- seamless cyc backdrop (floor → curve → wall)
+      function makeCyc() {
+        const R = 5, W = 60, prof = [];
+        prof.push([0, 14]);
+        for (let z = 14; z > -2; z -= 1) prof.push([0, z]);
+        for (let i = 0; i <= 24; i++) {
+          const a = (i / 24) * (Math.PI / 2);
+          prof.push([R - Math.cos(a) * R, -2 - Math.sin(a) * R]);
+        }
+        prof.push([20, -2 - R]);
+        const pos = [], idx = [];
+        prof.forEach(([y, z]) => { pos.push(-W / 2, y, z, W / 2, y, z); });
+        for (let i = 0; i < prof.length - 1; i++) {
+          const a = i * 2, b = a + 1, c = a + 2, d = a + 3;
+          idx.push(a, c, b, b, c, d);
+        }
+        const g = new THREE.BufferGeometry();
+        g.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+        g.setIndex(idx); g.computeVertexNormals();
+        const m = new THREE.Mesh(g, new THREE.MeshStandardMaterial({ color: C.set, roughness: 1, metalness: 0, side: THREE.DoubleSide }));
+        m.receiveShadow = true;
+        return m;
+      }
+      scene.add(makeCyc());
+
+      // ---------- lights
+      scene.add(new THREE.HemisphereLight(0xfff6ea, 0xe9c9a8, 1.5));
+      const key = new THREE.DirectionalLight(0xfff1de, 2.4);
+      key.position.set(-5, 9, 8); key.castShadow = true;
+      key.shadow.mapSize.set(2048, 2048);
+      Object.assign(key.shadow.camera, { left: -9, right: 9, top: 9, bottom: -3, near: 1, far: 40 });
+      key.shadow.radius = 6; key.shadow.bias = -0.0008;
+      scene.add(key);
+      const fill = new THREE.DirectionalLight(0xffe2d0, 0.7); fill.position.set(7, 3, 6); scene.add(fill);
+      const rim = new THREE.DirectionalLight(0xffffff, 0.9); rim.position.set(2, 6, -8); scene.add(rim);
+
+      const shadowy = (o) => { o.traverse((c) => { if (c.isMesh) { c.castShadow = true; c.receiveShadow = true; } }); return o; };
+
+      // ---------- KHATA
+      const khata = new THREE.Group(); scene.add(khata);
+      const body = new THREE.Group(); khata.add(body);           // squash/stretch about feet (origin = floor)
+
+      // feet
+      [-0.42, 0.42].forEach((x) => {
+        const f = new THREE.Mesh(new THREE.SphereGeometry(0.3, 24, 16), clay(C.redDark));
+        f.scale.set(1, 0.55, 1.3); f.position.set(x, 0.17, 0.05); body.add(f);
+      });
+
+      // spine
+      const SPINE_W = 1.8, SPINE_H = 3.6, SPINE_D = 0.72, SPINE_Y0 = 0.3;
+      const spine = new THREE.Mesh(new RoundedBoxGeometry(SPINE_W, SPINE_H, SPINE_D, 5, 0.26), clay(C.red));
+      spine.position.set(0, SPINE_Y0 + SPINE_H / 2, 0); body.add(spine);
+      const FZ = SPINE_D / 2;                                    // front face z
+
+      // gold band + bow
+      const band = new THREE.Mesh(new RoundedBoxGeometry(SPINE_W + 0.06, 0.14, SPINE_D + 0.06, 3, 0.05), clay(C.gold, { roughness: 0.6 }));
+      band.position.set(0, 1.35, 0); body.add(band);
+      [-1, 1].forEach((s) => {
+        const loop = new THREE.Mesh(new THREE.TorusGeometry(0.16, 0.05, 12, 32), clay(C.gold, { roughness: 0.6 }));
+        loop.position.set(s * 0.18, 1.42, FZ + 0.07); loop.scale.set(1.25, 0.8, 1); loop.rotation.z = s * 0.35; body.add(loop);
+        const tail = new THREE.Mesh(new THREE.CapsuleGeometry(0.045, 0.32, 6, 12), clay(C.gold, { roughness: 0.6 }));
+        tail.position.set(s * 0.12, 1.12, FZ + 0.07); tail.rotation.z = s * 0.35; body.add(tail);
+      });
+      const knot = new THREE.Mesh(new THREE.SphereGeometry(0.09, 16, 12), clay(C.gold, { roughness: 0.6 }));
+      knot.position.set(0, 1.36, FZ + 0.09); body.add(knot);
+
+      // face
+      const face = new THREE.Group(); face.position.set(0, 0, FZ); body.add(face);
+      function makeEye(x) {
+        const g = new THREE.Group(); g.position.set(x, 2.95, 0.02);
+        const lid = new THREE.Group(); g.add(lid);                 // scale.y = blink
+        const white = new THREE.Mesh(new THREE.SphereGeometry(0.27, 32, 20), clay(C.white, { roughness: 0.35, bumpScale: 0.1 }));
+        white.scale.set(0.92, 1.1, 0.42); lid.add(white);
+        const pupil = new THREE.Group(); lid.add(pupil);
+        const p = new THREE.Mesh(new THREE.SphereGeometry(0.135, 24, 16), new THREE.MeshStandardMaterial({ color: C.ink, roughness: 0.25 }));
+        p.scale.set(1, 1, 0.5); p.position.set(0, -0.03, 0.1); pupil.add(p);
+        const spec = new THREE.Mesh(new THREE.SphereGeometry(0.04, 12, 8), new THREE.MeshBasicMaterial({ color: C.white }));
+        spec.position.set(-0.045, 0.02, 0.17); pupil.add(spec);
+        face.add(g);
+        return { g, lid, pupil };
+      }
+      const eyeL = makeEye(-0.4), eyeR = makeEye(0.4);
+      const arcMat = new THREE.MeshStandardMaterial({ color: C.ink, roughness: 0.5 });
+      function arc(r, tube, x, y) {                              // ∪-shaped closed-eye / sleepy mouth
+        const m = new THREE.Mesh(new THREE.TorusGeometry(r, tube, 10, 32, Math.PI), arcMat);
+        m.rotation.z = Math.PI; m.position.set(x, y, 0.04); face.add(m); return m;
+      }
+      const sleepL = arc(0.2, 0.04, -0.4, 3.0), sleepR = arc(0.2, 0.04, 0.4, 3.0);
+      const wink = arc(0.2, 0.04, 0.4, 2.98);
+      [-0.58, 0.58].forEach((x) => {
+        const ch = new THREE.Mesh(new THREE.CircleGeometry(0.15, 24), new THREE.MeshStandardMaterial({ color: C.cheek, roughness: 0.9, transparent: true, opacity: 0.8 }));
+        ch.scale.set(1.4, 0.85, 1); ch.position.set(x, 2.58, 0.012); face.add(ch);
+      });
+      const mouthSleep = arc(0.09, 0.03, 0, 2.58);
+      const mouthSmile = new THREE.Group(); mouthSmile.position.set(0, 2.6, 0.02); face.add(mouthSmile);
+      const ms = new THREE.Mesh(new THREE.CircleGeometry(0.21, 32, Math.PI, Math.PI), new THREE.MeshStandardMaterial({ color: C.ink, roughness: 0.4 }));
+      ms.scale.set(1, 0.9, 1); mouthSmile.add(ms);
+      const tongue = new THREE.Mesh(new THREE.CircleGeometry(0.1, 24, Math.PI, Math.PI), new THREE.MeshStandardMaterial({ color: C.cheek, roughness: 0.6 }));
+      tongue.position.set(0, -0.1, 0.005); tongue.scale.set(1, -0.7, 1); mouthSmile.add(tongue);
+
+      // covers (hinged at spine edges)
+      const COVER_W = 3.35, COVER_H = 3.25, COVER_D = 0.14, COVER_Y = SPINE_Y0 + 0.2 + COVER_H / 2;
+      function makeCover(side) {                                  // side -1 = left, +1 = right
+        const pivot = new THREE.Group(); pivot.position.set(side * (SPINE_W / 2 - 0.05), COVER_Y, -0.08); body.add(pivot);
+        const cover = new THREE.Mesh(new RoundedBoxGeometry(COVER_W, COVER_H, COVER_D, 4, 0.06), clay(C.red));
+        cover.position.set(side * COVER_W / 2, 0, 0); pivot.add(cover);
+        const back = new THREE.Mesh(new RoundedBoxGeometry(COVER_W, COVER_H, 0.08, 3, 0.04), clay(C.redDark));
+        back.position.set(side * (COVER_W / 2 + 0.05), -0.08, -0.08); pivot.add(back);
+        const pageMat = new THREE.MeshStandardMaterial({ color: 0xffffff, map: pageTexture(side < 0), roughness: 0.92, bumpMap: BUMP, bumpScale: 0.25 });
+        const page = new THREE.Mesh(new THREE.PlaneGeometry(COVER_W - 0.3, COVER_H - 0.3), pageMat);
+        page.position.set(side * COVER_W / 2, 0, COVER_D / 2 + 0.006); pivot.add(page);
+        return { pivot, pageMat };
+      }
+      const coverL = makeCover(-1), coverR = makeCover(1);
+
+      // arms: shoulder pivot, built hanging along -y
+      function makeArm() {
+        const pos = new THREE.Group(); body.add(pos);
+        const sh = new THREE.Group(); pos.add(sh);
+        const a = new THREE.Mesh(new THREE.CapsuleGeometry(0.1, 0.5, 8, 16), clay(C.redDark));
+        a.position.y = -0.33; sh.add(a);
+        const h = new THREE.Mesh(new THREE.SphereGeometry(0.16, 20, 14), clay(C.redDark));
+        h.position.y = -0.7; sh.add(h);
+        return { pos, sh };
+      }
+      const armL = makeArm(), armR = makeArm();
+      shadowy(khata);
+
+      // ---------- emotes & props (3D clay shapes)
+      const extrude = (shape, color, depth = 0.14) => {
+        const m = new THREE.Mesh(new THREE.ExtrudeGeometry(shape, { depth, bevelEnabled: true, bevelThickness: 0.04, bevelSize: 0.035, bevelSegments: 4, curveSegments: 16 }), clay(color, { bumpScale: 0.3 }));
+        m.geometry.center(); return m;
+      };
+      function zShape(s) {
+        const sh = new THREE.Shape(), t = 0.09 * s, w = 0.42 * s, h = 0.42 * s;
+        sh.moveTo(-w / 2, h / 2); sh.lineTo(w / 2, h / 2); sh.lineTo(w / 2, h / 2 - t);
+        sh.lineTo(-w / 2 + t * 1.4, -h / 2 + t); sh.lineTo(w / 2, -h / 2 + t); sh.lineTo(w / 2, -h / 2);
+        sh.lineTo(-w / 2, -h / 2); sh.lineTo(-w / 2, -h / 2 + t); sh.lineTo(w / 2 - t * 1.4, h / 2 - t); sh.lineTo(-w / 2, h / 2 - t);
+        return sh;
+      }
+      const zs = [[0.8, 1.3, 4.35], [1.0, 1.75, 4.85], [1.25, 2.25, 5.4]].map(([s, x, y]) => {
+        const g = new THREE.Group(); g.position.set(x, y, 0.4); g.add(extrude(zShape(s), C.ink, 0.08)); scene.add(g); return g;
+      });
+      function arrowShape(dir) {
+        const sh = new THREE.Shape(), L = 1.1, T = 0.14, H = 0.36;
+        const p = [[-L / 2, -T], [L / 2 - H, -T], [L / 2 - H, -H], [L / 2, 0], [L / 2 - H, H], [L / 2 - H, T], [-L / 2, T]];
+        p.forEach(([x, y], i) => (i ? sh.lineTo(dir * x, y) : sh.moveTo(dir * x, y)));
+        return sh;
+      }
+      const arrowLg = new THREE.Group(); arrowLg.position.set(-2.6, 5.15, 0.3); arrowLg.add(extrude(arrowShape(-1), C.dr)); scene.add(arrowLg);
+      const arrowRg = new THREE.Group(); arrowRg.position.set(2.6, 5.15, 0.3); arrowRg.add(extrude(arrowShape(1), C.cr)); scene.add(arrowRg);
+      function starShape() {
+        const sh = new THREE.Shape(), r = 0.32, k = 0.07;
+        sh.moveTo(0, r); sh.quadraticCurveTo(k, k, r, 0); sh.quadraticCurveTo(k, -k, 0, -r);
+        sh.quadraticCurveTo(-k, -k, -r, 0); sh.quadraticCurveTo(-k, k, 0, r);
+        return sh;
+      }
+      const sparks = [[1.9, 4.9, 1], [2.6, 4.1, 0.65], [-2.3, 4.7, 0.8]].map(([x, y, s]) => {
+        const g = new THREE.Group(); g.position.set(x, y, 0.6); const m = extrude(starShape(), C.gold, 0.08); m.scale.setScalar(s); g.add(m); scene.add(g); return g;
+      });
+      // "!" emote
+      const bang = new THREE.Group(); bang.position.set(1.55, 5.0, 0.4); scene.add(bang);
+      { const bar = new THREE.Mesh(new THREE.CapsuleGeometry(0.1, 0.42, 8, 16), clay(C.cr)); bar.position.y = 0.22; bang.add(bar);
+        const dot = new THREE.Mesh(new THREE.SphereGeometry(0.11, 16, 12), clay(C.cr)); dot.position.y = -0.24; bang.add(dot); }
+      // "?" emote
+      const qm = new THREE.Group(); qm.position.set(-1.7, 5.05, 0.4); scene.add(qm);
+      { const curve = new THREE.CubicBezierCurve3(new THREE.Vector3(-0.2, 0.25, 0), new THREE.Vector3(-0.2, 0.6, 0), new THREE.Vector3(0.32, 0.55, 0), new THREE.Vector3(0.22, 0.2, 0));
+        const curve2 = new THREE.QuadraticBezierCurve3(new THREE.Vector3(0.22, 0.2, 0), new THREE.Vector3(0.02, 0.05, 0), new THREE.Vector3(0.02, -0.12, 0));
+        const path = new THREE.CurvePath(); path.add(curve); path.add(curve2);
+        const tube = new THREE.Mesh(new THREE.TubeGeometry(path, 48, 0.085, 12, false), clay(C.dr)); qm.add(tube);
+        const dot = new THREE.Mesh(new THREE.SphereGeometry(0.1, 16, 12), clay(C.dr)); dot.position.y = -0.36; qm.add(dot); }
+
+      // ---------- tiny tween engine (pure function of time, GSAP-like semantics)
+      const E = {
+        none: (x) => x,
+        p2o: (x) => 1 - Math.pow(1 - x, 3), p3o: (x) => 1 - Math.pow(1 - x, 4),
+        p2i: (x) => x * x * x, p1io: (x) => (x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2),
+        bo: (x) => { const s = 1.6; return 1 + (s + 1) * Math.pow(x - 1, 3) + s * Math.pow(x - 1, 2); },
+      };
+      const tracks = {};
+      const init = (k, v) => (tracks[k] = { v0: v, tw: [] });
+      const to = (k, v, at, dur, ease = "p2o") => tracks[k].tw.push({ at, dur, v, ease });
+      function val(k, t) {
+        const tr = tracks[k]; let v = tr.v0;
+        for (const w of tr.tw) {
+          if (t < w.at) break;
+          const from = w.from ?? v;
+          v = t >= w.at + w.dur ? w.v : from + (w.v - from) * E[w.ease]((t - w.at) / w.dur);
+        }
+        return v;
+      }
+      function freeze() {                                         // resolve each tween's start value once
+        for (const k in tracks) {
+          const tr = tracks[k]; tr.tw.sort((a, b) => a.at - b.at);
+          let v = tr.v0;
+          for (const w of tr.tw) { w.from = v; v = w.v; }
+        }
+      }
+
+      // ---------- cue sheet (ElevenLabs word timestamps), VO starts at 1.0s
+      const VO_START = 1.0;
+      const WORDS = [["Meet",0.08],["Khata.",0.4],["Khata",1.36],["is",1.76],["a",1.92],["ledger",2.0],["book,",2.44],["and",2.96],["it'll",3.2],["be",3.44],["your",3.6],["guide",3.84],["through",4.16],["this",4.32],["course.",4.56],["Notice",5.653],["something?",5.96],["An",6.64],["open",6.88],["book",7.2],["has",7.6],["two",7.84],["sides.",8.0],["A",8.84],["left",8.96],["page,",9.28],["and",10.16],["a",10.32],["right",10.4],["page.",10.72],["Remember",11.64],["that.",11.96],["It's",12.48],["going",12.72],["to",12.92],["matter",13.04],["more",13.44],["than",13.68],["you",13.84],["think.",14.0]];
+      const cue = (word, nth = 1) => {
+        let seen = 0;
+        for (const [w, s] of WORDS) if (w.replace(/[^\w']/g, "") === word && ++seen === nth) return VO_START + s;
+        throw new Error("cue not found: " + word);
+      };
+
+      // ---------- choreography (mirrors the flat SVG test)
+      ["sx", "sy"].forEach((k) => init(k, 1));
+      ["hopY", "rotZ", "open", "tintL", "tintR", "pupX", "pupY", "wink", "bang", "q", "arrL", "arrR", "sp0", "sp1", "sp2", "awake", "smile"].forEach((k) => init(k, 0));
+      init("eyeL", 0.06); init("eyeR", 0.06);
+      init("aL", 0.55); init("aR", 0.55);
+      zs.forEach((_, i) => init("z" + i, 0));
+
+      [0, 0.35, 0.7].forEach((t, i) => to("z" + i, 1, t, 0.35, "p2o"));
+      const tWake = cue("Meet");
+      zs.forEach((_, i) => to("z" + i, 0, tWake + i * 0.03, 0.2, "p2i"));
+      to("awake", 1, tWake, 0.01, "none");
+      to("eyeL", 1, tWake, 0.18, "bo"); to("eyeR", 1, tWake, 0.18, "bo");
+      to("smile", 1, tWake + 0.05, 0.01, "none");
+      to("bang", 1, tWake + 0.05, 0.3, "bo"); to("bang", 0, tWake + 0.9, 0.18, "p2i");
+
+      const tHop = cue("Khata", 1);
+      to("sy", 0.88, tHop, 0.14, "p2o"); to("sx", 1.08, tHop, 0.14, "p2o");
+      to("hopY", 0.95, tHop + 0.14, 0.24, "p3o"); to("sy", 1.08, tHop + 0.14, 0.24, "p3o"); to("sx", 0.94, tHop + 0.14, 0.24, "p3o");
+      to("hopY", 0, tHop + 0.38, 0.2, "p2i"); to("sy", 1, tHop + 0.38, 0.2, "p2i"); to("sx", 1, tHop + 0.38, 0.2, "p2i");
+      to("sy", 0.9, tHop + 0.58, 0.07, "p2o"); to("sx", 1.06, tHop + 0.58, 0.07, "p2o");
+      to("sy", 1, tHop + 0.65, 0.35, "bo"); to("sx", 1, tHop + 0.65, 0.35, "bo");
+      to("aL", 1.8, tHop + 0.14, 0.2, "p2o"); to("aR", 1.8, tHop + 0.14, 0.2, "p2o");
+      to("aL", 0.55, tHop + 0.6, 0.3, "bo"); to("aR", 0.55, tHop + 0.6, 0.3, "bo");
+
+      const tLedger = cue("ledger");
+      to("rotZ", 0.09, tLedger, 0.14, "p2o"); to("rotZ", -0.09, tLedger + 0.14, 0.2, "p1io"); to("rotZ", 0, tLedger + 0.34, 0.3, "bo");
+
+      const tGuide = cue("your");
+      to("aR", 2.75, tGuide, 0.22, "p3o");
+      for (let i = 0; i < 4; i++) to("aR", i % 2 ? 2.75 : 2.25, tGuide + 0.22 + i * 0.16, 0.16, "p1io");
+      to("aR", 0.55, tGuide + 0.9, 0.3, "bo");
+
+      const tNotice = cue("Notice"), tAn = cue("An");
+      to("pupX", -0.05, tNotice, 0.18); to("pupY", 0.05, tNotice, 0.18);
+      to("q", 1, tNotice + 0.2, 0.32, "bo"); to("q", 0, tAn - 0.05, 0.18, "p2i");
+      to("pupX", 0, tAn - 0.05, 0.18); to("pupY", 0, tAn - 0.05, 0.18);
+
+      const tOpen = cue("open");
+      to("sx", 0.94, tOpen - 0.16, 0.16); to("sy", 1.04, tOpen - 0.16, 0.16);
+      to("sx", 1, tOpen, 0.4, "bo"); to("sy", 1, tOpen, 0.4, "bo");
+      to("open", 1, tOpen, 0.55, "bo");
+      to("aL", 2.3, tOpen + 0.2, 0.3, "p3o"); to("aR", 2.3, tOpen + 0.2, 0.3, "p3o");
+      to("aL", 1.0, tOpen + 0.6, 0.4, "bo"); to("aR", 1.0, tOpen + 0.6, 0.4, "bo");
+
+      const tLeft = cue("left");
+      to("pupX", -0.06, tLeft - 0.1, 0.15);
+      to("tintL", 1, tLeft, 0.25); to("arrL", 1, tLeft, 0.35, "bo");
+      to("aL", 1.9, tLeft, 0.25, "p3o"); to("aL", 1.0, tLeft + 0.9, 0.35, "bo");
+
+      const tRight = cue("right");
+      to("pupX", 0.06, tRight - 0.12, 0.18, "p1io");
+      to("tintR", 1, tRight, 0.25); to("arrR", 1, tRight, 0.35, "bo");
+      to("aR", 1.9, tRight, 0.25, "p3o"); to("aR", 1.0, tRight + 0.9, 0.35, "bo");
+
+      const tRem = cue("Remember");
+      to("pupX", 0, tRem, 0.15);
+      to("sy", 1.04, tRem, 0.2); to("hopY", 0.08, tRem, 0.2);
+      to("sy", 1, tRem + 0.3, 0.35, "bo"); to("hopY", 0, tRem + 0.3, 0.35, "bo");
+
+      const tThink = cue("think");
+      to("eyeR", 0.06, tThink, 0.08, "p2i"); to("wink", 1, tThink + 0.06, 0.01, "none");
+      to("hopY", 0.25, tThink, 0.16); to("hopY", 0, tThink + 0.16, 0.3, "bo");
+      [0.05, 0.12, 0.18].forEach((d, i) => { to("sp" + i, 1, tThink + d, 0.3, "bo"); to("sp" + i, 0, tThink + 1.1 + d, 0.25, "p2i"); });
+      to("wink", 0, tThink + 0.6, 0.01, "none"); to("eyeR", 1, tThink + 0.6, 0.14, "bo");
+      freeze();
+
+      // ---------- apply state: stop-motion — sample on twos (12 fps) + hand-placed jitter
+      const STEP = 1 / 12;
+      const tmpC = new THREE.Color();
+      const PAGE = new THREE.Color(0xffffff), DR = new THREE.Color(0x8fbcf7), CR = new THREE.Color(0xffbf85);
+      const pop = (g, v, base = 1) => { g.visible = v > 0.001; g.scale.setScalar(Math.max(0.001, v) * base); };
+
+      function renderAt(time) {
+        const t = Math.floor(time / STEP + 1e-6) * STEP;
+        const fr = Math.round(t / STEP), rnd = mulberry32(fr * 7919 + 3);
+        const j = () => (rnd() - 0.5) * 0.012;                    // puppet re-placement jitter
+
+        // body
+        body.scale.set(val("sx", t), val("sy", t), val("sx", t));
+        body.position.set(j(), val("hopY", t), 0);
+        body.rotation.z = val("rotZ", t) + j() * 0.6;
+
+        // covers: closed = folded straight back; open = flat to camera
+        const o = val("open", t), closed = Math.PI / 2 * 1.02;
+        coverL.pivot.rotation.y = -closed * (1 - o);
+        coverR.pivot.rotation.y = closed * (1 - o);
+        coverL.pageMat.color.copy(PAGE).lerp(DR, 1.0 * val("tintL", t));
+        coverR.pageMat.color.copy(PAGE).lerp(CR, 1.0 * val("tintR", t));
+
+        // arms ride from the spine sides to the cover outer edges as the book opens
+        const shoulderX = SPINE_W / 2 + 0.05 + o * (COVER_W - 0.02);
+        armL.pos.position.set(-shoulderX, 2.25, 0.15 + o * 0.05);
+        armR.pos.position.set(shoulderX, 2.25, 0.15 + o * 0.05);
+        armL.sh.rotation.z = -val("aL", t);
+        armR.sh.rotation.z = val("aR", t);
+
+        // face
+        const awake = val("awake", t) > 0.5;
+        sleepL.visible = sleepR.visible = !awake;
+        mouthSleep.visible = val("smile", t) < 0.5; mouthSmile.visible = !mouthSleep.visible;
+        eyeL.lid.scale.y = val("eyeL", t); eyeR.lid.scale.y = val("eyeR", t);
+        eyeL.g.visible = awake; eyeR.g.visible = awake;
+        wink.visible = val("wink", t) > 0.5;
+        if (wink.visible) eyeR.g.visible = false;
+        [eyeL, eyeR].forEach((e) => e.pupil.position.set(val("pupX", t), val("pupY", t), 0));
+
+        // emotes
+        zs.forEach((z, i) => { const v = val("z" + i, t); pop(z, v); z.position.y = [4.35, 4.85, 5.4][i] + (1 - v) * -0.15; z.rotation.z = 0.15; });
+        pop(bang, val("bang", t)); bang.rotation.z = (1 - val("bang", t)) * -0.3;
+        pop(qm, val("q", t)); qm.rotation.z = (1 - val("q", t)) * 0.3;
+        pop(arrowLg, val("arrL", t)); arrowLg.position.x = -2.6 + (1 - val("arrL", t)) * 0.4;
+        pop(arrowRg, val("arrR", t)); arrowRg.position.x = 2.6 - (1 - val("arrR", t)) * 0.4;
+        sparks.forEach((s, i) => { const v = val("sp" + i, t); pop(s, v); s.rotation.z = (1 - v) * -0.6; });
+
+        // camera: slow push, slight low angle
+        const k = t / 17;
+        camera.position.set(0, 1.6 + k * 0.1, 13.4 - k * 1.1);
+        camera.lookAt(0, 2.6, 0);
+
+        renderer.render(scene, camera);
+      }
+
+      window.addEventListener("hf-seek", (event) => renderAt(event.detail.time));
+      renderAt(window.__hfThreeTime || 0);
+    </script>
+  </body>
+</html>

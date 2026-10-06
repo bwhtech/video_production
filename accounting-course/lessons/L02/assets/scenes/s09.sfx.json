@@ -1,0 +1,60 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "scene": "s09",
+   "t": 0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s09",
+   "word": "@assets"
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s09",
+   "word": "@liabilities"
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s09",
+   "word": "@equity"
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "sparkle",
+  "at": {
+   "seg": "s09",
+   "word": "@every",
+   "offset": 0.3
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s09",
+   "word": "@someone"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "page_flip",
+  "at": {
+   "seg": "s09",
+   "edge": "end",
+   "offset": -0.35
+  },
+  "vol": 0.35
+ }
+]

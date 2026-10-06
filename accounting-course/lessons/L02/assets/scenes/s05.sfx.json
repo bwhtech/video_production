@@ -1,0 +1,92 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "scene": "s05",
+   "t": 0.9
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tabla_dha",
+  "at": {
+   "seg": "s05a",
+   "word": "@umbrella"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s05a",
+   "word": "@thirty",
+   "offset": 1.3
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05a",
+   "word": "@pay"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05b",
+   "word": "@tag"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05b",
+   "word": "@not"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "twine_tug",
+  "at": {
+   "seg": "s05b",
+   "word": "@and",
+   "offset": 0.1
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s05b",
+   "word": "@mama,"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05b",
+   "word": "@liability"
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05b",
+   "word": "@loan"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "swoosh_transition",
+  "at": {
+   "seg": "s05b",
+   "edge": "end"
+  },
+  "vol": 0.4
+ }
+]

@@ -1,0 +1,134 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 1.2,
+  "text": "[softly] April the second. Meera has found her cart. Wheels, a stove, kettles, a stack of glasses. The price? Thirty-six thousand rupees."
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "Thirty-six thousand rupees, out of the galla. [curious] So did Meera just lose thirty-six thousand rupees?"
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "First, last lesson's answers. One. Gopal Dairy delivers eight thousand rupees of milk, and Meera will pay later. The stall now has eight thousand rupees of stock — milk and supplies to sell. That's an asset. And it owes Gopal eight thousand rupees. That's a liability."
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "Two. Meera's personal scooter? Not an asset of the stall. It's hers. The stall is its own person."
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "Three. The stall has eighty thousand, and owes thirty thousand. So Meera's share is fifty thousand rupees."
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "Last time, we said it in one sentence. What you have equals what you owe, plus what's yours. Today, let's build it. Meet the taraazu — a balance scale. On the left pan go the assets — everything the stall has. On the right pan go liabilities and equity — everyone with a claim on those assets."
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.8,
+  "text": "Watch. Meera puts in fifty thousand. Cash on the left, her equity on the right. Level. Ravi Mama lends thirty thousand. The left grows to eighty thousand, and his loan lands on the right. Level again. Eighty thousand equals thirty thousand plus fifty thousand. This is the accounting equation. Assets equal liabilities plus equity."
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 2.0,
+  "text": "Now, back to the cart. Thirty-six thousand rupees left the galla. Did the stall lose money? Here's a question we'll ask every single time money moves. Which two things changed?"
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "[excited] One. Cash went down by thirty-six thousand. Two. The stall now has equipment worth thirty-six thousand. Both are assets, so both sit on the left pan. One goes down, one goes up — and the scale doesn't move. Still eighty thousand. [warmly] Meera didn't lose money. She turned cash into a cart."
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 1.0,
+  "text": "Here's where people slip. She spent thirty-six thousand — so that's an expense!"
+ },
+ {
+  "id": "s04d",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "[firmly] Nope. An expense is money that's used up and gone. The cart isn't gone. It's standing right there, ready to make chai. It will wear out, slowly — and we'll deal with that at the end of the month."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 2.4,
+  "text": "Same day, Meera buys tea, milk and sugar. Six thousand rupees of stock, paid in cash. Which two things changed? Meera's got the first one. Stock goes up by six thousand. Can you name the second?"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "Cash goes down by six thousand. Another swap on the left. The scale stays level, at eighty thousand."
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 3.2,
+  "text": "[inviting] Now you, on your own. April the third. Gopal Dairy delivers eight thousand rupees of milk and supplies — the delivery from last lesson's question. Meera will pay later. You already know the two changes: stock up by eight thousand, and eight thousand owed to Gopal. So here's the real question — what does each side of the scale read now?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "Stock goes up by eight thousand, on the left. For a moment, the scale tips… then the right pan catches up. Meera now owes Gopal eight thousand rupees. Eighty-eight thousand equals thirty-eight thousand plus fifty thousand. Level."
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "So here's the big idea. Every transaction has two effects. Every rupee comes from somewhere, and goes somewhere. Accountants call this the dual aspect."
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "And it only ever plays out in four ways. Both sides go up — like Ravi Mama's loan. Both sides go down — like paying off a bill. A swap on the left — cash turns into a cart. Or a swap on the right — one claim turns into another. You'll meet this one in May. [softly] In every case, the scale never stays tipped."
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "So. The scale: assets on the left, liabilities plus equity on the right. Every transaction has two effects. And all four patterns keep the scale level."
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. What does the equation read after Gopal's delivery? Two. Meera buys a cart for cash. Does the scale move? Three. Meera pays back part of Ravi Mama's loan. Which of the four patterns is that? Answers next lesson."
+ },
+ {
+  "id": "s10a",
+  "scene": 10,
+  "gap_after": 3.2,
+  "text": "[excited] And now, Checkpoint One. A brand-new business. This is Aman, Meera's friend. He's starting a samosa cart. One. Aman puts in twenty thousand rupees of his savings. Two. He takes a bank loan of ten thousand. Three. He buys a cart and fryer for eighteen thousand, in cash. Four. He buys three thousand rupees of potatoes, flour and oil from Sharma Kirana, and he'll pay later. For each one: which two things changed? And what does Aman's scale read after it? [firmly] Pause the video now. The worksheet is linked in the description."
+ },
+ {
+  "id": "s10b",
+  "scene": 10,
+  "gap_after": 1.0,
+  "text": "Done? Here's how Aman's scale reads. After one: twenty thousand equals zero plus twenty thousand. After two: thirty thousand equals ten thousand plus twenty thousand. Three is a swap on the left, so it stays at thirty thousand. And after four: thirty-three thousand equals thirteen thousand plus twenty thousand. Next lesson, we'll walk through every step."
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time. April the fifth. Rent day. Five thousand rupees leave the galla… and nothing comes back. Will the scale finally tip?"
+ }
+]

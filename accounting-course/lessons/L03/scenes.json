@@ -1,0 +1,15 @@
+[
+  {"id": "s01", "title": "The cart (cold open)", "lead": 1.2},
+  {"id": "s01t", "title": "Title sting", "fixed": 4.6},
+  {"id": "s02", "title": "Last time (L2 answers)", "lead": 0.5},
+  {"id": "s03", "title": "The scale is born (replay T1, T2)", "lead": 0.5},
+  {"id": "s04", "title": "T3, worked: which two things changed? (+ misconception)", "lead": 0.5},
+  {"id": "s05", "title": "T4, faded: Meera fills one, you fill the other", "lead": 0.5},
+  {"id": "s06", "title": "T5, solo: Gopal's delivery", "lead": 0.5},
+  {"id": "s07", "title": "Two effects, four patterns (dual aspect)", "lead": 0.5},
+  {"id": "s08", "title": "Recap", "lead": 0.5},
+  {"id": "s09", "title": "Your Turn", "lead": 0.5},
+  {"id": "s10", "title": "Checkpoint 1: Aman's Samosa Cart (A1–A4)", "lead": 0.5},
+  {"id": "s11", "title": "Next time: rent day", "lead": 0.5},
+  {"id": "s12", "title": "End card", "fixed": 12.0}
+]

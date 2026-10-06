@@ -1,0 +1,164 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.6,
+  "text": "[curious] Twenty transactions. Nineteen accounts. Khata has split into nineteen little books — one for every account — and the pile keeps getting taller."
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "Meera squints at it. Somewhere in there, did she slip? A wrong side? A missing line? She can't re-check every page, every month. [curious] Is there a quicker way to know?"
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "First, last time's answers. One. May's depreciation? One thousand rupees — the same fair slice, every month."
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "Two. If five thousand rupees of stock were left, she used fourteen thousand minus five — nine thousand."
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 0.8,
+  "text": "Three. Paying April's electricity bill in May — is that a May expense? No. It was April's expense. Paying it just clears the Electricity payable."
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "Here's the trick. Every little book hands over just one number — its balance. Debit balances go in the left column. Credit balances go in the right."
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "Cash — fifty thousand seven hundred, a debit balance. Left. Capital — fifty thousand, credit. Right. Equipment, thirty-six thousand. Left. Sales, fifty thousand. Right. And the rest follow, all nineteen. One to watch: Accumulated depreciation, one thousand — the cart's wear sits on the right, because it takes value off an asset."
+ },
+ {
+  "id": "s03c",
+  "scene": 3,
+  "gap_after": 1.2,
+  "text": "Now add up each column."
+ },
+ {
+  "id": "s03d",
+  "scene": 3,
+  "gap_after": 0.8,
+  "text": "[excited] One lakh thirty-six thousand rupees. And… one lakh thirty-six thousand rupees. They match!"
+ },
+ {
+  "id": "s03e",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "This one sheet is called a trial balance. Every account, one line each, debits on the left, credits on the right. It's a quick test of the whole ledger."
+ },
+ {
+  "id": "s04",
+  "scene": 4,
+  "gap_after": 0.8,
+  "text": "Why must the columns match? Because every entry Meera wrote had two equal halves. Even the Ravi Mama payment — three thousand plus three hundred on the left, three thousand three hundred on the right. Equal halves go in, so equal totals come out."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "Now here's the trap. It balances — so the books must be right?"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "[firmly] Nope. A trial balance only checks that the two sides are equal. Not that they're true. Here are three mistakes that would still balance."
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "One. Forget a transaction completely. Say Meera never wrote down the three thousand she took home. Both halves are missing — so the totals still match."
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "Two. Right amount, wrong account. Infotech's four thousand by UPI, written into Cash instead of Bank. Cash too high, Bank too low. Still level."
+ },
+ {
+  "id": "s05e",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "Three. Write an entry backwards. The rent — debit Cash, credit Rent. Both columns grow by the same amount, to one lakh forty-one thousand each. Level. And wrong."
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "So what can a trial balance catch? Say Meera paid Gopal Dairy five thousand rupees — but posted only the Cash half. Now the columns disagree. One lakh thirty-six thousand on the left. One lakh forty-one thousand on the right. Off by exactly five thousand."
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 2.6,
+  "text": "That difference is a clue. Meera looks for April entries of exactly five thousand rupees. Pause here. Can you think of two?"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "The rent, and the payment to Gopal. The Rent page looks fine. But the Gopal Dairy page still says eight thousand owed. The five thousand debit never arrived. Post it — and the columns meet again."
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 3.2,
+  "text": "[inviting] Your go. Meera's rent gets posted to Salary by mistake. Would the trial balance catch it?"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "No. Rent and Salary are both debits, and the amount is the same. The totals don't budge. Only careful checking catches that one."
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "So — a trial balance lists every account's balance. Debits left, credits right. If the totals match, every entry had two equal halves. If they don't, the difference is your clue. But balanced doesn't always mean correct."
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. What are the totals on Meera's trial balance? Two. Can a trial balance catch a transaction that was forgotten completely? Three. Which column does Drawings go in? Answers at the start of the next lesson."
+ },
+ {
+  "id": "s10a",
+  "scene": 10,
+  "gap_after": 0.6,
+  "text": "[excited] And now — Checkpoint four! Aman's samosa cart is back, with six new transactions. A cash sale of eleven thousand rupees. Three thousand paid to his helper. Fifteen hundred taken home. The school canteen pays its fifteen hundred. A stock count — five hundred rupees of ingredients left, out of three thousand. And a month of wear on his eighteen-thousand-rupee cart and fryer, which should last three years."
+ },
+ {
+  "id": "s10b",
+  "scene": 10,
+  "gap_after": 3.2,
+  "text": "Journal them. Post them to his ledger. Then build Aman's trial balance. His balances so far are on screen, and on the worksheet. [firmly] Pause the video now."
+ },
+ {
+  "id": "s10c",
+  "scene": 10,
+  "gap_after": 1.0,
+  "text": "Ready? Both of Aman's columns should total fifty-four thousand rupees. Pause on this sheet to check every line. If yours didn't match, use the difference as your clue — just like Meera."
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time, we go back to where it all began. Meera, late at night, staring at a galla full of notes. Did she make a profit — or a loss? This time, we can finally answer."
+ }
+]

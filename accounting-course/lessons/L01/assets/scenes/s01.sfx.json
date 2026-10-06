@@ -1,0 +1,103 @@
+[
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "seg": "s01a",
+   "word": "@notes",
+   "offset": -0.1
+  },
+  "vol": 0.22,
+  "dur": 0.9
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s01a",
+   "word": "@served"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01b",
+   "word": "@most"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "sparkle",
+  "at": {
+   "seg": "s01c",
+   "edge": "start"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "galla_clack",
+  "at": {
+   "seg": "s01c",
+   "edge": "end",
+   "offset": 0.1
+  },
+  "vol": 0.8
+ },
+ {
+  "sfx": "swoosh_transition",
+  "at": {
+   "seg": "s01c",
+   "edge": "end",
+   "offset": 0.3
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01a",
+   "word": "@milk"
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01a",
+   "word": "@sugar"
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01a",
+   "word": "@rent"
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s01a",
+   "word": "@profit"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s01a",
+   "word": "@loss"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01a",
+   "word": "@loss",
+   "offset": 0.35
+  },
+  "vol": 0.4
+ }
+]

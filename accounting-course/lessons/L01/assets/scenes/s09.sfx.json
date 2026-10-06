@@ -1,0 +1,53 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s09",
+   "word": "@turn",
+   "offset": -0.05
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s09",
+   "word": "@one"
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s09",
+   "word": "@two"
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09",
+   "word": "@away",
+   "offset": -0.3
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s09",
+   "word": "@three",
+   "nth": 2
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "page_flip",
+  "at": {
+   "seg": "s09",
+   "word": "@answers"
+  },
+  "vol": 0.5
+ }
+]

@@ -1,0 +1,170 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.6,
+  "text": "[curious] April sixteenth. Since the day the stall opened, Priya from Infotech has taken chai for the whole floor, every day. On a tab. Pay later."
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.2,
+  "text": "Today, Meera sends the first bill — two weeks of chai. Six thousand rupees. Her profit goes up. [softly] Her galla doesn't move."
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "So did Meera make money, or not?"
+ },
+ {
+  "id": "s02",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "[warmly] First, last time's answers. One. Is the cart an expense? No. It's still making chai, so it's an asset. Two. Meera's profit: eighteen thousand of revenue, minus five thousand of rent. Thirteen thousand rupees. Three. Profit lives on the right side of the scale, inside equity. It belongs to Meera."
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.5,
+  "text": "Today, Khata pins two needles on the stall's wall. The first is Profit. It moves when Meera earns money, or uses it up. The second is Cash — everything in the galla, plus everything in the bank."
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "Right now, profit reads thirteen thousand. Cash reads fifty-one thousand. It's bigger, because it also holds Meera's savings and Ravi Mama's loan. [curious] Most people think these two needles move together. Let's watch."
+ },
+ {
+  "id": "s04",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "First, rewind one day. April fifteenth. Meera carries fifteen thousand rupees from the galla to the bank. Profit? No change. Cash? Also no change. The money just moved from one pocket to another."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 2.0,
+  "text": "Now, April sixteenth. Infotech's tab. Which two things changed?"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.5,
+  "text": "Sales went up by six thousand. The chai has been drunk, so Meera has earned it. But on the left, no cash came in. Instead, Infotech now owes the stall six thousand rupees. Money that customers owe you is an asset, called a receivable."
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 1.5,
+  "text": "So the profit needle jumps, from thirteen thousand to nineteen thousand. And the cash needle? [softly] It doesn't move at all."
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 1.5,
+  "text": "[firmly] Revenue counts when it's earned — when the chai is drunk — not when the money arrives. And expenses count when they're incurred — when the thing is used up — not when they're paid. This idea is called accrual."
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.5,
+  "text": "April twentieth. Meera pays Gopal five thousand rupees of the eight thousand she owes him for milk. Meera's sure about this one. Money left the galla, so it's an expense."
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 2.0,
+  "text": "[firmly] Nope. That milk came in as stock, and Gopal became a liability. Today, Meera is only paying down that debt. So which needle moves?"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "Only cash. Down five thousand. Profit stays at nineteen thousand. The payment shrinks a liability. Money the stall owes a supplier is a payable — the mirror of a receivable."
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "April twenty-second. A customer pays four thousand rupees in advance, for a catering order on May fifth. Meera's quick this time. Money in from a customer? Revenue — straight into the profit pocket."
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 2.0,
+  "text": "[firmly] Nope. Meera hasn't made a single cup yet. Until May fifth, she owes that customer an event — or their money back. An advance is a liability, not revenue. [playful] Not yet. Meera, which needle moves?"
+ },
+ {
+  "id": "s07c",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "Only cash. Up four thousand. Profit stays at nineteen thousand."
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "Now you, on your own. April twenty-fifth. Infotech pays four thousand rupees of its tab, by UPI. Profit? Cash?"
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "Cash goes up by four thousand, straight into the bank. Profit doesn't move. Meera earned that money back on April sixteenth. Today, she's only collecting it. The receivable shrinks, and the bank grows."
+ },
+ {
+  "id": "s09a",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "Since April fifteenth, the profit needle moved once — on the day no money came in. The cash needle moved three times — and not one of those was profit."
+ },
+ {
+  "id": "s09b",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "Profit: nineteen thousand rupees. Cash: fifty-four thousand. Two needles. Two different stories."
+ },
+ {
+  "id": "s09c",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "Cash basis counts money only when it moves. Accrual basis counts revenue when it's earned, and expenses when they're incurred. Businesses use accrual, because it shows what was really earned — even while the money is still on its way."
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.6,
+  "text": "So — two needles. Earned isn't the same as received. Paid isn't the same as used up. Profit is not cash."
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. The four-thousand-rupee catering advance — is it revenue in April? Two. Paying Gopal — is that an expense? Three. After the UPI payment, how much does Infotech still owe Meera? Answers at the start of the next lesson."
+ },
+ {
+  "id": "s12a",
+  "scene": 12,
+  "gap_after": 0.5,
+  "text": "[excited] And now — Checkpoint two. Back to Aman's samosa cart. Five things happen. For each one, write down what it does to profit, and to cash."
+ },
+ {
+  "id": "s12b",
+  "scene": 12,
+  "gap_after": 3.2,
+  "text": "One. Cash sales of nine thousand rupees. Two. He pays two thousand rupees of stall rent. Three. He supplies a school canteen with fifteen hundred rupees of samosas, on credit. Four. He pays Sharma Kirana two thousand rupees. Five. A customer gives him a thousand-rupee advance, for a birthday party next month. Pause the video now, and try all five."
+ },
+ {
+  "id": "s12c",
+  "scene": 12,
+  "gap_after": 0.8,
+  "text": "Ready? One. Profit and cash both go up nine thousand. Two. Both go down two thousand. Three. Profit up fifteen hundred. Cash, nothing. Four. Cash down two thousand. Profit, nothing — it's a debt being paid. Five. Cash up one thousand. Profit, nothing — it's an advance. Aman's profit so far: eight thousand five hundred rupees."
+ },
+ {
+  "id": "s13",
+  "scene": 13,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time — remember that bank deposit? Meera's phone buzzed. Your account is credited with fifteen thousand rupees. Credited! Great news… right?"
+ }
+]

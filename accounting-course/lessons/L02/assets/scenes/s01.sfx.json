@@ -1,0 +1,79 @@
+[
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "seg": "s01a",
+   "word": "@holding"
+  },
+  "vol": 0.2
+ },
+ {
+  "sfx": "galla_clack",
+  "at": {
+   "seg": "s01a",
+   "edge": "end"
+  },
+  "vol": 0.7
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s01a",
+   "edge": "end",
+   "offset": 0.8
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "seg": "s01a",
+   "edge": "end",
+   "offset": 0.85
+  },
+  "vol": 0.18
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01b",
+   "word": "@whose",
+   "offset": 0.2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01b",
+   "word": "@bit",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "galla_clack",
+  "at": {
+   "seg": "s01b",
+   "edge": "end",
+   "offset": -0.3
+  },
+  "vol": 0.7
+ },
+ {
+  "sfx": "swoosh_transition",
+  "at": {
+   "seg": "s01b",
+   "edge": "end"
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "sparkle",
+  "at": {
+   "seg": "s01b",
+   "word": "@and"
+  },
+  "vol": 0.2
+ }
+]

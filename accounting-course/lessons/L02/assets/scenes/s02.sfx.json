@@ -1,0 +1,66 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s02a",
+   "word": "@one"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "bwomp_no",
+  "at": {
+   "seg": "s02a",
+   "word": "@no"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s02b",
+   "word": "@two"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "bwomp_no",
+  "at": {
+   "seg": "s02b",
+   "word": "@not"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s02c",
+   "word": "@three"
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "shutter",
+  "at": {
+   "seg": "s02c",
+   "word": "@photo?"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s02c",
+   "word": "@sheet"
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "polaroid_whirr",
+  "at": {
+   "seg": "s02c",
+   "word": "@filling"
+  },
+  "vol": 0.35
+ }
+]

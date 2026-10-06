@@ -1,0 +1,1 @@
+Seamless tileable texture, top-down, flat even lighting: deep red (#C8372D) cloth bookbinding fabric, fine visible woven linen texture with slight fibre variation. Fills the whole frame edge to edge. No objects, no edges, no text, no shadows, no vignette. Square.

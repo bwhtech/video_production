@@ -1,0 +1,53 @@
+{
+ "_doc": "DRAFT — tune by ear. start/end = absolute seconds or '<scene>.start|end[+/-offset]'; duck = sidechain under VO; loop = repeat the file to fill the span. Optional: \"hush\": {\"seg\": \"s05a\", \"word\": \"@same\", \"offset\": 0.0} dips the bed at a VO word.",
+ "tracks": [
+  {
+   "f": "music/intro_sting.mp3",
+   "start": "s01t.start+0.1",
+   "end": "s01t.end+0.6",
+   "vol": 0.55,
+   "fi": 0.0,
+   "fo": 0.6,
+   "duck": false
+  },
+  {
+   "f": "music/m2_main.mp3",
+   "start": "s02.start+0.2",
+   "end": "s11.end",
+   "vol": 0.16,
+   "fi": 1.5,
+   "fo": 1.5,
+   "duck": true,
+   "loop": true
+  },
+  {
+   "f": "music/outro.mp3",
+   "start": "s12.start-0.3",
+   "end": "s12.end",
+   "vol": 0.45,
+   "fi": 0.3,
+   "fo": 2.0,
+   "duck": false
+  },
+  {
+   "f": "sfx/day_street.mp3",
+   "start": "s01.start",
+   "end": "s01t.start+0.3",
+   "vol": 0.14,
+   "fi": 1.0,
+   "fo": 0.6,
+   "duck": false,
+   "loop": true
+  },
+  {
+   "f": "sfx/day_street.mp3",
+   "start": "s05.start",
+   "end": "s05.start+13.0",
+   "vol": 0.12,
+   "fi": 0.8,
+   "fo": 1.2,
+   "duck": false,
+   "loop": true
+  }
+ ]
+}

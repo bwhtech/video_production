@@ -1,0 +1,134 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 1.4,
+  "text": "[softly] {@meera}ये हैं मीरा। आज उनके चाय के {@stall}stall का {@first}पहला दिन था। उन्होंने {@served}{@chai#2}{@day#2}पूरे दिन चाय बेची, और {@galla}गल्ला — यानी उनका cash box — {@notes}नोटों से भरा है। पर {@milk}दूध, {@sugar}चीनी, stall का {@rent}किराया — ये सब निकालकर, {@did}क्या आज मीरा को {@profit}फ़ायदा हुआ — या {@loss}नुकसान?"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.4,
+  "text": "[softly] {@know}उन्हें नहीं पता। और {@honestly}सच कहूँ तो? business शुरू करने वाले {@most}ज़्यादातर लोगों को भी {@either}नहीं पता होता।"
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[warmly] इस {@course}course के आख़िर तक, आप इस सवाल का {@answer}जवाब दे पाएँगे — {@meera}मीरा के लिए भी, और {@your}अपने {@business}business के लिए भी।"
+ },
+ {
+  "id": "s02",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "Accounting सुनने में डरावनी लगती है। लेकिन इसकी शुरुआत उस चीज़ से हुई जो आप पहले से जानते हैं — {@counting}{p@counting}गिनती। {@five}पाँच हज़ार साल पहले, {@mesopotamia}Mesopotamia में, किसान मिट्टी पर छोटे-छोटे निशान बनाकर अपनी भेड़ें और {@grain}अनाज {@count}गिनते {p@grain}थे। {@about}क़रीब पाँच सौ साल पहले, {@venice}Venice में, Luca Pacioli नाम के एक monk ने {@money}पैसों का हिसाब रखने का एक कमाल का तरीक़ा {@wrote}{p@money}लिखा। {@and#2}और भारत के व्यापारी भी ऐसी ही किताबें रखते आए हैं — {@bahi-khata}बही-खाता — वो भी {@centuries}सदियों {p@centuries}से। {@today}आज ये किताबें {@apps}apps में रहती {p@apps}हैं। लेकिन idea {@changed}बिल्कुल नहीं बदला।"
+ },
+ {
+  "id": "s03",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "[curious] {@meet}मिलिए {@khata}खाता से। खाता एक {@ledger}ledger book है, और इस {@course}course में ये {@your}आपका guide {p@course}रहेगा। ... {@notice}कुछ notice किया? {@an}एक {@open}खुली किताब के दो {@sides}पन्ने होते हैं। एक {@left}left page, ... और एक {@right}right {@page#2}{p@page#2}page. {@remember}{@that}याद {p@that}रखिए। [playful] ये आपकी सोच से कहीं ज़्यादा काम आने वाला {@think}है।"
+ },
+ {
+  "id": "s04",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "हर business owner — {@chai}चाय का stall हो, {@startup}startup हो, या कोई {@giant}बड़ी company — असल में बस {@two}दो {@questions}सवालों का जवाब चाहता {p@questions}है। {@one}पहला: क्या मैं पैसे {@money}कमा रहा {p@money}हूँ? {@two#2}दूसरा: मेरे पास क्या है, और मुझ पर क्या {@owe}बकाया {p@owe}है? {@accounting}Accounting {@both}दोनों का जवाब देती है, दो {@reports}reports {p@reports}से। {@first}पहली को कहते हैं {@profit}Profit and Loss {@statement}{p@statement}statement. इसे एक {@movie}movie समझिए। ये एक period की कहानी दिखाती है — एक {@day}दिन, एक {@month}महीना, एक {@year}साल — और बताती है कि आपने जितना {@spent}ख़र्च किया, उससे ज़्यादा {@earned}कमाया या {p@spent}नहीं। {@second}दूसरी है {@balance}Balance Sheet. ये एक {@photo}photo {p@photo}है। एक पल, {@frozen}थमा {p@frozen}हुआ। आपके पास जो {@everything}कुछ है, और आप पर जो कुछ {@owe#2}बकाया है — {@right}अभी, इसी {@now}{p@now}वक़्त। एक {@movie#2}movie, और एक {@photo#2}photo. {@profit#2}Profit and Loss, और {@balance#2}Balance {@sheet#2}{p@sheet#2}Sheet. ये दोनों हम {@meera}मीरा के लिए, अप्रैल के {@end}आख़िर तक {@build}बना लेंगे।"
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 1.0,
+  "text": "लेकिन पहले, इस पूरे lesson का सबसे ज़रूरी idea. {@meera}मीरा और {@meera's}Meera's Chai एक {@not}नहीं {@same}हैं।"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.5,
+  "text": "एक accountant के लिए, {@stall}stall अपने आप में एक छोटा सा {@person}इंसान {p@person}है। उसका अपना {@money}पैसा है, अपनी {@things}चीज़ें हैं, अपने {@debts}क़र्ज़ {p@debts}हैं। तो जब मीरा अपनी बचत में से {@fifty}पचास हज़ार रुपये निकालकर {@galla}गल्ले में डालती है, तो वो पैसा अब stall का {@belongs}हो जाता {@stall#2}{p@stall#2}है। और stall को {@remembers}याद रहता है कि ये पैसा {@meera#2}मीरा से आया {p@meera#2}था। {@here's}यहीं पर ज़्यादातर नए {@founders}founders {@slip}फिसलते {p@slip}हैं। {@stall#4}मेरा stall है, तो इसका पैसा {@my#2}मेरा {@money#3}पैसा है।"
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "[firmly] {@nope}नहीं! अगर मीरा अपने {@home}घर का बिजली का bill {@galla}गल्ले से भरती है, तो वो stall का {@expense}expense {@not}नहीं {p@expense}है। और अगर वो stall के लिए {@sugar}चीनी अपने {@phone}phone से {@buys}ख़रीदती है, तब भी {@stall#2}stall को इसका पता {@needs}होना {@know}{@it}{p@it}चाहिए। {@two}दो {@people}{p@people}लोग। {@sets}पैसों के दो अलग {@money}{p@money}हिसाब। {@this}इसे कहते हैं {@business}business {@entity}entity {@idea}idea, {@and}और आगे आप जो भी rule सीखेंगे, सब इसी पर टिके हैं।"
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.5,
+  "text": "तो stall के books में क्या जाता है? सिर्फ़ {@transactions}transactions — ऐसी घटनाएँ जो बदल दें कि business के पास क्या {@has}है या उस पर क्या {@owes}बकाया है, और जिन्हें आप {@rupees}रुपयों में नाप {p@rupees}सकें। [excited] चलिए एक {@game}game खेलते हैं। {@is}क्या ये transaction है?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 1.6,
+  "text": "मीरा बीस रुपये की एक chai बेचती है।"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "[excited] {@yes}हाँ! पैसा आया, chai गई।"
+ },
+ {
+  "id": "s06d",
+  "scene": 6,
+  "gap_after": 1.6,
+  "text": "मीरा एक customer को देखकर मुस्कुराती है।"
+ },
+ {
+  "id": "s06e",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "{@lovely}प्यारा है। {@but}लेकिन एक भी रुपया {@moved}नहीं हिला। Transaction {@not}नहीं।"
+ },
+ {
+  "id": "s06f",
+  "scene": 6,
+  "gap_after": 3.2,
+  "text": "{@your}अब आपकी {@turn}बारी। {@meera}मीरा चीनी का एक बोरा ख़रीदती है।"
+ },
+ {
+  "id": "s06g",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "{@yes}हाँ। पैसा गया, चीनी आई।"
+ },
+ {
+  "id": "s06h",
+  "scene": 6,
+  "gap_after": 3.2,
+  "text": "और एक आख़िरी। {@a}दूध वाला बस hello कहने के लिए {@calls}call करता है।"
+ },
+ {
+  "id": "s06i",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "Transaction {@not}नहीं। कुछ भी हाथ नहीं बदला। [playful] {@yet}अभी तक।"
+ },
+ {
+  "id": "s07",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "बस, accounting इतनी सी {@is}{p@is}है। हर transaction को {@record}record कीजिए, उन्हें सही buckets में {@sort}sort कीजिए, और फिर सबको {@sum}जोड़कर बनाइए {@movie}movie और {@photo}{p@photo}photo. {@record#2}Record. {@sort#2}Sort. {@summarise}{p@summarise}Summarise. {@next}अगले lessons में, हम मीरा के पहले {@month}महीने को follow करेंगे — {@one}एक-एक {@day}दिन {@time}करके।"
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "तो — accounting {@two}दो {@questions}सवालों के जवाब देती {p@questions}है। {@movie}Movie बताती है कि आपने पैसे {@money}कमाए या {p@money}नहीं। {@photo}Photo दिखाती है कि आपके पास क्या है और आप पर क्या {@owe}बकाया {p@owe}है। और {@business}business अपने आप में एक {@person}इंसान है।"
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "[inviting] {@your}अब आपकी {@turn}बारी। तीन छोटे {@ones}{p@ones}सवाल। {@one}एक। मीरा अपना personal phone bill अपने bank account से भरती है। क्या ये stall की {@books}books में {p@books}जाएगा? {@two}दो। एक customer chai का दाम पूछता है, फिर {@away}चला जाता है। Transaction है, या {@not}{p@not}नहीं? {@three}तीन। कौन सी report {@photo}photo {p@photo}है? {@answers}जवाब अगले lesson की शुरुआत में।"
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 1.0,
+  "text": "[teasing] अगली बार, मीरा अपनी {@savings}बचत के {@fifty}पचास हज़ार रुपयों से गल्ला {@opens}खोलती है। तो अब ये पैसा {@whose}किसका है?"
+ }
+]

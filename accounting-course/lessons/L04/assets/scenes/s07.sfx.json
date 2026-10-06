@@ -1,0 +1,17 @@
+[
+ {"sfx": "pop", "at": {"seg": "s07a", "word": "@trap", "offset": -0.4}, "vol": 0.3},
+ {"sfx": "note_rustle", "at": {"seg": "s07a", "word": "@galla", "offset": 0.3}, "vol": 0.18, "dur": 0.8},
+ {"sfx": "pop", "at": {"seg": "s07a", "word": "@expense"}, "vol": 0.3},
+ {"sfx": "stamp_thunk", "at": {"seg": "s07b", "word": "@nope"}, "vol": 0.7},
+ {"sfx": "bwomp_no", "at": {"seg": "s07b", "word": "@nope", "offset": 0.1}, "vol": 0.25},
+ {"sfx": "paper_slide", "at": {"seg": "s07b", "word": "@cart"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s07b", "word": "@question", "offset": -0.8}, "vol": 0.25},
+ {"sfx": "paper_slide", "at": {"seg": "s07b", "word": "@rent"}, "vol": 0.3},
+ {"sfx": "pen_scratch", "at": {"seg": "s07b", "word": "@april", "offset": 0.1}, "vol": 0.35},
+ {"sfx": "paper_slide", "at": {"seg": "s07b", "word": "@may"}, "vol": 0.25},
+ {"sfx": "paper_slide", "at": {"seg": "s07b", "word": "@more", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s07b", "word": "@more", "offset": 1.1}, "vol": 0.45},
+ {"sfx": "kettle_bubble", "at": {"seg": "s07b", "word": "@still"}, "vol": 0.18, "dur": 1.8},
+ {"sfx": "paper_slide", "at": {"seg": "s07b", "word": "@asset", "offset": -0.3}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s07b", "word": "@asset", "offset": 0.4}, "vol": 0.45}
+]

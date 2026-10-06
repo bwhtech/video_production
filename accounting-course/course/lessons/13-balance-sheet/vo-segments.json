@@ -1,0 +1,122 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "[softly] Click. April thirtieth, closing time. The movie of April is over. Now Khata takes one photo — everything the stall owns, and everything it owes, frozen in a single moment."
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[curious] Twenty transactions, nineteen accounts, all in one picture. It's still developing. Let's find out what's in it."
+ },
+ {
+  "id": "s02",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "First, last time's questions. One: why aren't drawings in the Profit and Loss statement? Because they're not an expense. Meera took that money home — it didn't help run the stall. Two: is the four thousand rupee advance in April's Profit and Loss? No. Meera hasn't earned it yet. She still owes the catering. Three: gross profit? Forty thousand rupees."
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "Last time, the movie took the revenue and expense accounts out of the trial balance. The photo takes everything that's left. A photo of the stall has two sides, just like Khata. On the left, everything the stall owns — its assets. Khata lists them. The cart and equipment cost thirty-six thousand. One month of depreciation comes off, so on the books they're worth thirty-five thousand. Stock left on the shelf, four thousand. Infotech still owes six thousand. Eleven thousand in the bank. And fifty thousand seven hundred in the galla."
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.8,
+  "text": "Total assets: one lakh six thousand seven hundred rupees."
+ },
+ {
+  "id": "s04",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "On the right, first, what the stall owes — its liabilities. Ravi Mama lent thirty thousand and got three thousand back, so twenty-seven thousand is still owed. Gopal Dairy is waiting for three thousand. The catering customer paid four thousand in advance, so the stall owes them chai in May. And April's electricity bill, one thousand. Total liabilities: thirty-five thousand rupees."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "Whatever is left belongs to Meera. That's her equity. Meera does this one. On day one, she put in fifty thousand rupees of capital. Now, watch the movie's last frame."
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "The twenty-four thousand seven hundred rupee profit slides out of the film strip, and into the photo. The movie's ending becomes part of the photo. Profit belongs to the owner, so it adds to Meera's equity."
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 2.8,
+  "text": "Then take away the three thousand she took home. Fifty thousand, plus twenty-four thousand seven hundred, minus three thousand. [curious] Pause — what's her equity?"
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "[excited] Seventy-one thousand seven hundred rupees. Meera's share started April at fifty thousand, and ends it at seventy-one thousand seven hundred. The movie's profit, minus what she took home, explains the difference. Last lesson's trial balance was only a check. This photo is the real picture."
+ },
+ {
+  "id": "s06",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "Now, the moment of truth. Liabilities, thirty-five thousand. Plus equity, seventy-one thousand seven hundred. Together, one lakh six thousand seven hundred. Exactly the same as the assets. [softly] Remember the scale from Lesson 3? Assets on one pan, liabilities and equity on the other. It settles, one last time. Two sides, always equal. That's the Balance Sheet."
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "Now read the photo. Out of everything the stall owns, about a third is owed to other people. About two-thirds belongs to Meera. One glance, and you know who the stall really belongs to. And on the left, one fixed asset — the cart, kept for years — and four current assets: cash, or things that turn into cash soon."
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 1.0,
+  "text": "Now, a trap almost everyone falls into. Meera's equity is seventy-one thousand seven hundred rupees. So somewhere, she has seventy-one thousand seven hundred rupees in cash. Right?"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "[firmly] Nope. Count the galla and the bank. Fifty thousand seven hundred, plus eleven thousand. Sixty-one thousand seven hundred — less than her equity. Because equity is not a pile of notes. It's a claim — Meera's share of everything the stall owns. Part of it is the cart. Part of it is the stock. Part of it is money Infotech hasn't paid yet."
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "One small note. In many Indian books, you'll see capital listed with the liabilities, because the stall owes it back to its owner. Same numbers. Same balance. Just a different shelf."
+ },
+ {
+  "id": "s09a",
+  "scene": 9,
+  "gap_after": 3.2,
+  "text": "[inviting] Your turn. Suppose Meera hadn't taken any money home in April. What would her equity be?"
+ },
+ {
+  "id": "s09b",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "Seventy-four thousand seven hundred. No drawings, so nothing comes off. And those three thousand rupees would still be in the galla — so both sides grow by three thousand, and the scale stays level."
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.6,
+  "text": "So — the Balance Sheet is a photo of one moment. Assets on one side. Liabilities and equity on the other, always equal. And the movie's profit flows into the owner's equity."
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. Is Meera's seventy-one thousand seven hundred rupees of equity sitting in cash? Two. Name two of her current assets. Three. Where did the twenty-four thousand seven hundred rupee profit go? Answers at the start of the next lesson."
+ },
+ {
+  "id": "s12",
+  "scene": 12,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time. Sixty-one thousand seven hundred rupees, in the galla and the bank. So — is Meera rich?"
+ }
+]

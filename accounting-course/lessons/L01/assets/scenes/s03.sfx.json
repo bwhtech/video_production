@@ -1,0 +1,11 @@
+[
+ {"sfx": "yawn_stretch", "at": {"seg": "s03", "word": "@meet", "offset": -0.55}, "vol": 0.45},
+ {"sfx": "pop",          "at": {"seg": "s03", "word": "@meet", "offset": 0.05}, "vol": 0.5},
+ {"sfx": "boing_hop",    "at": {"seg": "s03", "word": "@khata", "offset": 0.1}, "vol": 0.55},
+ {"sfx": "paper_slide",  "at": {"seg": "s03", "word": "@ledger"}, "vol": 0.35},
+ {"sfx": "pop",          "at": {"seg": "s03", "word": "@notice", "offset": 0.18}, "vol": 0.45},
+ {"sfx": "cover_swing",  "at": {"seg": "s03", "word": "@open", "offset": 0.0}, "vol": 0.6},
+ {"sfx": "tink_low",     "at": {"seg": "s03", "word": "@left"}, "vol": 0.6},
+ {"sfx": "tink_high",    "at": {"seg": "s03", "word": "@right"}, "vol": 0.6},
+ {"sfx": "sparkle",      "at": {"seg": "s03", "word": "@think", "offset": 0.05}, "vol": 0.5}
+]

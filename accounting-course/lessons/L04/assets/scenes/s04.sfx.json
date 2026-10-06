@@ -1,0 +1,19 @@
+[
+ {"sfx": "tick_tock", "at": {"seg": "s04a", "edge": "end", "offset": -0.25}, "vol": 0.5, "dur": 2.6},
+ {"sfx": "ding_yes", "at": {"seg": "s04b", "word": "@cash", "offset": 1.3}, "vol": 0.5},
+ {"sfx": "note_rustle", "at": {"seg": "s04b", "word": "@cash", "offset": 0.2}, "vol": 0.2, "dur": 0.8},
+ {"sfx": "paper_slide", "at": {"seg": "s04b", "word": "@cash", "offset": 0.4}, "vol": 0.28},
+ {"sfx": "scale_creak", "at": {"seg": "s04b", "word": "@cash", "offset": 0.7}, "vol": 0.5},
+ {"sfx": "stamp_thunk", "at": {"seg": "s04b", "word": "@ravi", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "stamp_thunk", "at": {"seg": "s04b", "word": "@gopal", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s04b", "word": "@meera's"}, "vol": 0.5},
+ {"sfx": "paper_unfold", "at": {"seg": "s04c", "word": "@unfold", "offset": 0.3}, "vol": 0.55},
+ {"sfx": "pop", "at": {"seg": "s04c", "word": "@pockets"}, "vol": 0.3},
+ {"sfx": "tink_high", "at": {"seg": "s04c", "word": "@capital", "offset": 0.15}, "vol": 0.25},
+ {"sfx": "tink_low", "at": {"seg": "s04c", "word": "@empty"}, "vol": 0.25},
+ {"sfx": "paper_slide", "at": {"seg": "s04c", "word": "@rent", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s04c", "word": "@minus", "offset": -0.05}, "vol": 0.5},
+ {"sfx": "scale_creak", "at": {"seg": "s04d", "word": "@scale"}, "vol": 0.45},
+ {"sfx": "tink_high", "at": {"seg": "s04d", "word": "@scale", "offset": 0.95}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s04d", "word": "@expense"}, "vol": 0.35}
+]
