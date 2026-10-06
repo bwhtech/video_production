@@ -35,8 +35,33 @@ English VO first (ElevenLabs), Hindi later. Built in HyperFrames.
 4. Build Lesson 1 end to end as the pilot; lock the template.
 5. Script L2–L14 from the plans, then produce in module batches.
 
-## Lessons 2–14 (scripted 2026-10-06, awaiting review)
-- `course/lessons/NN-slug/` — SCRIPT.md · STORYBOARD.md · vo-segments.json (EN build input) · pauses.json (draft)
+## Status (2026-10-06)
+
+| Lesson | Script + storyboard | Build (`lessons/L0N/`) |
+|---|---|---|
+| L1 Why Bother? | reviewed, re-specced | **v5 rendered** 5:27 (EN + HI build) |
+| L2 What You Have, What You Owe | reviewed | **rendered** 5:37 — polish pass pending (sparse staging) |
+| L3 The Scale That Never Tips | reviewed | **rendered** 6:37 |
+| L4 Making Money | reviewed | **rendered** 6:32 |
+| L5–L7 | reviewed; VO generated | building |
+| L8–L14 | reviewed, trimmed | not started |
+
+- `course/REVIEW-2026-10-06.md` — the pedagogy review and what was applied; bible §5 = shared-component spec, §6.11 = vocabulary locks.
+- `course/lessons/NN-slug/` — SCRIPT.md · STORYBOARD.md · vo-segments.json (EN build input) · pauses.json
 - `course/lessons/SCRIPTING-BRIEF.md` — the rules every script followed
 - `course/lessons/PRODUCTION-NEEDS.md` — new kit rigs, props, icons, SFX, pronunciation list
-- Hinglish `vo-segments.hi.json` per lesson: after EN scripts are approved
+- Hinglish `vo-segments.hi.json` per lesson: after the EN build of each lesson is approved
+
+## Building a lesson
+
+```bash
+python3 lessons/shared/new_lesson.py 08 08-journal          # scaffold lessons/L08 from the course files
+# generate VO: tools/tts.py per segment of lessons/L08/vo-segments.json → lessons/L08/assets/vo/
+# author lessons/L08/assets/scenes/<id>.js + <id>.sfx.json (see lessons/L08/SCENE-BRIEF.md, lessons/shared/kit/RIG.md)
+cd lessons/L08 && python3 build.py && npm run check
+npx --yes hyperframes@0.8.133 render -o renders/video.en.mp4 --workers 3   # one render at a time on this machine
+python3 build.py --mix --mux                                               # → renders/L08-final.en.mp4
+```
+
+Shared kit: `lessons/shared/kit/` (kit.js, rig.js, cast.js, devices.js, icons.js — API in `RIG.md`). Shared audio
+library: `lessons/shared/audio/{sfx,music}`. Renders and snapshots are git-ignored; VO and SFX mp3s are tracked.
