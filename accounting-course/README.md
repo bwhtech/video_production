@@ -39,13 +39,13 @@ English VO first (ElevenLabs), Hindi later. Built in HyperFrames.
 
 | Lesson | Script + storyboard | Build (`lessons/L0N/` EN · `lessons/L0N-hi/` HI) |
 |---|---|---|
-| L1 Why Bother? | reviewed | **HI rendered** 6:14 · EN 5:29 re-render queued |
-| L2 What You Have, What You Owe | reviewed | **HI rendered** 6:19 · EN 5:40 re-render queued |
-| L3 The Scale That Never Tips | reviewed | **HI rendered** 7:49 · EN 7:02 re-render queued |
-| L4 Making Money | reviewed | **HI rendered** 6:29 · EN 5:55 re-render queued |
-| L5 Profit Is Not Cash | reviewed | **HI rendered** 8:18 · EN 7:24 render queued |
-| L6 Debit and Credit | reviewed | **HI rendered** 9:11 · EN 8:05 render queued |
-| L7 The Golden Rules, Decoded | reviewed | **HI rendered** 8:59 · EN 8:09 render queued |
+| L1 Why Bother? | reviewed | **rendered** HI 6:14 · EN 5:29 |
+| L2 What You Have, What You Owe | reviewed | **rendered** HI 6:19 · EN 5:40 |
+| L3 The Scale That Never Tips | reviewed | **rendered** HI 7:49 · EN 7:02 |
+| L4 Making Money | reviewed | **rendered** HI 6:29 · EN 5:55 |
+| L5 Profit Is Not Cash | reviewed | **rendered** HI 8:18 · EN 7:24 |
+| L6 Debit and Credit | reviewed | **rendered** HI 9:11 · EN 8:05 |
+| L7 The Golden Rules, Decoded | reviewed | **rendered** HI 8:59 · EN 8:09 |
 | L8–L14 | reviewed, trimmed | not started |
 
 Render queue: `lessons/shared/render_queue.sh L01:en L05:hi …` (check → render under the lock → mix → mux → 720p
