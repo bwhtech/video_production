@@ -63,13 +63,14 @@
 - Known pitfall for later lessons: never leave an `arm()` relax on the same timestamp as another `arm()` on that side (the earlier pose wins).
 
 ## 2026-10-06 — Hindi (Hinglish)
-- `vo-segments.hi.json` (22 segs, same ids/scenes/gaps as EN incl. the extended s04b), Devanagari + English accounting terms; "taraazu" kept in Latin
-  for the balance scale throughout; catchphrase "कौन सी दो चीज़ें बदलीं?" said identically in s04a / s05a / s10a. Names: मीरा, गोपाल Dairy, रवि मामा, अमन, शर्मा किराना.
+- `vo-segments.hi.json` (22 segs, same ids/scenes/gaps as EN incl. the extended s04b), Devanagari + English accounting terms; "तराज़ू" (matches L2 Hindi) for the balance scale throughout; catchphrase "कौन सी दो चीज़ें बदलीं?" said identically in s04a / s05a / s10a. Names: मीरा, गोपाल Dairy, रवि मामा, अमन, शर्मा किराना.
 - `assets/vo-hi/` (ElevenLabs eleven_v4, `--lang hi`), `anchors.hi.json` via `tools/hi_anchors.py` (166 anchors; 0 problems; every scene/sfx/pause anchor mapped).
   Pause markers all on sentence-final words; `@later` (s10a) and `@chai` (s04d) needed both a cue and a `|p` marker.
 - Word-order tweaks for Hindi SOV: s01b `@lose` before `@rupees#2` (clasp rush still fires on the final "रुपये"), s05a `@got` on the first word after the 2.0 s device pause,
   s04b `@has` (sticker flight) on "पास", s06b `{@stock}{@left}` share one word + `{p@left}` on the sentence end.
 - Hush entries in music.json use plain English words ("now"#2, "description") → Hindi build falls back to proportional position (both are near the end of their takes).
-- `python3 build.py --lang=hi` → `lessons/L03-hi/` 441.4 s (7:21, +10 % vs EN 401.5 s); 23 pause cuts all in silence. `npm run check`: 0 errors.
+- `python3 build.py --lang=hi` → `lessons/L03-hi/` 441.6 s (7:21, +10 % vs EN 401.5 s); 23 pause cuts all in silence. `npm run check`: 0 errors.
 - No label swaps needed: on-screen text is English accounting terms in both languages (same as L01); series wordmark switches to "Hisaab Kitaab" via `TL.lang`.
 - Final: `lessons/L03-hi/renders/L03-final.hi.mp4` + `L03-review-720p.hi.mp4`.
+- Render: `--workers 6` under the render lock; renders/ is a symlink to the external SSD (kept). Mixed with the patched build.py (SFX low-pass/duck). start_time 0.000 on both streams (final + 720p).
+- Nit: s09 `@does` (Khata's `?`) lands on Q2 in Hindi (EN fires it on the first "does" of Q1); Hindi hush entries are proportional-position.

@@ -57,12 +57,13 @@ shared kit uses the broken combination when the HUD was set up with `gsap.set`; 
 ## 2026-10-06 — Hindi (Hinglish)
 - `vo-segments.hi.json` (26 segments, same ids/scenes/gaps as EN): Devanagari sentences, accounting terms in Latin (revenue, expense, profit, equity,
   capital, asset, liability, scale, swap, cash, stock, equation, pocket). Names in Devanagari (मीरा, रवि मामा, गोपाल, अमन, राजू, शर्मा किराना), numbers as
-  spoken words (अट्ठासी हज़ार, तिरासी, एक लाख एक हज़ार …). Catchphrase everywhere: "कौन-सी दो चीज़ें बदलीं?" (L3 Hindi file did not exist yet — default wording used).
+  spoken words (अट्ठासी हज़ार, तिरासी, एक लाख एक हज़ार …). Catchphrase everywhere: "कौन सी दो चीज़ें बदलीं?" (matches L3 Hindi, no hyphen).
 - TTS: `tools/tts.py --lang hi` → `assets/vo-hi/*.mp3|.words.json|.marks.json` (ElevenLabs returned 429 concurrent-limit while other agents ran → retry loop, 2 workers).
 - `anchors.hi.json` (209 anchors, built by `tools/hi_anchors.py`; no aliases needed). Every `cue()/cueEnd()` + sfx word + pause in L04 resolves (checked by script).
   Problem found/fixed: s02 `{p@level}` sat on a mid-sentence word → moved to the final word "है।"; s10 `@profit#2` marker missing → added.
   Hindi word-order notes: s01c `@side` (cueEnd) on the sentence-final "है?"; s08b `@down#2` on the number "तीन सौ", pause `{p@hundred#2}` on "कम।"; s07a "गल्ले से … निकल गया" puts galla before left (no ordering dependency in s07.js).
-- `python3 build.py --lang=hi` → `lessons/L04-hi/` (assets symlinked): 429.96 s (7:10, +9.7 % vs EN 391.9 s). 20/20 pause cuts in silence.
+- `python3 build.py --lang=hi` → `lessons/L04-hi/` (assets symlinked): 429.96 s (7:09.7, +9.7 % vs EN 391.9 s). 20/20 pause cuts in silence.
 - `npm run check` in L04-hi: Lint 0 errors, Runtime 0 errors, contrast clean; Layout shows the same 24 known kit-text `content_overlap` findings as EN.
 - Label swaps: none needed (L04 on-screen text is numbers/₹/short English terms); only the series wordmark switches to "Hisaab Kitaab" via `_shared.js`. Title sting "Lesson 4 / Making Money" and end card "Lesson 5 / Profit Is Not Cash" stay English.
 - Outputs: `lessons/L04-hi/renders/video.hi.mp4`, `L04-final.hi.mp4`, `L04-review-720p.hi.mp4`.
+- Final mix/mux run after the shared friction-SFX duck patch. `renders/` is a symlink to the external SSD; render used --workers 6 under the render lock.
