@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-06",
+  "scope": "New independent Astro website inside website/",
+  "source": "../course/SERIES-BIBLE.md",
+  "fonts": "Preserved Baloo 2 display and Kalam annotations; added self-hosted DM Sans for reading",
+  "palette": "Existing cream paper, teal, saffron, red Khata, blue debit and orange credit",
+  "assets": "Existing kit exports: Meera, Khata, chai stall, paper textures",
+  "motion": "CSS press feedback and disclosure chevrons; reduced-motion support",
+  "framework": "Astro 7.3.6, static output",
+  "spacing": "4px base scale",
+  "confirmedContext": { "audience": "Adults with no accounting background", "useCase": "Start a free lesson immediately", "tone": "Playful paper cutouts" }
+}

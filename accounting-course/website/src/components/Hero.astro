@@ -1,0 +1,34 @@
+---
+import Icon from './Icon.astro';
+import { lessons, lessonHref } from '../data/course';
+import HeroTweaks from './HeroTweaks.astro';
+import '../styles/hero-interactions.css';
+import meeraArtwork from '../assets/meera-hero.svg?raw';
+---
+<section class="hero wrap" aria-labelledby="hero-title" data-ambient="paused">
+  <div class="hero-copy">
+    <p class="course-label"><span></span> Accounting for the rest of us</p>
+    <h1 id="hero-title">Accounting,<br />with a side<br />of <span class="chai-word">chai.<svg viewBox="0 0 220 16" aria-hidden="true"><path d="M4 10 Q104 -3 213 7 M13 14 Q115 6 203 12" /></svg></span></h1>
+    <p class="hero-lede">One little chai stall. A whole lot of money lessons.<br class="desktop-break" /> Learn accounting from scratch with Meera and her rather unusual bookkeeper.</p>
+    <div class="hero-actions"><a class="button" href={lessonHref(lessons[0])}><Icon name="play" size={19} /> Start learning</a><a class="text-link" href="#lessons">Explore the lessons <Icon name="down" size={17} /></a></div>
+    <div class="hero-footnote"><p class="hero-fine">Free. No sign-up.</p><button class="motion-toggle" type="button" aria-pressed="false" hidden>Pause motion</button></div>
+  </div>
+  <div class="hero-art" role="group" aria-label="Meera’s paper-cutout chai stall. Meet Khata, her friendly ledger book.">
+    <div class="art-backdrop"></div><div class="paper-sun"></div>
+    <span class="art-note">Small business.<br />Big “aha!” moments.</span>
+    <img class="stall-art" src="/art/stall.webp" alt="" width="960" height="840" fetchpriority="high" />
+    <span class="kettle-steam" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="stall-sign">MEERA’S CHAI</span>
+    <div class="meera-art" set:html={meeraArtwork} />
+    <details class="khata-character">
+      <summary aria-label="Meet Khata"><img class="khata-art" src="/art/khata.webp" alt="" width="920" height="480" /></summary>
+      <div class="khata-tip"><strong>A little tip from Khata</strong><p>Debit means left.<br />Credit means right.<br />That’s a good place to start.</p></div>
+    </details>
+    <span class="khata-note">Psst… tap Khata <svg viewBox="0 0 90 48" aria-hidden="true"><path d="M3 7q58-16 68 25m-15-4 16 8 7-15" /></svg></span>
+  </div>
+</section>
+{import.meta.env.DEV && <HeroTweaks />}
+<script>
+  import '../scripts/hero-interactions';
+</script>
+<div class="course-strip"><div class="wrap"><span><strong>14</strong> animated lessons</span><span class="strip-flower" aria-hidden="true">✳</span><span>From “what’s a debit?” to “got it.”</span><span class="strip-flower" aria-hidden="true">✳</span><span>Zero accounting experience needed</span></div></div>

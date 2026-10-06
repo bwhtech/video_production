@@ -1,0 +1,41 @@
+---
+import { modules, lessons, lessonHref } from '../data/course';
+import Icon from './Icon.astro';
+---
+<section class="curriculum wrap" id="lessons" aria-labelledby="lessons-title">
+  <div class="curriculum-intro"><h2 id="lessons-title">A little chai.<br />A lot of clarity.</h2><p>Follow Meera’s first month in business, one small “aha” at a time. Start at the beginning, or pick a lesson.</p><div class="course-count"><strong>14 lessons</strong><span>5 chapters · Your own pace</span></div><div class="margin-note"><Icon name="pencil" size={25} /><span>School maths is all you need.<br />Really. You’ve got this.</span></div><img class="intro-khata" src="/art/khata.webp" alt="Khata opens his blue debit and orange credit pages." width="920" height="480" loading="lazy" /></div>
+  <div class="module-list">
+    <div class="list-heading"><span>Your course menu</span><button class="expand-toggle" type="button" aria-expanded="false" hidden>Expand all <span aria-hidden="true">+</span></button></div>
+    {modules.map((module, index) => {
+      const moduleLessons = lessons.filter(lesson => lesson.module === index);
+      return <details class={`module module-${module.color}`} id={module.id} open={index === 0}>
+        <summary><span class="module-icon"><Icon name={module.icon} size={24} /></span><span class="module-heading"><span class="module-meta">Chapter {index + 1} · {moduleLessons.length} lessons</span><h3>{module.title}</h3></span><span class="module-toggle"><Icon name="down" size={20} /></span></summary>
+        <div class="module-content"><p class="module-note">{module.note}</p><ol class="lesson-list" start={moduleLessons[0].number}>{moduleLessons.map(lesson => <li><a class="lesson-link" href={lessonHref(lesson)}><span class="lesson-number">{String(lesson.number).padStart(2, '0')}</span><span class="lesson-text"><span>{lesson.title}</span>{lesson.checkpoint && <small>Includes a checkpoint challenge</small>}</span><span class="lesson-play"><Icon name="play" size={16} /><span class="sr-only">Open lesson</span></span></a></li>)}</ol></div>
+      </details>;
+    })}
+  </div>
+</section>
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.expand-toggle');
+  const modules = [...document.querySelectorAll<HTMLDetailsElement>('.module')];
+  const revealLinkedChapter = () => {
+    const chapter = modules.find(module => `#${module.id}` === location.hash);
+    if (chapter) chapter.open = true;
+  };
+  revealLinkedChapter();
+  window.addEventListener('hashchange', revealLinkedChapter);
+  if (toggle) {
+    toggle.hidden = false;
+    const updateLabel = () => {
+      const allOpen = modules.every(module => module.open);
+      toggle.textContent = allOpen ? 'Collapse all −' : 'Expand all +';
+      toggle.setAttribute('aria-expanded', String(allOpen));
+    };
+    toggle.addEventListener('click', () => {
+      const open = !modules.every(module => module.open);
+      modules.forEach(module => { module.open = open; });
+      updateLabel();
+    });
+    modules.forEach(module => module.addEventListener('toggle', updateLabel));
+  }
+</script>

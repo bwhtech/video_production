@@ -27,19 +27,19 @@
   "id": "s03a",
   "scene": 3,
   "gap_after": 0.5,
-  "text": "आज, {@khata}खाता stall की दीवार पर {@pins}दो {@needles}needles लगा देता है। पहली है {@profit}Profit। ये तब हिलती है जब मीरा पैसे कमाती हैं, या ख़र्च कर देती {p@up}हैं। दूसरी है {@cash}Cash — {@galla}गल्ले में जो कुछ है, और {@bank}bank में जो कुछ है, सब मिलाकर।"
+  "text": "आज, {@khata}खाता stall की दीवार पर {@pins}दो {@needles}needles लगा देता है। पहली है {@profit}Profit। ये तब हिलती है जब मीरा पैसे कमाती हैं, या ख़र्च कर देती {p@up}हैं। दूसरी है {@money#2}Money — {@galla}गल्ले में जो कुछ है, और {@bank}bank में जो कुछ है, सब मिलाकर।"
  },
  {
   "id": "s03b",
   "scene": 3,
   "gap_after": 0.6,
-  "text": "अभी, profit {@thirteen}तेरह हज़ार दिखाता है। Cash {@fiftyone}इक्यावन हज़ार। ये बड़ा है, क्योंकि इसमें मीरा की {@savings}बचत और रवि मामा का {@loan}loan भी शामिल है। [curious] ज़्यादातर लोग {@think}सोचते हैं कि ये दोनों needles {@move}साथ-साथ हिलती हैं। चलिए {@watch}देखते हैं।"
+  "text": "अभी, profit {@thirteen}तेरह हज़ार दिखाता है। Money {@fiftyone}इक्यावन हज़ार। ये बड़ा है, क्योंकि इसमें मीरा की {@savings}बचत और रवि मामा का {@loan}loan भी शामिल है। [curious] ज़्यादातर लोग {@think}सोचते हैं कि ये दोनों needles {@move}साथ-साथ हिलती हैं। चलिए {@watch}देखते हैं।"
  },
  {
   "id": "s04",
   "scene": 4,
-  "gap_after": 0.6,
-  "text": "पहले, एक दिन पीछे चलते हैं। {@fifteenth}पंद्रह अप्रैल। {@meera}मीरा {@carries}ले जाती हैं {@fifteen}पंद्रह हज़ार रुपये — {@galla}गल्ले से {@bank}bank तक। {@profit}Profit? {@change}कोई बदलाव नहीं। {@cash}Cash? इसमें भी कोई {@change#2}बदलाव {p@change#2}नहीं। पैसा बस {@moved}चला गया — एक {@pocket}pocket से दूसरी में।"
+  "gap_after": 1.6,
+  "text": "पहले, एक दिन पीछे चलते हैं। {@fifteenth}पंद्रह अप्रैल। {@meera}मीरा {@carries}ले जाती हैं {@fifteen}पंद्रह हज़ार रुपये — {@galla}गल्ले से {@bank}bank तक। {@profit}Profit? {@change}कोई बदलाव नहीं। {@money}Money? इसमें भी कोई {@change#2}बदलाव {p@change#2}नहीं। लेकिन books में, ये {@accounts}दो अलग-अलग accounts हैं। {@notes}Cash, यानी गल्ले के {@galla#2}नोट। {@keeps}Bank वो पैसा है जो bank मीरा के लिए रखता है, और जब वो माँगें, तब लौटा देता {p@asks}है। Cash पंद्रह हज़ार {@down}{p@thousand#2}घटा। Bank पंद्रह हज़ार {@up}बढ़ा। तो Money {@needle}needle नहीं हिलती।"
  },
  {
   "id": "s05a",
@@ -51,13 +51,13 @@
   "id": "s05b",
   "scene": 5,
   "gap_after": 0.5,
-  "text": "{@sales}Sales {@up}बढ़ीं — {@six}छह हज़ार। {@chai}चाय {@drunk}पी जा चुकी है, इसलिए मीरा ने इसे {@earned}कमा लिया {p@it}है। पर {@left}left side पर, {@no}कोई cash नहीं आया। इसके बजाय, {@infotech}Infotech पर अब stall के छह हज़ार रुपये {@owes}बकाया हैं। Customers का जो पैसा आपको लेना है, वो एक asset है — उसे {@receivable}receivable कहते हैं।"
+  "text": "{@sales}Sales {@up}बढ़ीं — {@six}छह हज़ार। {@chai}चाय {@drunk}पी जा चुकी है, इसलिए मीरा ने इसे {@earned}कमा लिया {p@it}है। पर {@left}left side पर, {@no}कोई पैसा नहीं आया। इसके बजाय, {@infotech}Infotech पर अब stall के छह हज़ार रुपये {@owes}बकाया हैं। Customers का जो पैसा आपको लेना है, वो एक asset है — उसे {@receivable}receivable कहते हैं।"
  },
  {
   "id": "s05c",
   "scene": 5,
   "gap_after": 1.5,
-  "text": "{@so}तो profit needle {@jumps}उछल जाती है, तेरह हज़ार से उन्नीस हज़ार पर। और {@cash}cash needle? [softly] वो {@move}बिल्कुल नहीं हिलती।"
+  "text": "{@so}तो profit needle {@jumps}उछल जाती है, तेरह हज़ार से उन्नीस हज़ार पर। और {@money}Money needle? [softly] वो {@move}बिल्कुल नहीं हिलती।"
  },
  {
   "id": "s05d",
@@ -81,7 +81,7 @@
   "id": "s06c",
   "scene": 6,
   "gap_after": 0.8,
-  "text": "{@only}सिर्फ़ {@cash}cash। पाँच हज़ार {@down}कम। Profit उन्नीस हज़ार पर {@stays}बना रहता {p@thousand#2}है। ये payment एक liability को {@shrinks}घटाता {p@liability}है। जो पैसा stall पर किसी supplier का बकाया है, उसे {@payable}payable कहते हैं — {@receivable}receivable का उल्टा।"
+  "text": "{@only}सिर्फ़ {@money}Money needle। पाँच हज़ार {@down}कम। Profit उन्नीस हज़ार पर {@stays}बना रहता {p@thousand#2}है। ये payment एक liability को {@shrinks}घटाता {p@liability}है। जो पैसा stall पर किसी supplier का बकाया है, उसे {@payable}payable कहते हैं — {@receivable}receivable का उल्टा।"
  },
  {
   "id": "s07a",
@@ -99,31 +99,31 @@
   "id": "s07c",
   "scene": 7,
   "gap_after": 0.8,
-  "text": "{@only}सिर्फ़ {@cash}cash। चार हज़ार {@up}ऊपर। Profit उन्नीस हज़ार पर {@stays}बना रहता है।"
+  "text": "{@only}सिर्फ़ {@money}Money needle। चार हज़ार {@up}ऊपर। Profit उन्नीस हज़ार पर {@stays}बना रहता है।"
  },
  {
   "id": "s08a",
   "scene": 8,
   "gap_after": 3.2,
-  "text": "अब आप, अपने दम पर। {@twentyfifth}पच्चीस अप्रैल। {@infotech}Infotech अपने {@tab}tab में से चार हज़ार रुपये {@upi}UPI से चुकाता है। {@profit}Profit? {@cash}Cash?"
+  "text": "अब आप, अपने दम पर। {@twentyfifth}पच्चीस अप्रैल। {@infotech}Infotech अपने {@tab}tab में से चार हज़ार रुपये {@upi}UPI से चुकाता है। {@profit}Profit? {@money}Money?"
  },
  {
   "id": "s08b",
   "scene": 8,
   "gap_after": 0.8,
-  "text": "{@cash}Cash चार हज़ार बढ़ता है, सीधे {@into}{@bank}bank में। {@profit}Profit नहीं {@move}हिलता। {@meera}मीरा ने वो पैसा {@sixteenth}सोलह अप्रैल को ही कमा लिया था। आज, वो बस उसे {@collecting}वसूल कर रही {p@it}हैं। Receivable {@shrinks}घटती है, और bank {@grows}बढ़ता है।"
+  "text": "{@money}Money चार हज़ार बढ़ता है, सीधे {@into}{@bank}bank में। {@never}गल्ले को तो इसकी ख़बर तक नहीं होती। {@profit}Profit नहीं {@move}हिलता। {@meera}मीरा ने वो पैसा {@sixteenth}सोलह अप्रैल को ही कमा लिया था। आज, वो बस उसे {@collecting}वसूल कर रही {p@it}हैं। Receivable {@shrinks}घटती है, और bank {@grows}बढ़ता है।"
  },
  {
   "id": "s09a",
   "scene": 9,
   "gap_after": 0.6,
-  "text": "{@fifteenth}पंद्रह अप्रैल से, profit {@needle}needle सिर्फ़ {@once}एक बार हिली — उस दिन, जब कोई पैसा नहीं {p@in}आया। Cash {@needle#2}needle {@moved#2}हिली — {@three}तीन {@times}बार — और उनमें से एक भी profit की वजह से नहीं थी।"
+  "text": "{@fifteenth}पंद्रह अप्रैल से, profit {@needle}needle सिर्फ़ {@once}एक बार हिली — उस दिन, जब कोई पैसा नहीं {p@in}आया। Money {@needle#2}needle {@moved#2}हिली — {@three}तीन {@times}बार — और उनमें से एक भी profit की वजह से नहीं थी।"
  },
  {
   "id": "s09b",
   "scene": 9,
   "gap_after": 0.8,
-  "text": "{@profit}Profit: उन्नीस हज़ार रुपये। {@cash}Cash: चौवन {p@thousand#2}हज़ार। {@two}दो needles। दो अलग-अलग कहानियाँ।"
+  "text": "{@profit}Profit: उन्नीस हज़ार रुपये। {@money}Money: चौवन {p@thousand#2}हज़ार। {@two}दो needles। दो अलग-अलग कहानियाँ।"
  },
  {
   "id": "s09c",
@@ -159,7 +159,7 @@
   "id": "s12c",
   "scene": 12,
   "gap_after": 0.8,
-  "text": "{@ready}तैयार? {@one}एक। {@profit}Profit और {@cash}cash दोनों नौ हज़ार बढ़ते हैं। {@two}दो। {@both#2}दोनों दो हज़ार घटते हैं। {@three}तीन। {@profit#2}Profit पंद्रह सौ बढ़ा। Cash, {@nothing}कुछ नहीं। {@four}चार। {@cash#3}Cash दो हज़ार घटा। {@profit#3}Profit, कुछ नहीं — ये एक debt चुकाया जा रहा है। {@five}पाँच। {@cash#4}Cash हज़ार बढ़ा। {@profit#4}Profit, कुछ नहीं — ये {@advance}advance {p@advance}है। {@aman's}अमन का profit अब तक: {@eight}साढ़े आठ हज़ार {@rupees}रुपये।"
+  "text": "तैयार? {@one}एक। नौ हज़ार रुपये की cash sales। {@profit}Profit और {@cash#2}cash दोनों नौ हज़ार बढ़ते हैं। {@two}दो। stall का किराया, दो हज़ार रुपये। {@both#2}दोनों दो हज़ार घटते हैं। {@three}तीन। school canteen को उधार पर पंद्रह सौ रुपये के samosas। {@profit#2}Profit पंद्रह सौ बढ़ा। Cash, {@nothing}कुछ नहीं। {@four}चार। शर्मा किराना को दो हज़ार रुपये देना। {@cash#4}Cash दो हज़ार घटा। {@profit#3}Profit, कुछ नहीं — ये एक debt चुकाया जा रहा {p@paid}है। {@five}पाँच। हज़ार रुपये का birthday advance। {@cash#5}Cash हज़ार बढ़ा। {@profit#4}Profit, कुछ नहीं — ये अभी कमाया नहीं गया {p@yet}है। {@aman's}अमन का profit अब तक: {@eight}साढ़े आठ हज़ार {@rupees}रुपये।"
  },
  {
   "id": "s13",

@@ -48,7 +48,7 @@
     const ringAt = (p) => K.el("path", { d: K.cutRect(p[0] - 136 * GS - 6, p[1] - 62 * GS - 6, 272 * GS + 12, 124 * GS + 12, 1, 18), fill: "none", stroke: C.gold, "stroke-width": 6, "stroke-linejoin": "round", opacity: 0 }, svg);
     const ringCash = ringAt(chipP(0)), ringBank = ringAt(chipP(1));
     const plus = L5.chip(K, svg, chipP(1)[0], chipP(1)[1] + 62 * GS + 36, "+₹4,000", { size: 38, bg: C.leaf });
-    const eqCash = L5.hide(L5.node(K, svg, chipP(0)[0] + 136 * GS - 8, chipP(0)[1] - 62 * GS + 4));
+    const eqCash = L5.hide(L5.node(K, svg, chipP(0)[0], chipP(0)[1] + 62 * GS + 34));
     K.tex(K.shadow(eqCash, 1), K.cutRect(-22, -22, 44, 44, 1, 12), "pat-paper"); K.ink(eqCash, [[-11, -6], [11, -6]], 5); K.ink(eqCash, [[-11, 7], [11, 7]], 5);
 
     // ======================================================================================= timeline

@@ -35,3 +35,5 @@ English build: 490.36 s (8:10.4), `npm run check` 0 errors; EN not rendered (Hin
   The only anchors that move > 15 % of a segment vs EN: s01a `@deposits` (जमा), s02d `@shrinks`, s06c `@left` — all harmless.
 - Build: `python3 build.py --lang=hi` → 551.96 s (9:12.0, +12.6 %), `validate_cuts` 16/16 in silence, `npm run check` 0 errors. `L06-hi/renders` → SSD symlink.
 - Render under the lock with `--workers 6`; `build.py --lang=hi --mix --mux` → `renders/L06-final.hi.mp4`, 720p copy `L06-review-720p.hi.mp4`.
+- Script revisions picked up later the same day: **s02g removed** (L5 reveals its own checkpoint answers) → s02 now ends: cards lift off, cream fills, SMS card lands (Aman table / gauges / ₹8,500 footer deleted; `assets/vo/s02g.*` moved out, `vo-hi/s02g.*` deleted); and the coordinator's `patch_question_beat` (thinking pause after spoken questions) in `build.py`.
+  Final builds: EN 484.95 s (8:05.0, not rendered); HI 551.27 s (9:11.3), 42 segments, 250 anchors. `renders/L06-final.hi.mp4` (551.3 s, both streams start_time 0) + `L06-review-720p.hi.mp4`.

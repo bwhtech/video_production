@@ -60,7 +60,7 @@
     }));
     // reveal helpers: a gold ring that lights the active row on its number word, and a QUESTION card beside the sheet (beside Aman, left)
     const ring = K.el("path", { d: K.cutRect(-536, -50, 1072, 100, 1, 22), fill: "none", stroke: C.gold, "stroke-width": 7, "stroke-linejoin": "round", opacity: 0 }, sheet);
-    const QX = 430, QY = 385;
+    const QX = 430, QY = 370;
     const QDATA = [["Cash sales", "₹9,000", ["shopping-bag"]], ["Stall rent", "₹2,000", ["key"]], ["Canteen · on credit", "₹1,500", ["school"]],
       ["Paying Sharma Kirana", "₹2,000", ["handshake"]], ["Birthday advance", "₹1,000", ["cake"]]];
     const qcards = QDATA.map(([cap, amt, ic], i) => {

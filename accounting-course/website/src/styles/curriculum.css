@@ -1,0 +1,55 @@
+/* Hallmark · macrostructure: Narrative Workflow · tone: playful · anchor hue: teal */
+.curriculum { display: grid; grid-template-columns: minmax(0, 1fr); gap: 40px; padding-block: 64px; scroll-margin-top: 24px; }
+.curriculum-intro > p { margin-top: 20px; color: var(--color-muted); max-width: 310px; }
+.course-count { display: flex; flex-direction: column; gap: 2px; margin-top: 24px; font-size: var(--text-sm); }
+.course-count strong { font-size: 1rem; }
+.course-count > span { color: var(--color-muted); }
+.margin-note { display: flex; gap: 12px; align-items: center; margin-top: 32px; color: var(--color-accent); font: 400 1.1rem/1.4 var(--font-note); transform: rotate(-3deg); }
+.intro-khata { display: none; width: 220px; margin-top: 40px; transform: rotate(-7deg); }
+.list-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; font-size: 0.8125rem; font-weight: 600; }
+.expand-toggle { color: var(--color-muted); background: none; border: 0; padding: 8px 0 8px 12px; min-height: 44px; font-size: 0.75rem; white-space: nowrap; }
+.expand-toggle:hover { text-decoration: underline; text-underline-offset: 4px; }
+.module { --module-color: var(--color-teal-light); margin-bottom: 14px; background: var(--color-sheet); color: var(--color-ink); border: 1px solid var(--color-rule); border-radius: var(--radius-sm); box-shadow: 2px 3px 0 var(--color-shadow); scroll-margin-top: 24px; }
+.module-saffron { --module-color: var(--color-saffron-light); }
+.module-coral { --module-color: var(--color-coral-light); }
+.module-blue { --module-color: var(--color-blue-light); }
+.module-violet { --module-color: var(--color-violet-light); }
+.module summary { display: flex; align-items: center; gap: 14px; padding: 20px 16px; cursor: pointer; list-style: none; border-radius: var(--radius-sm); }
+.module summary::-webkit-details-marker { display: none; }
+.module summary::marker { content: ''; }
+.module[open] summary { background: var(--module-color); color: var(--color-ink); border-radius: var(--radius-sm) var(--radius-sm) 0 0; }
+.module-icon { display: grid; place-items: center; background: var(--module-color); color: var(--color-ink); width: 44px; height: 44px; flex-shrink: 0; border-radius: var(--radius-sm); transform: rotate(-4deg); }
+.module[open] .module-icon { background: var(--color-sheet); color: var(--color-ink); }
+.module-heading { flex: 1; min-width: 0; }
+.module-meta { display: block; font-size: 0.6875rem; color: var(--color-muted); margin-bottom: 3px; }
+.module h3 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.025em; }
+.module-toggle { display: grid; place-items: center; }
+.module-toggle svg { transition: transform var(--dur-short) var(--ease-in-out); }
+.module[open] .module-toggle svg { transform: rotate(180deg); }
+.module-note { padding: 16px 20px 0; color: var(--color-muted); font-size: 0.8125rem; }
+.lesson-list { list-style: none; padding: 0 16px; margin: 4px 0 8px; }
+.lesson-list li + li { border-top: 1px dashed var(--color-rule-light); }
+.lesson-link { display: flex; align-items: center; gap: 14px; min-height: 76px; padding: 14px 4px; }
+.lesson-number { flex-shrink: 0; align-self: flex-start; margin-top: 3px; color: var(--color-muted); font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+.lesson-text { flex: 1; min-width: 0; font-size: 0.875rem; line-height: 1.5; font-weight: 500; }
+.lesson-text small { display: block; margin-top: 4px; font-size: 0.6875rem; font-weight: 400; color: var(--color-muted); }
+.lesson-play { display: grid; place-items: center; flex-shrink: 0; width: 30px; height: 30px; border: 1px solid var(--color-rule); border-radius: 50%; color: var(--color-accent); background: var(--color-sheet); }
+.lesson-play svg { margin-left: 2px; }
+.curriculum-foot { display: flex; align-items: flex-start; gap: 8px; color: var(--color-muted); font-size: 0.75rem; margin-top: 20px; }
+@media (hover: hover) {
+  .module summary:hover { background: var(--module-color); color: var(--color-ink); }
+  .lesson-link:hover .lesson-text > span { text-decoration: underline; text-underline-offset: 4px; }
+  .lesson-link:hover .lesson-play { background: var(--color-accent); color: var(--color-accent-ink); border-color: var(--color-accent); }
+}
+@media (min-width: 40rem) {
+  .module summary { padding: 20px 24px; gap: 16px; }
+  .module h3 { font-size: 1.5rem; }
+  .module-note { padding-inline: 24px; }
+  .lesson-list { padding-inline: 24px; }
+  .lesson-link { gap: 20px; }
+}
+@media (min-width: 60rem) {
+  .curriculum { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 80px; padding-block: 96px; }
+  .curriculum-intro { align-self: start; position: sticky; top: 40px; padding-top: 20px; }
+  .intro-khata { display: block; }
+}

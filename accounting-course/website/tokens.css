@@ -1,0 +1,56 @@
+/* Hallmark · macrostructure: Narrative Workflow · tone: playful · anchor hue: teal
+ * theme: Hum (existing course palette + type) · nav: N1a · footer: Ft5 · enrichment: E5 existing SVG cast
+ * audience: accounting beginners · use: start a free lesson · pre-emit critique: P4 H5 E4 S5 R4 V4 */
+@font-face { font-family: 'Baloo 2'; src: url('/fonts/Baloo2-800-224589.woff2') format('woff2'); font-style: normal; font-weight: 800; font-display: swap; }
+@font-face { font-family: 'Baloo 2'; src: url('/fonts/Baloo2-700-224589.woff2') format('woff2'); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: 'DM Sans'; src: url('/fonts/dm-sans-latin.woff2') format('woff2'); font-style: normal; font-weight: 100 1000; font-display: swap; }
+@font-face { font-family: 'Kalam'; src: url('/fonts/Kalam-400-3fe317.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
+:root {
+  --color-paper: oklch(97% 0.017 85);
+  --color-paper-2: oklch(94% 0.027 85);
+  --color-sheet: oklch(99% 0.012 85);
+  --color-ink: oklch(28% 0.034 185);
+  --color-muted: oklch(45% 0.023 170);
+  --color-accent: oklch(40% 0.069 182);
+  --color-accent-ink: var(--color-sheet);
+  --color-accent-deep: oklch(28% 0.053 182);
+  --color-teal: oklch(67% 0.103 181);
+  --color-teal-light: oklch(91% 0.035 176);
+  --color-saffron: oklch(81% 0.143 78);
+  --color-saffron-light: oklch(94% 0.071 85);
+  --color-coral: oklch(57% 0.156 33);
+  --color-coral-light: oklch(93% 0.039 42);
+  --color-blue-light: oklch(92% 0.033 235);
+  --color-violet-light: oklch(92% 0.033 300);
+  --color-rule: oklch(81% 0.026 85);
+  --color-rule-light: oklch(89% 0.023 85);
+  --color-shadow: oklch(33% 0.045 70 / 0.13);
+  --color-shadow-deep: oklch(33% 0.045 70 / 0.2);
+  --color-focus: oklch(52% 0.17 32);
+  --color-clear: oklch(97% 0.017 85 / 0);
+  --font-display: 'Baloo 2', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-note: 'Kalam', cursive;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --text-sm: 0.8125rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-display: clamp(3.5rem, 6.3vw, 6rem);
+  --text-heading: clamp(2.375rem, 3.5vw, 3.5rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+  --rule-hair: 1px;
+}

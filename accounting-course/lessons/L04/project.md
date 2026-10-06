@@ -67,3 +67,9 @@ shared kit uses the broken combination when the HUD was set up with `gsap.set`; 
 - Label swaps: none needed (L04 on-screen text is numbers/₹/short English terms); only the series wordmark switches to "Hisaab Kitaab" via `_shared.js`. Title sting "Lesson 4 / Making Money" and end card "Lesson 5 / Profit Is Not Cash" stay English.
 - Outputs: `lessons/L04-hi/renders/video.hi.mp4`, `L04-final.hi.mp4`, `L04-review-720p.hi.mp4`.
 - Final mix/mux run after the shared friction-SFX duck patch. `renders/` is a symlink to the external SSD; render used --workers 6 under the render lock.
+
+## Revision 2026-10-06b — Checkpoint 1 solution walk removed (review: "if the lesson already answers its checkpoint, the next lesson shouldn't walk through it again")
+- L3's s10b now answers Checkpoint 1 in full, so scene s03 (s03a/s03b) is gone: removed from `scenes.json`, `vo-segments.hi.json`, `anchors.hi.json`; `assets/scenes/s03.js` + `s03.sfx.json` moved to `assets/scenes/_removed/`. `music.json` had no s03 reference (M2 bed runs s02.start+0.2 → s11.end). `SCENE-BRIEF.md` row struck.
+- Seam: s02 → s04 is now the default torn-paper wipe (s03's `OWN_SEAM_IN.s04` hand-off — worksheet flip → torn still pushed to full frame — went with it). s04 simply opens on the rent-day street (`L4.preRent`), which it already drew identically. Verified in `snapshots/s02-s04seam/`. `L4` helpers in s01.js untouched (nothing in s03 defined shared helpers).
+- Builds: EN 345.81 s (was 391.9), HI 388.69 s (was 429.96). `npm run check`: Lint/Runtime 0 errors; Layout/contrast ✗ are the known kit-text `content_overlap` findings plus a transient contrast sample at the s07 → s08 wipe (t≈249.8 EN).
+- Hindi render + mix + mux → `renders/L04-final.hi.mp4`, `L04-review-720p.hi.mp4`.

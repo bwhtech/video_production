@@ -1,0 +1,30 @@
+{
+  "name": "double-entry-single-chai",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "art": "node scripts/export-art.mjs"
+  },
+  "description": "A free paper-cutout accounting course, built with Astro.",
+  "dependencies": {
+    "astro": "^7.3.6"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "jsdom": "^27.0.1",
+    "sharp": "^0.35.5",
+    "typescript": "^6.0.3"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

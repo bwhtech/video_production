@@ -1,0 +1,37 @@
+---
+import Icon from '../components/Icon.astro';
+import { courseName, lessons, lessonHref } from '../data/course';
+import '../../tokens.css';
+import '../styles/global.css';
+interface Props { title?: string; description?: string; }
+const { title = `${courseName} — a free accounting course`, description = 'Learn accounting through the story of Meera’s chai stall. Fourteen playful animated lessons, starting from zero. Free to explore, no sign-up.' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#faf5e9" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/Baloo2-800-224589.woff2" as="font" type="font/woff2" crossorigin />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="brand" href="/" aria-label={`${courseName} home`}><span class="brand-icon"><Icon name="cup" size={27} /></span><span>Double Entry,<br />Single Chai<span class="brand-dot">.</span></span></a>
+      <nav aria-label="Main navigation"><a href="/#lessons">The lessons</a><a href="/#story">The story</a></nav>
+      <a class="header-start" href={lessonHref(lessons[0])}>Let’s begin <Icon name="arrow" size={19} /></a>
+    </header>
+    <slot />
+    <footer class="site-footer">
+      <div class="wrap footer-top"><div><p class="footer-line">One cup at a time.<br /><span>One idea at a time.</span></p><p>Bring your curiosity. We’ll put the chai on.</p></div><a class="button button-light" href={lessonHref(lessons[0])}>Start with lesson 1 <Icon name="arrow" size={20} /></a></div>
+      <div class="wrap footer-bottom"><span>{courseName}</span><span>Made for curious minds.</span><a href="/#lessons">All lessons <Icon name="arrow" size={16} /></a></div>
+      <p class="wrap footer-copyright">Copyright Hussain Nagaria.</p>
+    </footer>
+  </body>
+</html>
