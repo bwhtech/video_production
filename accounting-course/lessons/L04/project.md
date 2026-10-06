@@ -44,3 +44,12 @@ shared kit uses the broken combination when the HUD was set up with `gsap.set`; 
 ## Known nits
 - Equity-card text at hero size is small (pocket names ~25 px); the card is kit-locked, camera push capped at 8 %.
 - HUD pan contents (jars/tags) are pictogram-sized by design; numbers that matter are the slot chips + ≥ 44 px pan totals.
+
+## Output (v1)
+- `renders/L04-final.en.mp4` — 1920×1080, 6:31.9 (391.9 s), audio mixed (VO highpass, m2 bed ducked, SFX gain-matched, loudnorm −14 LUFS).
+  `renders/L04-review-720p.en.mp4` — 1280×720 review copy. ffprobe `start_time` = 0.000 on both streams of both files.
+- `npm run check`: Lint 0 errors (structure/size warnings only, same shape as L1), Runtime 0 errors, contrast clean. The Layout pass still
+  reports `content_overlap` findings (24, ✗) — all are bounding-box overlaps of text inside shared-kit parts (jar label vs amount chip,
+  equity-pocket name vs amount, `whichTwo` chip name vs delta, HUD-sized pan contents) plus the intentional `Apr`/`May` page stack on the rent card.
+  Not fixable without editing `lessons/shared/kit`. Snapshots: `snapshots/<scene>/` (contact sheets) and `snapshots/final/contact-sheet.png` (from the render).
+- Timing is VO-driven via `@word` cues; `anchors.hi.json` not written (Hindi build not produced).

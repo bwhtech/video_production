@@ -1,0 +1,791 @@
+1
+00:00:00,580 --> 00:00:02,820
+Meera's friend is a chartered accountant.
+
+2
+00:00:02,900 --> 00:00:05,620
+She stops by for chai, spots Meera's khata,
+
+3
+00:00:05,700 --> 00:00:07,540
+and starts firing rules.
+
+4
+00:00:07,620 --> 00:00:08,660
+Debit the receiver!
+
+5
+00:00:08,820 --> 00:00:09,700
+Credit the giver!
+
+6
+00:00:09,780 --> 00:00:12,260
+Debit what comes in, credit what goes out!
+
+7
+00:00:12,300 --> 00:00:15,140
+Debit all expenses, credit all incomes!
+
+8
+00:00:15,862 --> 00:00:17,702
+Meera's head is spinning.
+
+9
+00:00:17,942 --> 00:00:19,622
+Is this a whole new system?
+
+10
+00:00:20,713 --> 00:00:21,753
+It isn't.
+
+11
+00:00:21,833 --> 00:00:24,873
+It's the same language, in another dialect.
+
+12
+00:00:25,073 --> 00:00:26,633
+Today, we translate it.
+
+13
+00:00:32,486 --> 00:00:34,406
+First, last time's questions.
+
+14
+00:00:34,966 --> 00:00:35,566
+One.
+
+15
+00:00:35,846 --> 00:00:38,726
+Meera buys six thousand rupees of tea, milk
+
+16
+00:00:38,806 --> 00:00:40,886
+and sugar, and pays cash.
+
+17
+00:00:41,006 --> 00:00:43,206
+What's debited, and what's credited?
+
+18
+00:00:44,370 --> 00:00:46,690
+Debit Stock, six thousand.
+
+19
+00:00:46,770 --> 00:00:49,250
+An asset grows, on its home side.
+
+20
+00:00:49,490 --> 00:00:51,730
+Credit Cash, six thousand.
+
+21
+00:00:51,810 --> 00:00:53,330
+An asset shrinks.
+
+22
+00:00:53,878 --> 00:00:54,558
+Two.
+
+23
+00:00:54,838 --> 00:00:56,998
+Why is an expense a debit?
+
+24
+00:00:58,160 --> 00:01:00,560
+Because an expense shrinks equity.
+
+25
+00:01:01,040 --> 00:01:03,200
+Move it across the equals sign, and it sits
+
+26
+00:01:03,240 --> 00:01:05,200
+on the left, with the assets.
+
+27
+00:01:05,761 --> 00:01:06,161
+Three.
+
+28
+00:01:06,401 --> 00:01:09,201
+Imagine Meera pays a bill from the bank.
+
+29
+00:01:09,441 --> 00:01:11,761
+The SMS says debited.
+
+30
+00:01:11,841 --> 00:01:13,041
+In Meera's books?
+
+31
+00:01:14,197 --> 00:01:15,077
+Credited.
+
+32
+00:01:15,317 --> 00:01:18,597
+Bank is an asset, and it shrank, so it goes
+
+33
+00:01:18,677 --> 00:01:19,477
+on the right.
+
+34
+00:01:20,747 --> 00:01:23,227
+Now, Indian traders have kept double-entry
+
+35
+00:01:23,307 --> 00:01:26,347
+books, the bahi-khata, for centuries.
+
+36
+00:01:26,427 --> 00:01:27,867
+Naam, for debit.
+
+37
+00:01:27,907 --> 00:01:29,467
+Jama, for credit.
+
+38
+00:01:29,547 --> 00:01:31,387
+And khata means account.
+
+39
+00:01:31,467 --> 00:01:33,707
+That's where our Khata gets its name.
+
+40
+00:01:34,856 --> 00:01:37,176
+The golden rules start by sorting every
+
+41
+00:01:37,416 --> 00:01:39,736
+account into one of three families.
+
+42
+00:01:39,936 --> 00:01:42,776
+Personal accounts are people and organisations:
+
+43
+00:01:42,856 --> 00:01:45,976
+Ravi Mama, Gopal Dairy, Infotech.
+
+44
+00:01:46,056 --> 00:01:49,336
+Real accounts are things: cash, the cart,
+
+45
+00:01:49,376 --> 00:01:50,296
+the stock.
+
+46
+00:01:50,416 --> 00:01:52,456
+And Nominal accounts are money made and
+
+47
+00:01:52,536 --> 00:01:55,816
+money spent: sales, rent, salary.
+
+48
+00:01:56,380 --> 00:01:56,900
+Quick.
+
+49
+00:01:57,100 --> 00:01:58,300
+Ravi Mama's loan?
+
+50
+00:01:59,861 --> 00:02:00,501
+Personal.
+
+51
+00:02:00,901 --> 00:02:01,861
+He's a person.
+
+52
+00:02:02,341 --> 00:02:03,221
+The kettle?
+
+53
+00:02:04,779 --> 00:02:05,339
+Real.
+
+54
+00:02:05,659 --> 00:02:06,779
+You can hold it.
+
+55
+00:02:07,838 --> 00:02:09,598
+Each family has one rule.
+
+56
+00:02:10,078 --> 00:02:13,118
+Real: debit what comes in, credit what goes
+
+57
+00:02:13,198 --> 00:02:13,518
+out.
+
+58
+00:02:14,518 --> 00:02:15,558
+The translation?
+
+59
+00:02:15,798 --> 00:02:17,478
+Real accounts are assets.
+
+60
+00:02:17,878 --> 00:02:20,438
+Something coming in grows an asset, and
+
+61
+00:02:20,518 --> 00:02:22,278
+assets grow on the left.
+
+62
+00:02:22,358 --> 00:02:23,158
+Same thing.
+
+63
+00:02:23,919 --> 00:02:26,639
+Personal: debit the receiver, credit the
+
+64
+00:02:26,679 --> 00:02:27,439
+giver.
+
+65
+00:02:28,119 --> 00:02:30,039
+When someone gives the stall something,
+
+66
+00:02:30,119 --> 00:02:32,919
+like a loan, the stall now owes them.
+
+67
+00:02:32,999 --> 00:02:35,319
+A liability grows, on the right.
+
+68
+00:02:35,399 --> 00:02:36,359
+A credit.
+
+69
+00:02:36,939 --> 00:02:39,099
+And when someone receives from the stall,
+
+70
+00:02:39,179 --> 00:02:42,139
+they owe us, or we owe them less.
+
+71
+00:02:42,219 --> 00:02:43,179
+That's the left.
+
+72
+00:02:43,259 --> 00:02:43,979
+A debit.
+
+73
+00:02:44,731 --> 00:02:48,171
+Nominal: debit all expenses, credit all
+
+74
+00:02:48,251 --> 00:02:48,811
+incomes.
+
+75
+00:02:49,811 --> 00:02:52,651
+Expenses shrink equity, so they're debits.
+
+76
+00:02:52,851 --> 00:02:55,171
+Incomes grow it, so they're credits.
+
+77
+00:02:56,427 --> 00:02:57,427
+Let's prove it.
+
+78
+00:02:57,627 --> 00:02:58,667
+Two cameras again.
+
+79
+00:02:58,907 --> 00:03:01,227
+Golden rules on this side, the scale on
+
+80
+00:03:01,347 --> 00:03:02,027
+that side.
+
+81
+00:03:02,591 --> 00:03:05,351
+The cart, thirty-six thousand rupees.
+
+82
+00:03:05,631 --> 00:03:07,391
+Which two things changed?
+
+83
+00:03:09,346 --> 00:03:13,226
+Golden rules: the cart comes in, debit Equipment.
+
+84
+00:03:13,426 --> 00:03:15,746
+Cash goes out, credit Cash.
+
+85
+00:03:16,486 --> 00:03:20,086
+The scale: one asset grows, one shrinks.
+
+86
+00:03:20,833 --> 00:03:23,393
+Gopal's stock on credit, eight thousand.
+
+87
+00:03:23,793 --> 00:03:25,673
+Stock comes in: debit.
+
+88
+00:03:25,873 --> 00:03:27,913
+Gopal is the giver: credit.
+
+89
+00:03:28,113 --> 00:03:31,393
+The scale: an asset up, a liability up.
+
+90
+00:03:32,161 --> 00:03:34,161
+Cash sales, eighteen thousand.
+
+91
+00:03:34,561 --> 00:03:36,401
+Cash comes in: debit.
+
+92
+00:03:36,601 --> 00:03:38,721
+Sales is an income: credit.
+
+93
+00:03:38,761 --> 00:03:41,921
+The scale: an asset up, equity up.
+
+94
+00:03:42,001 --> 00:03:44,721
+Every time, both methods write exactly the
+
+95
+00:03:44,841 --> 00:03:45,681
+same entry.
+
+96
+00:03:46,940 --> 00:03:49,180
+Two traps catch almost everyone.
+
+97
+00:03:49,660 --> 00:03:51,140
+First, the bank.
+
+98
+00:03:51,420 --> 00:03:54,060
+Meera's money sits in it, so the bank feels
+
+99
+00:03:54,140 --> 00:03:54,780
+like a thing.
+
+100
+00:03:55,100 --> 00:03:56,540
+A Real account, right?
+
+101
+00:03:57,261 --> 00:03:57,781
+Nope.
+
+102
+00:03:57,981 --> 00:04:01,501
+The bank is an organisation, so it's Personal.
+
+103
+00:04:02,081 --> 00:04:04,641
+When Meera deposited fifteen thousand rupees,
+
+104
+00:04:04,721 --> 00:04:06,481
+the bank was the receiver.
+
+105
+00:04:06,561 --> 00:04:07,761
+Debit Bank.
+
+106
+00:04:08,041 --> 00:04:10,081
+Exactly what we found with the SMS.
+
+107
+00:04:10,835 --> 00:04:12,595
+Second trap: capital.
+
+108
+00:04:13,075 --> 00:04:16,115
+It's Meera's money, so is it Real?
+
+109
+00:04:16,275 --> 00:04:16,835
+No.
+
+110
+00:04:17,075 --> 00:04:19,795
+Capital is Meera's own account, and Meera
+
+111
+00:04:19,955 --> 00:04:20,835
+is a person.
+
+112
+00:04:21,075 --> 00:04:22,995
+On day one, she was the giver.
+
+113
+00:04:23,235 --> 00:04:25,395
+Credit Capital, fifty thousand.
+
+114
+00:04:26,659 --> 00:04:28,699
+So here's your translation card.
+
+115
+00:04:28,979 --> 00:04:30,899
+Real means assets.
+
+116
+00:04:31,139 --> 00:04:34,419
+Personal means people: anyone who owes us,
+
+117
+00:04:34,539 --> 00:04:37,459
+anyone we owe, the bank, the owner's capital
+
+118
+00:04:37,539 --> 00:04:38,499
+and drawings.
+
+119
+00:04:39,239 --> 00:04:42,199
+And advances: a customer the stall owes
+
+120
+00:04:42,399 --> 00:04:44,199
+something to counts as Personal too.
+
+121
+00:04:44,759 --> 00:04:48,039
+Nominal means incomes and expenses: everything
+
+122
+00:04:48,119 --> 00:04:49,959
+that ends up in the Profit and Loss.
+
+123
+00:04:51,212 --> 00:04:52,212
+Let's practise.
+
+124
+00:04:52,412 --> 00:04:53,852
+Khata goes first.
+
+125
+00:04:53,932 --> 00:04:56,652
+Ravi Mama lends thirty thousand rupees.
+
+126
+00:04:57,219 --> 00:04:58,099
+Cash comes in.
+
+127
+00:04:58,339 --> 00:05:01,939
+Real, so debit Cash, thirty thousand.
+
+128
+00:05:02,519 --> 00:05:03,999
+Ravi Mama is the giver.
+
+129
+00:05:04,199 --> 00:05:07,799
+Personal, so credit his loan, thirty thousand.
+
+130
+00:05:07,879 --> 00:05:08,719
+And the scale?
+
+131
+00:05:08,919 --> 00:05:10,839
+An asset up, a liability up.
+
+132
+00:05:11,239 --> 00:05:11,959
+Match.
+
+133
+00:05:12,730 --> 00:05:13,530
+Meera's turn.
+
+134
+00:05:14,010 --> 00:05:15,930
+Rent, five thousand rupees.
+
+135
+00:05:16,330 --> 00:05:17,610
+Rent is an expense.
+
+136
+00:05:18,010 --> 00:05:20,090
+Nominal, so debit Rent.
+
+137
+00:05:20,490 --> 00:05:21,370
+Now the other line.
+
+138
+00:05:21,770 --> 00:05:23,050
+Cash leaves the galla.
+
+139
+00:05:23,530 --> 00:05:24,370
+Which family?
+
+140
+00:05:24,570 --> 00:05:25,450
+Which rule?
+
+141
+00:05:27,799 --> 00:05:29,479
+Real, and it goes out.
+
+142
+00:05:29,959 --> 00:05:32,119
+Credit Cash, five thousand.
+
+143
+00:05:32,963 --> 00:05:34,243
+Now, just you.
+
+144
+00:05:34,483 --> 00:05:35,723
+April twenty-fifth.
+
+145
+00:05:35,923 --> 00:05:38,163
+Infotech pays its four thousand rupee bill
+
+146
+00:05:38,243 --> 00:05:39,443
+by UPI.
+
+147
+00:05:39,523 --> 00:05:42,083
+Debit Bank, credit Infotech, that part you
+
+148
+00:05:42,163 --> 00:05:42,643
+know.
+
+149
+00:05:42,723 --> 00:05:44,243
+Now tag both lines.
+
+150
+00:05:47,394 --> 00:05:48,834
+The bank receives the money.
+
+151
+00:05:49,314 --> 00:05:52,634
+Personal, the receiver, so debit Bank.
+
+152
+00:05:52,834 --> 00:05:54,274
+Infotech gives it.
+
+153
+00:05:54,514 --> 00:05:57,514
+Personal, the giver, so credit Infotech.
+
+154
+00:05:57,714 --> 00:05:58,674
+Both Personal!
+
+155
+00:05:59,674 --> 00:06:02,554
+And the scale agrees: one asset grows, one
+
+156
+00:06:02,634 --> 00:06:03,434
+shrinks.
+
+157
+00:06:03,474 --> 00:06:04,874
+A swap on the left.
+
+158
+00:06:06,143 --> 00:06:06,543
+So.
+
+159
+00:06:06,623 --> 00:06:10,743
+Three families: Personal, Real, Nominal.
+
+160
+00:06:11,023 --> 00:06:13,583
+Three rules, and each one is the scale in
+
+161
+00:06:13,663 --> 00:06:14,543
+other words.
+
+162
+00:06:14,623 --> 00:06:17,023
+Two dialects, the same entries.
+
+163
+00:06:18,244 --> 00:06:18,844
+Your turn.
+
+164
+00:06:19,044 --> 00:06:20,084
+Three quick ones.
+
+165
+00:06:20,324 --> 00:06:20,804
+One.
+
+166
+00:06:21,044 --> 00:06:23,244
+The four thousand rupee catering advance.
+
+167
+00:06:23,444 --> 00:06:25,844
+Which golden rule goes on each line?
+
+168
+00:06:26,164 --> 00:06:26,644
+Two.
+
+169
+00:06:26,884 --> 00:06:29,284
+Is the bank Real, or Personal?
+
+170
+00:06:29,604 --> 00:06:30,124
+Three.
+
+171
+00:06:30,404 --> 00:06:32,484
+Which family does rent belong to?
+
+172
+00:06:32,724 --> 00:06:34,404
+Answers next lesson.
+
+173
+00:06:35,864 --> 00:06:37,898
+And now, Checkpoint three.
+
+174
+00:06:38,138 --> 00:06:40,538
+Here are six of Aman's transactions.
+
+175
+00:06:40,618 --> 00:06:43,258
+For each one, write the debit, the credit,
+
+176
+00:06:43,378 --> 00:06:45,818
+and the golden rule behind each line.
+
+177
+00:06:45,938 --> 00:06:47,738
+Pause the video, and try them now.
+
+178
+00:06:50,779 --> 00:06:51,179
+Ready?
+
+179
+00:06:51,659 --> 00:06:54,859
+The bank loan: debit Cash, Real, it comes
+
+180
+00:06:54,939 --> 00:06:55,499
+in.
+
+181
+00:06:55,699 --> 00:06:58,459
+Credit Bank loan, Personal, the giver.
+
+182
+00:06:58,539 --> 00:07:02,099
+The cart and fryer: debit Cart, credit Cash.
+
+183
+00:07:02,299 --> 00:07:03,979
+Real in, Real out.
+
+184
+00:07:04,219 --> 00:07:07,499
+Cash sales: debit Cash, credit Sales, a
+
+185
+00:07:07,579 --> 00:07:08,619
+Nominal income.
+
+186
+00:07:09,169 --> 00:07:12,849
+Rent: debit Stall rent, a Nominal expense.
+
+187
+00:07:13,049 --> 00:07:14,209
+Credit Cash.
+
+188
+00:07:14,449 --> 00:07:17,809
+The school canteen: debit the canteen, Personal,
+
+189
+00:07:17,849 --> 00:07:18,649
+the receiver.
+
+190
+00:07:18,849 --> 00:07:20,089
+Credit Sales.
+
+191
+00:07:20,289 --> 00:07:22,809
+And the birthday advance: debit Cash.
+
+192
+00:07:22,929 --> 00:07:25,649
+Credit Advance from customer, Personal,
+
+193
+00:07:25,689 --> 00:07:26,129
+the giver.
+
+194
+00:07:26,609 --> 00:07:27,969
+How many did you get?
+
+195
+00:07:29,464 --> 00:07:30,424
+Next time.
+
+196
+00:07:30,664 --> 00:07:31,944
+April thirtieth.
+
+197
+00:07:32,024 --> 00:07:34,344
+Five things happen before lunch, and Meera
+
+198
+00:07:34,424 --> 00:07:36,744
+grabs a tissue to write them all down.

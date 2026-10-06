@@ -415,11 +415,15 @@ def run_mix(T, sfx, music):
     chains.append(f"{''.join(vo_labels)}amix=inputs={n(vo_labels)}:normalize=0,highpass=f=80,apad=whole_dur={total:.3f},asplit=2[vo][vokey]")
     # optional dramatic hush (music.json "hush"): dip the music bed at a VO word (1 s of near-silence)
     hush = ""
-    h = _music_cfg().get("hush")
-    if h:
-        t_hush = resolve_at({"seg": h["seg"], "word": h["word"], "nth": h.get("nth", 1), "offset": h.get("offset", 0.0)}, T)
-        a, b = t_hush - 0.1, t_hush + 1.6   # 0.3 s ramp down, 0.4 s ramp back (no clicks)
-        hush = f",volume='1-0.85*clip((t-{a:.2f})/0.3,0,1)*clip(({b:.2f}-t)/0.4,0,1)':eval=frame"
+    hs = _music_cfg().get("hush")
+    if hs:
+        # L03: "hush" may be a list; each has optional "dur" (length of the dip, default 1.6 s) and "depth" (default .85)
+        terms = []
+        for h in ([hs] if isinstance(hs, dict) else hs):
+            t_hush = resolve_at({"seg": h["seg"], "word": h["word"], "nth": h.get("nth", 1), "offset": h.get("offset", 0.0)}, T)
+            a, b = t_hush - 0.1, t_hush + h.get("dur", 1.6)   # 0.3 s ramp down, 0.4 s ramp back (no clicks)
+            terms.append(f"(1-{h.get('depth', 0.85)}*clip((t-{a:.2f})/0.3,0,1)*clip(({b:.2f}-t)/0.4,0,1))")
+        hush = ",volume='" + "*".join(terms) + "':eval=frame"
     chains.append(f"{''.join(mus_labels)}amix=inputs={n(mus_labels)}:normalize=0{hush},apad=whole_dur={total:.3f}[mus]")
     chains.append("[mus][vokey]sidechaincompress=threshold=0.04:ratio=8:attack=20:release=300[musd]")
     chains.append(f"{''.join(fx_labels)}amix=inputs={n(fx_labels)}:normalize=0,volume=1.0,apad=whole_dur={total:.3f}[fx]")
