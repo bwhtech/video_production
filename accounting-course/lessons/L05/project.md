@@ -65,3 +65,4 @@ touched at any other time (no idle flutter). Profit max 25,000, Cash max 60,000 
 - Two small word-order inversions kept (s11 "गोपाल को / पैसे चुकाना", "UPI payment के बाद") — cues are <0.5 s apart.
 - No label swaps needed: on-screen text is numerals, ₹ and English accounting terms; series name already swaps (`SERIES_NAME()` → "Hisaab Kitaab"). The end-card "Up next · Lesson 6 · Debit & Credit Are Just Left & Right" stays English.
 - Build: `python3 build.py --lang=hi` → `lessons/L05-hi/` (453.65 s = 7:33.6, +11.6 % vs EN 6:47.9), `validate_cuts` 20/20 in silence, `npm run check` 0 errors; snapshots `L05-hi/snapshots/hi1/`.
+- Render: `renders/` of `L05-hi` is a symlink to `/Volumes/Extreme SSD/accounting-course-renders/L05-hi` (internal disk too full for 3-worker disk capture). `--workers 6` under the render lock, ~12 min. `renders/L05-final.hi.mp4` (453.67 s, both streams start_time 0, patched friction-SFX ducking mix), `renders/L05-review-720p.hi.mp4`.
