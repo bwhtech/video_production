@@ -1,0 +1,22 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s05a", "word": "@tab", "offset": -0.6}, "vol": 0.35},
+ {"sfx": "tick_tock", "at": {"seg": "s05a", "word": "@which", "offset": 0.56}, "vol": 0.5, "dur": 2.0},
+ {"sfx": "ding_yes", "at": {"seg": "s05b", "word": "@sales", "offset": 0.12}, "vol": 0.5},
+ {"sfx": "paper_slide", "at": {"seg": "s05b", "word": "@sales", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "glass_clink", "at": {"seg": "s05b", "word": "@drunk", "offset": -0.1}, "vol": 0.4, "dur": 1.2},
+ {"sfx": "pop", "at": {"seg": "s05b", "word": "@earned", "offset": -0.05}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s05b", "word": "@infotech", "offset": 0.2}, "vol": 0.5},
+ {"sfx": "paper_slide", "at": {"seg": "s05b", "word": "@infotech", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s05b", "word": "@receivable", "offset": -0.05}, "vol": 0.4},
+ {"sfx": "paper_whoosh", "at": {"seg": "s05c", "word": "@so", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "scale_settle", "at": {"seg": "s05c", "word": "@so", "offset": 1.0}, "vol": 0.45},
+ {"sfx": "ka_ching", "at": {"seg": "s05c", "word": "@jumps", "offset": 0.0}, "vol": 0.4},
+ {"sfx": "needle_tick", "at": {"seg": "s05c", "word": "@jumps", "offset": 0.83}, "vol": 0.5},
+ {"sfx": "swoosh_transition", "at": {"seg": "s05d", "edge": "start", "offset": -0.5}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s05d", "word": "@revenue", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s05d", "word": "@earned", "offset": 0.3}, "vol": 0.25},
+ {"sfx": "glass_clink", "at": {"seg": "s05d", "word": "@drunk", "offset": -0.3}, "vol": 0.3, "dur": 1.0},
+ {"sfx": "paper_slide", "at": {"seg": "s05d", "word": "@expenses", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s05d", "word": "@incurred", "offset": 0.1}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s05d", "word": "@accrual", "offset": -0.05}, "vol": 0.45}
+]

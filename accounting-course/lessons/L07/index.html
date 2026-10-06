@@ -14,7 +14,22 @@
     <script src="assets/kit/devices.js"></script>
     <script src="assets/timeline.js"></script>
     <script src="assets/scenes/_shared.js"></script>
-
+    <script src="assets/scenes/_l7.js"></script>
+    <script src="assets/scenes/s01.js"></script>
+    <script src="assets/scenes/s01t.js"></script>
+    <script src="assets/scenes/s02.js"></script>
+    <script src="assets/scenes/s03.js"></script>
+    <script src="assets/scenes/s04.js"></script>
+    <script src="assets/scenes/s05.js"></script>
+    <script src="assets/scenes/s06.js"></script>
+    <script src="assets/scenes/s07.js"></script>
+    <script src="assets/scenes/s08.js"></script>
+    <script src="assets/scenes/s09.js"></script>
+    <script src="assets/scenes/s10.js"></script>
+    <script src="assets/scenes/s11.js"></script>
+    <script src="assets/scenes/s12.js"></script>
+    <script src="assets/scenes/s13.js"></script>
+    <script src="assets/scenes/s14.js"></script>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body { width: 1920px; height: 1080px; overflow: hidden; background: #b7895a; }
@@ -107,25 +122,233 @@
       <audio id="vo-s12b-0" class="clip" data-start="410.779" data-duration="17.789" data-media-start="0.0" data-track-index="10" src="assets/vo/s12b.mp3"></audio>
       <audio id="vo-s12c-0" class="clip" data-start="429.169" data-duration="18.756" data-media-start="0.0" data-track-index="10" src="assets/vo/s12c.mp3"></audio>
       <audio id="vo-s13-0" class="clip" data-start="449.224" data-duration="7.471" data-media-start="0.0" data-track-index="10" src="assets/vo/s13.mp3"></audio>
-      <audio id="fx-000" class="clip" data-start="27.036" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-001" class="clip" data-start="31.636" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-002" class="clip" data-start="79.897" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-003" class="clip" data-start="94.006" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-004" class="clip" data-start="126.988" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-005" class="clip" data-start="175.577" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-006" class="clip" data-start="226.09" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-007" class="clip" data-start="265.809" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-008" class="clip" data-start="290.362" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-009" class="clip" data-start="365.293" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-010" class="clip" data-start="377.234" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-011" class="clip" data-start="394.808" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-012" class="clip" data-start="448.374" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="fx-013" class="clip" data-start="457.346" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
-      <audio id="mu-0-27" class="clip" data-start="27.486" data-duration="5.042" data-track-index="12" data-volume="0.55" src="assets/music/intro_sting.mp3"></audio>
-      <audio id="mu-1-32" class="clip" data-start="32.186" data-duration="200.02" data-track-index="12" data-volume="0.16" src="assets/music/main.mp3"></audio>
-      <audio id="mu-1-232" class="clip" data-start="232.206" data-duration="200.02" data-track-index="12" data-volume="0.16" src="assets/music/main.mp3"></audio>
-      <audio id="mu-1-432" class="clip" data-start="432.225" data-duration="25.471" data-track-index="12" data-volume="0.16" src="assets/music/main.mp3"></audio>
-      <audio id="mu-2-457" class="clip" data-start="457.396" data-duration="12.3" data-track-index="12" data-volume="0.45" src="assets/music/outro.mp3"></audio>
+      <audio id="fx-000" class="clip" data-start="7.62" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-001" class="clip" data-start="8.82" data-duration="0.627" data-track-index="11" data-volume="0.42" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-002" class="clip" data-start="9.78" data-duration="0.627" data-track-index="11" data-volume="0.44" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-003" class="clip" data-start="11.06" data-duration="0.627" data-track-index="11" data-volume="0.46" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-004" class="clip" data-start="12.3" data-duration="0.627" data-track-index="11" data-volume="0.48" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-005" class="clip" data-start="13.7" data-duration="0.627" data-track-index="11" data-volume="0.5" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-006" class="clip" data-start="20.793" data-duration="0.627" data-track-index="11" data-volume="0.5" src="assets/sfx/boing_hop.mp3"></audio>
+      <audio id="fx-007" class="clip" data-start="24.073" data-duration="0.522" data-track-index="11" data-volume="0.45" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-008" class="clip" data-start="26.286" data-duration="1.045" data-track-index="11" data-volume="0.45" src="assets/sfx/swoosh_transition.mp3"></audio>
+      <audio id="fx-009" class="clip" data-start="27.806" data-duration="0.836" data-track-index="11" data-volume="0.7" src="assets/sfx/book_thump.mp3"></audio>
+      <audio id="fx-010" class="clip" data-start="27.966" data-duration="0.522" data-track-index="11" data-volume="0.45" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-011" class="clip" data-start="28.216" data-duration="0.522" data-track-index="11" data-volume="0.5" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-012" class="clip" data-start="28.486" data-duration="1.045" data-track-index="11" data-volume="0.45" src="assets/sfx/sparkle.mp3"></audio>
+      <audio id="fx-013" class="clip" data-start="30.286" data-duration="0.914" data-track-index="11" data-volume="0.7" src="assets/sfx/cover_swing.mp3"></audio>
+      <audio id="fx-014" class="clip" data-start="34.816" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-015" class="clip" data-start="37.926" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-016" class="clip" data-start="38.406" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-017" class="clip" data-start="38.966" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-018" class="clip" data-start="43.17" data-duration="1.0" data-track-index="11" data-volume="0.3" src="assets/sfx/tick_tock.mp3"></audio>
+      <audio id="fx-019" class="clip" data-start="44.72" data-duration="0.836" data-track-index="11" data-volume="0.55" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-020" class="clip" data-start="49.84" data-duration="0.836" data-track-index="11" data-volume="0.55" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-021" class="clip" data-start="53.778" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-022" class="clip" data-start="61.36" data-duration="1.045" data-track-index="11" data-volume="0.3" src="assets/sfx/swoosh_transition.mp3"></audio>
+      <audio id="fx-023" class="clip" data-start="63.24" data-duration="0.836" data-track-index="11" data-volume="0.55" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-024" class="clip" data-start="65.661" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-025" class="clip" data-start="69.681" data-duration="1.045" data-track-index="11" data-volume="0.18" src="assets/sfx/phone_buzz.mp3"></audio>
+      <audio id="fx-026" class="clip" data-start="74.197" data-duration="1.045" data-track-index="11" data-volume="0.45" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-027" class="clip" data-start="74.197" data-duration="0.836" data-track-index="11" data-volume="0.5" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-028" class="clip" data-start="80.947" data-duration="1.045" data-track-index="11" data-volume="0.35" src="assets/sfx/tabla_dha.mp3"></audio>
+      <audio id="fx-029" class="clip" data-start="86.427" data-duration="0.522" data-track-index="11" data-volume="0.4" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-030" class="clip" data-start="86.477" data-duration="0.836" data-track-index="11" data-volume="0.5" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-031" class="clip" data-start="87.907" data-duration="0.522" data-track-index="11" data-volume="0.4" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-032" class="clip" data-start="87.957" data-duration="0.836" data-track-index="11" data-volume="0.5" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-033" class="clip" data-start="89.707" data-duration="0.522" data-track-index="11" data-volume="0.4" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-034" class="clip" data-start="92.747" data-duration="1.045" data-track-index="11" data-volume="0.3" src="assets/sfx/sparkle.mp3"></audio>
+      <audio id="fx-035" class="clip" data-start="93.456" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/twine_tug.mp3"></audio>
+      <audio id="fx-036" class="clip" data-start="102.806" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-037" class="clip" data-start="103.766" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-038" class="clip" data-start="104.806" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-039" class="clip" data-start="108.086" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-040" class="clip" data-start="108.726" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-041" class="clip" data-start="109.446" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-042" class="clip" data-start="113.606" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-043" class="clip" data-start="114.486" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-044" class="clip" data-start="115.206" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-045" class="clip" data-start="105.306" data-duration="0.627" data-track-index="11" data-volume="0.3" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-046" class="clip" data-start="109.946" data-duration="0.627" data-track-index="11" data-volume="0.3" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-047" class="clip" data-start="115.706" data-duration="0.627" data-track-index="11" data-volume="0.3" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-048" class="clip" data-start="118.261" data-duration="1.6" data-track-index="11" data-volume="0.3" src="assets/sfx/tick_tock.mp3"></audio>
+      <audio id="fx-049" class="clip" data-start="120.311" data-duration="1.045" data-track-index="11" data-volume="0.45" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-050" class="clip" data-start="123.179" data-duration="1.6" data-track-index="11" data-volume="0.3" src="assets/sfx/tick_tock.mp3"></audio>
+      <audio id="fx-051" class="clip" data-start="125.179" data-duration="1.045" data-track-index="11" data-volume="0.45" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-052" class="clip" data-start="129.678" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-053" class="clip" data-start="131.188" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-054" class="clip" data-start="132.708" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-055" class="clip" data-start="139.578" data-duration="1.228" data-track-index="11" data-volume="0.3" src="assets/sfx/scale_creak.mp3"></audio>
+      <audio id="fx-056" class="clip" data-start="141.458" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-057" class="clip" data-start="142.258" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/scale_settle.mp3"></audio>
+      <audio id="fx-058" class="clip" data-start="142.358" data-duration="1.045" data-track-index="11" data-volume="0.3" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-059" class="clip" data-start="143.519" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-060" class="clip" data-start="145.259" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-061" class="clip" data-start="146.379" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-062" class="clip" data-start="150.859" data-duration="1.228" data-track-index="11" data-volume="0.3" src="assets/sfx/scale_creak.mp3"></audio>
+      <audio id="fx-063" class="clip" data-start="155.569" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-064" class="clip" data-start="157.939" data-duration="0.731" data-track-index="11" data-volume="0.3" src="assets/sfx/coin_clink.mp3"></audio>
+      <audio id="fx-065" class="clip" data-start="162.439" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-066" class="clip" data-start="164.331" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-067" class="clip" data-start="166.191" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-068" class="clip" data-start="167.951" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-069" class="clip" data-start="170.311" data-duration="1.228" data-track-index="11" data-volume="0.3" src="assets/sfx/scale_creak.mp3"></audio>
+      <audio id="fx-070" class="clip" data-start="171.851" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-071" class="clip" data-start="174.451" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-072" class="clip" data-start="175.151" data-duration="1.045" data-track-index="11" data-volume="0.3" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-073" class="clip" data-start="178.907" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-074" class="clip" data-start="180.587" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-075" class="clip" data-start="182.731" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-076" class="clip" data-start="186.191" data-duration="2.0" data-track-index="11" data-volume="0.35" src="assets/sfx/tick_tock.mp3"></audio>
+      <audio id="fx-077" class="clip" data-start="188.251" data-duration="1.045" data-track-index="11" data-volume="0.45" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-078" class="clip" data-start="191.116" data-duration="0.836" data-track-index="11" data-volume="0.5" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-079" class="clip" data-start="193.596" data-duration="0.836" data-track-index="11" data-volume="0.5" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-080" class="clip" data-start="198.146" data-duration="0.836" data-track-index="11" data-volume="0.45" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-081" class="clip" data-start="199.136" data-duration="0.836" data-track-index="11" data-volume="0.45" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-082" class="clip" data-start="197.546" data-duration="0.836" data-track-index="11" data-volume="0.3" src="assets/sfx/scale_settle.mp3"></audio>
+      <audio id="fx-083" class="clip" data-start="200.473" data-duration="0.627" data-track-index="11" data-volume="0.6" src="assets/sfx/click_lock.mp3"></audio>
+      <audio id="fx-084" class="clip" data-start="200.533" data-duration="1.045" data-track-index="11" data-volume="0.3" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-085" class="clip" data-start="200.783" data-duration="0.836" data-track-index="11" data-volume="0.25" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-086" class="clip" data-start="201.163" data-duration="0.836" data-track-index="11" data-volume="0.25" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-087" class="clip" data-start="200.733" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-088" class="clip" data-start="204.093" data-duration="0.836" data-track-index="11" data-volume="0.5" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-089" class="clip" data-start="206.013" data-duration="0.836" data-track-index="11" data-volume="0.5" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-090" class="clip" data-start="209.183" data-duration="0.836" data-track-index="11" data-volume="0.45" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-091" class="clip" data-start="210.223" data-duration="0.836" data-track-index="11" data-volume="0.45" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-092" class="clip" data-start="211.801" data-duration="0.627" data-track-index="11" data-volume="0.6" src="assets/sfx/click_lock.mp3"></audio>
+      <audio id="fx-093" class="clip" data-start="211.861" data-duration="1.045" data-track-index="11" data-volume="0.3" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-094" class="clip" data-start="212.111" data-duration="0.836" data-track-index="11" data-volume="0.25" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-095" class="clip" data-start="212.491" data-duration="0.836" data-track-index="11" data-volume="0.25" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-096" class="clip" data-start="212.061" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-097" class="clip" data-start="214.681" data-duration="0.836" data-track-index="11" data-volume="0.5" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-098" class="clip" data-start="216.701" data-duration="0.836" data-track-index="11" data-volume="0.5" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-099" class="clip" data-start="219.791" data-duration="0.836" data-track-index="11" data-volume="0.45" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-100" class="clip" data-start="220.871" data-duration="0.836" data-track-index="11" data-volume="0.45" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-101" class="clip" data-start="222.441" data-duration="0.627" data-track-index="11" data-volume="0.6" src="assets/sfx/click_lock.mp3"></audio>
+      <audio id="fx-102" class="clip" data-start="222.501" data-duration="1.045" data-track-index="11" data-volume="0.3" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-103" class="clip" data-start="222.751" data-duration="0.836" data-track-index="11" data-volume="0.25" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-104" class="clip" data-start="223.131" data-duration="0.836" data-track-index="11" data-volume="0.25" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-105" class="clip" data-start="225.94" data-duration="1.515" data-track-index="11" data-volume="0.3" src="assets/sfx/rise_three.mp3"></audio>
+      <audio id="fx-106" class="clip" data-start="227.26" data-duration="0.836" data-track-index="11" data-volume="0.15" src="assets/sfx/tray_clatter.mp3"></audio>
+      <audio id="fx-107" class="clip" data-start="227.4" data-duration="0.836" data-track-index="11" data-volume="0.15" src="assets/sfx/tray_clatter.mp3"></audio>
+      <audio id="fx-108" class="clip" data-start="227.54" data-duration="0.836" data-track-index="11" data-volume="0.15" src="assets/sfx/tray_clatter.mp3"></audio>
+      <audio id="fx-109" class="clip" data-start="230.36" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-110" class="clip" data-start="237.261" data-duration="0.627" data-track-index="11" data-volume="0.6" src="assets/sfx/stamp_thunk.mp3"></audio>
+      <audio id="fx-111" class="clip" data-start="240.561" data-duration="0.627" data-track-index="11" data-volume="0.5" src="assets/sfx/boing_hop.mp3"></audio>
+      <audio id="fx-112" class="clip" data-start="241.261" data-duration="1.045" data-track-index="11" data-volume="0.4" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-113" class="clip" data-start="245.501" data-duration="0.836" data-track-index="11" data-volume="0.45" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-114" class="clip" data-start="247.241" data-duration="0.836" data-track-index="11" data-volume="0.45" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-115" class="clip" data-start="248.781" data-duration="1.045" data-track-index="11" data-volume="0.18" src="assets/sfx/phone_buzz.mp3"></audio>
+      <audio id="fx-116" class="clip" data-start="248.291" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-117" class="clip" data-start="248.741" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-118" class="clip" data-start="250.475" data-duration="0.627" data-track-index="11" data-volume="0.6" src="assets/sfx/click_lock.mp3"></audio>
+      <audio id="fx-119" class="clip" data-start="250.535" data-duration="1.045" data-track-index="11" data-volume="0.3" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-120" class="clip" data-start="250.785" data-duration="0.836" data-track-index="11" data-volume="0.25" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-121" class="clip" data-start="251.165" data-duration="0.836" data-track-index="11" data-volume="0.25" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-122" class="clip" data-start="253.695" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-123" class="clip" data-start="257.175" data-duration="1.045" data-track-index="11" data-volume="0.45" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-124" class="clip" data-start="262.035" data-duration="0.836" data-track-index="11" data-volume="0.45" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-125" class="clip" data-start="262.985" data-duration="0.836" data-track-index="11" data-volume="0.45" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-126" class="clip" data-start="264.395" data-duration="0.627" data-track-index="11" data-volume="0.6" src="assets/sfx/click_lock.mp3"></audio>
+      <audio id="fx-127" class="clip" data-start="264.455" data-duration="1.045" data-track-index="11" data-volume="0.3" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-128" class="clip" data-start="264.705" data-duration="0.836" data-track-index="11" data-volume="0.25" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-129" class="clip" data-start="265.085" data-duration="0.836" data-track-index="11" data-volume="0.25" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-130" class="clip" data-start="267.339" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-131" class="clip" data-start="268.979" data-duration="0.522" data-track-index="11" data-volume="0.4" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-132" class="clip" data-start="271.139" data-duration="0.522" data-track-index="11" data-volume="0.4" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-133" class="clip" data-start="284.759" data-duration="0.522" data-track-index="11" data-volume="0.4" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-134" class="clip" data-start="273.649" data-duration="0.522" data-track-index="11" data-volume="0.25" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-135" class="clip" data-start="275.089" data-duration="0.522" data-track-index="11" data-volume="0.25" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-136" class="clip" data-start="275.809" data-duration="0.522" data-track-index="11" data-volume="0.25" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-137" class="clip" data-start="276.929" data-duration="0.522" data-track-index="11" data-volume="0.25" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-138" class="clip" data-start="277.729" data-duration="0.522" data-track-index="11" data-volume="0.25" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-139" class="clip" data-start="279.859" data-duration="0.522" data-track-index="11" data-volume="0.4" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-140" class="clip" data-start="279.909" data-duration="0.836" data-track-index="11" data-volume="0.25" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-141" class="clip" data-start="288.539" data-duration="4.049" data-track-index="11" data-volume="0.2" src="assets/sfx/projector.mp3"></audio>
+      <audio id="fx-142" class="clip" data-start="289.619" data-duration="1.045" data-track-index="11" data-volume="0.4" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-143" class="clip" data-start="368.583" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-144" class="clip" data-start="369.263" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-145" class="clip" data-start="369.983" data-duration="0.522" data-track-index="11" data-volume="0.35" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-146" class="clip" data-start="370.963" data-duration="0.522" data-track-index="11" data-volume="0.4" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-147" class="clip" data-start="374.483" data-duration="0.522" data-track-index="11" data-volume="0.4" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-148" class="clip" data-start="376.143" data-duration="1.045" data-track-index="11" data-volume="0.35" src="assets/sfx/ding_yes.mp3"></audio>
+      <audio id="fx-149" class="clip" data-start="380.224" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-150" class="clip" data-start="381.004" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-151" class="clip" data-start="382.664" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-152" class="clip" data-start="386.064" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-153" class="clip" data-start="387.504" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-154" class="clip" data-start="388.384" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-155" class="clip" data-start="389.504" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-156" class="clip" data-start="391.264" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-157" class="clip" data-start="392.624" data-duration="0.522" data-track-index="11" data-volume="0.4" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-158" class="clip" data-start="396.518" data-duration="1.802" data-track-index="11" data-volume="0.5" src="assets/sfx/checkpoint_sting.mp3"></audio>
+      <audio id="fx-159" class="clip" data-start="399.698" data-duration="1.515" data-track-index="11" data-volume="0.35" src="assets/sfx/fryer_sizzle.mp3"></audio>
+      <audio id="fx-160" class="clip" data-start="399.898" data-duration="0.836" data-track-index="11" data-volume="0.2" src="assets/sfx/bell_ring.mp3"></audio>
+      <audio id="fx-161" class="clip" data-start="399.558" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-162" class="clip" data-start="399.678" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-163" class="clip" data-start="399.798" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-164" class="clip" data-start="399.918" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-165" class="clip" data-start="400.038" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-166" class="clip" data-start="400.158" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-167" class="clip" data-start="407.779" data-duration="3.0" data-track-index="11" data-volume="0.3" src="assets/sfx/tick_tock.mp3"></audio>
+      <audio id="fx-168" class="clip" data-start="411.749" data-duration="0.627" data-track-index="11" data-volume="0.35" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-169" class="clip" data-start="418.549" data-duration="0.627" data-track-index="11" data-volume="0.35" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-170" class="clip" data-start="424.069" data-duration="0.627" data-track-index="11" data-volume="0.35" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-171" class="clip" data-start="429.019" data-duration="0.627" data-track-index="11" data-volume="0.35" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-172" class="clip" data-start="434.379" data-duration="0.627" data-track-index="11" data-volume="0.35" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-173" class="clip" data-start="440.379" data-duration="0.627" data-track-index="11" data-volume="0.35" src="assets/sfx/paper_slide.mp3"></audio>
+      <audio id="fx-174" class="clip" data-start="413.899" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-175" class="clip" data-start="416.859" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-176" class="clip" data-start="422.299" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-177" class="clip" data-start="423.179" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-178" class="clip" data-start="426.039" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-179" class="clip" data-start="427.579" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-180" class="clip" data-start="431.569" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-181" class="clip" data-start="433.349" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-182" class="clip" data-start="437.289" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-183" class="clip" data-start="439.149" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-184" class="clip" data-start="442.509" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_low.mp3"></audio>
+      <audio id="fx-185" class="clip" data-start="445.809" data-duration="0.836" data-track-index="11" data-volume="0.4" src="assets/sfx/tink_high.mp3"></audio>
+      <audio id="fx-186" class="clip" data-start="446.769" data-duration="1.515" data-track-index="11" data-volume="0.4" src="assets/sfx/rise_three.mp3"></audio>
+      <audio id="fx-187" class="clip" data-start="410.779" data-duration="0.627" data-track-index="11" data-volume="0.3" src="assets/sfx/boing_hop.mp3"></audio>
+      <audio id="fx-188" class="clip" data-start="449.964" data-duration="0.731" data-track-index="11" data-volume="0.25" src="assets/sfx/coin_clink.mp3"></audio>
+      <audio id="fx-189" class="clip" data-start="451.924" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-190" class="clip" data-start="452.044" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-191" class="clip" data-start="452.164" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-192" class="clip" data-start="452.284" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-193" class="clip" data-start="452.404" data-duration="0.522" data-track-index="11" data-volume="0.3" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-194" class="clip" data-start="455.504" data-duration="1.0" data-track-index="11" data-volume="0.4" src="assets/sfx/quill_scratch.mp3"></audio>
+      <audio id="fx-195" class="clip" data-start="456.596" data-duration="0.836" data-track-index="11" data-volume="0.7" src="assets/sfx/book_thump.mp3"></audio>
+      <audio id="fx-196" class="clip" data-start="457.996" data-duration="0.914" data-track-index="11" data-volume="0.6" src="assets/sfx/cover_swing.mp3"></audio>
+      <audio id="fx-197" class="clip" data-start="458.296" data-duration="0.522" data-track-index="11" data-volume="0.4" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-198" class="clip" data-start="458.396" data-duration="0.522" data-track-index="11" data-volume="0.4" src="assets/sfx/pop.mp3"></audio>
+      <audio id="fx-199" class="clip" data-start="458.696" data-duration="0.627" data-track-index="11" data-volume="0.4" src="assets/sfx/boing_hop.mp3"></audio>
+      <audio id="fx-200" class="clip" data-start="27.036" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-201" class="clip" data-start="31.636" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-202" class="clip" data-start="79.897" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-203" class="clip" data-start="94.006" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-204" class="clip" data-start="126.988" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-205" class="clip" data-start="175.577" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-206" class="clip" data-start="226.09" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-207" class="clip" data-start="265.809" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-208" class="clip" data-start="290.362" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-209" class="clip" data-start="365.293" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-210" class="clip" data-start="377.234" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-211" class="clip" data-start="394.808" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-212" class="clip" data-start="448.374" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="fx-213" class="clip" data-start="457.346" data-duration="0.627" data-track-index="11" data-volume="0.32" src="assets/sfx/paper_whoosh.mp3"></audio>
+      <audio id="mu-0-0" class="clip" data-start="0.0" data-duration="10.031" data-track-index="12" data-volume="0.14" src="assets/sfx/day_street.mp3"></audio>
+      <audio id="mu-0-10" class="clip" data-start="10.031" data-duration="10.031" data-track-index="12" data-volume="0.14" src="assets/sfx/day_street.mp3"></audio>
+      <audio id="mu-0-20" class="clip" data-start="20.062" data-duration="7.624" data-track-index="12" data-volume="0.14" src="assets/sfx/day_street.mp3"></audio>
+      <audio id="mu-1-27" class="clip" data-start="27.486" data-duration="5.042" data-track-index="12" data-volume="0.55" src="assets/music/intro_sting.mp3"></audio>
+      <audio id="mu-2-32" class="clip" data-start="32.186" data-duration="60.082" data-track-index="12" data-volume="0.16" src="assets/music/m3_main.mp3"></audio>
+      <audio id="mu-2-92" class="clip" data-start="92.268" data-duration="60.082" data-track-index="12" data-volume="0.16" src="assets/music/m3_main.mp3"></audio>
+      <audio id="mu-2-152" class="clip" data-start="152.349" data-duration="60.082" data-track-index="12" data-volume="0.16" src="assets/music/m3_main.mp3"></audio>
+      <audio id="mu-2-212" class="clip" data-start="212.431" data-duration="60.082" data-track-index="12" data-volume="0.16" src="assets/music/m3_main.mp3"></audio>
+      <audio id="mu-2-272" class="clip" data-start="272.513" data-duration="60.082" data-track-index="12" data-volume="0.16" src="assets/music/m3_main.mp3"></audio>
+      <audio id="mu-2-332" class="clip" data-start="332.594" data-duration="60.082" data-track-index="12" data-volume="0.16" src="assets/music/m3_main.mp3"></audio>
+      <audio id="mu-2-392" class="clip" data-start="392.676" data-duration="60.082" data-track-index="12" data-volume="0.16" src="assets/music/m3_main.mp3"></audio>
+      <audio id="mu-2-452" class="clip" data-start="452.757" data-duration="4.939" data-track-index="12" data-volume="0.16" src="assets/music/m3_main.mp3"></audio>
+      <audio id="mu-3-457" class="clip" data-start="457.396" data-duration="12.3" data-track-index="12" data-volume="0.45" src="assets/music/outro.mp3"></audio>
     </div>
     <script>
       // Build every scene synchronously onto ONE paused master timeline (absolute times from TL).

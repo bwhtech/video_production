@@ -1,0 +1,22 @@
+[
+ {"sfx": "paper_unfold", "at": {"scene": "s06", "t": 0.4}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s06a", "word": "@rent"}, "vol": 0.3},
+ {"sfx": "coin_clink", "at": {"seg": "s06a", "word": "@credit", "offset": 0.05}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s06a", "word": "@credit", "offset": 0.95}, "vol": 0.65},
+ {"sfx": "pop", "at": {"seg": "s06a", "word": "@rent", "nth": 2}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s06b", "word": "@equation", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s06b", "word": "@assets"}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s06b", "word": "@liabilities"}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s06b", "word": "@capital"}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s06b", "word": "@revenue"}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s06b", "word": "@expenses"}, "vol": 0.3},
+ {"sfx": "paper_whoosh", "at": {"seg": "s06b", "word": "@across", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s06b", "word": "@minus", "nth": 3, "offset": -0.35}, "vol": 0.35},
+ {"sfx": "glass_clink", "at": {"seg": "s06b", "word": "@across", "offset": 2.3}, "vol": 0.5},
+ {"sfx": "pop", "at": {"seg": "s06b", "word": "@across", "offset": 2.8}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s06b", "word": "@across", "offset": 3.0}, "vol": 0.25},
+ {"sfx": "rise_three", "at": {"seg": "s06c", "edge": "start", "offset": -0.3}, "vol": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s06c", "word": "@home", "offset": 0.1}, "vol": 0.6},
+ {"sfx": "coin_clink", "at": {"seg": "s06c", "word": "@home", "offset": -0.4}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s06d", "word": "@revenue"}, "vol": 0.35}
+]

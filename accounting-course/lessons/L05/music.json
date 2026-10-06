@@ -1,8 +1,81 @@
 {
-  "_doc": "DRAFT — tune by ear. start/end = absolute seconds or '<scene>.start|end[+/-offset]'; duck = sidechain under VO; loop = repeat the file to fill the span. Optional: \"hush\": {\"seg\": \"s05a\", \"word\": \"@same\", \"offset\": 0.0} dips the bed at a VO word.",
-  "tracks": [
-    {"f": "music/intro_sting.mp3", "start": "s01t.start+0.1", "end": "s01t.end+0.6", "vol": 0.55, "fi": 0.0, "fo": 0.6, "duck": false},
-    {"f": "music/main.mp3", "start": "s02.start+0.2", "end": "s13.end", "vol": 0.16, "fi": 1.5, "fo": 1.5, "duck": true, "loop": true},
-    {"f": "music/outro.mp3", "start": "s14.start-0.3", "end": "s14.end", "vol": 0.45, "fi": 0.3, "fo": 2.0, "duck": false}
-  ]
+ "_doc": "L05. start/end = absolute seconds or '<scene>.start|end[+/-offset]'. duck = sidechain under VO; loop = repeat to fill. hush (list; build.py L03 patch) dips the M2 bed during the silent beats (s05 still-needle hold, s06/s07 2.0 s device gaps, s08 countdown, s12 checkpoint pause).",
+ "tracks": [
+  {
+   "f": "sfx/day_street.mp3",
+   "start": "s01.start",
+   "end": "s01t.start+0.3",
+   "vol": 0.14,
+   "fi": 1.0,
+   "fo": 0.6,
+   "duck": false,
+   "loop": true
+  },
+  {
+   "f": "music/intro_sting.mp3",
+   "start": "s01t.start+0.1",
+   "end": "s01t.end+0.6",
+   "vol": 0.55,
+   "fi": 0.0,
+   "fo": 0.6,
+   "duck": false
+  },
+  {
+   "f": "music/m2_main.mp3",
+   "start": "s02.start+0.2",
+   "end": "s13.end-0.4",
+   "vol": 0.16,
+   "fi": 1.5,
+   "fo": 1.5,
+   "duck": true,
+   "loop": true
+  },
+  {
+   "f": "music/outro.mp3",
+   "start": "s14.start-0.3",
+   "end": "s14.end",
+   "vol": 0.45,
+   "fi": 0.3,
+   "fo": 2.0,
+   "duck": false
+  }
+ ],
+ "hush": [
+  {
+   "seg": "s05c",
+   "word": "@cash",
+   "offset": -0.1,
+   "dur": 4.3,
+   "depth": 0.85
+  },
+  {
+   "seg": "s06b",
+   "word": "@moves",
+   "offset": 0.3,
+   "dur": 2.6,
+   "depth": 0.7
+  },
+  {
+   "seg": "s07b",
+   "word": "@moves",
+   "offset": 0.3,
+   "dur": 2.6,
+   "depth": 0.7
+  },
+  {
+   "seg": "s08a",
+   "word": "@cash",
+   "offset": 0.6,
+   "dur": 3.6,
+   "depth": 0.85
+  },
+  {
+   "seg": "s12b",
+   "word": "five",
+   "nth": 2,
+   "offset": 0.3,
+   "dur": 3.6,
+   "depth": 0.85
+  }
+ ]
 }

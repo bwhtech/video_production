@@ -1,7 +1,7 @@
 ---
 format: 1920x1080
 fps: 30
-duration: 6m39s
+duration: ~7m00s
 message: "Debit means left and credit means right. Every account has a home side from the equation: grow it there, shrink it on the other side. Left total always equals right total."
 arc: Cold open (bank SMS 'credited') → Title → Last time (L5 answers + Aman A5–A9) → Khata opens, pages tint, then the two words land = left/right → Home sides from the scale: 4a T1 → 4b T3 cross-over → Liabilities (T5) → The algebra move: −Expenses crosses the post (T6), revenue stays right → DEAD CLIC (drawings tile, Revenue→Income flip) + double entry (scale ↔ khata, T1 replay) → Bank SMS, two cameras (T8) → Worked T7 / faded T9 (side blank) / solo T10 → Recap (3 tiles) → Your Turn (Q3 = imagine) → Tease (CA friend) → End card
 audience: adults with school maths, zero accounting (founder archetype)
@@ -98,7 +98,7 @@ the word `CREDITED`.
 
 ## Scene 3 — The two scary words
 
-- scene: Khata rises from below the SMS card and opens; its left page tints blue and its right page orange — the picture first. Two root icons (a hand with coins, a handshake) float up from the SMS word and fall away. Then the paper tiles DEBIT and CREDIT drop onto the tinted pages, left and right.
+- scene: Khata rises from below the SMS card and opens; its left page tints blue and its right page orange — the picture first. Four myth stickers pop off the SMS and get crossed out one by one (thumbs-down, thumbs-up, arrow-in/out, plus/minus). Then the paper tiles DEBIT and CREDIT drop onto the tinted pages, left and right.
 - duration: 20s
 - voiceover: s03a–s03c (Line 3)
 - learning: Debit = left, credit = right — nothing more. Pays off L1 s03 ("A left page, and a right page… It's going to matter"). Concrete (two tinted pages) before the term (the two tiles).
@@ -108,8 +108,10 @@ the word `CREDITED`.
 **Visual.** `--paper` cream background (the same plain set as L1 s03 — deliberate rhyme). Order is the point:
 1. The SMS card from Scene 2 sits top-centre. **Khata (`khataRig`) rises** from below it, centre, and opens; `pageTint`
    left → blue, right → orange, during "Now, that SMS." — before any word tile exists.
-2. On "Latin": two **root icons only**, no words — Lucide `hand-coins` (debere) and `handshake` (credere) — float up out of
-   the SMS word `CREDITED`, hover a beat, and flutter down out of frame on "Forget those meanings." No `debere` / `credere` text.
+2. **Four myths (2026-10-06):** on each myth sentence one sticker lifts off the SMS card and a small red ✗ (K.stamp at
+   0.35×, no shake) lands on it, in a row above Khata: Lucide `thumbs-down` ("isn't bad"), `thumbs-up` ("isn't good"),
+   `arrow-down-up` ("money in, or money out"), `diff` (plus/minus). No words. On "what they really mean" the four crossed
+   stickers flutter down out of frame. (Latin roots cut.)
 3. On "debit just means left": the paper tile **`DEBIT`** drops onto the already-blue left page and a `Dr` label settles
    under it; on "right": **`CREDIT`** drops onto the orange right page, `Cr` under it.
 4. A small "Lesson 1" polaroid (callback frame of L1 s03 Khata) clips to the corner on "from the very first lesson".
@@ -120,7 +122,7 @@ Root icons rise on a slow arc and fall with a paper flutter (smooth). ≥ 0.5 s 
 before "debit just means left" — then the tiles drop-and-place (`power3.out`, no bounce). Khata `expr wink` on "This is
 why". No idle motion on the open pages.
 
-**Sound.** `paper_slide` on Khata opening; `paper_whoosh` as the root icons lift;
+**Sound.** `paper_slide` on Khata opening; `pop` ×4 + soft `stamp_thunk` ×4 (vol 0.25) on the myths; `paper_whoosh` as they fall;
 **`tink_low`** exactly on "left" (DEBIT lands), **`tink_high`** exactly on "right" (CREDIT lands) — the L1 pitch pair, now
 paid off.
 
@@ -276,6 +278,8 @@ tag, the `Revenue` chip (from the Profit pocket), `Capital` tag.
   its back reads **`Income`**; a tiny `=` blinks between the two faces for 2 frames. This is the only place the course
   renames it; the account stays `Sales` everywhere.
 - Each column item's initial drops as a letter tile into a row: **`D E A D`** (blue) · **`C L I C`** (orange).
+- **AED-LIC cross-reference (visual only, 2 s):** as the row sticks to the strip, a small paper chip **`= AED-LIC`** slides
+  in beside it and lifts off — the Frappe ERPNext course's mnemonic, same homes in a different order. No VO.
 - On "You read it straight off the equation": the equation strip from Scene 6 (`A + Expenses = L + Capital + Revenue`) is
   still under the scale; the DEAD CLIC row flies up and sticks onto it like a price label — the `D E A D` half over the
   left of the `=`, `C L I C` over the right. The mnemonic belongs *to* the equation.
@@ -333,9 +337,9 @@ practice board.
 
 ## Scene 9 — Worked → faded → solo (T7, T9, T10)
 
-- scene: Practice board: Khata open centre, Scale HUD top-left tipping and settling per line. Khata does T7; Meera does T9 and slips — she pushes the Infotech coin toward the RIGHT page (the side is blank, not the account); the viewer does T10 with a countdown ring.
-- duration: 60s
-- voiceover: s09a–s09f (Line 9)
+- scene: Practice board: Khata open centre, Scale HUD top-left tipping and settling per line. **Warm-up drill first (s09w):** four single-account chips appear one at a time over Khata's spine — `Loan from Ravi Mama ↑`, `Rent ↑`, `Sales ↑`, `Infotech ↓` — each slides to its page on the answer word (the receivable *decrease* is the one learners miss). Then Khata does T7; Meera does T9 and slips — she pushes the Infotech coin toward the RIGHT page (the side is blank, not the account); the viewer does T10 with a countdown ring.
+- duration: 84s
+- voiceover: s09w, s09a–s09f (Line 9)
 - learning: Apply home sides to revenue, a receivable (side choice), a liability decrease.
 - pause_beats: 1 × 2.0 s (two-things device, worked), 1 × 2.4 s (faded), 1 × 3.2 s countdown (solo)
 - transition_out: camera pulls back; the three finished entries shrink into recap tiles (Scene 10)

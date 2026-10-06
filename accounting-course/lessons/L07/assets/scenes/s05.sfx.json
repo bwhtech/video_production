@@ -1,0 +1,191 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05a",
+   "word": "@real",
+   "offset": -0.4
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05a",
+   "word": "@comes",
+   "offset": -0.25
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05a",
+   "word": "@goes",
+   "offset": -0.25
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "scale_creak",
+  "at": {
+   "seg": "s05a",
+   "word": "@grows",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05a",
+   "word": "@left",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "scale_settle",
+  "at": {
+   "seg": "s05a",
+   "word": "@same",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s05a",
+   "word": "@same"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05b",
+   "word": "@personal",
+   "offset": -0.4
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05b",
+   "word": "@receiver",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05b",
+   "word": "@giver",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "scale_creak",
+  "at": {
+   "seg": "s05b",
+   "word": "@loan",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05b",
+   "word": "@credit",
+   "offset": -0.15,
+   "nth": 2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s05b",
+   "word": "@receives",
+   "offset": 0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05b",
+   "word": "@left",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05c",
+   "word": "@nominal",
+   "offset": -0.4
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05c",
+   "word": "@expenses",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05c",
+   "word": "@incomes",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "scale_creak",
+  "at": {
+   "seg": "s05c",
+   "word": "@shrink",
+   "offset": -0.3
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05c",
+   "word": "@debits",
+   "offset": -0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05c",
+   "word": "@credits",
+   "offset": -0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s05c",
+   "word": "@credits",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ }
+]

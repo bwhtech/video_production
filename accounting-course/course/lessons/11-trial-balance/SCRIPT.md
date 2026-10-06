@@ -77,6 +77,7 @@ light, a finger on one line. Hold the breath before the totals; triumph on "They
     Even the Ravi Mama payment — three thousand plus three hundred on the left, three thousand three hundred on the right.
     [PAUSE 0.6s]
     Equal halves go in, so equal totals come out.
+    That's why accounting software won't even save an entry whose two sides don't match.
 
 ## Line 5 — The trap: three errors that still balance (Scene 5, misconception moment)
 

@@ -1,0 +1,146 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 1.2,
+  "text": "[softly] अप्रैल की पहली तारीख़ — मीरा की पहली chai से एक दिन पहले। अभी सूरज नहीं निकला है। {@meera}मीरा के {@holding}हाथ में {@fifty}पचास हज़ार रुपये हैं — {@years}सालों की {@savings}बचत।"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "{@and}और बस ऐसे ही, ये पैसा {@galla}गल्ले में आ गया। [curious] {@so}तो — ये पैसा अब {@whose}किसका है? {@meera's}मीरा का? या {@stall's}stall का? [playful] {@answer}जवाब है… {@bit}थोड़ा-थोड़ा दोनों का।"
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "सबसे पहले, पिछली बार के जवाब। {@one}एक। {@meera}मीरा अपना personal {@phone}phone bill अपने bank account से भरती है। क्या ये stall की {@books}books में {p@books}जाएगा? {@no}नहीं। उसका पैसा, उसका bill। Stall अपने आप में एक अलग इंसान है।"
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "{@two}दो। एक customer chai का {@price}दाम पूछता है, फिर {@walks}चला {@away}जाता है। Transaction {@not}नहीं। कुछ भी हाथ नहीं बदला।"
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "{@three}तीन। कौन सी {@report}report {@photo?}photo है? {@balance}Balance {@sheet}Sheet. [warmly] {@and}और {@today}आज, हम उसी photo को {@filling}भरना शुरू करते हैं।"
+ },
+ {
+  "id": "s03",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "चलिए शुरू करते हैं उससे, जो stall के पास है। अभी गल्ले में {@fifty}पचास हज़ार रुपये हैं। {@cash}{p@cash}Cash. और cash काम की चीज़ है। मीरा इससे {@milk}दूध ख़रीद सकती है, {@rent}किराया दे सकती है, {@cart}ठेला ख़रीद सकती है। Business के पास जो भी चीज़ उसके काम आती है, उसे {@called}कहते हैं {@asset}{p@asset}asset. Cash एक {@asset#2}asset है। जल्दी ही {@cart#2}ठेला भी asset होगा, और {@tea}चाय की पत्ती {p@leaves}भी। अब से {@every}हर asset का अपना {@gets}एक jar होगा। हर jar को accountants कहते हैं {@account}{p@account}account. {@and#3}और cash वाला jar — यानी cash account? {@that's#2}वो है गल्ला।"
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 0.8,
+  "text": "लेकिन accountants हमेशा एक और सवाल पूछते हैं। ये पैसा {@where}कहाँ से आया? हर asset का एक source होता है। तो चलिए पैसे पर {@tag}tag लगाते हैं।"
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "ये पचास हज़ार रुपये {@meera}मीरा से आए हैं। Stall के पास ये पैसा {@holds}रखा है, लेकिन इस पर मीरा का {@claim}हक़ है। अगर कभी stall {@closed}बंद हो जाए, तो ये {@would}हिस्सा {@go}वापस मीरा के पास {@her}{p@her}जाएगा। Business में owner के हिस्से को कहते हैं {@equity}{p@equity}equity. और owner जो पैसा लगाता है, उसका अपना एक नाम है — {@capital}capital. {@meera's}मीरा का capital: {@fifty#2}पचास हज़ार रुपये।"
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "उसी सुबह, थोड़ी देर बाद, {@someone}कोई और आता है। {@ravi}रवि मामा। {@umbrella}छतरी। {@moustache}मूँछें। {@very}बहुत {@proud}गर्व है उन्हें अपनी भांजी पर। {@he}वो मीरा को {@thirty}तीस हज़ार रुपये देते हैं — एक loan। ये पैसा मीरा {@pay}लौटा देगी, जब stall अच्छा चलने लगेगा।"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "गल्ले में अब {@eighty}अस्सी हज़ार रुपये हैं। तो इस नए पैसे पर कौन सा {@tag}tag लगेगा? {@not}मीरा का चेहरा नहीं। ये पैसा {@came}आया है रवि {@mama,}मामा से, {@and}और stall को इसे {@give}वापस करना {p@back}होगा। जो पैसा business पर किसी और का बकाया है, उसे कहते हैं {@liability}{p@liability}liability. रवि मामा का {@loan}loan एक liability है।"
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 1.0,
+  "text": "अब यहीं बहुत से लोग फिसल जाते हैं। {@galla}गल्ला पचास हज़ार से {@eighty}अस्सी {@thousand#2}हज़ार हो गया। {@so}तो मीरा तीस हज़ार रुपये {@richer}अमीर हो गई!"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "[firmly] {@nope}नहीं! हाँ, {@cash}cash तीस हज़ार बढ़ा। लेकिन stall पर जो {@owes}बकाया है, वो भी तीस हज़ार {p@too}बढ़ा। मीरा का {@own}अपना हिस्सा? अब भी {@still}पचास हज़ार। एक रुपया भी {@more}ज़्यादा {p@more}नहीं। [warmly] और {@liability}liability कोई बुरी चीज़ नहीं है। ये {@someone}किसी और का पैसा है, जो आपके business के लिए {@working}काम कर रहा है। बस {@remember}याद रखिए कि ये आपका नहीं है।"
+ },
+ {
+  "id": "s07",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "तो चलिए पूरी तस्वीर देखते हैं। Stall के पास {@eighty}अस्सी हज़ार रुपये हैं। उसमें से {@thirty}तीस हज़ार पर रवि मामा का हक़ है। {@fifty}पचास हज़ार पर मीरा का हक़ {@meera.}है। {@every}हर रुपया business में किसी न किसी का {p@someone}है। {@sentence:}एक line में: जो आपके पास है, वो उसके बराबर है जो आप पर बकाया है, plus जो आपका अपना {p@yours}है। इस line को याद रखिए। अगले lesson में, इसे एक {@scale}तराज़ू मिलेगा।"
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 1.4,
+  "text": "चलिए कुछ चीज़ों को तीन {@boxes}boxes में sort करते हैं। जो stall के पास है — {@assets}assets. जो उस पर बकाया है — {@liabilities}liabilities. और जो owner का है — {@equity}equity. खाता की बारी पहले। गल्ले में जो {@cash}cash है।"
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "[excited] {@asset!}Asset! Stall के पास है, और काम की है।"
+ },
+ {
+  "id": "s08c",
+  "scene": 8,
+  "gap_after": 1.6,
+  "text": "{@meera's}मीरा की बारी। {@ravi}रवि मामा का loan।"
+ },
+ {
+  "id": "s08d",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "{@careful}ज़रा ध्यान से। उन्होंने जो cash दिया, वो {@asset}asset है। लेकिन loan वो है जो stall पर बकाया है। {@liability.}Liability."
+ },
+ {
+  "id": "s08e",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "[inviting] अब आपकी बारी। मीरा कल {@glasses}गिलासों का एक stack ख़रीदती है।"
+ },
+ {
+  "id": "s08f",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "{@asset.}Asset. Stall के पास ये होंगे, और रोज़ काम आएँगे।"
+ },
+ {
+  "id": "s08g",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "और एक आख़िरी। अप्रैल का {@rent}किराया — मीरा पर बकाया है, पर अभी दिया नहीं है।"
+ },
+ {
+  "id": "s08h",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "{@liability.}Liability. ये पैसा मकान मालिक को देना है।"
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "तो। {@assets}Assets वो हैं जो business के पास है। {@liabilities}Liabilities वो हैं जो उस पर दूसरों का बकाया है। {@equity}Equity वो है जो owner का है। और business का {@every}हर रुपया {@someone}किसी न किसी का है।"
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.8,
+  "text": "[inviting] {@turn}अब आपकी बारी। तीन छोटे {@ones}{p@ones}सवाल। {@one}एक। Gopal Dairy से {@milk}दूध आता है, {@eight}आठ हज़ार रुपये का, और मीरा पैसे {@later}बाद में देगी। अब stall के पास क्या है, और उस पर क्या बकाया {p@owe}है? {@two}दो। क्या {@meera's}मीरा का personal {@scooter}scooter, stall का {@asset}asset {p@stall#2}है? {@three#2}तीन। Stall के पास {@eighty}अस्सी हज़ार रुपये हैं, और रवि मामा का {@thirty}तीस हज़ार बकाया है। मीरा का {@share}हिस्सा कितना {p@share}है? {@answers}जवाब {@next}अगले lesson की शुरुआत में।"
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 1.0,
+  "text": "[teasing] अगली बार, मीरा {@thirty-six}छत्तीस हज़ार रुपये {@spends}ख़र्च करती है — एक {@cart,}ठेले, एक {@stove}stove, और {@glasses}गिलासों के एक stack पर। तो — क्या उसने अभी छत्तीस हज़ार रुपये {@lose}खो दिए?"
+ }
+]

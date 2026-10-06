@@ -69,13 +69,13 @@
   "id": "s03a",
   "scene": 3,
   "gap_after": 0.6,
-  "text": "Now, that SMS. Debit and credit come from Latin. Debere, to owe. Credere, to trust."
+  "text": "Now, that SMS. First, four myths to drop. Debit isn't bad. Credit isn't good. Neither one means money in, or money out. And neither one means plus, or minus."
  },
  {
   "id": "s03b",
   "scene": 3,
   "gap_after": 0.8,
-  "text": "[curious] But here's the secret. Forget those meanings. In accounting, debit just means left. And credit just means right."
+  "text": "[curious] So here's what they really mean. In accounting, debit just means left. And credit just means right."
  },
  {
   "id": "s03c",
@@ -198,10 +198,16 @@
   "text": "Same money. Opposite books. Your SMS is reading the bank's khata, not yours. [firmly] Credit doesn't mean good. Debit doesn't mean bad. They just mean right, and left."
  },
  {
+  "id": "s09w",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "[playful] Let's practise. Warm-up first: one account at a time. Which side? Ravi Mama's loan grows. Credit. Rent grows. Debit. A sale. Credit. Now, careful. Infotech pays what it owes, so the Infotech account shrinks. Credit. An asset shrinking goes on the right."
+ },
+ {
   "id": "s09a",
   "scene": 9,
   "gap_after": 2.0,
-  "text": "Let's practise. Khata goes first. Cash sales for the first half of April: eighteen thousand rupees. Which two things changed?"
+  "text": "Now full entries. Khata goes first. Cash sales for the first half of April: eighteen thousand rupees. Which two things changed?"
  },
  {
   "id": "s09b",

@@ -1,0 +1,10 @@
+[
+ {"sfx": "cover_swing", "at": {"seg": "s02", "word": "@one", "offset": -0.05}, "vol": 0.3},
+ {"sfx": "bwomp_no", "at": {"seg": "s02", "word": "@no", "offset": 0.0}, "vol": 0.25},
+ {"sfx": "ding_yes", "at": {"seg": "s02", "word": "@asset", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "cover_swing", "at": {"seg": "s02", "word": "@two", "offset": -0.05}, "vol": 0.3},
+ {"sfx": "ka_ching", "at": {"seg": "s02", "word": "@thirteen", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "cover_swing", "at": {"seg": "s02", "word": "@three", "offset": -0.05}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s02", "word": "@belongs", "offset": 0.1}, "vol": 0.35},
+ {"sfx": "paper_whoosh", "at": {"seg": "s02", "word": "@meera", "nth": 1, "offset": 0.1}, "vol": 0.3}
+]

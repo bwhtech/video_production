@@ -1,0 +1,215 @@
+[
+ {
+  "sfx": "cover_swing",
+  "at": {
+   "seg": "s12a",
+   "word": "@checkpoint",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12a",
+   "word": "@checkpoint",
+   "offset": 0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "fryer_sizzle",
+  "at": {
+   "seg": "s12a",
+   "word": "@samosa",
+   "offset": 0.1
+  },
+  "vol": 0.25,
+  "dur": 3.0
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s12a",
+   "word": "@things",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s12a",
+   "word": "@profit",
+   "offset": 0.0
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s12a",
+   "word": "@cash",
+   "offset": 0.0
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s12b",
+   "word": "@one",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s12b",
+   "word": "@two",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s12b",
+   "word": "@three",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s12b",
+   "word": "@four",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s12b",
+   "word": "@five",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12b",
+   "word": "@pause",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s12b",
+   "edge": "end",
+   "offset": 0.0
+  },
+  "vol": 0.35,
+  "dur": 3.0
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12c",
+   "word": "@ready",
+   "offset": -0.2
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s12c",
+   "word": "@profit",
+   "offset": 0.15
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s12c",
+   "word": "@both",
+   "offset": 0.15,
+   "nth": 2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s12c",
+   "word": "@profit",
+   "offset": 0.15,
+   "nth": 2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s12c",
+   "word": "@cash",
+   "offset": 0.15,
+   "nth": 3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s12c",
+   "word": "@cash",
+   "offset": 0.15,
+   "nth": 4
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ka_ching",
+  "at": {
+   "seg": "s12c",
+   "word": "@eight",
+   "offset": 0.5
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "bell_ring",
+  "at": {
+   "seg": "s12c",
+   "word": "@eight",
+   "offset": 0.05
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "swoosh_transition",
+  "at": {
+   "seg": "s12c",
+   "word": "@rupees",
+   "offset": 0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "bell_ring",
+  "at": {
+   "seg": "s12c",
+   "word": "@rupees",
+   "offset": 0.55
+  },
+  "vol": 0.3
+ }
+]

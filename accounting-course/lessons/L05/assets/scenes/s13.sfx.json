@@ -1,0 +1,59 @@
+[
+ {
+  "sfx": "phone_buzz",
+  "at": {
+   "seg": "s13",
+   "word": "@buzzed",
+   "offset": 0.0
+  },
+  "vol": 0.4,
+  "dur": 0.8
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s13",
+   "word": "@credited",
+   "offset": 0.05
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "sparkle",
+  "at": {
+   "seg": "s13",
+   "word": "@credited",
+   "nth": 2,
+   "offset": 0.0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "boing_hop",
+  "at": {
+   "seg": "s13",
+   "word": "@credited",
+   "nth": 2,
+   "offset": 0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s13",
+   "word": "@right",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "book_thump",
+  "at": {
+   "seg": "s13",
+   "edge": "end",
+   "offset": 0.8
+  },
+  "vol": 0.7
+ }
+]

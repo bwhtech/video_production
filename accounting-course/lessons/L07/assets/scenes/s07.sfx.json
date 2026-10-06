@@ -1,0 +1,217 @@
+[
+ {
+  "sfx": "tray_clatter",
+  "at": {
+   "seg": "s07a",
+   "word": "@traps"
+  },
+  "vol": 0.15
+ },
+ {
+  "sfx": "tray_clatter",
+  "at": {
+   "seg": "s07a",
+   "word": "@traps",
+   "offset": 0.14
+  },
+  "vol": 0.15
+ },
+ {
+  "sfx": "tray_clatter",
+  "at": {
+   "seg": "s07a",
+   "word": "@traps",
+   "offset": 0.28
+  },
+  "vol": 0.15
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07a",
+   "word": "@bank",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s07b",
+   "word": "@nope"
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "boing_hop",
+  "at": {
+   "seg": "s07b",
+   "word": "@personal",
+   "offset": -0.3
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s07b",
+   "word": "@personal",
+   "offset": 0.4
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07b",
+   "word": "@receiver",
+   "offset": -0.3
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s07b",
+   "word": "@bank",
+   "offset": 0.2,
+   "nth": 3
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "phone_buzz",
+  "at": {
+   "seg": "s07b",
+   "word": "@sms",
+   "offset": -0.5
+  },
+  "vol": 0.18
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07b",
+   "word": "@exactly",
+   "offset": 0.25
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s07b",
+   "word": "@exactly",
+   "offset": 0.7
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "click_lock",
+  "at": {
+   "seg": "s07b",
+   "edge": "end",
+   "offset": 0.44
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s07b",
+   "edge": "end",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07b",
+   "edge": "end",
+   "offset": 0.75
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s07b",
+   "edge": "end",
+   "offset": 1.13
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07c",
+   "word": "@money",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s07c",
+   "word": "@no",
+   "offset": 0.9
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07c",
+   "word": "@giver",
+   "offset": -0.4
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s07c",
+   "word": "@credit",
+   "offset": -0.25
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "click_lock",
+  "at": {
+   "seg": "s07c",
+   "word": "@fifty",
+   "offset": 0.04
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s07c",
+   "word": "@fifty",
+   "offset": 0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07c",
+   "word": "@fifty",
+   "offset": 0.35
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s07c",
+   "word": "@fifty",
+   "offset": 0.73
+  },
+  "vol": 0.25
+ }
+]

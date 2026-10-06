@@ -484,3 +484,7 @@ branding.** `outro` music.
 - `wind_gust` — short soft gust of wind, papery, ~1.2 s.
 - `pencil_write` — short pencil on paper (optional; `quill_scratch` trimmed short is the fallback).
 - `scale_tilt` / `scale_settle` — if the shared `scaleRig` doesn't already ship them (soft wood creak / settle).
+
+## Addendum (2026-10-06) — Three-question checklist
+
+From Scene 4, a docked chip trio (top-left, ~30 % size) appears on "three questions": **① two empty slots** (which accounts changed? — the "which two things changed?" device, now step 1) · **② a family medallion** (`box` / `user` / `receipt`: what kind?) · **③ an `L | R` toggle** (which side?). On every later entry in L8 (T14–T17) the three chips tick in order as the VO answers them. Reused in L10's adjustments and every checkpoint from L11. Source: Frappe ERPNext course, Module 3 part 2, "Steps to write an entry".

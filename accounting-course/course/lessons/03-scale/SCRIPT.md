@@ -66,6 +66,7 @@ A4 → ₹33,000 = ₹13,000 + ₹20,000. Tease: T6 rent ₹5,000.
     Both are assets, so both sit on the left pan. [PAUSE 0.5s]
     One goes down, one goes up — and the scale doesn't move. Still eighty thousand.
     [warmly] Meera didn't lose money. [PAUSE 0.5s] She turned cash into a cart.
+    The stall isn't worth any less. It just holds its money in a different shape.
     [s04c] Here's where people slip. She spent thirty-six thousand — so that's an expense!
     [PAUSE 1.0s — SFX: stamp_thunk, red ✗ stamp]
     [s04d] [firmly] Nope. An expense is money that's used up and gone. The cart isn't gone.

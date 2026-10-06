@@ -1,0 +1,74 @@
+[
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s13",
+   "word": "@time",
+   "offset": 0.1
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s13",
+   "word": "@five",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s13",
+   "word": "@five",
+   "offset": 0.01999999999999999
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s13",
+   "word": "@five",
+   "offset": 0.13999999999999999
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s13",
+   "word": "@five",
+   "offset": 0.26
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s13",
+   "word": "@five",
+   "offset": 0.38
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "quill_scratch",
+  "at": {
+   "seg": "s13",
+   "word": "@write"
+  },
+  "vol": 0.4,
+  "dur": 1.0
+ },
+ {
+  "sfx": "book_thump",
+  "at": {
+   "seg": "s13",
+   "edge": "end",
+   "offset": -0.1
+  },
+  "vol": 0.7
+ }
+]

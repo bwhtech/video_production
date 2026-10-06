@@ -1,0 +1,76 @@
+[
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "seg": "s04",
+   "word": "@carries",
+   "offset": 0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04",
+   "word": "@fifteen",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s04",
+   "word": "@bank",
+   "offset": 0.45
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04",
+   "word": "@bank",
+   "offset": 0.3
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04",
+   "word": "@change",
+   "offset": 0.0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04",
+   "word": "@change",
+   "nth": 2,
+   "offset": 0.0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "phone_buzz",
+  "at": {
+   "seg": "s04",
+   "word": "@pocket",
+   "offset": 0.2
+  },
+  "vol": 0.3,
+  "dur": 0.7
+ },
+ {
+  "sfx": "paper_unfold",
+  "at": {
+   "seg": "s04",
+   "edge": "end",
+   "offset": -0.9
+  },
+  "vol": 0.35
+ }
+]

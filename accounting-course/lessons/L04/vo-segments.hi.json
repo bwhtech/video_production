@@ -1,0 +1,158 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.6,
+  "text": "[softly] {@april}पाँच अप्रैल। {@rent}किराए का दिन। मीरा {@counts}गिनती हैं {@five}पाँच हज़ार रुपये, और {@hands}थमा देती हैं {@landlord}मकान-मालिक को।"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.2,
+  "text": "पिछली बार, गल्ले से निकला हर रुपया किसी न किसी चीज़ में बदल गया था — एक {@cart}cart, थोड़ी {@tea}चाय और {@sugar}चीनी। {@but}पर {@this}इस बार? कोई नया {@asset}asset नहीं आता। कोई {@debt}क़र्ज़ कम नहीं होता। {@nothing}कुछ भी वापस नहीं आता।"
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "[curious] Scale {@tips}झुक जाता है। तो {@other}दूसरी तरफ़ क्या {@side}है?"
+ },
+ {
+  "id": "s02",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "[warmly] पहले, पिछली बार के जवाब। {@one}एक। गोपाल की delivery के बाद, equation कुछ ऐसा बनता है: {@eighty-eight}अट्ठासी हज़ार {@equals}बराबर {@thirty-eight}अड़तीस हज़ार, {@plus}जमा {@fifty}पचास {@thousand#3}{p@thousand#3}हज़ार। {@two}दो। Cash देकर cart ख़रीदने से {@scale}scale नहीं हिलता। {@cash#2}Cash घटता है, {@comes}cart आ जाता है — left side पर बस एक {@swap}swap {p@left}है। {@three}तीन। {@paying}रवि मामा का loan थोड़ा चुकाया? {@cash#3}Cash घटता है, और मीरा पर जो बकाया है, वो भी। {@both}दोनों तरफ़ एक साथ घटते हैं, और scale {@level}{p@level}बराबर रहता है। और loan चुकाना कोई {@not}{@expense}expense नहीं है — क़र्ज़ बस {@smaller}छोटा हो गया।"
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.5,
+  "text": "और Checkpoint एक — अमन की samosa cart। {@one#2}एक। अमन अपनी बचत में से बीस हज़ार लगाता है। {@cash}Cash ऊपर, {@capital}capital ऊपर। {@twenty#2}बीस हज़ार {@equals}बराबर {@zero}ज़ीरो, {@plus}जमा {@twenty#3}बीस {@thousand#3}{p@thousand#3}हज़ार। {@two}दो। दस हज़ार रुपये का bank loan। {@cash#2}Cash ऊपर, {@liability}liability ऊपर। {@thirty}तीस हज़ार {@equals#2}बराबर {@ten}दस हज़ार, {@plus#2}जमा {@twenty#4}बीस हज़ार।"
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.7,
+  "text": "{@three}तीन। अठारह हज़ार की {@cart}cart और fryer, cash में। Left side पर बस एक {@swap}swap, इसलिए {@totals}totals नहीं बदलते। {@four}चार। शर्मा किराना से उधार पर तीन हज़ार रुपये के आलू, आटा और तेल। {@stock}Stock ऊपर, और जो {@owes}बकाया है वो भी ऊपर। {@thirty-three}तैंतीस हज़ार {@equals}बराबर {@thirteen}तेरह हज़ार, {@plus}जमा {@twenty}बीस {@thousand#5}{p@thousand#5}हज़ार। [playful] चार में {@out}से चार? आपका scale भी {@never}कभी नहीं {@either}झुका।"
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 2.0,
+  "text": "तो, वापस किराए वाले दिन पर। {@freeze}रुकिए। {@which}कौन-सी दो चीज़ें बदलीं?"
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 0.5,
+  "text": "{@first}पहली चीज़ आसान है। {@cash}Cash पाँच हज़ार घट गया। पर दूसरी? {@ravi}रवि मामा का अब भी तीस हज़ार बकाया है। {@gopal}गोपाल का अब भी आठ हज़ार बकाया है। किसी का क़र्ज़ {@smaller}कम नहीं {p@smaller}हुआ। तो बदलाव उसी एक चीज़ पर आएगा जो बची है — {@meera's}मीरा का अपना हिस्सा। Equity।"
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "[curious] चलिए मीरा का tag {@unfold}खोलते हैं। ये एक {@card}card में खुल जाता है — equity card — जिसमें दो {@pockets}pockets {p@pockets}हैं। {@capital}Capital: मीरा के लगाए पचास हज़ार। और एक नई, {@empty}ख़ाली pocket{p@pocket}। {@rent}किराया उसी नई pocket से निकलता है। अभी वहाँ {@minus}माइनस पाँच हज़ार लिखा है।"
+ },
+ {
+  "id": "s04d",
+  "scene": 4,
+  "gap_after": 0.8,
+  "text": "{@eighty-three}तिरासी हज़ार बराबर अड़तीस हज़ार, जमा पैंतालीस हज़ार। {@scale}Scale बराबर हो जाता {p@settles}है। जो पैसा business चलाने में इस्तेमाल हो जाए, हमेशा के लिए ख़त्म — उसे कहते हैं {@expense}{p@expense}expense। Expense owner के हिस्से को {@shrinks}घटा देता है।"
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.4,
+  "text": "[excited] {@now}अब आता है मज़ेदार हिस्सा। {@meera}मीरा अपना business खोलती हैं। {@raju}राजू, उनका नया {@helper}helper, गिलास चलाता रहता है। दो {@weeks}हफ़्ते की {@chai}चाय — {@glass}गिलास पर {@glass#2}गिलास, पर गिलास।"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 2.0,
+  "text": "पंद्रह अप्रैल तक, गल्ले में sales से {@eighteen}अठारह हज़ार रुपये जमा हो चुके हैं। {@cash}Cash अठारह हज़ार बढ़ गया। मीरा, अब आपकी {@turn}बारी। दूसरा बदलाव कहाँ है?"
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 0.5,
+  "text": "उन्होंने {@borrow}उधार नहीं लिया, इसलिए कोई नया क़र्ज़ नहीं। उन्होंने अपनी {@savings}बचत नहीं डाली, इसलिए capital पचास हज़ार ही रहता है। उन्होंने इसे {@earned}कमाया है। तो ये नई {@pocket}pocket में जाता है — किराए के ठीक बगल में।"
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "{@lakh}एक लाख एक हज़ार बराबर अड़तीस हज़ार, जमा तिरसठ {@thousand#3}{p@thousand#3}हज़ार। जो पैसा business अपनी चीज़ें बेचकर कमाता है, उसे कहते हैं {@revenue}{p@revenue}revenue। Revenue owner के हिस्से को {@grows}बढ़ाता है।"
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 1.8,
+  "text": "अब उस नई {@pocket}pocket के अंदर झाँकिए। {@eighteen}अठारह हज़ार {@revenue}revenue बनकर आए। {@five}पाँच हज़ार {@expense}expense बनकर निकल गए। अब क्या {@left}बचा?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "{@thirteen}तेरह हज़ार रुपये। ये अब तक का profit है — revenue minus {@expenses}{p@expenses}expenses। अब इस pocket को एक {@name}नाम मिल {p@name}गया। [warmly] और {@look}देखिए ये कहाँ रहता है। Equity के अंदर, मीरा के {@capital}capital के ठीक बगल {p@capital}में। {@ravi}रवि मामा और {@gopal}गोपाल का बकाया {@fixed}तय रक़म है। पर profit का हर रुपया {@owner}owner का {@belongs}है।"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "तो हमारा equation थोड़ा और {@longer}लंबा हो जाता है। {@assets}Assets {@equal}बराबर {@liabilities}liabilities, {@plus}जमा {@capital}capital, {@plus#2}जमा {@revenue}revenue, {@minus}माइनस {@expenses}{p@expenses}expenses। {@same}वही scale। हमने बस मीरा के हिस्से के अंदर झाँका है।"
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 0.4,
+  "text": "अब, यही वो {@trap}जाल है जिसमें ज़्यादातर नए owners फँस जाते हैं। पैसा {@left}गल्ले से {@galla}निकल गया, तो ज़रूर {@expense}expense होगा।"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "[firmly] {@nope}नहीं! याद है वो {@cart}cart? उसके लिए भी तो {@thirty-six}छत्तीस हज़ार रुपये गल्ले से निकले थे। तो बस एक {@question}सवाल {p@question}पूछिए। क्या ये {@used}इस्तेमाल हो गया — हमेशा के लिए ख़त्म? {@rent}किराया? {@yes}हाँ। {@april}अप्रैल का किराया चुकाया जा चुका है, और {@may}मई के लिए {@more}और पैसे चाहिए होंगे। {@cart#2}Cart? नहीं। वो {@still}अब भी वहीं खड़ी है, और चाय बना रही {@chai}{p@chai}है। ये एक {@asset}asset है।"
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "आपकी बारी। बस {@imagine}कल्पना कीजिए — ये मीरा की books में नहीं है। मीरा {@three}तीन सौ रुपये {@gas}gas के refill पर देती हैं। {@which}कौन-सी दो चीज़ें बदलीं?"
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "{@cash}Cash, तीन सौ कम। और {@profit}profit वाली pocket, {@down#2}तीन सौ {p@hundred#2}कम। चाय बनाते-बनाते gas {@burns}जल जाती है — वो इस्तेमाल हो गई। एक {@expense}expense।"
+ },
+ {
+  "id": "s08c",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "एक {@more}और। मीरा दूसरा kettle {@fifteen}पंद्रह सौ रुपये में ख़रीदती हैं। {@which}कौन-सी दो चीज़ें बदलीं?"
+ },
+ {
+  "id": "s08d",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "{@cash}Cash, पंद्रह सौ कम। और {@equipment}Equipment, पंद्रह सौ ज़्यादा — left side पर एक swap {p@left}है। {@profit}Profit वाली pocket नहीं हिलती। Kettle वहीं रहती है, और सालों तक चाय बनाती रहती है। एक {@asset}asset।"
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "तो — {@meera's}मीरा के हिस्से में दो {@pockets}pockets हैं। {@revenue}Revenue, profit वाली pocket को भरता है। {@expenses}Expenses उसे ख़ाली करते हैं। और {@profit#2}profit इन दोनों का {@difference}फ़र्क़ है।"
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.8,
+  "text": "[inviting] आपकी {@turn}बारी। तीन छोटे सवाल। {@one}एक। क्या {@thirty-six-thousand-rupee}छत्तीस हज़ार रुपये की cart एक {@expense}expense है? {@two}दो। किराए और पहले दो हफ़्तों की sales के बाद, मीरा का profit कितना है? {@three#2}तीन। Scale के किस तरफ़ profit {@live}रहता है? {@answers}जवाब अगले lesson की शुरुआत में।"
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 1.0,
+  "text": "[teasing] अगली बार, बगल का {@office}office, पूरे {@whole}floor के लिए, {@single}हर एक दिन, चाय मँगवाता है। बस एक {@catch}catch है। वो {@later}बाद में पैसे देते हैं।"
+ }
+]

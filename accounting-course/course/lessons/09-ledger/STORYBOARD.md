@@ -407,3 +407,7 @@ for YouTube end-screen videos; Khata waving bottom-left. **No subscribe circle, 
 - `pen_tick` — quick pen tick-mark on paper, very short.
 - `weight_clunk` — soft wooden clunk of a weight settling on a scale pan.
 - `paper_tear` — soft short paper tear (T16 strip splitting into two rows in s4; vol 0.4).
+
+## Addendum (2026-10-06) — Chart of accounts
+
+Scene 3, on "chart of accounts": the little books' spines line up on a shelf in five labelled groups — `Assets` · `Liabilities` · `Equity` · `Income` · `Expenses` (blue for the first, orange for the next three, blue for Expenses: home sides) — and a small `Chart of accounts` card clips to the shelf for 2 s. Viewers who use accounting software meet this term on day one.

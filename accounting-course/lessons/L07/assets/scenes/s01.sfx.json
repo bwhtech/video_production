@@ -1,0 +1,82 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01a",
+   "word": "@debit",
+   "nth": 1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01a",
+   "word": "@credit",
+   "nth": 1
+  },
+  "vol": 0.42
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01a",
+   "word": "@debit",
+   "nth": 2
+  },
+  "vol": 0.44
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01a",
+   "word": "@credit",
+   "nth": 2
+  },
+  "vol": 0.46
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01a",
+   "word": "@debit",
+   "nth": 3
+  },
+  "vol": 0.48
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01a",
+   "word": "@credit",
+   "nth": 3
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "boing_hop",
+  "at": {
+   "seg": "s01c",
+   "word": "@isn't"
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01c",
+   "word": "@another",
+   "offset": 0.4
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "swoosh_transition",
+  "at": {
+   "seg": "s01c",
+   "edge": "end",
+   "offset": -0.3
+  },
+  "vol": 0.45
+ }
+]

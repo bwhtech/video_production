@@ -219,461 +219,469 @@ One.
 Cash went down by thirty-six thousand.
 
 56
-00:02:08,373 --> 00:02:08,733
+00:02:08,373 --> 00:02:08,853
 Two.
 
 57
-00:02:08,933 --> 00:02:11,333
+00:02:08,933 --> 00:02:11,493
 The stall now has equipment worth thirty-six
 
 58
-00:02:11,413 --> 00:02:12,373
+00:02:11,653 --> 00:02:12,533
 thousand.
 
 59
-00:02:12,493 --> 00:02:14,773
+00:02:12,613 --> 00:02:14,933
 Both are assets, so both sit on the left
 
 60
-00:02:14,933 --> 00:02:15,493
+00:02:15,053 --> 00:02:15,653
 pan.
 
 61
-00:02:16,073 --> 00:02:18,553
+00:02:16,233 --> 00:02:18,793
 One goes down, one goes up — and the scale
 
 62
-00:02:18,633 --> 00:02:19,593
+00:02:18,873 --> 00:02:19,913
 doesn't move.
 
 63
-00:02:19,673 --> 00:02:21,273
+00:02:19,993 --> 00:02:21,673
 Still eighty thousand.
 
 64
-00:02:21,353 --> 00:02:23,033
+00:02:21,833 --> 00:02:23,433
 Meera didn't lose money.
 
 65
-00:02:23,613 --> 00:02:25,693
+00:02:24,053 --> 00:02:26,253
 She turned cash into a cart.
 
 66
-00:02:26,245 --> 00:02:27,605
-Here's where people slip.
+00:02:26,293 --> 00:02:28,093
+The stall isn't worth any less.
 
 67
-00:02:28,085 --> 00:02:30,845
-She spent thirty-six thousand — so that's
+00:02:28,133 --> 00:02:30,493
+It just holds its money in a different shape.
 
 68
-00:02:30,885 --> 00:02:31,925
-an expense!
+00:02:31,052 --> 00:02:32,412
+Here's where people slip.
 
 69
-00:02:33,048 --> 00:02:33,568
-Nope.
+00:02:32,892 --> 00:02:35,652
+She spent thirty-six thousand — so that's
 
 70
-00:02:33,768 --> 00:02:36,808
-An expense is money that's used up and gone.
+00:02:35,692 --> 00:02:36,732
+an expense!
 
 71
-00:02:37,048 --> 00:02:38,208
-The cart isn't gone.
+00:02:37,854 --> 00:02:38,374
+Nope.
 
 72
-00:02:38,408 --> 00:02:40,328
-It's standing right there, ready to make
+00:02:38,574 --> 00:02:41,614
+An expense is money that's used up and gone.
 
 73
-00:02:40,488 --> 00:02:41,128
-chai.
+00:02:41,854 --> 00:02:43,014
+The cart isn't gone.
 
 74
-00:02:41,848 --> 00:02:44,368
-It will wear out, slowly — and we'll deal
+00:02:43,214 --> 00:02:45,134
+It's standing right there, ready to make
 
 75
-00:02:44,448 --> 00:02:46,048
-with that at the end of the month.
+00:02:45,294 --> 00:02:45,934
+chai.
 
 76
-00:02:47,100 --> 00:02:50,700
-Same day, Meera buys tea, milk and sugar.
+00:02:46,654 --> 00:02:49,174
+It will wear out, slowly — and we'll deal
 
 77
-00:02:50,780 --> 00:02:53,740
-Six thousand rupees of stock, paid in cash.
+00:02:49,254 --> 00:02:50,854
+with that at the end of the month.
 
 78
-00:02:53,820 --> 00:02:55,420
-Which two things changed?
+00:02:51,907 --> 00:02:55,507
+Same day, Meera buys tea, milk and sugar.
 
 79
-00:02:57,500 --> 00:02:59,020
-Meera's got the first one.
+00:02:55,587 --> 00:02:58,547
+Six thousand rupees of stock, paid in cash.
 
 80
-00:02:59,100 --> 00:03:01,340
-Stock goes up by six thousand.
+00:02:58,627 --> 00:03:00,227
+Which two things changed?
 
 81
-00:03:01,420 --> 00:03:02,620
-Can you name the second?
+00:03:02,307 --> 00:03:03,827
+Meera's got the first one.
 
 82
-00:03:04,980 --> 00:03:06,980
-Cash goes down by six thousand.
+00:03:03,907 --> 00:03:06,147
+Stock goes up by six thousand.
 
 83
-00:03:07,460 --> 00:03:08,900
-Another swap on the left.
+00:03:06,227 --> 00:03:07,427
+Can you name the second?
 
 84
-00:03:09,140 --> 00:03:11,940
-The scale stays level, at eighty thousand.
+00:03:09,786 --> 00:03:11,786
+Cash goes down by six thousand.
 
 85
-00:03:13,082 --> 00:03:14,882
-Now you, on your own.
+00:03:12,266 --> 00:03:13,706
+Another swap on the left.
 
 86
-00:03:15,162 --> 00:03:16,042
-April the third.
+00:03:13,946 --> 00:03:16,746
+The scale stays level, at eighty thousand.
 
 87
-00:03:16,522 --> 00:03:18,762
-Gopal Dairy delivers eight thousand rupees
+00:03:17,889 --> 00:03:19,689
+Now you, on your own.
 
 88
-00:03:18,842 --> 00:03:21,002
-of milk and supplies — the delivery from
+00:03:19,969 --> 00:03:20,849
+April the third.
 
 89
-00:03:21,082 --> 00:03:22,202
-last lesson's question.
+00:03:21,329 --> 00:03:23,569
+Gopal Dairy delivers eight thousand rupees
 
 90
-00:03:22,602 --> 00:03:23,882
-Meera will pay later.
+00:03:23,649 --> 00:03:25,809
+of milk and supplies — the delivery from
 
 91
-00:03:24,122 --> 00:03:26,362
-You already know the two changes: stock
+00:03:25,889 --> 00:03:27,009
+last lesson's question.
 
 92
-00:03:26,442 --> 00:03:28,602
-up by eight thousand, and eight thousand
+00:03:27,409 --> 00:03:28,689
+Meera will pay later.
 
 93
-00:03:28,762 --> 00:03:29,562
-owed to Gopal.
+00:03:28,929 --> 00:03:31,169
+You already know the two changes: stock
 
 94
-00:03:30,042 --> 00:03:32,282
-So here's the real question — what does
+00:03:31,249 --> 00:03:33,409
+up by eight thousand, and eight thousand
 
 95
-00:03:32,442 --> 00:03:34,442
-each side of the scale read now?
+00:03:33,569 --> 00:03:34,369
+owed to Gopal.
 
 96
-00:03:37,596 --> 00:03:39,916
-Stock goes up by eight thousand, on the
+00:03:34,849 --> 00:03:37,089
+So here's the real question — what does
 
 97
-00:03:40,076 --> 00:03:40,716
-left.
+00:03:37,249 --> 00:03:39,249
+each side of the scale read now?
 
 98
-00:03:41,196 --> 00:03:44,156
-For a moment, the scale tips… then the right
+00:03:42,403 --> 00:03:44,723
+Stock goes up by eight thousand, on the
 
 99
-00:03:44,236 --> 00:03:45,276
-pan catches up.
+00:03:44,883 --> 00:03:45,523
+left.
 
 100
-00:03:45,516 --> 00:03:48,476
-Meera now owes Gopal eight thousand rupees.
+00:03:46,003 --> 00:03:48,963
+For a moment, the scale tips… then the right
 
 101
-00:03:49,196 --> 00:03:50,996
-Eighty-eight thousand equals thirty-eight
+00:03:49,043 --> 00:03:50,083
+pan catches up.
 
 102
-00:03:51,156 --> 00:03:53,156
-thousand plus fifty thousand.
+00:03:50,323 --> 00:03:53,283
+Meera now owes Gopal eight thousand rupees.
 
 103
-00:03:53,236 --> 00:03:53,876
-Level.
+00:03:54,003 --> 00:03:55,803
+Eighty-eight thousand equals thirty-eight
 
 104
-00:03:55,126 --> 00:03:56,486
-So here's the big idea.
+00:03:55,963 --> 00:03:57,963
+thousand plus fifty thousand.
 
 105
-00:03:57,046 --> 00:03:59,366
-Every transaction has two effects.
+00:03:58,043 --> 00:03:58,683
+Level.
 
 106
-00:04:00,206 --> 00:04:02,926
-Every rupee comes from somewhere, and goes
+00:03:59,932 --> 00:04:01,292
+So here's the big idea.
 
 107
-00:04:03,006 --> 00:04:03,646
-somewhere.
-
-108
-00:04:03,886 --> 00:04:06,286
-Accountants call this the dual aspect.
-
-109
-00:04:06,853 --> 00:04:09,813
-And it only ever plays out in four ways.
-
-110
-00:04:10,653 --> 00:04:13,373
-Both sides go up — like Ravi Mama's loan.
-
-111
-00:04:13,773 --> 00:04:16,533
-Both sides go down — like paying off a bill.
-
-112
-00:04:16,733 --> 00:04:19,933
-A swap on the left — cash turns into a cart.
-
-113
-00:04:20,053 --> 00:04:22,653
-Or a swap on the right — one claim turns
-
-114
-00:04:22,773 --> 00:04:23,493
-into another.
-
-115
-00:04:23,693 --> 00:04:25,173
-You'll meet this one in May.
-
-116
-00:04:26,253 --> 00:04:29,533
-In every case, the scale never stays tipped.
-
-117
-00:04:30,791 --> 00:04:31,191
-So.
-
-118
-00:04:31,511 --> 00:04:34,551
-The scale: assets on the left, liabilities
-
-119
-00:04:34,711 --> 00:04:36,231
-plus equity on the right.
-
-120
-00:04:36,711 --> 00:04:38,911
+00:04:01,852 --> 00:04:04,172
 Every transaction has two effects.
 
+108
+00:04:05,012 --> 00:04:07,732
+Every rupee comes from somewhere, and goes
+
+109
+00:04:07,812 --> 00:04:08,452
+somewhere.
+
+110
+00:04:08,692 --> 00:04:11,092
+Accountants call this the dual aspect.
+
+111
+00:04:11,660 --> 00:04:14,620
+And it only ever plays out in four ways.
+
+112
+00:04:15,460 --> 00:04:18,180
+Both sides go up — like Ravi Mama's loan.
+
+113
+00:04:18,580 --> 00:04:21,340
+Both sides go down — like paying off a bill.
+
+114
+00:04:21,540 --> 00:04:24,740
+A swap on the left — cash turns into a cart.
+
+115
+00:04:24,860 --> 00:04:27,460
+Or a swap on the right — one claim turns
+
+116
+00:04:27,580 --> 00:04:28,300
+into another.
+
+117
+00:04:28,500 --> 00:04:29,980
+You'll meet this one in May.
+
+118
+00:04:31,060 --> 00:04:34,340
+In every case, the scale never stays tipped.
+
+119
+00:04:35,597 --> 00:04:35,997
+So.
+
+120
+00:04:36,317 --> 00:04:39,357
+The scale: assets on the left, liabilities
+
 121
-00:04:39,111 --> 00:04:41,991
-And all four patterns keep the scale level.
+00:04:39,517 --> 00:04:41,037
+plus equity on the right.
 
 122
-00:04:43,125 --> 00:04:43,845
-Your turn.
+00:04:41,517 --> 00:04:43,717
+Every transaction has two effects.
 
 123
-00:04:44,005 --> 00:04:45,005
-Three quick ones.
+00:04:43,917 --> 00:04:46,797
+And all four patterns keep the scale level.
 
 124
-00:04:45,605 --> 00:04:46,125
-One.
+00:04:47,931 --> 00:04:48,651
+Your turn.
 
 125
-00:04:46,405 --> 00:04:48,565
-What does the equation read after Gopal's
+00:04:48,811 --> 00:04:49,811
+Three quick ones.
 
 126
-00:04:48,645 --> 00:04:49,405
-delivery?
-
-127
-00:04:51,485 --> 00:04:52,045
-Two.
-
-128
-00:04:52,285 --> 00:04:54,165
-Meera buys a cart for cash.
-
-129
-00:04:54,365 --> 00:04:55,605
-Does the scale move?
-
-130
-00:04:57,685 --> 00:04:58,245
-Three.
-
-131
-00:04:58,485 --> 00:05:01,205
-Meera pays back part of Ravi Mama's loan.
-
-132
-00:05:01,285 --> 00:05:02,965
-Which of the four patterns is that?
-
-133
-00:05:05,005 --> 00:05:06,685
-Answers next lesson.
-
-134
-00:05:08,140 --> 00:05:10,054
-And now, Checkpoint One.
-
-135
-00:05:10,254 --> 00:05:11,734
-A brand-new business.
-
-136
-00:05:11,934 --> 00:05:13,774
-This is Aman, Meera's friend.
-
-137
-00:05:13,854 --> 00:05:15,734
-He's starting a samosa cart.
-
-138
-00:05:16,514 --> 00:05:17,034
+00:04:50,411 --> 00:04:50,931
 One.
 
-139
-00:05:17,314 --> 00:05:19,394
-Aman puts in twenty thousand rupees of his
+127
+00:04:51,211 --> 00:04:53,371
+What does the equation read after Gopal's
 
-140
-00:05:19,474 --> 00:05:20,194
-savings.
+128
+00:04:53,451 --> 00:04:54,211
+delivery?
 
-141
-00:05:20,434 --> 00:05:20,874
+129
+00:04:56,291 --> 00:04:56,851
 Two.
 
-142
-00:05:21,074 --> 00:05:23,474
-He takes a bank loan of ten thousand.
+130
+00:04:57,091 --> 00:04:58,971
+Meera buys a cart for cash.
 
-143
-00:05:23,554 --> 00:05:24,194
+131
+00:04:59,171 --> 00:05:00,411
+Does the scale move?
+
+132
+00:05:02,491 --> 00:05:03,051
 Three.
 
+133
+00:05:03,291 --> 00:05:06,011
+Meera pays back part of Ravi Mama's loan.
+
+134
+00:05:06,091 --> 00:05:07,771
+Which of the four patterns is that?
+
+135
+00:05:09,811 --> 00:05:11,491
+Answers next lesson.
+
+136
+00:05:12,947 --> 00:05:14,861
+And now, Checkpoint One.
+
+137
+00:05:15,061 --> 00:05:16,541
+A brand-new business.
+
+138
+00:05:16,741 --> 00:05:18,581
+This is Aman, Meera's friend.
+
+139
+00:05:18,661 --> 00:05:20,541
+He's starting a samosa cart.
+
+140
+00:05:21,321 --> 00:05:21,841
+One.
+
+141
+00:05:22,121 --> 00:05:24,201
+Aman puts in twenty thousand rupees of his
+
+142
+00:05:24,281 --> 00:05:25,001
+savings.
+
+143
+00:05:25,241 --> 00:05:25,681
+Two.
+
 144
-00:05:24,274 --> 00:05:26,994
-He buys a cart and fryer for eighteen thousand,
+00:05:25,881 --> 00:05:28,281
+He takes a bank loan of ten thousand.
 
 145
-00:05:27,074 --> 00:05:28,114
-in cash.
+00:05:28,361 --> 00:05:29,001
+Three.
 
 146
-00:05:28,194 --> 00:05:28,834
-Four.
+00:05:29,081 --> 00:05:31,801
+He buys a cart and fryer for eighteen thousand,
 
 147
-00:05:28,914 --> 00:05:31,074
-He buys three thousand rupees of potatoes,
+00:05:31,881 --> 00:05:32,921
+in cash.
 
 148
-00:05:31,154 --> 00:05:33,714
-flour and oil from Sharma Kirana, and he'll
+00:05:33,001 --> 00:05:33,641
+Four.
 
 149
-00:05:33,794 --> 00:05:34,754
-pay later.
+00:05:33,721 --> 00:05:35,881
+He buys three thousand rupees of potatoes,
 
 150
-00:05:35,434 --> 00:05:38,314
-For each one: which two things changed?
+00:05:35,961 --> 00:05:38,521
+flour and oil from Sharma Kirana, and he'll
 
 151
-00:05:38,394 --> 00:05:40,594
-And what does Aman's scale read after it?
+00:05:38,601 --> 00:05:39,561
+pay later.
 
 152
-00:05:40,994 --> 00:05:42,274
-Pause the video now.
+00:05:40,241 --> 00:05:43,121
+For each one: which two things changed?
 
 153
-00:05:42,314 --> 00:05:44,394
-The worksheet is linked in the description.
+00:05:43,201 --> 00:05:45,401
+And what does Aman's scale read after it?
 
 154
-00:05:47,552 --> 00:05:48,112
-Done?
+00:05:45,801 --> 00:05:47,081
+Pause the video now.
 
 155
-00:05:48,352 --> 00:05:49,952
-Here's how Aman's scale reads.
+00:05:47,121 --> 00:05:49,201
+The worksheet is linked in the description.
 
 156
-00:05:51,032 --> 00:05:54,552
-After one: twenty thousand equals zero plus
+00:05:52,358 --> 00:05:52,918
+Done?
 
 157
-00:05:54,632 --> 00:05:55,832
-twenty thousand.
+00:05:53,158 --> 00:05:54,758
+Here's how Aman's scale reads.
 
 158
-00:05:55,912 --> 00:05:59,112
-After two: thirty thousand equals ten thousand
+00:05:55,838 --> 00:05:59,358
+After one: twenty thousand equals zero plus
 
 159
-00:05:59,272 --> 00:06:00,792
-plus twenty thousand.
+00:05:59,438 --> 00:06:00,638
+twenty thousand.
 
 160
-00:06:00,952 --> 00:06:03,192
-Three is a swap on the left, so it stays
+00:06:00,718 --> 00:06:03,918
+After two: thirty thousand equals ten thousand
 
 161
-00:06:03,272 --> 00:06:04,472
-at thirty thousand.
+00:06:04,078 --> 00:06:05,598
+plus twenty thousand.
 
 162
-00:06:04,552 --> 00:06:07,432
-And after four: thirty-three thousand equals
+00:06:05,758 --> 00:06:07,998
+Three is a swap on the left, so it stays
 
 163
-00:06:07,512 --> 00:06:10,072
-thirteen thousand plus twenty thousand.
+00:06:08,078 --> 00:06:09,278
+at thirty thousand.
 
 164
-00:06:10,152 --> 00:06:12,632
-Next lesson, we'll walk through every step.
+00:06:09,358 --> 00:06:12,238
+And after four: thirty-three thousand equals
 
 165
-00:06:14,342 --> 00:06:15,222
-Next time.
+00:06:12,318 --> 00:06:14,878
+thirteen thousand plus twenty thousand.
 
 166
-00:06:15,462 --> 00:06:16,542
-April the fifth.
+00:06:14,958 --> 00:06:17,438
+Next lesson, we'll walk through every step.
 
 167
-00:06:16,742 --> 00:06:17,542
-Rent day.
+00:06:19,149 --> 00:06:20,029
+Next time.
 
 168
-00:06:17,782 --> 00:06:20,182
-Five thousand rupees leave the galla… and
+00:06:20,269 --> 00:06:21,349
+April the fifth.
 
 169
-00:06:20,342 --> 00:06:21,662
-nothing comes back.
+00:06:21,549 --> 00:06:22,349
+Rent day.
 
 170
-00:06:21,942 --> 00:06:23,702
+00:06:22,589 --> 00:06:24,989
+Five thousand rupees leave the galla… and
+
+171
+00:06:25,149 --> 00:06:26,469
+nothing comes back.
+
+172
+00:06:26,749 --> 00:06:28,509
 Will the scale finally tip?

@@ -401,3 +401,7 @@ in with `12` and swings open. Night ambience, kettle bubble (quiet).
 - `card_deal` — optional: a quick paper card flick for the checkpoint cards and the montage stream (else `paper_slide`).
 - `sticker_peel` — from L10 (scuff sticker lifting off); reuse, don't regenerate.
 - `tick_tock` — bible vocabulary; under the pause medallion's 3-2-1 ring and the countdowns.
+
+## Addendum (2026-10-06) — software enforces balance
+
+Scene 4, on "won't even save": a small paper laptop card shows a lopsided entry (`₹3,300` | `₹3,000`) with a greyed `Save` button and a red ✗; it fixes to `₹3,300` | `₹3,300` and the button lights. ≤ 3 s, no words beyond `Save`.

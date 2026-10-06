@@ -1,0 +1,12 @@
+[
+ {"sfx": "note_rustle", "at": {"seg": "s01a", "word": "@deposits", "offset": 0.1}, "vol": 0.22, "dur": 0.9},
+ {"sfx": "phone_buzz", "at": {"seg": "s01a", "word": "@buzzes"}, "vol": 0.5},
+ {"sfx": "phone_buzz", "at": {"seg": "s01a", "word": "@buzzes", "offset": 0.55}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s01a", "word": "@account", "offset": 0.1}, "vol": 0.35},
+ {"sfx": "ding_yes", "at": {"seg": "s01b", "word": "@credited"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s01b", "word": "@credit"}, "vol": 0.4},
+ {"sfx": "boing_hop", "at": {"seg": "s01c", "word": "@khata", "offset": 0.1}, "vol": 0.5},
+ {"sfx": "tink_low", "at": {"seg": "s01c", "word": "@khata", "offset": 0.8}, "vol": 0.55},
+ {"sfx": "pop", "at": {"seg": "s01d", "word": "@who's", "offset": 0.3}, "vol": 0.35},
+ {"sfx": "swoosh_transition", "at": {"seg": "s01d", "word": "@right", "offset": 0.6}, "vol": 0.4}
+]

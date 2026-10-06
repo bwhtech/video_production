@@ -1,0 +1,16 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s02a", "word": "@one", "offset": -0.15}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s02a", "word": "@tea"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s02a", "word": "@milk"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s02a", "word": "@sugar"}, "vol": 0.3},
+ {"sfx": "tick_tock", "at": {"seg": "s02a", "edge": "end", "offset": 0.0}, "vol": 0.3, "dur": 1.0},
+ {"sfx": "tink_low", "at": {"seg": "s02b", "word": "@stock", "offset": -0.05}, "vol": 0.55},
+ {"sfx": "tink_high", "at": {"seg": "s02b", "word": "@cash", "offset": -0.05}, "vol": 0.55},
+ {"sfx": "paper_slide", "at": {"seg": "s02c", "word": "@two", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "swoosh_transition", "at": {"seg": "s02d", "word": "@across"}, "vol": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s02d", "word": "@left", "offset": -0.2}, "vol": 0.55},
+ {"sfx": "paper_slide", "at": {"seg": "s02e", "word": "@three", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "phone_buzz", "at": {"seg": "s02e", "word": "@sms"}, "vol": 0.18},
+ {"sfx": "ding_yes", "at": {"seg": "s02f", "word": "@credited"}, "vol": 0.45},
+ {"sfx": "tink_high", "at": {"seg": "s02f", "word": "@credited"}, "vol": 0.5}
+]

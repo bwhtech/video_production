@@ -1,0 +1,10 @@
+[
+ {"sfx": "tabla_dha", "at": {"scene": "s03", "t": 0.7}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s03", "word": "@naam"}, "vol": 0.4},
+ {"sfx": "tink_low", "at": {"seg": "s03", "word": "@naam", "offset": 0.05}, "vol": 0.5},
+ {"sfx": "pop", "at": {"seg": "s03", "word": "@jama"}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s03", "word": "@jama", "offset": 0.05}, "vol": 0.5},
+ {"sfx": "pop", "at": {"seg": "s03", "word": "@khata", "nth": 1}, "vol": 0.4},
+ {"sfx": "sparkle", "at": {"seg": "s03", "word": "@gets"}, "vol": 0.3},
+ {"sfx": "twine_tug", "at": {"seg": "s03", "edge": "end", "offset": -0.3}, "vol": 0.4}
+]

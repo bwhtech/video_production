@@ -1,0 +1,8 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s01a", "word": "@every", "offset": -0.3}, "vol": 0.3},
+ {"sfx": "pen_scratch", "at": {"seg": "s01a", "word": "@every", "offset": 0.15}, "vol": 0.25, "dur": 1.0},
+ {"sfx": "pen_scratch", "at": {"seg": "s01b", "word": "@bill", "offset": -0.1}, "vol": 0.3, "dur": 0.7},
+ {"sfx": "paper_slide", "at": {"seg": "s01b", "word": "@bill", "offset": 0.15}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s01b", "word": "@profit"}, "vol": 0.4},
+ {"sfx": "swoosh_transition", "at": {"seg": "s01c", "edge": "end", "offset": 0.05}, "vol": 0.4}
+]

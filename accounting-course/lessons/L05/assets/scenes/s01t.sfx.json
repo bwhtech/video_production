@@ -1,0 +1,7 @@
+[
+ {"sfx": "book_thump", "at": {"scene": "s01t", "t": 0.42}, "vol": 0.7},
+ {"sfx": "pop", "at": {"scene": "s01t", "t": 0.58}, "vol": 0.45},
+ {"sfx": "pop", "at": {"scene": "s01t", "t": 0.83}, "vol": 0.5},
+ {"sfx": "sparkle", "at": {"scene": "s01t", "t": 1.1}, "vol": 0.45},
+ {"sfx": "cover_swing", "at": {"scene": "s01t", "t": 2.9}, "vol": 0.7}
+]

@@ -1,0 +1,22 @@
+[
+ {"sfx": "pop", "at": {"seg": "s02a", "word": "@one"}, "vol": 0.35},
+ {"sfx": "coin_clink", "at": {"seg": "s02a", "word": "@thousand", "offset": 0.4}, "vol": 0.3},
+ {"sfx": "tick_tock", "at": {"seg": "s02a", "edge": "end"}, "vol": 0.4, "dur": 1.2},
+ {"sfx": "ding_yes", "at": {"seg": "s02b", "edge": "start"}, "vol": 0.5},
+ {"sfx": "pop", "at": {"seg": "s02c", "word": "@two"}, "vol": 0.35},
+ {"sfx": "coin_clink", "at": {"seg": "s02c", "word": "@five", "offset": 0.7}, "vol": 0.35},
+ {"sfx": "tick_tock", "at": {"seg": "s02c", "edge": "end"}, "vol": 0.4, "dur": 1.2},
+ {"sfx": "stamp_thunk", "at": {"seg": "s02d", "edge": "start", "offset": 0.05}, "vol": 0.4},
+ {"sfx": "ding_yes", "at": {"seg": "s02d", "word": "@shrinks", "offset": -0.2}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s02e", "word": "@three"}, "vol": 0.35},
+ {"sfx": "tick_tock", "at": {"seg": "s02e", "edge": "end"}, "vol": 0.4, "dur": 1.2},
+ {"sfx": "ding_yes", "at": {"seg": "s02f", "edge": "start"}, "vol": 0.5},
+ {"sfx": "pop", "at": {"seg": "s02f", "word": "@six"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s02f", "word": "@four"}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s02g", "edge": "start", "offset": 0.1}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s02g", "word": "@challenge", "offset": -0.15}, "vol": 0.35},
+ {"sfx": "ding_yes", "at": {"seg": "s02g", "word": "@cash"}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s02g", "word": "@rent"}, "vol": 0.3},
+ {"sfx": "coin_clink", "at": {"seg": "s02g", "word": "@eight"}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s02g", "edge": "end", "offset": 0.7}, "vol": 0.4}
+]

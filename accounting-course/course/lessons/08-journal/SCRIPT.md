@@ -60,6 +60,9 @@ word) and on both "Nope" moments. Let the quiz gaps breathe; every "Which two th
 pointing at each as Khata writes it. "A-slash-c" is said exactly like that.
 
     Back to Meera's tissue. You write every transaction down on the day it happens, in date order, in one book. That book is called the **journal**. In Indian shops, it's the **day-book** — the rojmel.
+    Every entry answers three questions. Which accounts changed? [PAUSE 0.5s] What kind are they? [PAUSE 0.5s]
+    And which side does each one go on?
+    [ON SCREEN: three-chip checklist — two empty slots · family medallion · L | R — stays docked top-left for the lesson]
     Khata opens to a fresh journal page — and writes the first one straight in. Two weeks of cash sales: twenty-two thousand rupees. Which two things changed?
     [PAUSE 2.0s]
     [SFX: tick-tock … ding]

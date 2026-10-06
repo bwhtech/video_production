@@ -1,0 +1,21 @@
+[
+ {"sfx": "pop", "at": {"seg": "s08a", "word": "@sms", "offset": 0.5}, "vol": 0.3},
+ {"sfx": "glass_clink", "at": {"seg": "s08a", "word": "@cameras", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "note_rustle", "at": {"seg": "s08a", "word": "@moved"}, "vol": 0.22, "dur": 0.9},
+ {"sfx": "coin_clink", "at": {"seg": "s08a", "word": "@debit", "offset": 0.05}, "vol": 0.4},
+ {"sfx": "tink_low", "at": {"seg": "s08a", "word": "@debit", "offset": 0.75}, "vol": 0.6},
+ {"sfx": "coin_clink", "at": {"seg": "s08a", "word": "@credit", "offset": 0.05}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s08a", "word": "@credit", "offset": 0.75}, "vol": 0.6},
+ {"sfx": "scale_creak", "at": {"seg": "s08a", "word": "@grows"}, "vol": 0.25},
+ {"sfx": "boing_hop", "at": {"seg": "s08b", "word": "@bank's"}, "vol": 0.3},
+ {"sfx": "note_rustle", "at": {"seg": "s08b", "word": "@notes"}, "vol": 0.22, "dur": 0.9},
+ {"sfx": "tink_low", "at": {"seg": "s08b", "word": "@debit", "offset": 0.4}, "vol": 0.6},
+ {"sfx": "pop", "at": {"seg": "s08b", "word": "@owes", "offset": -0.3}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s08b", "word": "@liability", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "tink_high", "at": {"seg": "s08b", "word": "@credits", "offset": 0.5}, "vol": 0.6},
+ {"sfx": "phone_buzz", "at": {"seg": "s08c", "word": "@your", "offset": 0.4}, "vol": 0.25},
+ {"sfx": "stamp_thunk", "at": {"seg": "s08c", "word": "@mean"}, "vol": 0.7},
+ {"sfx": "stamp_thunk", "at": {"seg": "s08c", "word": "@bad"}, "vol": 0.5},
+ {"sfx": "pop", "at": {"seg": "s08c", "word": "@credit", "offset": -0.3}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s08c", "word": "@debit", "offset": -0.3}, "vol": 0.3}
+]

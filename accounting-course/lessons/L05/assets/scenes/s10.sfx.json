@@ -1,0 +1,11 @@
+[
+ {"sfx": "rise_three", "at": {"seg": "s10", "word": "@needles", "offset": -0.3}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@needles", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@earned", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s10", "word": "@earned", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@paid", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "coin_clink", "at": {"seg": "s10", "word": "@paid", "offset": 0.45}, "vol": 0.3},
+ {"sfx": "tink_high", "at": {"seg": "s10", "word": "@used", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "needle_tick", "at": {"seg": "s10", "word": "@is", "offset": 0.8}, "vol": 0.5},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@cash", "offset": 0.0}, "vol": 0.4}
+]

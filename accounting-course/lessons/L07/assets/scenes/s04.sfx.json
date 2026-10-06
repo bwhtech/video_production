@@ -1,0 +1,148 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@ravi",
+   "offset": -0.05
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@gopal",
+   "offset": -0.05
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@infotech",
+   "offset": -0.05
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@cash",
+   "offset": -0.05
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@cart",
+   "offset": -0.05
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@stock",
+   "offset": -0.05
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@sales",
+   "offset": -0.05
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@rent",
+   "offset": -0.05
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@salary",
+   "offset": -0.05
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04a",
+   "word": "@infotech",
+   "offset": 0.45
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04a",
+   "word": "@stock",
+   "offset": 0.45
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04a",
+   "word": "@salary",
+   "offset": 0.45
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s04b",
+   "edge": "end",
+   "offset": 0.0
+  },
+  "vol": 0.3,
+  "dur": 1.6
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s04c",
+   "word": "@personal",
+   "offset": 0.45
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s04c",
+   "edge": "end",
+   "offset": 0.0
+  },
+  "vol": 0.3,
+  "dur": 1.6
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s04d",
+   "word": "@real",
+   "offset": 0.4
+  },
+  "vol": 0.45
+ }
+]

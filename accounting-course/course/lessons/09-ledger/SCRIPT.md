@@ -46,7 +46,7 @@ steps (heavier side → difference on the lighter side → carried down). Firm a
 **Delivery:** A small reveal. Curious on "Watch.", a quick wink on the Khata callback (the name was explained in L7 — this is a reminder, not a reveal).
 
     Here's the trick. The journal sorts money by date. But Meera's question is about one account — Cash. So let's sort a second way: by account.
-    Remember the account jars? Watch. Each jar becomes a little book. Cash gets one. Bank gets one. Sales, Rent, Ravi Mama's loan — every account gets its own page, with a debit side on the left and a credit side on the right. This set of books is called the **ledger**. Remember why our friend is called Khata? Khata means account.
+    Remember the account jars? Watch. Each jar becomes a little book. Cash gets one. Bank gets one. Sales, Rent, Ravi Mama's loan — every account gets its own page, with a debit side on the left and a credit side on the right. This set of books is called the **ledger**. And the list of all your accounts, grouped by type, is called the **chart of accounts**. Remember why our friend is called Khata? Khata means account.
 
 ## Line 4 — Posting — journal lines fly to their pages (Scene 4)
 

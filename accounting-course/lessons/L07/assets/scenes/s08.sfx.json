@@ -1,0 +1,116 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08",
+   "word": "@translation",
+   "offset": -0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08",
+   "word": "@real"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08",
+   "word": "@personal"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08",
+   "word": "@nominal"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08",
+   "word": "@owes",
+   "offset": -0.05
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08",
+   "word": "@owe",
+   "offset": -0.05
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08",
+   "word": "@bank",
+   "offset": -0.05
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08",
+   "word": "@capital",
+   "offset": -0.05
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08",
+   "word": "@drawings",
+   "offset": -0.05
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08",
+   "word": "@advances",
+   "offset": 0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s08",
+   "word": "@advances",
+   "offset": 0.35
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "projector",
+  "at": {
+   "seg": "s08",
+   "word": "@profit",
+   "offset": -0.3
+  },
+  "vol": 0.2
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s08",
+   "word": "@loss",
+   "offset": 0.3
+  },
+  "vol": 0.4
+ }
+]

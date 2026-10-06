@@ -1,0 +1,298 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06a",
+   "word": "@golden"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06a",
+   "word": "@scale"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06b",
+   "word": "@cart",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s06b",
+   "word": "@which",
+   "offset": 0.56
+  },
+  "vol": 0.35,
+  "dur": 2.0
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s06b",
+   "word": "@which",
+   "offset": 2.62
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06c",
+   "word": "@comes",
+   "offset": -0.15
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06c",
+   "word": "@goes",
+   "offset": -0.15
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06c",
+   "word": "@grows",
+   "offset": -0.1
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06c",
+   "word": "@shrinks",
+   "offset": -0.15
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "scale_settle",
+  "at": {
+   "seg": "s06c",
+   "word": "@scale",
+   "offset": 0.9
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "click_lock",
+  "at": {
+   "seg": "s06c",
+   "edge": "end",
+   "offset": 0.44
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s06c",
+   "edge": "end",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06c",
+   "edge": "end",
+   "offset": 0.75
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06c",
+   "edge": "end",
+   "offset": 1.13
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06d",
+   "word": "@gopal's",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06d",
+   "word": "@comes",
+   "offset": -0.1
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06d",
+   "word": "@giver",
+   "offset": -0.5
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06d",
+   "word": "@asset",
+   "offset": -0.05
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06d",
+   "word": "@liability",
+   "offset": -0.05
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "click_lock",
+  "at": {
+   "seg": "s06d",
+   "edge": "end",
+   "offset": 0.44
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s06d",
+   "edge": "end",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06d",
+   "edge": "end",
+   "offset": 0.75
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06d",
+   "edge": "end",
+   "offset": 1.13
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06e",
+   "word": "@cash",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06e",
+   "word": "@comes",
+   "offset": -0.2
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06e",
+   "word": "@income",
+   "offset": -0.5
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06e",
+   "word": "@asset",
+   "offset": -0.05
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06e",
+   "word": "@equity",
+   "offset": -0.05
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "click_lock",
+  "at": {
+   "seg": "s06e",
+   "word": "@every",
+   "offset": 0.44
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s06e",
+   "word": "@every",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06e",
+   "word": "@every",
+   "offset": 0.75
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06e",
+   "word": "@every",
+   "offset": 1.13
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "rise_three",
+  "at": {
+   "seg": "s06e",
+   "edge": "end",
+   "offset": 0.3
+  },
+  "vol": 0.3
+ }
+]

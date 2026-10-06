@@ -1,0 +1,84 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s11",
+   "word": "@one",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@four",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@advance",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s11",
+   "word": "@two",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@real",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@personal",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s11",
+   "word": "@three",
+   "offset": -0.1,
+   "nth": 2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@rent",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@answers",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ }
+]

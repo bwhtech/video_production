@@ -57,7 +57,9 @@ working memory goes to the new idea. Help fades over the course:
 
 **Order decision (2026-10-05):** preparer / bottom-up order (transactions → equation → bookkeeping → reports), with L1 only previewing the two reports. Considered statements-first (Khan/Piper) and a hybrid with live mini-reports; user chose to keep this order.
 
-Target 5–6 min each → ~75 min total. Lessons 6, 7, 10 may run to 7 min (threshold concepts).
+Target 5–6 min each; threshold lessons (6, 7, 10) run longer. **Runtime is a guide, not a ceiling (user, 2026-10-06):**
+a beat that makes the lesson clearer stays even if the lesson runs past 7 min. Trim only repetition and filler, never a
+teaching beat, to hit a number. (L6 runs ≈ 8:10 after the four-myths and warm-up drill additions.)
 
 ### Checkpoints and practice
 

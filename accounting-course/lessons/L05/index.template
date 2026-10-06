@@ -57,11 +57,16 @@
         const build = window.SCENES && window.SCENES[id];
         const svg = document.getElementById(id + "-svg");
         const sc = TL.scenes[id];
-        if (build) build({ svg, tl, K: window.KIT, sc, next: TL.scenes[order[order.indexOf(id) + 1]] });
-        else window.PLACEHOLDER(svg, id, sc.title);
+        // L05: one scene's JS error must not blank the whole lesson (scenes are built in parallel by several authors);
+        // errors are collected and re-thrown AFTER the timeline is registered, so `hyperframes check` still fails on them.
+        try {
+          if (build) build({ svg, tl, K: window.KIT, sc, next: TL.scenes[order[order.indexOf(id) + 1]] });
+          else window.PLACEHOLDER(svg, id, sc.title);
+        } catch (e) { (window.__sceneErrors = window.__sceneErrors || []).push(id + ": " + (e && e.stack ? e.stack.split("\n").slice(0, 3).join(" | ") : e)); }
       }
       window.SEAMS && window.SEAMS(tl);
       window.__timelines["main"] = tl;
+      if (window.__sceneErrors && window.__sceneErrors.length) throw new Error("SCENE BUILD ERRORS — " + window.__sceneErrors.join(" || "));
     </script>
   </body>
 </html>

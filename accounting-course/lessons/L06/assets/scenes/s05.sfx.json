@@ -1,0 +1,13 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s05a", "edge": "start", "offset": 0.3}, "vol": 0.35},
+ {"sfx": "glass_clink", "at": {"seg": "s05a", "word": "@sends", "offset": 0.7}, "vol": 0.45},
+ {"sfx": "scale_creak", "at": {"seg": "s05a", "word": "@sends", "offset": 0.6}, "vol": 0.3},
+ {"sfx": "coin_clink", "at": {"seg": "s05a", "word": "@debit", "offset": 0.05}, "vol": 0.4},
+ {"sfx": "tink_low", "at": {"seg": "s05a", "word": "@debit", "offset": 0.75}, "vol": 0.6},
+ {"sfx": "pop", "at": {"seg": "s05a", "word": "@gopal", "nth": 2, "offset": -0.1}, "vol": 0.3},
+ {"sfx": "tick_tock", "at": {"seg": "s05a", "edge": "end"}, "vol": 0.45, "dur": 1.6},
+ {"sfx": "coin_clink", "at": {"seg": "s05b", "edge": "start", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s05b", "edge": "start", "offset": 0.9}, "vol": 0.65},
+ {"sfx": "ding_yes", "at": {"seg": "s05b", "edge": "start", "offset": 0.95}, "vol": 0.5},
+ {"sfx": "scale_settle", "at": {"seg": "s05b", "edge": "start", "offset": 0.95}, "vol": 0.45}
+]

@@ -64,11 +64,13 @@ and the Checkpoint 2 headline.
 ## Line 3 — The two scary words (Scene 3)
 
 **Time:** 1:13 – 1:38
-**Delivery:** Storyteller for the Latin; then lean in, lower and slower: "here's the secret". Land *left* and *right*.
+**Delivery:** Four myths, brisk and a little playful — each one a quick "no"; then lean in, lower and slower on "here's what they really mean". Land *left* and *right*. (Revised 2026-10-06 after the Frappe ERPNext-course reference: the four negations now come first; the Latin roots line was cut for time.)
 (On screen, Khata is already open and its pages already tinted before the words are said — picture first, then the word.)
 
-    Now, that SMS. **Debit** and **credit** come from Latin. Debere, to owe. Credere, to trust.
-    [curious] But here's the secret. Forget those meanings.
+    Now, that SMS. First, four myths to drop. **Debit** isn't bad. **Credit** isn't good. [PAUSE 0.4s]
+    Neither one means money in, or money out. And neither one means plus, or minus.
+    [ON SCREEN: four crossed icons — thumbs-down, thumbs-up, arrow-in/out, plus/minus — one per myth]
+    [curious] So here's what they really mean.
     In accounting, debit just means left. [PAUSE 0.6s] And credit just means right.
     [SFX: tink_low on "left", tink_high on "right"]
     [playful] Remember Khata's two pages, from the very first lesson? This is why.
@@ -173,7 +175,14 @@ income, same thing" is thrown away, not taught. "You read it straight off the eq
 **Delivery:** Game energy, gentle. Real silences. Meera's slip is narrated kindly — it's the viewer's likely slip too
 (she picks the wrong *side* for Infotech, because "owing" sounded like Gopal).
 
-    Let's practise. Khata goes first.
+    [playful] Let's practise. Warm-up first: one account at a time. Which side?
+    Ravi Mama's loan grows. [PAUSE 1.4s] Credit.
+    Rent grows. [PAUSE 1.4s] Debit.
+    A sale. [PAUSE 1.4s] Credit.
+    Now, careful. Infotech pays what it owes, so the Infotech account shrinks. [PAUSE 1.8s]
+    Credit. An asset shrinking goes on the right.
+    [ON SCREEN: one account chip at a time over Khata's spine; it slides to its page on the answer]
+    Now full entries. Khata goes first.
     Cash sales for the first half of April: eighteen thousand rupees. Which two things changed?
     [PAUSE 2.0s — tick-tick, ding]
     Cash grew. Debit Cash, eighteen thousand. Sales grew. That's revenue, so credit Sales, eighteen thousand.

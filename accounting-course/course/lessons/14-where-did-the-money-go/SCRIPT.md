@@ -67,7 +67,7 @@
 **Delivery:** Step back; roadmap energy from L1. The three-word motif exactly as L1 said it.  
 **Segments:** `s06`
 
-    Step back, and look at the whole journey. Every transaction changed two things. Debit on the left, credit on the right. You wrote it in the journal. You posted it to the ledger. At month end, you adjusted for what was used up, and what was still unpaid. The trial balance checked that both sides match. And out came the movie, and the photo. Record. Sort. Summarise. That's the whole cycle — and you've done every step.
+    Step back, and look at the whole journey. Every transaction changed two things. Some changed what the stall was worth. Many just changed its shape. Debit on the left, credit on the right. You wrote it in the journal. You posted it to the ledger. At month end, you adjusted for what was used up, and what was still unpaid. The trial balance checked that both sides match. And out came the movie, and the photo. Record. Sort. Summarise. That's the whole cycle — and you've done every step.
 
 ## Line 7 — May preview — you already know (Scene 7)
 

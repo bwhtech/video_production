@@ -1,0 +1,7 @@
+[
+ {"sfx": "cover_swing", "at": {"scene": "s14", "t": 0.3}, "vol": 0.6},
+ {"sfx": "pop", "at": {"scene": "s14", "t": 0.6}, "vol": 0.35},
+ {"sfx": "boing_hop", "at": {"scene": "s14", "t": 1.15}, "vol": 0.45},
+ {"sfx": "page_flip", "at": {"scene": "s14", "t": 1.5}, "vol": 0.25},
+ {"sfx": "sparkle", "at": {"scene": "s14", "t": 7.3}, "vol": 0.3}
+]

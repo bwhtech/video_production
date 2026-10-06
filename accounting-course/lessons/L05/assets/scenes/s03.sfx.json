@@ -1,0 +1,14 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s03a", "word": "@pins", "offset": 0.0}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s03a", "word": "@pins", "offset": 0.2}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s03a", "word": "@needles", "offset": 0.05}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s03a", "word": "@needles", "offset": 0.3}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s03a", "word": "@profit", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s03a", "word": "@cash", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "needle_tick", "at": {"seg": "s03b", "word": "@thirteen", "offset": 0.85}, "vol": 0.5},
+ {"sfx": "needle_tick", "at": {"seg": "s03b", "word": "@fiftyone", "offset": 0.95}, "vol": 0.5},
+ {"sfx": "coin_clink", "at": {"seg": "s03b", "word": "@savings", "offset": 0.1}, "vol": 0.25},
+ {"sfx": "coin_clink", "at": {"seg": "s03b", "word": "@loan", "offset": 0.0}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s03b", "word": "@watch", "offset": -0.3}, "vol": 0.35},
+ {"sfx": "rewind_whoosh", "at": {"seg": "s03b", "edge": "end", "offset": -0.05}, "vol": 0.4}
+]
