@@ -1,16 +1,129 @@
 [
- {"sfx": "coin_clink", "at": {"seg": "s07a", "word": "@pays", "offset": 0.45}, "vol": 0.35},
- {"sfx": "pop", "at": {"seg": "s07a", "word": "@four", "offset": -0.1}, "vol": 0.3},
- {"sfx": "paper_slide", "at": {"seg": "s07a", "word": "@catering", "offset": 0.0}, "vol": 0.3},
- {"sfx": "paper_whoosh", "at": {"seg": "s07a", "word": "@straight", "offset": 0.0}, "vol": 0.25},
- {"sfx": "stamp_thunk", "at": {"seg": "s07b", "word": "@nope", "offset": 0.0}, "vol": 0.7},
- {"sfx": "bwomp_no", "at": {"seg": "s07b", "word": "@nope", "offset": 0.15}, "vol": 0.25},
- {"sfx": "paper_slide", "at": {"seg": "s07b", "word": "@liability", "offset": -0.1}, "vol": 0.35},
- {"sfx": "coin_clink", "at": {"seg": "s07b", "word": "@liability", "offset": 0.2}, "vol": 0.25},
- {"sfx": "pop", "at": {"seg": "s07b", "word": "@yet", "offset": -0.1}, "vol": 0.3},
- {"sfx": "tick_tock", "at": {"seg": "s07b", "edge": "end", "offset": 0.0}, "vol": 0.5, "dur": 2.0},
- {"sfx": "ding_yes", "at": {"seg": "s07c", "word": "@cash", "offset": 0.05}, "vol": 0.45},
- {"sfx": "needle_tick", "at": {"seg": "s07c", "word": "@cash", "offset": 0.75}, "vol": 0.5},
- {"sfx": "scale_settle", "at": {"seg": "s07c", "word": "@up", "offset": 0.1}, "vol": 0.35},
- {"sfx": "tink_low", "at": {"seg": "s07c", "word": "@stays", "offset": 0.0}, "vol": 0.3}
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s07a",
+   "word": "@pays",
+   "offset": 0.45
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07a",
+   "word": "@four",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s07a",
+   "word": "@catering",
+   "offset": 0.0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s07a",
+   "word": "@straight",
+   "offset": 0.0
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s07b",
+   "word": "@nope",
+   "offset": 0.0
+  },
+  "vol": 0.7
+ },
+ {
+  "sfx": "bwomp_no",
+  "at": {
+   "seg": "s07b",
+   "word": "@nope",
+   "offset": 0.15
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s07b",
+   "word": "@liability",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s07b",
+   "word": "@liability",
+   "offset": 0.2
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@yet",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s07b",
+   "edge": "end",
+   "offset": 0.0
+  },
+  "vol": 0.5,
+  "dur": 2.0
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s07c",
+   "word": "@money",
+   "offset": 0.05
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "needle_tick",
+  "at": {
+   "seg": "s07c",
+   "word": "@money",
+   "offset": 0.75
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "scale_settle",
+  "at": {
+   "seg": "s07c",
+   "word": "@up",
+   "offset": 0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07c",
+   "word": "@stays",
+   "offset": 0.0
+  },
+  "vol": 0.3
+ }
 ]

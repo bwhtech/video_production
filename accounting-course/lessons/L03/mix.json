@@ -809,8 +809,120 @@
    "src": "s09.sfx.json"
   },
   {
+   "sfx": "paper_slide",
+   "t": 354.198,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 363.378,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 372.558,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 380.098,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
    "sfx": "pop",
-   "t": 381.549,
+   "t": 357.718,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 358.438,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 366.378,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 367.178,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 376.878,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 377.358,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 385.858,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 387.218,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "scale_settle",
+   "t": 378.718,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "sparkle",
+   "t": 392.658,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s10.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 399.559,
    "vol": 0.35,
    "dur": null,
    "fade": 0,
@@ -818,7 +930,7 @@
   },
   {
    "sfx": "paper_whoosh",
-   "t": 383.629,
+   "t": 401.639,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -826,7 +938,7 @@
   },
   {
    "sfx": "coin_clink",
-   "t": 384.629,
+   "t": 402.639,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -834,7 +946,7 @@
   },
   {
    "sfx": "pop",
-   "t": 385.049,
+   "t": 403.059,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -842,7 +954,7 @@
   },
   {
    "sfx": "scale_creak",
-   "t": 387.649,
+   "t": 405.659,
    "vol": 0.55,
    "dur": null,
    "fade": 0,
@@ -850,7 +962,7 @@
   },
   {
    "sfx": "book_thump",
-   "t": 389.29,
+   "t": 407.3,
    "vol": 0.8,
    "dur": null,
    "fade": 0,
@@ -858,7 +970,7 @@
   },
   {
    "sfx": "cover_swing",
-   "t": 389.77,
+   "t": 407.78,
    "vol": 0.6,
    "dur": null,
    "fade": 0,
@@ -866,7 +978,7 @@
   },
   {
    "sfx": "pop",
-   "t": 390.07,
+   "t": 408.08,
    "vol": 0.35,
    "dur": null,
    "fade": 0,
@@ -874,7 +986,7 @@
   },
   {
    "sfx": "boing_hop",
-   "t": 390.62,
+   "t": 408.63,
    "vol": 0.45,
    "dur": null,
    "fade": 0,
@@ -882,7 +994,7 @@
   },
   {
    "sfx": "sparkle",
-   "t": 396.77,
+   "t": 414.78,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -970,7 +1082,7 @@
   },
   {
    "sfx": "paper_whoosh",
-   "t": 378.059,
+   "t": 396.069,
    "vol": 0.32,
    "dur": null,
    "fade": 0,
@@ -978,7 +1090,7 @@
   },
   {
    "sfx": "paper_whoosh",
-   "t": 389.12,
+   "t": 407.13,
    "vol": 0.32,
    "dur": null,
    "fade": 0,
@@ -1008,7 +1120,7 @@
   {
    "f": "music/main.mp3",
    "start": 25.189,
-   "end": 388.87,
+   "end": 406.88,
    "vol": 0.16,
    "fi": 1.5,
    "fo": 1.2,
@@ -1017,8 +1129,8 @@
   },
   {
    "f": "music/outro.mp3",
-   "start": 389.17,
-   "end": 401.47,
+   "start": 407.18,
+   "end": 419.48,
    "vol": 0.45,
    "fi": 0.3,
    "fo": 2.0,

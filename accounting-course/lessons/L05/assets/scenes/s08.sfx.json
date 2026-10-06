@@ -1,15 +1,120 @@
 [
- {"sfx": "upi_chime", "at": {"seg": "s08a", "word": "@upi", "offset": 0.0}, "vol": 0.5},
- {"sfx": "coin_clink", "at": {"seg": "s08a", "word": "@upi", "offset": 0.9}, "vol": 0.3},
- {"sfx": "coin_clink", "at": {"seg": "s08a", "word": "@upi", "offset": 1.35}, "vol": 0.25},
- {"sfx": "pop", "at": {"seg": "s08a", "word": "@profit", "offset": 0.0}, "vol": 0.35},
- {"sfx": "pop", "at": {"seg": "s08a", "word": "@cash", "offset": 0.0}, "vol": 0.35},
- {"sfx": "tick_tock", "at": {"seg": "s08a", "edge": "end", "offset": 0.0}, "vol": 0.5, "dur": 3.2},
- {"sfx": "ding_yes", "at": {"seg": "s08b", "word": "@cash", "offset": -0.1}, "vol": 0.5},
- {"sfx": "needle_tick", "at": {"seg": "s08b", "word": "@cash", "offset": 0.8}, "vol": 0.5},
- {"sfx": "coin_clink", "at": {"seg": "s08b", "word": "@into", "offset": 0.7}, "vol": 0.35},
- {"sfx": "tink_low", "at": {"seg": "s08b", "word": "@move", "offset": 0.0}, "vol": 0.35},
- {"sfx": "glass_clink", "at": {"seg": "s08b", "word": "@sixteenth", "offset": -0.1}, "vol": 0.3},
- {"sfx": "pop", "at": {"seg": "s08b", "word": "@shrinks", "offset": 0.0}, "vol": 0.35},
- {"sfx": "coin_clink", "at": {"seg": "s08b", "word": "@shrinks", "offset": 0.4}, "vol": 0.25}
+ {
+  "sfx": "upi_chime",
+  "at": {
+   "seg": "s08a",
+   "word": "@upi",
+   "offset": 0.0
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s08a",
+   "word": "@upi",
+   "offset": 0.9
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s08a",
+   "word": "@upi",
+   "offset": 1.35
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08a",
+   "word": "@profit",
+   "offset": 0.0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08a",
+   "word": "@money",
+   "offset": 0.0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s08a",
+   "edge": "end",
+   "offset": 0.0
+  },
+  "vol": 0.5,
+  "dur": 3.2
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s08b",
+   "word": "@money",
+   "offset": -0.1
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "needle_tick",
+  "at": {
+   "seg": "s08b",
+   "word": "@money",
+   "offset": 0.8
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s08b",
+   "word": "@into",
+   "offset": 0.7
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s08b",
+   "word": "@move",
+   "offset": 0.0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s08b",
+   "word": "@sixteenth",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08b",
+   "word": "@shrinks",
+   "offset": 0.0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s08b",
+   "word": "@shrinks",
+   "offset": 0.4
+  },
+  "vol": 0.25
+ }
 ]

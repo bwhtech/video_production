@@ -1,4 +1,4 @@
-// s04 — Rent day, frozen: "which two things changed?" (WORKED). First frame = the torn still from s03 (drawn identically).
+// s04 — Rent day, frozen: "which two things changed?" (WORKED). First frame = the rent-day street (default torn-paper wipe in from s02).
 // The HUD scale grows into the hero scale; the device runs (veil + 2 slots + 2.0 s tick-tock); slot 1 = Cash −₹5,000; Ravi's and Gopal's
 // tags are ruled out (`=`); Meera's tag lights, unfolds into the Equity card (Capital | ?), the rent slip drops into the `?`; the
 // scale settles and holds level. Chip: Expense.

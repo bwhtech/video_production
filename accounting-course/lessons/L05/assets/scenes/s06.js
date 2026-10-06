@@ -106,8 +106,8 @@
     const tWhich = cue("s06b", "@which"), tMoves = cue("s06b", "@moves"), tGap = segEnd("s06b");
     meera.look(tl, tWhich, -8, -6); meera.look(tl, tMoves - 0.1, -4, -8); meera.look(tl, tGap + 0.5, -10, -4); meera.look(tl, tGap + 1.1, -4, -8);
     meera.headTilt(tl, tGap + 0.4, -4);
-    // s06c "Only cash." — she points at the Cash gauge and ONLY that needle drops (galla 36,000 → 31,000)
-    const tOnly = cue("s06c", "@only"), tCash = cue("s06c", "@cash");
+    // s06c "Only the money needle." — she points at the Cash gauge and ONLY that needle drops (galla 36,000 → 31,000)
+    const tOnly = cue("s06c", "@only"), tCash = cue("s06c", "@money");
     meera.point(tl, tOnly - 0.5, "L", 150); meera.expr(tl, tOnly - 0.3, "happy");
     cash.read(tl, tCash - 0.15, 46000, { dur: 1.0 }); cash.sub(tl, tCash, 0, 31000, 0.9);
     cash.flash(tl, tCash + 0.1, 0.6);

@@ -1,6 +1,6 @@
 // s05 — The tab: "Which two things changed?" on T9 (WORKED). Apr 16, Infotech's tab = the first fortnight's bill, ₹6,000.
 //   slot (right) Sales +₹6,000 → a slip drops into the HUD's Profit pocket · slot (left) no cash comes in — a new jar `Infotech`
-//   (Receivable, an asset) → flies into the HUD's left pan · then the NEEDLES: Profit 13,000 → 19,000, Cash dead still (the `=` tag),
+//   (Receivable, an asset) → flies into the HUD's left pan · then the NEEDLES: Profit 13,000 → 19,000, Money needle dead still (the `=` tag),
 //   1.5 s of silence on the still needle. Then the accrual strip (revenue row + expense row): the tick jumps from the coin panel to
 //   the tumbler / used-up panel; `Accrual` chip lands; ≥ 1.5 s still. Seam-in: s04's slip grew into cream → this scene fades it out.
 (function () {
@@ -125,8 +125,8 @@
     profit.read(tl, tJumps - 0.15, 19000, { dur: 1.1 });
     profit.flash(tl, tJumps - 0.1, 0.9);
     khata.hop(tl, tJumps - 0.2, { height: 40 });
-    // "And the cash needle? It doesn't move at all." — still. The `=` tag drops, the camera pushes in a touch, then 1.5 s dead still
-    const tCashW = cue("s05c", "@cash"), tMove = cue("s05c", "@move");
+    // "And the money needle? It doesn't move at all." — still. The `=` tag drops, the camera pushes in a touch, then 1.5 s dead still
+    const tCashW = cue("s05c", "@money"), tMove = cue("s05c", "@move");
     cash.flash(tl, tCashW, 1.6);
     cash.eq(tl, tMove);
     meera.expr(tl, tCashW, "puzzled"); meera.look(tl, tCashW, -9, -4);

@@ -1,0 +1,16 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s10b", "word": "@one"}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s10b", "word": "@two"}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s10b", "word": "@three"}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s10b", "word": "@four"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10b", "word": "@cash"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10b", "word": "@capital"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10b", "word": "@cash", "nth": 2}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10b", "word": "@liability"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10b", "word": "@swap"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10b", "word": "@left"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10b", "word": "@stock"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10b", "word": "@owes"}, "vol": 0.3},
+ {"sfx": "scale_settle", "at": {"seg": "s10b", "word": "@change"}, "vol": 0.3},
+ {"sfx": "sparkle", "at": {"seg": "s10b", "word": "@out"}, "vol": 0.3}
+]

@@ -122,8 +122,8 @@
     const tMera = cue("s07b", "@meera", 2), tMoves = cue("s07b", "@moves"), tGap = segEnd("s07b");
     meera.look(tl, tMera, -8, -6); meera.look(tl, tMoves - 0.1, -4, -8); meera.look(tl, tGap + 0.5, -10, -4); meera.look(tl, tGap + 1.1, -4, -8);
     meera.headTilt(tl, tGap + 0.4, -4);
-    // s07c "Only cash." — she points; ONLY the Cash needle rises (galla 31,000 → 35,000)
-    const tOnly = cue("s07c", "@only"), tCash = cue("s07c", "@cash"), tUp = cue("s07c", "@up");
+    // s07c "Only the money needle." — she points; ONLY the Cash needle rises (galla 31,000 → 35,000)
+    const tOnly = cue("s07c", "@only"), tCash = cue("s07c", "@money"), tUp = cue("s07c", "@up");
     meera.point(tl, tOnly - 0.5, "L", 150); meera.expr(tl, tOnly - 0.3, "happy");
     cash.read(tl, tCash - 0.15, 50000, { dur: 1.0 }); cash.sub(tl, tCash, 0, 35000, 0.9);
     cash.flash(tl, tCash + 0.1, 0.6);

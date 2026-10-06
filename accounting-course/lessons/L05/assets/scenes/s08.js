@@ -1,5 +1,5 @@
 // s08 — Infotech pays by UPI (T12, the lesson's only SOLO). Apr 25. Priya taps her phone (UPI chime) → a paper coin stream arcs from the
-// office into the Bank. 3.2 s countdown (pause medallion ring) with `?` flags over both gauge tickers. Reveal: Bank 15,000 → 19,000, Cash needle
+// office into the Bank. 3.2 s countdown (pause medallion ring) with `?` flags over both gauge tickers. Reveal: Bank 15,000 → 19,000 (`+₹4,000` lands under the Bank chip; the Cash chip ₹35,000 is circled `=` — "the galla never sees it"), Money needle
 // 50,000 → 54,000, Profit stays (`=` tag). The Infotech jar in the Scale HUD loses coins (`−₹4,000`); its remaining balance is NEVER labelled.
 // Out: default torn-paper wipe into s09.
 (function () {
@@ -43,6 +43,13 @@
     const H = L5.hud(K, svg, tl, { stage: 4 });
     const jInf = H.jarPt("inf"), jBank = H.jarPt("bank");
     gsap.set(dec, { x: jInf[0], y: 455 });
+    // the strip's two sub-chips (Cash = the galla's notes · Bank): world positions, a gold ring each, a `+₹4,000` label under Bank, an `=` tag on Cash
+    const chipP = (i) => [cash.x + (i - 0.5) * 292 * GS, cash.y + 262 * GS];
+    const ringAt = (p) => K.el("path", { d: K.cutRect(p[0] - 136 * GS - 6, p[1] - 62 * GS - 6, 272 * GS + 12, 124 * GS + 12, 1, 18), fill: "none", stroke: C.gold, "stroke-width": 6, "stroke-linejoin": "round", opacity: 0 }, svg);
+    const ringCash = ringAt(chipP(0)), ringBank = ringAt(chipP(1));
+    const plus = L5.chip(K, svg, chipP(1)[0], chipP(1)[1] + 62 * GS + 36, "+₹4,000", { size: 38, bg: C.leaf });
+    const eqCash = L5.hide(L5.node(K, svg, chipP(0)[0] + 136 * GS - 8, chipP(0)[1] - 62 * GS + 4));
+    K.tex(K.shadow(eqCash, 1), K.cutRect(-22, -22, 44, 44, 1, 12), "pat-paper"); K.ink(eqCash, [[-11, -6], [11, -6]], 5); K.ink(eqCash, [[-11, 7], [11, 7]], 5);
 
     // ======================================================================================= timeline
     meera.blinks(tl, T0 + 1.0, sc.end, 3.3); pr.blinks(tl, T0 + 1.5, sc.end, 3.7);
@@ -58,8 +65,8 @@
     L5.coinHop(tl, K, svg, [wx + 110, wy - 60], [BDOOR[0], BDOOR[1] - 20], tUpi + 0.2, { n: 6, dur: 1.0, step: 0.14, r: 14, lift: 190 });
     bank.doorTo(tl, tUpi + 0.4, 0.2, 0.3); bank.bow(tl, tUpi + 1.2); bank.doorTo(tl, tUpi + 1.7, 1, 0.4);
     pr.expr(tl, tUpi + 0.3, "grin"); meera.look(tl, tUpi, 6, -2);
-    // "Profit? Cash?" — paper `?` flags drop over both tickers; the countdown ring starts when the narration stops
-    const tP = cue("s08a", "@profit"), tCa = cue("s08a", "@cash"), tCd = segEnd("s08a");
+    // "Profit? Money?" — paper `?` flags drop over both tickers; the countdown ring starts when the narration stops
+    const tP = cue("s08a", "@profit"), tCa = cue("s08a", "@money"), tCd = segEnd("s08a");
     tl.to(tint, { opacity: 0.35, duration: 0.4, ease: "power1.out" }, tP - 0.2);
     L5.drop(tl, K, fP, tP); L5.drop(tl, K, fC, tCa);
     pm.enter(tl, tCd - 0.05); pm.countdown(tl, tCd, { dur: 3.2 });
@@ -68,13 +75,23 @@
     const tRev = segStart("s08b");
     pm.exit(tl, tRev - 0.15);
     tl.to(tint, { opacity: 0, duration: 0.5, ease: "power1.inOut" }, tRev);
-    // "Cash goes up by four thousand, straight into the bank."
-    const tCash = cue("s08b", "@cash"), tBankW = cue("s08b", "@bank");
+    // "Money goes up by four thousand, straight into the bank."
+    const tCash = cue("s08b", "@money"), tBankW = cue("s08b", "@bank");
     L5.lift(tl, K, fC, tCash - 0.1);
     cash.read(tl, tCash - 0.1, 54000, { dur: 1.0 });
     meera.expr(tl, tCash, "happy").look(tl, tCash, 5, -2);
     const tInto = cue("s08b", "@into");
     cash.sub(tl, tInto, 1, 19000, 0.8);
+    // "straight into the bank" — the Bank chip lights and a `+₹4,000` label lands under it
+    tl.fromTo(ringBank, { opacity: 0 }, { opacity: 1, duration: 0.12, immediateRender: false }, tInto);
+    tl.to(ringBank, { opacity: 0, duration: 0.3 }, tInto + 1.6);
+    L5.drop(tl, K, plus, tInto + 0.15); L5.lift(tl, K, plus, tInto + 2.0);
+    // "The galla never even sees it." — the Cash chip is circled, an `=` tag drops on it (₹35,000 stays), Meera glances at the stall
+    const tNever = cue("s08b", "@never");
+    tl.fromTo(ringCash, { opacity: 0 }, { opacity: 1, duration: 0.12, immediateRender: false }, tNever);
+    tl.to(ringCash, { opacity: 0, duration: 0.3 }, tNever + 1.8);
+    L5.drop(tl, K, eqCash, tNever + 0.15); L5.lift(tl, K, eqCash, tNever + 2.4);
+    meera.look(tl, tNever, -6, -1); meera.expr(tl, tNever + 0.2, "thinking");
     L5.coinHop(tl, K, svg, [BDOOR[0], BDOOR[1] - 10], [jBank[0], jBank[1] + 10], tInto, { n: 3, dur: 0.8, r: 7, lift: 120 });
     H.jars.bank.fill(tl, tInto + 0.9, 0.45);
     // "Profit doesn't move." — the Profit flag lifts and the `=` tag drops

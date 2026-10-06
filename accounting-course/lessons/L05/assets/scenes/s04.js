@@ -1,5 +1,6 @@
-// s04 — Rewind: the bank deposit (T8, warm-up). Apr 15. Meera carries ₹15,000 from the galla to the friendly Bank: Cash sub-chip
-// ₹51,000 → ₹36,000, Bank ₹0 → ₹15,000 — neither needle moves (an `=` tag drops on each). Plant (no VO): her phone buzzes once; she smiles.
+// s04 — Rewind: the bank deposit (T8, warm-up). Apr 15. Meera carries ₹15,000 from the galla to the friendly Bank. "Two different accounts":
+// a `Cash` jar (notes — the galla) and a `Bank` jar (coins) drop in; the ₹15,000 label lifts off Cash (51,000 → 36,000), flies across and
+// lands in Bank (0 → 15,000) as the bundle goes through the door. The `Money` needle never moves (an `=` tag drops on each needle). Plant: her phone buzzes once.
 // Out: the Bank's door swings shut; its panel flips over and IS Infotech's bill slip (₹6,000), which grows to fill the frame (cream) → s05.
 (function () {
   window.OWN_SEAM_IN.s05 = true;                 // s05 opens on the cream the slip grew into
@@ -23,6 +24,10 @@
     const amt = L5.hide(L5.node(K, svg, 640, 400)); K.label(amt, 0, 0, "₹15,000", { size: 58, bg: C.saffron, rot: -3, weight: 800 });
     const phoneP = K.g(m.handAnchor("L"), {}); L5.hide(phoneP);
     const phone = K.phone(phoneP, 0, -16, 0.2, { screen: "sms" }); K.holdProp(m, "L", phoneP, [12, 8]);
+    // the two account jars (books): Cash = the notes in the galla · Bank = money the bank keeps for her
+    const cashJar = K.jarRig(svg, 640, GY, 1.1, { label: "Cash", icon: "coins", contents: "notes", fill: 0.6, amount: 51000, edge: C.saffron, hidden: true });
+    const bankJar = K.jarRig(svg, 1665, GY, 1.1, { label: "Bank", icon: "landmark", contents: "coins", fill: 0, amount: 0, edge: C.sky, hidden: true });
+    const fly2 = L5.node(K, svg, 0, 0), amt2 = L5.hide(L5.node(K, fly2, 0, 0)); K.label(amt2, 0, 0, "₹15,000", { size: 58, bg: C.saffron, rot: -3, weight: 800 });
     const flyB = L5.hide(L5.node(K, svg, 0, 0)); K.bundle(flyB, 0, 0, 0.7, -8);   // the bundle that goes through the door
     // the bill slip that the Bank's door becomes (s05 opens on it)
     const doorXY = [1270, GY - 134 * 0.9];
@@ -57,34 +62,55 @@
     // she strolls to the bank (cheat walk), bundle held out
     m.walkTo(tl, tCar + 0.55, 1000, 2.0);
     m.look(tl, tCar + 0.6, 8, -1);
-    // hand-off at "bank": her arm reaches out, the door opens, the bundle goes through, the pediment bows
-    m.arm(tl, tBank - 0.45, "R", 72, 18, 0.35);
-    bank.doorTo(tl, tBank - 0.25, 0.2, 0.35);
-    tl.set(bundleP, { opacity: 0 }, tBank + 0.15);
-    tl.set(flyB, { opacity: 1, x: 1130, y: 800 }, tBank + 0.15);
-    L5.fly(tl, flyB, tBank + 0.15, [1130, 800], [1270, 880], 0.4, { lift: 20 });
-    tl.set(flyB, { opacity: 0 }, tBank + 0.58);
-    bank.bow(tl, tBank + 0.55);
+    // "Meera carries … to the bank." — she arrives holding the bundle; the carry label lifts off
     L5.lift(tl, K, amt, tBank + 0.3);
-    m.arm(tl, tBank + 0.6, "R", 12, 8, 0.4);
-    bank.doorTo(tl, tBank + 1.0, 1, 0.4);
+    // "But in the books, these are two different accounts." — a Cash jar and a Bank jar drop in; she looks at each
+    const tAcc = cue("s04", "@accounts"), tNotes = cue("s04", "@notes"), tKeeps = cue("s04", "@keeps");
+    cashJar.enter(tl, tAcc - 0.2); bankJar.enter(tl, tAcc + 0.15);
+    m.look(tl, tAcc, -8, -3); m.expr(tl, tAcc, "thinking");
+    // "Cash is the notes in the galla." — the galla pops open, the Cash jar lights
+    stall.galla.open(tl, tNotes - 0.1, { notes: false });
+    cashJar.light(tl, tNotes, { hold: 1.1 });
+    stall.galla.shut(tl, cue("s04", "@galla", 2) + 0.7);
+    // "Bank is money the bank keeps for her, and gives back whenever she asks." — the Bank jar lights, she looks right
+    bankJar.light(tl, tKeeps, { hold: 1.4 });
+    m.look(tl, tKeeps - 0.1, 8, -2); m.expr(tl, tKeeps, "happy");
+    // "Cash went down fifteen thousand." — ₹15,000 lifts off the Cash jar (51,000 → 36,000), the galla chip ticks
+    const tDown = cue("s04", "@down"), tUp = cue("s04", "@up"), tL = tUp - 0.1;
+    L5.drop(tl, K, amt2, tDown - 0.05, { dur: 0.3 });
+    tl.set(fly2, { x: 640, y: 690 }, 0);
+    cashJar.tick(tl, tDown + 0.1, 51000, 36000, 0.7); cashJar.fill(tl, tDown + 0.1, 0.4);
+    cash.sub(tl, tDown + 0.1, 0, 36000, 0.8);
+    H.jars.cash.fill(tl, tDown + 0.2, 0.5);
+    m.look(tl, tDown, -3, -4);
+    // "Bank went up fifteen thousand." — the label flies across to the Bank jar as the bundle goes through the door
+    L5.fly(tl, fly2, tL - 1.25, [640, 690], [1665, 690], 1.15, { lift: 260 });
+    L5.lift(tl, K, amt2, tL - 0.12, { dur: 0.2 });
+    const tHnd = tL - 0.6;
+    m.arm(tl, tHnd - 0.45, "R", 72, 18, 0.35);
+    bank.doorTo(tl, tHnd - 0.25, 0.2, 0.35);
+    tl.set(bundleP, { opacity: 0 }, tHnd + 0.15);
+    tl.set(flyB, { opacity: 1, x: 1130, y: 800 }, tHnd + 0.15);
+    L5.fly(tl, flyB, tHnd + 0.15, [1130, 800], [1270, 880], 0.4, { lift: 20 });
+    tl.set(flyB, { opacity: 0 }, tHnd + 0.58);
+    bank.bow(tl, tHnd + 0.55);
+    m.arm(tl, tHnd + 0.7, "R", 12, 8, 0.4);
+    bank.doorTo(tl, tHnd + 1.1, 1, 0.4);
+    bankJar.tick(tl, tL, 0, 15000, 0.7); bankJar.fill(tl, tL, 0.4);
+    cash.sub(tl, tL, 1, 15000, 0.8);
     // HUD: a Bank jar appears beside the galla jar and coins hop across — a swap inside the left pan (no tilt)
     const fromP = H.jarPt("cash");
-    H.add(tl, tBank + 0.3, "bank");
+    H.add(tl, tL - 0.1, "bank");
     const toP = H.jarPt("bank");
-    L5.coinHop(tl, K, svg, fromP, toP, tBank + 0.45, { n: 3, dur: 0.6, r: 7, lift: 40 });
-    H.jars.cash.fill(tl, tBank + 0.5, 0.5);
-    // the sub-chips tick: galla 51,000 → 36,000, bank 0 → 15,000
-    cash.sub(tl, tBank + 0.35, 0, 36000, 0.8); cash.sub(tl, tBank + 0.35, 1, 15000, 0.8);
-    // "Profit? No change." — the `=` tag drops on the Profit gauge; "Cash? Also no change." — and on the Cash gauge
+    L5.coinHop(tl, K, svg, fromP, toP, tL + 0.05, { n: 3, dur: 0.6, r: 7, lift: 40 });
+    m.expr(tl, tL + 0.2, "happy"); m.look(tl, tL + 0.2, -4, -4);
+    // "Profit? No change." — the `=` tag drops on the Profit gauge; "Money? Also no change." — and on the Money gauge
     profit.eq(tl, cue("s04", "@change")); cash.eq(tl, cue("s04", "@change", 2));
-    m.expr(tl, cue("s04", "@profit"), "thinking"); m.expr(tl, cue("s04", "@cash"), "thinking");
-    // "The money just moved from one pocket to another." — a coin hops from the galla chip to the bank chip
-    const tMoved = cue("s04", "@moved");
-    L5.coinHop(tl, K, svg, [cash.x - 138 * GS, cash.y + 252 * GS], [cash.x + 138 * GS, cash.y + 252 * GS], tMoved - 0.2, { n: 2, dur: 0.7, r: 9, lift: 40 });
-    m.expr(tl, tMoved, "happy"); m.look(tl, tMoved, -4, 0);
+    m.expr(tl, cue("s04", "@profit"), "thinking"); m.expr(tl, cue("s04", "@money"), "thinking");
+    // "So the money needle doesn't move." — halo only; the needle stays dead still (the final ≥ 1.5 s of the scene)
+    cash.flash(tl, cue("s04", "@needle"), 1.2);
     // PLANT (no VO): she checks her phone — one buzz — and smiles
-    const tPh = cue("s04", "@pocket");
+    const tPh = tUp + 0.35;
     m.arm(tl, tPh - 0.3, "L", 40, 95, 0.3);
     tl.set(phoneP, { opacity: 1 }, tPh - 0.2);
     phone.wake(tl, tPh + 0.15); phone.buzz(tl, tPh + 0.2);

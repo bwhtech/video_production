@@ -128,12 +128,13 @@
     K.tex(K.shadow(eqTag, 1), K.cutRect(-34, -34, 68, 68, 1.4, 16), "pat-paper");
     K.ink(eqTag, [[-17, -9], [17, -9]], 7); K.ink(eqTag, [[-17, 11], [17, 11]], 7);
     L5.hide(eqTag);
-    // sub-chips (galla / bank) under the ticker
+    // sub-chips (Cash = galla notes / Bank) under the ticker: icon + WORD + amount (the word keeps them distinct from the Money needle)
     const subs = (o.sub || []).map((sp, i, arr) => {
-      const px = (i - (arr.length - 1) / 2) * 276, pos = K.g(body, { transform: `translate(${px} 252)` }), grp = K.g(pos, {});
-      K.tex(K.shadow(grp, 1), K.cutRect(-130, -38, 260, 76, 1.6, 20), "pat-paper");
-      if (sp.icon === "galla") { K.galla(grp, -90, 24, 0.24, {}); } else K.medallion(grp, -90, 0, 26, sp.icon);
-      const stk = K.ticker(grp, 30, 3, 1, { value: sp.value || 0, size: 46 });
+      const px = (i - (arr.length - 1) / 2) * 292, pos = K.g(body, { transform: `translate(${px} 262)` }), grp = K.g(pos, {});
+      K.tex(K.shadow(grp, 1), K.cutRect(-136, -62, 272, 124, 1.6, 22), "pat-paper");
+      if (sp.icon === "galla") { K.galla(grp, -92, 34, 0.26, {}); } else K.medallion(grp, -92, 0, 30, sp.icon);
+      if (sp.label) K.text(grp, 40, -22, sp.label, { size: 46, weight: 800 });
+      const stk = K.ticker(grp, 40, sp.label ? 24 : 3, 1, { value: sp.value || 0, size: sp.label ? 44 : 46 });
       if (sp.hidden) L5.hide(grp);
       return { g: grp, tk: stk };
     });
@@ -171,8 +172,8 @@
   L5.strip = (K, parent, o = {}) => {
     const C = K.C, st = o.stage ?? 0, GS = 0.5, R = L5.READ;
     const profit = L5.gauge(K, parent, 170, 272, GS, { label: "Profit", icon: "trending-up", band: C.saffron, max: 25000, value: R.profit[st] });
-    const cash = L5.gauge(K, parent, 440, 272, GS, { label: "Cash", icon: "coins", band: C.sky, max: 60000, value: R.galla[st] + R.bank[st],
-      sub: [{ icon: "galla", value: R.galla[st] }, { icon: "landmark", value: R.bank[st] }] });
+    const cash = L5.gauge(K, parent, 440, 272, GS, { label: "Money", icon: "coins", band: C.sky, max: 60000, value: R.galla[st] + R.bank[st],
+      sub: [{ icon: "galla", label: "Cash", value: R.galla[st] }, { icon: "landmark", label: "Bank", value: R.bank[st] }] });
     return { profit, cash, GS };
   };
 

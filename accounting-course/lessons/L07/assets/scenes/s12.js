@@ -27,17 +27,17 @@
     const SX = [760, 1220, 1680], SY = [330, 700], SW = 440, SH = 350;
     const spec = [
       { id: "A2", amt: 10000, art: (n) => K.medallion(n, -120, 12, 66, "landmark"),
-        L: ["Cash", 10000, "real_in"], R: ["Bank loan", 10000, "personal_giver"], tF: ["s12b", "@bank", 1, -0.15], t1: ["s12b", "@real", 1, 0], t2: ["s12b", "@personal", 1, 0] },
+        L: ["Cash", 10000, "real_in"], R: ["Bank loan", 10000, "personal_giver"], tL: ["s12b", "@one", 1, -0.05], tF: ["s12b", "@debit", 1, -0.1], t1: ["s12b", "@real", 1, 0], t2: ["s12b", "@personal", 1, 0] },
       { id: "A3", amt: 18000, art: (n) => K.medallion(n, -120, 12, 66, "shopping-cart"),
-        L: ["Cart & fryer", 18000, "real_in"], R: ["Cash", 18000, "real_out"], tF: ["s12b", "@cart", 1, -0.15], t1: ["s12b", "@real", 2, 0], t2: ["s12b", "@real", 3, 0] },
+        L: ["Cart & fryer", 18000, "real_in"], R: ["Cash", 18000, "real_out"], tL: ["s12b", "@two", 1, -0.05], tF: ["s12b", "@debit", 2, -0.1], t1: ["s12b", "@real", 2, 0], t2: ["s12b", "@real", 3, 0] },
       { id: "A5", amt: 9000, art: (n) => { const sm = K.g(n, { transform: "translate(-150 0)" }); K.paper(K.shadow(sm, 1), K.cutPoly([[-60, 50], [60, 50], [0, -56]], 3, 18), "#c98a3b"); K.ink(sm, [[-30, 20], [30, 20]], 5, "#8e5a22"); K.ink(sm, [[-14, -10], [14, -10]], 5, "#8e5a22"); K.coin(n, -62, 40, 24); K.coin(n, -30, 52, 20); },
-        L: ["Cash", 9000, "real_in"], R: ["Sales", 9000, "nominal_income"], tF: ["s12b", "@cash", 3, -0.15], t1: ["s12b", "@cash", 4, 0.3], t2: ["s12b", "@nominal", 1, 0] },
+        L: ["Cash", 9000, "real_in"], R: ["Sales", 9000, "nominal_income"], tL: ["s12b", "@three", 1, -0.05], tF: ["s12b", "@debit", 3, -0.1], t1: ["s12b", "@cash", 4, 0.3], t2: ["s12b", "@nominal", 1, 0] },
       { id: "A6", amt: 2000, art: (n) => K.medallion(n, -120, 12, 66, "key"),
-        L: ["Stall rent", 2000, "nominal_expense"], R: ["Cash", 2000, "real_out"], tF: ["s12c", "@rent", 1, -0.15], t1: ["s12c", "@nominal", 1, 0], t2: ["s12c", "@credit", 1, 0.3] },
+        L: ["Stall rent", 2000, "nominal_expense"], R: ["Cash", 2000, "real_out"], tL: ["s12c", "@four", 1, -0.05], tF: ["s12c", "@debit", 1, -0.1], t1: ["s12c", "@nominal", 1, 0], t2: ["s12c", "@credit", 1, 0.3] },
       { id: "A7", amt: 1500, art: (n) => { K.medallion(n, -120, 12, 66, "school"); K.icon(n, "tag", -78, 56, 44, C.ink, 2.2); },
-        L: ["School canteen", 1500, "personal_receiver"], R: ["Sales", 1500, "nominal_income"], tF: ["s12c", "@school", 1, -0.15], t1: ["s12c", "@personal", 1, 0], t2: ["s12c", "@credit", 2, 0.3] },
+        L: ["School canteen", 1500, "personal_receiver"], R: ["Sales", 1500, "nominal_income"], tL: ["s12c", "@five", 1, -0.05], tF: ["s12c", "@debit", 2, -0.1], t1: ["s12c", "@personal", 1, 0], t2: ["s12c", "@credit", 3, 0.3] },
       { id: "A9", amt: 1000, art: (n) => K.medallion(n, -120, 12, 66, "calendar-check"),
-        L: ["Cash", 1000, "real_in"], R: ["Advance from customer", 1000, "personal_giver"], tF: ["s12c", "@birthday", 1, -0.15], t1: ["s12c", "@cash", 2, 0.3], t2: ["s12c", "@giver", 1, 0] },
+        L: ["Cash", 1000, "real_in"], R: ["Advance from customer", 1000, "personal_giver"], tL: ["s12c", "@six", 1, -0.05], tF: ["s12c", "@debit", 3, -0.1], t1: ["s12c", "@cash", 2, 0.3], t2: ["s12c", "@giver", 1, 0] },
     ];
     const slips = spec.map((s, i) => {
       const pos = L7.node(board, SX[i % 3], SY[Math.floor(i / 3)]), n = K.g(pos, {}); L7.hide(n);
@@ -45,6 +45,7 @@
       K.tex(K.shadow(F, 2), K.cutRect(-SW / 2, -SH / 2, SW, SH, 2, 24), "pat-paper");
       K.paper(F, K.cutRect(-SW / 2 + 12, -SH / 2 + 12, 92, 52, 1, 14), C.saffron); K.text(F, -SW / 2 + 58, -SH / 2 + 40, s.id, { size: 40, weight: 800 });
       s.art(F);
+      const ring = K.el("path", { d: K.cutRect(-SW / 2 + 4, -SH / 2 + 4, SW - 8, SH - 8, 1.4, 24), fill: "none", stroke: C.gold, "stroke-width": 9, "stroke-linejoin": "round", style: "opacity:0" }, F);
       const tk = K.ticker(F, 84, 18, 1, { value: 0, size: 66, anchor: "middle" });
       // ---- answer face
       K.tex(K.shadow(B, 2), K.cutRect(-SW / 2, -SH / 2, SW, SH, 2, 24), "pat-paper");
@@ -58,7 +59,7 @@
       });
       L7.allow(B);
       gsap.set(B, { scaleX: 0, svgOrigin: O });
-      return { pos, n, F, B, tk, chips, s, i };
+      return { pos, n, F, B, tk, chips, s, i, ring };
     });
     // ---- veil + the pause device (above everything but the calendar)
     const veil = K.el("rect", { x: -60, y: -60, width: 2040, height: 1200, fill: C.cream, style: "opacity:0" }, svg);
@@ -91,8 +92,11 @@
     const T = (a) => cue(a[0], a[1], a[2]) + a[3];
     const totals = [[30000], [30000], [39000], [39000], [40500], [41500]];
     slips.forEach((sl, i) => {
-      const s = sl.s, tF = T(s.tF);
-      if (i > 0) tl.to(slips[i - 1].n, { opacity: 0.7, duration: 0.35, ease: "power2.inOut" }, tF - 0.05);
+      const s = sl.s, tF = T(s.tF), tL = T(s.tL);
+      // the number word ("One." … "Six.") lights this slip (gold ring + a small pop); the previous answer card dims
+      if (i > 0) tl.to(slips[i - 1].n, { opacity: 0.7, duration: 0.35, ease: "power2.inOut" }, tL - 0.05);
+      tl.to(sl.ring, { opacity: 1, duration: 0.2, ease: "power2.out" }, tL);
+      K.pulseNode(tl, sl.n, tL, 1.05);
       tl.to(sl.F, { scaleX: 0, svgOrigin: O, duration: 0.14, ease: "power2.in" }, tF);
       tl.to(sl.B, { scaleX: 1, svgOrigin: O, duration: 0.18, ease: "power2.out" }, tF + 0.14);
       L7.drop(tl, sl.chips[0].n, T(s.t1), { dur: 0.28 }); L7.drop(tl, sl.chips[1].n, T(s.t2), { dur: 0.28 });

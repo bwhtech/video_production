@@ -126,6 +126,16 @@ def snap_cut(path, words, i):
     k = best_mid if best >= 3 else int(np.argmin(frames))                # ≥ 30 ms of silence, else quietest frame
     return round(lo + (k * hop + hop / 2) / sr, 3)
 
+# ---- thinking beat after questions (see lessons/shared/patch_question_beat.py)
+AUTO_Q_BEAT_LANGS = {"hi", "en"}
+Q_LIST_NEXT = {"two", "three", "four", "five", "six", "दो", "तीन", "चार", "पाँच", "छह"}
+
+def _cut_in_speech(path, c):
+    import numpy as np
+    x = _pcm(path); seg_rms = float(np.sqrt(np.mean(x ** 2))) + 1e-9
+    i = int(c * 16000); w = x[max(0, i - 400):i + 400]
+    return float(np.sqrt(np.mean(w ** 2))) / seg_rms > 0.12
+
 def build_timing():
     segs = json.loads(SEGS_FILE.read_text())
     anchors = json.loads(ANCHORS_FILE.read_text()) if ANCHORS_FILE.exists() else {}
@@ -153,6 +163,21 @@ def build_timing():
                         continue  # a pause after the last word is just gap_after
                     c = snap_cut(mp3, words, i)
                     cuts.append((round(c, 3), secs, i))
+                if LANG in AUTO_Q_BEAT_LANGS:          # thinking beat after a question that runs into the next words
+                    have = {k for _, _, k in cuts}
+                    for k in range(len(words) - 1):
+                        if k in have or not words[k]["w"].rstrip("\"'”’").endswith("?"):
+                            continue
+                        if words[k + 1]["s"] - words[k]["e"] >= 0.35:
+                            continue
+                        nxt = _norm(words[k + 1]["w"])
+                        nxt2 = _norm(words[k + 2]["w"]) if k + 2 < len(words) else ""
+                        listy = nxt in Q_LIST_NEXT or (nxt in ("जवाब", "answers") and nxt2 in ("अगले", "at", "next"))
+                        secs = 1.8 if listy else 0.6
+                        c = snap_cut(mp3, words, k)
+                        if _cut_in_speech(mp3, c):
+                            continue                   # no clean silence: leave the take as it is rather than chop a word
+                        cuts.append((round(c, 3), secs, k))
                 cuts.sort()
                 shift = lambda r: r + sum(sec for c, sec, _ in cuts if c <= r)
                 # words shift by POSITION (everything after word i), not by their drifting timestamps

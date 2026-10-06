@@ -1,6 +1,6 @@
 // s02 — Last time: Lesson 3's answers. Three question cards (the first frame is what s01t's page shows, via <use #s02-era1>)
 // flip to their answers: each answer is a tiny scale (always level). Card 3 also marks "loan repayment is not an expense".
-// Out: default torn-paper wipe into s03.
+// Out: default torn-paper wipe into s04 (L3 Checkpoint 1 is answered in L3 itself, so there is no solution walk here).
 (function () {
   window.OWN_SEAM_IN.s02 = true;           // s01t pushes into this scene's first frame, so no wipe at its start
 

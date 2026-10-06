@@ -12,7 +12,7 @@
 
     // ---- tile 1: the two needles (no numbers — they start together, then swing apart)
     const g1 = L5.gauge(K, t1, -131, 80, 0.6, { label: "Profit", icon: "trending-up", band: C.saffron, max: 25000, value: 12500, tickerHidden: true });
-    const g2 = L5.gauge(K, t1, 131, 80, 0.6, { label: "Cash", icon: "coins", band: C.sky, max: 60000, value: 30000, tickerHidden: true });
+    const g2 = L5.gauge(K, t1, 131, 80, 0.6, { label: "Money", icon: "coins", band: C.sky, max: 60000, value: 30000, tickerHidden: true });
     // ---- tile 2: a tumbler ✓ beside a coin + clock
     const row = L5.tumblerRow(K, t2, -105, 170, 2.4, 3, 40);
     const chk = L5.hide(L5.node(K, t2, -105, -90)); K.medallion(chk, 0, 0, 52, "check");

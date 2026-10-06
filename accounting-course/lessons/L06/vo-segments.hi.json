@@ -60,12 +60,6 @@
   "text": "दो हज़ार रुपये। {@six}छह हज़ार का bill, {@four}चार हज़ार चुकाए।"
  },
  {
-  "id": "s02g",
-  "scene": 2,
-  "gap_after": 0.8,
-  "text": "और {@aman's}अमन की samosa {@challenge}challenge? {@only}सिर्फ़ {@cash}cash sale और {@rent}किराए ने {@both}दोनों needles को हिलाया। [warmly] {@aman's#2}अमन का profit अब तक: {@eight}साढ़े आठ हज़ार {@rupees}रुपये।"
- },
- {
   "id": "s03a",
   "scene": 3,
   "gap_after": 0.6,

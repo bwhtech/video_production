@@ -115,617 +115,669 @@ The first is Profit.
 It moves when Meera earns money, or uses
 
 30
-00:01:04,633 --> 00:01:05,193
+00:01:04,593 --> 00:01:05,353
 it up.
 
 31
-00:01:05,933 --> 00:01:08,893
-The second is Cash — everything in the galla,
+00:01:05,933 --> 00:01:08,373
+The second is Money — everything in the
 
 32
-00:01:09,053 --> 00:01:10,573
-plus everything in the bank.
+00:01:08,413 --> 00:01:10,733
+galla, plus everything in the bank.
 
 33
-00:01:11,031 --> 00:01:13,991
+00:01:11,187 --> 00:01:14,147
 Right now, profit reads thirteen thousand.
 
 34
-00:01:14,191 --> 00:01:16,391
-Cash reads fifty-one thousand.
+00:01:14,227 --> 00:01:16,547
+Money reads fifty-one thousand.
 
 35
-00:01:16,471 --> 00:01:18,951
+00:01:16,627 --> 00:01:19,027
 It's bigger, because it also holds Meera's
 
 36
-00:01:19,111 --> 00:01:20,711
+00:01:19,107 --> 00:01:20,867
 savings and Ravi Mama's loan.
 
 37
-00:01:21,271 --> 00:01:23,031
+00:01:21,427 --> 00:01:23,187
 Most people think these two needles move
 
 38
-00:01:23,111 --> 00:01:23,831
+00:01:23,267 --> 00:01:23,987
 together.
 
 39
-00:01:24,071 --> 00:01:24,951
+00:01:24,227 --> 00:01:25,027
 Let's watch.
 
 40
-00:01:26,002 --> 00:01:28,002
+00:01:26,080 --> 00:01:27,840
 First, rewind one day.
 
 41
-00:01:28,242 --> 00:01:29,522
+00:01:28,240 --> 00:01:29,680
 April fifteenth.
 
 42
-00:01:29,762 --> 00:01:31,922
+00:01:29,760 --> 00:01:31,920
 Meera carries fifteen thousand rupees from
 
 43
-00:01:32,002 --> 00:01:33,122
+00:01:32,000 --> 00:01:33,320
 the galla to the bank.
 
 44
-00:01:33,522 --> 00:01:34,322
+00:01:33,520 --> 00:01:34,320
 Profit?
 
 45
-00:01:34,402 --> 00:01:35,162
+00:01:34,400 --> 00:01:35,160
 No change.
 
 46
-00:01:35,362 --> 00:01:36,042
-Cash?
+00:01:35,360 --> 00:01:35,760
+Money?
 
 47
-00:01:36,242 --> 00:01:37,322
+00:01:36,160 --> 00:01:37,280
 Also no change.
 
 48
-00:01:38,022 --> 00:01:39,942
-The money just moved from one pocket to
+00:01:38,020 --> 00:01:40,100
+But in the books, these are two different
 
 49
-00:01:40,142 --> 00:01:40,662
-another.
+00:01:40,380 --> 00:01:40,860
+accounts.
 
 50
-00:01:41,708 --> 00:01:43,748
-Now, April sixteenth.
+00:01:41,060 --> 00:01:42,980
+Cash is the notes in the galla.
 
 51
-00:01:43,948 --> 00:01:45,068
-Infotech's tab.
+00:01:43,220 --> 00:01:45,460
+Bank is money the bank keeps for her, and
 
 52
-00:01:45,308 --> 00:01:46,988
-Which two things changed?
+00:01:45,540 --> 00:01:47,300
+gives back whenever she asks.
 
 53
-00:01:48,958 --> 00:01:51,358
-Sales went up by six thousand.
+00:01:47,960 --> 00:01:49,880
+Cash went down fifteen thousand.
 
 54
-00:01:51,398 --> 00:01:53,598
-The chai has been drunk, so Meera has earned
+00:01:50,360 --> 00:01:52,360
+Bank went up fifteen thousand.
 
 55
-00:01:53,678 --> 00:01:54,238
-it.
+00:01:52,440 --> 00:01:54,360
+So the money needle doesn't move.
 
 56
-00:01:54,878 --> 00:01:57,318
-But on the left, no cash came in.
+00:01:56,408 --> 00:01:58,448
+Now, April sixteenth.
 
 57
-00:01:57,558 --> 00:02:00,278
-Instead, Infotech now owes the stall six
+00:01:58,648 --> 00:01:59,768
+Infotech's tab.
 
 58
-00:02:00,358 --> 00:02:01,238
-thousand rupees.
+00:02:00,008 --> 00:02:01,688
+Which two things changed?
 
 59
-00:02:01,718 --> 00:02:04,278
-Money that customers owe you is an asset,
+00:02:03,658 --> 00:02:06,058
+Sales went up by six thousand.
 
 60
-00:02:04,438 --> 00:02:05,798
-called a receivable.
+00:02:06,098 --> 00:02:08,378
+The chai has been drunk, so Meera has earned
 
 61
-00:02:06,254 --> 00:02:08,654
-So the profit needle jumps, from thirteen
+00:02:08,458 --> 00:02:09,018
+it.
 
 62
-00:02:08,734 --> 00:02:10,974
-thousand to nineteen thousand.
+00:02:09,698 --> 00:02:12,098
+But on the left, no money came in.
 
 63
-00:02:11,054 --> 00:02:11,934
-And the cash needle?
+00:02:12,378 --> 00:02:14,978
+Instead, Infotech now owes the stall six
 
 64
-00:02:12,414 --> 00:02:13,934
-It doesn't move at all.
+00:02:15,058 --> 00:02:16,098
+thousand rupees.
 
 65
-00:02:15,542 --> 00:02:17,942
-Revenue counts when it's earned — when the
+00:02:16,338 --> 00:02:18,978
+Money that customers owe you is an asset,
 
 66
-00:02:18,102 --> 00:02:21,062
-chai is drunk — not when the money arrives.
+00:02:19,138 --> 00:02:20,418
+called a receivable.
 
 67
-00:02:21,702 --> 00:02:23,822
-And expenses count when they're incurred
+00:02:20,876 --> 00:02:23,356
+So the profit needle jumps, from thirteen
 
 68
-00:02:24,142 --> 00:02:26,302
-— when the thing is used up — not when they're
+00:02:23,516 --> 00:02:25,676
+thousand to nineteen thousand.
 
 69
-00:02:26,462 --> 00:02:27,102
-paid.
+00:02:25,756 --> 00:02:26,756
+And the money needle?
 
 70
-00:02:27,882 --> 00:02:29,962
-This idea is called accrual.
+00:02:27,036 --> 00:02:28,556
+It doesn't move at all.
 
 71
-00:02:31,926 --> 00:02:33,446
-April twentieth.
+00:02:30,164 --> 00:02:32,564
+Revenue counts when it's earned — when the
 
 72
-00:02:33,526 --> 00:02:35,926
-Meera pays Gopal five thousand rupees of
+00:02:32,724 --> 00:02:35,684
+chai is drunk — not when the money arrives.
 
 73
-00:02:36,006 --> 00:02:38,406
-the eight thousand she owes him for milk.
+00:02:36,324 --> 00:02:38,444
+And expenses count when they're incurred
 
 74
-00:02:38,486 --> 00:02:40,246
-Meera's sure about this one.
+00:02:38,764 --> 00:02:40,924
+— when the thing is used up — not when they're
 
 75
-00:02:40,326 --> 00:02:42,966
-Money left the galla, so it's an expense.
+00:02:41,084 --> 00:02:41,724
+paid.
 
 76
-00:02:43,584 --> 00:02:44,144
-Nope.
+00:02:42,504 --> 00:02:44,584
+This idea is called accrual.
 
 77
-00:02:44,384 --> 00:02:46,944
-That milk came in as stock, and Gopal became
+00:02:46,548 --> 00:02:48,068
+April twentieth.
 
 78
-00:02:46,984 --> 00:02:48,144
-a liability.
+00:02:48,148 --> 00:02:50,548
+Meera pays Gopal five thousand rupees of
 
 79
-00:02:48,304 --> 00:02:51,104
-Today, Meera is only paying down that debt.
+00:02:50,628 --> 00:02:53,028
+the eight thousand she owes him for milk.
 
 80
-00:02:51,184 --> 00:02:52,544
-So which needle moves?
+00:02:53,108 --> 00:02:54,868
+Meera's sure about this one.
 
 81
-00:02:54,514 --> 00:02:55,674
-Only cash.
+00:02:54,948 --> 00:02:57,588
+Money left the galla, so it's an expense.
 
 82
-00:02:55,874 --> 00:02:57,394
-Down five thousand.
-
-83
-00:02:57,594 --> 00:02:59,634
-Profit stays at nineteen thousand.
-
-84
-00:03:00,214 --> 00:03:02,294
-The payment shrinks a liability.
-
-85
-00:03:02,974 --> 00:03:05,374
-Money the stall owes a supplier is a payable
-
-86
-00:03:05,774 --> 00:03:07,534
-— the mirror of a receivable.
-
-87
-00:03:08,800 --> 00:03:10,400
-April twenty-second.
-
-88
-00:03:10,480 --> 00:03:12,320
-A customer pays four thousand rupees in
-
-89
-00:03:12,400 --> 00:03:15,360
-advance, for a catering order on May fifth.
-
-90
-00:03:15,900 --> 00:03:17,220
-Meera's quick this time.
-
-91
-00:03:17,460 --> 00:03:18,660
-Money in from a customer?
-
-92
-00:03:19,060 --> 00:03:21,620
-Revenue — straight into the profit pocket.
-
-93
-00:03:22,538 --> 00:03:23,058
+00:02:58,205 --> 00:02:58,765
 Nope.
 
-94
-00:03:23,258 --> 00:03:25,378
-Meera hasn't made a single cup yet.
+83
+00:02:59,005 --> 00:03:01,565
+That milk came in as stock, and Gopal became
 
-95
-00:03:25,578 --> 00:03:27,738
-Until May fifth, she owes that customer
+84
+00:03:01,605 --> 00:03:02,765
+a liability.
 
-96
-00:03:27,818 --> 00:03:30,138
-an event — or their money back.
+85
+00:03:02,925 --> 00:03:05,725
+Today, Meera is only paying down that debt.
 
-97
-00:03:30,678 --> 00:03:33,278
-An advance is a liability, not revenue.
+86
+00:03:05,805 --> 00:03:07,165
+So which needle moves?
 
-98
-00:03:33,598 --> 00:03:34,478
-Not yet.
+87
+00:03:09,136 --> 00:03:10,656
+Only the money needle.
 
-99
-00:03:35,318 --> 00:03:37,078
-Meera, which needle moves?
+88
+00:03:10,896 --> 00:03:12,336
+Down five thousand.
 
-100
-00:03:39,035 --> 00:03:40,115
-Only cash.
-
-101
-00:03:40,315 --> 00:03:41,675
-Up four thousand.
-
-102
-00:03:41,755 --> 00:03:43,995
+89
+00:03:12,536 --> 00:03:14,736
 Profit stays at nineteen thousand.
 
+90
+00:03:15,276 --> 00:03:17,556
+The payment shrinks a liability.
+
+91
+00:03:18,276 --> 00:03:20,636
+Money the stall owes a supplier is a payable
+
+92
+00:03:21,036 --> 00:03:22,876
+— the mirror of a receivable.
+
+93
+00:03:24,127 --> 00:03:25,727
+April twenty-second.
+
+94
+00:03:25,807 --> 00:03:27,647
+A customer pays four thousand rupees in
+
+95
+00:03:27,727 --> 00:03:30,687
+advance, for a catering order on May fifth.
+
+96
+00:03:31,227 --> 00:03:32,547
+Meera's quick this time.
+
+97
+00:03:32,787 --> 00:03:33,987
+Money in from a customer?
+
+98
+00:03:34,387 --> 00:03:36,947
+Revenue — straight into the profit pocket.
+
+99
+00:03:37,864 --> 00:03:38,384
+Nope.
+
+100
+00:03:38,584 --> 00:03:40,704
+Meera hasn't made a single cup yet.
+
+101
+00:03:40,904 --> 00:03:43,064
+Until May fifth, she owes that customer
+
+102
+00:03:43,144 --> 00:03:45,464
+an event — or their money back.
+
 103
-00:03:45,246 --> 00:03:47,086
-Now you, on your own.
+00:03:46,004 --> 00:03:48,604
+An advance is a liability, not revenue.
 
 104
-00:03:47,406 --> 00:03:48,926
-April twenty-fifth.
+00:03:48,924 --> 00:03:49,804
+Not yet.
 
 105
-00:03:49,046 --> 00:03:51,086
-Infotech pays four thousand rupees of its
+00:03:50,644 --> 00:03:52,404
+Meera, which needle moves?
 
 106
-00:03:51,166 --> 00:03:53,046
-tab, by UPI.
+00:03:54,362 --> 00:03:56,042
+Only the money needle.
 
 107
-00:03:53,326 --> 00:03:54,046
-Profit?
+00:03:56,162 --> 00:03:57,562
+Up four thousand.
 
 108
-00:03:54,286 --> 00:03:55,006
-Cash?
+00:03:57,762 --> 00:03:59,882
+Profit stays at nineteen thousand.
 
 109
-00:03:58,164 --> 00:04:00,564
-Cash goes up by four thousand, straight
+00:04:01,148 --> 00:04:02,988
+Now you, on your own.
 
 110
-00:04:00,644 --> 00:04:01,604
-into the bank.
+00:04:03,308 --> 00:04:04,828
+April twenty-fifth.
 
 111
-00:04:01,804 --> 00:04:03,204
-Profit doesn't move.
+00:04:04,948 --> 00:04:06,988
+Infotech pays four thousand rupees of its
 
 112
-00:04:03,284 --> 00:04:06,164
-Meera earned that money back on April sixteenth.
+00:04:07,068 --> 00:04:08,948
+tab, by UPI.
 
 113
-00:04:06,324 --> 00:04:08,404
-Today, she's only collecting it.
+00:04:09,228 --> 00:04:09,948
+Profit?
 
 114
-00:04:08,944 --> 00:04:11,944
-The receivable shrinks, and the bank grows.
+00:04:10,188 --> 00:04:10,828
+Money?
 
 115
-00:04:13,208 --> 00:04:15,528
-Since April fifteenth, the profit needle
+00:04:13,987 --> 00:04:16,547
+Money goes up by four thousand — straight
 
 116
-00:04:15,608 --> 00:04:18,688
-moved once — on the day no money came in.
+00:04:16,627 --> 00:04:17,347
+into the bank.
 
 117
-00:04:19,568 --> 00:04:21,888
-The cash needle moved three times — and
+00:04:17,507 --> 00:04:19,227
+The galla never even sees it.
 
 118
-00:04:21,968 --> 00:04:23,808
-not one of those was profit.
+00:04:19,827 --> 00:04:21,187
+Profit doesn't move.
 
 119
-00:04:24,360 --> 00:04:26,840
-Profit: nineteen thousand rupees.
+00:04:21,427 --> 00:04:24,267
+Meera earned that money back on April sixteenth.
 
 120
-00:04:27,080 --> 00:04:29,480
-Cash: fifty-four thousand.
+00:04:24,467 --> 00:04:26,347
+Today, she's only collecting it.
 
 121
-00:04:30,160 --> 00:04:31,280
-Two needles.
+00:04:27,047 --> 00:04:30,007
+The receivable shrinks, and the bank grows.
 
 122
-00:04:31,400 --> 00:04:32,960
-Two different stories.
+00:04:31,260 --> 00:04:33,580
+Since April fifteenth, the profit needle
 
 123
-00:04:33,728 --> 00:04:37,008
-Cash basis counts money only when it moves.
+00:04:33,660 --> 00:04:36,740
+moved once — on the day no money came in.
 
 124
-00:04:37,628 --> 00:04:40,228
-Accrual basis counts revenue when it's earned,
+00:04:37,620 --> 00:04:39,940
+The money needle moved three times — and
 
 125
-00:04:40,268 --> 00:04:42,468
-and expenses when they're incurred.
+00:04:40,020 --> 00:04:41,860
+not one of those was profit.
 
 126
-00:04:43,248 --> 00:04:45,408
-Businesses use accrual, because it shows
+00:04:42,412 --> 00:04:44,972
+Profit: nineteen thousand rupees.
 
 127
-00:04:45,488 --> 00:04:47,568
-what was really earned — even while the
+00:04:45,212 --> 00:04:47,532
+Money: fifty-four thousand.
 
 128
-00:04:47,648 --> 00:04:49,168
-money is still on its way.
+00:04:48,212 --> 00:04:49,332
+Two needles.
 
 129
-00:04:50,438 --> 00:04:52,118
-So — two needles.
+00:04:49,412 --> 00:04:50,772
+Two different stories.
 
 130
-00:04:52,358 --> 00:04:54,838
-Earned isn't the same as received.
+00:04:51,518 --> 00:04:54,798
+Cash basis counts money only when it moves.
 
 131
-00:04:55,078 --> 00:04:57,398
-Paid isn't the same as used up.
+00:04:55,418 --> 00:04:58,018
+Accrual basis counts revenue when it's earned,
 
 132
-00:04:57,798 --> 00:04:59,878
-Profit is not cash.
+00:04:58,058 --> 00:05:00,258
+and expenses when they're incurred.
 
 133
-00:05:01,022 --> 00:05:01,702
-Your turn.
+00:05:01,038 --> 00:05:03,198
+Businesses use accrual, because it shows
 
 134
-00:05:01,902 --> 00:05:02,902
-Three quick ones.
+00:05:03,278 --> 00:05:05,358
+what was really earned — even while the
 
 135
-00:05:03,102 --> 00:05:03,582
-One.
+00:05:05,438 --> 00:05:06,958
+money is still on its way.
 
 136
-00:05:03,822 --> 00:05:05,742
-The four-thousand-rupee catering advance
+00:05:08,229 --> 00:05:09,909
+So — two needles.
 
 137
-00:05:06,062 --> 00:05:07,422
-— is it revenue in April?
+00:05:10,149 --> 00:05:12,629
+Earned isn't the same as received.
 
 138
-00:05:07,902 --> 00:05:08,342
-Two.
+00:05:12,869 --> 00:05:15,189
+Paid isn't the same as used up.
 
 139
-00:05:08,542 --> 00:05:10,942
-Paying Gopal — is that an expense?
+00:05:15,589 --> 00:05:17,669
+Profit is not cash.
 
 140
-00:05:11,182 --> 00:05:11,742
-Three.
+00:05:18,813 --> 00:05:19,493
+Your turn.
 
 141
-00:05:11,982 --> 00:05:14,702
-After the UPI payment, how much does Infotech
+00:05:19,693 --> 00:05:20,693
+Three quick ones.
 
 142
-00:05:14,782 --> 00:05:15,822
-still owe Meera?
+00:05:20,893 --> 00:05:21,373
+One.
 
 143
-00:05:16,062 --> 00:05:18,222
-Answers at the start of the next lesson.
+00:05:21,613 --> 00:05:23,533
+The four-thousand-rupee catering advance
 
 144
-00:05:19,689 --> 00:05:21,563
-And now — Checkpoint two.
+00:05:23,853 --> 00:05:25,213
+— is it revenue in April?
 
 145
-00:05:21,803 --> 00:05:23,643
-Back to Aman's samosa cart.
+00:05:25,693 --> 00:05:26,133
+Two.
 
 146
-00:05:23,763 --> 00:05:24,923
-Five things happen.
+00:05:26,333 --> 00:05:28,733
+Paying Gopal — is that an expense?
 
 147
-00:05:25,003 --> 00:05:27,083
-For each one, write down what it does to
+00:05:28,973 --> 00:05:29,533
+Three.
 
 148
-00:05:27,323 --> 00:05:29,083
-profit, and to cash.
+00:05:29,773 --> 00:05:32,493
+After the UPI payment, how much does Infotech
 
 149
-00:05:29,544 --> 00:05:30,144
-One.
+00:05:32,573 --> 00:05:33,613
+still owe Meera?
 
 150
-00:05:30,344 --> 00:05:32,904
-Cash sales of nine thousand rupees.
+00:05:33,853 --> 00:05:36,013
+Answers at the start of the next lesson.
 
 151
-00:05:33,064 --> 00:05:33,544
-Two.
+00:05:37,480 --> 00:05:39,354
+And now — Checkpoint two.
 
 152
-00:05:33,624 --> 00:05:36,344
-He pays two thousand rupees of stall rent.
+00:05:39,594 --> 00:05:41,434
+Back to Aman's samosa cart.
 
 153
-00:05:36,504 --> 00:05:36,984
-Three.
+00:05:41,554 --> 00:05:42,714
+Five things happen.
 
 154
-00:05:37,064 --> 00:05:39,144
-He supplies a school canteen with fifteen
+00:05:42,794 --> 00:05:44,874
+For each one, write down what it does to
 
 155
-00:05:39,224 --> 00:05:41,864
-hundred rupees of samosas, on credit.
+00:05:45,114 --> 00:05:46,874
+profit, and to cash.
 
 156
-00:05:41,944 --> 00:05:42,584
-Four.
-
-157
-00:05:42,664 --> 00:05:45,464
-He pays Sharma Kirana two thousand rupees.
-
-158
-00:05:45,704 --> 00:05:46,264
-Five.
-
-159
-00:05:46,344 --> 00:05:48,664
-A customer gives him a thousand-rupee advance,
-
-160
-00:05:48,704 --> 00:05:50,584
-for a birthday party next month.
-
-161
-00:05:50,704 --> 00:05:53,144
-Pause the video now, and try all five.
-
-162
-00:05:56,307 --> 00:05:56,707
-Ready?
-
-163
-00:05:57,267 --> 00:05:57,747
+00:05:47,335 --> 00:05:47,935
 One.
 
-164
-00:05:57,987 --> 00:06:01,187
-Profit and cash both go up nine thousand.
+157
+00:05:48,135 --> 00:05:50,695
+Cash sales of nine thousand rupees.
 
-165
-00:06:01,307 --> 00:06:01,507
+158
+00:05:50,855 --> 00:05:51,335
 Two.
 
-166
-00:06:01,907 --> 00:06:04,147
-Both go down two thousand.
+159
+00:05:51,415 --> 00:05:54,135
+He pays two thousand rupees of stall rent.
 
-167
-00:06:04,307 --> 00:06:04,867
+160
+00:05:54,295 --> 00:05:54,775
 Three.
 
-168
-00:06:05,067 --> 00:06:06,707
-Profit up fifteen hundred.
+161
+00:05:54,855 --> 00:05:56,935
+He supplies a school canteen with fifteen
 
-169
-00:06:06,907 --> 00:06:08,227
-Cash, nothing.
+162
+00:05:57,015 --> 00:05:59,655
+hundred rupees of samosas, on credit.
 
-170
-00:06:08,307 --> 00:06:09,027
+163
+00:05:59,735 --> 00:06:00,375
 Four.
 
-171
-00:06:09,187 --> 00:06:10,707
-Cash down two thousand.
+164
+00:06:00,455 --> 00:06:03,255
+He pays Sharma Kirana two thousand rupees.
 
-172
-00:06:10,947 --> 00:06:13,587
-Profit, nothing — it's a debt being paid.
-
-173
-00:06:13,667 --> 00:06:14,467
+165
+00:06:03,495 --> 00:06:04,055
 Five.
 
+166
+00:06:04,135 --> 00:06:06,455
+A customer gives him a thousand-rupee advance,
+
+167
+00:06:06,495 --> 00:06:08,375
+for a birthday party next month.
+
+168
+00:06:08,495 --> 00:06:10,935
+Pause the video now, and try all five.
+
+169
+00:06:14,097 --> 00:06:14,497
+Ready?
+
+170
+00:06:14,977 --> 00:06:15,457
+One.
+
+171
+00:06:15,697 --> 00:06:17,537
+Nine thousand of cash sales.
+
+172
+00:06:17,697 --> 00:06:20,737
+Profit and cash both go up nine thousand.
+
+173
+00:06:20,817 --> 00:06:21,457
+Two.
+
 174
-00:06:14,627 --> 00:06:16,067
-Cash up one thousand.
+00:06:21,497 --> 00:06:23,297
+Two thousand of stall rent.
 
 175
-00:06:16,307 --> 00:06:18,627
-Profit, nothing — it's an advance.
+00:06:23,417 --> 00:06:25,377
+Both go down two thousand.
 
 176
-00:06:19,267 --> 00:06:21,627
-Aman's profit so far: eight thousand five
+00:06:25,537 --> 00:06:26,017
+Three.
 
 177
-00:06:21,707 --> 00:06:22,667
-hundred rupees.
+00:06:26,057 --> 00:06:27,937
+Fifteen hundred of samosas to the school
 
 178
-00:06:24,256 --> 00:06:26,936
-Next time — remember that bank deposit?
+00:06:28,017 --> 00:06:29,297
+canteen, on credit.
 
 179
-00:06:27,216 --> 00:06:28,816
-Meera's phone buzzed.
+00:06:29,697 --> 00:06:31,457
+Profit up fifteen hundred.
 
 180
-00:06:28,896 --> 00:06:31,296
-Your account is credited with fifteen thousand
+00:06:31,657 --> 00:06:32,977
+Cash, nothing.
 
 181
-00:06:31,376 --> 00:06:32,176
-rupees.
+00:06:33,057 --> 00:06:33,377
+Four.
 
 182
-00:06:32,216 --> 00:06:33,296
-Credited!
+00:06:33,697 --> 00:06:35,857
+Paying Sharma Kirana two thousand.
 
 183
-00:06:33,456 --> 00:06:34,976
+00:06:36,017 --> 00:06:37,537
+Cash down two thousand.
+
+184
+00:06:37,737 --> 00:06:40,417
+Profit, nothing — it's a debt being paid.
+
+185
+00:06:40,897 --> 00:06:41,617
+Five.
+
+186
+00:06:41,657 --> 00:06:43,577
+The thousand-rupee birthday advance.
+
+187
+00:06:43,777 --> 00:06:45,457
+Cash up one thousand.
+
+188
+00:06:45,657 --> 00:06:47,777
+Profit, nothing — it isn't earned yet.
+
+189
+00:06:48,777 --> 00:06:51,337
+Aman's profit so far: eight thousand five
+
+190
+00:06:51,417 --> 00:06:52,377
+hundred rupees.
+
+191
+00:06:53,888 --> 00:06:56,568
+Next time — remember that bank deposit?
+
+192
+00:06:56,848 --> 00:06:58,448
+Meera's phone buzzed.
+
+193
+00:06:58,528 --> 00:07:00,928
+Your account is credited with fifteen thousand
+
+194
+00:07:01,008 --> 00:07:01,808
+rupees.
+
+195
+00:07:01,848 --> 00:07:02,928
+Credited!
+
+196
+00:07:03,088 --> 00:07:04,608
 Great news… right?

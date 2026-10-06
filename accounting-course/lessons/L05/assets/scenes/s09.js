@@ -1,5 +1,5 @@
-// s09 — Two needles, two stories. Two hero gauges (Profit ₹19,000 · Cash ₹54,000) + the Scale HUD (final state, level). A strip of five transaction
-// slips starting at T8 (15 · 16 · 20 · 22 · 25), each with a Profit socket and a Cash socket: the Profit dot lights once (slip 2), Cash dots three times
+// s09 — Two needles, two stories. Two hero gauges (Profit ₹19,000 · Money ₹54,000) + the Scale HUD (final state, level). A strip of five transaction
+// slips starting at T8 (15 · 16 · 20 · 22 · 25), each with a Profit socket and a Money socket: the Profit dot lights once (slip 2), Money dots three times
 // (slips 3–5). Then the gauges slide up and two cards drop in: `Cash basis` (greyed to 50 %) and `Accrual basis` with the `Accrual ✓` chip.
 // Camera still. Out: default torn-paper wipe into s10.
 (function () {
@@ -11,10 +11,10 @@
     // ---- hero gauges inside a two-layer rig (so they can scale AND slide up as one move)
     const lay = L5.layers(K, svg), GS = 0.95, GYY = 417;
     const profit = L5.gauge(K, lay.sc, 520, GYY, GS, { label: "Profit", icon: "trending-up", band: C.saffron, max: 25000, value: 19000 });
-    const cash = L5.gauge(K, lay.sc, 1030, GYY, GS, { label: "Cash", icon: "coins", band: C.sky, max: 60000, value: 54000,
-      sub: [{ icon: "galla", value: 35000 }, { icon: "landmark", value: 19000 }] });
+    const cash = L5.gauge(K, lay.sc, 1030, GYY, GS, { label: "Money", icon: "coins", band: C.sky, max: 60000, value: 54000,
+      sub: [{ icon: "galla", label: "Cash", value: 35000 }, { icon: "landmark", label: "Bank", value: 19000 }] });
 
-    // ---- the five transaction slips (T8 · T9 · T10 · T11 · T12), each with two sockets (Profit · Cash)
+    // ---- the five transaction slips (T8 · T9 · T10 · T11 · T12), each with two sockets (Profit · Money)
     const SY = 860, SXS = [0, 1, 2, 3, 4].map((i) => 960 + (i - 2) * 340);
     const mkSocket = (parent, x, y, iconName) => {
       const g = K.g(parent, { transform: `translate(${x} ${y})` });
@@ -58,7 +58,7 @@
     const H = L5.hud(K, svg, tl, { stage: 5 });
 
     // ======================================================================================= timeline
-    // s09a — "Since April fifteenth, the profit needle moved once … the cash needle moved three times"
+    // s09a — "Since April fifteenth, the profit needle moved once … the money needle moved three times"
     const tFif = cue("s09a", "@fifteenth");
     slips.forEach((s, i) => L5.drop(tl, K, s.n, tFif + i * 0.3, { dur: 0.36 }));
     profit.flash(tl, cue("s09a", "@needle"), 0.6);
@@ -68,9 +68,9 @@
     L5.drop(tl, K, slips[2].sC, cue("s09a", "@moved", 2), { dur: 0.3 });
     L5.drop(tl, K, slips[3].sC, cue("s09a", "@three"), { dur: 0.3 });
     L5.drop(tl, K, slips[4].sC, cue("s09a", "@times"), { dur: 0.3 });
-    // s09b — "Profit: nineteen thousand rupees. Cash: fifty-four thousand." (no re-count — a soft highlight)
+    // s09b — "Profit: nineteen thousand rupees. Money: fifty-four thousand." (no re-count — a soft highlight)
     profit.pulse(tl, cue("s09b", "@profit")); profit.flash(tl, cue("s09b", "@profit"), 0.7);
-    cash.pulse(tl, cue("s09b", "@cash")); cash.flash(tl, cue("s09b", "@cash"), 0.7);
+    cash.pulse(tl, cue("s09b", "@money")); cash.flash(tl, cue("s09b", "@money"), 0.7);
     // s09c — the strip lifts away, the gauges slide up, two cards drop in
     const tCB = cue("s09c", "@cash");
     slips.forEach((s, i) => L5.lift(tl, K, s.n, tCB - 0.45 + i * 0.05));

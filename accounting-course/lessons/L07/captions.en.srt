@@ -707,85 +707,125 @@ and the golden rule behind each line.
 Pause the video, and try them now.
 
 178
-00:06:50,779 --> 00:06:51,179
+00:06:50,779 --> 00:06:51,099
 Ready?
 
 179
-00:06:51,659 --> 00:06:54,859
-The bank loan: debit Cash, Real, it comes
+00:06:51,659 --> 00:06:51,979
+One.
 
 180
-00:06:54,939 --> 00:06:55,499
-in.
+00:06:52,219 --> 00:06:54,219
+The ten-thousand-rupee bank loan.
 
 181
-00:06:55,699 --> 00:06:58,459
-Credit Bank loan, Personal, the giver.
+00:06:54,619 --> 00:06:57,339
+Debit Cash, Real, it comes in.
 
 182
-00:06:58,539 --> 00:07:02,099
-The cart and fryer: debit Cart, credit Cash.
+00:06:57,539 --> 00:07:00,379
+Credit Bank loan, Personal, the giver.
 
 183
-00:07:02,299 --> 00:07:03,979
-Real in, Real out.
+00:07:00,699 --> 00:07:01,139
+Two.
 
 184
-00:07:04,219 --> 00:07:07,499
-Cash sales: debit Cash, credit Sales, a
+00:07:01,339 --> 00:07:03,819
+The cart and fryer, eighteen thousand.
 
 185
-00:07:07,579 --> 00:07:08,619
-Nominal income.
+00:07:03,899 --> 00:07:05,899
+Debit Cart, credit Cash.
 
 186
-00:07:09,169 --> 00:07:12,849
-Rent: debit Stall rent, a Nominal expense.
+00:07:06,059 --> 00:07:08,059
+Real in, Real out.
 
 187
-00:07:13,049 --> 00:07:14,209
-Credit Cash.
+00:07:08,219 --> 00:07:08,779
+Three.
 
 188
-00:07:14,449 --> 00:07:17,809
-The school canteen: debit the canteen, Personal,
+00:07:08,859 --> 00:07:10,579
+Nine thousand of cash sales.
 
 189
-00:07:17,849 --> 00:07:18,649
-the receiver.
+00:07:10,779 --> 00:07:13,979
+Debit Cash, credit Sales, a Nominal income.
 
 190
-00:07:18,849 --> 00:07:20,089
-Credit Sales.
+00:07:14,628 --> 00:07:15,428
+Four.
 
 191
-00:07:20,289 --> 00:07:22,809
-And the birthday advance: debit Cash.
+00:07:15,508 --> 00:07:17,428
+Two thousand of stall rent.
 
 192
-00:07:22,929 --> 00:07:25,649
-Credit Advance from customer, Personal,
+00:07:17,508 --> 00:07:20,028
+Debit Stall rent, a Nominal expense.
 
 193
-00:07:25,689 --> 00:07:26,129
-the giver.
+00:07:20,228 --> 00:07:21,548
+Credit Cash.
 
 194
-00:07:26,609 --> 00:07:27,969
-How many did you get?
+00:07:21,828 --> 00:07:22,548
+Five.
 
 195
-00:07:29,464 --> 00:07:30,424
-Next time.
+00:07:22,628 --> 00:07:24,468
+Fifteen hundred of samosas to the school
 
 196
-00:07:30,664 --> 00:07:31,944
-April thirtieth.
+00:07:24,548 --> 00:07:26,308
+canteen, on credit.
 
 197
-00:07:32,024 --> 00:07:34,344
-Five things happen before lunch, and Meera
+00:07:26,388 --> 00:07:29,108
+Debit the canteen, Personal, the receiver.
 
 198
-00:07:34,424 --> 00:07:36,744
+00:07:29,268 --> 00:07:30,748
+Credit Sales.
+
+199
+00:07:31,028 --> 00:07:31,748
+Six.
+
+200
+00:07:31,828 --> 00:07:33,788
+The thousand-rupee birthday advance.
+
+201
+00:07:33,988 --> 00:07:34,948
+Debit Cash.
+
+202
+00:07:35,108 --> 00:07:37,668
+Credit Advance from customer, Personal,
+
+203
+00:07:37,708 --> 00:07:38,348
+the giver.
+
+204
+00:07:38,628 --> 00:07:39,908
+How many did you get?
+
+205
+00:07:41,402 --> 00:07:42,362
+Next time.
+
+206
+00:07:42,602 --> 00:07:43,882
+April thirtieth.
+
+207
+00:07:43,962 --> 00:07:46,282
+Five things happen before lunch, and Meera
+
+208
+00:07:46,362 --> 00:07:48,682
 grabs a tissue to write them all down.

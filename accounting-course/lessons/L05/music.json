@@ -43,7 +43,7 @@
  "hush": [
   {
    "seg": "s05c",
-   "word": "@cash",
+   "word": "@money",
    "offset": -0.1,
    "dur": 4.3,
    "depth": 0.85
@@ -64,7 +64,7 @@
   },
   {
    "seg": "s08a",
-   "word": "@cash",
+   "word": "@money",
    "offset": 0.6,
    "dur": 3.6,
    "depth": 0.85

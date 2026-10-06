@@ -21,8 +21,8 @@
   "sfx": "coin_clink",
   "at": {
    "seg": "s04",
-   "word": "@bank",
-   "offset": 0.45
+   "word": "@up",
+   "offset": -0.2
   },
   "vol": 0.4
  },
@@ -30,8 +30,8 @@
   "sfx": "paper_slide",
   "at": {
    "seg": "s04",
-   "word": "@bank",
-   "offset": 0.3
+   "word": "@up",
+   "offset": -1.4
   },
   "vol": 0.25
  },
@@ -58,8 +58,8 @@
   "sfx": "phone_buzz",
   "at": {
    "seg": "s04",
-   "word": "@pocket",
-   "offset": 0.2
+   "word": "@up",
+   "offset": 0.55
   },
   "vol": 0.3,
   "dur": 0.7
@@ -72,5 +72,23 @@
    "offset": -0.9
   },
   "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04",
+   "word": "@down",
+   "offset": 0.0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04",
+   "word": "@accounts",
+   "offset": -0.2
+  },
+  "vol": 0.3
  }
 ]

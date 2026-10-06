@@ -1,5 +1,5 @@
-// s03 — Two needles. Khata pins two gauges on the stall's back wall: Profit and Cash (galla + bank). Readings ₹13,000 and ₹51,000.
-// Meera's savings + Ravi Mama's loan flow into the Cash gauge for a beat (why it's bigger). A dashed "they move together" link
+// s03 — Two needles. Khata pins two gauges on the stall's back wall: Profit and Money (galla + bank). Readings ₹13,000 and ₹51,000.
+// Meera's savings + Ravi Mama's loan flow into the Money gauge for a beat (why it's bigger). A dashed "they move together" link
 // forms, then snaps on "Let's watch." Out: the calendar highlight steps BACK 16 → 15 (the one scripted rewind), default wipe into s04.
 (function () {
   window.SCENES.s03 = ({ svg, tl, K, sc }) => {
@@ -13,8 +13,8 @@
     const PX = 430, CX = 1050, GYY = 530, GS = 1.15;
     const profit = L5.gauge(K, svg, PX, GYY, GS, { label: "Profit", icon: "trending-up", band: C.saffron, max: 25000, hidden: true, labelHidden: true, tickerHidden: true });
     const cash = L5.gauge(K, svg, CX, GYY, GS, {
-      label: "Cash", icon: "coins", band: C.sky, max: 60000, hidden: true, labelHidden: true, tickerHidden: true,
-      sub: [{ icon: "galla", value: 0, hidden: true }, { icon: "landmark", value: 0, hidden: true }],
+      label: "Money", icon: "coins", band: C.sky, max: 60000, hidden: true, labelHidden: true, tickerHidden: true,
+      sub: [{ icon: "galla", label: "Cash", value: 0, hidden: true }, { icon: "landmark", label: "Bank", value: 0, hidden: true }],
     });
     // the dashed "move together" link (two halves meeting at the middle) + the snap puff
     const LY = GYY - 110, mx = (PX + CX) / 2;
@@ -22,7 +22,7 @@
     const linkA = mkHalf(PX + 250, mx), linkB = mkHalf(CX - 250, mx);
     const snap = L5.hide(L5.node(K, svg, mx, LY)); K.sparkle(snap, 0, 0, 32, C.gold);
 
-    // ---- coin streams: Meera's savings + Ravi Mama's loan flow into the Cash gauge
+    // ---- coin streams: Meera's savings + Ravi Mama's loan flow into the Money gauge
     const faceDisc = (who, x, y) => {
       const n = L5.hide(L5.node(K, svg, x, y));
       K.tex(K.shadow(n, 1), K.cutEll(0, 0, 54, 54, 1), "pat-paper"); K.faceArt(n, who, 42);
@@ -48,14 +48,14 @@
     const tProfit = cue("s03a", "@profit");
     profit.tieLabel(tl, tProfit); profit.flash(tl, tProfit + 0.1, 0.6);
     profit.showTicker(tl, tProfit + 0.4);
-    // "The second is Cash — everything in the galla, plus everything in the bank."
-    const tCash = cue("s03a", "@cash"), tGalla = cue("s03a", "@galla"), tBank = cue("s03a", "@bank");
+    // "The second is Money — everything in the galla, plus everything in the bank."
+    const tCash = cue("s03a", "@money", 2), tGalla = cue("s03a", "@galla"), tBank = cue("s03a", "@bank");
     cash.tieLabel(tl, tCash); cash.flash(tl, tCash + 0.1, 0.6);
     cash.showTicker(tl, tCash + 0.4);
     cash.subEnter(tl, tGalla, 0); cash.subEnter(tl, tBank, 1);
     khata.expr(tl, tBank, "wow");
 
-    // s03b "Right now, profit reads thirteen thousand. Cash reads fifty-one thousand."
+    // s03b "Right now, profit reads thirteen thousand. Money reads fifty-one thousand."
     const tT = cue("s03b", "@thirteen"), tF = cue("s03b", "@fiftyone");
     khata.expr(tl, segStart("s03b"), "happy");
     profit.read(tl, tT - 0.15, 13000, { dur: 1.1 });

@@ -14,7 +14,7 @@ Cast for every lesson lives in `assets/kit/cast.js` (`K.aman`, `K.gopal`, `K.raj
 | `s01` | Rent day (cold open) | lead 0.5 s | s01a, s01b, s01c |
 | `s01t` | Title sting | fixed 4.6 s (no VO) | — |
 | `s02` | Last time: Lesson 3's answers | lead 0.5 s | s02 |
-| `s03` | Checkpoint 1 solution: Aman's Samosa Cart | lead 0.5 s | s03a, s03b |
+| ~~`s03`~~ | removed 2026-10-06b — L3 answers its own Checkpoint 1 (assets/scenes/_removed/) | — | — |
 | `s04` | Rent day, frozen: which two things changed? (WORKED) | lead 0.5 s | s04a, s04b, s04c, s04d |
 | `s05` | Two weeks of chai (FADED: Meera finds the second change) | lead 0.5 s | s05a, s05b, s05c, s05d |
 | `s06` | Profit belongs to the owner | lead 0.5 s | s06a, s06b, s06c |

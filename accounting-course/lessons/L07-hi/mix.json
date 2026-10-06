@@ -1601,56 +1601,8 @@
    "src": "s12.sfx.json"
   },
   {
-   "sfx": "paper_slide",
-   "t": 459.08,
-   "vol": 0.35,
-   "dur": null,
-   "fade": 0,
-   "src": "s12.sfx.json"
-  },
-  {
-   "sfx": "paper_slide",
-   "t": 465.72,
-   "vol": 0.35,
-   "dur": null,
-   "fade": 0,
-   "src": "s12.sfx.json"
-  },
-  {
-   "sfx": "paper_slide",
-   "t": 471.48,
-   "vol": 0.35,
-   "dur": null,
-   "fade": 0,
-   "src": "s12.sfx.json"
-  },
-  {
-   "sfx": "paper_slide",
-   "t": 476.352,
-   "vol": 0.35,
-   "dur": null,
-   "fade": 0,
-   "src": "s12.sfx.json"
-  },
-  {
-   "sfx": "paper_slide",
-   "t": 481.552,
-   "vol": 0.35,
-   "dur": null,
-   "fade": 0,
-   "src": "s12.sfx.json"
-  },
-  {
-   "sfx": "paper_slide",
-   "t": 487.792,
-   "vol": 0.35,
-   "dur": null,
-   "fade": 0,
-   "src": "s12.sfx.json"
-  },
-  {
    "sfx": "tink_low",
-   "t": 461.31,
+   "t": 463.23,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1658,7 +1610,7 @@
   },
   {
    "sfx": "tink_high",
-   "t": 464.19,
+   "t": 466.11,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1666,7 +1618,7 @@
   },
   {
    "sfx": "tink_low",
-   "t": 469.63,
+   "t": 473.23,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1674,7 +1626,7 @@
   },
   {
    "sfx": "tink_high",
-   "t": 470.51,
+   "t": 474.11,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1682,7 +1634,7 @@
   },
   {
    "sfx": "tink_low",
-   "t": 473.05,
+   "t": 478.65,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1690,7 +1642,7 @@
   },
   {
    "sfx": "tink_high",
-   "t": 474.83,
+   "t": 480.03,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1698,7 +1650,7 @@
   },
   {
    "sfx": "tink_low",
-   "t": 478.822,
+   "t": 486.182,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1706,7 +1658,7 @@
   },
   {
    "sfx": "tink_high",
-   "t": 480.402,
+   "t": 487.762,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1714,7 +1666,7 @@
   },
   {
    "sfx": "tink_low",
-   "t": 484.462,
+   "t": 495.502,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1722,7 +1674,7 @@
   },
   {
    "sfx": "tink_high",
-   "t": 486.362,
+   "t": 497.402,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1730,7 +1682,7 @@
   },
   {
    "sfx": "tink_low",
-   "t": 489.602,
+   "t": 502.322,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1738,7 +1690,7 @@
   },
   {
    "sfx": "tink_high",
-   "t": 493.062,
+   "t": 505.622,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1746,7 +1698,7 @@
   },
   {
    "sfx": "rise_three",
-   "t": 494.262,
+   "t": 506.902,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1761,8 +1713,104 @@
    "src": "s12.sfx.json"
   },
   {
+   "sfx": "pop",
+   "t": 459.18,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 467.74,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 475.18,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 481.572,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 489.012,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 498.612,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 462.17,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 470.89,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 477.85,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 484.722,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 493.922,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 501.602,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
    "sfx": "coin_clink",
-   "t": 497.217,
+   "t": 509.86,
    "vol": 0.25,
    "dur": null,
    "fade": 0,
@@ -1770,7 +1818,7 @@
   },
   {
    "sfx": "pop",
-   "t": 500.017,
+   "t": 512.66,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -1778,7 +1826,7 @@
   },
   {
    "sfx": "pop",
-   "t": 500.137,
+   "t": 512.78,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -1786,7 +1834,7 @@
   },
   {
    "sfx": "pop",
-   "t": 500.257,
+   "t": 512.9,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -1794,7 +1842,7 @@
   },
   {
    "sfx": "pop",
-   "t": 500.377,
+   "t": 513.02,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -1802,7 +1850,7 @@
   },
   {
    "sfx": "pop",
-   "t": 500.497,
+   "t": 513.14,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -1810,7 +1858,7 @@
   },
   {
    "sfx": "quill_scratch",
-   "t": 504.184,
+   "t": 516.827,
    "vol": 0.4,
    "dur": 1.0,
    "fade": 0,
@@ -1818,7 +1866,7 @@
   },
   {
    "sfx": "book_thump",
-   "t": 504.974,
+   "t": 517.618,
    "vol": 0.7,
    "dur": null,
    "fade": 0,
@@ -1826,7 +1874,7 @@
   },
   {
    "sfx": "cover_swing",
-   "t": 506.374,
+   "t": 519.018,
    "vol": 0.6,
    "dur": null,
    "fade": 0,
@@ -1834,7 +1882,7 @@
   },
   {
    "sfx": "pop",
-   "t": 506.674,
+   "t": 519.318,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1842,7 +1890,7 @@
   },
   {
    "sfx": "pop",
-   "t": 506.774,
+   "t": 519.418,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1850,7 +1898,7 @@
   },
   {
    "sfx": "boing_hop",
-   "t": 507.074,
+   "t": 519.718,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1954,7 +2002,7 @@
   },
   {
    "sfx": "paper_whoosh",
-   "t": 495.787,
+   "t": 508.43,
    "vol": 0.32,
    "dur": null,
    "fade": 0,
@@ -1962,7 +2010,7 @@
   },
   {
    "sfx": "paper_whoosh",
-   "t": 505.724,
+   "t": 518.368,
    "vol": 0.32,
    "dur": null,
    "fade": 0,
@@ -1992,7 +2040,7 @@
   {
    "f": "music/m3_main.mp3",
    "start": 36.574000000000005,
-   "end": 506.074,
+   "end": 518.718,
    "vol": 0.16,
    "fi": 1.5,
    "fo": 1.5,
@@ -2001,8 +2049,8 @@
   },
   {
    "f": "music/outro.mp3",
-   "start": 505.774,
-   "end": 518.074,
+   "start": 518.418,
+   "end": 530.718,
    "vol": 0.45,
    "fi": 0.3,
    "fo": 2.0,

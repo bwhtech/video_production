@@ -213,13 +213,13 @@
   "id": "s12b",
   "scene": 12,
   "gap_after": 0.6,
-  "text": "{@ready}तैयार? {@bank}Bank loan: debit Cash, {@real}Real, comes in। Credit Bank loan, {@personal}Personal, giver। {@cart}Cart और fryer: debit Cart, credit Cash। {@real#2}Real in, {@real#3}Real out। {@cash#3}Cash sales: {@cash#4}debit Cash, credit Sales, {@nominal}Nominal income।"
+  "text": "{@ready}तैयार? {@one}एक। दस हज़ार रुपये का {@bank}bank loan। {@debit}Debit Cash, {@real}Real, comes in। Credit Bank loan, {@personal}Personal, giver। {@two}दो। अट्ठारह हज़ार की {@cart}cart और fryer। {@debit#2}Debit Cart, credit Cash। {@real#2}Real in, {@real#3}Real out। {@three}तीन। नौ हज़ार की cash sales। {@debit#3}Debit {@cash#4}Cash, credit Sales, {@nominal}Nominal income।"
  },
  {
   "id": "s12c",
   "scene": 12,
   "gap_after": 0.8,
-  "text": "{@rent}Rent: debit Stall rent, {@nominal}Nominal expense। {@credit}Credit Cash। {@school}School canteen: debit the canteen, {@personal}Personal, receiver। {@credit#2}Credit Sales। और {@birthday}birthday advance: {@cash#2}debit Cash। Credit Advance from customer, Personal, {@giver}giver। [warmly] आपके {@many}कितने सही हुए?"
+  "text": "{@four}चार। दो हज़ार रुपये का stall {@rent}rent। {@debit}Debit Stall rent, {@nominal}Nominal expense। {@credit}Credit Cash। {@five}पाँच। पंद्रह सौ रुपये के samosas, {@school}school canteen को, उधार पर। {@debit#2}Debit the canteen, {@personal}Personal, receiver। {@credit#3}Credit Sales। {@six}छह। हज़ार रुपये का {@birthday}birthday advance। {@debit#3}Debit {@cash#2}Cash। Credit Advance from customer, Personal, {@giver}giver। [warmly] आपके {@many}कितने सही हुए?"
  },
  {
   "id": "s13",

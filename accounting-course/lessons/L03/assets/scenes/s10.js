@@ -115,51 +115,64 @@
     pm.countdown(tl, segEnd("s10a"), { dur: 3.2 });
     aman.expr(tl, tPause, "happy");
 
-    // s10b "Done?" — the veil lifts; then the reveal, ROW BY ROW
+    // s10b — the reveal, ROW BY ROW, each beat landing on its spoken word. The question is restated aloud, so the picture follows it:
+    // "One." → that row's transaction card lights (saffron ring) · "Cash up, capital up." → the two change chips · "equals" → the equation.
     const tDone = segStart("s10b");
     tl.to(veil, { opacity: 0, duration: 0.3, ease: "power1.inOut" }, tDone);
     pm.exit(tl, tDone); L3.lift(tl, K, wk, tDone);
-    const dim = (r, t) => r.grp.forEach((n) => tl.to(n, { opacity: 0.7, duration: 0.35, ease: "power2.inOut" }, t));
-    const reveal = (i, t, a, b) => {
-      if (i > 0) dim(rows[i - 1], t - 0.05);
-      L3.drop(tl, K, chip(rows[i], 0, ...a), t); L3.drop(tl, K, chip(rows[i], 1, ...b), t + 0.35);
-    };
+    // every row rests at 70 % until its number word; the live row is 100 % with a ring; a settled row drops back to 70 %
+    rows.forEach((r) => { r.ring = K.el("path", { d: K.cutRect(-182, -88, 364, 176, 1.4, 26), fill: "none", stroke: C.saffron, "stroke-width": 8, "stroke-linejoin": "round", style: "opacity:0" }, r.pic); r.ring.setAttribute("data-layout-allow-overlap", "true"); });
+    const setO = (r, t, o, d = 0.35) => r.grp.forEach((n) => tl.to(n, { opacity: o, duration: d, ease: "power2.inOut" }, t));
+    rows.forEach((r) => setO(r, tDone + 0.1, 0.7));
+    const live = (i, t) => { setO(rows[i], t - 0.05, 1, 0.3); tl.to(rows[i].ring, { opacity: 1, duration: 0.25, ease: "power2.out" }, t); K.pulseNode(tl, rows[i].pic, t, 1.07); aman.look(tl, t, 0, 2); };
+    const settle = (i, t) => { setO(rows[i], t, 0.7); tl.to(rows[i].ring, { opacity: 0, duration: 0.3, ease: "power1.in" }, t); };
+    const put = (i, k, t, name, delta, side) => L3.drop(tl, K, chip(rows[i], k, name, delta, side), t);
     const eq = (t, s) => rig.equation(tl, t, s, { size: 60 });
     const showTotals = (t) => { L3.lift(tl, K, qL, t); L3.lift(tl, K, qR, t + 0.05); rig.pans.L.total.enter(tl, t + 0.15); rig.pans.R.total.enter(tl, t + 0.2); };
-    // row 1 — Cash +20,000 · Capital +20,000 → 20,000 = 0 + 20,000
-    const t1 = cue("s10b", "@one");
-    reveal(0, t1, ["Cash", 20000, "L"], ["Capital", 20000, "R"]);
-    cashJ.enter(tl, t1 + 0.1); cashJ.fill(tl, t1 + 0.15, 0.5); cashJ.tick(tl, t1 + 0.2, 0, 20000, 0.7);
-    tAman.enter(tl, t1 + 0.2, 20000);
-    rig.pans.L.total.set(tl, t1 + 0.1, 0); rig.pans.R.total.set(tl, t1 + 0.1, 0);
-    showTotals(t1 + 0.1); rig.setTotals(tl, t1 + 0.35, 20000, 20000, { dur: 0.7 });
-    eq(cue("s10b", "@twenty"), "20,000 = 0 + 20,000");
-    // row 2 — Cash +10,000 · Bank loan +10,000 → 30,000 = 10,000 + 20,000
-    const t2 = cue("s10b", "@two");
-    reveal(1, t2, ["Cash", 10000, "L"], ["Bank loan", 10000, "R"]);
-    cashJ.tick(tl, t2 + 0.1, 20000, 30000, 0.7); cashJ.fill(tl, t2 + 0.1, 0.75);
-    tBank.enter(tl, t2 + 0.3, 10000);
-    rig.setTotals(tl, t2 + 0.35, 30000, 30000, { dur: 0.7 });
-    eq(cue("s10b", "@thirty"), "30,000 = 10,000 + 20,000");
-    // row 3 — Cart & fryer +18,000 · Cash −18,000 → still 30,000 (a swap on the left: the beam doesn't move)
-    const t3 = cue("s10b", "@three");
-    reveal(2, t3, ["Cart & fryer", 18000, "L"], ["Cash", -18000, "L"]);
-    cashJ.tick(tl, t3 + 0.35, 30000, 12000, 0.7); cashJ.fill(tl, t3 + 0.35, 0.25);
-    cartJ.enter(tl, t3 + 0.1); cartJ.landSticker(tl, t3 + 0.12, { dx: -150, dy: -70, dur: 0.7 }); cartJ.tieLabel(tl, t3 + 0.8); cartJ.ticker.enter(tl, t3 + 0.8); cartJ.tick(tl, t3 + 0.8, 0, 18000, 0.6);
-    rig.eqPulse(tl, cue("s10b", "@thirty", 2));
-    rig.levelFlash(tl, cue("s10b", "@thirty", 2) + 0.2);
-    // row 4 — Ingredients stock +3,000 · Sharma Kirana +3,000 → 33,000 = 13,000 + 20,000
-    const t4 = cue("s10b", "@four");
-    reveal(3, t4, ["Ingredients stock", 3000, "L"], ["Sharma Kirana", 3000, "R"]);
-    stockJ.enter(tl, t4 + 0.1); stockJ.fill(tl, t4 + 0.15, 0.5); stockJ.tick(tl, t4 + 0.2, 0, 3000, 0.7);
-    tShop.enter(tl, t4 + 0.35, 3000);
-    rig.setTotals(tl, t4 + 0.4, 33000, 33000, { dur: 0.7 });
-    eq(cue("s10b", "@thirty-three"), "33,000 = 13,000 + 20,000");
-    // "Next lesson, we'll walk through every step." — the four rows stand stacked; Aman thumbs-up
-    const tNext = cue("s10b", "@next");
+    // row 1 — "One." · "Cash up, capital up." → Cash +20,000 · Capital +20,000 · "Twenty thousand equals zero, plus twenty thousand." → 20,000 = 0 + 20,000
+    const t1 = cue("s10b", "@one"), c1 = cue("s10b", "@cash"), k1 = cue("s10b", "@capital");
+    live(0, t1);
+    put(0, 0, c1, "Cash", 20000, "L");
+    cashJ.enter(tl, c1 + 0.1); cashJ.fill(tl, c1 + 0.15, 0.5); cashJ.tick(tl, c1 + 0.2, 0, 20000, 0.7);
+    rig.pans.L.total.set(tl, c1 + 0.1, 0); rig.pans.R.total.set(tl, c1 + 0.1, 0);
+    showTotals(c1 + 0.1);
+    put(0, 1, k1, "Capital", 20000, "R");
+    tAman.enter(tl, k1 + 0.1, 20000);
+    rig.setTotals(tl, k1 + 0.3, 20000, 20000, { dur: 0.7 });
+    const e1 = cue("s10b", "@equals"); eq(e1, "20,000 = 0 + 20,000"); settle(0, e1 + 1.2);
+    // row 2 — "Two." · "Cash up, liability up." → Cash +10,000 · Bank loan +10,000 · → 30,000 = 10,000 + 20,000
+    const t2 = cue("s10b", "@two"), c2 = cue("s10b", "@cash", 2), k2 = cue("s10b", "@liability");
+    live(1, t2);
+    put(1, 0, c2, "Cash", 10000, "L");
+    cashJ.tick(tl, c2 + 0.1, 20000, 30000, 0.7); cashJ.fill(tl, c2 + 0.1, 0.75);
+    put(1, 1, k2, "Bank loan", 10000, "R");
+    tBank.enter(tl, k2 + 0.1, 10000);
+    rig.setTotals(tl, k2 + 0.3, 30000, 30000, { dur: 0.7 });
+    const e2 = cue("s10b", "@equals", 2); eq(e2, "30,000 = 10,000 + 20,000"); settle(1, e2 + 1.2);
+    // row 3 — "Three." · "A swap on the left" → Cart & fryer +18,000 · Cash −18,000 → "the totals don't change" (the beam doesn't move)
+    const t3 = cue("s10b", "@three"), c3 = cue("s10b", "@swap"), k3 = cue("s10b", "@left");
+    live(2, t3);
+    put(2, 0, c3, "Cart & fryer", 18000, "L");
+    cartJ.enter(tl, c3 + 0.1); cartJ.landSticker(tl, c3 + 0.12, { dx: -150, dy: -70, dur: 0.7 }); cartJ.tieLabel(tl, c3 + 0.8); cartJ.ticker.enter(tl, c3 + 0.8); cartJ.tick(tl, c3 + 0.8, 0, 18000, 0.6);
+    put(2, 1, k3, "Cash", -18000, "L");
+    cashJ.tick(tl, k3 + 0.3, 30000, 12000, 0.7); cashJ.fill(tl, k3 + 0.3, 0.25);
+    const ch3 = cue("s10b", "@change");
+    rig.eqPulse(tl, ch3); rig.levelFlash(tl, ch3 + 0.2); settle(2, ch3 + 1.0);
+    // row 4 — "Four." · "Stock up, and what he owes goes up." → Ingredients stock +3,000 · Sharma Kirana +3,000 → 33,000 = 13,000 + 20,000
+    const t4 = cue("s10b", "@four"), c4 = cue("s10b", "@stock"), k4 = cue("s10b", "@owes");
+    live(3, t4);
+    put(3, 0, c4, "Ingredients stock", 3000, "L");
+    stockJ.enter(tl, c4 + 0.1); stockJ.fill(tl, c4 + 0.15, 0.5); stockJ.tick(tl, c4 + 0.2, 0, 3000, 0.7);
+    put(3, 1, k4, "Sharma Kirana", 3000, "R");
+    tShop.enter(tl, k4 + 0.1, 3000);
+    rig.setTotals(tl, k4 + 0.3, 33000, 33000, { dur: 0.7 });
+    eq(cue("s10b", "@equals", 3), "33,000 = 13,000 + 20,000");
+    // "Four out of four? Your scale never tipped either." — all four rows light together; Aman thumbs-up
+    const tNext = cue("s10b", "@out");
+    rows.forEach((r) => setO(r, tNext - 0.1, 1, 0.4)); tl.to(rows[3].ring, { opacity: 0, duration: 0.3, ease: "power1.in" }, tNext);
     aman.expr(tl, tNext, "joy"); aman.arm(tl, tNext, "R", 150, 12, 0.35); aman.arm(tl, tNext + 1.4, "R", 12, 8, 0.4);
     // exit: Aman's scale becomes Meera's HUD (totals swap back to 88,000), the cast lifts away, the calendar ticks 3 → 5
-    const tEx = sc.end - 1.4;
+    const tEx = sc.end - 1.1;
     tl.to(board, { opacity: 0, duration: 0.35, ease: "power1.in" }, tEx - 0.1);
     [cashJ, cartJ, stockJ].forEach((j) => j.exit(tl, tEx - 0.1)); [tAman, tBank, tShop].forEach((t) => L3.lift(tl, K, t.n, tEx - 0.1));
     rig.hud(tl, tEx, true, { dur: 0.9, k: (0.28 * L3.BIG.s) / SS });

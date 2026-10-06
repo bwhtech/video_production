@@ -162,7 +162,7 @@
    "seg": "s12c",
    "word": "@cash",
    "offset": 0.15,
-   "nth": 3
+   "nth": 4
   },
   "vol": 0.4
  },
@@ -172,7 +172,7 @@
    "seg": "s12c",
    "word": "@cash",
    "offset": 0.15,
-   "nth": 4
+   "nth": 5
   },
   "vol": 0.4
  },
@@ -209,6 +209,51 @@
    "seg": "s12c",
    "word": "@rupees",
    "offset": 0.55
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12c",
+   "word": "@one",
+   "offset": 0.0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12c",
+   "word": "@two",
+   "offset": 0.0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12c",
+   "word": "@three",
+   "offset": 0.0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12c",
+   "word": "@four",
+   "offset": 0.0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12c",
+   "word": "@five",
+   "offset": 0.0
   },
   "vol": 0.3
  }

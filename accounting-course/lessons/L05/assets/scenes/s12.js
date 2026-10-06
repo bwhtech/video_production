@@ -58,6 +58,20 @@
       else tk = K.ticker(n, 0, 3, 1, { value: 0, size: 46, signed: true });
       return { n, tk, v };
     }));
+    // reveal helpers: a gold ring that lights the active row on its number word, and a QUESTION card beside the sheet (beside Aman, left)
+    const ring = K.el("path", { d: K.cutRect(-536, -50, 1072, 100, 1, 22), fill: "none", stroke: C.gold, "stroke-width": 7, "stroke-linejoin": "round", opacity: 0 }, sheet);
+    const QX = 430, QY = 385;
+    const QDATA = [["Cash sales", "₹9,000", ["shopping-bag"]], ["Stall rent", "₹2,000", ["key"]], ["Canteen · on credit", "₹1,500", ["school"]],
+      ["Paying Sharma Kirana", "₹2,000", ["handshake"]], ["Birthday advance", "₹1,000", ["cake"]]];
+    const qcards = QDATA.map(([cap, amt, ic], i) => {
+      const n = L5.hide(L5.node(K, world, QX, QY));
+      L5.card(K, n, 640, 176, { shadow: 2 });
+      K.paper(K.shadow(n, 1), K.cutEll(-262, 0, 44, 44, 1), C.saffron); K.text(n, -262, 16, String(i + 1), { size: 58, weight: 800 });
+      K.medallion(n, -160, 0, 36, ic[0]);
+      K.text(n, -100, -22, cap, { size: 36, weight: 700, anchor: "start" });
+      K.text(n, -100, 38, amt, { size: 62, weight: 800, anchor: "start" });
+      return n;
+    });
     // total plate: Aman's profit so far
     const tot = L5.hide(L5.node(K, sheet, 0, 322));
     K.paper(K.shadow(tot, 2), K.cutRect(-290, -52, 580, 104, 2, 24), "#f3dcae");
@@ -113,24 +127,39 @@
       if (c.tk) c.tk.to(tl, t + 0.1, c.v, 0.6);
     };
     const nod = (t, ex) => { aman.headTilt(tl, t, 5); aman.headTilt(tl, t + 0.5, 0); if (ex) aman.expr(tl, t, ex); };
+    // each row lights on its number word ("One." … "Five.") and its question card appears beside the sheet; the previous card lifts away
+    let curQ = -1, ringOn = false;
+    const light = (i, t) => {
+      L5.drop(tl, K, qcards[i], t, { dur: 0.3 });
+      if (curQ >= 0) L5.lift(tl, K, qcards[curQ], t - 0.02, { dur: 0.2 });
+      tl.set(ring, { y: RY[i] }, t); tl.fromTo(ring, { opacity: 0 }, { opacity: 1, duration: 0.15, ease: "power2.out", immediateRender: false }, t);
+      K.pulseNode(tl, rows[i], t, 1.03);
+      curQ = i;
+    };
     // ONE — both up nine thousand
+    light(0, cue("s12c", "@one") - 0.05);
     dimPrev(0, 0);
-    show(0, 0, cue("s12c", "@profit")); show(0, 1, cue("s12c", "@cash")); nod(cue("s12c", "@profit"), "happy");
+    show(0, 0, cue("s12c", "@profit")); show(0, 1, cue("s12c", "@cash", 2)); nod(cue("s12c", "@profit"), "happy");
     // TWO — both down two thousand
+    light(1, cue("s12c", "@two") - 0.05);
     dimPrev(1, cue("s12c", "@two") - 0.05);
     show(1, 0, cue("s12c", "@both", 2)); show(1, 1, cue("s12c", "@both", 2) + 0.35); nod(cue("s12c", "@both", 2), "thinking");
     // THREE — profit up fifteen hundred, cash nothing
+    light(2, cue("s12c", "@three") - 0.05);
     dimPrev(2, cue("s12c", "@three") - 0.05);
     show(2, 0, cue("s12c", "@profit", 2)); show(2, 1, cue("s12c", "@nothing")); nod(cue("s12c", "@profit", 2), "happy");
     // FOUR — cash down two thousand, profit nothing ("a debt being paid")
+    light(3, cue("s12c", "@four") - 0.05);
     dimPrev(3, cue("s12c", "@four") - 0.05);
-    show(3, 1, cue("s12c", "@cash", 3)); show(3, 0, cue("s12c", "@profit", 3)); nod(cue("s12c", "@cash", 3), "thinking");
+    show(3, 1, cue("s12c", "@cash", 4)); show(3, 0, cue("s12c", "@profit", 3)); nod(cue("s12c", "@cash", 4), "thinking");
     // FIVE — cash up one thousand, profit nothing ("an advance")
+    light(4, cue("s12c", "@five") - 0.05);
     dimPrev(4, cue("s12c", "@five") - 0.05);
-    show(4, 1, cue("s12c", "@cash", 4)); show(4, 0, cue("s12c", "@profit", 4)); nod(cue("s12c", "@cash", 4), "happy");
+    show(4, 1, cue("s12c", "@cash", 5)); show(4, 0, cue("s12c", "@profit", 4)); nod(cue("s12c", "@cash", 5), "happy");
     // "Aman's profit so far: eight thousand five hundred rupees." — the plate drops in, counts, the bell rings
     const tA = cue("s12c", "@aman's"), tEight = cue("s12c", "@eight");
     tl.to(rows[4], { opacity: 0.7, duration: 0.35 }, tA - 0.1); chips[4].forEach((c) => tl.to(c.n, { opacity: 0.7, duration: 0.35 }, tA - 0.1));
+    L5.lift(tl, K, qcards[4], tA - 0.1, { dur: 0.25 }); tl.to(ring, { opacity: 0, duration: 0.25 }, tA - 0.1);
     L5.drop(tl, K, tot, tA - 0.1); totTk.to(tl, tEight - 0.1, 8500, 0.9);
     cart.ring(tl, tEight + 0.05); aman.expr(tl, tEight, "joy"); aman.arm(tl, tEight, "R", 150, 12, 0.35); aman.arm(tl, tEight + 1.6, "R", 12, 8, 0.4);
     totTk.pulse(tl, tEight + 0.9);

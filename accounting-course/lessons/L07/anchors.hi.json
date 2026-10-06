@@ -982,8 +982,16 @@
    "तैयार?",
    1
   ],
+  "@one": [
+   "एक।",
+   1
+  ],
   "@bank": [
-   "Bank",
+   "bank",
+   1
+  ],
+  "@debit": [
+   "Debit",
    1
   ],
   "@real": [
@@ -994,9 +1002,17 @@
    "Personal,",
    1
   ],
-  "@cart": [
-   "Cart",
+  "@two": [
+   "दो।",
    1
+  ],
+  "@cart": [
+   "cart",
+   1
+  ],
+  "@debit#2": [
+   "Debit",
+   2
   ],
   "@real#2": [
    "Real",
@@ -1006,13 +1022,17 @@
    "Real",
    3
   ],
-  "@cash#3": [
-   "Cash",
+  "@three": [
+   "तीन।",
+   1
+  ],
+  "@debit#3": [
+   "Debit",
    3
   ],
   "@cash#4": [
-   "debit",
-   3
+   "Cash,",
+   4
   ],
   "@nominal": [
    "Nominal",
@@ -1020,8 +1040,16 @@
   ]
  },
  "s12c": {
+  "@four": [
+   "चार।",
+   1
+  ],
   "@rent": [
-   "Rent:",
+   "rent।",
+   1
+  ],
+  "@debit": [
+   "Debit",
    1
   ],
   "@nominal": [
@@ -1032,25 +1060,41 @@
    "Credit",
    1
   ],
-  "@school": [
-   "School",
+  "@five": [
+   "पाँच।",
    1
+  ],
+  "@school": [
+   "school",
+   1
+  ],
+  "@debit#2": [
+   "Debit",
+   2
   ],
   "@personal": [
    "Personal,",
    1
   ],
-  "@credit#2": [
+  "@credit#3": [
    "Credit",
    2
+  ],
+  "@six": [
+   "छह।",
+   1
   ],
   "@birthday": [
    "birthday",
    1
   ],
-  "@cash#2": [
-   "debit",
+  "@debit#3": [
+   "Debit",
    3
+  ],
+  "@cash#2": [
+   "Cash।",
+   2
   ],
   "@giver": [
    "giver।",

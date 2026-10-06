@@ -1,18 +1,147 @@
 [
- {"sfx": "note_rustle", "at": {"seg": "s06a", "word": "@pays", "offset": 0.0}, "vol": 0.3},
- {"sfx": "pop", "at": {"seg": "s06a", "word": "@five", "offset": -0.05}, "vol": 0.3},
- {"sfx": "coin_clink", "at": {"seg": "s06a", "word": "@of", "offset": 0.2}, "vol": 0.3},
- {"sfx": "galla_clack", "at": {"seg": "s06a", "word": "@left", "offset": -0.15}, "vol": 0.3},
- {"sfx": "paper_slide", "at": {"seg": "s06a", "word": "@expense", "offset": -0.05}, "vol": 0.3},
- {"sfx": "stamp_thunk", "at": {"seg": "s06b", "word": "@nope", "offset": 0.0}, "vol": 0.7},
- {"sfx": "bwomp_no", "at": {"seg": "s06b", "word": "@nope", "offset": 0.15}, "vol": 0.25},
- {"sfx": "pop", "at": {"seg": "s06b", "word": "@stock", "offset": -0.2}, "vol": 0.3},
- {"sfx": "coin_clink", "at": {"seg": "s06b", "word": "@paying", "offset": 0.1}, "vol": 0.3},
- {"sfx": "tick_tock", "at": {"seg": "s06b", "edge": "end", "offset": 0.0}, "vol": 0.5, "dur": 2.0},
- {"sfx": "needle_tick", "at": {"seg": "s06c", "word": "@cash", "offset": 0.75}, "vol": 0.5},
- {"sfx": "ding_yes", "at": {"seg": "s06c", "word": "@cash", "offset": 0.05}, "vol": 0.45},
- {"sfx": "scale_settle", "at": {"seg": "s06c", "word": "@down", "offset": 0.1}, "vol": 0.35},
- {"sfx": "tink_low", "at": {"seg": "s06c", "word": "@stays", "offset": 0.0}, "vol": 0.3},
- {"sfx": "pop", "at": {"seg": "s06c", "word": "@payable", "offset": 0.0}, "vol": 0.4},
- {"sfx": "tink_high", "at": {"seg": "s06c", "word": "@receivable", "offset": 0.0}, "vol": 0.3}
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "seg": "s06a",
+   "word": "@pays",
+   "offset": 0.0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06a",
+   "word": "@five",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s06a",
+   "word": "@of",
+   "offset": 0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "galla_clack",
+  "at": {
+   "seg": "s06a",
+   "word": "@left",
+   "offset": -0.15
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06a",
+   "word": "@expense",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s06b",
+   "word": "@nope",
+   "offset": 0.0
+  },
+  "vol": 0.7
+ },
+ {
+  "sfx": "bwomp_no",
+  "at": {
+   "seg": "s06b",
+   "word": "@nope",
+   "offset": 0.15
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06b",
+   "word": "@stock",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s06b",
+   "word": "@paying",
+   "offset": 0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s06b",
+   "edge": "end",
+   "offset": 0.0
+  },
+  "vol": 0.5,
+  "dur": 2.0
+ },
+ {
+  "sfx": "needle_tick",
+  "at": {
+   "seg": "s06c",
+   "word": "@money",
+   "offset": 0.75
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s06c",
+   "word": "@money",
+   "offset": 0.05
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "scale_settle",
+  "at": {
+   "seg": "s06c",
+   "word": "@down",
+   "offset": 0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06c",
+   "word": "@stays",
+   "offset": 0.0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06c",
+   "word": "@payable",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06c",
+   "word": "@receivable",
+   "offset": 0.0
+  },
+  "vol": 0.3
+ }
 ]

@@ -1,8 +1,7 @@
-// s02 — Last time. Three question cards (L5's Your-Turn) are answered one by one, then Aman's two-needle table (A5–A9).
+// s02 — Last time. Three question cards (L5's Your-Turn) are answered one by one, (L5's checkpoint answers are no longer walked here).
 //   card 1 catering advance → Liability · card 2 paying Gopal → ✗ Expense, Liability ↓ · card 3 Infotech 6,000 − 4,000 = 2,000
-//   Aman: only A5 (cash sale) and A6 (rent) move BOTH needles → Profit ₹8,500.
 // In:  s01t pushes into a page showing #s02-first at 1/3 scale (stage + calendar + three card backs; art hidden by DOM attributes).
-// Out: the ₹8,500 profit chip flies to centre and flips over — its back is the SMS card; cream fills in → s03 (owns its seam-in).
+// Out: cards lift off, cream fills in and the SMS card lands → s03 (owns its seam-in).
 (function () {
   window.OWN_SEAM_IN.s03 = true;
 
@@ -70,28 +69,8 @@
     const tk3 = K.ticker(a3, 0, 205, 1, { value: 0, size: 76, chip: true, w: 300, h: 100, edge: C.dr });
     tk3.body.setAttribute("opacity", "0");
 
-    // ---- Aman + the two-needle table (A5–A9)
-    const aman = K.aman(svg, -240, 1005, 0.78, { expr: "happy" });
-    const TX = 1190, TY = 540;
-    const tab = L6.hide(L6.node(K, svg, TX, TY));
-    K.tex(K.shadow(tab, 2), K.cutRect(-440, -350, 880, 700, 2, 24), "pat-paper");
-    const gP = L6.gauge(K, tab, -40, -220, 92), gC = L6.gauge(K, tab, 250, -220, 92);
-    K.text(tab, -40, -150, "Profit", { size: 44, weight: 800 }); K.text(tab, 250, -150, "Cash", { size: 44, weight: 800 });
-    const ROWS = [["A5", "+9,000", "+9,000"], ["A6", "−2,000", "−2,000"], ["A7", "+1,500", "0"], ["A8", "0", "−2,000"], ["A9", "0", "+1,000"]];
-    const rowN = ROWS.map(([id, p, c], i) => {
-      const n = L6.hide(L6.node(K, tab, 0, -76 + i * 66));
-      const hi = K.paper(n, K.cutRect(-410, -29, 820, 58, 1.4, 20), C.saffron, { opacity: 0 });
-      K.text(n, -360, 2, id, { size: 44, weight: 800, anchor: "start" });
-      K.text(n, 30, 2, p, { size: 46, weight: 800, anchor: "end" });
-      K.text(n, 320, 2, c, { size: 46, weight: 800, anchor: "end" });
-      return { n, hi };
-    });
-    L6.allow(tab);
     // cream plate for the seam (above everything so far; the flipping chip + SMS card sit on top of it)
     const cream = K.el("rect", { x: 0, y: 0, width: 1920, height: 1080, fill: C.cream, opacity: 0 }, svg);
-    const foot = L6.rig(K, svg, TX, TY + 282); const footN = L6.hide(foot.inner);
-    K.label(footN, -150, 0, "Profit", { size: 40, bg: C.sky });
-    const tkF = K.ticker(footN, 50, 0, 1, { value: 0, size: 58, chip: true, w: 250, h: 78, edge: C.dr });
     // the SMS card (back of the profit chip)
     const smsR = L6.rig(K, svg, 960, 540); L6.hide(smsR.inner);
     K.smsCard(smsR.inner, 0, 0, 300, 210, { kind: "CREDITED", amount: "₹15,000" });
@@ -133,39 +112,10 @@
     K.liftOff(tl, q3, tA3 - 0.05, { dur: 0.15 });
     tl.set(tk3.body, { opacity: 1 }, tA3 - 0.02); tk3.to(tl, tA3, 2000, 0.8);
     K.dropIn(tl, c6, cue("s02f", "@six"), { dur: 0.3 }); K.dropIn(tl, c4, cue("s02f", "@four"), { dur: 0.3 });
-    // Aman's table
-    const tAm = segStart("s02g");
-    cards.forEach((c, i) => K.liftOff(tl, c.n, tAm - 0.05 + i * 0.08, { dur: 0.25 }));
-    aman.walkTo(tl, tAm + 0.1, 330, 1.2);
-    aman.expr(tl, cue("s02g", "@aman's"), "happy").look(tl, tAm + 1.2, 6, 0);
-    K.dropIn(tl, tab, cue("s02g", "@challenge") - 0.15, { dur: 0.4 });
-    rowN.forEach((r, i) => K.dropIn(tl, r.n, cue("s02g", "@only") + i * 0.12, { dur: 0.28 }));
-    // A5 + A6 light ("both needles"), the others rest at 70 %
-    const tCash = cue("s02g", "@cash"), tRent = cue("s02g", "@rent");
-    [2, 3, 4].forEach((i) => tl.to(rowN[i].n, { opacity: 0.55, duration: 0.3 }, tCash - 0.1));
-    tl.to(rowN[0].hi, { opacity: 0.55, duration: 0.25 }, tCash);
-    tl.to(rowN[1].hi, { opacity: 0.55, duration: 0.25 }, tRent);
-    // needles swing (A5 up, then A6 down — both needles together)
-    const tBoth = cue("s02g", "@both");
-    [gP, gC].forEach((g) => {
-      tl.to(g.needle, { rotation: 48, svgOrigin: O, duration: 0.4, ease: "power2.out" }, tCash);
-      tl.to(g.needle, { rotation: -40, svgOrigin: O, duration: 0.4, ease: "power2.inOut" }, tRent);
-      tl.to(g.needle, { rotation: 22, svgOrigin: O, duration: 0.5, ease: "power2.inOut" }, tBoth + 0.4);
-    });
-    // profit counts up to ₹8,500
-    K.dropIn(tl, footN, cue("s02g", "@aman's", 2) - 0.1, { dur: 0.34 });
-    tkF.to(tl, cue("s02g", "@eight"), 8500, 1.3);
-    // exit: everything else steps away; the profit chip flies to centre and flips — its back is the SMS card
-    const tOut = cue("s02g", "@rupees") + 0.1;
-    K.liftOff(tl, tab, tOut, { dur: 0.25 });
-    aman.walkTo(tl, tOut, -260, 0.9);
-    L6.mv(tl, foot, tOut + 0.05, 0.6, { x: 960 - TX, y: 540 - (TY + 282) });
-    L6.mv(tl, foot, tOut + 0.05, 0.6, { scale: 1.5 });
-    tl.to(cream, { opacity: 1, duration: 0.45, ease: "power1.inOut" }, tOut + 0.3);
-    tl.to(foot.sc, { scaleX: 0, svgOrigin: O, duration: 0.14, ease: "power1.in" }, tOut + 0.62);
-    tl.set(footN, { opacity: 0 }, tOut + 0.76);
-    tl.set(smsR.inner, { opacity: 1 }, tOut + 0.76);
-    tl.fromTo(smsR.sc, { scaleX: 0, svgOrigin: O }, { scaleX: 1.5, svgOrigin: O, duration: 0.14, ease: "power1.out", immediateRender: false }, tOut + 0.76);
-    aman.blinks(tl, T0 + 1.0, sc.end, 3.4);
+    // exit (Aman's checkpoint table is gone — L5 reveals its own answers): the three cards step away, cream fills in, the SMS card lands → s03
+    const tOut = segEnd("s02f") + 0.05;
+    cards.forEach((c, i) => K.liftOff(tl, c.n, tOut + i * 0.08, { dur: 0.25 }));
+    tl.to(cream, { opacity: 1, duration: 0.45, ease: "power1.inOut" }, tOut + 0.15);
+    K.dropIn(tl, smsR.inner, tOut + 0.4, { dur: 0.4 });
   };
 })();

@@ -2,7 +2,7 @@
 // Exit: camera rushes into the scale's brass pivot disc → full-frame brass plate → title sting (s01t owns the seam).
 //
 // This file also defines window.L4 — small helpers shared by every Lesson 4 scene (loaded first):
-//   L4.street()   the rent-day street frame (stall + Meera + landlord + calendar + HUD) — s01, the s03 torn still, s04
+//   L4.street()   the rent-day street frame (stall + Meera + landlord + calendar + HUD) — s01, s04
 //   L4.hudSet()   put a scaleRig straight into its top-right HUD state (no tween)
 //   L4.pans()     fill a scaleRig's pans with the standard Meera's-Chai contents (jars left, tags + equity card right)
 //   L4.dash()     dashed empty slot, L4.chip() paper label chip, L4.drop/…  tiny motion helpers
@@ -131,7 +131,7 @@
     return R;
   };
   // the frozen frame just BEFORE the rent leaves: Meera holds the ₹5,000 bundle out, the landlord's palm is open, calendar `5`,
-  // HUD level at ₹88,000. Used by s03 (as the torn still), s04 (its first frame) — identical drawing both times.
+  // HUD level at ₹88,000. Used by s04 (its first frame) — identical to s01's drawing.
   L4.preRent = (parent, K, tl, t0, o = {}) => {
     const R = L4.street(parent, K, { landlordX: 1130 });
     R.cal = K.calendarStrip(o.calParent || K.g(parent, {}), 960, 70, 1.0, { highlight: 5 });

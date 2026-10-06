@@ -91,61 +91,6 @@
   "dur": 3.0
  },
  {
-  "sfx": "paper_slide",
-  "at": {
-   "seg": "s12b",
-   "word": "@bank",
-   "offset": -0.15
-  },
-  "vol": 0.35
- },
- {
-  "sfx": "paper_slide",
-  "at": {
-   "seg": "s12b",
-   "word": "@cart",
-   "offset": -0.15
-  },
-  "vol": 0.35
- },
- {
-  "sfx": "paper_slide",
-  "at": {
-   "seg": "s12b",
-   "word": "@cash",
-   "offset": -0.15,
-   "nth": 3
-  },
-  "vol": 0.35
- },
- {
-  "sfx": "paper_slide",
-  "at": {
-   "seg": "s12c",
-   "word": "@rent",
-   "offset": -0.15
-  },
-  "vol": 0.35
- },
- {
-  "sfx": "paper_slide",
-  "at": {
-   "seg": "s12c",
-   "word": "@school",
-   "offset": -0.15
-  },
-  "vol": 0.35
- },
- {
-  "sfx": "paper_slide",
-  "at": {
-   "seg": "s12c",
-   "word": "@birthday",
-   "offset": -0.15
-  },
-  "vol": 0.35
- },
- {
   "sfx": "tink_low",
   "at": {
    "seg": "s12b",
@@ -228,7 +173,7 @@
    "seg": "s12c",
    "word": "@credit",
    "offset": 0.3,
-   "nth": 2
+   "nth": 3
   },
   "vol": 0.4
  },
@@ -265,5 +210,117 @@
    "word": "@ready"
   },
   "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12b",
+   "word": "@one",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12b",
+   "word": "@two",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12b",
+   "word": "@three",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12c",
+   "word": "@four",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12c",
+   "word": "@five",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s12c",
+   "word": "@six",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s12b",
+   "word": "@debit",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s12b",
+   "word": "@debit",
+   "offset": -0.1,
+   "nth": 2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s12b",
+   "word": "@debit",
+   "offset": -0.1,
+   "nth": 3
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s12c",
+   "word": "@debit",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s12c",
+   "word": "@debit",
+   "offset": -0.1,
+   "nth": 2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s12c",
+   "word": "@debit",
+   "offset": -0.1,
+   "nth": 3
+  },
+  "vol": 0.35
  }
 ]

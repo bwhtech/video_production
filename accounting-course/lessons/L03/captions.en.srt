@@ -619,69 +619,125 @@ Pause the video now.
 The worksheet is linked in the description.
 
 156
-00:05:52,358 --> 00:05:52,918
+00:05:52,358 --> 00:05:52,878
 Done?
 
 157
-00:05:53,158 --> 00:05:54,758
-Here's how Aman's scale reads.
+00:05:53,078 --> 00:05:53,918
+Let's check.
 
 158
-00:05:55,838 --> 00:05:59,358
-After one: twenty thousand equals zero plus
+00:05:54,198 --> 00:05:54,678
+One.
 
 159
-00:05:59,438 --> 00:06:00,638
-twenty thousand.
+00:05:54,918 --> 00:05:57,518
+Aman puts in twenty thousand of his savings.
 
 160
-00:06:00,718 --> 00:06:03,918
-After two: thirty thousand equals ten thousand
+00:05:57,718 --> 00:05:59,318
+Cash up, capital up.
 
 161
-00:06:04,078 --> 00:06:05,598
-plus twenty thousand.
+00:05:59,398 --> 00:06:01,798
+Twenty thousand equals zero, plus twenty
 
 162
-00:06:05,758 --> 00:06:07,998
-Three is a swap on the left, so it stays
+00:06:01,878 --> 00:06:02,758
+thousand.
 
 163
-00:06:08,078 --> 00:06:09,278
-at thirty thousand.
+00:06:03,378 --> 00:06:03,898
+Two.
 
 164
-00:06:09,358 --> 00:06:12,238
-And after four: thirty-three thousand equals
+00:06:03,978 --> 00:06:06,178
+He takes a ten-thousand-rupee bank loan.
 
 165
-00:06:12,318 --> 00:06:14,878
-thirteen thousand plus twenty thousand.
+00:06:06,378 --> 00:06:08,298
+Cash up, liability up.
 
 166
-00:06:14,958 --> 00:06:17,438
-Next lesson, we'll walk through every step.
+00:06:08,418 --> 00:06:10,698
+Thirty thousand equals ten thousand, plus
 
 167
-00:06:19,149 --> 00:06:20,029
-Next time.
+00:06:10,778 --> 00:06:11,898
+twenty thousand.
 
 168
-00:06:20,269 --> 00:06:21,349
-April the fifth.
+00:06:12,558 --> 00:06:13,118
+Three.
 
 169
-00:06:21,549 --> 00:06:22,349
-Rent day.
+00:06:13,198 --> 00:06:15,838
+He buys a cart and fryer for eighteen thousand,
 
 170
-00:06:22,589 --> 00:06:24,989
-Five thousand rupees leave the galla… and
+00:06:15,878 --> 00:06:16,718
+in cash.
 
 171
-00:06:25,149 --> 00:06:26,469
-nothing comes back.
+00:06:16,758 --> 00:06:18,638
+A swap on the left, so the totals don't
 
 172
-00:06:26,749 --> 00:06:28,509
+00:06:18,718 --> 00:06:19,318
+change.
+
+173
+00:06:20,098 --> 00:06:20,818
+Four.
+
+174
+00:06:20,898 --> 00:06:22,978
+Three thousand rupees of potatoes, flour
+
+175
+00:06:23,058 --> 00:06:25,658
+and oil, on credit from Sharma Kirana.
+
+176
+00:06:25,858 --> 00:06:28,418
+Stock up, and what he owes goes up.
+
+177
+00:06:28,498 --> 00:06:30,898
+Thirty-three thousand equals thirteen thousand,
+
+178
+00:06:31,058 --> 00:06:32,338
+plus twenty thousand.
+
+179
+00:06:32,418 --> 00:06:33,538
+Four out of four?
+
+180
+00:06:33,618 --> 00:06:35,458
+Your scale never tipped either.
+
+181
+00:06:37,159 --> 00:06:38,039
+Next time.
+
+182
+00:06:38,279 --> 00:06:39,359
+April the fifth.
+
+183
+00:06:39,559 --> 00:06:40,359
+Rent day.
+
+184
+00:06:40,599 --> 00:06:42,999
+Five thousand rupees leave the galla… and
+
+185
+00:06:43,159 --> 00:06:44,479
+nothing comes back.
+
+186
+00:06:44,759 --> 00:06:46,519
 Will the scale finally tip?

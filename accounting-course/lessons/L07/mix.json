@@ -1601,56 +1601,8 @@
    "src": "s12.sfx.json"
   },
   {
-   "sfx": "paper_slide",
-   "t": 411.749,
-   "vol": 0.35,
-   "dur": null,
-   "fade": 0,
-   "src": "s12.sfx.json"
-  },
-  {
-   "sfx": "paper_slide",
-   "t": 418.549,
-   "vol": 0.35,
-   "dur": null,
-   "fade": 0,
-   "src": "s12.sfx.json"
-  },
-  {
-   "sfx": "paper_slide",
-   "t": 424.069,
-   "vol": 0.35,
-   "dur": null,
-   "fade": 0,
-   "src": "s12.sfx.json"
-  },
-  {
-   "sfx": "paper_slide",
-   "t": 429.019,
-   "vol": 0.35,
-   "dur": null,
-   "fade": 0,
-   "src": "s12.sfx.json"
-  },
-  {
-   "sfx": "paper_slide",
-   "t": 434.379,
-   "vol": 0.35,
-   "dur": null,
-   "fade": 0,
-   "src": "s12.sfx.json"
-  },
-  {
-   "sfx": "paper_slide",
-   "t": 440.379,
-   "vol": 0.35,
-   "dur": null,
-   "fade": 0,
-   "src": "s12.sfx.json"
-  },
-  {
    "sfx": "tink_low",
-   "t": 413.899,
+   "t": 415.739,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1658,7 +1610,7 @@
   },
   {
    "sfx": "tink_high",
-   "t": 416.859,
+   "t": 418.859,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1666,7 +1618,7 @@
   },
   {
    "sfx": "tink_low",
-   "t": 422.299,
+   "t": 426.059,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1674,7 +1626,7 @@
   },
   {
    "sfx": "tink_high",
-   "t": 423.179,
+   "t": 426.939,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1682,7 +1634,7 @@
   },
   {
    "sfx": "tink_low",
-   "t": 426.039,
+   "t": 431.479,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1690,7 +1642,7 @@
   },
   {
    "sfx": "tink_high",
-   "t": 427.579,
+   "t": 432.939,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1698,7 +1650,7 @@
   },
   {
    "sfx": "tink_low",
-   "t": 431.569,
+   "t": 438.988,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1706,7 +1658,7 @@
   },
   {
    "sfx": "tink_high",
-   "t": 433.349,
+   "t": 440.528,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1714,7 +1666,7 @@
   },
   {
    "sfx": "tink_low",
-   "t": 437.289,
+   "t": 447.828,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1722,7 +1674,7 @@
   },
   {
    "sfx": "tink_high",
-   "t": 439.149,
+   "t": 449.568,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1730,7 +1682,7 @@
   },
   {
    "sfx": "tink_low",
-   "t": 442.509,
+   "t": 454.688,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1738,7 +1690,7 @@
   },
   {
    "sfx": "tink_high",
-   "t": 445.809,
+   "t": 457.828,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1746,7 +1698,7 @@
   },
   {
    "sfx": "rise_three",
-   "t": 446.769,
+   "t": 458.788,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1761,8 +1713,104 @@
    "src": "s12.sfx.json"
   },
   {
+   "sfx": "pop",
+   "t": 411.609,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 420.649,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 428.169,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 434.578,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 441.778,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "pop",
+   "t": 450.978,
+   "vol": 0.3,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 414.519,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 423.799,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 430.679,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 437.408,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 446.288,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
+   "sfx": "paper_slide",
+   "t": 453.888,
+   "vol": 0.35,
+   "dur": null,
+   "fade": 0,
+   "src": "s12.sfx.json"
+  },
+  {
    "sfx": "coin_clink",
-   "t": 449.964,
+   "t": 461.902,
    "vol": 0.25,
    "dur": null,
    "fade": 0,
@@ -1770,7 +1818,7 @@
   },
   {
    "sfx": "pop",
-   "t": 451.924,
+   "t": 463.862,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -1778,7 +1826,7 @@
   },
   {
    "sfx": "pop",
-   "t": 452.044,
+   "t": 463.982,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -1786,7 +1834,7 @@
   },
   {
    "sfx": "pop",
-   "t": 452.164,
+   "t": 464.102,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -1794,7 +1842,7 @@
   },
   {
    "sfx": "pop",
-   "t": 452.284,
+   "t": 464.222,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -1802,7 +1850,7 @@
   },
   {
    "sfx": "pop",
-   "t": 452.404,
+   "t": 464.342,
    "vol": 0.3,
    "dur": null,
    "fade": 0,
@@ -1810,7 +1858,7 @@
   },
   {
    "sfx": "quill_scratch",
-   "t": 455.504,
+   "t": 467.442,
    "vol": 0.4,
    "dur": 1.0,
    "fade": 0,
@@ -1818,7 +1866,7 @@
   },
   {
    "sfx": "book_thump",
-   "t": 456.596,
+   "t": 468.533,
    "vol": 0.7,
    "dur": null,
    "fade": 0,
@@ -1826,7 +1874,7 @@
   },
   {
    "sfx": "cover_swing",
-   "t": 457.996,
+   "t": 469.933,
    "vol": 0.6,
    "dur": null,
    "fade": 0,
@@ -1834,7 +1882,7 @@
   },
   {
    "sfx": "pop",
-   "t": 458.296,
+   "t": 470.233,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1842,7 +1890,7 @@
   },
   {
    "sfx": "pop",
-   "t": 458.396,
+   "t": 470.333,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1850,7 +1898,7 @@
   },
   {
    "sfx": "boing_hop",
-   "t": 458.696,
+   "t": 470.633,
    "vol": 0.4,
    "dur": null,
    "fade": 0,
@@ -1954,7 +2002,7 @@
   },
   {
    "sfx": "paper_whoosh",
-   "t": 448.374,
+   "t": 460.312,
    "vol": 0.32,
    "dur": null,
    "fade": 0,
@@ -1962,7 +2010,7 @@
   },
   {
    "sfx": "paper_whoosh",
-   "t": 457.346,
+   "t": 469.283,
    "vol": 0.32,
    "dur": null,
    "fade": 0,
@@ -1992,7 +2040,7 @@
   {
    "f": "music/m3_main.mp3",
    "start": 32.186,
-   "end": 457.696,
+   "end": 469.633,
    "vol": 0.16,
    "fi": 1.5,
    "fo": 1.5,
@@ -2001,8 +2049,8 @@
   },
   {
    "f": "music/outro.mp3",
-   "start": 457.396,
-   "end": 469.696,
+   "start": 469.33299999999997,
+   "end": 481.633,
    "vol": 0.45,
    "fi": 0.3,
    "fo": 2.0,
