@@ -9,7 +9,7 @@ graphics/renders/
 .claude/settings.local.json
 
 # accounting-course: heavy build products stay local; VO + SFX mp3s are tracked so cloud agents can build without the TTS key
-accounting-course/lessons/*/renders/
+accounting-course/lessons/*/renders
 accounting-course/lessons/*/snapshots/
 accounting-course/lessons/*/review/
 accounting-course/lessons/*/icon-lab/

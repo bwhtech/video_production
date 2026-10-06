@@ -62,3 +62,12 @@ Goal: characters/props big in frame (hero 45–60 % height), set dressing so wal
 - Snapshots: `snapshots/v2/<scene>/contact-sheet*.jpg`.
 - Outputs (v2): `renders/L02-final.en.mp4` 1080p, 5:36.87 (336.87 s), video+audio start_time 0.000, mix unchanged (−14 LUFS); `renders/L02-review-720p.en.mp4` 1280×720 crf 23, same duration. Render 8 min (3 workers). Final contact sheet: `snapshots/final-v2/contact-sheet-final-v2.png`.
 - Left: s01 / s01t / s12 not touched; s06's daydream is still a single big cream bubble (left half is bare during the two-column beat); the s03/s04 note-plate seam and s02 polaroid seam were only re-timed through unchanged math (checked at the seam frames).
+
+## 2026-10-06 — Hindi (Hinglish)
+- `vo-segments.hi.json` (same 20 ids / scenes / gap_after as EN), Hinglish: Devanagari + accounting terms in Latin (asset, liability, equity, capital, account, cash, loan, stall, tag, jar, balance sheet); names/₹ identical; "scale" = तराज़ू (keep for L3 Hindi). Voice = same Monika `eleven_v4`, `assets/vo-hi/`.
+- Markers: every cue / cueEnd / sfx word / pauses.json key of L2 has a marker (158 anchors, 0 missing; `hi_anchors.py` reported 0 token/word mismatches). Punctuated keys (`@asset!`, `@liability.`, `@meera.`, `@mama,`, `@cart,`, `@photo?`, `@sentence:`) are written literally in the marker. All `{p@…}` pause markers sit on sentence-final words → `validate_cuts`: 17/17 cuts in silence.
+- Word order was kept aligned with EN so scene beats still fire in sequence (checked by comparing EN vs HI anchor times per segment). Only inversion left: s11 `@spends` now lands ~1 s after `@thirty-six` (arm gesture vs price tag; harmless).
+- No scene edits needed: series wordmark (title sting, end card) already goes through `SERIES_NAME()` → "Hisaab Kitaab"; on-screen labels stay English like L1 (no Devanagari anywhere, snapshots `L02-hi/snapshots/hi1/`).
+- `python3 build.py --lang=hi` → `lessons/L02-hi/` (375.63 s = 6:15.6, +11.5 % vs EN 5:36.9). `npm run check` 0 errors / 0 warnings, contrast 132/132. Render 8 m 54 s (3 workers).
+- Outputs: `lessons/L02-hi/renders/L02-final.hi.mp4` (1080p, −14.8 LUFS, start_time 0.000 both streams) and `L02-review-720p.hi.mp4`. Mix: `python3 build.py --lang=hi --mix --mux`.
+- Open: audition the Hindi VO (loanwords "Asset!/Liability." read in Hindi cadence; English-final-word pauses); quiz gaps left at EN values (3.2 s) — raise if the Hindi questions feel rushed.

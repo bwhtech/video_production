@@ -33,7 +33,7 @@
   "id": "s03a",
   "scene": 3,
   "gap_after": 0.6,
-  "text": "पिछली बार हमने इसे एक वाक्य में कहा था। {@what}आपके पास जो है, उसके दो हिस्से होते हैं — जो आप पर बकाया है, और जो आपका अपना {p@yours}है। आज, चलिए इसे बनाते हैं। {@meet}मिलिए taraazu से — एक balance {p@scale}scale. {@left}बाएँ पलड़े में जाते हैं {@assets}assets — वो सब कुछ, जो stall के पास {p@has}है। {@right}दाएँ पलड़े में जाते हैं {@liabilities}liabilities और equity — वो सब, जिनका उन assets पर claim है।"
+  "text": "पिछली बार हमने इसे एक वाक्य में कहा था। {@what}आपके पास जो है, उसके दो हिस्से होते हैं — जो आप पर बकाया है, और जो आपका अपना {p@yours}है। आज, चलिए इसे बनाते हैं। {@meet}मिलिए तराज़ू से — एक balance {p@scale}scale. {@left}बाएँ पलड़े में जाते हैं {@assets}assets — वो सब कुछ, जो stall के पास {p@has}है। {@right}दाएँ पलड़े में जाते हैं {@liabilities}liabilities और equity — वो सब, जिनका उन assets पर claim है।"
  },
  {
   "id": "s03b",
@@ -51,7 +51,7 @@
   "id": "s04b",
   "scene": 4,
   "gap_after": 0.6,
-  "text": "[excited] एक। {@cash}Cash छत्तीस हज़ार कम हुआ। दो। stall के {@has}पास अब छत्तीस हज़ार रुपये की equipment है। दोनों assets हैं, इसलिए दोनों बाएँ {@pan}पलड़े पर ही रहते {p@pan}हैं। एक नीचे गया, एक ऊपर — और taraazu {@move}हिलता नहीं है। {@still}अब भी अस्सी हज़ार। [warmly] मीरा ने {@lose}पैसे नहीं {p@money}खोए। उसने cash को एक {@turned}cart में बदल दिया। stall की value ज़रा भी कम नहीं हुई। बस उसका पैसा अब एक अलग शक्ल में है।"
+  "text": "[excited] एक। {@cash}Cash छत्तीस हज़ार कम हुआ। दो। stall के {@has}पास अब छत्तीस हज़ार रुपये की equipment है। दोनों assets हैं, इसलिए दोनों बाएँ {@pan}पलड़े पर ही रहते {p@pan}हैं। एक नीचे गया, एक ऊपर — और तराज़ू {@move}हिलता नहीं है। {@still}अब भी अस्सी हज़ार। [warmly] मीरा ने {@lose}पैसे नहीं {p@money}खोए। उसने cash को एक {@turned}cart में बदल दिया। stall की value ज़रा भी कम नहीं हुई। बस उसका पैसा अब एक अलग शक्ल में है।"
  },
  {
   "id": "s04c",
@@ -63,7 +63,7 @@
   "id": "s04d",
   "scene": 4,
   "gap_after": 0.6,
-  "text": "[firmly] {@nope}नहीं! {@expense}Expense वो पैसा होता है जो {@used}इस्तेमाल होकर {@gone}ख़त्म हो गया। {@cart}Cart ख़त्म नहीं हुई है। वो वहीं {@standing}खड़ी है, {@chai}चाय बनाने के लिए तैयार। वो {@wear}घिसेगी ज़रूर, धीरे-धीरे — और उसका हिसाब हम महीने के आख़िर में करेंगे।"
+  "text": "[firmly] {@nope}नहीं! {@expense}Expense वो पैसा होता है जो {@used}इस्तेमाल होकर {@gone}ख़त्म हो गया। {@cart}Cart ख़त्म नहीं हुई है। वो वहीं {@standing}खड़ी है, {@chai}चाय बनाने के लिए {p@chai}तैयार। वो {@wear}घिसेगी ज़रूर, धीरे-धीरे — और उसका हिसाब हम महीने के आख़िर में करेंगे।"
  },
  {
   "id": "s05a",
@@ -75,19 +75,19 @@
   "id": "s05b",
   "scene": 5,
   "gap_after": 0.6,
-  "text": "{@cash}Cash छह हज़ार कम हुआ। बाईं तरफ़ एक और {@swap}swap। taraazu {@stays}बराबर रहता है, {@eighty}अस्सी हज़ार पर।"
+  "text": "{@cash}Cash छह हज़ार कम हुआ। बाईं तरफ़ एक और {@swap}swap। तराज़ू {@stays}बराबर रहता है, {@eighty}अस्सी हज़ार पर।"
  },
  {
   "id": "s06a",
   "scene": 6,
   "gap_after": 3.2,
-  "text": "[inviting] अब {@you}आपकी बारी, अपने दम पर। तीन अप्रैल। {@gopal}गोपाल Dairy {@eight}आठ हज़ार रुपये का दूध और सामान देता है — पिछले lesson के सवाल वाली delivery। मीरा {@pay}बाद में पैसे देगी। आप दोनों {@changes}changes पहले से जानते हैं: {@stock}stock आठ हज़ार बढ़ा, और गोपाल के आठ हज़ार {@owed}बकाया। तो असली सवाल ये है — अब taraazu का {@each}हर पलड़ा क्या {@read}दिखा रहा है?"
+  "text": "[inviting] अब {@you}आपकी बारी, अपने दम पर। तीन अप्रैल। {@gopal}गोपाल Dairy {@eight}आठ हज़ार रुपये का दूध और सामान देता है — पिछले lesson के सवाल वाली delivery। मीरा {@pay}बाद में पैसे देगी। आप दोनों {@changes}changes पहले से जानते हैं: {@stock}stock आठ हज़ार बढ़ा, और गोपाल के आठ हज़ार {@owed}बकाया। तो असली सवाल ये है — अब तराज़ू का {@each}हर पलड़ा क्या {@read}दिखा रहा है?"
  },
  {
   "id": "s06b",
   "scene": 6,
   "gap_after": 0.8,
-  "text": "{@stock}{@left}बाईं तरफ़ stock आठ हज़ार बढ़ता {p@left}है। एक पल के लिए, taraazu {@tips}झुक जाता है… फिर दायाँ पलड़ा उसे {@catches}पकड़ लेता है। {@owes}मीरा पर अब गोपाल के आठ हज़ार रुपये बकाया {p@rupees}हैं। {@eighty-eight}अट्ठासी हज़ार, बराबर अड़तीस हज़ार जमा पचास हज़ार। {@level}बराबर।"
+  "text": "{@stock}{@left}बाईं तरफ़ stock आठ हज़ार बढ़ता {p@left}है। एक पल के लिए, तराज़ू {@tips}झुक जाता है… फिर दायाँ पलड़ा उसे {@catches}पकड़ लेता है। {@owes}मीरा पर अब गोपाल के आठ हज़ार रुपये बकाया {p@rupees}हैं। {@eighty-eight}अट्ठासी हज़ार, बराबर अड़तीस हज़ार जमा पचास हज़ार। {@level}बराबर।"
  },
  {
   "id": "s07a",
@@ -99,36 +99,36 @@
   "id": "s07b",
   "scene": 7,
   "gap_after": 0.8,
-  "text": "और ये सिर्फ़ चार {@ways}तरीक़ों में ही होता {p@ways}है। दोनों तरफ़ {@up}बढ़ें — जैसे रवि मामा का loan। दोनों तरफ़ {@down}घटें — जैसे bill चुकाना। बाईं तरफ़ एक {@swap}swap — cash बदल गया cart में। या दाईं तरफ़ एक {@swap#2}swap — एक claim बदल गया {@another}दूसरे claim में। ये वाला आप {@may}मई में {p@may}देखेंगे। [softly] हर हाल में, taraazu {@never}कभी झुका नहीं रहता।"
+  "text": "और ये सिर्फ़ चार {@ways}तरीक़ों में ही होता {p@ways}है। दोनों तरफ़ {@up}बढ़ें — जैसे रवि मामा का loan। दोनों तरफ़ {@down}घटें — जैसे bill चुकाना। बाईं तरफ़ एक {@swap}swap — cash बदल गया cart में। या दाईं तरफ़ एक {@swap#2}swap — एक claim बदल गया {@another}दूसरे claim में। ये वाला आप {@may}मई में {p@may}देखेंगे। [softly] हर हाल में, तराज़ू {@never}कभी झुका नहीं रहता।"
  },
  {
   "id": "s08",
   "scene": 8,
   "gap_after": 0.6,
-  "text": "तो। {@scale}taraazu: बाईं तरफ़ assets, दाईं तरफ़ liabilities जमा equity। {@every}हर transaction के दो effects होते हैं। और {@four}चारों patterns taraazu को {@level}बराबर रखते हैं।"
+  "text": "तो। {@scale}तराज़ू: बाईं तरफ़ assets, दाईं तरफ़ liabilities जमा equity। {@every}हर transaction के दो effects होते हैं। और {@four}चारों patterns तराज़ू को {@level}बराबर रखते हैं।"
  },
  {
   "id": "s09",
   "scene": 9,
   "gap_after": 0.8,
-  "text": "[inviting] अब आपकी बारी। तीन छोटे {p@ones}सवाल। {@one}एक। {@what}गोपाल की delivery के बाद equation क्या दिखाती {p@delivery}है? {@two}दो। मीरा cash देकर एक cart ख़रीदती है। {@does}क्या taraazu हिलता {p@move}है? {@three#2}तीन। मीरा रवि मामा के loan का एक हिस्सा चुकाती है। {@which}चारों patterns में से ये कौन सा {p@that}है? जवाब {@next}अगले lesson में।"
+  "text": "[inviting] अब आपकी बारी। तीन छोटे {p@ones}सवाल। {@one}एक। {@what}गोपाल की delivery के बाद equation क्या दिखाती {p@delivery}है? {@two}दो। मीरा cash देकर एक cart ख़रीदती है। {@does}क्या तराज़ू हिलता {p@move}है? {@three#2}तीन। मीरा रवि मामा के loan का एक हिस्सा चुकाती है। {@which}चारों patterns में से ये कौन सा {p@that}है? जवाब {@next}अगले lesson में।"
  },
  {
   "id": "s10a",
   "scene": 10,
   "gap_after": 3.2,
-  "text": "[excited] और अब, {@checkpoint}Checkpoint One। एक बिल्कुल नया {@business}business। ये हैं अमन, मीरा के दोस्त। वो एक {@samosa}samosa cart शुरू कर रहा {p@cart}है। {@one#2}एक। अमन अपनी बचत के बीस हज़ार रुपये लगाता है। {@two}दो। वो दस हज़ार का bank loan लेता है। {@three}तीन। वो अठारह हज़ार में cart और fryer ख़रीदता है, cash में। {@four}चार। वो शर्मा किराना से तीन हज़ार रुपये के आलू, आटा और तेल लेता है, और पैसे बाद में {p@later}देगा। हर {@each}एक के लिए: कौन सी दो चीज़ें बदलीं? और उसके बाद अमन का {@scale}taraazu क्या पढ़ता है? [firmly] अब video को {@pause}pause कीजिए। Worksheet का link description में है।"
+  "text": "[excited] और अब, {@checkpoint}Checkpoint One। एक बिल्कुल नया {@business}business। ये हैं अमन, मीरा के दोस्त। वो एक {@samosa}samosa cart शुरू कर रहा {p@cart}है। {@one#2}एक। अमन अपनी बचत के बीस हज़ार रुपये लगाता है। {@two}दो। वो दस हज़ार का bank loan लेता है। {@three}तीन। वो अठारह हज़ार में cart और fryer ख़रीदता है, cash में। {@four}चार। वो शर्मा किराना से तीन हज़ार रुपये के आलू, आटा और तेल लेता है, और पैसे {@later}बाद में {p@later}देगा। हर {@each}एक के लिए: कौन सी दो चीज़ें बदलीं? और उसके बाद अमन का {@scale}तराज़ू क्या पढ़ता है? [firmly] अब video को {@pause}pause कीजिए। Worksheet का link description में है।"
  },
  {
   "id": "s10b",
   "scene": 10,
   "gap_after": 1.0,
-  "text": "हो गया? देखिए अमन का taraazu कैसा दिखता {p@reads}है। {@one}एक के बाद: {@twenty}बीस हज़ार, बराबर ज़ीरो जमा बीस हज़ार। {@two}दो के बाद: {@thirty}तीस हज़ार, बराबर दस हज़ार जमा बीस हज़ार। {@three}तीन बाईं तरफ़ का swap है, इसलिए वो {@thirty#2}तीस हज़ार पर ही रहता है। और {@four}चार के बाद: {@thirty-three}तैंतीस हज़ार, बराबर तेरह हज़ार जमा बीस हज़ार। {@next}अगले lesson में, हम हर step समझेंगे।"
+  "text": "हो गया? देखिए अमन का तराज़ू कैसा दिखता {p@reads}है। {@one}एक के बाद: {@twenty}बीस हज़ार, बराबर ज़ीरो जमा बीस हज़ार। {@two}दो के बाद: {@thirty}तीस हज़ार, बराबर दस हज़ार जमा बीस हज़ार। {@three}तीन बाईं तरफ़ का swap है, इसलिए वो {@thirty#2}तीस हज़ार पर ही रहता है। और {@four}चार के बाद: {@thirty-three}तैंतीस हज़ार, बराबर तेरह हज़ार जमा बीस हज़ार। {@next}अगले lesson में, हम हर step समझेंगे।"
  },
  {
   "id": "s11",
   "scene": 11,
   "gap_after": 1.0,
-  "text": "[teasing] अगली बार। {@fifth}पाँच अप्रैल। {@rent}Rent का दिन। पाँच हज़ार रुपये गल्ले से {@leave}निकल जाते हैं… और {@nothing}कुछ भी वापस नहीं आता। {@will}क्या taraazu {@finally}आख़िरकार झुकेगा?"
+  "text": "[teasing] अगली बार। {@fifth}पाँच अप्रैल। {@rent}Rent का दिन। पाँच हज़ार रुपये गल्ले से {@leave}निकल जाते हैं… और {@nothing}कुछ भी वापस नहीं आता। {@will}क्या तराज़ू {@finally}आख़िरकार झुकेगा?"
  }
 ]

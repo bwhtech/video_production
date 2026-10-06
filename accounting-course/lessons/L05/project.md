@@ -12,6 +12,11 @@
 - `index.template` patch: every scene build is wrapped in try/catch; errors are collected and re-thrown AFTER the master timeline is registered, so one broken
   scene (parallel authors) no longer blanks the lesson but `hyperframes check` still fails (`page_error: SCENE BUILD ERRORS — sNN: …`).
 
+## Status
+- All 15 scenes + `.sfx.json` built; `python3 build.py` OK; `npm run check` 0 errors; dense snapshots read and fixed (`snapshots/<scene>/contact-sheet*.jpg`; latest per-scene passes: f01, r6, r7, r8, r9, r10, r12, r13, f02, t1).
+- **Render NOT done** (coordinator paused English renders in favour of Hindi): run, under the render lock, `npx hyperframes@0.8.133 render -o renders/video.en.mp4 --workers 3`, then
+  `python3 build.py --mix --mux` (→ `renders/L05-final.en.mp4`), a 720p review copy, and check both streams `start_time = 0`. A first attempt reached 63 % before being stopped (render time ≈ 11–12 min).
+
 ## Structure
 - `assets/scenes/s01.js` hosts **`window.L5`** (the lesson-local helper kit; scene files load in order):
   `node/hide/stage/cal/drop/lift/allow/card/chip/push/layers/zoom/fly/coinHop/tumblerRow/cover` · **`L5.gauge`** (animatable Profit/Cash gauge — see below) ·
@@ -51,3 +56,12 @@ touched at any other time (no idle flutter). Profit max 25,000, Cash max 60,000 
 - s08 is crowded on the left (Infotech building next to the gauge strip); s10 tiles are half empty by design (icon-only).
 - s13's big `CREDITED` card covers the stall (the "screen fills the frame" beat is simplified to a card flying out of the phone).
 - Seams into s09 and s10 are default wipes (the gauge → tile fold is not hand-authored).
+
+## 2026-10-06 — Hindi (Hinglish)
+- `vo-segments.hi.json` (28 segments, same ids / scenes / gaps as EN — no gap raised), `assets/vo-hi/` (eleven_v4, Monika, `--lang hi`), `anchors.hi.json` (240 anchors, 0 problems from `tools/hi_anchors.py`; no alias file needed).
+- Catchphrase + recurring phrases follow L04: "कौन-सी दो चीज़ें बदलीं?", "आपकी बारी। तीन छोटे सवाल।", "जवाब अगले lesson की शुरुआत में।"; "Checkpoint दो", "अब video को pause कीजिए" (L02).
+- Anchor gotchas: EN `@meera` in s02 is the word "Meera" in "It belongs to Meera." (the pocket-flies-out beat), NOT "Meera's profit" → the Hindi marker sits on the final "मीरा का है"; s07b `@meera#2` / `@yet#2` follow the second occurrence; s12c `@cash#3/#4`, `@profit#2..#4`, `@both#2` map to the Hindi occurrences by count; pause markers all on sentence-final words
+  (`{p@thousand#2}` in s06c/s09b, `{p@it}`, `{p@moves}` …). `music.json` hush on `@cash` / `@moves` resolve through the same markers; the s12b hush uses the literal word `five` nth 2 → no Hindi match → falls back to the proportional English position (fine, the dip sits on the last words before the 3.2 s pause).
+- Two small word-order inversions kept (s11 "गोपाल को / पैसे चुकाना", "UPI payment के बाद") — cues are <0.5 s apart.
+- No label swaps needed: on-screen text is numerals, ₹ and English accounting terms; series name already swaps (`SERIES_NAME()` → "Hisaab Kitaab"). The end-card "Up next · Lesson 6 · Debit & Credit Are Just Left & Right" stays English.
+- Build: `python3 build.py --lang=hi` → `lessons/L05-hi/` (453.65 s = 7:33.6, +11.6 % vs EN 6:47.9), `validate_cuts` 20/20 in silence, `npm run check` 0 errors; snapshots `L05-hi/snapshots/hi1/`.

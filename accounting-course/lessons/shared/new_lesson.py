@@ -138,6 +138,13 @@ def main():
     (out / "assets" / "scenes").mkdir(parents=True, exist_ok=True)
     (out / "assets" / "vo").mkdir(parents=True, exist_ok=True)
     (out / "assets" / "vo" / ".gitkeep").write_text("")
+    # renders (3–6 GB of frames per render) live on the external SSD when it is mounted; the internal disk is near full
+    ssd = Path("/Volumes/Extreme SSD/accounting-course-renders")
+    rlink = out / "renders"
+    if ssd.parent.exists() and not rlink.exists() and not rlink.is_symlink():
+        for name in (out.name, out.name + "-hi"):
+            (ssd / name).mkdir(parents=True, exist_ok=True)
+        rlink.symlink_to(ssd / out.name)
     # pipeline (copied from the reference lesson)
     shutil.copy(REF / "build.py", out / "build.py")
     for f in ("package.json", "hyperframes.json"):

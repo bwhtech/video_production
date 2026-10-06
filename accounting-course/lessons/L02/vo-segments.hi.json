@@ -135,7 +135,7 @@
   "id": "s10",
   "scene": 10,
   "gap_after": 0.8,
-  "text": "[inviting] {@turn}अब आपकी बारी। तीन छोटे {@ones}{p@ones}सवाल। {@one}एक। Gopal Dairy से {@milk}दूध आता है, {@eight}आठ हज़ार रुपये का, और मीरा पैसे {@later}बाद में देगी। अब stall के पास क्या है, और उस पर क्या बकाया {p@owe}है? {@two}दो। क्या {@meera's}मीरा का personal {@scooter}scooter, stall का {@asset}asset {p@stall#2}है? {@three#2}तीन। Stall के पास {@eighty}अस्सी हज़ार रुपये हैं, और रवि मामा का {@thirty}तीस हज़ार बकाया है। मीरा का {@share}हिस्सा कितना {p@share}है? {@answers}जवाब {@next}अगले lesson की शुरुआत में।"
+  "text": "[inviting] {@turn}अब आपकी बारी। तीन छोटे {@ones}{p@ones}सवाल। {@one}एक। Gopal Dairy से {@eight}आठ हज़ार रुपये का {@milk}दूध आता है, और मीरा पैसे {@later}बाद में देगी। अब stall के पास क्या है, और उस पर क्या बकाया {p@owe}है? {@two}दो। क्या {@meera's}मीरा का personal {@scooter}scooter, stall का {@asset}asset {p@stall#2}है? {@three#2}तीन। Stall के पास {@eighty}अस्सी हज़ार रुपये हैं, और रवि मामा का {@thirty}तीस हज़ार बकाया है। मीरा का {@share}हिस्सा कितना {p@share}है? {@answers}जवाब {@next}अगले lesson की शुरुआत में।"
  },
  {
   "id": "s11",

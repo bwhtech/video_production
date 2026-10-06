@@ -21,7 +21,7 @@
   "id": "s02",
   "scene": 2,
   "gap_after": 0.6,
-  "text": "[warmly] पहले, पिछली बार के जवाब। {@one}एक। गोपाल की delivery के बाद, equation कुछ ऐसा बनता है: {@eighty-eight}अट्ठासी हज़ार {@equals}बराबर {@thirty-eight}अड़तीस हज़ार, {@plus}जमा {@fifty}पचास {@thousand#3}{p@thousand#3}हज़ार। {@two}दो। Cash देकर cart ख़रीदने से {@scale}scale नहीं हिलता। {@cash#2}Cash घटता है, {@comes}cart आ जाता है — left side पर बस एक {@swap}swap {p@left}है। {@three}तीन। {@paying}रवि मामा का loan थोड़ा चुकाया? {@cash#3}Cash घटता है, और मीरा पर जो बकाया है, वो भी। {@both}दोनों तरफ़ एक साथ घटते हैं, और scale {@level}{p@level}बराबर रहता है। और loan चुकाना कोई {@not}{@expense}expense नहीं है — क़र्ज़ बस {@smaller}छोटा हो गया।"
+  "text": "[warmly] पहले, पिछली बार के जवाब। {@one}एक। गोपाल की delivery के बाद, equation कुछ ऐसा बनता है: {@eighty-eight}अट्ठासी हज़ार {@equals}बराबर {@thirty-eight}अड़तीस हज़ार, {@plus}जमा {@fifty}पचास {@thousand#3}{p@thousand#3}हज़ार। {@two}दो। Cash देकर cart ख़रीदने से {@scale}scale नहीं हिलता। {@cash#2}Cash घटता है, {@comes}cart आ जाता है — left side पर बस एक {@swap}swap {p@left}है। {@three}तीन। {@paying}रवि मामा का loan थोड़ा चुकाया? {@cash#3}Cash घटता है, और मीरा पर जो बकाया है, वो भी। {@both}दोनों तरफ़ एक साथ घटते हैं, और scale {@level}बराबर रहता {p@level}है। और loan चुकाना कोई {@not}{@expense}expense नहीं है — क़र्ज़ बस {@smaller}छोटा हो गया।"
  },
  {
   "id": "s03a",
@@ -39,7 +39,7 @@
   "id": "s04a",
   "scene": 4,
   "gap_after": 2.0,
-  "text": "तो, वापस किराए वाले दिन पर। {@freeze}रुकिए। {@which}कौन-सी दो चीज़ें बदलीं?"
+  "text": "तो, वापस किराए वाले दिन पर। {@freeze}रुकिए। {@which}कौन सी दो चीज़ें बदलीं?"
  },
  {
   "id": "s04b",
@@ -117,7 +117,7 @@
   "id": "s08a",
   "scene": 8,
   "gap_after": 3.2,
-  "text": "आपकी बारी। बस {@imagine}कल्पना कीजिए — ये मीरा की books में नहीं है। मीरा {@three}तीन सौ रुपये {@gas}gas के refill पर देती हैं। {@which}कौन-सी दो चीज़ें बदलीं?"
+  "text": "आपकी बारी। बस {@imagine}कल्पना कीजिए — ये मीरा की books में नहीं है। मीरा {@three}तीन सौ रुपये {@gas}gas के refill पर देती हैं। {@which}कौन सी दो चीज़ें बदलीं?"
  },
  {
   "id": "s08b",
@@ -129,7 +129,7 @@
   "id": "s08c",
   "scene": 8,
   "gap_after": 3.2,
-  "text": "एक {@more}और। मीरा दूसरा kettle {@fifteen}पंद्रह सौ रुपये में ख़रीदती हैं। {@which}कौन-सी दो चीज़ें बदलीं?"
+  "text": "एक {@more}और। मीरा दूसरा kettle {@fifteen}पंद्रह सौ रुपये में ख़रीदती हैं। {@which}कौन सी दो चीज़ें बदलीं?"
  },
  {
   "id": "s08d",
@@ -147,7 +147,7 @@
   "id": "s10",
   "scene": 10,
   "gap_after": 0.8,
-  "text": "[inviting] आपकी {@turn}बारी। तीन छोटे सवाल। {@one}एक। क्या {@thirty-six-thousand-rupee}छत्तीस हज़ार रुपये की cart एक {@expense}expense है? {@two}दो। किराए और पहले दो हफ़्तों की sales के बाद, मीरा का profit कितना है? {@three#2}तीन। Scale के किस तरफ़ profit {@live}रहता है? {@answers}जवाब अगले lesson की शुरुआत में।"
+  "text": "[inviting] आपकी {@turn}बारी। तीन छोटे सवाल। {@one}एक। क्या {@thirty-six-thousand-rupee}छत्तीस हज़ार रुपये की cart एक {@expense}expense है? {@two}दो। किराए और पहले दो हफ़्तों की sales के बाद, मीरा का profit कितना है? {@three#2}तीन। Scale के किस तरफ़ {@profit#2}profit {@live}रहता है? {@answers}जवाब अगले lesson की शुरुआत में।"
  },
  {
   "id": "s11",

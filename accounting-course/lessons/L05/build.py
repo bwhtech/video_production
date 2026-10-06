@@ -389,10 +389,15 @@ def normalize_sfx():
                         "-ar", "48000", str(dst)], check=True)
 
 # ---------------------------------------------------------------- offline mix
+# Friction SFX (broadband hiss) read as a stray "sh" when they land on a spoken word. run_mix low-passes them and ducks
+# them under the VO; everything else on the fx bus plays as cued.
+NOISE_SFX = {"paper_slide", "paper_whoosh", "swoosh_transition", "note_rustle", "page_flip", "page_flurry",
+             "cover_swing", "paper_unfold", "rewind_whoosh", "polaroid_whirr", "projector", "twine_tug"}
+
 def run_mix(T, sfx, music):
     """VO bus (highpass) + SFX bus + music bus (sidechain-ducked under VO) → 2-pass loudnorm −14 LUFS."""
     total = T["total"]
-    inputs, chains, vo_labels, fx_labels, mus_labels = [], [], [], [], []
+    inputs, chains, vo_labels, fx_labels, mus_labels, noise_labels = [], [], [], [], [], []
     def add(path):
         inputs.extend(["-i", str(path)]); return len(inputs) // 2 - 1
     for sid, s in T["segs"].items():
@@ -404,7 +409,10 @@ def run_mix(T, sfx, music):
     for c in sfx:
         i = add(A / "sfx-norm" / f"{c['sfx']}.wav"); ms = int(c["t"] * 1000)
         trim = f"atrim=0:{c['dur']}," if c["dur"] else ""
-        chains.append(f"[{i}:a]aresample=48000,{trim}volume={c['vol']},adelay={ms}|{ms}[f{i}]"); fx_labels.append(f"[f{i}]")
+        if c["sfx"] in NOISE_SFX:   # friction sounds: tame the hiss band and duck under speech (see NOISE_SFX)
+            chains.append(f"[{i}:a]aresample=48000,{trim}lowpass=f=3200,volume={c['vol']},adelay={ms}|{ms}[f{i}]"); noise_labels.append(f"[f{i}]")
+        else:
+            chains.append(f"[{i}:a]aresample=48000,{trim}volume={c['vol']},adelay={ms}|{ms}[f{i}]"); fx_labels.append(f"[f{i}]")
     for m in music:
         src = A / m["f"]; i = add(src); length = m["end"] - m["start"]; ms = int(m["start"] * 1000)
         loop = f"aloop=loop=-1:size=2e9," if m.get("loop") else ""
@@ -412,7 +420,7 @@ def run_mix(T, sfx, music):
                       f"afade=t=out:st={max(0, length - m['fo']):.3f}:d={m['fo']},volume={m['vol']},adelay={ms}|{ms}[m{i}]")
         (mus_labels if m["duck"] else fx_labels).append(f"[m{i}]")
     n = lambda L: len(L)
-    chains.append(f"{''.join(vo_labels)}amix=inputs={n(vo_labels)}:normalize=0,highpass=f=80,apad=whole_dur={total:.3f},asplit=2[vo][vokey]")
+    chains.append(f"{''.join(vo_labels)}amix=inputs={n(vo_labels)}:normalize=0,highpass=f=80,apad=whole_dur={total:.3f},asplit=3[vo][vokey][vokey2]")
     # optional dramatic hush (music.json "hush"): dip the music bed at a VO word (1 s of near-silence)
     hush = ""
     hs = _music_cfg().get("hush")
@@ -427,7 +435,13 @@ def run_mix(T, sfx, music):
     chains.append(f"{''.join(mus_labels)}amix=inputs={n(mus_labels)}:normalize=0{hush},apad=whole_dur={total:.3f}[mus]")
     chains.append("[mus][vokey]sidechaincompress=threshold=0.04:ratio=8:attack=20:release=300[musd]")
     chains.append(f"{''.join(fx_labels)}amix=inputs={n(fx_labels)}:normalize=0,volume=1.0,apad=whole_dur={total:.3f}[fx]")
-    chains.append(f"[vo][musd][fx]amix=inputs=3:normalize=0,atrim=0:{total:.3f}[mix]")
+    if noise_labels:
+        chains.append(f"{''.join(noise_labels)}amix=inputs={len(noise_labels)}:normalize=0,apad=whole_dur={total:.3f}[nz]")
+        chains.append("[nz][vokey2]sidechaincompress=threshold=0.02:ratio=10:attack=5:release=250[nzd]")
+        chains.append(f"[vo][musd][fx][nzd]amix=inputs=4:normalize=0,atrim=0:{total:.3f}[mix]")
+    else:
+        chains.append("[vokey2]anullsink")
+        chains.append(f"[vo][musd][fx]amix=inputs=3:normalize=0,atrim=0:{total:.3f}[mix]")
     graph = ";".join(chains)
     out_dir = OUT / "renders"; out_dir.mkdir(exist_ok=True)
     pre = out_dir / "audio-premix.wav"

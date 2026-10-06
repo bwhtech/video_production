@@ -59,9 +59,14 @@ python3 lessons/shared/new_lesson.py 08 08-journal          # scaffold lessons/L
 # generate VO: tools/tts.py per segment of lessons/L08/vo-segments.json → lessons/L08/assets/vo/
 # author lessons/L08/assets/scenes/<id>.js + <id>.sfx.json (see lessons/L08/SCENE-BRIEF.md, lessons/shared/kit/RIG.md)
 cd lessons/L08 && python3 build.py && npm run check
-npx --yes hyperframes@0.8.133 render -o renders/video.en.mp4 --workers 3   # one render at a time on this machine
+npx --yes hyperframes@0.8.133 render -o renders/video.en.mp4 --workers 6   # one render at a time; renders/ → external SSD
 python3 build.py --mix --mux                                               # → renders/L08-final.en.mp4
 ```
 
 Shared kit: `lessons/shared/kit/` (kit.js, rig.js, cast.js, devices.js, icons.js — API in `RIG.md`). Shared audio
 library: `lessons/shared/audio/{sfx,music}`. Renders and snapshots are git-ignored; VO and SFX mp3s are tracked.
+
+**Renders live on the external SSD.** Each `lessons/L0N*/renders` is a symlink to
+`/Volumes/Extreme SSD/accounting-course-renders/L0N*` (frame dumps are 3–6 GB per render; the internal disk is nearly
+full). Render one lesson at a time with `--workers 6` under the lock `mkdir /tmp/hf-render-lock-dir/lock`.
+New lessons: after scaffolding, `mkdir -p "/Volumes/Extreme SSD/accounting-course-renders/L0N" && ln -s "$_" lessons/L0N/renders`.

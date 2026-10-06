@@ -1,0 +1,170 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.6,
+  "text": "[curious] {@sixteenth}सोलह अप्रैल। {@since}जिस दिन से {@opened}stall खुला है, Infotech की {@priya}प्रिया पूरे {@whole}floor के लिए चाय लेती आ रही हैं, {@every}हर {p@day#2}दिन। {@tab}उधार {p@tab}पर। बाद में {@pay}पैसे देंगी।"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.2,
+  "text": "आज, मीरा {@first}पहला {@bill}bill भेजती हैं — दो हफ़्ते की चाय। {@six}छह हज़ार रुपये। उनका {@profit}profit बढ़ जाता है। [softly] उनका {@galla}गल्ला {@doesn't}नहीं हिलता।"
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "तो क्या मीरा ने {@make}पैसे {@money}कमाए, {@or}या नहीं?"
+ },
+ {
+  "id": "s02",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "[warmly] पहले, पिछली बार के जवाब। {@one}एक। क्या cart एक expense है? {@no}नहीं। वो अब भी {@chai}चाय बना रही है, इसलिए वो एक {@asset}asset {p@asset}है। {@two}दो। मीरा का profit: अठारह हज़ार का revenue, माइनस पाँच हज़ार का किराया। {@thirteen}तेरह हज़ार {@rupees}{p@rupees}रुपये। {@three}तीन। Profit scale के {@right}दाएँ पलड़े में रहता है, {@equity}equity के अंदर। {@belongs}ये {@meera}मीरा का है।"
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.5,
+  "text": "आज, {@khata}खाता stall की दीवार पर {@pins}दो {@needles}needles लगा देता है। पहली है {@profit}Profit। ये तब हिलती है जब मीरा पैसे कमाती हैं, या ख़र्च कर देती {p@up}हैं। दूसरी है {@cash}Cash — {@galla}गल्ले में जो कुछ है, और {@bank}bank में जो कुछ है, सब मिलाकर।"
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "अभी, profit {@thirteen}तेरह हज़ार दिखाता है। Cash {@fiftyone}इक्यावन हज़ार। ये बड़ा है, क्योंकि इसमें मीरा की {@savings}बचत और रवि मामा का {@loan}loan भी शामिल है। [curious] ज़्यादातर लोग {@think}सोचते हैं कि ये दोनों needles {@move}साथ-साथ हिलती हैं। चलिए {@watch}देखते हैं।"
+ },
+ {
+  "id": "s04",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "पहले, एक दिन पीछे चलते हैं। {@fifteenth}पंद्रह अप्रैल। {@meera}मीरा {@carries}ले जाती हैं {@fifteen}पंद्रह हज़ार रुपये — {@galla}गल्ले से {@bank}bank तक। {@profit}Profit? {@change}कोई बदलाव नहीं। {@cash}Cash? इसमें भी कोई {@change#2}बदलाव {p@change#2}नहीं। पैसा बस {@moved}चला गया — एक {@pocket}pocket से दूसरी में।"
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 2.0,
+  "text": "अब, {@sixteenth}सोलह अप्रैल। Infotech का {@tab}tab। {@which}कौन-सी दो चीज़ें बदलीं?"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.5,
+  "text": "{@sales}Sales {@up}बढ़ीं — {@six}छह हज़ार। {@chai}चाय {@drunk}पी जा चुकी है, इसलिए मीरा ने इसे {@earned}कमा लिया {p@it}है। पर {@left}left side पर, {@no}कोई cash नहीं आया। इसके बजाय, {@infotech}Infotech पर अब stall के छह हज़ार रुपये {@owes}बकाया हैं। Customers का जो पैसा आपको लेना है, वो एक asset है — उसे {@receivable}receivable कहते हैं।"
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 1.5,
+  "text": "{@so}तो profit needle {@jumps}उछल जाती है, तेरह हज़ार से उन्नीस हज़ार पर। और {@cash}cash needle? [softly] वो {@move}बिल्कुल नहीं हिलती।"
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 1.5,
+  "text": "[firmly] {@revenue}Revenue तब गिना जाता है जब वो {@earned}कमाया जाए — जब चाय {@drunk}पी जाए — तब नहीं जब पैसा {@arrives}आता {p@arrives}है। और {@expenses}expenses तब गिने जाते हैं जब वो {@incurred}लग जाते हैं — जब कोई चीज़ {@used}इस्तेमाल हो जाए — तब नहीं जब वो {@paid}चुकाए जाते {p@paid}हैं। इस idea को कहते हैं {@accrual}accrual।"
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.5,
+  "text": "{@twentieth}बीस अप्रैल। मीरा {@pays}चुकाती हैं — {@gopal}गोपाल को {@five}पाँच हज़ार रुपये, {@of}दूध के उन {@eight}आठ हज़ार में से, जो उन पर बकाया हैं। मीरा को इस बार {@sure}पूरा यक़ीन है। पैसा गल्ले से {@left}निकल गया, तो ये {@expense}expense है।"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 2.0,
+  "text": "[firmly] {@nope}नहीं। {@that}वो दूध {@stock}stock बनकर आया था, और {@gopal}गोपाल एक {@liability}liability बन गए। आज मीरा बस {@paying}चुका रही हैं वो {@debt}क़र्ज़। तो {@which}कौन-सी needle {@moves}हिलेगी?"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "{@only}सिर्फ़ {@cash}cash। पाँच हज़ार {@down}कम। Profit उन्नीस हज़ार पर {@stays}बना रहता {p@thousand#2}है। ये payment एक liability को {@shrinks}घटाता {p@liability}है। जो पैसा stall पर किसी supplier का बकाया है, उसे {@payable}payable कहते हैं — {@receivable}receivable का उल्टा।"
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "{@twentysecond}बाईस अप्रैल। एक customer {@pays}advance में {@four}चार हज़ार रुपये देता है, {@catering}catering order के लिए — जो {@fifth}पाँच मई को {p@fifth}है। इस बार मीरा {@quick}जल्दी में हैं। {@money}Customer से पैसे आए? Revenue — {@straight}सीधे profit {@pocket}pocket में।"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 2.0,
+  "text": "[firmly] {@nope}नहीं। मीरा ने {@cup}एक भी cup {@yet}अभी तक नहीं बनाया। पाँच मई तक, मीरा पर उस customer का एक {@event}event बकाया है — या उसके पैसे {@back}वापस करने {p@back}हैं। Advance एक {@liability}liability है, revenue नहीं। [playful] अभी {p@yet#2}नहीं। {@meera#2}मीरा, कौन-सी needle {@moves}हिलेगी?"
+ },
+ {
+  "id": "s07c",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "{@only}सिर्फ़ {@cash}cash। चार हज़ार {@up}ऊपर। Profit उन्नीस हज़ार पर {@stays}बना रहता है।"
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "अब आप, अपने दम पर। {@twentyfifth}पच्चीस अप्रैल। {@infotech}Infotech अपने {@tab}tab में से चार हज़ार रुपये {@upi}UPI से चुकाता है। {@profit}Profit? {@cash}Cash?"
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "{@cash}Cash चार हज़ार बढ़ता है, सीधे {@into}{@bank}bank में। {@profit}Profit नहीं {@move}हिलता। {@meera}मीरा ने वो पैसा {@sixteenth}सोलह अप्रैल को ही कमा लिया था। आज, वो बस उसे {@collecting}वसूल कर रही {p@it}हैं। Receivable {@shrinks}घटती है, और bank {@grows}बढ़ता है।"
+ },
+ {
+  "id": "s09a",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "{@fifteenth}पंद्रह अप्रैल से, profit {@needle}needle सिर्फ़ {@once}एक बार हिली — उस दिन, जब कोई पैसा नहीं {p@in}आया। Cash {@needle#2}needle {@moved#2}हिली — {@three}तीन {@times}बार — और उनमें से एक भी profit की वजह से नहीं थी।"
+ },
+ {
+  "id": "s09b",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "{@profit}Profit: उन्नीस हज़ार रुपये। {@cash}Cash: चौवन {p@thousand#2}हज़ार। {@two}दो needles। दो अलग-अलग कहानियाँ।"
+ },
+ {
+  "id": "s09c",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "{@cash}Cash basis में पैसा तभी गिना जाता है जब वो {@moves}हिलता {p@moves}है। {@accrual}Accrual basis में revenue तब गिना जाता है जब वो कमाया जाए, और expenses तब जब वो {@incurred}लग जाते {p@incurred}हैं। Businesses {@accrual#2}accrual इस्तेमाल करते हैं, क्योंकि ये दिखाता है कि असल में क्या कमाया गया — चाहे पैसा अभी रास्ते में ही क्यों न हो।"
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.6,
+  "text": "तो — दो {@needles}needles। {@earned}कमाना और {@received}मिलना एक बात नहीं है। {@paid}चुकाना और {@used}ख़र्च हो जाना भी एक बात नहीं है। {@profit}Profit, {@is}कभी {@cash}cash नहीं होता।"
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 0.8,
+  "text": "[inviting] आपकी {@turn}बारी। {@three}तीन छोटे सवाल। {@one}एक। चार हज़ार रुपये का catering {@advance}advance — क्या ये April में {@revenue}revenue है? {@two}दो। {@gopal}गोपाल को {@paying}पैसे चुकाना — क्या ये एक {@expense}expense है? {@three#2}तीन। {@upi}UPI payment के {@after}बाद, {@infotech}Infotech पर मीरा के कितने पैसे {@owe}बकाया हैं? {@answers}जवाब {@next}अगले lesson की शुरुआत में।"
+ },
+ {
+  "id": "s12a",
+  "scene": 12,
+  "gap_after": 0.5,
+  "text": "[excited] और अब — {@checkpoint}Checkpoint दो। वापस अमन की {@samosa}samosa cart पर। पाँच {@things}चीज़ें होती हैं। हर एक के लिए लिखिए कि वो {@profit}profit पर क्या असर डालती है, और {@cash}cash पर।"
+ },
+ {
+  "id": "s12b",
+  "scene": 12,
+  "gap_after": 3.2,
+  "text": "{@one}एक। नौ हज़ार रुपये की cash sales। {@two}दो। वो stall का किराया दो हज़ार रुपये देता है। {@three}तीन। वो एक school canteen को पंद्रह सौ रुपये के samosas, उधार पर, देता है। {@four}चार। वो शर्मा किराना को दो हज़ार रुपये देता है। {@five}पाँच। एक customer उसे हज़ार रुपये का advance देता है, अगले महीने की एक birthday party के लिए। {@pause}अब video को pause कीजिए, और पाँचों try कीजिए।"
+ },
+ {
+  "id": "s12c",
+  "scene": 12,
+  "gap_after": 0.8,
+  "text": "{@ready}तैयार? {@one}एक। {@profit}Profit और {@cash}cash दोनों नौ हज़ार बढ़ते हैं। {@two}दो। {@both#2}दोनों दो हज़ार घटते हैं। {@three}तीन। {@profit#2}Profit पंद्रह सौ बढ़ा। Cash, {@nothing}कुछ नहीं। {@four}चार। {@cash#3}Cash दो हज़ार घटा। {@profit#3}Profit, कुछ नहीं — ये एक debt चुकाया जा रहा है। {@five}पाँच। {@cash#4}Cash हज़ार बढ़ा। {@profit#4}Profit, कुछ नहीं — ये {@advance}advance {p@advance}है। {@aman's}अमन का profit अब तक: {@eight}साढ़े आठ हज़ार {@rupees}रुपये।"
+ },
+ {
+  "id": "s13",
+  "scene": 13,
+  "gap_after": 1.0,
+  "text": "[teasing] अगली बार — {@remember}याद है वो bank {@deposit}deposit? मीरा का phone {@buzzed}बज उठा। आपके {@account}account में पंद्रह हज़ार रुपये {@credited}credit किए गए हैं। {@credited#2}Credit! बढ़िया ख़बर… {@right}है ना?"
+ }
+]
