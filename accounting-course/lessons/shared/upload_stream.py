@@ -4,8 +4,8 @@ Docs: developers.cloudflare.com/stream/uploading-videos/resumable-uploads/ (tus;
       developers.cloudflare.com/stream/edit-videos/adding-captions/ (WebVTT only, PUT …/captions/<lang>)
 
 Credentials (never committed): env vars, else ~/Developer/video-use/.env
-  CLOUDFLARE_ACCOUNT_ID=…
-  CLOUDFLARE_STREAM_TOKEN=…        # API token with Account › Stream › Edit
+  CF_ACCOUNT_ID=…                  # or CLOUDFLARE_ACCOUNT_ID
+  CF_STREAM_TOKEN=…                # or CLOUDFLARE_STREAM_TOKEN; API token with Account › Stream › Edit
 
 usage:
   python3 lessons/shared/upload_stream.py                 # every renders/L0N-final.<lang>.mp4 not uploaded yet
@@ -37,10 +37,10 @@ def creds():
             m = re.match(r"\s*(?:export\s+)?([A-Z0-9_]+)\s*=\s*(.*)\s*$", line)
             if m and m.group(1) not in env:
                 env[m.group(1)] = m.group(2).strip().strip("'\"")
-    acct = env.get("CLOUDFLARE_ACCOUNT_ID")
-    tok = env.get("CLOUDFLARE_STREAM_TOKEN") or env.get("CLOUDFLARE_API_TOKEN")
+    acct = env.get("CLOUDFLARE_ACCOUNT_ID") or env.get("CF_ACCOUNT_ID")
+    tok = env.get("CLOUDFLARE_STREAM_TOKEN") or env.get("CF_STREAM_TOKEN") or env.get("CLOUDFLARE_API_TOKEN")
     if not acct or not tok:
-        sys.exit("missing CLOUDFLARE_ACCOUNT_ID / CLOUDFLARE_STREAM_TOKEN (env or ~/Developer/video-use/.env)")
+        sys.exit("missing CF_ACCOUNT_ID / CF_STREAM_TOKEN (env or ~/Developer/video-use/.env)")
     return f"https://api.cloudflare.com/client/v4/accounts/{acct}/stream", {"Authorization": f"Bearer {tok}"}
 
 
