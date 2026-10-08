@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Props2 — test sheet</title>
+    <link rel="stylesheet" href="kit/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="kit/icons.js"></script>
+    <script src="kit/kit.js"></script>
+    <script src="kit/rig.js"></script>
+    <script src="kit/devices.js"></script>
+    <script src="kit/cast.js"></script>
+    <script src="kit/props2.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #b7895a; }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+      .layer { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+      svg { display: block; }
+      .fontwarm { position: absolute; left: -9999px; font-family: "Baloo 2", Kalam; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="17.40" data-width="1920" data-height="1080">
+      <!-- shared paper materials (copied from lessons/L01/index.template) -->
+      <svg width="0" height="0" style="position:absolute">
+        <defs>
+          <pattern id="pat-cover" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/cover.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-paper" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/paper.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-kraft" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/kraft.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-grain" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/construction.jpg" width="768" height="432" /></pattern>
+          <filter id="sh1" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="3" dy="4" stdDeviation="2" flood-color="#3b2614" flood-opacity="0.35" /></filter>
+          <filter id="sh2" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="6" dy="8" stdDeviation="3.5" flood-color="#3b2614" flood-opacity="0.38" /></filter>
+          <filter id="rough" x="-15%" y="-15%" width="130%" height="130%"><feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" seed="3" result="n" /><feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G" /></filter>
+          <filter id="sh3" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="10" dy="14" stdDeviation="6" flood-color="#3b2614" flood-opacity="0.4" /></filter>
+        </defs>
+      </svg>
+      <div class="fontwarm"><span style="font-family:'Baloo 2';font-weight:800">₹1,06,700</span><span style="font-family:Kalam">30 Apr</span></div>
+      <section id="p" class="clip" data-start="0" data-duration="17.40" data-track-index="1"><svg id="svg" class="layer" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg></section>
+    </div>
+    <script>
+      const K = window.KIT, C = K.C;
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const svg = document.getElementById("svg");
+
+      const mkStage = (t0, t1, wall, wallY) => {
+        const st = K.g(svg, {});
+        K.wall(st, wall, wallY ?? 880); K.table(st, wallY ?? 880);
+        if (t0 > 0) { st.setAttribute("opacity", "0"); tl.set(st, { autoAlpha: 1 }, t0); }
+        tl.set(st, { autoAlpha: 0 }, t1);
+        return st;
+      };
+      const STAGES = [];
+      const stage = (dur, wall, wallY, fn) => STAGES.push({ dur, wall, wallY, fn });
+      const lab = (p, x, y, t) => K.label(p, x, y, t, { size: 30, bg: "paper" });
+
+      // ===== 1 · napkin + confetti + envelope + calendarPage + dateTile
+      stage(2.4, C.teal, 880, (A, t0) => {
+        lab(A, 330, 120, "napkin"); lab(A, 960, 120, "envelope"); lab(A, 1560, 120, "calendarPage · dateTile");
+        const n = K.napkin(A, 330, 520, 1.0, { lines: [["Chai", "₹ 30"], ["Milk", "₹ 22"], ["Sugar", "₹ 8"], null], rot: -3 });
+        n.slideIn(tl, t0 + 0.1); n.write(tl, t0 + 0.6, 0, { dur: 0.5 }); n.write(tl, t0 + 1.1, 1, { dur: 0.5 }); n.write(tl, t0 + 1.6, 2, { dur: 0.4 }); n.strike(tl, t0 + 2.0, 2);
+        const cf = K.confetti(A, 330, 560, 1.0, {}); cf.burst(tl, t0 + 0.8);
+        const e = K.envelope(A, 960, 720, 1.0, { label: "Rent", hidden: true });
+        e.drop(tl, t0 + 0.1); e.open(tl, t0 + 0.9);
+        K.ticker(e.area, 0, 40, 1, { value: 36000, size: 48 }).to(tl, t0 + 1.4, 36000, 0.5);
+        const cp = K.calendarPage(A, 1400, 520, 1.0, { month: "April", day: 30 });
+        cp.circle(tl, t0 + 0.4); cp.flip(tl, t0 + 1.3, { month: "May", day: 1 });
+        const dt = K.dateTile(A, 1700, 520, 1.0, { month: "May", day: 5, hidden: false }); dt.set(tl, t0 + 1.7, "May", 6);
+      });
+      // ===== 2 · monthTiles + clipboard + packets + hangTag
+      stage(2.4, C.sky, 900, (A, t0) => {
+        lab(A, 960, 90, "monthTiles");
+        const mt = K.monthTiles(A, 960, 290, 1.0, { months: 36, hidden: true, markersShown: false });
+        mt.reveal(tl, t0 + 0.1, { per: 0.03 }); [0, 1, 2].forEach((y) => mt.year(tl, t0 + 0.2 + y * 0.35, y)); mt.markRange(tl, t0 + 1.3, 0, 6);
+        const mt4 = K.monthTiles(A, 960, 530, 0.78, { months: 36, dashedLast: true, per: 12, width: 1700 }); 
+        lab(A, 330, 640, "clipboard"); lab(A, 870, 640, "packets"); lab(A, 1500, 640, "hangTag");
+        const cb = K.clipboard(A, 330, 860, 0.62, { items: [["Tea", 12], ["Milk", 4], ["Sugar", 9]] });
+        cb.tick(tl, t0 + 0.4, 0); cb.count(tl, t0 + 0.5, 0); cb.tick(tl, t0 + 0.9, 1); cb.count(tl, t0 + 1.0, 1); cb.tick(tl, t0 + 1.4, 2); cb.count(tl, t0 + 1.5, 2);
+        const pk = K.packets(A, 870, 900, 1.0, {}); pk.dropIn(tl, t0 + 0.3);
+        const ht = K.hangTag(A, 1500, 720, 1.0, { amount: 36000 }); ht.swing(tl, t0 + 0.5);
+      });
+      // ===== 3 · tissue + tissueBox + windLines + purse + magnifier
+      stage(2.4, C.coral, 900, (A, t0) => {
+        lab(A, 300, 120, "tissueBox · tissue"); lab(A, 960, 120, "windLines"); lab(A, 1500, 120, "purse · magnifier");
+        const tb = K.tissueBox(A, 300, 860, 1.2, {}); tb.pull(tl, t0 + 0.4);
+        const ti = K.tissue(A, 560, 760, 1.0, {}); ti.flutter(tl, t0 + 0.8, t0 + 1.6); ti.blowTo(tl, t0 + 1.6, 120, -200, { dur: 0.7 });
+        const wl = K.windLines(A, 640, 500, 1.0, {}); wl.gust(tl, t0 + 0.9);
+        const pu = K.purse(A, 1400, 520, 1.0, {}); pu.swing(tl, t0 + 0.5);
+        const mg = K.magnifier(A, 1700, 700, 1.0, {}); mg.sweep(tl, t0 + 0.3, [[-60, -40], [20, 20]], {}); mg.peek(tl, t0 + 1.2);
+      });
+
+      // ===== 4 · bookshelf
+      stage(2.0, C.violet, 940, (A, t0) => {
+        lab(A, 480, 90, "bookshelf · covers"); lab(A, 1400, 90, "bookshelf · spines");
+        const ic = ["landmark", "milk", "umbrella", "coins", "user", "wallet", "receipt", "store", "package", "banknote", "house", "zap", "percent", "tag"];
+        const b1 = K.bookshelf(A, 480, 940, 0.82, { icons: ic, shown: false }); b1.putAll(tl, t0 + 0.2, { step: 0.07 }); b1.pull(tl, t0 + 1.5, 3);
+        const b2 = K.bookshelf(A, 1400, 940, 0.82, { n: 12, per: 6, w: 640, hidden: true }); b2.enter(tl, t0 + 0.3);
+      });
+
+      // ===== 5 · stallClosing + instantCamera + cinemaDoor + usherCap + paperTorch + ticketStub
+      stage(2.6, C.coral, 940, (A, t0) => {
+        lab(A, 330, 90, "stallClosing"); lab(A, 900, 90, "instantCamera"); lab(A, 1500, 90, "cinemaDoor · rope");
+        const sc = K.stallClosing(A, 330, 940, 0.6, { face: true });
+        sc.down(tl, t0 + 0.4, 0.5); sc.sign(tl, t0 + 1.2);
+        const ic = K.instantCamera(A, 880, 560, 1.0, {}); ic.shoot(tl, t0 + 0.4); ic.develop(tl, t0 + 1.6);
+        const cd = K.cinemaDoor(A, 1500, 940, 0.78, {}); cd.lightUp(tl, t0 + 0.2); cd.unhook(tl, t0 + 1.0); cd.open(tl, t0 + 1.5);
+        const cap = K.usherCap(A, 1000, 900, 1.0, {}); cap.pop(tl, t0 + 0.5);
+        const tc = K.paperTorch(A, 1180, 920, 1.0, { rot: 20 }); tc.on(tl, t0 + 0.8);
+        const tk = K.ticketStub(A, 640, 900, 1.0, {}); tk.tear(tl, t0 + 1.4);
+      });
+
+      // ===== 6 · claimString + coinStream + riverBridge + coinToken
+      stage(2.8, C.saffron, 940, (A, t0) => {
+        lab(A, 960, 70, "riverBridge · coinToken · coinStream · claimString");
+        const rb = K.riverBridge(A, 960, 760, 0.8, { hidePlanks: true }); rb.lay(tl, t0 + 0.2, { step: 0.1 });
+        const ct = K.coinToken(A, 500, 760 - 90 * 0.8 - 20, 0.8, {}); ct.expr(tl, t0 + 0.4, "worried"); ct.look(tl, t0 + 0.4, 6, 0); ct.blink(tl, t0 + 1.0); ct.roll(tl, t0 + 1.4, 900, 1.3); ct.hop(tl, t0 + 0.9);
+        const cs = K.coinStream(A, { path: [[260, 300], [420, 180], [700, 220], [900, 360]], n: 10, r: 20 }); cs.run(tl, t0 + 0.3, { dur: 1.6 });
+        const cs2 = K.coinStream(A, { path: [[1200, 360], [1450, 200], [1700, 300]], n: 8, r: 18, seed: 9 }); cs2.run(tl, t0 + 0.6, { dur: 1.4 });
+        const p = K.priceTag ? K.priceTag(A, 1400, 640, 0.9, { amount: 36000 }) : null;
+        const m = K.meera(A, 1700, 940, 0.62, { expr: "happy" });
+        const cstr = K.claimString(A, { from: { rig: m, side: "R" }, to: [[1400, 640], [1250, 520]] }); cstr.draw(tl, t0 + 1.2);
+      });
+      // ===== 7 · cycleLoop + officeEvent + goldTick + bank + passbook
+      stage(2.8, C.teal, 940, (A, t0) => {
+        lab(A, 320, 70, "cycleLoop"); lab(A, 1480, 70, "officeEvent · goldTick");
+        const cl = K.cycleLoop(A, 640, 400, 0.52, { n: 7, icons: ["landmark", "wallet", "receipt", "store", "package", "percent", 7], undrawn: true });
+        cl.draw(tl, t0 + 0.2, { dur: 1.2 }); cl.showAll(tl, t0 + 0.3, { step: 0.12 }); cl.token(tl, t0 + 1.4, 0, 3, { dur: 1.0 }); cl.light(tl, t0 + 2.4, 3);
+        const oe = K.officeEvent(A, 1480, 940, 0.78, {}); oe.cheers(tl, t0 + 0.9);
+        const gt = K.goldTick(A, 1750, 280, 1.0, {}); gt.stick(tl, t0 + 1.4);
+        const bk = K.bank(A, 520, 940, 0.62, {}); bk.expr(tl, t0 + 0.5, "wow"); bk.blink(tl, t0 + 1.2); bk.hop(tl, t0 + 1.6); bk.look(tl, t0 + 0.6, 7, 0);
+        const pb = K.passbook(bk.hand, 40, -20, 0.8, { rows: [["Cr", "₹5,000"], ["Dr", "₹2,000"], [null, null]] }); pb.open(tl, t0 + 0.8); pb.entry(tl, t0 + 1.3, 0); pb.entry(tl, t0 + 1.7, 1);
+      });
+
+      // ---- build stages sequentially
+      let T0 = 0;
+      STAGES.forEach((S) => { const st = mkStage(T0, T0 + S.dur, S.wall, S.wallY); S.fn(st, T0); T0 += S.dur; });
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
+
