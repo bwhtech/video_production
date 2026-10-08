@@ -1,0 +1,12 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s08", "word": "@trial", "offset": -0.3}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s08", "word": "@balance", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s08", "word": "@debits", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "tink_high", "at": {"seg": "s08", "word": "@credits", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s08", "word": "@match", "offset": 0.5}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s08", "word": "@difference", "offset": -0.3}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s08", "word": "@clue", "offset": -0.4}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s08", "word": "@balanced", "offset": -0.3}, "vol": 0.4},
+ {"sfx": "bwomp_no", "at": {"seg": "s08", "word": "@correct", "offset": -0.1}, "vol": 0.25},
+ {"sfx": "rise_three", "at": {"seg": "s08", "edge": "end", "offset": -1.5}, "vol": 0.35}
+]

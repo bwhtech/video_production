@@ -1,0 +1,15 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s01a", "word": "@twenty", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "boing_hop", "at": {"seg": "s01a", "word": "@khata", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "book_thump", "at": {"seg": "s01a", "word": "@books", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s01a", "word": "@books", "offset": 0.5}, "vol": 0.3},
+ {"sfx": "book_thump", "at": {"seg": "s01a", "word": "@books", "offset": 1.2}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s01a", "word": "@books", "offset": 1.9}, "vol": 0.3},
+ {"sfx": "book_thump", "at": {"seg": "s01a", "word": "@books", "offset": 2.6}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s01a", "word": "@books", "offset": 3.3}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s01b", "word": "@slip", "offset": -0.15}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s01b", "word": "@wrong", "offset": -0.15}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s01b", "word": "@missing", "offset": -0.15}, "vol": 0.4},
+ {"sfx": "rewind_whoosh", "at": {"seg": "s01b", "edge": "end", "offset": -1.2}, "vol": 0.3},
+ {"sfx": "click_lock", "at": {"seg": "s01b", "edge": "end", "offset": 0.0}, "vol": 0.5}
+]

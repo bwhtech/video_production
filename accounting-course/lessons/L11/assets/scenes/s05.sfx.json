@@ -1,0 +1,22 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s05a", "edge": "start", "offset": 0.4}, "vol": 0.4},
+ {"sfx": "ding_yes", "at": {"seg": "s05a", "word": "@balances", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "stamp_thunk", "at": {"seg": "s05b", "word": "@nope", "offset": 0.0}, "vol": 0.6},
+ {"sfx": "pop", "at": {"seg": "s05b", "word": "@three", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s05c", "word": "@one", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s05c", "word": "@forget", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "wind_gust", "at": {"seg": "s05c", "word": "@home", "offset": 0.2}, "vol": 0.35},
+ {"sfx": "tink_low", "at": {"seg": "s05c", "word": "@missing", "offset": 0.1}, "vol": 0.35},
+ {"sfx": "bwomp_no", "at": {"seg": "s05c", "word": "@match", "offset": 0.1}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s05d", "word": "@two", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "phone_buzz", "at": {"seg": "s05d", "word": "@upi", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "coin_clink", "at": {"seg": "s05d", "word": "@cash", "offset": 0.3}, "vol": 0.4},
+ {"sfx": "tink_low", "at": {"seg": "s05d", "word": "@high", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "bwomp_no", "at": {"seg": "s05d", "word": "@level", "offset": 0.5}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s05e", "word": "@three", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s05e", "word": "@backwards", "offset": -0.3}, "vol": 0.35},
+ {"sfx": "paper_slide", "at": {"seg": "s05e", "word": "@credit", "offset": 0.5}, "vol": 0.35},
+ {"sfx": "tink_high", "at": {"seg": "s05e", "word": "@lakh", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "tick_tock", "at": {"seg": "s05e", "word": "@each", "offset": -0.3}, "vol": 0.2, "dur": 1.0},
+ {"sfx": "bwomp_no", "at": {"seg": "s05e", "word": "@wrong", "offset": -0.1}, "vol": 0.25}
+]

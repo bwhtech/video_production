@@ -1,0 +1,7 @@
+[
+ {"sfx": "note_rustle", "at": {"seg": "s11", "word": "@galla", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@profit", "offset": -0.1}, "vol": 0.35},
+ {"sfx": "boing_hop", "at": {"seg": "s11", "word": "@finally", "offset": -0.2}, "vol": 0.35},
+ {"sfx": "sparkle", "at": {"seg": "s11", "word": "@finally", "offset": 0.5}, "vol": 0.3},
+ {"sfx": "book_thump", "at": {"seg": "s11", "edge": "end", "offset": 0.65}, "vol": 0.55}
+]

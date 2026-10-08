@@ -1,0 +1,11 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s07a", "edge": "start", "offset": 0.4}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s07a", "edge": "start", "offset": 0.55}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s07a", "word": "@posted", "offset": 0.25}, "vol": 0.4},
+ {"sfx": "tink_low", "at": {"seg": "s07a", "word": "@posted", "offset": 1.0}, "vol": 0.3},
+ {"sfx": "tick_tock", "at": {"seg": "s07a", "edge": "end", "offset": 0.0}, "vol": 0.3, "dur": 3.1},
+ {"sfx": "bwomp_no", "at": {"seg": "s07b", "word": "@no", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s07b", "word": "@no", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s07b", "word": "@rent", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s07b", "word": "@salary", "offset": 0.3}, "vol": 0.3}
+]

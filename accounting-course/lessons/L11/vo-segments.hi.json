@@ -1,0 +1,164 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.6,
+  "text": "[curious] {@twenty}बीस transactions। {@nineteen}उन्नीस accounts। {@khata}खाता उन्नीस छोटी-छोटी {@books}books में बँट गया है — हर account की एक — और ये {@pile}ढेर बढ़ता ही {@taller}जा रहा है।"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "मीरा {@squints}आँखें सिकोड़कर उसे देखती हैं। कहीं उनसे {@slip}चूक तो नहीं हुई? कोई {@wrong}ग़लत side? कोई {@missing}छूटी हुई line? वो हर month हर {@page}page दोबारा check नहीं कर सकतीं। [curious] क्या जानने का कोई {@quicker}तेज़ तरीक़ा है?"
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "पहले, पिछली बार के जवाब। {@one}एक। May की {@depreciation}depreciation? {@thousand}एक हज़ार रुपये — हर महीने वही बराबर का {@slice}हिस्सा।"
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "{@two}दो। अगर {@five}पाँच हज़ार रुपये का stock बचता, तो उन्होंने {@fourteen}चौदह हज़ार में से {@minus}पाँच घटाए — {@nine}नौ हज़ार।"
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 0.8,
+  "text": "{@three}तीन। April का electricity {@bill}bill May में चुकाना — क्या ये May का expense है? {@no}नहीं। वो April का expense था। उसे चुकाने से बस Electricity {@payable}payable {@clears}साफ़ हो जाता है।"
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "{@trick}तरकीब ये है। हर छोटी {@book}book बस एक number देती है — उसका {@balance}balance। Debit balances {@left}left column में जाते हैं। Credit balances {@right}right column में।"
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "{@cash}Cash — पचास हज़ार सात सौ, एक debit balance। {@left}{p@left}Left। {@capital}Capital — पचास हज़ार, credit। {@right}{p@right}Right। {@equipment}Equipment, छत्तीस हज़ार। {@left#2}Left। {@sales}Sales, पचास हज़ार। {@right#2}Right। और {@rest}बाक़ी सब भी, पूरे {@nineteen}{p@nineteen}उन्नीस। {@watch}एक पर नज़र रखिए — {@accumulated}Accumulated depreciation, एक हज़ार — cart की घिसावट {@right#3}right पर बैठती है, क्योंकि वो एक {@asset}asset की value घटा देती है।"
+ },
+ {
+  "id": "s03c",
+  "scene": 3,
+  "gap_after": 1.2,
+  "text": "अब हर column को {@add}जोड़िए।"
+ },
+ {
+  "id": "s03d",
+  "scene": 3,
+  "gap_after": 0.8,
+  "text": "[excited] एक {@lakh}लाख छत्तीस हज़ार रुपये। और… एक {@lakh#2}लाख छत्तीस हज़ार रुपये। दोनों {@match}match करते हैं!"
+ },
+ {
+  "id": "s03e",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "इस एक sheet को {@trial}trial {@balance}balance कहते {p@balance}हैं। हर account की एक line — {@left}बाईं तरफ़ debits, और {@right}दाईं तरफ़ {p@right}credits। ये पूरे {@ledger}ledger का एक तेज़ {@test}test है।"
+ },
+ {
+  "id": "s04",
+  "scene": 4,
+  "gap_after": 0.8,
+  "text": "columns का match होना ज़रूरी क्यों है? क्योंकि मीरा की लिखी हर {@entry}entry के दो बराबर {@halves}halves {p@halves}थे। यहाँ तक कि {@ravi}रवि मामा वाला payment भी — बाईं तरफ़ {@three}तीन हज़ार {@plus}जमा तीन सौ, और {@right}दाईं तरफ़ तीन हज़ार तीन {p@right}सौ। बराबर halves अंदर जाते हैं, इसलिए बराबर {@totals}totals बाहर आते हैं। इसीलिए accounting {@software}software किसी ऐसी entry को {@save}save ही नहीं करता, जिसकी दोनों sides match न करें।"
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "अब आता है {@trap}trap। ये {@balances}balance हो गया — तो क्या books {@right}सही होंगी?"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "[firmly] {@nope}नहीं। Trial balance बस इतना देखता है कि दोनों sides {@equal}बराबर हैं। ये नहीं कि वो {@true}सच {p@true}हैं। यहाँ {@three}तीन ग़लतियाँ हैं जो फिर भी balance हो जाएँगी।"
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "{@one}एक। एक transaction को {@forget}पूरी तरह भूल जाना। मान लीजिए मीरा ने वो {@three}तीन हज़ार रुपये कभी लिखे ही नहीं जो वो {@home}घर ले गईं। दोनों halves {@missing}ग़ायब हैं — इसलिए totals फिर भी {@match}match करते हैं।"
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "{@two}दो। रक़म सही, लेकिन {@account}account {p@account}ग़लत। Infotech के चार हज़ार, {@upi}UPI से आए, लेकिन {@cash}Cash में लिख दिए गए, Bank की जगह। Cash {@high}ज़्यादा, Bank {@low}कम। फिर भी {@level}बराबर।"
+ },
+ {
+  "id": "s05e",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "{@three}तीन। एक entry को {@backwards}उल्टा लिख {p@backwards}देना। Rent — {@debit}debit Cash, {@credit}credit Rent। दोनों columns बराबर बढ़ते हैं, और {@lakh}एक लाख इकतालीस हज़ार हो जाते हैं — {@each}हर {p@each}एक। {@level}Level। और {@wrong}ग़लत।"
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "तो trial balance क्या {@catch}पकड़ सकता है? मान लीजिए मीरा ने {@gopal}गोपाल Dairy को {@five}पाँच हज़ार रुपये दिए — लेकिन post सिर्फ़ Cash वाला {@half}half किया। अब columns {@disagree}अलग हैं। {@left}बाईं तरफ़ एक लाख छत्तीस हज़ार। {@right}दाईं तरफ़ एक लाख इकतालीस हज़ार। फ़र्क़ {@exactly}ठीक पाँच हज़ार का।"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 2.6,
+  "text": "ये {@difference}फ़र्क़ एक {@clue}clue है। मीरा April की ऐसी {@entries}entries ढूँढती हैं जो ठीक पाँच हज़ार रुपये की हों। यहाँ {@pause}pause कीजिए। क्या आप {@two}दो entries सोच सकते हैं?"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "{@rent}Rent, और {@gopal}गोपाल को {p@gopal}payment। Rent का {@page}page ठीक दिखता है। लेकिन {@gopal#2}गोपाल Dairy का page अब भी {@eight}आठ हज़ार बकाया बता रहा है। पाँच हज़ार का debit {@arrived}कभी पहुँचा ही {p@arrived}नहीं। उसे {@post}post कीजिए — और columns फिर से {@meet}मिल जाते हैं।"
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 3.2,
+  "text": "[inviting] आपकी {@go}बारी। मीरा का rent ग़लती से {@posted}post हो गया — {@salary}Salary में। क्या trial balance इसे {@catch}पकड़ लेगा?"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "{@no}नहीं। {@rent}Rent और {@salary}Salary दोनों {@debits}debits हैं, और रक़म भी वही है। {@totals}Totals हिलते ही नहीं। इसे बस {@careful}ध्यान से जाँचने पर ही पकड़ा जा सकता है।"
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "तो — {@trial}trial {@balance}balance, यानी हर account के {@balance#2}balance की {p@balance#2}list। {@debits}Debits left में, {@credits}credits right में। अगर totals {@match}match करें, तो हर entry के दो बराबर {@halves}halves {p@halves}थे। अगर नहीं, तो {@difference}फ़र्क़ ही आपका {@clue}clue {p@clue}है। लेकिन {@balanced}balanced होने का मतलब हमेशा {@correct}सही होना नहीं है।"
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "[inviting] आपकी {@turn}बारी। तीन छोटे {@ones}{p@ones}सवाल। {@one}एक। मीरा की trial {@balance}balance के totals क्या {p@balance}हैं? {@two}दो। क्या trial balance ऐसे transaction को पकड़ सकता है जिसे पूरी तरह {@completely}भुला दिया गया {p@completely}हो? {@three}तीन। Drawings किस column {@in}में जाता {p@in}है? {@answers}जवाब अगले lesson की शुरुआत में।"
+ },
+ {
+  "id": "s10a",
+  "scene": 10,
+  "gap_after": 0.6,
+  "text": "[excited] और अब — {@checkpoint}Checkpoint चार! अमन की samosa cart {@back}वापस आ गई है, छह नए {@transactions}transactions के {p@transactions}साथ। {@cash}Cash sale — ग्यारह हज़ार {@rupees}रुपये {p@rupees}की। तीन हज़ार अपने {@helper}helper को {p@helper}दिए। पंद्रह {@hundred}सौ रुपये {@home}घर ले {p@home}गए। School की {@canteen}canteen अपने पंद्रह {@hundred#2}सौ रुपये चुकाती {p@hundred#2}है। एक {@stock}stock count — पाँच सौ रुपये की ingredients बची हैं, तीन {@thousand#3}हज़ार में {p@thousand#3}से। और एक {@month}महीने की घिसावट — अट्ठारह हज़ार रुपये की {@cart}cart और fryer पर, जो {@years}तीन साल चलनी चाहिए।"
+ },
+ {
+  "id": "s10b",
+  "scene": 10,
+  "gap_after": 3.2,
+  "text": "{@journal}इन्हें journal कीजिए। इन्हें उसके {@ledger}ledger में post कीजिए। फिर अमन की {@trial}trial balance बनाइए। अब तक के {@balances}balances {@screen}screen पर हैं, और {@worksheet}worksheet पर {p@worksheet}भी। [firmly] {@pause}अब video को pause कीजिए।"
+ },
+ {
+  "id": "s10c",
+  "scene": 10,
+  "gap_after": 1.0,
+  "text": "{@ready}तैयार? छह {@entries}entries journal हुईं, post हुईं, और उसकी trial balance बन गई। अमन के दोनों {@columns}columns का total चौवन हज़ार {@rupees}रुपये होना {p@rupees}चाहिए। हर {@line}line जाँचने के लिए इस {@sheet}sheet पर {@pause}pause {p@line}कीजिए। अगर आपका {@match}match नहीं हुआ, तो {@difference}फ़र्क़ को अपना {@clue}clue बनाइए — बिल्कुल {@meera}मीरा की तरह।"
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 1.0,
+  "text": "[teasing] अगली {@time}बार, हम वहीं लौटेंगे जहाँ से सब {@began}शुरू हुआ था। देर {@night}रात, मीरा {@galla}गल्ले में रखे {@notes}नोटों के ढेर को घूर रही हैं। क्या उन्हें {@profit}profit हुआ — या {@loss}loss? इस बार, हम {@finally}आख़िरकार {@answer}जवाब दे सकते हैं।"
+ }
+]

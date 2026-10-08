@@ -1,0 +1,12 @@
+[
+ {"sfx": "pop", "at": {"seg": "s09", "word": "@turn", "offset": 0.0}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s09", "word": "@one", "offset": -0.15}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s09", "word": "@balance", "offset": 0.4}, "vol": 0.3},
+ {"sfx": "tick_tock", "at": {"seg": "s09", "word": "@balance", "offset": 0.6}, "vol": 0.18, "dur": 1.6},
+ {"sfx": "paper_slide", "at": {"seg": "s09", "word": "@two", "offset": -0.15}, "vol": 0.4},
+ {"sfx": "wind_gust", "at": {"seg": "s09", "word": "@completely", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "tick_tock", "at": {"seg": "s09", "word": "@completely", "offset": 0.7}, "vol": 0.18, "dur": 1.6},
+ {"sfx": "paper_slide", "at": {"seg": "s09", "word": "@three", "offset": -0.15}, "vol": 0.4},
+ {"sfx": "tick_tock", "at": {"seg": "s09", "word": "@in", "offset": 0.1}, "vol": 0.18, "dur": 1.6},
+ {"sfx": "ding_yes", "at": {"seg": "s09", "word": "@answers", "offset": 0.0}, "vol": 0.3}
+]

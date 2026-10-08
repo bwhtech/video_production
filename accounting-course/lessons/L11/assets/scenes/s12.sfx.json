@@ -1,0 +1,34 @@
+[
+ {
+  "sfx": "cover_swing",
+  "at": {
+   "scene": "s12",
+   "t": 0.3
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "scene": "s12",
+   "t": 0.6
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "scene": "s12",
+   "t": 0.7
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "boing_hop",
+  "at": {
+   "scene": "s12",
+   "t": 1.0
+  },
+  "vol": 0.4
+ }
+]

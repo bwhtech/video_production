@@ -1,0 +1,21 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s06a", "edge": "start", "offset": 0.3}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s06a", "word": "@gopal", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "tink_high", "at": {"seg": "s06a", "word": "@half", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "scale_creak", "at": {"seg": "s06a", "word": "@disagree", "offset": 0.0}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s06a", "word": "@exactly", "offset": -0.1}, "vol": 0.35},
+ {"sfx": "card_deal", "at": {"seg": "s06b", "word": "@entries", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s06b", "word": "@entries", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "tick_tock", "at": {"seg": "s06b", "edge": "end", "offset": 0.0}, "vol": 0.3, "dur": 2.5},
+ {"sfx": "paper_slide", "at": {"seg": "s06c", "word": "@rent", "offset": -0.05}, "vol": 0.35},
+ {"sfx": "ding_yes", "at": {"seg": "s06c", "word": "@rent", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s06c", "word": "@gopal", "offset": -0.05}, "vol": 0.35},
+ {"sfx": "paper_slide", "at": {"seg": "s06c", "word": "@page", "offset": -0.2}, "vol": 0.35},
+ {"sfx": "ding_yes", "at": {"seg": "s06c", "word": "@page", "offset": 0.9}, "vol": 0.25},
+ {"sfx": "paper_slide", "at": {"seg": "s06c", "word": "@gopal", "offset": -0.2, "nth": 2}, "vol": 0.35},
+ {"sfx": "bwomp_no", "at": {"seg": "s06c", "word": "@eight", "offset": 0.1}, "vol": 0.25},
+ {"sfx": "pencil_write", "at": {"seg": "s06c", "word": "@post", "offset": 0.1}, "vol": 0.35},
+ {"sfx": "tink_low", "at": {"seg": "s06c", "word": "@post", "offset": 0.6}, "vol": 0.4},
+ {"sfx": "scale_settle", "at": {"seg": "s06c", "word": "@meet", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "ding_yes", "at": {"seg": "s06c", "word": "@meet", "offset": 0.8}, "vol": 0.4}
+]
