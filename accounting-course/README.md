@@ -46,7 +46,16 @@ English VO first (ElevenLabs), Hindi later. Built in HyperFrames.
 | L5 Profit Is Not Cash | reviewed | **rendered** HI 8:18 · EN 7:24 |
 | L6 Debit and Credit | reviewed | **rendered** HI 9:11 · EN 8:05 |
 | L7 The Golden Rules, Decoded | reviewed | **rendered** HI 8:59 · EN 8:09 |
-| L8–L14 | reviewed, trimmed | not started |
+| L8 The Journal | reviewed | **rendered** HI 7:27 · EN not built yet |
+| L9 The Ledger | reviewed | **rendered** HI 6:41 · EN not built yet |
+| L10 Month-End Surprises | reviewed | **rendered** HI 8:09 · EN not built yet |
+| L11 The Trial Balance | reviewed | **rendered** HI 7:17 · EN not built yet |
+| L12 The Profit & Loss Statement | reviewed | **rendered** HI 6:24 · EN not built yet |
+| L13 The Balance Sheet | reviewed | **rendered** HI 6:35 · EN not built yet |
+| L14 Where Did the Money Go? | reviewed | **rendered** HI 7:32 · EN not built yet |
+
+All 14 Hindi lessons are live on cs17.org/accounting (Cloudflare Stream). L8–L14 were built Hindi-first: scenes are timed
+from `{@name}` markers in vo-segments.hi.json named after the English words, so English drops in later.
 
 Render queue: `lessons/shared/render_queue.sh L01:en L05:hi …` (check → render under the lock → mix → mux → 720p
 review copy → verify; log in `lessons/shared/render_queue.log`).
