@@ -1,0 +1,1566 @@
+{
+ "s01a": {
+  "@april": [
+   "तीस",
+   1
+  ],
+  "@thirtieth": [
+   "तीस",
+   1
+  ],
+  "@lunch": [
+   "लंच",
+   1
+  ],
+  "@five": [
+   "पाँच",
+   1
+  ],
+  "@things": [
+   "चीज़ें",
+   1
+  ],
+  "@meera": [
+   "मीरा",
+   1
+  ],
+  "@weeks": [
+   "हफ़्ते",
+   1
+  ],
+  "@sales": [
+   "sales",
+   1
+  ],
+  "@infotech": [
+   "Infotech",
+   1
+  ],
+  "@bill": [
+   "bill",
+   1
+  ],
+  "@raju": [
+   "राजू",
+   1
+  ],
+  "@salary": [
+   "salary",
+   1
+  ],
+  "@ravi": [
+   "रवि",
+   1
+  ],
+  "@loan": [
+   "loan",
+   1
+  ],
+  "@back": [
+   "लौटाती",
+   1
+  ],
+  "@money": [
+   "पैसे",
+   1
+  ],
+  "@home": [
+   "घर",
+   1
+  ],
+  "@herself": [
+   "अपने",
+   1
+  ]
+ },
+ "s01b": {
+  "@grabs": [
+   "एक",
+   1
+  ],
+  "@tissue": [
+   "tissue",
+   1
+  ],
+  "@scribbles": [
+   "लिख",
+   1
+  ],
+  "@down": [
+   "डालती",
+   1
+  ]
+ },
+ "s01c": {
+  "@gone": [
+   "ग़ायब।",
+   1
+  ],
+  "@remember": [
+   "याद",
+   1
+  ],
+  "@year": [
+   "एक",
+   1
+  ],
+  "@now": [
+   "बाद?",
+   1
+  ]
+ },
+ "s02a": {
+  "@first": [
+   "पहले,",
+   1
+  ],
+  "@answers": [
+   "जवाब।",
+   1
+  ],
+  "@one": [
+   "एक।",
+   1
+  ],
+  "@catering": [
+   "catering",
+   1
+  ],
+  "@advance": [
+   "advance",
+   1
+  ],
+  "@tags": [
+   "tags",
+   1
+  ]
+ },
+ "s02b": {
+  "@cash": [
+   "Cash",
+   1
+  ],
+  "@real": [
+   "Real",
+   1
+  ],
+  "@comes": [
+   "comes",
+   1
+  ],
+  "@in": [
+   "in",
+   1
+  ],
+  "@debit": [
+   "debit।",
+   1
+  ],
+  "@customer": [
+   "Customer",
+   1
+  ],
+  "@person": [
+   "इंसान",
+   1
+  ],
+  "@giver": [
+   "giver",
+   1
+  ],
+  "@credit": [
+   "credit",
+   1
+  ],
+  "@advance": [
+   "Advance",
+   1
+  ]
+ },
+ "s02c": {
+  "@two": [
+   "दो।",
+   1
+  ],
+  "@bank": [
+   "Bank",
+   1
+  ],
+  "@real": [
+   "Real",
+   1
+  ],
+  "@personal": [
+   "Personal?",
+   1
+  ]
+ },
+ "s02d": {
+  "@personal": [
+   "Personal।",
+   1
+  ],
+  "@organisation": [
+   "organisation",
+   1
+  ],
+  "@persons": [
+   "persons",
+   1
+  ]
+ },
+ "s02e": {
+  "@three": [
+   "तीन।",
+   1
+  ],
+  "@rent": [
+   "Rent",
+   1
+  ],
+  "@family": [
+   "family",
+   1
+  ]
+ },
+ "s02f": {
+  "@nominal": [
+   "Nominal।",
+   1
+  ],
+  "@expense": [
+   "expense",
+   1
+  ]
+ },
+ "s04a": {
+  "@back": [
+   "वापस",
+   1
+  ],
+  "@meera's": [
+   "मीरा",
+   1
+  ],
+  "@tissue": [
+   "tissue",
+   1
+  ],
+  "@transaction": [
+   "transaction",
+   1
+  ],
+  "@day": [
+   "दिन",
+   1
+  ],
+  "@date": [
+   "date",
+   1
+  ],
+  "@book": [
+   "book",
+   1
+  ],
+  "@journal": [
+   "journal।",
+   1
+  ],
+  "@journal|p": [
+   "journal।",
+   1
+  ],
+  "@day-book": [
+   "day-book",
+   1
+  ],
+  "@rojmel": [
+   "रोज़मेल।",
+   1
+  ],
+  "@three": [
+   "तीन",
+   1
+  ],
+  "@accounts": [
+   "accounts",
+   1
+  ],
+  "@changed": [
+   "बदले?",
+   1
+  ],
+  "@changed|p": [
+   "बदले?",
+   1
+  ],
+  "@kind": [
+   "तरह",
+   1
+  ],
+  "@they": [
+   "हैं?",
+   3
+  ],
+  "@they|p": [
+   "हैं?",
+   3
+  ],
+  "@side": [
+   "side",
+   1
+  ]
+ },
+ "s04b": {
+  "@khata": [
+   "खाता",
+   1
+  ],
+  "@fresh": [
+   "journal",
+   1
+  ],
+  "@journal": [
+   "journal",
+   1
+  ],
+  "@page": [
+   "page",
+   1
+  ],
+  "@opens": [
+   "खोलता",
+   1
+  ],
+  "@first": [
+   "पहली",
+   1
+  ],
+  "@writes": [
+   "लिख",
+   1
+  ],
+  "@weeks": [
+   "हफ़्ते",
+   1
+  ],
+  "@cash": [
+   "cash",
+   1
+  ],
+  "@sales": [
+   "sales:",
+   1
+  ],
+  "@twenty-two": [
+   "बाईस",
+   1
+  ],
+  "@rupees": [
+   "रुपये।",
+   1
+  ],
+  "@which": [
+   "कौन",
+   1
+  ],
+  "@two#2": [
+   "दो",
+   2
+  ],
+  "@things": [
+   "चीज़ें",
+   1
+  ],
+  "@changed": [
+   "बदलीं?",
+   1
+  ]
+ },
+ "s04c": {
+  "@cash": [
+   "Cash",
+   1
+  ],
+  "@went": [
+   "बढ़ा।",
+   1
+  ],
+  "@up": [
+   "बढ़ा।",
+   1
+  ],
+  "@sales": [
+   "Sales",
+   1
+  ],
+  "@went#2": [
+   "बढ़ीं।",
+   1
+  ],
+  "@up#2": [
+   "बढ़ीं।",
+   1
+  ],
+  "@up#2|p": [
+   "बढ़ीं।",
+   1
+  ],
+  "@cash#2": [
+   "Cash",
+   2
+  ],
+  "@grows": [
+   "बढ़ता",
+   1
+  ],
+  "@asset": [
+   "asset,",
+   1
+  ],
+  "@home": [
+   "home",
+   1
+  ],
+  "@left": [
+   "left",
+   1
+  ],
+  "@debit": [
+   "debit।",
+   1
+  ],
+  "@tag": [
+   "Tag",
+   1
+  ],
+  "@real": [
+   "Real,",
+   1
+  ],
+  "@comes": [
+   "comes",
+   1
+  ],
+  "@in": [
+   "in।",
+   1
+  ],
+  "@in|p": [
+   "in।",
+   1
+  ],
+  "@sales#2": [
+   "Sales",
+   2
+  ],
+  "@equity": [
+   "equity",
+   1
+  ],
+  "@grows#2": [
+   "बढ़ती",
+   1
+  ],
+  "@right": [
+   "right",
+   1
+  ],
+  "@credit": [
+   "credit।",
+   1
+  ],
+  "@nominal": [
+   "Nominal,",
+   1
+  ],
+  "@income": [
+   "income।",
+   1
+  ]
+ },
+ "s04d": {
+  "@columns": [
+   "columns",
+   1
+  ],
+  "@watch": [
+   "देखिए।",
+   1
+  ],
+  "@columns|p": [
+   "देखिए।",
+   1
+  ],
+  "@first": [
+   "पहले,",
+   1
+  ],
+  "@date": [
+   "date:",
+   1
+  ],
+  "@thirtieth": [
+   "तीस",
+   1
+  ],
+  "@april": [
+   "अप्रैल।",
+   1
+  ],
+  "@thirtieth|p": [
+   "अप्रैल।",
+   1
+  ],
+  "@particulars": [
+   "Particulars",
+   1
+  ],
+  "@accounts": [
+   "accounts।",
+   1
+  ],
+  "@debit": [
+   "Debit",
+   1
+  ],
+  "@first#2": [
+   "पहले",
+   2
+  ],
+  "@cash": [
+   "Cash।",
+   1
+  ],
+  "@khata": [
+   "खाता",
+   1
+  ],
+  "@a-slash-c": [
+   "A-slash-c",
+   1
+  ],
+  "@short": [
+   "short",
+   1
+  ],
+  "@account#2": [
+   "account,",
+   2
+  ],
+  "@account#2|p": [
+   "account,",
+   2
+  ],
+  "@end": [
+   "आख़िर",
+   1
+  ],
+  "@dr": [
+   "Dr।",
+   1
+  ],
+  "@twenty-two": [
+   "बाईस",
+   1
+  ],
+  "@thousand": [
+   "हज़ार,",
+   1
+  ],
+  "@debit#2": [
+   "debit",
+   2
+  ],
+  "@column": [
+   "column",
+   1
+  ],
+  "@left": [
+   "left",
+   1
+  ],
+  "@left|p": [
+   "पर।",
+   1
+  ],
+  "@credit": [
+   "Credit",
+   1
+  ],
+  "@line#2": [
+   "line",
+   2
+  ],
+  "@pushed": [
+   "अंदर",
+   1
+  ],
+  "@word": [
+   "To।",
+   1
+  ],
+  "@to": [
+   "To।",
+   1
+  ],
+  "@to|p": [
+   "To।",
+   1
+  ],
+  "@to#2": [
+   "To",
+   2
+  ],
+  "@sales": [
+   "Sales,",
+   1
+  ],
+  "@twenty-two#2": [
+   "बाईस",
+   2
+  ],
+  "@thousand#2": [
+   "हज़ार,",
+   2
+  ],
+  "@credit#2": [
+   "credit",
+   2
+  ],
+  "@right": [
+   "right",
+   1
+  ],
+  "@right|p": [
+   "पर।",
+   3
+  ],
+  "@brackets": [
+   "brackets",
+   1
+  ],
+  "@short#2": [
+   "छोटा",
+   2
+  ],
+  "@note": [
+   "note,",
+   1
+  ],
+  "@cash#2": [
+   "cash",
+   2
+  ],
+  "@narration": [
+   "narration।",
+   1
+  ]
+ },
+ "s05a": {
+  "@same": [
+   "उसी",
+   1
+  ],
+  "@infotech": [
+   "Infotech",
+   1
+  ],
+  "@four": [
+   "चार",
+   1
+  ],
+  "@bills": [
+   "bill",
+   1
+  ],
+  "@tab": [
+   "tab",
+   1
+  ],
+  "@debit": [
+   "Debit",
+   1
+  ],
+  "@credit": [
+   "credit",
+   1
+  ],
+  "@infotech#2": [
+   "Infotech",
+   2
+  ]
+ },
+ "s05b": {
+  "@debit": [
+   "Debit।",
+   1
+  ],
+  "@infotech": [
+   "Infotech",
+   1
+  ],
+  "@owes": [
+   "बकाया",
+   1
+  ],
+  "@asset": [
+   "asset",
+   1
+  ],
+  "@growing": [
+   "बढ़",
+   1
+  ],
+  "@left": [
+   "left",
+   1
+  ],
+  "@personal": [
+   "Personal,",
+   1
+  ],
+  "@receiver": [
+   "receiver।",
+   1
+  ],
+  "@to": [
+   "To",
+   1
+  ],
+  "@sales": [
+   "Sales,",
+   1
+  ],
+  "@credit": [
+   "credit।",
+   1
+  ],
+  "@exactly": [
+   "बिल्कुल",
+   1
+  ],
+  "@april": [
+   "सोलह",
+   1
+  ],
+  "@sixteenth": [
+   "सोलह",
+   1
+  ]
+ },
+ "s06a": {
+  "@meera": [
+   "मीरा",
+   1
+  ],
+  "@writes": [
+   "लिखती",
+   1
+  ],
+  "@raju's": [
+   "राजू",
+   1
+  ],
+  "@salary": [
+   "salary",
+   1
+  ],
+  "@eight": [
+   "आठ",
+   1
+  ],
+  "@upi": [
+   "UPI",
+   1
+  ],
+  "@which": [
+   "कौन",
+   1
+  ],
+  "@two": [
+   "दो",
+   1
+  ],
+  "@things": [
+   "चीज़ें",
+   1
+  ],
+  "@changed": [
+   "बदलीं?",
+   1
+  ]
+ },
+ "s06b": {
+  "@salary": [
+   "Salary",
+   1
+  ],
+  "@went": [
+   "बढ़ी।",
+   1
+  ],
+  "@up": [
+   "बढ़ी।",
+   1
+  ],
+  "@bank": [
+   "Bank",
+   1
+  ],
+  "@down": [
+   "घटा।",
+   1
+  ],
+  "@down|p": [
+   "घटा।",
+   1
+  ],
+  "@meera": [
+   "मीरा",
+   1
+  ],
+  "@debit": [
+   "debit",
+   1
+  ],
+  "@salary#2": [
+   "Salary।",
+   2
+  ],
+  "@expense": [
+   "expense",
+   1
+  ],
+  "@debit#2": [
+   "debit।",
+   2
+  ],
+  "@credit": [
+   "credit",
+   1
+  ],
+  "@stops": [
+   "रुक",
+   1
+  ],
+  "@can": [
+   "क्या",
+   1
+  ],
+  "@finish": [
+   "पूरा",
+   1
+  ]
+ },
+ "s06c": {
+  "@to": [
+   "To",
+   1
+  ],
+  "@bank": [
+   "Bank,",
+   1
+  ],
+  "@eight": [
+   "आठ",
+   1
+  ],
+  "@bank#2": [
+   "bank",
+   2
+  ],
+  "@left": [
+   "निकल",
+   1
+  ],
+  "@asset": [
+   "asset",
+   1
+  ],
+  "@shrank": [
+   "घटा,",
+   1
+  ],
+  "@right": [
+   "right",
+   1
+  ],
+  "@bank#3": [
+   "Bank",
+   3
+  ],
+  "@personal": [
+   "Personal",
+   1
+  ],
+  "@giver": [
+   "giver।",
+   1
+  ],
+  "@credit": [
+   "credit।",
+   1
+  ]
+ },
+ "s07a": {
+  "@tricky": [
+   "मुश्किल",
+   1
+  ],
+  "@hands": [
+   "रवि",
+   1
+  ],
+  "@ravi": [
+   "रवि",
+   1
+  ],
+  "@three": [
+   "तीन",
+   1
+  ],
+  "@thousand": [
+   "हज़ार",
+   1
+  ],
+  "@three#2": [
+   "तीन",
+   2
+  ],
+  "@hundred": [
+   "सौ",
+   1
+  ],
+  "@three#3": [
+   "तीन",
+   3
+  ],
+  "@loan": [
+   "loan",
+   1
+  ],
+  "@pays": [
+   "लौटाते",
+   1
+  ],
+  "@three#4": [
+   "तीन",
+   4
+  ],
+  "@interest": [
+   "interest",
+   1
+  ],
+  "@fee": [
+   "fee।",
+   1
+  ],
+  "@payment": [
+   "payment।",
+   1
+  ],
+  "@which": [
+   "कौन",
+   1
+  ],
+  "@changed": [
+   "बदलीं?",
+   1
+  ]
+ },
+ "s07b": {
+  "@three": [
+   "तीन",
+   1
+  ],
+  "@loan": [
+   "Loan",
+   1
+  ],
+  "@debit": [
+   "debit",
+   1
+  ],
+  "@loan#2": [
+   "Loan",
+   2
+  ],
+  "@ravi": [
+   "Ravi",
+   1
+  ],
+  "@three#2": [
+   "तीन",
+   2
+  ],
+  "@thousand": [
+   "हज़ार।",
+   1
+  ],
+  "@interest": [
+   "Interest",
+   1
+  ],
+  "@expense": [
+   "expense",
+   1
+  ],
+  "@debit#2": [
+   "debit",
+   2
+  ],
+  "@interest#2": [
+   "Interest,",
+   2
+  ],
+  "@three#3": [
+   "तीन",
+   3
+  ],
+  "@hundred": [
+   "सौ।",
+   1
+  ],
+  "@cash": [
+   "cash",
+   1
+  ],
+  "@to": [
+   "To",
+   1
+  ],
+  "@cash#2": [
+   "Cash,",
+   2
+  ],
+  "@three#4": [
+   "तीन",
+   4
+  ],
+  "@thousand#2": [
+   "हज़ार",
+   2
+  ],
+  "@two": [
+   "दो",
+   1
+  ],
+  "@one": [
+   "एक",
+   2
+  ],
+  "@compound": [
+   "compound",
+   1
+  ],
+  "@entry": [
+   "entry।",
+   1
+  ],
+  "@entry|p": [
+   "entry।",
+   1
+  ],
+  "@line": [
+   "line।",
+   1
+  ],
+  "@sides": [
+   "sides",
+   1
+  ],
+  "@match": [
+   "बराबर",
+   1
+  ],
+  "@three#6": [
+   "तीन",
+   6
+  ],
+  "@each": [
+   "दोनों",
+   2
+  ]
+ },
+ "s07c": {
+  "@slip": [
+   "फिसल",
+   1
+  ],
+  "@payment": [
+   "payment",
+   1
+  ],
+  "@expense": [
+   "expense",
+   1
+  ]
+ },
+ "s07d": {
+  "@nope": [
+   "नहीं।",
+   1
+  ],
+  "@three": [
+   "तीन",
+   1
+  ],
+  "@hundred": [
+   "सौ",
+   1
+  ],
+  "@interest": [
+   "interest",
+   1
+  ],
+  "@expense": [
+   "expense",
+   1
+  ],
+  "@expense|p": [
+   "है।",
+   1
+  ],
+  "@thousand": [
+   "हज़ार",
+   1
+  ],
+  "@gives": [
+   "लौटाते",
+   1
+  ],
+  "@meera's": [
+   "मीरा",
+   1
+  ],
+  "@never": [
+   "कभी",
+   1
+  ],
+  "@debt": [
+   "debt",
+   1
+  ],
+  "@shrinks": [
+   "घटाता",
+   1
+  ],
+  "@profit": [
+   "profit",
+   1
+  ],
+  "@not": [
+   "नहीं।",
+   3
+  ]
+ },
+ "s08a": {
+  "@last": [
+   "आख़िरी",
+   1
+  ],
+  "@galla": [
+   "गल्ले",
+   1
+  ],
+  "@three": [
+   "तीन",
+   1
+  ],
+  "@takes": [
+   "निकालती",
+   1
+  ],
+  "@home": [
+   "घर",
+   1
+  ],
+  "@which": [
+   "कौन",
+   1
+  ],
+  "@two": [
+   "दो",
+   1
+  ],
+  "@things": [
+   "चीज़ें",
+   1
+  ],
+  "@changed": [
+   "बदलीं?",
+   1
+  ]
+ },
+ "s08b": {
+  "@cash": [
+   "Cash",
+   1
+  ],
+  "@went": [
+   "घटा।",
+   1
+  ],
+  "@down": [
+   "घटा।",
+   1
+  ],
+  "@other": [
+   "दूसरा",
+   1
+  ],
+  "@name": [
+   "नाम",
+   1
+  ],
+  "@write": [
+   "Entry",
+   1
+  ],
+  "@debit": [
+   "Debit",
+   1
+  ],
+  "@to#2": [
+   "To",
+   1
+  ]
+ },
+ "s08c": {
+  "@debit": [
+   "Debit",
+   1
+  ],
+  "@drawings": [
+   "Drawings,",
+   1
+  ],
+  "@three": [
+   "तीन",
+   1
+  ],
+  "@to": [
+   "To",
+   1
+  ],
+  "@cash": [
+   "Cash,",
+   1
+  ],
+  "@three#2": [
+   "तीन",
+   2
+  ],
+  "@drawings#2": [
+   "Drawings",
+   2
+  ],
+  "@owner": [
+   "owner",
+   1
+  ],
+  "@herself": [
+   "लिए",
+   1
+  ],
+  "@meera": [
+   "मीरा",
+   1
+  ],
+  "@personal": [
+   "Personal",
+   1
+  ],
+  "@receiver": [
+   "receiver",
+   1
+  ]
+ },
+ "s08d": {
+  "@slip": [
+   "चूक।",
+   1
+  ],
+  "@drawings": [
+   "drawings",
+   1
+  ],
+  "@expense": [
+   "expense",
+   1
+  ]
+ },
+ "s08e": {
+  "@nope": [
+   "नहीं।",
+   1
+  ],
+  "@expense": [
+   "Expense",
+   1
+  ],
+  "@used": [
+   "इस्तेमाल",
+   1
+  ],
+  "@rent": [
+   "rent,",
+   1
+  ],
+  "@raju's": [
+   "राजू",
+   1
+  ],
+  "@salary": [
+   "salary।",
+   1
+  ],
+  "@home": [
+   "घर",
+   1
+  ],
+  "@home|p": [
+   "गया।",
+   1
+  ],
+  "@remember": [
+   "याद",
+   1
+  ],
+  "@meera": [
+   "मीरा",
+   1
+  ],
+  "@meera's": [
+   "Meera's",
+   1
+  ],
+  "@same": [
+   "हैं।",
+   1
+  ],
+  "@same|p": [
+   "हैं।",
+   1
+  ],
+  "@equity": [
+   "Equity",
+   1
+  ],
+  "@third": [
+   "तीसरा",
+   1
+  ],
+  "@pocket": [
+   "pocket",
+   1
+  ],
+  "@grows": [
+   "जुड़ता",
+   1
+  ],
+  "@drawings": [
+   "Drawings।",
+   1
+  ],
+  "@capital": [
+   "Capital",
+   1
+  ],
+  "@fifty": [
+   "पचास",
+   1
+  ],
+  "@stays": [
+   "रहता",
+   1
+  ],
+  "@profit": [
+   "Profit",
+   1
+  ],
+  "@untouched": [
+   "अछूता",
+   1
+  ],
+  "@untouched|p": [
+   "है।",
+   5
+  ],
+  "@drawings#2": [
+   "Drawings",
+   2
+  ],
+  "@left": [
+   "left",
+   1
+  ],
+  "@expenses": [
+   "expenses",
+   1
+  ],
+  "@own": [
+   "अलग",
+   1
+  ]
+ },
+ "s09": {
+  "@journal": [
+   "journal",
+   1
+  ],
+  "@day-book": [
+   "day-book:",
+   1
+  ],
+  "@transaction": [
+   "transaction,",
+   1
+  ],
+  "@order": [
+   "क्रम",
+   1
+  ],
+  "@payment": [
+   "payment",
+   1
+  ],
+  "@lines": [
+   "lines",
+   1
+  ],
+  "@sides": [
+   "sides",
+   1
+  ],
+  "@match": [
+   "बराबर",
+   1
+  ],
+  "@repaying": [
+   "चुकाना,",
+   1
+  ],
+  "@drawings": [
+   "drawings",
+   1
+  ],
+  "@expense": [
+   "expense",
+   1
+  ]
+ },
+ "s10": {
+  "@turn": [
+   "बारी।",
+   1
+  ],
+  "@quick": [
+   "छोटे",
+   1
+  ],
+  "@ones": [
+   "सवाल।",
+   1
+  ],
+  "@ones|p": [
+   "सवाल।",
+   1
+  ],
+  "@one": [
+   "एक।",
+   1
+  ],
+  "@ravi": [
+   "रवि",
+   1
+  ],
+  "@three#2": [
+   "तीन",
+   2
+  ],
+  "@expense": [
+   "expense",
+   1
+  ],
+  "@expense|p": [
+   "हैं?",
+   1
+  ],
+  "@two": [
+   "दो।",
+   1
+  ],
+  "@april": [
+   "पच्चीस",
+   1
+  ],
+  "@journal": [
+   "journal",
+   1
+  ],
+  "@upi": [
+   "UPI",
+   1
+  ],
+  "@upi|p": [
+   "है।",
+   1
+  ],
+  "@three#4": [
+   "तीन।",
+   4
+  ],
+  "@drawings": [
+   "Drawings",
+   1
+  ],
+  "@expense#2": [
+   "expense,",
+   2
+  ],
+  "@not": [
+   "नहीं?",
+   2
+  ],
+  "@not|p": [
+   "नहीं?",
+   2
+  ],
+  "@answers": [
+   "जवाब",
+   1
+  ],
+  "@next": [
+   "अगले",
+   1
+  ]
+ },
+ "s11": {
+  "@time": [
+   "बार,",
+   1
+  ],
+  "@simple": [
+   "सीधा-सा",
+   1
+  ],
+  "@galla": [
+   "गल्ले",
+   1
+  ],
+  "@cash": [
+   "cash",
+   1
+  ],
+  "@journal": [
+   "Journal",
+   1
+  ],
+  "@pieces": [
+   "टुकड़ों",
+   1
+  ]
+ }
+}

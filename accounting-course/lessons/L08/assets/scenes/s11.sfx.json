@@ -1,0 +1,7 @@
+[
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@galla", "offset": 0.05}, "vol": 0.35},
+ {"sfx": "page_flurry", "at": {"seg": "s11", "word": "@journal", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@pieces", "offset": -0.7}, "vol": 0.25},
+ {"sfx": "paper_slide", "at": {"seg": "s11", "word": "@pieces", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "book_thump", "at": {"scene": "s11", "t": 11.4}, "vol": 0.7}
+]

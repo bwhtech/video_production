@@ -1,0 +1,167 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s02a",
+   "word": "@one",
+   "offset": -0.15
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02a",
+   "word": "@catering",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02a",
+   "word": "@tags",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s02a",
+   "edge": "end",
+   "offset": 0.15
+  },
+  "vol": 0.4,
+  "dur": 1.2
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02b",
+   "word": "@comes",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s02b",
+   "word": "@debit",
+   "offset": -0.2
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02b",
+   "word": "@giver",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s02b",
+   "word": "@credit",
+   "offset": -0.2
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s02c",
+   "word": "@two",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02c",
+   "word": "@bank",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s02c",
+   "edge": "end",
+   "offset": 0.1
+  },
+  "vol": 0.4,
+  "dur": 1.0
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s02d",
+   "word": "@personal",
+   "offset": 0.4
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02d",
+   "word": "@persons",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s02e",
+   "word": "@three",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02e",
+   "word": "@rent",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02e",
+   "word": "@family",
+   "offset": -0.3
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s02e",
+   "edge": "end",
+   "offset": 0.1
+  },
+  "vol": 0.4,
+  "dur": 1.0
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s02f",
+   "word": "@nominal",
+   "offset": 0.4
+  },
+  "vol": 0.5
+ }
+]

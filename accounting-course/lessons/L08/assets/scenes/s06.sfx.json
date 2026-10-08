@@ -1,0 +1,187 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06a",
+   "word": "@raju's",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "phone_buzz",
+  "at": {
+   "seg": "s06a",
+   "word": "@upi",
+   "offset": -0.4
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06a",
+   "word": "@salary",
+   "offset": 0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06a",
+   "word": "@upi",
+   "offset": 0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "freeze_stop",
+  "at": {
+   "seg": "s06a",
+   "word": "@changed",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s06a",
+   "word": "@changed",
+   "offset": 0.2
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s06a",
+   "word": "@changed",
+   "offset": 2.65
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s06b",
+   "word": "@meera",
+   "offset": -0.3
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s06b",
+   "word": "@salary",
+   "offset": -0.1,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s06b",
+   "word": "@debit",
+   "offset": -0.2,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06b",
+   "word": "@debit",
+   "offset": 0.2,
+   "nth": 2
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "scale_creak",
+  "at": {
+   "seg": "s06b",
+   "word": "@debit",
+   "offset": 0.7,
+   "nth": 2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06b",
+   "word": "@debit",
+   "offset": 0.9,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s06b",
+   "word": "@finish",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s06c",
+   "word": "@to",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06c",
+   "word": "@eight",
+   "offset": 0
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "scale_settle",
+  "at": {
+   "seg": "s06c",
+   "word": "@right",
+   "offset": 0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06c",
+   "word": "@giver",
+   "offset": -0.3
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s06c",
+   "word": "@to",
+   "offset": 0.2
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s06c",
+   "word": "@credit",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ }
+]

@@ -1,0 +1,291 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07a",
+   "word": "@interest",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07a",
+   "word": "@three",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "seg": "s07a",
+   "word": "@three",
+   "offset": -0.15
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "seg": "s07a",
+   "word": "@hundred",
+   "offset": -0.15
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07a",
+   "word": "@loan",
+   "offset": 0.1
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "freeze_stop",
+  "at": {
+   "seg": "s07a",
+   "word": "@changed",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s07a",
+   "word": "@changed",
+   "offset": 0.2
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s07a",
+   "word": "@changed",
+   "offset": 2.65
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@three",
+   "offset": 0.35
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s07b",
+   "word": "@three",
+   "offset": 0.75
+  },
+  "vol": 0.55
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s07b",
+   "word": "@loan",
+   "offset": 0,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07b",
+   "word": "@three",
+   "offset": 0.1,
+   "nth": 2
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "scale_creak",
+  "at": {
+   "seg": "s07b",
+   "word": "@three",
+   "offset": 0.7,
+   "nth": 2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@three",
+   "offset": 1.0,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s07b",
+   "word": "@interest",
+   "offset": 0,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07b",
+   "word": "@three",
+   "offset": 0.05,
+   "nth": 3
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@three",
+   "offset": 0.9,
+   "nth": 3
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s07b",
+   "word": "@to",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s07b",
+   "word": "@three",
+   "offset": 0.05,
+   "nth": 4
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "scale_settle",
+  "at": {
+   "seg": "s07b",
+   "word": "@three",
+   "offset": 0.7,
+   "nth": 4
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@three",
+   "offset": 1.0,
+   "nth": 4
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@compound",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s07b",
+   "word": "@line",
+   "offset": -0.3
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07b",
+   "word": "@match",
+   "offset": 0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s07b",
+   "word": "@match",
+   "offset": 0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s07b",
+   "word": "@match",
+   "offset": 1.0
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07c",
+   "word": "@payment",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "seg": "s07c",
+   "word": "@expense",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s07d",
+   "word": "@nope",
+   "offset": 0
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s07d",
+   "word": "@thousand",
+   "offset": -0.3
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s07d",
+   "word": "@shrinks",
+   "offset": 0
+  },
+  "vol": 0.4
+ }
+]

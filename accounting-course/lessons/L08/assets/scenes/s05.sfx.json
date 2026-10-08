@@ -1,0 +1,146 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05a",
+   "word": "@four",
+   "offset": -0.2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s05a",
+   "word": "@bills",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s05a",
+   "word": "@tab",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s05a",
+   "word": "@infotech",
+   "offset": 0.2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05a",
+   "word": "@debit",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s05b",
+   "word": "@debit",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05b",
+   "word": "@debit",
+   "offset": 0.3
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "scale_creak",
+  "at": {
+   "seg": "s05b",
+   "word": "@asset",
+   "offset": 0.5
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05b",
+   "word": "@personal",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s05b",
+   "word": "@to",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05b",
+   "word": "@credit",
+   "offset": 0.05
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "scale_settle",
+  "at": {
+   "seg": "s05b",
+   "word": "@credit",
+   "offset": 0.6
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05b",
+   "word": "@credit",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s05b",
+   "word": "@credit",
+   "offset": 1.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05b",
+   "word": "@exactly",
+   "offset": 0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05b",
+   "word": "@exactly",
+   "offset": 1.3
+  },
+  "vol": 0.3
+ }
+]

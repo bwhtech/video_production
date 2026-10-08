@@ -1,0 +1,182 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.5,
+  "text": "[playful] {@april}{@thirtieth}तीस अप्रैल। {@lunch}लंच से पहले {@five}पाँच {@things}चीज़ें होती हैं। {@meera}मीरा दो {@weeks}हफ़्ते की चाय की {@sales}sales गिनती हैं। वो {@infotech}Infotech को एक {@bill}bill भेजती हैं। वो {@raju}राजू को उसकी {@salary}salary देती हैं। वो {@ravi}रवि मामा के {@loan}loan का थोड़ा हिस्सा {@back}लौटाती हैं। और वो कुछ {@money}पैसे {@home}घर ले जाती हैं, {@herself}अपने लिए।"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.6,
+  "text": "वो {@grabs}एक {@tissue}tissue उठाती हैं, और सब कुछ उसी पर {@scribbles}लिख {@down}डालती हैं।"
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[softly] {@gone}ग़ायब। तो मीरा को इसमें से कुछ भी {@remember}याद कैसे रहेगा… {@year}एक साल {@now}बाद?"
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 1.4,
+  "text": "[warmly] सबसे {@first}पहले, पिछली बार के {@answers}जवाब। {@one}एक। चार हज़ार रुपये का {@catering}catering {@advance}advance — कौन से golden-rule {@tags}tags लगेंगे?"
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "{@cash}Cash {@real}Real है, और वो {@comes}comes {@in}in होता है — इसलिए, {@debit}debit। {@customer}Customer एक {@person}इंसान है, {@giver}giver — इसलिए {@credit}credit {@advance}Advance from customer।"
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "{@two}दो। {@bank}Bank {@real}Real है, या {@personal}Personal?"
+ },
+ {
+  "id": "s02d",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "{@personal}Personal। Bank एक {@organisation}organisation है, और organisations को {@persons}persons ही गिना जाता है।"
+ },
+ {
+  "id": "s02e",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "{@three}तीन। {@rent}Rent किस {@family}family में आता है?"
+ },
+ {
+  "id": "s02f",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "{@nominal}Nominal। ये एक {@expense}expense है।"
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "{@back}वापस {@meera's}मीरा की {@tissue}tissue पर। आप हर {@transaction}transaction को उसी {@day}दिन लिखते हैं जिस दिन वो होता है, {@date}date के क्रम में, एक ही {@book}book में। उस book का नाम है — {@journal}{p@journal}journal। भारतीय दुकानों में इसे {@day-book}day-book कहते हैं — {@rojmel}रोज़मेल। हर entry {@three}तीन सवालों के जवाब देती है। कौन से {@accounts}accounts {@changed}{p@changed}बदले? वो किस {@kind}तरह के {@they}{p@they}हैं? और हर एक किस {@side}side पर जाएगा?"
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 2.0,
+  "text": "{@khata}खाता एक नया {@fresh}{@journal}journal {@page}page {@opens}खोलता है — और {@first}पहली entry सीधे {@writes}लिख देता है। दो {@weeks}हफ़्ते की {@cash}cash {@sales}sales: {@twenty-two}बाईस हज़ार {@rupees}रुपये। {@which}कौन सी {@two#2}दो {@things}चीज़ें {@changed}बदलीं?"
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "{@cash}Cash {@went}{@up}बढ़ा। और {@sales}Sales {@went#2}{@up#2}{p@up#2}बढ़ीं। {@cash#2}Cash {@grows}बढ़ता है — एक {@asset}asset, अपनी {@home}home side {@left}left पर — इसलिए, {@debit}debit। {@tag}Tag भी यही कहता है: {@real}Real, {@comes}comes {@in}{p@in}in। {@sales#2}Sales से {@equity}equity {@grows#2}बढ़ती है, जिसकी home side {@right}right है — इसलिए, {@credit}credit। {@nominal}Nominal, {@income}income।"
+ },
+ {
+  "id": "s04d",
+  "scene": 4,
+  "gap_after": 1.6,
+  "text": "अब {@columns}columns को {@watch}{p@columns}देखिए। {@first}पहले, {@date}date: {@thirtieth}तीस {@april}{p@thirtieth}अप्रैल। फिर {@particulars}Particulars — यानी {@accounts}accounts। {@debit}Debit account सबसे {@first#2}पहले आता है — {@cash}Cash। {@khata}खाता उसे {@a-slash-c}A-slash-c लिखता है, मतलब {@short}short for {@account#2}{p@account#2}account, और line के {@end}आख़िर में एक छोटा {@dr}Dr। {@twenty-two}बाईस {@thousand}हज़ार, {@debit#2}debit {@column}column में, {@left}left side {p@left}पर। {@credit}Credit account नीचे वाली {@line#2}line पर जाता है, थोड़ा {@pushed}अंदर सरका हुआ, और उसकी शुरुआत होती है एक शब्द से — {@word}{@to}{p@to}To। {@to#2}To {@sales}Sales, {@twenty-two#2}बाईस {@thousand#2}हज़ार, {@credit#2}credit column में, {@right}right side {p@right}पर। और आख़िर में, {@brackets}brackets में एक {@short#2}छोटा {@note}note, जो बताता है कि क्या हुआ — {@cash#2}cash sales। उसे कहते हैं {@narration}narration।"
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 1.6,
+  "text": "{@same}उसी सुबह, मीरा {@infotech}Infotech को चाय के लिए {@four}चार हज़ार रुपये का {@bills}bill देती हैं, उनके {@tab}tab पर। {@debit}Debit या {@credit}credit — {@infotech#2}Infotech के लिए?"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "{@debit}Debit। {@infotech}Infotech पर अब stall का {@owes}बकाया है — एक {@asset}asset {@growing}बढ़ रहा है, {@left}left side पर। {@personal}Personal, {@receiver}receiver। और {@to}To {@sales}Sales, {@credit}credit। {@exactly}बिल्कुल वैसे ही, जैसे {@april}{@sixteenth}सोलह अप्रैल को।"
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 2.0,
+  "text": "[inviting] अब {@meera}मीरा एक entry {@writes}लिखती हैं। {@raju's}राजू की {@salary}salary — {@eight}आठ हज़ार रुपये, bank से {@upi}UPI से चुकाए गए। {@which}कौन सी {@two}दो {@things}चीज़ें {@changed}बदलीं?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 2.6,
+  "text": "{@salary}Salary {@went}{@up}बढ़ी। और {@bank}Bank {@down}{p@down}घटा। {@meera}मीरा {@debit}debit line लिखती हैं: {@salary#2}Salary। ये एक {@expense}expense है, इसलिए — {@debit#2}debit। पर {@credit}credit line पर वो {@stops}रुक जाती हैं। {@can}क्या आप उसे उनके लिए {@finish}पूरा कर सकते हैं?"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 1.2,
+  "text": "{@to}To {@bank}Bank, {@eight}आठ हज़ार। पैसा {@bank#2}bank से {@left}निकल गया — एक {@asset}asset {@shrank}घटा, इसलिए वो {@right}right side पर जाता है। {@bank#3}Bank {@personal}Personal है — {@giver}giver। तो, {@credit}credit।"
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 2.0,
+  "text": "[curious] अब एक {@tricky}मुश्किल वाली। मीरा {@hands}{@ravi}रवि मामा को {@three}तीन {@thousand}हज़ार {@three#2}तीन {@hundred}सौ रुपये देती हैं। {@three#3}तीन हज़ार उनके {@loan}loan का कुछ हिस्सा {@pays}लौटाते हैं। {@three#4}तीन सौ {@interest}interest है — उधार देने की उनकी छोटी {@fee}fee। एक {@payment}payment। तो {@which}कौन सी चीज़ें {@changed}बदलीं?"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "[excited] {@three}तीन चीज़ें! {@loan}Loan घटा — {@debit}debit {@loan#2}Loan from {@ravi}Ravi Mama, {@three#2}तीन {@thousand}हज़ार। {@interest}Interest एक {@expense}expense है — {@debit#2}debit {@interest#2}Interest, {@three#3}तीन {@hundred}सौ। और {@cash}cash बाहर गया — {@to}To {@cash#2}Cash, {@three#4}तीन {@thousand#2}हज़ार तीन सौ। {@two}दो debits, {@one}एक credit। इसे कहते हैं — एक {@compound}compound {@entry}{p@entry}entry। हर account के लिए एक {@line}line। और दोनों {@sides}sides अब भी {@match}बराबर हैं — {@three#6}तीन हज़ार तीन सौ, {@each}दोनों तरफ़।"
+ },
+ {
+  "id": "s07c",
+  "scene": 7,
+  "gap_after": 0.4,
+  "text": "यहाँ बहुत से लोग {@slip}फिसल जाते हैं। वो पूरे {@payment}payment को ही {@expense}expense कह देते हैं।"
+ },
+ {
+  "id": "s07d",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "[firmly] {@nope}नहीं। सिर्फ़ {@three}तीन {@hundred}सौ रुपये का {@interest}interest ही एक {@expense}expense {p@expense}है। तीन {@thousand}हज़ार तो बस वो पैसा {@gives}लौटाते हैं, जो {@meera's}मीरा का {@never}कभी था ही नहीं। ये उनका {@debt}debt {@shrinks}घटाता है — उनका {@profit}profit {@not}नहीं।"
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 2.0,
+  "text": "[excited] {@last}आख़िरी वाली आपकी है। मीरा {@galla}गल्ले से {@three}तीन हज़ार रुपये {@takes}निकालती हैं, {@home}घर पर ख़र्च करने के लिए। {@which}कौन सी {@two}दो {@things}चीज़ें {@changed}बदलीं?"
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "{@cash}Cash {@went}{@down}घटा। {@other}दूसरा वाला नया है — उसका {@name}नाम आपको देना है। {@write}Entry लिखिए। {@debit}Debit क्या? {@to#2}To क्या?"
+ },
+ {
+  "id": "s08c",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "{@debit}Debit {@drawings}Drawings, {@three}तीन हज़ार। {@to}To {@cash}Cash, {@three#2}तीन हज़ार। {@drawings#2}Drawings का मतलब है वो पैसा जो {@owner}owner अपने {@herself}लिए निकालती है। ये {@meera}मीरा हैं — {@personal}Personal — और वो {@receiver}receiver हैं।"
+ },
+ {
+  "id": "s08d",
+  "scene": 8,
+  "gap_after": 0.4,
+  "text": "और ये रही दूसरी {@slip}चूक। बहुत से लोग {@drawings}drawings को भी {@expense}expense लिख देते हैं।"
+ },
+ {
+  "id": "s08e",
+  "scene": 8,
+  "gap_after": 1.6,
+  "text": "[firmly] {@nope}नहीं। {@expense}Expense वो है जो stall चलाने में {@used}इस्तेमाल हो जाता है — जैसे {@rent}rent, या {@raju's}राजू की {@salary}salary। ये पैसा {@home}घर {p@home}गया। {@remember}याद रखिए — {@meera}मीरा और {@meera's}Meera's Chai एक नहीं {@same}{p@same}हैं। तो {@equity}Equity card में एक {@third}तीसरा {@pocket}pocket {@grows}जुड़ता है: {@drawings}Drawings। {@capital}Capital {@fifty}पचास हज़ार ही {@stays}रहता है। {@profit}Profit {@untouched}अछूता रहता {p@untouched}है। {@drawings#2}Drawings {@left}left side पर बैठते हैं, {@expenses}expenses की तरह — पर अपने {@own}अलग pocket में।"
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "तो — {@journal}journal यानी {@day-book}day-book: हर {@transaction}transaction, date के {@order}क्रम में। एक {@payment}payment की कई {@lines}lines हो सकती हैं, बस दोनों {@sides}sides {@match}बराबर होनी चाहिए। और loan {@repaying}चुकाना, या {@drawings}drawings लेना, {@expense}expense नहीं है।"
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.8,
+  "text": "[inviting] आपकी {@turn}बारी। तीन {@quick}छोटे {@ones}{p@ones}सवाल। {@one}एक। {@ravi}रवि मामा के पूरे {@three#2}तीन हज़ार तीन सौ रुपये {@expense}expense क्यों नहीं {p@expense}हैं? {@two}दो। {@april}पच्चीस अप्रैल की {@journal}journal entry लिखिए — Infotech {@upi}UPI से चार हज़ार रुपये चुकाता {p@upi}है। {@three#4}तीन। {@drawings}Drawings — {@expense#2}expense, या {@not}{p@not}नहीं? {@answers}जवाब {@next}अगले lesson की शुरुआत में।"
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 1.0,
+  "text": "[teasing] अगली {@time}बार, मीरा के पास एक {@simple}सीधा-सा सवाल है। {@galla}गल्ले में अभी कितना {@cash}cash है? {@journal}Journal को सब पता है… पर जवाब {@pieces}टुकड़ों में बँटा है।"
+ }
+]

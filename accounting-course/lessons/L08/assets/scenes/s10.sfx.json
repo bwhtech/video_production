@@ -1,0 +1,131 @@
+[
+ {
+  "sfx": "bell_ring",
+  "at": {
+   "seg": "s10",
+   "word": "@turn",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s10",
+   "word": "@one",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@ravi",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s10",
+   "word": "@three",
+   "offset": 0.1,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@expense",
+   "offset": -0.4
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@expense",
+   "offset": 0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s10",
+   "word": "@two",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@april",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "phone_buzz",
+  "at": {
+   "seg": "s10",
+   "word": "@upi",
+   "offset": -0.3
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@upi",
+   "offset": 0.5
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s10",
+   "word": "@three",
+   "offset": -0.1,
+   "nth": 4
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@drawings",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@expense",
+   "offset": -0.2,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "page_flip",
+  "at": {
+   "seg": "s10",
+   "word": "@next",
+   "offset": 0.2
+  },
+  "vol": 0.35
+ }
+]

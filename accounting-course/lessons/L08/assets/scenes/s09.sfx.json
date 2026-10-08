@@ -1,0 +1,101 @@
+[
+ {
+  "sfx": "rise_three",
+  "at": {
+   "seg": "s09",
+   "word": "@journal",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09",
+   "word": "@journal",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s09",
+   "word": "@day-book",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "rise_three",
+  "at": {
+   "seg": "s09",
+   "word": "@payment",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09",
+   "word": "@payment",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s09",
+   "word": "@sides",
+   "offset": 0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s09",
+   "word": "@sides",
+   "offset": 0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "rise_three",
+  "at": {
+   "seg": "s09",
+   "word": "@repaying",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09",
+   "word": "@repaying",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s09",
+   "word": "@drawings",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s09",
+   "word": "@expense",
+   "offset": 0
+  },
+  "vol": 0.55
+ }
+]

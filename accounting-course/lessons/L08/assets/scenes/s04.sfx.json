@@ -1,0 +1,312 @@
+[
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s04a",
+   "word": "@back",
+   "offset": 0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "cover_swing",
+  "at": {
+   "seg": "s04a",
+   "word": "@journal",
+   "offset": -0.35
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04a",
+   "word": "@journal",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@rojmel",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@accounts",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@kind",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@side",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s04b",
+   "word": "@writes",
+   "offset": 0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s04b",
+   "word": "@cash",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04b",
+   "word": "@sales",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "freeze_stop",
+  "at": {
+   "seg": "s04b",
+   "word": "@changed",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s04b",
+   "word": "@changed",
+   "offset": 0.2
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s04b",
+   "word": "@changed",
+   "offset": 2.65
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "scale_creak",
+  "at": {
+   "seg": "s04c",
+   "word": "@asset",
+   "offset": 0.5
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "scale_settle",
+  "at": {
+   "seg": "s04c",
+   "word": "@right",
+   "offset": 0.6
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04c",
+   "word": "@tag",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04c",
+   "word": "@nominal",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s04d",
+   "word": "@thirtieth",
+   "offset": 0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04d",
+   "word": "@april",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s04d",
+   "word": "@cash",
+   "offset": 0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04d",
+   "word": "@cash",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s04d",
+   "word": "@a-slash-c",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04d",
+   "word": "@a-slash-c",
+   "offset": -0.15
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s04d",
+   "word": "@dr",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04d",
+   "word": "@twenty-two",
+   "offset": 0.2
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04d",
+   "word": "@twenty-two",
+   "offset": 0.8
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04d",
+   "word": "@left",
+   "offset": 0.85
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s04d",
+   "word": "@to",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s04d",
+   "word": "@to",
+   "offset": 0,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04d",
+   "word": "@twenty-two",
+   "offset": 0.2,
+   "nth": 2
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04d",
+   "word": "@twenty-two",
+   "offset": 0.8,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04d",
+   "word": "@right",
+   "offset": 0.85
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s04d",
+   "word": "@short",
+   "offset": 0,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04d",
+   "word": "@narration",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ }
+]

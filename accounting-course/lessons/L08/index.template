@@ -16,6 +16,7 @@
     <script src="assets/kit/props2.js"></script>
     <script src="assets/timeline.js"></script>
     <script src="assets/scenes/_shared.js"></script>
+    <script src="assets/scenes/_l8.js"></script>
 {{SCENE_SCRIPTS}}
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
