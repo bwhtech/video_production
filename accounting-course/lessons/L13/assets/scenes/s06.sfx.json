@@ -1,0 +1,20 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s06", "word": "@moment", "offset": 0.3}, "vol": 0.4},
+ {"sfx": "weight_clunk", "at": {"seg": "s06", "word": "@moment", "offset": 0.5}, "vol": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s06", "word": "@moment", "offset": 1.2}, "vol": 0.35},
+ {"sfx": "paper_slide", "at": {"seg": "s06", "word": "@liabilities"}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s06", "word": "@liabilities", "offset": 0.8}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s06", "word": "@equity", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "tink_high", "at": {"seg": "s06", "word": "@together", "offset": 1.0}, "vol": 0.4},
+ {"sfx": "scale_settle", "at": {"seg": "s06", "word": "@same", "offset": 0.4}, "vol": 0.5},
+ {"sfx": "ding_yes", "at": {"seg": "s06", "word": "@same", "offset": 1.4}, "vol": 0.4},
+ {"sfx": "scale_creak", "at": {"seg": "s06", "word": "@settles", "offset": -1.1}, "vol": 0.3},
+ {"sfx": "scale_settle", "at": {"seg": "s06", "word": "@settles", "offset": -0.3}, "vol": 0.4},
+ {"sfx": "polaroid_whirr", "at": {"seg": "s06", "word": "@balance", "offset": -0.1}, "vol": 0.35},
+ {"sfx": "shutter", "at": {"seg": "s06", "word": "@balance", "offset": 0.15}, "vol": 0.25},
+ {"sfx": "boing_hop", "at": {"seg": "s06", "word": "@balance", "offset": 0.45}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s06b", "word": "@third"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s06b", "word": "@two-thirds"}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s06b", "word": "@fixed", "offset": -0.3}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s06b", "word": "@current"}, "vol": 0.3}
+]

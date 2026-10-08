@@ -1,0 +1,17 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s03a", "word": "@trial", "offset": -0.1}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s03a", "word": "@revenue", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "page_flurry", "at": {"seg": "s03a", "word": "@photo"}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s03a", "word": "@left", "nth": 2}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s03a", "word": "@assets", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s03a", "word": "@cart", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "pen_tick", "at": {"seg": "s03a", "word": "@thirty-six"}, "vol": 0.3, "dur": 0.3},
+ {"sfx": "pen_tick", "at": {"seg": "s03a", "word": "@depreciation", "offset": 0.5}, "vol": 0.3, "dur": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s03a", "word": "@worth"}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s03a", "word": "@stock", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s03a", "word": "@infotech", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s03a", "word": "@bank", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s03a", "word": "@galla", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "coin_clink", "at": {"seg": "s03a", "word": "@fifty"}, "vol": 0.25},
+ {"sfx": "tink_low", "at": {"seg": "s03b", "word": "@lakh", "offset": 0.9}, "vol": 0.5}
+]

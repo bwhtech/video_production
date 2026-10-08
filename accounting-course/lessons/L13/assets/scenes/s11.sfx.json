@@ -1,0 +1,7 @@
+[
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@turn"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@one", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@two", "offset": -0.15}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s11", "word": "@three", "offset": -0.15}, "vol": 0.3},
+ {"sfx": "boing_hop", "at": {"seg": "s11", "word": "@answers"}, "vol": 0.25}
+]

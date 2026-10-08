@@ -1,0 +1,122 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "[softly] {@click}Click। {@thirtieth}तीस {@april}April, {@closing}दुकान बंद होने का वक़्त। April की {@movie}movie {@over}ख़त्म हो गई। अब खाता {@photo}एक photo खींचता है — {@everything}stall के पास जो कुछ {@owns}है, और जो कुछ {@owes}बकाया है, सब कुछ {@frozen}एक पल में थमा {@moment}हुआ।"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[curious] {@twenty}बीस {@transactions}transactions, {@nineteen}उन्नीस {@accounts}accounts, सब कुछ {@picture}एक picture में। वो अभी {@developing}develop हो रही है। चलिए {@find}देखते हैं कि इसमें क्या है।"
+ },
+ {
+  "id": "s02",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "पहले, पिछली बार के सवाल। {@one}एक। {@drawings}Drawings, Profit and Loss statement में क्यों नहीं हैं? क्योंकि वो एक {@expense}expense नहीं हैं। मीरा वो पैसे {@home}घर ले गईं — उससे {@stall}stall चलाने में कोई मदद नहीं {p@stall}हुई। {@two}दो। चार हज़ार रुपये का {@advance}advance, क्या April के Profit and Loss में है? {@no}नहीं। मीरा ने उसे अभी {@earned}कमाया नहीं है। उन्हें अभी {@catering}catering करनी {p@catering}है। {@three}तीन। {@gross}Gross profit? {@forty}चालीस हज़ार रुपये।"
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "पिछली बार, {@movie}movie ने trial balance में से {@revenue}revenue और {@expense}expense accounts निकाल लिए। {@photo}Photo बाक़ी {@everything}सब कुछ ले लेती {p@left}है। stall की photo के {@sides}दो sides होते हैं, ठीक {@khata}खाता की तरह। {@left#2}Left side पर — stall के पास जो कुछ है, उसके {@assets}assets। {@khata#2}खाता उन्हें {@lists}लिखता है। {@cart}Cart और equipment की {@cost}क़ीमत थी {@thirty-six}छत्तीस हज़ार। एक महीने का {@depreciation}depreciation घट गया, इसलिए books में उनकी {@worth}क़ीमत है {@thirty-five}पैंतीस {p@thousand#2}हज़ार। {@stock}Stock, {@shelf}shelf पर बचा हुआ, {@four}चार हज़ार। {@infotech}Infotech पर अभी {@six}छह हज़ार {@owes}बकाया हैं। {@bank}Bank में {@eleven}ग्यारह हज़ार। और {@galla}गल्ले में {@fifty}पचास हज़ार सात सौ।"
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.8,
+  "text": "{@total}Total assets: {@lakh}एक लाख छह हज़ार सात सौ {@rupees}{p@rupees}रुपये।"
+ },
+ {
+  "id": "s04",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "{@right}Right side पर, पहले — stall पर जो {@owes}बकाया है, यानी उसकी {@liabilities}liabilities। {@ravi}रवि मामा ने {@lent}{@thirty}तीस हज़ार उधार दिए और {@three}तीन हज़ार {@back}वापस मिल गए, इसलिए {@twenty-seven}सत्ताईस हज़ार अभी भी बाक़ी {p@owed}हैं। {@gopal}गोपाल Dairy को {@three#2}तीन हज़ार {@waiting}चाहिए। {@catering}Catering वाले customer ने {@four}चार हज़ार {@advance}advance में दिए, इसलिए stall को May में उन्हें {@chai}चाय देनी {@owes#2}है। और {@electricity}April का electricity bill, {@one}एक हज़ार। {@total}Total liabilities: {@thirty-five}पैंतीस हज़ार रुपये।"
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "जो कुछ {@left}बचता है, वो {@belongs}मीरा का है। वही उनकी {@equity}equity है। ये वाला {@meera#2}मीरा करेंगी। {@day}पहले दिन, उन्होंने पचास हज़ार रुपये की {@capital}capital लगाई थी। अब, {@movie's}movie का आख़िरी {@frame}frame देखिए।"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "चौबीस हज़ार सात सौ रुपये का {@profit}profit {@slides}film strip से बाहर {@out}निकलता है, और {@photo}photo में चला जाता है। movie का {@ending}अंत, photo का {@part}हिस्सा {@photo#2}बन जाता {p@photo#2}है। Profit {@owner}owner का होता है, इसलिए वो मीरा की {@equity}equity में जुड़ जाता है।"
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 2.8,
+  "text": "फिर वो तीन हज़ार {@take}घटा दीजिए जो वो {@home}घर ले {@took}{p@home}गईं। पचास हज़ार, {@plus}जमा चौबीस हज़ार सात सौ, {@minus}माइनस तीन हज़ार। [curious] {@pause}ज़रा pause कीजिए — उनकी equity कितनी है?"
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "[excited] {@seventy-one}इकहत्तर हज़ार सात सौ रुपये! मीरा का {@share}हिस्सा April में पचास हज़ार {@started}से शुरू हुआ था, और अब {@ends}इकहत्तर हज़ार सात सौ पर ख़त्म हो रहा है। movie का {@profit}profit, और घर ले जाया गया पैसा — यही उस {@difference}फ़र्क़ की वजह {@explains}{p@difference}है। पिछले lesson का trial balance सिर्फ़ एक {@check}check था। ये {@photo}photo असली {@picture}picture है।"
+ },
+ {
+  "id": "s06",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "अब, {@moment}सच का पल। {@liabilities}Liabilities, पैंतीस हज़ार। {@plus}जमा {@equity}equity, इकहत्तर हज़ार सात सौ। {@together}दोनों मिलाकर, {@lakh}एक लाख छह हज़ार सात सौ। {@exactly}Assets के बिल्कुल {@same}बराबर {@assets}{p@assets}है। [softly] {@remember}याद है Lesson तीन का {@scale}तराज़ू? एक {@pan}पलड़े में assets, और दूसरे में liabilities और equity। वो एक आख़िरी बार {@settles}settle {@time}होता {p@time}है। दोनों {@sides}तरफ़ हमेशा {@equal}बराबर। यही है {@balance}Balance {@sheet}Sheet।"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "अब photo को {@read}पढ़िए। stall के पास जो कुछ है, उसमें से लगभग {@third}एक तिहाई दूसरों का {@owed}देना है। लगभग {@two-thirds}दो तिहाई {@belongs}मीरा का है। एक नज़र में पता चल जाता है कि stall असल में किसका {p@to#3}है। और {@left}left side पर, एक {@fixed}fixed asset — {@cart}cart, जो सालों चलेगी — और चार {@current}current assets: {@cash}cash, या वो चीज़ें जो जल्दी cash बन जाती हैं।"
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 1.0,
+  "text": "अब, एक {@trap}जाल जिसमें लगभग हर कोई फँसता है। मीरा की {@equity}equity इकहत्तर हज़ार सात सौ रुपये है। तो {@somewhere}कहीं न कहीं, उनके पास इकहत्तर हज़ार सात सौ रुपये {@cash}cash में होने चाहिए। {@right}है ना?"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "[firmly] {@nope}नहीं। {@galla}गल्ला और {@bank}bank गिनिए। पचास हज़ार सात सौ, {@plus}जमा ग्यारह हज़ार। इकसठ हज़ार सात सौ — उनकी {@equity}equity से {p@equity}कम। क्योंकि {@equity#2}equity नोटों का {@pile}ढेर नहीं {@notes}{p@notes}है। वो एक {@claim}claim है — stall के पास जो कुछ है, उसमें मीरा का {@share}हिस्सा। उसका एक हिस्सा {@cart}cart है। एक हिस्सा {@stock}stock है। और एक हिस्सा वो पैसा है जो {@infotech}Infotech ने अभी तक {@paid}दिया नहीं है।"
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "एक छोटी सी बात। कई {@indian}भारतीय books में, आप {@capital}capital को {@liabilities}liabilities के साथ लिखा हुआ देखेंगे, क्योंकि stall को वो अपने {@owner}owner को वापस {@owes}देना होता है। नंबर वही। {@balance}Balance वही। बस {@shelf}shelf अलग।"
+ },
+ {
+  "id": "s09a",
+  "scene": 9,
+  "gap_after": 3.2,
+  "text": "[inviting] आपकी {@turn}बारी। मान लीजिए {@suppose}मीरा ने April में {@home}घर के लिए कोई पैसा नहीं निकाला। तो उनकी {@equity}equity कितनी होती?"
+ },
+ {
+  "id": "s09b",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "{@seventy-four}चौहत्तर हज़ार सात सौ। {@drawings}कोई drawings नहीं, तो कुछ {@comes}घटता नहीं। और वो तीन हज़ार रुपये अब भी {@galla}गल्ले में होते — इसलिए {@both}दोनों sides तीन हज़ार {@grow}बढ़ जातीं, और {@scale}तराज़ू {@level}बराबर रहता।"
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.6,
+  "text": "तो — {@balance}Balance Sheet एक {@photo}photo है, एक {@moment}पल {p@moment}की। {@assets}Assets एक तरफ़। Liabilities और equity दूसरी तरफ़, हमेशा {@equal}{p@equal}बराबर। और movie का {@profit}profit, {@owner's}owner की {@equity}equity में {@flows}बहकर जाता है।"
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 0.8,
+  "text": "[inviting] आपकी {@turn}बारी। तीन छोटे सवाल। {@one}एक। क्या मीरा की इकहत्तर हज़ार सात सौ रुपये की {@equity}equity {@cash}cash में पड़ी {p@cash}है? {@two}दो। उनके दो {@current}current {@assets}assets {p@assets}बताइए। {@three}तीन। चौबीस हज़ार सात सौ रुपये का {@profit}profit {@go}कहाँ {p@go}गया? {@answers}जवाब अगले lesson की शुरुआत में।"
+ },
+ {
+  "id": "s12",
+  "scene": 12,
+  "gap_after": 1.0,
+  "text": "[teasing] अगली बार। {@sixty-one}इकसठ हज़ार सात सौ रुपये, {@galla}गल्ले और {@bank}bank में। तो — क्या {@meera}मीरा {@rich}अमीर हैं?"
+ }
+]

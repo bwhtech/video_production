@@ -1,0 +1,12 @@
+[
+ {"sfx": "paper_slide", "at": {"seg": "s02", "word": "@one", "offset": -0.2}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@drawings"}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s02", "word": "@two", "offset": -0.15}, "vol": 0.4},
+ {"sfx": "envelope_drop", "at": {"seg": "s02", "word": "@advance"}, "vol": 1.3},
+ {"sfx": "bwomp_no", "at": {"seg": "s02", "word": "@no"}, "vol": 0.25},
+ {"sfx": "stamp_thunk", "at": {"seg": "s02", "word": "@no"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@earned"}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s02", "word": "@three", "offset": -0.15}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@gross"}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s02", "word": "@forty", "offset": 0.4}, "vol": 0.45}
+]

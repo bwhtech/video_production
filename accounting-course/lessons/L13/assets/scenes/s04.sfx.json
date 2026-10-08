@@ -1,0 +1,13 @@
+[
+ {"sfx": "pop", "at": {"seg": "s04", "word": "@liabilities", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s04", "word": "@ravi", "offset": -0.15}, "vol": 0.3},
+ {"sfx": "pen_tick", "at": {"seg": "s04", "word": "@thirty"}, "vol": 0.3, "dur": 0.3},
+ {"sfx": "pen_tick", "at": {"seg": "s04", "word": "@three"}, "vol": 0.3, "dur": 0.3},
+ {"sfx": "tink_high", "at": {"seg": "s04", "word": "@twenty-seven"}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s04", "word": "@gopal", "offset": -0.15}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s04", "word": "@catering", "offset": -0.15}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s04", "word": "@chai", "offset": -0.3}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s04", "word": "@electricity", "offset": -0.15}, "vol": 0.3},
+ {"sfx": "tink_high", "at": {"seg": "s04", "word": "@thirty-five", "offset": 0.8}, "vol": 0.5},
+ {"sfx": "paper_slide", "at": {"seg": "s04", "edge": "end", "offset": -2.1}, "vol": 0.3}
+]

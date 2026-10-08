@@ -1,0 +1,11 @@
+[
+ {"sfx": "paper_unfold", "at": {"scene": "s09", "t": 0.2}, "vol": 0.35},
+ {"sfx": "paper_slide", "at": {"scene": "s09", "t": 1.3}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s09a", "word": "@suppose", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "coin_clink", "at": {"seg": "s09a", "word": "@home", "offset": 1.1}, "vol": 0.3},
+ {"sfx": "tick_tock", "at": {"seg": "s09a", "edge": "end", "offset": 0.1}, "vol": 0.3, "dur": 2.9},
+ {"sfx": "ding_yes", "at": {"seg": "s09b", "word": "@seventy-four", "offset": 0.6}, "vol": 0.5},
+ {"sfx": "pop", "at": {"seg": "s09b", "word": "@both", "offset": 0.1}, "vol": 0.35},
+ {"sfx": "tink_low", "at": {"seg": "s09b", "word": "@both", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "tink_high", "at": {"seg": "s09b", "word": "@both", "offset": 0.4}, "vol": 0.3}
+]

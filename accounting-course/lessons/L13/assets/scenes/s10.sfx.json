@@ -1,0 +1,7 @@
+[
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@balance", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@assets", "offset": -0.3}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s10", "word": "@profit", "offset": -0.3}, "vol": 0.3},
+ {"sfx": "ka_ching", "at": {"seg": "s10", "word": "@flows", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "rise_three", "at": {"seg": "s10", "edge": "end", "offset": -2.0}, "vol": 0.25}
+]

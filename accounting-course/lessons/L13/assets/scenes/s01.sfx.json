@@ -1,0 +1,7 @@
+[
+ {"sfx": "camera_click", "at": {"seg": "s01a", "word": "@click", "offset": -0.02}, "vol": 0.6},
+ {"sfx": "polaroid_whirr", "at": {"seg": "s01a", "word": "@click", "offset": 0.4}, "vol": 0.4},
+ {"sfx": "freeze_stop", "at": {"seg": "s01a", "word": "@frozen"}, "vol": 0.3},
+ {"sfx": "tink_high", "at": {"seg": "s01b", "word": "@developing"}, "vol": 0.3},
+ {"sfx": "paper_whoosh", "at": {"seg": "s01b", "edge": "end", "offset": -1.05}, "vol": 0.4}
+]

@@ -1,0 +1,9 @@
+[
+ {"sfx": "coin_clink", "at": {"seg": "s12", "word": "@sixty-one"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s12", "word": "@galla", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s12", "word": "@bank", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "note_rustle", "at": {"seg": "s12", "word": "@meera", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "sparkle", "at": {"seg": "s12", "word": "@rich", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s12", "word": "@rich", "offset": 0.05}, "vol": 0.35},
+ {"sfx": "book_thump", "at": {"seg": "s12", "edge": "end", "offset": -0.1}, "vol": 0.7}
+]
