@@ -1,0 +1,126 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04a",
+   "word": "@trial",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "projector",
+  "at": {
+   "seg": "s04a",
+   "word": "@movie"
+  },
+  "vol": 0.3,
+  "dur": 1.2
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@profit",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "edge": "end",
+   "offset": 0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04b",
+   "word": "@revenue",
+   "offset": -0.05
+  },
+  "vol": 0.18
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04b",
+   "word": "@revenue",
+   "offset": 0.15
+  },
+  "vol": 0.18
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04b",
+   "word": "@revenue",
+   "offset": 0.35
+  },
+  "vol": 0.18
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04b",
+   "word": "@revenue",
+   "offset": 0.55
+  },
+  "vol": 0.18
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04b",
+   "word": "@revenue",
+   "offset": 0.75
+  },
+  "vol": 0.18
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04b",
+   "word": "@revenue",
+   "offset": 0.95
+  },
+  "vol": 0.18
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04b",
+   "word": "@revenue",
+   "offset": 1.15
+  },
+  "vol": 0.18
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s04b",
+   "word": "@forty"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s04b",
+   "word": "@ten"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s04b",
+   "word": "@infotech",
+   "offset": 0.9
+  },
+  "vol": 0.3
+ }
+]

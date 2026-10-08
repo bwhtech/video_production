@@ -1,0 +1,161 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "scene": "s08",
+   "t": 0.8
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08a",
+   "word": "@people",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s08a",
+   "word": "@movie",
+   "offset": 0.1
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "bwomp_no",
+  "at": {
+   "seg": "s08a",
+   "word": "@turned"
+  },
+  "vol": 0.22
+ },
+ {
+  "sfx": "bwomp_no",
+  "at": {
+   "seg": "s08a",
+   "word": "@three",
+   "offset": 1.2
+  },
+  "vol": 0.2
+ },
+ {
+  "sfx": "ticket_tear",
+  "at": {
+   "seg": "s08a",
+   "word": "@hundred",
+   "offset": -0.05
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s08a",
+   "word": "@interest",
+   "offset": 0.9
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "bwomp_no",
+  "at": {
+   "seg": "s08a",
+   "word": "@turned",
+   "nth": 2
+  },
+  "vol": 0.22
+ },
+ {
+  "sfx": "ticket_tear",
+  "at": {
+   "seg": "s08a",
+   "word": "@depreciation",
+   "offset": -0.05
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s08a",
+   "word": "@depreciation",
+   "offset": 1.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "bwomp_no",
+  "at": {
+   "seg": "s08b",
+   "word": "@turned"
+  },
+  "vol": 0.22
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08b",
+   "word": "@advance",
+   "offset": -1.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "bwomp_no",
+  "at": {
+   "seg": "s08b",
+   "word": "@yet"
+  },
+  "vol": 0.22
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08b",
+   "word": "@payment",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08b",
+   "word": "@billed",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s08b",
+   "word": "@billed",
+   "offset": 0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "bell_ring",
+  "at": {
+   "seg": "s08b",
+   "word": "@earned",
+   "nth": 2,
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "bell_ring",
+  "at": {
+   "seg": "s08b",
+   "word": "@used",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ }
+]

@@ -1,0 +1,99 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02",
+   "word": "@one",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s02",
+   "word": "@lakh",
+   "offset": 0.25
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s02",
+   "word": "@lakh",
+   "offset": 0.45
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s02",
+   "word": "@each",
+   "offset": 0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02",
+   "word": "@two",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s02",
+   "word": "@transaction"
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "bwomp_no",
+  "at": {
+   "seg": "s02",
+   "word": "@no"
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02",
+   "word": "@three",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s02",
+   "word": "@three",
+   "offset": 0.7
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s02",
+   "word": "@drawings",
+   "offset": 0.9
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02",
+   "word": "@expense",
+   "offset": -0.05
+  },
+  "vol": 0.35
+ }
+]

@@ -1,0 +1,118 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06a",
+   "word": "@rent",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06a",
+   "word": "@salary",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06a",
+   "word": "@electricity",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06a",
+   "word": "@depreciation",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06a",
+   "word": "@interest",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06a",
+   "word": "@together",
+   "offset": -0.75
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06a",
+   "word": "@together",
+   "offset": -0.5
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s06b",
+   "word": "@minus",
+   "offset": 0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s06b",
+   "edge": "end",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s06c",
+   "word": "@twenty-four"
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ka_ching",
+  "at": {
+   "seg": "s06c",
+   "word": "@twenty-four",
+   "offset": 0.75
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06d",
+   "word": "@lesson",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "sparkle",
+  "at": {
+   "seg": "s06d",
+   "word": "@profit",
+   "nth": 2
+  },
+  "vol": 0.3
+ }
+]

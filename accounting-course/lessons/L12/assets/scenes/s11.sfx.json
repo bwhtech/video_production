@@ -1,0 +1,56 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@one",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s11",
+   "word": "@drawings",
+   "offset": -0.2
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@two",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s11",
+   "word": "@advance",
+   "offset": -0.5
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@three",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@answers",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ }
+]

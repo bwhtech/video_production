@@ -1,0 +1,28 @@
+[
+ {
+  "sfx": "click_lock",
+  "at": {
+   "seg": "s12",
+   "word": "@over"
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "shutter",
+  "at": {
+   "seg": "s12",
+   "word": "@take",
+   "offset": 0.55
+  },
+  "vol": 0.6
+ },
+ {
+  "sfx": "book_thump",
+  "at": {
+   "seg": "s12",
+   "edge": "end",
+   "offset": 0.5
+  },
+  "vol": 0.7
+ }
+]

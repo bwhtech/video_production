@@ -1,0 +1,122 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 1.2,
+  "text": "[softly] {@remember}याद है ये {@night}रात? Stall की वो {@first}पहली रात — {@april}दो अप्रैल। {@galla}गल्ला नोटों से भरा, और {@question}एक सवाल। {@count}गिन लीजिए {@milk}दूध, {@sugar}चीनी, और stall का {@rent}किराया — तो क्या मीरा को {@profit}profit हुआ, {@or}या {@loss}loss?"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[softly] {@back}तब, उनके पास {@know}जानने का कोई तरीका नहीं था। अब उनके पास पूरे {@month}महीने की {@books}books हैं, और एक {@trial}trial balance जो {@matches}मिलता है। [curious] तो {@tonight}आज रात, {@khata}खाता {@opens}खुलता है।"
+ },
+ {
+  "id": "s02",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "पहले, पिछली बार के सवाल। {@one}एक: trial balance के {@totals}totals? {@lakh}एक लाख छत्तीस हज़ार रुपये, {@each}हर {@side}side {p@side}पर। {@two}दो: क्या trial balance एक ऐसा {@transaction}transaction पकड़ सकता है जिसे आप {@forgot}पूरी तरह भूल गए? {@no}नहीं। दोनों sides में वो {@missing}ग़ायब है, इसलिए दोनों sides फिर भी {@match}match करती {p@match}हैं। {@three}तीन: {@drawings}Drawings किस column में जाते हैं? {@debit}Debit column में — {@expenses}expenses की ही side {p@expenses}पर। [teasing] लेकिन drawings कोई {@expense}expense नहीं हैं। {@hold}इस बात को याद रखिए।"
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 1.4,
+  "text": "ये रहा मीरा का {@trial}trial balance। {@nineteen}उन्नीस accounts। पर {@lesson}Lesson एक में, हमने एक {@movie}movie का वादा किया था — {@profit}Profit and {@loss}Loss {@statement}statement। {@april}April की एक movie। तो इसमें {@which}कौन से accounts को {@part}role मिलेगा?"
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "सिर्फ़ वही जो {@earning}कमाने और {@spending}ख़र्च करने की कहानी बताते हैं। {@revenue}Revenue, और {@expenses}expenses। {@everything}बाक़ी सब {@behind}पीछे रह जाता {p@behind}है। {@sales}Sales सबसे {@first}पहले: {@fifty}पचास हज़ार रुपये। {@forty}चालीस हज़ार cash में, और {@ten}दस हज़ार {@credit}उधार पर, {@infotech}Infotech के लिए। जो April में {@earned}कमाया गया, वो April का है — पैसे {@paid}मिले हों या नहीं।"
+ },
+ {
+  "id": "s05",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "Khata पहला cut लगाता है। याद है उस पहली रात का {@milk}दूध और {@sugar}चीनी? {@here}ये रहे। April में मीरा ने जो दूध, चीनी और चायपत्ती {@used}सच में इस्तेमाल की, उसकी {@cost}क़ीमत थी दस हज़ार रुपये। बड़े businesses इस line को {@cost#2}cost of goods {@sold}sold कहते {p@sold}हैं। {@fifty}पचास हज़ार, {@minus}माइनस दस हज़ार, {@leaves}बचते हैं चालीस {p@thousand#4}हज़ार। इसे कहते हैं {@gross}gross {p@profit}profit। {@gross#2}Gross {@profit#2}profit वो है जो {@left}बचता है, {@chai}चाय के पैसे चुकाने के बाद।"
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "अब मीरा {@takes}संभालती हैं। Stall चलाने में भी पैसे लगते हैं। {@rent}Rent — ये रहा उस पहली रात का {@rent#2}rent — {@five}पाँच हज़ार। {@raju's}राजू की {@salary}salary, आठ हज़ार। {@electricity}Electricity, एक हज़ार। Cart पर {@depreciation}depreciation, एक हज़ार। और रवि मामा को {@interest}interest, तीन {p@hundred}सौ। {@together}कुल मिलाकर, पंद्रह हज़ार तीन सौ रुपये।"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 3.0,
+  "text": "[curious] {@forty}चालीस हज़ार, {@minus}माइनस पंद्रह हज़ार तीन सौ। Video को {@pause}pause कीजिए, और {@work}हल निकालिए।"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 1.6,
+  "text": "[excited] {@twenty-four}चौबीस हज़ार सात सौ रुपये। यही है {@net}net {@profit}profit — पूरे महीने stall चलाने के बाद {@left}जो बचा।"
+ },
+ {
+  "id": "s06d",
+  "scene": 6,
+  "gap_after": 1.0,
+  "text": "[warmly] तो, {@lesson}Lesson एक का सवाल। क्या मीरा को {@profit}profit हुआ, या {@loss}loss? {@profit#2}Profit। चौबीस हज़ार सात सौ रुपये, April में। {@finally}आख़िरकार, {@knows}उन्हें पता चल गया।"
+ },
+ {
+  "id": "s07",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "अब movie को ऊपर से नीचे पढ़िए, एक {@story}कहानी की तरह। {@fifty}पचास हज़ार चाय से {@came}आए। {@ten}दस हज़ार {@chai#2}चाय में ही {@itself}ख़ुद लग {p@itself}गए। {@fifteen}पंद्रह हज़ार तीन सौ ने stall को {@running}चलाए {p@running}रखा। जो बचा, वो stall का {@net}net {@profit}profit है। हर {@hundred#2}सौ रुपये की चाय में से, मीरा लगभग {@forty-nine}उनचास रुपये रखती हैं।"
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 0.5,
+  "text": "लेकिन यहीं {@people}लोग फिसल जाते हैं। वो सोचते हैं कि April में जो भी {@rupee}रुपया हिला, वो {@movie}movie में आता है। [playful] दरवाज़े पर {@khata}खाता को देखिए। रवि मामा का {@thirty}तीस हज़ार रुपये का {@loan}loan अंदर आना चाहता है। {@turned}लौटा दिया गया — वो {@borrowed}उधार का है, {@earned}कमाया हुआ {p@earned}नहीं। और जो {@three}तीन हज़ार वो वापस ले गए, वो भी cost नहीं है — सिर्फ़ उनके {@hundred}तीन सौ का {@interest}interest {p@is}है। {@cart}Cart, छत्तीस हज़ार। {@turned#2}लौटा दिया गया — वो कुछ ऐसा है जो मीरा का {@owns}अपना है। सिर्फ़ उसके एक हज़ार के {@depreciation}depreciation को {@ticket}ticket मिला।"
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "{@meera's}मीरा के {@home}घर के लिए तीन हज़ार। {@turned}लौटा दिए गए — ये {@owner}मालिक का पैसा निकालना है, stall चलाने की {@cost}cost नहीं {p@stall}है। मई की {@catering}catering के लिए चार हज़ार का {@advance}advance — अभी {@yet}कमाया नहीं गया। और Infotech का चार हज़ार का {@payment}payment? {@already}पहले ही गिना जा चुका है, उसी दिन जब मीरा ने {@billed}bill भेजा था। [firmly] Movie सिर्फ़ वही दिखाती है जो April ने {@earned#2}कमाया, और जो April ने {@used}इस्तेमाल कर लिया।"
+ },
+ {
+  "id": "s09a",
+  "scene": 9,
+  "gap_after": 3.2,
+  "text": "[inviting] आपकी {@turn}बारी। {@imagine}सोचिए कि April का {@rent}किराया पाँच नहीं, {@seven}सात हज़ार होता। क्या {@gross}gross {@profit}profit भी बदलेगा?"
+ },
+ {
+  "id": "s09b",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "{@no}नहीं। Rent {@below}gross profit line के नीचे बैठता है, इसलिए gross profit चालीस हज़ार पर ही {@stays}रहता {p@thousand}है। सिर्फ़ {@net}net profit हिलता है — घटकर {@twenty-two}बाईस हज़ार सात सौ।"
+ },
+ {
+  "id": "s09c",
+  "scene": 9,
+  "gap_after": 1.0,
+  "text": "[curious] एक और। सोचिए {@whole}पूरे floor ने चाय पीनी बंद कर दी, और April की {@sales}sales सिर्फ़ {@fifteen}पंद्रह हज़ार रह गईं। पंद्रह, माइनस दस चाय के लिए, यानी {@five}पाँच हज़ार का gross profit। और {@minus#2}माइनस पंद्रह हज़ार तीन सौ, {@run}stall चलाने के लिए…"
+ },
+ {
+  "id": "s09d",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "माइनस {@ten}दस हज़ार तीन सौ। एक {@loss}{p@loss}loss। ये है Profit and {@loss#2}Loss का L। और मीरा का {@share}हिस्सा {@shrink}घट जाएगा।"
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.6,
+  "text": "तो — Profit and Loss statement एक period की {@movie}movie है। Sales माइनस इस्तेमाल हुई {@supplies}supplies — यही gross {@profit#2}profit {p@profit#2}है। Stall चलाने की cost घटाइए, तो मिलता है {@net}net {@profit#3}{p@profit#3}profit। और सिर्फ़ वही अंदर आता है जो {@earned}कमाया गया या {@used}इस्तेमाल हुआ।"
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 0.8,
+  "text": "[inviting] आपकी {@turn}बारी। तीन छोटे सवाल। {@one}एक। मीरा के {@drawings}drawings Profit and Loss {@statement}statement में क्यों नहीं {p@statement}हैं? {@two}दो। क्या चार हज़ार रुपये का {@advance}advance April के Profit and {@loss#2}Loss में {p@loss#2}है? {@three}तीन। मीरा का {@gross}gross {@profit#3}profit क्या {p@profit#3}था? {@answers}जवाब {@next}अगले lesson की शुरुआत में।"
+ },
+ {
+  "id": "s12",
+  "scene": 12,
+  "gap_after": 1.0,
+  "text": "[teasing] अगली {@time}बार, movie {@over}ख़त्म हो गई। अब {@take}फ़ोटो खींचने का वक़्त है।"
+ }
+]

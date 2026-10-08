@@ -1,0 +1,83 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09a",
+   "word": "@turn",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09a",
+   "word": "@rent",
+   "offset": 0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s09a",
+   "edge": "end",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s09b",
+   "word": "@no",
+   "offset": 0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s09b",
+   "word": "@below",
+   "offset": -0.2
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09c",
+   "word": "@sales",
+   "offset": 0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "bwomp_no",
+  "at": {
+   "seg": "s09d",
+   "word": "@ten",
+   "offset": 0.9
+  },
+  "vol": 0.14
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s09d",
+   "word": "@loss",
+   "offset": -0.6
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s09d",
+   "word": "@share",
+   "offset": -0.1
+  },
+  "vol": 0.3
+ }
+]

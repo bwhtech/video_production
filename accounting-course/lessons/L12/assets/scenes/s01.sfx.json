@@ -1,0 +1,145 @@
+[
+ {
+  "sfx": "kettle_bubble",
+  "at": {
+   "scene": "s01",
+   "t": 1.0
+  },
+  "vol": 0.12,
+  "dur": 3.0
+ },
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "scene": "s01",
+   "t": 0.7
+  },
+  "vol": 0.2
+ },
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "seg": "s01a",
+   "word": "@galla",
+   "offset": 0.2
+  },
+  "vol": 0.2
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01a",
+   "word": "@milk",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01a",
+   "word": "@sugar",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01a",
+   "word": "@rent",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01a",
+   "word": "@profit",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01a",
+   "word": "@loss",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01b",
+   "word": "@know",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "book_thump",
+  "at": {
+   "seg": "s01b",
+   "word": "@month",
+   "offset": -0.1
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "book_thump",
+  "at": {
+   "seg": "s01b",
+   "word": "@month",
+   "offset": 0.5
+  },
+  "vol": 0.2
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01b",
+   "word": "@trial",
+   "offset": -0.2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s01b",
+   "word": "@matches",
+   "offset": 0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "cover_swing",
+  "at": {
+   "seg": "s01b",
+   "word": "@opens",
+   "offset": -0.05
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "book_thump",
+  "at": {
+   "seg": "s01b",
+   "word": "@opens",
+   "offset": 0.8
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s01b",
+   "edge": "end",
+   "offset": 0.2
+  },
+  "vol": 0.4
+ }
+]

@@ -1,0 +1,37 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "scene": "s10",
+   "t": 0.8
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@supplies",
+   "offset": -0.8
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@earned",
+   "offset": -0.6
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "rise_three",
+  "at": {
+   "seg": "s10",
+   "word": "@used",
+   "offset": 0.8
+  },
+  "vol": 0.3
+ }
+]

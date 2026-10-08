@@ -1,0 +1,65 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05",
+   "word": "@here",
+   "offset": -0.3
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05",
+   "word": "@here",
+   "offset": -0.1
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05",
+   "word": "@here",
+   "offset": 0.12
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s05",
+   "word": "@cost",
+   "nth": 2,
+   "offset": -0.1
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s05",
+   "word": "@minus",
+   "offset": 0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s05",
+   "word": "@leaves",
+   "offset": 0.5
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05",
+   "word": "@gross"
+  },
+  "vol": 0.3
+ }
+]
