@@ -1,0 +1,14 @@
+[
+  {"id": "s01", "title": "Five things before lunch (cold open)", "lead": 0.5},
+  {"id": "s01t", "title": "Title sting", "fixed": 4.6},
+  {"id": "s02", "title": "Last time (L7 Your Turn answers)", "lead": 0.5},
+  {"id": "s04", "title": "The journal (what it is) + \"which two things changed?\" / T13 written live; the columns label themselves after", "lead": 0.5},
+  {"id": "s05", "title": "Worked: T14 (interleaved repeat of T9)", "lead": 0.5},
+  {"id": "s06", "title": "Faded: T15 salary by UPI (Meera writes; you finish the credit line)", "lead": 0.5},
+  {"id": "s07", "title": "T16: the compound entry + misconception (loan repayment ≠ expense)", "lead": 0.5},
+  {"id": "s08", "title": "Solo: T17 drawings + misconception (drawings ≠ expense) — the Equity card grows a third pocket", "lead": 0.5},
+  {"id": "s09", "title": "Recap", "lead": 0.5},
+  {"id": "s10", "title": "Your Turn", "lead": 0.5},
+  {"id": "s11", "title": "Next time", "lead": 0.5},
+  {"id": "s12", "title": "End card", "fixed": 12.0}
+]

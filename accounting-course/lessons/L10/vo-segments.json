@@ -1,0 +1,194 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.6,
+  "text": "[playful] April thirty. The rush is over, and Meera grabs a napkin to do the maths herself. Sales — fifty thousand rupees. Minus the rent, five thousand. Minus Raju's salary, eight thousand. Minus Ravi Mama's interest, three hundred. That leaves… thirty-six thousand seven hundred rupees of profit!"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "[excited] Her very first month!"
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[teasing] Not so fast. Khata has spotted three things missing from that napkin. And not one of them takes a single rupee out of the galla."
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "First, last time's three questions. One. What's the balance of Sales? Fifty thousand rupees, on the credit side."
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "Two. The Bank? Fifteen thousand in, four thousand in, eight thousand out. That's eleven thousand rupees — a debit balance."
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 0.8,
+  "text": "Three. Where does a liability's balance usually sit? On the credit side — its home side. You're about to meet a brand-new liability."
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "Here's today's idea. Some of April's costs never leave the galla in April. They only show up on the last day of the month."
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 2.0,
+  "text": "Surprise number one. A bill arrives — April's electricity, one thousand rupees. But it's not due until May. [curious] So whose cost is it? April's, or May's?"
+ },
+ {
+  "id": "s03c",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "April's. The lights were on in April. It's accrual again, from Lesson five — an expense counts when it's used, not when it's paid. So on April thirty, accountants add a few extra journal entries, called adjustments. Adjustments make sure April's books tell April's whole story."
+ },
+ {
+  "id": "s03d",
+  "scene": 3,
+  "gap_after": 2.0,
+  "text": "So Khata writes the adjustment. [curious] Which two things changed?"
+ },
+ {
+  "id": "s03e",
+  "scene": 3,
+  "gap_after": 0.8,
+  "text": "An expense goes up — debit Electricity, one thousand. And Meera now owes the electricity company. That's the new liability: Electricity payable. Credit, one thousand. The galla didn't move. But April's profit just slipped to thirty-five thousand seven hundred."
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "Surprise number two hides in the stock jar. Stock — or inventory, as bigger businesses say. In April, Meera bought six thousand rupees of tea, milk and sugar with cash — and eight thousand more on credit from Gopal Dairy. Fourteen thousand went in."
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 2.4,
+  "text": "On April thirty, she counts what's left on the shelf. Four thousand rupees' worth. So how much did she actually use?"
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 0.5,
+  "text": "Ten thousand. Fourteen in, four left, ten used. Stock is an asset while it waits on the shelf. Once it's poured into a cup of chai, it's gone."
+ },
+ {
+  "id": "s04d",
+  "scene": 4,
+  "gap_after": 2.0,
+  "text": "Meera writes this adjustment herself. [curious] Which two things changed?"
+ },
+ {
+  "id": "s04e",
+  "scene": 4,
+  "gap_after": 2.6,
+  "text": "She's sure of one: the stock jar went down by ten thousand. Pause here. The ten thousand she used — does it stay in Stock, or has it become an expense?"
+ },
+ {
+  "id": "s04f",
+  "scene": 4,
+  "gap_after": 0.8,
+  "text": "An expense. Used-up assets become expenses. Debit Cost of supplies used, ten thousand. And Stock goes down — credit, ten thousand. Profit slips again, to twenty-five thousand seven hundred."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 1.8,
+  "text": "Surprise number three is the sneakiest. On April second, Meera paid thirty-six thousand rupees for her cart, stove, kettles and glasses. Back in Lesson four, we said that's not an expense. [curious] But is it exactly the same cart it was on day one?"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "Not quite. Every month, it wears a little. That kit should work for about three years — thirty-six months. So each month gets a fair slice of its cost. Thirty-six thousand, divided by thirty-six… one thousand rupees a month."
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 2.0,
+  "text": "That monthly slice is called depreciation. One more used-up asset becoming an expense. [curious] Which two things changed?"
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "Debit Depreciation, one thousand. And the credit? Not the cart's own page — that keeps its original price, thirty-six thousand. The wear collects on a page of its own, called Accumulated depreciation. Credit, one thousand. On paper — its book value — the kit is now thirty-five thousand."
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "Careful — depreciation has two traps. Trap one. Book value, thirty-five thousand. So that's what the cart would sell for, right?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "[firmly] Nope. Book value isn't a selling price. A buyer might pay more, or less. Depreciation just spreads the cost across the months that use it."
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "Trap two. So Meera puts one thousand rupees aside every month?"
+ },
+ {
+  "id": "s06d",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "[firmly] Nope again. Look in the galla. Fifty thousand seven hundred rupees before. Fifty thousand seven hundred after. Depreciation doesn't move a single coin."
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "So — let's fix Meera's napkin. Thirty-six thousand seven hundred. Minus the electricity bill… thirty-five thousand seven hundred. Minus the supplies she used… twenty-five thousand seven hundred. Minus depreciation… twenty-four thousand seven hundred rupees."
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "[warmly] Twelve thousand less than the napkin said — and still a healthy profit. Just an honest one now. And through all three adjustments, the galla never moved."
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "[inviting] Your go. Imagine April's water bill — five hundred rupees — arrives on May second. Does it change April's profit? And if it does — which two things changed?"
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "Yes. The water ran in April, so it's April's cost. An expense goes up — debit Water, five hundred. And Meera owes the water company — credit Water payable, five hundred. April's profit, down by five hundred."
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "So — some of April's costs only show up on April thirty. A bill you haven't paid yet. Stock you've used up. A month of wear on your equipment. Adjustments put them back in April's story — without moving any cash."
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. What will Meera's depreciation be for May? Two. If she had counted five thousand rupees of stock left, not four, how much did she use? Three. In May, Meera pays April's electricity bill. Is that a May expense? Answers at the start of the next lesson."
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time — twenty transactions. Nineteen accounts. Did Meera make a single mistake? One sheet of paper can tell us. Well… almost."
+ }
+]

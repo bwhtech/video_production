@@ -1,0 +1,182 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.5,
+  "text": "[playful] April thirtieth. Five things happen before lunch. Meera counts two weeks of chai sales. She sends Infotech a bill. She pays Raju his salary. She pays back a little of Ravi Mama's loan. And she takes some money home, for herself."
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.4,
+  "text": "She grabs a tissue, and scribbles it all down."
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[softly] Gone. So how will Meera remember any of this… a year from now?"
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 1.4,
+  "text": "[warmly] First, last time's answers. One. The catering advance — which golden-rule tags?"
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "Cash is Real, and it comes in — so, debit. The customer is a person, the giver — so credit Advance from customer."
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "Two. Is the bank Real, or Personal?"
+ },
+ {
+  "id": "s02d",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "Personal. A bank is an organisation, and organisations count as persons."
+ },
+ {
+  "id": "s02e",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "Three. Which family is Rent?"
+ },
+ {
+  "id": "s02f",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "Nominal. It's an expense."
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "Back to Meera's tissue. You write every transaction down on the day it happens, in date order, in one book. That book is called the journal. In Indian shops, it's the day-book — the rojmel. Every entry answers three questions. Which accounts changed? What kind are they? And which side does each one go on?"
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 2.0,
+  "text": "Khata opens to a fresh journal page — and writes the first one straight in. Two weeks of cash sales: twenty-two thousand rupees. Which two things changed?"
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "Cash went up. And Sales went up. Cash grows — an asset, home on the left — so, debit. The tag says the same: Real, comes in. Sales grows equity, home on the right — so, credit. Nominal, income."
+ },
+ {
+  "id": "s04d",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "Now watch the columns. First, the date: April thirtieth. Then Particulars — the accounts. The debit account goes first — Cash. Khata writes it A-slash-c, short for account, with a small Dr at the end of the line. Twenty-two thousand, in the debit column, on the left. The credit account goes on the line below, pushed in a little, and starts with the word To. To Sales, twenty-two thousand, in the credit column, on the right. And last, a short note in brackets that says what happened — cash sales. That's the narration."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 1.6,
+  "text": "Same morning, Meera bills Infotech four thousand rupees for chai on their tab. Debit or credit, for Infotech?"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "Debit. Infotech owes the stall now — an asset growing, on the left. Personal, the receiver. And To Sales, credit. Exactly like April sixteenth."
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 2.0,
+  "text": "[inviting] Now Meera writes one. Raju's salary — eight thousand rupees, paid by UPI from the bank. Which two things changed?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 2.6,
+  "text": "Salary went up. And Bank went down. Meera writes the debit line: Salary. It's an expense, so — debit. But she stops at the credit line. Can you finish it for her?"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "To Bank, eight thousand. The money left the bank — an asset shrank, so it goes on the right. The bank is Personal — the giver. So, credit."
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 2.0,
+  "text": "[curious] Now a tricky one. Meera hands Ravi Mama three thousand three hundred rupees. Three thousand pays back part of his loan. Three hundred is interest — his small fee for lending. One payment. So which things changed?"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "[excited] Three of them! The loan went down — debit Loan from Ravi Mama, three thousand. Interest is an expense — debit Interest, three hundred. And cash went out — To Cash, three thousand three hundred. Two debits, one credit. That's called a compound entry — one line for every account. And the two sides still match — three thousand three hundred each."
+ },
+ {
+  "id": "s07c",
+  "scene": 7,
+  "gap_after": 0.4,
+  "text": "Here's where a lot of people slip. They call the whole payment an expense."
+ },
+ {
+  "id": "s07d",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "[firmly] Nope. Only the three hundred rupees of interest is an expense. The three thousand just gives back money that was never Meera's. It shrinks her debt — not her profit."
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 2.0,
+  "text": "[excited] Last one's yours. Meera takes three thousand rupees from the galla, to spend at home. Which two things changed?"
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "Cash went down. The other one is new — yours to name. Write the entry. Debit what? To what?"
+ },
+ {
+  "id": "s08c",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "Debit Drawings, three thousand. To Cash, three thousand. Drawings means money the owner takes out for herself. It's Meera — Personal — and she's the receiver."
+ },
+ {
+  "id": "s08d",
+  "scene": 8,
+  "gap_after": 0.4,
+  "text": "And here's the second slip. Many people write drawings down as an expense."
+ },
+ {
+  "id": "s08e",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "[firmly] Nope. An expense gets used up running the stall — like rent, or Raju's salary. This money went home. Remember — Meera and Meera's Chai are not the same. So the Equity card grows a third pocket: Drawings. Capital stays fifty thousand. Profit stays untouched. Drawings sit on the left, like expenses — but in their own pocket."
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "So — the journal is the day-book: every transaction, in date order. One payment can have many lines, as long as both sides match. And repaying a loan, or taking drawings, is not an expense."
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.8,
+  "text": "[inviting] Your turn. Three quick ones. One. Why isn't all of Ravi Mama's three thousand three hundred an expense? Two. Write the journal entry for April twenty-fifth — Infotech pays four thousand rupees by UPI. Three. Drawings — expense, or not? Answers at the start of the next lesson."
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 1.0,
+  "text": "[teasing] Next time, Meera has one simple question. How much cash is in the galla right now? The journal knows… but the answer is in pieces."
+ }
+]

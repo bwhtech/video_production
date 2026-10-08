@@ -153,6 +153,8 @@ def main():
     tpl = re.sub(r"<title>.*?</title>", lambda m: f"<title>Accounting, Finally — {title}</title>", tpl, count=1)
     if "assets/kit/cast.js" not in tpl:                       # new lessons get the shared cast + props (L01 predates it and stays byte-identical)
         tpl = tpl.replace('<script src="assets/kit/rig.js"></script>', '<script src="assets/kit/rig.js"></script>\n    <script src="assets/kit/cast.js"></script>', 1)
+    if "assets/kit/books.js" not in tpl:                      # L8+ devices (journal card, ledger page, trial sheet, statements) + props
+        tpl = tpl.replace('<script src="assets/kit/devices.js"></script>', '<script src="assets/kit/devices.js"></script>\n    <script src="assets/kit/books.js"></script>\n    <script src="assets/kit/props2.js"></script>', 1)
     (out / "index.template").write_text(tpl)
     shutil.copy(REF / "assets" / "scenes" / "_shared.js", out / "assets" / "scenes" / "_shared.js")
     sh = (out / "assets" / "scenes" / "_shared.js").read_text().replace("Shared scene plumbing for Lesson 1.", f"Shared scene plumbing for Lesson {n}.", 1)

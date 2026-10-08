@@ -1,0 +1,49 @@
+{
+ "s03c": [
+  ["@paid", 0.5],
+  ["@adjustments", 0.6, 1]
+ ],
+ "s03e": [
+  ["@payable", 0.5],
+  ["@thousand", 0.6, 2]
+ ],
+ "s04c": [
+  ["@used", 0.7, 1]
+ ],
+ "s04e": [
+  ["@thousand", 0.5, 1]
+ ],
+ "s04f": [
+  ["@expense", 0.5],
+  ["@expenses", 0.4]
+ ],
+ "s05b": [
+  ["@little", 0.5],
+  ["@cost", 0.6]
+ ],
+ "s05c": [
+  ["@depreciation", 0.6],
+  ["@expense", 0.6]
+ ],
+ "s05d": [
+  ["@depreciation", 0.6, 2]
+ ],
+ "s06a": [
+  ["@thousand", 0.5]
+ ],
+ "s07a": [
+  ["@hundred", 0.5, 1],
+  ["@hundred", 0.6, 2],
+  ["@hundred", 0.6, 3]
+ ],
+ "s08b": [
+  ["@yes", 0.5],
+  ["@cost", 0.4]
+ ],
+ "s10": [
+  ["@ones", 0.4],
+  ["@may", 1.8, 1],
+  ["@use", 1.8],
+  ["@expense", 1.8]
+ ]
+}

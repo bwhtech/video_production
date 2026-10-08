@@ -1,0 +1,15 @@
+[
+  {"id": "s01", "title": "The napkin (cold open)", "lead": 0.5},
+  {"id": "s01t", "title": "Title sting", "fixed": 4.6},
+  {"id": "s02", "title": "Last time", "lead": 0.5},
+  {"id": "s03", "title": "Surprise 1: the unpaid bill → \"Adjustments\" (worked)", "lead": 0.5},
+  {"id": "s04", "title": "Surprise 2: stock used up (faded)", "lead": 0.5},
+  {"id": "s05", "title": "Surprise 3: depreciation", "lead": 0.5},
+  {"id": "s06", "title": "Two traps (misconception moment)", "lead": 0.5},
+  {"id": "s07", "title": "The honest napkin", "lead": 0.5},
+  {"id": "s08", "title": "Imagine: the water bill (solo)", "lead": 0.5},
+  {"id": "s09", "title": "Recap", "lead": 0.5},
+  {"id": "s10", "title": "Your Turn", "lead": 0.5},
+  {"id": "s11", "title": "Next time", "lead": 0.5},
+  {"id": "s12", "title": "End card", "fixed": 12.0}
+]

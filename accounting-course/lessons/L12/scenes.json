@@ -1,0 +1,15 @@
+[
+  {"id": "s01", "title": "The first night, again (cold open)", "lead": 0.5},
+  {"id": "s01t", "title": "Title sting", "fixed": 4.6},
+  {"id": "s02", "title": "Last time: the trial balance answers", "lead": 0.5},
+  {"id": "s04", "title": "Which accounts get a part? (the movie)", "lead": 0.5},
+  {"id": "s05", "title": "Worked: gross profit", "lead": 0.5},
+  {"id": "s06", "title": "Faded: net profit (and Lesson 1's answer)", "lead": 0.5},
+  {"id": "s07", "title": "Read it like a story", "lead": 0.5},
+  {"id": "s08", "title": "Misconception: Khata the usher", "lead": 0.5},
+  {"id": "s09", "title": "Solo: gross vs net, then the loss", "lead": 0.5},
+  {"id": "s10", "title": "Recap", "lead": 0.5},
+  {"id": "s11", "title": "Your Turn", "lead": 0.5},
+  {"id": "s12", "title": "Next time", "lead": 0.5},
+  {"id": "s13", "title": "End card", "fixed": 12.0}
+]

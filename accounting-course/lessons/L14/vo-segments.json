@@ -1,0 +1,158 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[playful] Meera has just counted everything. Fifty thousand seven hundred in the galla. Eleven thousand in the bank. [excited] Sixty-one thousand seven hundred rupees! She feels rich."
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "[curious] Then Khata holds up April's Profit and Loss. Net profit: twenty-four thousand seven hundred. Both numbers are right. So where did the money come from — and where did it go?"
+ },
+ {
+  "id": "s02",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "First, last time's answers. One: is Meera's equity sitting in cash? No. Equity is a claim on everything the stall owns — cash and bank are only sixty-one thousand seven hundred. Two: current assets — cash, bank, stock, and the money Infotech owes. Any two. Three: the profit flowed into Meera's equity."
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "Let's follow every rupee into the galla and the bank. On April first, the stall starts with nothing. Meera pours in fifty thousand of her savings. Ravi Mama adds thirty thousand. Then the cart and equipment take thirty-six thousand out."
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.8,
+  "text": "Running the stall all month — selling chai, buying supplies, paying rent and Raju — brings in twenty-three thousand seven hundred. Three thousand goes back to Ravi Mama. Three thousand goes home with Meera. And what's left? Sixty-one thousand seven hundred rupees. Exactly what she counted."
+ },
+ {
+  "id": "s04",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "So, is she rich? Look where that cash came from. Fifty thousand is her own savings. Thirty thousand was borrowed, and most of it is still owed. [firmly] Cash in hand is not profit. Cash tells you what's in the box today. Profit tells you what the stall earned."
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "But wait. The stall earned twenty-four thousand seven hundred, and running it brought in twenty-three thousand seven hundred. Why the gap? Five little bridges. Khata crosses the first two. Depreciation, one thousand. It's an expense, but not a single coin left the galla. So cash is one thousand higher. Supplies. Meera bought fourteen thousand of milk, tea and sugar, paid eleven — three still owed to Gopal — and used only ten. So cash is one thousand lower."
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 1.6,
+  "text": "Meera takes the next two. Infotech. The stall earned six thousand that Infotech still hasn't paid. Cash — up, or down?"
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 0.5,
+  "text": "Down. Six thousand lower."
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 1.6,
+  "text": "The catering advance. Four thousand in the galla, not earned yet. Up, or down?"
+ },
+ {
+  "id": "s05e",
+  "scene": 5,
+  "gap_after": 0.5,
+  "text": "Up. Four thousand higher."
+ },
+ {
+  "id": "s05f",
+  "scene": 5,
+  "gap_after": 3.2,
+  "text": "[inviting] The last one is yours. April's electricity bill. One thousand rupees — an expense, but not paid yet. Up, or down?"
+ },
+ {
+  "id": "s05g",
+  "scene": 5,
+  "gap_after": 1.0,
+  "text": "Up, by one thousand. [excited] And look — twenty-four thousand seven hundred lands exactly on twenty-three thousand seven hundred."
+ },
+ {
+  "id": "s06",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "Step back, and look at the whole journey. Every transaction changed two things. Some changed what the stall was worth. Many just changed its shape. Debit on the left, credit on the right. You wrote it in the journal. You posted it to the ledger. At month end, you adjusted for what was used up, and what was still unpaid. The trial balance checked that both sides match. And out came the movie, and the photo. Record. Sort. Summarise. That's the whole cycle — and you've done every step."
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 1.6,
+  "text": "And the story keeps going. May fifth. Meera caters the office event. That four thousand rupee advance — what happens to it?"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.5,
+  "text": "It's finally earned. It leaves the liabilities and becomes May's revenue. And that's the fourth pattern from Lesson three — a swap on the right. One claim becomes another."
+ },
+ {
+  "id": "s07c",
+  "scene": 7,
+  "gap_after": 1.6,
+  "text": "May eighth. She pays April's electricity bill. A May expense?"
+ },
+ {
+  "id": "s07d",
+  "scene": 7,
+  "gap_after": 0.5,
+  "text": "No. It was April's. Paying it just clears what she owed."
+ },
+ {
+  "id": "s07e",
+  "scene": 7,
+  "gap_after": 1.6,
+  "text": "May tenth. Infotech pays its six thousand. Revenue?"
+ },
+ {
+  "id": "s07f",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "No. That was earned in April. Now it turns into money in the bank. [playful] See? You already know where everything goes."
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "So — cash shows what's in the box. Profit shows what the business earned. And the bridges between them are things earned, used up, or owed before the money moved."
+ },
+ {
+  "id": "s09a",
+  "scene": 9,
+  "gap_after": 3.2,
+  "text": "[excited] One last challenge. Aman's samosa cart — his whole month. You built his trial balance last checkpoint. Now build his Profit and Loss statement, and his Balance Sheet. The worksheet is linked below. Pause the video now."
+ },
+ {
+  "id": "s09b",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "Ready? His Profit and Loss. Sales, twenty-one thousand five hundred. Minus ingredients used, two thousand five hundred. Gross profit, nineteen thousand. Then rent two thousand, wages three thousand, and depreciation five hundred. Net profit: thirteen thousand five hundred rupees."
+ },
+ {
+  "id": "s09c",
+  "scene": 9,
+  "gap_after": 1.0,
+  "text": "His Balance Sheet. The cart and fryer, eighteen thousand, less five hundred. Stock, five hundred. Cash, twenty-six thousand. Total assets: forty-four thousand. The bank loan, ten thousand. Sharma Kirana, one thousand. The advance, one thousand. And Aman's equity: twenty thousand, plus thirteen thousand five hundred profit, minus fifteen hundred drawings. Thirty-two thousand. Forty-four thousand on both sides. [warmly] If yours balanced, you just closed the books on a whole business."
+ },
+ {
+  "id": "s10a",
+  "scene": 10,
+  "gap_after": 1.0,
+  "text": "[softly] Night at the stall, again. The same galla. The same question from the very first lesson. Did Meera make a profit? Yes. Twenty-four thousand seven hundred rupees. What does she own, and what does she owe? It's all in one photo. This time, she knows."
+ },
+ {
+  "id": "s10b",
+  "scene": 10,
+  "gap_after": 1.4,
+  "text": "[warmly] And so do you. You can read the story of money now — five things you couldn't do a month ago. Tomorrow, Meera's books turn to a fresh page for May. [playful] Khata's ready. Your turn to keep the books."
+ }
+]

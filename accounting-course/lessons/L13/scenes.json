@@ -1,0 +1,16 @@
+[
+  {"id": "s01", "title": "The photo develops (cold open)", "lead": 0.5},
+  {"id": "s01t", "title": "Title sting", "fixed": 4.6},
+  {"id": "s02", "title": "Last time: the P&L answers", "lead": 0.5},
+  {"id": "s03", "title": "Worked: assets (the left page)", "lead": 0.5},
+  {"id": "s04", "title": "Liabilities (the right page, top)", "lead": 0.5},
+  {"id": "s05", "title": "Faded: equity (the movie's ending joins the photo)", "lead": 0.5},
+  {"id": "s06", "title": "The scale settles · read the photo", "lead": 0.5},
+  {"id": "s07", "title": "Misconception: equity is not cash", "lead": 0.5},
+  {"id": "s08", "title": "Indian books note: a different shelf", "lead": 0.5},
+  {"id": "s09", "title": "Solo: what if no drawings?", "lead": 0.5},
+  {"id": "s10", "title": "Recap", "lead": 0.5},
+  {"id": "s11", "title": "Your Turn", "lead": 0.5},
+  {"id": "s12", "title": "Next time", "lead": 0.5},
+  {"id": "s13", "title": "End card", "fixed": 12.0}
+]

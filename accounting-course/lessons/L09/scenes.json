@@ -1,0 +1,14 @@
+[
+  {"id": "s01", "title": "Where's the cash? (cold open)", "lead": 0.5},
+  {"id": "s01t", "title": "Title sting", "fixed": 4.6},
+  {"id": "s02", "title": "Last time (L8 Your Turn answers)", "lead": 0.5},
+  {"id": "s03", "title": "One book per account (the ledger)", "lead": 0.5},
+  {"id": "s04", "title": "Posting (T1 in slow motion, then T2–T17 montage)", "lead": 0.5},
+  {"id": "s05", "title": "Worked: the Cash account, balanced and carried down", "lead": 0.5},
+  {"id": "s06", "title": "Faded: Gopal Dairy + misconception (credit balance ≠ money for you)", "lead": 0.5},
+  {"id": "s07", "title": "Solo: Infotech's page — then the pattern", "lead": 0.5},
+  {"id": "s08", "title": "Recap", "lead": 0.5},
+  {"id": "s09", "title": "Your Turn", "lead": 0.5},
+  {"id": "s10", "title": "Next time", "lead": 0.5},
+  {"id": "s11", "title": "End card", "fixed": 12.0}
+]

@@ -1,0 +1,14 @@
+[
+  {"id": "s01", "title": "\"I'm rich!\" (cold open)", "lead": 0.5},
+  {"id": "s01t", "title": "Title sting", "fixed": 4.6},
+  {"id": "s02", "title": "Last time: the Balance Sheet answers", "lead": 0.5},
+  {"id": "s03", "title": "Worked: the cash trail", "lead": 0.5},
+  {"id": "s04", "title": "Misconception: cash is not profit", "lead": 0.5},
+  {"id": "s05", "title": "Five bridges (worked → faded → solo)", "lead": 0.5},
+  {"id": "s06", "title": "The whole cycle", "lead": 0.5},
+  {"id": "s07", "title": "May preview: you already know", "lead": 0.5},
+  {"id": "s08", "title": "Recap", "lead": 0.5},
+  {"id": "s09", "title": "Final checkpoint: Aman's full month", "lead": 0.5},
+  {"id": "s10", "title": "Closing: night at the stall", "lead": 0.5},
+  {"id": "s11", "title": "Finale end card", "fixed": 12.0}
+]

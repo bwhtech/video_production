@@ -1,0 +1,15 @@
+[
+  {"id": "s01", "title": "The tower of books (cold open)", "lead": 0.5},
+  {"id": "s01t", "title": "Title sting", "fixed": 4.6},
+  {"id": "s02", "title": "Last time", "lead": 0.5},
+  {"id": "s03", "title": "Building the sheet (worked)", "lead": 0.5},
+  {"id": "s04", "title": "Why it must balance", "lead": 0.5},
+  {"id": "s05", "title": "The trap: three errors that still balance (misconception moment)", "lead": 0.5},
+  {"id": "s06", "title": "The ₹5,000 hunt (faded)", "lead": 0.5},
+  {"id": "s07", "title": "Rent posted as salary? (solo)", "lead": 0.5},
+  {"id": "s08", "title": "Recap", "lead": 0.5},
+  {"id": "s09", "title": "Your Turn", "lead": 0.5},
+  {"id": "s10", "title": "Checkpoint 4: Aman's Samosa Cart", "lead": 0.5},
+  {"id": "s11", "title": "Next time", "lead": 0.5},
+  {"id": "s12", "title": "End card", "fixed": 12.0}
+]
