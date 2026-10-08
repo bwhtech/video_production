@@ -1,0 +1,7 @@
+{
+  "name": "accounting-og",
+  "private": true,
+  "scripts": {
+    "snapshot": "npx --yes hyperframes@0.8.133 snapshot --at 0.5 --no-end --describe false -o snapshots"
+  }
+}
