@@ -1,0 +1,21 @@
+[
+ {"sfx": "pop", "at": {"seg": "s09a", "word": "@challenge", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "paper_whoosh", "at": {"seg": "s09a", "word": "@trial", "offset": 0.6}, "vol": 0.5},
+ {"sfx": "pop", "at": {"seg": "s09a", "word": "@pause", "offset": 0.2}, "vol": 0.4},
+ {"sfx": "paper_whoosh", "at": {"seg": "s09b", "word": "@ready", "offset": -0.4}, "vol": 0.45},
+ {"sfx": "paper_slide", "at": {"seg": "s09b", "word": "@sales", "offset": 0.1}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s09b", "word": "@ingredients", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s09b", "word": "@rent", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s09b", "word": "@wages", "offset": 0.2}, "vol": 0.3},
+ {"sfx": "paper_slide", "at": {"seg": "s09b", "word": "@depreciation", "offset": 0.3}, "vol": 0.3},
+ {"sfx": "ka_ching", "at": {"seg": "s09b", "word": "@thirteen", "offset": 0.1}, "vol": 0.45},
+ {"sfx": "page_flurry", "at": {"seg": "s09c", "word": "@cart", "offset": -0.3}, "vol": 0.4},
+ {"sfx": "paper_slide", "at": {"seg": "s09c", "word": "@stock"}, "vol": 0.25},
+ {"sfx": "paper_slide", "at": {"seg": "s09c", "word": "@cash"}, "vol": 0.25},
+ {"sfx": "paper_slide", "at": {"seg": "s09c", "word": "@bank"}, "vol": 0.25},
+ {"sfx": "paper_slide", "at": {"seg": "s09c", "word": "@sharma"}, "vol": 0.25},
+ {"sfx": "paper_slide", "at": {"seg": "s09c", "word": "@advance"}, "vol": 0.25},
+ {"sfx": "ding_yes", "at": {"seg": "s09c", "word": "@forty-four", "nth": 2, "offset": 1.2}, "vol": 0.5},
+ {"sfx": "sparkle", "at": {"seg": "s09c", "word": "@forty-four", "nth": 2, "offset": 1.0}, "vol": 0.5},
+ {"sfx": "boing_hop", "at": {"seg": "s09c", "word": "@balanced", "offset": 0.3}, "vol": 0.3}
+]

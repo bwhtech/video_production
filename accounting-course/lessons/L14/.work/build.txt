@@ -1,0 +1,15 @@
+  ✓ 28 pause cuts all in silence
+total 452.00s (7:32.0)
+  s01      0.00 →   25.50  (25.50s)  "I'm rich!" (cold open)
+  s01t    25.50 →   30.10  ( 4.60s)  Title sting
+  s02     30.10 →   59.10  (29.00s)  Last time: the Balance Sheet answers
+  s03     59.10 →   99.03  (39.93s)  Worked: the cash trail
+  s04     99.03 →  121.94  (22.91s)  Misconception: cash is not profit
+  s05    121.94 →  208.69  (86.75s)  Five bridges (worked → faded → solo)
+  s06    208.69 →  247.68  (38.99s)  The whole cycle
+  s07    247.68 →  307.31  (59.63s)  May preview: you already know
+  s08    307.31 →  323.42  (16.11s)  Recap
+  s09    323.42 →  399.39  (75.97s)  Final checkpoint: Aman's full month
+  s10    399.39 →  440.00  (40.62s)  Closing: night at the stall
+  s11    440.00 →  452.00  (12.00s)  Finale end card
+  sfx cues: 117

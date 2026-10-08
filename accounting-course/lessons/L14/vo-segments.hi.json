@@ -1,0 +1,158 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[playful] मीरा ने अभी सब कुछ गिना है। {@fifty}पचास हज़ार सात सौ रुपये {@galla}गल्ले में। {@eleven}ग्यारह हज़ार bank में। [excited] {@sixty-one}इकसठ हज़ार सात सौ रुपये! मीरा को लगता है, वो {@rich}अमीर हैं।"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "[curious] फिर {@khata}खाता अप्रैल का Profit and Loss उठाकर दिखाता है। Net profit: {@twenty-four}चौबीस हज़ार सात सौ। {@both}दोनों numbers सही हैं। तो पैसा {@come}कहाँ से आया — और {@go}कहाँ गया?"
+ },
+ {
+  "id": "s02",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "पहले, पिछली बार के जवाब। {@one}एक। क्या मीरा की {@equity}equity {@cash}cash में रखी है? {@no}नहीं। Equity एक {@claim}claim है, stall की हर चीज़ पर — और cash और bank मिलाकर सिर्फ़ {@sixty-one}इकसठ हज़ार सात सौ रुपये {p@hundred}हैं। {@two}दो। Current assets — {@cash#3}cash, {@bank#2}bank, {@stock}stock, और जो पैसा {@infotech}Infotech पर बकाया है। कोई भी {p@two#2}दो। {@three}तीन। {@profit}Profit, मीरा की {@equity#3}equity में {@flowed}जा मिला।"
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "चलिए हर rupee का पीछा करते हैं — {@galla}गल्ले और {@bank}bank में। एक अप्रैल को stall के पास {@nothing}कुछ नहीं {p@nothing}है। {@meera}मीरा अपनी बचत के {@fifty}पचास हज़ार डालती हैं। {@ravi}रवि मामा {@thirty}तीस हज़ार और जोड़ते हैं। फिर {@cart}cart और equipment {@thirty-six}छत्तीस हज़ार रुपये बाहर ले जाते हैं।"
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.8,
+  "text": "{@running}पूरे महीने stall चलाना — चाय बेचना, supplies ख़रीदना, rent और राजू को देना — {@twenty-three}तेईस हज़ार सात सौ रुपये अंदर लाता है। {@three}तीन हज़ार रवि मामा को वापस जाते हैं। {@three#2}तीन हज़ार मीरा के साथ घर जाते {p@meera}हैं। और {@left}बचा क्या? {@sixty-one}इकसठ हज़ार सात सौ रुपये। {@exactly}बिल्कुल वही, जो उन्होंने {@counted}गिना था।"
+ },
+ {
+  "id": "s04",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "तो, क्या वो {@rich}अमीर हैं? देखिए ये cash आया कहाँ से। {@fifty}पचास हज़ार उनकी अपनी {@savings}बचत है। {@thirty}तीस हज़ार {@borrowed}उधार लिए थे, और ज़्यादातर अभी भी चुकाना {@owed}बाक़ी {p@owed}है। [firmly] {@cash#2}Cash हाथ में है — {@profit}profit नहीं {p@profit}है। Cash बताता है कि आज {@box}गल्ले में क्या है। {@profit#2}Profit बताता है कि stall ने क्या {@earned}कमाया।"
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "लेकिन रुकिए। Stall ने {@earned}कमाए {@twenty-four}चौबीस हज़ार सात सौ, और उसे चलाने से {@twenty-three}तेईस हज़ार सात सौ आए। {@gap}फ़र्क़ क्यों? पाँच छोटे {p@bridges}पुल। {@khata}खाता पहले दो पार कराता है। {@depreciation}Depreciation, {@one}एक हज़ार। ये एक {@expense}expense है, लेकिन {@galla}गल्ले से एक भी {@coin}सिक्का बाहर नहीं गया। तो cash {@one#2}एक हज़ार ज़्यादा {p@higher}है। {@supplies}Supplies। मीरा ने {@fourteen}चौदह हज़ार का दूध, चाय और चीनी ख़रीदा, {@eleven}ग्यारह हज़ार चुकाए, तीन हज़ार अभी भी {@gopal}गोपाल को देने {p@gopal}हैं, और इस्तेमाल सिर्फ़ {@ten}दस हज़ार का किया। तो cash {@one#3}एक हज़ार {@lower}कम है।"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 1.6,
+  "text": "{@meera}मीरा अगले दो पार कराती हैं। {@infotech}Infotech। Stall ने {@six}छह हज़ार कमाए, जो Infotech ने अभी तक चुकाए नहीं। {@cash}Cash — {@up}ऊपर, या {@down}नीचे?"
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 0.5,
+  "text": "{@down}नीचे। {@six}छह हज़ार {@lower}कम।"
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 1.6,
+  "text": "{@catering}Catering का {@advance}advance। {@four}चार हज़ार {@galla}गल्ले में आ गए, पर अभी कमाए नहीं हैं। {@up}ऊपर, या {@down}नीचे?"
+ },
+ {
+  "id": "s05e",
+  "scene": 5,
+  "gap_after": 0.5,
+  "text": "{@up}ऊपर। {@four}चार हज़ार {@higher}ज़्यादा।"
+ },
+ {
+  "id": "s05f",
+  "scene": 5,
+  "gap_after": 3.2,
+  "text": "[inviting] {@last}आख़िरी वाला आपका है। अप्रैल का {@electricity}बिजली का bill। {@one}एक हज़ार रुपये — एक {@expense}expense, लेकिन {@paid}अभी चुकाया नहीं है। {@up}ऊपर, या {@down}नीचे?"
+ },
+ {
+  "id": "s05g",
+  "scene": 5,
+  "gap_after": 1.0,
+  "text": "{@up}ऊपर, {@one}एक हज़ार। [excited] और {@look}देखिए — {@twenty-four}चौबीस हज़ार सात {@hundred}सौ, {@lands}ठीक {@twenty-three}तेईस हज़ार सात {@hundred#2}सौ पर पहुँच जाता {p@hundred#2}है।"
+ },
+ {
+  "id": "s06",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "ज़रा पीछे हटकर, पूरी {@step}यात्रा देखिए। हर {@transaction}transaction ने {@two}दो चीज़ें बदलीं। कुछ ने बदला कि stall की {@worth}क़ीमत कितनी है। कई ने बस उसका {@shape}रूप बदला। {@debit}Debit {@left}left पर, {@credit}credit {@right}right {p@right}पर। आपने उसे {@journal}journal में लिखा। फिर {@ledger}ledger में post किया। {@month}महीने के अंत में, आपने {@adjusted}adjust किया — जो {@used}इस्तेमाल हो चुका था, और जो अभी {@unpaid}चुकाया नहीं गया था। {@trial}Trial balance ने जाँचा कि दोनों तरफ़ {@match}match करती हैं। और निकली {@movie}फ़िल्म, और {@photo}{p@photo}फ़ोटो। {@record}Record. {@sort}Sort. {@summarise}{p@summarise}Summarise. यही है पूरा {@cycle}cycle — और आप हर step कर चुके हैं।"
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 1.6,
+  "text": "और कहानी {@story}आगे बढ़ती है। {@fifth}पाँच मई। {@meera}मीरा {@office}office के event की catering करती हैं। वो {@four}चार हज़ार रुपये का {@advance}advance — उसका क्या {@happens}होता है?"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.5,
+  "text": "वो आख़िरकार {@earned}कमा लिया गया। वो {@liabilities}liabilities से निकलकर May का {@revenue}revenue बन जाता {p@revenue}है। और यही है {@fourth}चौथा {@pattern}pattern, {@lesson}Lesson तीन से — right side पर एक {@swap}swap। एक {@claim}claim दूसरे {@another}claim में बदल गया।"
+ },
+ {
+  "id": "s07c",
+  "scene": 7,
+  "gap_after": 1.6,
+  "text": "{@eighth}आठ मई। वो अप्रैल का {@electricity}बिजली का bill {@pays}चुकाती हैं। क्या ये May का {@expense}expense है?"
+ },
+ {
+  "id": "s07d",
+  "scene": 7,
+  "gap_after": 0.5,
+  "text": "{@no}नहीं। वो अप्रैल का था। इसे चुकाने से बस वो {@clears}साफ़ हो जाता है, जो उन पर {@owed}बाक़ी था।"
+ },
+ {
+  "id": "s07e",
+  "scene": 7,
+  "gap_after": 1.6,
+  "text": "{@tenth}दस मई। {@infotech}Infotech अपने {@six}छह हज़ार चुकाता है। क्या ये {@revenue}revenue है?"
+ },
+ {
+  "id": "s07f",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "{@no}नहीं। वो तो अप्रैल में ही {@earned}कमाया जा चुका था। अब वो {@turns}बदलकर {@bank}bank के पैसे बन गया। [playful] {@see}देखा? आप पहले से {@know}जानते हैं कि हर चीज़ कहाँ जाती है।"
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "तो — {@cash}cash बताता है कि {@box}गल्ले में क्या {p@box}है। {@profit}Profit बताता है कि business ने क्या {@earned}{p@earned}कमाया। और दोनों के बीच के {@bridges}bridges वो चीज़ें हैं, जो पैसा हिलने से पहले {@earned#2}कमाई गईं, {@used}इस्तेमाल हुईं, या {@owed}बाक़ी रहीं।"
+ },
+ {
+  "id": "s09a",
+  "scene": 9,
+  "gap_after": 3.2,
+  "text": "[excited] आख़िरी {@challenge}challenge। {@aman's}अमन की samosa {@cart}cart — उसका पूरा {@month}महीना। आपने पिछले checkpoint में उसका {@trial}trial balance बनाया था। अब उसका {@profit}Profit and Loss statement बनाइए, और उसकी {@balance}Balance Sheet। Worksheet नीचे linked है। अब video को {@pause}pause कीजिए।"
+ },
+ {
+  "id": "s09b",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "{@ready}तैयार? उसका Profit and Loss। {@sales}Sales, इक्कीस हज़ार पाँच सौ। {@minus}माइनस इस्तेमाल हुई {@ingredients}ingredients, दो हज़ार पाँच सौ। {@gross}Gross profit, उन्नीस {p@thousand#3}हज़ार। फिर {@rent}rent दो हज़ार, {@wages}wages तीन हज़ार, और {@depreciation}depreciation पाँच सौ। {@net}Net profit: {@thirteen}तेरह हज़ार पाँच सौ रुपये।"
+ },
+ {
+  "id": "s09c",
+  "scene": 9,
+  "gap_after": 1.0,
+  "text": "उसकी Balance Sheet। {@cart}Cart और fryer, {@eighteen}अट्ठारह हज़ार, {@less}माइनस पाँच सौ। {@stock}Stock, पाँच सौ। {@cash}Cash, {@twenty-six}छब्बीस हज़ार। {@total}Total assets: {@forty-four}चवालीस {p@thousand#3}हज़ार। {@bank}Bank loan, {@ten}दस हज़ार। {@sharma}शर्मा किराना, एक हज़ार। {@advance}Advance, एक हज़ार। और अमन की {@equity}equity: {@twenty}बीस हज़ार, प्लस {@thirteen}तेरह हज़ार पाँच सौ profit, माइनस {@fifteen}पंद्रह सौ drawings। {@thirty-two}बत्तीस {p@thousand#9}हज़ार। दोनों तरफ़ {@forty-four#2}चवालीस हज़ार। [warmly] अगर आपका balance {@balanced}मिल गया, तो आपने अभी एक पूरे business की books {@closed}बंद कर दीं।"
+ },
+ {
+  "id": "s10a",
+  "scene": 10,
+  "gap_after": 1.0,
+  "text": "[softly] {@night}रात है, फिर से stall पर। वही {@galla}गल्ला। वही {@question}सवाल, जो पहले {@lesson}lesson में {p@lesson}था। क्या मीरा ने {@profit}profit कमाया? {@yes}हाँ। चौबीस हज़ार सात सौ {p@rupees}{@rupees}रुपये। उनके पास क्या है, और उन पर क्या {@owe}बकाया है? सब कुछ एक {@photo}photo में है। इस बार, वो {@knows}जानती हैं।"
+ },
+ {
+  "id": "s10b",
+  "scene": 10,
+  "gap_after": 1.4,
+  "text": "[warmly] और {@you}आप भी। आप अब पैसे की कहानी {@read}पढ़ सकते हैं — वो {@five}पाँच चीज़ें, जो एक महीना पहले आप नहीं कर पाते {p@ago}थे। {@tomorrow}कल, मीरा की books May के लिए एक नया {@page}page पलटेंगी। [playful] {@khata's}खाता तैयार है। अब {@turn#2}आपकी बारी है, books रखने की।"
+ }
+]

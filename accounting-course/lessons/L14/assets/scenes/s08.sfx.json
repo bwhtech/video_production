@@ -1,0 +1,8 @@
+[
+ {"sfx": "pop", "at": {"seg": "s08", "word": "@cash", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s08", "word": "@profit", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s08", "word": "@bridges", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s08", "word": "@earned", "nth": 2}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s08", "word": "@used"}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s08", "word": "@owed"}, "vol": 0.25}
+]

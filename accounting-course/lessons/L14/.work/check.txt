@@ -1,0 +1,266 @@
+◆  Checking L14-hi
+[StaticGuard] Invalid HyperFrame contract: Font families used without @font-face declaration: baloo 2, kalam. These are not in the auto-resolved font list, so the renderer cannot supply them automatically. Text will fall back to a generic font, producing incorrect typography in the video.
+[StaticGuard] Invalid HyperFrame contract: Font families used without @font-face declaration: baloo 2, kalam. These are not in the auto-resolved font list, so the renderer cannot supply them automatically. Text will fall back to a generic font, producing incorrect typography in the video.
+[INFO] [Compiler] Fetched 5 font face(s) for "Baloo 2" from Google Fonts (cached to /Users/mdhussain/.cache/hyperframes/fonts/baloo-2)
+[INFO] [Compiler] Fetched 3 font face(s) for "Kalam" from Google Fonts (cached to /Users/mdhussain/.cache/hyperframes/fonts/kalam)
+[INFO] [Compiler] Injected deterministic @font-face rules for 2 requested font families
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Apple)" renderer="ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)")
+
+Lint
+  ⚠ timeline_track_too_dense: Track 1 has 6 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html [data-composition-id] t=0s
+    Fix: Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate.
+  ⚠ timeline_track_too_dense: Track 2 has 6 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html [data-composition-id] t=0s
+    Fix: Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate.
+  ⚠ nested_structure_needs_subcomposition: <section id="s01"> is a timeline element that contains nested <svg id="s01-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #s01 t=0s
+    Fix: Move <section id="s01"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="s01t"> is a timeline element that contains nested <svg id="s01t-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #s01t t=0s
+    Fix: Move <section id="s01t"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="s02"> is a timeline element that contains nested <svg id="s02-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #s02 t=0s
+    Fix: Move <section id="s02"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="s03"> is a timeline element that contains nested <svg id="s03-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #s03 t=0s
+    Fix: Move <section id="s03"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="s04"> is a timeline element that contains nested <svg id="s04-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #s04 t=0s
+    Fix: Move <section id="s04"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="s05"> is a timeline element that contains nested <svg id="s05-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #s05 t=0s
+    Fix: Move <section id="s05"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="s06"> is a timeline element that contains nested <svg id="s06-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #s06 t=0s
+    Fix: Move <section id="s06"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="s07"> is a timeline element that contains nested <svg id="s07-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #s07 t=0s
+    Fix: Move <section id="s07"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="s08"> is a timeline element that contains nested <svg id="s08-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #s08 t=0s
+    Fix: Move <section id="s08"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="s09"> is a timeline element that contains nested <svg id="s09-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #s09 t=0s
+    Fix: Move <section id="s09"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="s10"> is a timeline element that contains nested <svg id="s10-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #s10 t=0s
+    Fix: Move <section id="s10"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="s11"> is a timeline element that contains nested <svg id="s11-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #s11 t=0s
+    Fix: Move <section id="s11"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ nested_structure_needs_subcomposition: <section id="seams"> is a timeline element that contains nested <svg id="seams-svg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Users/mdhussain/video_production/accounting-course/lessons/L14-hi/index.html #seams t=0s
+    Fix: Move <section id="seams"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/book_thump.mp3 at 25.917-26.8s, assets/sfx/pop.mp3 at 26.077-26.6s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/book_thump.mp3 at 25.917-26.8s, assets/sfx/pop.mp3 at 26.327-26.8s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/book_thump.mp3 at 25.917-26.8s, assets/sfx/sparkle.mp3 at 26.597-27.6s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/pop.mp3 at 26.077-26.6s, assets/sfx/pop.mp3 at 26.327-26.8s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/pop.mp3 at 26.077-26.6s, assets/sfx/sparkle.mp3 at 26.597-27.6s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/pop.mp3 at 26.327-26.8s, assets/sfx/sparkle.mp3 at 26.597-27.6s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/sparkle.mp3 at 120.749-121.8s, assets/sfx/paper_whoosh.mp3 at 121.59-122.2s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/pop.mp3 at 220.368-220.9s, assets/sfx/tink_low.mp3 at 220.788-221.6s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/ding_yes.mp3 at 393-394.0s, assets/sfx/sparkle.mp3 at 392.8-393.8s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/cover_swing.mp3 at 409.668-410.6s, assets/sfx/paper_slide.mp3 at 410.568-411.2s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/cover_swing.mp3 at 440.304-441.2s, assets/sfx/pop.mp3 at 440.604-441.1s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/cover_swing.mp3 at 440.304-441.2s, assets/sfx/boing_hop.mp3 at 441.004-441.6s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/pop.mp3 at 440.604-441.1s, assets/sfx/boing_hop.mp3 at 441.004-441.6s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/boing_hop.mp3 at 441.004-441.6s, assets/sfx/pop.mp3 at 441.304-441.8s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/boing_hop.mp3 at 441.004-441.6s, assets/sfx/pop.mp3 at 441.604-442.1s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/pop.mp3 at 441.304-441.8s, assets/sfx/pop.mp3 at 441.604-442.1s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/pop.mp3 at 441.604-442.1s, assets/sfx/pop.mp3 at 441.904-442.4s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/pop.mp3 at 441.904-442.4s, assets/sfx/pop.mp3 at 442.204-442.7s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/pop.mp3 at 442.204-442.7s, assets/sfx/pop.mp3 at 442.504-443.0s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/ding_yes.mp3 at 443.154-444.2s, assets/sfx/ding_yes.mp3 at 443.504-444.5s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/ding_yes.mp3 at 443.154-444.2s, assets/sfx/ding_yes.mp3 at 443.854-444.9s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/ding_yes.mp3 at 443.504-444.5s, assets/sfx/ding_yes.mp3 at 443.854-444.9s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/ding_yes.mp3 at 443.504-444.5s, assets/sfx/ding_yes.mp3 at 444.204-445.2s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/ding_yes.mp3 at 443.854-444.9s, assets/sfx/ding_yes.mp3 at 444.204-445.2s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/ding_yes.mp3 at 443.854-444.9s, assets/sfx/ding_yes.mp3 at 444.554-445.6s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/ding_yes.mp3 at 444.204-445.2s, assets/sfx/ding_yes.mp3 at 444.554-445.6s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/ding_yes.mp3 at 444.204-445.2s, assets/sfx/pop.mp3 at 445.104-445.6s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 11 overlap (assets/sfx/ding_yes.mp3 at 444.554-445.6s, assets/sfx/pop.mp3 at 445.104-445.6s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 12 overlap (assets/sfx/day_street.mp3 at 20.062-25.8s, assets/music/intro_sting.mp3 at 25.597-30.6s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 12 overlap (assets/music/intro_sting.mp3 at 25.597-30.6s, assets/music/m5_main.mp3 at 30.297-90.3s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 12 overlap (assets/music/m5_main.mp3 at 30.297-90.3s, assets/music/m5_main.mp3 at 90.326-150.4s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 12 overlap (assets/music/m5_main.mp3 at 390.473-399.4s, assets/music/night.mp3 at 399.188-440.3s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 12 overlap (assets/music/m5_main.mp3 at 390.473-399.4s, assets/sfx/night_street.mp3 at 399.388-409.4s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 12 overlap (assets/music/night.mp3 at 399.188-440.3s, assets/sfx/night_street.mp3 at 399.388-409.4s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 12 overlap (assets/music/night.mp3 at 399.188-440.3s, assets/sfx/night_street.mp3 at 409.419-419.4s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 12 overlap (assets/music/night.mp3 at 399.188-440.3s, assets/sfx/night_street.mp3 at 419.45-429.5s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 12 overlap (assets/music/night.mp3 at 399.188-440.3s, assets/sfx/night_street.mp3 at 429.481-439.5s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 12 overlap (assets/music/night.mp3 at 399.188-440.3s, assets/sfx/night_street.mp3 at 439.512-440.0s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 12 overlap (assets/music/night.mp3 at 399.188-440.3s, assets/music/outro.mp3 at 439.704-452.0s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  ⚠ duplicate_audio_track: Multiple audible <audio>/<video> elements on track 12 overlap (assets/sfx/night_street.mp3 at 439.512-440.0s, assets/music/outro.mp3 at 439.704-452.0s). This causes layered audio playback.
+    index.html [data-composition-id] t=0s
+    Fix: Use non-overlapping time windows or different track indices.
+  0 error(s), 55 warning(s), 0 info(s)
+
+Runtime
+  ⚠ clip_media_fit: Audio "vo-s04-2" is 6.03s but its slot (data-duration) is 6.09s — the slot is shortened to the media length when rendered. Set data-duration to ~6.03s if that isn't intended.
+    index.html [data-composition-id] t=0s
+  ⚠ clip_media_fit: Audio "vo-s08-2" is 7.49s but its slot (data-duration) is 7.54s — the slot is shortened to the media length when rendered. Set data-duration to ~7.49s if that isn't intended.
+    index.html [data-composition-id] t=0s
+  ⚠ clip_media_fit: Audio "fx-001" is 0.68s but its slot (data-duration) is 0.73s — the slot is shortened to the media length when rendered. Set data-duration to ~0.68s if that isn't intended.
+    index.html [data-composition-id] t=0s
+  ⚠ clip_media_fit: Audio "fx-016" is 0.68s but its slot (data-duration) is 0.73s — the slot is shortened to the media length when rendered. Set data-duration to ~0.68s if that isn't intended.
+    index.html [data-composition-id] t=0s
+  ⚠ clip_media_fit: Audio "fx-018" is 0.68s but its slot (data-duration) is 0.73s — the slot is shortened to the media length when rendered. Set data-duration to ~0.68s if that isn't intended.
+    index.html [data-composition-id] t=0s
+  ⚠ clip_media_fit: Audio "fx-019" is 0.68s but its slot (data-duration) is 0.73s — the slot is shortened to the media length when rendered. Set data-duration to ~0.68s if that isn't intended.
+    index.html [data-composition-id] t=0s
+  ⚠ clip_media_fit: Audio "fx-020" is 0.68s but its slot (data-duration) is 0.73s — the slot is shortened to the media length when rendered. Set data-duration to ~0.68s if that isn't intended.
+    index.html [data-composition-id] t=0s
+  ⚠ clip_media_fit: Audio "fx-050" is 0.68s but its slot (data-duration) is 0.73s — the slot is shortened to the media length when rendered. Set data-duration to ~0.68s if that isn't intended.
+    index.html [data-composition-id] t=0s
+  ⚠ clip_media_fit: Audio "fx-057" is 0.68s but its slot (data-duration) is 0.73s — the slot is shortened to the media length when rendered. Set data-duration to ~0.68s if that isn't intended.
+    index.html [data-composition-id] t=0s
+  0 error(s), 9 warning(s), 0 info(s)
+
+Layout
+  ⚠ t=125.56-175.78s (2 samples) container_overflow #s05-svg > g:nth-of-type(1) inside #s05-svg overflowed left 42px, right 40.8px, top 41.9px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ⚠ t=125.56-175.78s (2 samples) container_overflow #s05-svg > g:nth-of-type(2) inside #s05-svg overflowed left 40px, right 80px, bottom 50px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ⚠ t=125.56-175.78s (2 samples) container_overflow #s05-svg > g:nth-of-type(3) inside #s05-svg overflowed right 4.77px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ⚠ t=326.45-376.67s (2 samples) container_overflow #s09-svg > g:nth-of-type(1) inside #s09-svg overflowed left 41.9px, right 41.9px, top 41.8px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ⚠ t=326.45-376.67s (2 samples) container_overflow #s09-svg > g:nth-of-type(2) inside #s09-svg overflowed left 40px, right 80px, bottom 50px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=25.11-426.89s (9 samples) canvas_overflow div.fontwarm > span:nth-of-type(1) inside #root overflowed left 9999px "₹1,06,700" — Text extends outside the composition canvas.
+        Fix: Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.
+  ℹ t=25.11-426.89s (9 samples) canvas_overflow div.fontwarm > span:nth-of-type(2) inside #root overflowed left 9929.97px "Credit the giver ₹" — Text extends outside the composition canvas.
+        Fix: Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.
+  ℹ t=25.11s container_overflow #s01-cam inside #s01-svg overflowed left 89.98px, right 130.23px, top 58.41px, bottom 90.09px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=75.33s container_overflow #s03-svg > g:nth-of-type(1) inside #s03-svg overflowed left 41.9px, right 41.6px, top 41.9px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=75.33s container_overflow #s03-svg > g:nth-of-type(2) inside #s03-svg overflowed left 40px, right 80px, bottom 50px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=75.33s container_overflow #s03-svg > g:nth-of-type(7) inside #s03-svg overflowed bottom 3.16px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=75.33s container_overflow #s03-svg > g:nth-of-type(8) inside #s03-svg overflowed bottom 3.16px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=75.33s container_overflow #s03-svg > g:nth-of-type(16) inside #s03-svg overflowed left 33.35px, top 32.44px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=75.33s container_overflow #s03-svg > g:nth-of-type(17) inside #s03-svg overflowed left 33.2px, top 31.71px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=75.33s container_overflow #s03-svg > g:nth-of-type(18) inside #s03-svg overflowed left 33.52px, top 32.39px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=75.33s container_overflow #s03-svg > g:nth-of-type(19) inside #s03-svg overflowed left 28.85px, top 28.46px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=75.33s container_overflow #s03-svg > g:nth-of-type(20) inside #s03-svg overflowed left 26.72px, top 24.87px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=75.33s container_overflow #s03-svg > g:nth-of-type(21) inside #s03-svg overflowed left 33.34px, top 32.06px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=75.33s container_overflow #s03-svg > g:nth-of-type(22) inside #s03-svg overflowed left 33.29px, top 32.21px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=226s container_overflow #s06-svg > g:nth-of-type(1) inside #s06-svg overflowed left 41.6px, right 41.9px, top 42px, bottom 21.9px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=226s container_overflow #s06-svg > g:nth-of-type(2) inside #s06-svg overflowed left 40px, right 80px, bottom 50px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=226s container_overflow #s06-svg > g:nth-of-type(15) inside #s06-svg overflowed right 15.8px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=276.23s container_overflow #s07-svg > g:nth-of-type(1) inside #s07-svg overflowed left 41.5px, right 41.8px, top 41.7px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=276.23s container_overflow #s07-svg > g:nth-of-type(2) inside #s07-svg overflowed left 40px, right 80px, bottom 50px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=276.23s container_overflow #s07-svg > g:nth-of-type(10) inside #s07-svg overflowed right 45px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=376.67s container_overflow #s09-svg > g:nth-of-type(4) inside #s09-svg overflowed left 8.99px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  ℹ t=426.89s container_overflow #s10-cam inside #s10-svg overflowed left 67.15px, right 106.31px, top 59.78px, bottom 68.47px — Element extends outside a clipping layout container.
+        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.
+  0 error(s), 5 warning(s), 22 info(s)
+
+Motion
+  ◇ 0 errors, 0 warnings
+
+Contrast
+  ✗ div > section:nth-of-type(11) > svg > g:nth-of-type(1) > g:nth-of-type(57) > g > g:nth-of-type(3) > g > g > g > text:nth-of-type(1) 3.11:1 (need 4.5:1, t=426.893s)
+    Try rgb(246,245,246); source index.html
+  0 error(s), 1 warning(s), 0 info(s)
+
+Snapshots
+  ◇ disabled
+
+◇  Check passed

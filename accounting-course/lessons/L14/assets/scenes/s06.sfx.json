@@ -1,0 +1,16 @@
+[
+ {"sfx": "pop", "at": {"seg": "s06", "word": "@transaction"}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s06", "word": "@two", "offset": 0.4}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s06", "word": "@debit", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "tink_low", "at": {"seg": "s06", "word": "@left", "offset": 0.0}, "vol": 0.5},
+ {"sfx": "tink_high", "at": {"seg": "s06", "word": "@credit", "offset": 0.1}, "vol": 0.5},
+ {"sfx": "pop", "at": {"seg": "s06", "word": "@journal", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s06", "word": "@ledger", "offset": -0.15}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s06", "word": "@adjusted"}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s06", "word": "@trial", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "ding_yes", "at": {"seg": "s06", "word": "@match", "offset": 0.1}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s06", "word": "@movie", "offset": -0.1}, "vol": 0.3},
+ {"sfx": "polaroid_whirr", "at": {"seg": "s06", "word": "@photo"}, "vol": 0.3},
+ {"sfx": "rise_three", "at": {"seg": "s06", "word": "@record", "offset": -0.1}, "vol": 0.5},
+ {"sfx": "sparkle", "at": {"seg": "s06", "word": "@cycle", "offset": 0.9}, "vol": 0.4}
+]

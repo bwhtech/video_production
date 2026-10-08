@@ -1,0 +1,11 @@
+[
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@one", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "bwomp_no", "at": {"seg": "s02", "word": "@no", "offset": 0.05}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@two", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@cash", "nth": 3, "offset": -0.1}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@bank", "nth": 2, "offset": -0.1}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@stock", "offset": -0.1}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@infotech", "offset": -0.1}, "vol": 0.25},
+ {"sfx": "pop", "at": {"seg": "s02", "word": "@three", "offset": -0.1}, "vol": 0.4},
+ {"sfx": "ka_ching", "at": {"seg": "s02", "word": "@flowed", "offset": 0.4}, "vol": 0.35}
+]

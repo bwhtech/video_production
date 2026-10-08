@@ -1,0 +1,16 @@
+[
+ {"sfx": "pop", "at": {"seg": "s05a", "word": "@depreciation"}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s05a", "word": "@one", "nth": 2, "offset": 0.1}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s05a", "word": "@supplies"}, "vol": 0.35},
+ {"sfx": "pop", "at": {"seg": "s05a", "word": "@one", "nth": 3, "offset": 0.1}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s05b", "word": "@infotech"}, "vol": 0.35},
+ {"sfx": "tick_tock", "at": {"seg": "s05b", "edge": "end", "offset": -0.1}, "vol": 0.3, "dur": 1.6},
+ {"sfx": "ding_yes", "at": {"seg": "s05c", "word": "@down", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s05d", "word": "@catering"}, "vol": 0.35},
+ {"sfx": "tick_tock", "at": {"seg": "s05d", "edge": "end", "offset": -0.1}, "vol": 0.3, "dur": 1.6},
+ {"sfx": "ding_yes", "at": {"seg": "s05e", "word": "@up", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s05f", "word": "@last"}, "vol": 0.35},
+ {"sfx": "tick_tock", "at": {"seg": "s05f", "edge": "end", "offset": 0.0}, "vol": 0.3, "dur": 3.2},
+ {"sfx": "ding_yes", "at": {"seg": "s05g", "word": "@up", "offset": 0.1}, "vol": 0.45},
+ {"sfx": "sparkle", "at": {"seg": "s05g", "word": "@lands", "offset": 1.0}, "vol": 0.45}
+]

@@ -1,0 +1,20 @@
+[
+ {"sfx": "page_flip", "at": {"seg": "s07a", "word": "@fifth", "offset": -0.1}, "vol": 0.45},
+ {"sfx": "pop", "at": {"seg": "s07a", "word": "@office", "offset": -0.5}, "vol": 0.3},
+ {"sfx": "tick_tock", "at": {"seg": "s07a", "edge": "end", "offset": -0.1}, "vol": 0.3, "dur": 1.6},
+ {"sfx": "ding_yes", "at": {"seg": "s07b", "word": "@earned", "offset": 0.1}, "vol": 0.4},
+ {"sfx": "ka_ching", "at": {"seg": "s07b", "word": "@revenue", "offset": -0.2}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s07b", "word": "@fourth", "offset": 0.2}, "vol": 0.4},
+ {"sfx": "glass_clink", "at": {"seg": "s07b", "word": "@swap"}, "vol": 0.3},
+ {"sfx": "page_flip", "at": {"seg": "s07c", "word": "@eighth", "offset": -0.1}, "vol": 0.45},
+ {"sfx": "coin_clink", "at": {"seg": "s07c", "word": "@pays"}, "vol": 0.4},
+ {"sfx": "tick_tock", "at": {"seg": "s07c", "edge": "end", "offset": -0.1}, "vol": 0.3, "dur": 1.6},
+ {"sfx": "ding_yes", "at": {"seg": "s07d", "word": "@no", "offset": 0.2}, "vol": 0.35},
+ {"sfx": "glass_clink", "at": {"seg": "s07d", "word": "@clears"}, "vol": 0.3},
+ {"sfx": "page_flip", "at": {"seg": "s07e", "word": "@tenth", "offset": -0.1}, "vol": 0.45},
+ {"sfx": "phone_buzz", "at": {"seg": "s07e", "word": "@infotech", "offset": 0.1}, "vol": 0.25},
+ {"sfx": "tick_tock", "at": {"seg": "s07e", "edge": "end", "offset": -0.1}, "vol": 0.3, "dur": 1.6},
+ {"sfx": "coin_clink", "at": {"seg": "s07f", "word": "@turns"}, "vol": 0.4},
+ {"sfx": "ding_yes", "at": {"seg": "s07f", "word": "@bank", "offset": 0.1}, "vol": 0.35},
+ {"sfx": "boing_hop", "at": {"seg": "s07f", "word": "@see", "offset": 0.1}, "vol": 0.3}
+]

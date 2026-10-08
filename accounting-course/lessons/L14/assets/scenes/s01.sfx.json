@@ -1,0 +1,8 @@
+[
+ {"sfx": "note_rustle", "at": {"seg": "s01a", "word": "@fifty", "offset": -0.1}, "vol": 0.35},
+ {"sfx": "coin_clink", "at": {"seg": "s01a", "word": "@eleven"}, "vol": 0.3},
+ {"sfx": "sparkle", "at": {"seg": "s01a", "word": "@sixty-one", "offset": 0.7}, "vol": 0.45},
+ {"sfx": "boing_hop", "at": {"seg": "s01b", "word": "@khata", "offset": -0.3}, "vol": 0.3},
+ {"sfx": "pop", "at": {"seg": "s01b", "word": "@come"}, "vol": 0.4},
+ {"sfx": "pop", "at": {"seg": "s01b", "word": "@go"}, "vol": 0.3}
+]

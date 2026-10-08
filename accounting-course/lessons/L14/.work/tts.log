@@ -1,0 +1,27 @@
+s02 ok lessons/L14/assets/vo-hi/s02.mp3 62 words, ends 26.24 
+s03a ok lessons/L14/assets/vo-hi/s03a.mp3 47 words, ends 16.64 
+s03b ok lessons/L14/assets/vo-hi/s03b.mp3 53 words, ends 19.68 
+s01a  429 {"detail":{"type":"rate_limit_error","code":"concurrent_limit_exceeded","message":"Too many concurrent requests. Your current subscription is associated with a maximum of 3 concurrent requests (running in parallel). This is done such that a single user does not overwhelm our systems and affect o
+s05a  429 {"detail":{"type":"rate_limit_error","code":"concurrent_limit_exceeded","message":"Too many concurrent requests. Your current subscription is associated with a maximum of 3 concurrent requests (running in parallel). This is done such that a single user does not overwhelm our systems and affect o
+s05b  429 {"detail":{"type":"rate_limit_error","code":"concurrent_limit_exceeded","message":"Too many concurrent requests. Your current subscription is associated with a maximum of 3 concurrent requests (running in parallel). This is done such that a single user does not overwhelm our systems and affect o
+s05c  429 {"detail":{"type":"rate_limit_error","code":"concurrent_limit_exceeded","message":"Too many concurrent requests. Your current subscription is associated with a maximum of 3 concurrent requests (running in parallel). This is done such that a single user does not overwhelm our systems and affect o
+s05d  429 {"detail":{"type":"rate_limit_error","code":"concurrent_limit_exceeded","message":"Too many concurrent requests. Your current subscription is associated with a maximum of 3 concurrent requests (running in parallel). This is done such that a single user does not overwhelm our systems and affect o
+s05e  429 {"detail":{"type":"rate_limit_error","code":"concurrent_limit_exceeded","message":"Too many concurrent requests. Your current subscription is associated with a maximum of 3 concurrent requests (running in parallel). This is done such that a single user does not overwhelm our systems and affect o
+s01b ok lessons/L14/assets/vo-hi/s01b.mp3 29 words, ends 11.28 
+s04 ok lessons/L14/assets/vo-hi/s04.mp3 54 words, ends 20.64 
+s06  429 {"detail":{"type":"rate_limit_error","code":"concurrent_limit_exceeded","message":"Too many concurrent requests. Your current subscription is associated with a maximum of 3 concurrent requests (running in parallel). This is done such that a single user does not overwhelm our systems and affect o
+s07a  429 {"detail":{"type":"rate_limit_error","code":"concurrent_limit_exceeded","message":"Too many concurrent requests. Your current subscription is associated with a maximum of 3 concurrent requests (running in parallel). This is done such that a single user does not overwhelm our systems and affect o
+s07b  429 {"detail":{"type":"rate_limit_error","code":"concurrent_limit_exceeded","message":"Too many concurrent requests. Your current subscription is associated with a maximum of 3 concurrent requests (running in parallel). This is done such that a single user does not overwhelm our systems and affect o
+s07c  429 {"detail":{"type":"rate_limit_error","code":"concurrent_limit_exceeded","message":"Too many concurrent requests. Your current subscription is associated with a maximum of 3 concurrent requests (running in parallel). This is done such that a single user does not overwhelm our systems and affect o
+s05f ok lessons/L14/assets/vo-hi/s05f.mp3 23 words, ends 9.44 
+s05g ok lessons/L14/assets/vo-hi/s05g.mp3 19 words, ends 7.36 
+s07d ok lessons/L14/assets/vo-hi/s07d.mp3 19 words, ends 6.4 
+s07e ok lessons/L14/assets/vo-hi/s07e.mp3 12 words, ends 5.44 
+s07f ok lessons/L14/assets/vo-hi/s07f.mp3 30 words, ends 9.68 
+s08 ok lessons/L14/assets/vo-hi/s08.mp3 39 words, ends 14.24 
+s09a ok lessons/L14/assets/vo-hi/s09a.mp3 39 words, ends 15.84 
+s09b ok lessons/L14/assets/vo-hi/s09b.mp3 40 words, ends 18.88 
+s10a ok lessons/L14/assets/vo-hi/s10a.mp3 47 words, ends 18.8 
+s10b ok lessons/L14/assets/vo-hi/s10b.mp3 45 words, ends 16.0 
+s09c ok lessons/L14/assets/vo-hi/s09c.mp3 70 words, ends 33.28 
+DONE
