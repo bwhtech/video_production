@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Books kit — test sheet</title>
+    <link rel="stylesheet" href="kit/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="kit/icons.js"></script>
+    <script src="kit/kit.js"></script>
+    <script src="kit/rig.js"></script>
+    <script src="kit/devices.js"></script>
+    <script src="kit/books.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #b7895a; }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+      .layer { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+      svg { display: block; }
+      .fontwarm { position: absolute; left: -9999px; font-family: "Baloo 2", Kalam; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="20.5" data-width="1920" data-height="1080">
+      <!-- shared paper materials (copied from lessons/L01/index.template) -->
+      <svg width="0" height="0" style="position:absolute">
+        <defs>
+          <pattern id="pat-cover" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/cover.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-paper" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/paper.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-kraft" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/kraft.jpg" width="768" height="432" /></pattern>
+          <pattern id="pat-grain" patternUnits="userSpaceOnUse" width="768" height="432"><image href="kit/tex/construction.jpg" width="768" height="432" /></pattern>
+          <filter id="sh1" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="3" dy="4" stdDeviation="2" flood-color="#3b2614" flood-opacity="0.35" /></filter>
+          <filter id="sh2" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="6" dy="8" stdDeviation="3.5" flood-color="#3b2614" flood-opacity="0.38" /></filter>
+          <filter id="rough" x="-15%" y="-15%" width="130%" height="130%"><feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" seed="3" result="n" /><feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G" /></filter>
+          <filter id="sh3" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="10" dy="14" stdDeviation="6" flood-color="#3b2614" flood-opacity="0.4" /></filter>
+        </defs>
+      </svg>
+      <div class="fontwarm"><span style="font-family:'Baloo 2';font-weight:800">₹1,06,700</span><span style="font-family:Kalam">30 Apr</span></div>
+      <section id="p" class="clip" data-start="0" data-duration="20.5" data-track-index="1"><svg id="svg" class="layer" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg></section>
+    </div>
+    <script>
+      const K = window.KIT, C = K.C;
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const svg = document.getElementById("svg");
+      const mkStage = (t0, t1, wall, wallY) => {
+        const st = K.g(svg, {});
+        K.wall(st, wall, wallY ?? 880); K.table(st, wallY ?? 880);
+        if (t0 > 0) { st.setAttribute("opacity", "0"); tl.set(st, { autoAlpha: 1 }, t0); }
+        tl.set(st, { autoAlpha: 0 }, t1);
+        return st;
+      };
+      const A = mkStage(0, 4.6, C.saffron), B = mkStage(4.6, 9.4, C.teal), Cc = mkStage(9.4, 13.0, C.sky), D = mkStage(13.0, 15.6, C.teal), E = mkStage(15.6, 18.0, C.sky), F = mkStage(18.0, 20.51, C.teal);
+
+      // ===================================================== A · rule tags, journal card, journal strip (0 – 4.6)
+      ["real_in", "real_out", "personal_receiver", "personal_giver", "nominal_expense", "nominal_income"].forEach((k, i) => {
+        const tg = K.ruleTag(A, 180 + i * 312, 120, 1, { rule: k, hidden: true });
+        tg.appear(tl, 0.1 + i * 0.1);
+      });
+      const jc = K.journalCard(A, 960, 1040, 1, { rows: 7, heads: false });
+      jc.enter(tl, 0.1);
+      const e1 = jc.entry(tl, 0.5, { date: "Apr 30", lines: [{ account: "Cash", dr: 22000, tag: "real_in" }, { account: "Sales", cr: 22000, tag: "nominal_income" }], narration: { icon: "coins", text: "Cash sales" } });
+      jc.head(tl, 1.9, "all");
+      jc.highlightRow(tl, 2.3, e1.lines[0]);
+      const e2 = jc.entry(tl, 2.5, { date: "Apr 30", lines: [{ account: "Loan from Ravi Mama", dr: 3000, tag: "personal_receiver" }, { account: "Interest", dr: 300, tag: "nominal_expense" }, { account: "Cash", cr: 3300, tag: "real_out" }] });
+      jc.tick(tl, 3.9, e1.lines[0]);
+      jc.tick(tl, 4.0, e1.lines[1]);
+      const js = K.journalStrip(A, 560, 262, 1, { date: "Apr 30", account: "Cash", dr: 22000, hidden: true });
+      js.enter(tl, 1.0);
+      js.flyTo(tl, 3.0, 1300, 262, { k: 0.8 });
+      K.ruleTag(A, 1650, 262, 1, { rule: "real_in", compact: true, hidden: true }).appear(tl, 1.2);
+      K.tickMark(A, 1800, 262, 1.2).draw(tl, 2.0);
+
+      // ===================================================== B · ledger page (4.6 – 9.4)
+      const lp = K.ledgerPage(B, 960, 1030, 1, { account: "Cash", icon: "coins", rows: 8 });
+      lp.enter(tl, 4.65);
+      const p1 = lp.post(tl, 5.0, "dr", { date: "Apr 1", other: "Capital", amount: 50000 });
+      lp.post(tl, 5.3, "dr", { date: "Apr 1", other: "Loan from Ravi Mama", amount: 30000 });
+      lp.post(tl, 5.6, "dr", { date: "Apr 15", other: "Sales", amount: 18000 });
+      const q1 = lp.post(tl, 5.0, "cr", { date: "Apr 2", other: "Equipment", amount: 36000 });
+      lp.post(tl, 5.3, "cr", { date: "Apr 2", other: "Stock", amount: 6000 });
+      lp.post(tl, 5.6, "cr", { date: "Apr 5", other: "Rent", amount: 5000 });
+      lp.post(tl, 5.9, "cr", { date: "Apr 15", other: "Bank", amount: 15000 });
+      lp.post(tl, 6.2, "cr", { date: "Apr 20", other: "Gopal Dairy", amount: 5000 });
+      lp.tick(tl, 6.0, p1);
+      lp.balance(tl, 6.7, { date: "Apr 30" });
+      lp.total(tl, 7.3);
+      lp.broughtDown(tl, 8.2, { date: "May 1" });
+      lp.sideChip(tl, 8.5, "debit");
+
+      // ===================================================== C · trial sheet (9.4 – 13.0)
+      const ts = K.trialSheet(Cc, 960, 1050, 0.96, { rows: 12 });
+      ts.enter(tl, 9.45);
+      const dr = [["Cash", 50700], ["Bank", 11000], ["Infotech", 2000], ["Stock", 14000], ["Equipment", 36000], ["Rent", 5000], ["Salary", 8000], ["Interest", 300], ["Drawings", 5000], ["Cost of supplies used", 10000], ["Electricity", 2000], ["Depreciation", 3000]];
+      const cr = [["Capital", 50000], ["Loan from Ravi Mama", 27000], ["Gopal Dairy", 3000], ["Advance from customer", 4000], ["Sales", 50000], ["Accumulated depreciation", 3000], ["Electricity payable", 2000]];
+      const items = [];
+      dr.forEach((r, i) => items.push({ side: "dr", account: r[0], amount: r[1] }));
+      cr.forEach((r, i) => items.push({ side: "cr", account: r[0], amount: r[1] }));
+      items.sort((a, b) => 0);
+      let tcc = 9.8;
+      for (let i = 0; i < 12; i++) { if (dr[i]) ts.addRow(tl, tcc, "dr", { account: dr[i][0], amount: dr[i][1], dur: 0.2, count: 0.3 }); if (cr[i]) ts.addRow(tl, tcc + 0.05, "cr", { account: cr[i][0], amount: cr[i][1], dur: 0.2, count: 0.3 }); tcc += 0.17; }
+      const tT = ts.total(tl, tcc + 0.1);
+      ts.match(tl, tT + 0.1, { hold: 0.5 });
+
+      // ===================================================== D · statement card (P&L) + weight chip + shelf (13 – 15.6)
+      const pl = K.statementCard(D, 520, 1040, 1, { title: "Profit & Loss", sub: "April", rows: [
+        { label: "Sales", value: 50000, icon: "coins" },
+        { label: "Cost of supplies used", value: -10000 },
+        { label: "Gross profit", value: 40000, rule: "sub" },
+        { label: "Rent", value: -5000, indent: 1 },
+        { label: "Salary", value: -8000, indent: 1 },
+        { label: "Interest", value: -300, indent: 1 },
+        { label: "Electricity", value: -2000, indent: 1 },
+        { label: "Net profit", value: 24700, rule: "total" },
+      ] });
+      pl.enter(tl, 13.05);
+      pl.revealAll(tl, 13.3, { step: 0.28 });
+      const wc = K.weightChip(D, 1100, 330, 1, { edge: "dr" });
+      wc.enter(tl, 13.1); wc.reveal(tl, 14.4, 1000);
+      const wc2 = K.weightChip(D, 1400, 330, 1, { value: 5000, edge: "cr", prefix: "₹" });
+      wc2.enter(tl, 13.2);
+      const names = ["coins", "landmark", "package", "leaf", "shopping-cart", "key", "wallet", "percent", "zap", "milk", "store", "user", "receipt", "banknote"].map((ic) => ({ icon: ic }));
+      const sh = K.smallBookShelf(D, 1360, 1000, 0.7, { books: names, w: 1300 });
+      sh.enter(tl, 13.1);
+      sh.pull(tl, 14.0, 3); sh.light(tl, 14.0, 3);
+
+      // ===================================================== E · balance sheet (15.6 – 18)
+      const bsC = K.statementCard(E, 960, 1030, 1, { kind: "bs", rows: [
+        { side: "L", head: "Fixed", label: "Fixed" },
+        { side: "L", label: "Equipment", value: 36000, icon: "shopping-cart" },
+        { side: "L", head: "Current", label: "Current" },
+        { side: "L", label: "Cash", value: 50700 },
+        { side: "L", label: "Bank", value: 11000 },
+        { side: "L", label: "Stock", value: 7000 },
+        { side: "R", label: "Capital", value: 50000 },
+        { side: "R", label: "Profit", value: 24700 },
+        { side: "R", label: "Loan from Ravi Mama", value: 27000 },
+        { side: "R", label: "Gopal Dairy", value: 3000 },
+        { side: "L", label: "Total", value: 104700, total: true },
+        { side: "R", label: "Total", value: 104700, total: true },
+      ] });
+      bsC.enter(tl, 15.65);
+      bsC.revealAll(tl, 15.9, { step: 0.17 });
+
+      // ===================================================== F · trial sheet mismatch + credit-balance chip (18 – 20.5)
+      const tm = K.trialSheet(F, 960, 1040, 0.9, { rows: 6 });
+      tm.enter(tl, 18.05);
+      let tz = tm.fill(tl, 18.3, [{ side: "dr", account: "Cash", amount: 50700 }, { side: "cr", account: "Capital", amount: 50000 }, { side: "dr", account: "Rent", amount: 5000 }, { side: "cr", account: "Sales", amount: 20000 }]);
+      tz = tm.total(tl, tz, { cr: 70000, dur: 0.7 });
+      tm.mismatch(tl, tz - 0.3, { diff: 5700 });
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
