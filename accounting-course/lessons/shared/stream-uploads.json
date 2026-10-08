@@ -166,5 +166,89 @@
   "uploaded": "2026-10-07T09:40:26+00:00",
   "preview": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/09046bde854add5de49beabff50ccb13/watch",
   "hls": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/09046bde854add5de49beabff50ccb13/manifest/video.m3u8"
+ },
+ "L08:hi": {
+  "uid": "572835064ec2c96dccf049866b6680c3",
+  "name": "Hisaab Kitaab L08 — The Journal (Hindi)",
+  "file": "L08-hi/renders/L08-final.hi.mp4",
+  "size": 143747366,
+  "mtime": 1791452262,
+  "signed": false,
+  "captions": "hi",
+  "uploaded": "2026-10-08T12:00:24+00:00",
+  "preview": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/572835064ec2c96dccf049866b6680c3/watch",
+  "hls": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/572835064ec2c96dccf049866b6680c3/manifest/video.m3u8"
+ },
+ "L09:hi": {
+  "uid": "a9a5963603a762d9c9b966a4fc16af55",
+  "name": "Hisaab Kitaab L09 — The Ledger (Hindi)",
+  "file": "L09-hi/renders/L09-final.hi.mp4",
+  "size": 122149225,
+  "mtime": 1791449169,
+  "signed": false,
+  "captions": "hi",
+  "uploaded": "2026-10-08T12:00:55+00:00",
+  "preview": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/a9a5963603a762d9c9b966a4fc16af55/watch",
+  "hls": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/a9a5963603a762d9c9b966a4fc16af55/manifest/video.m3u8"
+ },
+ "L10:hi": {
+  "uid": "b6279dbd85b982ab3b66efe74e0e9f9c",
+  "name": "Hisaab Kitaab L10 — Month-End Surprises (Hindi)",
+  "file": "L10-hi/renders/L10-final.hi.mp4",
+  "size": 162461126,
+  "mtime": 1791450951,
+  "signed": false,
+  "captions": "hi",
+  "uploaded": "2026-10-08T12:01:35+00:00",
+  "preview": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/b6279dbd85b982ab3b66efe74e0e9f9c/watch",
+  "hls": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/b6279dbd85b982ab3b66efe74e0e9f9c/manifest/video.m3u8"
+ },
+ "L11:hi": {
+  "uid": "dfea2f447ca107d0738cdef68e3a9e59",
+  "name": "Hisaab Kitaab L11 — The Trial Balance (Hindi)",
+  "file": "L11-hi/renders/L11-final.hi.mp4",
+  "size": 156498547,
+  "mtime": 1791451537,
+  "signed": false,
+  "captions": "hi",
+  "uploaded": "2026-10-08T12:02:12+00:00",
+  "preview": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/dfea2f447ca107d0738cdef68e3a9e59/watch",
+  "hls": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/dfea2f447ca107d0738cdef68e3a9e59/manifest/video.m3u8"
+ },
+ "L12:hi": {
+  "uid": "bab95de8918d776bf144c3b2c025879d",
+  "name": "Hisaab Kitaab L12 — The Profit & Loss Statement (Hindi)",
+  "file": "L12-hi/renders/L12-final.hi.mp4",
+  "size": 130342186,
+  "mtime": 1791448559,
+  "signed": false,
+  "captions": "hi",
+  "uploaded": "2026-10-08T12:02:44+00:00",
+  "preview": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/bab95de8918d776bf144c3b2c025879d/watch",
+  "hls": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/bab95de8918d776bf144c3b2c025879d/manifest/video.m3u8"
+ },
+ "L13:hi": {
+  "uid": "be3f10843cba03820e50a68a09009a66",
+  "name": "Hisaab Kitaab L13 — The Balance Sheet (Hindi)",
+  "file": "L13-hi/renders/L13-final.hi.mp4",
+  "size": 155965159,
+  "mtime": 1791449654,
+  "signed": false,
+  "captions": "hi",
+  "uploaded": "2026-10-08T12:03:12+00:00",
+  "preview": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/be3f10843cba03820e50a68a09009a66/watch",
+  "hls": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/be3f10843cba03820e50a68a09009a66/manifest/video.m3u8"
+ },
+ "L14:hi": {
+  "uid": "d6acfbd4fb7e21c8f9fb27d9e7d86cff",
+  "name": "Hisaab Kitaab L14 — Where Did the Money Go? (Hindi)",
+  "file": "L14-hi/renders/L14-final.hi.mp4",
+  "size": 142142719,
+  "mtime": 1791450246,
+  "signed": false,
+  "captions": "hi",
+  "uploaded": "2026-10-08T12:03:58+00:00",
+  "preview": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/d6acfbd4fb7e21c8f9fb27d9e7d86cff/watch",
+  "hls": "https://customer-i3984nuu5lddbzmz.cloudflarestream.com/d6acfbd4fb7e21c8f9fb27d9e7d86cff/manifest/video.m3u8"
  }
 }
