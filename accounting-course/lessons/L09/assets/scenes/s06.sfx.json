@@ -1,0 +1,186 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06a",
+   "word": "@turn",
+   "offset": -0.2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s06a",
+   "word": "@eight",
+   "offset": 0
+  },
+  "vol": 0.4,
+  "dur": 1.0
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06a",
+   "word": "@eight",
+   "offset": 0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s06a",
+   "word": "@five",
+   "offset": 0
+  },
+  "vol": 0.4,
+  "dur": 1.0
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s06a",
+   "word": "@five",
+   "offset": 0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s06a",
+   "edge": "end",
+   "offset": 0.0
+  },
+  "vol": 0.4,
+  "dur": 2.4
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s06b",
+   "word": "@right",
+   "offset": 0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06b",
+   "word": "@three",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "weight_clunk",
+  "at": {
+   "seg": "s06b",
+   "word": "@three",
+   "offset": 0.75
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s06b",
+   "word": "@three",
+   "offset": 0.5
+  },
+  "vol": 0.35,
+  "dur": 1.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06b",
+   "word": "@credit",
+   "offset": 0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06c",
+   "word": "@sounds",
+   "offset": -0.3
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s06c",
+   "word": "@money",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s06c",
+   "word": "@money",
+   "offset": 0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s06c",
+   "word": "@money",
+   "offset": 0.4
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s06d",
+   "word": "@nope",
+   "offset": 0.05
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06d",
+   "word": "@owes",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06d",
+   "word": "@liability",
+   "offset": -0.5
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s06d",
+   "word": "@liability",
+   "offset": 0.9
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "scale_settle",
+  "at": {
+   "seg": "s06d",
+   "word": "@sits",
+   "offset": -0.3
+  },
+  "vol": 0.35
+ }
+]

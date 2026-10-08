@@ -1,0 +1,229 @@
+[
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05a",
+   "word": "@fifty",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05a",
+   "word": "@thirty",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05a",
+   "word": "@eighteen",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05a",
+   "word": "@twenty-two",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05a",
+   "word": "@advance",
+   "offset": -0.3
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05a",
+   "word": "@total",
+   "offset": 0.3
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05b",
+   "word": "@cart",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05b",
+   "word": "@stock",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05b",
+   "word": "@rent",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05b",
+   "word": "@bank",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05b",
+   "word": "@gopal",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05b",
+   "word": "@loan",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05b",
+   "word": "@interest",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05b",
+   "word": "@drawings",
+   "offset": -0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05b",
+   "word": "@total",
+   "offset": 0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "scale_creak",
+  "at": {
+   "seg": "s05b",
+   "word": "@heavier",
+   "offset": -0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s05b",
+   "edge": "end",
+   "offset": 0.0
+  },
+  "vol": 0.35,
+  "dur": 1.4
+ },
+ {
+  "sfx": "weight_clunk",
+  "at": {
+   "seg": "s05c",
+   "word": "@level",
+   "offset": 0.1
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "scale_settle",
+  "at": {
+   "seg": "s05c",
+   "word": "@level",
+   "offset": 0.2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05c",
+   "word": "@drops",
+   "offset": 0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05c",
+   "word": "@drops",
+   "offset": 1.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05c",
+   "word": "@debit",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "seg": "s05d",
+   "word": "@counts",
+   "offset": 0.2
+  },
+  "vol": 0.4,
+  "dur": 1.8
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s05d",
+   "word": "@agree",
+   "offset": 0
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "ka_ching",
+  "at": {
+   "seg": "s05d",
+   "word": "@agree",
+   "offset": 0.05
+  },
+  "vol": 0.4
+ }
+]

@@ -1,0 +1,83 @@
+[
+ {
+  "sfx": "rise_three",
+  "at": {
+   "seg": "s08",
+   "word": "@ledger",
+   "offset": -0.3
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08",
+   "word": "@ledger",
+   "offset": -0.3
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08",
+   "word": "@posting",
+   "offset": -0.3
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s08",
+   "word": "@debits",
+   "offset": 0.6
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s08",
+   "word": "@credits",
+   "offset": 0.6
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08",
+   "word": "@balancing",
+   "offset": -0.3
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08",
+   "word": "@number",
+   "offset": -0.3
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "ka_ching",
+  "at": {
+   "seg": "s08",
+   "word": "@number",
+   "offset": 0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "cover_swing",
+  "at": {
+   "seg": "s08",
+   "word": "@number",
+   "offset": 1.4
+  },
+  "vol": 0.3
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s10",
+   "word": "@adds",
+   "offset": -0.2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s10",
+   "word": "@adds",
+   "offset": 0.2
+  },
+  "vol": 0.4,
+  "dur": 2.3
+ },
+ {
+  "sfx": "ka_ching",
+  "at": {
+   "seg": "s10",
+   "word": "@thirty-six",
+   "offset": 0.6
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s10",
+   "word": "@reaches",
+   "offset": 0.6
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@clears",
+   "offset": 0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "book_thump",
+  "at": {
+   "seg": "s10",
+   "edge": "end",
+   "offset": 0.0
+  },
+  "vol": 0.6
+ }
+]

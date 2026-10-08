@@ -1,0 +1,465 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04a",
+   "word": "@journal",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s04a",
+   "word": "@journal",
+   "offset": 0.3
+  },
+  "vol": 0.35,
+  "dur": 2.0
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04a",
+   "word": "@posting",
+   "offset": 0
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04a",
+   "word": "@left",
+   "offset": 0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04a",
+   "word": "@right",
+   "offset": 0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s04b",
+   "word": "@debit",
+   "offset": 0.35
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04b",
+   "word": "@left",
+   "offset": -0.8
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04b",
+   "word": "@capital",
+   "offset": -0.5
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s04b",
+   "word": "@credit",
+   "offset": 0.35
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04b",
+   "word": "@right",
+   "offset": -0.8
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04b",
+   "word": "@date",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04b",
+   "word": "@other",
+   "offset": 0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pen_tick",
+  "at": {
+   "seg": "s04b",
+   "word": "@ticks",
+   "offset": 0
+  },
+  "vol": 0.5,
+  "dur": 0.25
+ },
+ {
+  "sfx": "pen_tick",
+  "at": {
+   "seg": "s04b",
+   "word": "@ticks",
+   "offset": 0.5
+  },
+  "vol": 0.5,
+  "dur": 0.25
+ },
+ {
+  "sfx": "pen_tick",
+  "at": {
+   "seg": "s04b",
+   "word": "@ticks",
+   "offset": 0.9
+  },
+  "vol": 0.4,
+  "dur": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 1.45
+  },
+  "vol": 0.38
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 1.82
+  },
+  "vol": 0.37
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 2.182
+  },
+  "vol": 0.37
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 2.537
+  },
+  "vol": 0.36
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 2.883
+  },
+  "vol": 0.36
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 3.222
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 3.553
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 3.876
+  },
+  "vol": 0.34
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 4.191
+  },
+  "vol": 0.34
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 4.499
+  },
+  "vol": 0.33
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 4.798
+  },
+  "vol": 0.32
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 5.09
+  },
+  "vol": 0.32
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 5.374
+  },
+  "vol": 0.31
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 5.651
+  },
+  "vol": 0.31
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 5.919
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 6.18
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 6.433
+  },
+  "vol": 0.29
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 6.678
+  },
+  "vol": 0.28
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 6.915
+  },
+  "vol": 0.28
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 7.144
+  },
+  "vol": 0.27
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 7.366
+  },
+  "vol": 0.27
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 7.579
+  },
+  "vol": 0.26
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 7.785
+  },
+  "vol": 0.26
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 7.983
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 8.174
+  },
+  "vol": 0.24
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 8.356
+  },
+  "vol": 0.24
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 8.531
+  },
+  "vol": 0.23
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 8.698
+  },
+  "vol": 0.23
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 8.857
+  },
+  "vol": 0.22
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 9.008
+  },
+  "vol": 0.22
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 9.152
+  },
+  "vol": 0.21
+ },
+ {
+  "sfx": "ticket_tear",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 9.152
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 9.287
+  },
+  "vol": 0.21
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 9.415
+  },
+  "vol": 0.2
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s04c",
+   "word": "@now",
+   "offset": 9.185
+  },
+  "vol": 0.35
+ }
+]

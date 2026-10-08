@@ -1,0 +1,148 @@
+[
+ {
+  "sfx": "bell_ring",
+  "at": {
+   "seg": "s07a",
+   "word": "@turn",
+   "offset": -0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07a",
+   "word": "@six",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07a",
+   "word": "@four",
+   "offset": 0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s07a",
+   "word": "@four",
+   "offset": 0,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "scale_creak",
+  "at": {
+   "seg": "s07a",
+   "word": "@twenty-fifth",
+   "offset": 0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s07a",
+   "edge": "end",
+   "offset": 0.1
+  },
+  "vol": 0.45,
+  "dur": 3.1
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s07b",
+   "word": "@six",
+   "offset": 0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "weight_clunk",
+  "at": {
+   "seg": "s07b",
+   "word": "@debit",
+   "offset": 0.1
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "scale_settle",
+  "at": {
+   "seg": "s07b",
+   "word": "@debit",
+   "offset": 0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s07b",
+   "word": "@owes",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07b",
+   "word": "@owes",
+   "offset": 1.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@owes",
+   "offset": 1.4
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s07b",
+   "word": "@pattern",
+   "offset": -0.6
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s07b",
+   "word": "@pattern",
+   "offset": 0.6
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s07b",
+   "word": "@pattern",
+   "offset": 1.0
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "rise_three",
+  "at": {
+   "seg": "s07b",
+   "word": "@pattern",
+   "offset": 1.2
+  },
+  "vol": 0.3
+ }
+]

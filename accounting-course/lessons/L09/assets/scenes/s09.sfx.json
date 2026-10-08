@@ -1,0 +1,68 @@
+[
+ {
+  "sfx": "bell_ring",
+  "at": {
+   "seg": "s09",
+   "word": "@turn",
+   "offset": -0.2
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09",
+   "word": "@one",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09",
+   "word": "@two",
+   "offset": -0.6
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09",
+   "word": "@two",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09",
+   "word": "@three",
+   "offset": -0.6,
+   "nth": 2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09",
+   "word": "@three",
+   "offset": -0.3,
+   "nth": 2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s09",
+   "word": "@ones",
+   "offset": 1.6
+  },
+  "vol": 0.3,
+  "dur": 1.8
+ }
+]

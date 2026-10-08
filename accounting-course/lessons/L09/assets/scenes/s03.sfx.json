@@ -1,0 +1,229 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03a",
+   "word": "@trick",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s03a",
+   "word": "@journal",
+   "offset": -0.3
+  },
+  "vol": 0.35,
+  "dur": 2.8
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03a",
+   "word": "@date",
+   "offset": 0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03a",
+   "word": "@cash",
+   "offset": 0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s03a",
+   "word": "@cash",
+   "offset": 0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "sparkle",
+  "at": {
+   "seg": "s03a",
+   "word": "@account",
+   "offset": 0.3,
+   "nth": 2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03b",
+   "word": "@account",
+   "offset": -1.2
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s03b",
+   "word": "@account",
+   "offset": -0.4
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s03b",
+   "word": "@account",
+   "offset": 0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s03b",
+   "word": "@account",
+   "offset": 0.7
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s03b",
+   "word": "@cash",
+   "offset": 0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "book_thump",
+  "at": {
+   "seg": "s03b",
+   "word": "@cash",
+   "offset": 0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "glass_clink",
+  "at": {
+   "seg": "s03b",
+   "word": "@bank",
+   "offset": 0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "book_thump",
+  "at": {
+   "seg": "s03b",
+   "word": "@bank",
+   "offset": 0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03b",
+   "word": "@every",
+   "offset": 0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03b",
+   "word": "@every",
+   "offset": 0.6
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03b",
+   "word": "@every",
+   "offset": 1.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03b",
+   "word": "@page",
+   "offset": -0.3
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "cover_swing",
+  "at": {
+   "seg": "s03b",
+   "word": "@page",
+   "offset": 0.4
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s03b",
+   "word": "@left",
+   "offset": 0.1
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s03b",
+   "word": "@right",
+   "offset": 0.1
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03b",
+   "word": "@ledger",
+   "offset": 0
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03b",
+   "word": "@chart",
+   "offset": 0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "rise_three",
+  "at": {
+   "seg": "s03b",
+   "word": "@chart",
+   "offset": 0.2
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03b",
+   "word": "@means",
+   "offset": 0
+  },
+  "vol": 0.4
+ }
+]

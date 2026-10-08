@@ -1,0 +1,164 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.6,
+  "text": "[playful] {@meera}मीरा के पास एक सीधा-सा सवाल है। {@galla}गल्ले में अभी कितना cash है? {@journal}जवाब journal में है। कहीं न कहीं। {@first}एक अप्रैल को cash आया। {@second}दो को गया। {@fifteenth}पंद्रह को आया। {@twentieth}बीस को फिर गया…"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "{@seventeen}सत्रह entries। उनमें से {@twelve}बारह cash को छूती हैं। और वो {@scattered}हर page पर बिखरी हुई हैं।"
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[softly] {@faster}कोई तेज़ तरीका ज़रूर होगा, {@number}एक number ढूँढने का।"
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 1.4,
+  "text": "[warmly] {@first}पहले, पिछली बार के जवाब। {@one}एक। {@ravi}रवि मामा के पूरे {@three}तीन हज़ार तीन सौ रुपये expense क्यों नहीं हैं?"
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "क्योंकि इसमें से {@three}तीन हज़ार तो बस {@loan}loan चुकाने के हैं। सिर्फ़ {@three#2}तीन सौ रुपये का {@interest}interest ही expense है।"
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 1.4,
+  "text": "{@two}दो। {@infotech}Infotech UPI से {@four}चार हज़ार रुपये चुकाता है। {@entry}Entry क्या होगी?"
+ },
+ {
+  "id": "s02d",
+  "scene": 2,
+  "gap_after": 0.5,
+  "text": "{@bank}Bank, {@debit}debit, चार हज़ार। {@to}To Infotech, चार हज़ार। Bank में पैसे {@came}आए, और Infotech का {@owes}बकाया कम हो गया।"
+ },
+ {
+  "id": "s02e",
+  "scene": 2,
+  "gap_after": 1.2,
+  "text": "{@three}तीन। क्या {@drawings}drawings एक expense हैं?"
+ },
+ {
+  "id": "s02f",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "{@no}नहीं। ये {@owner}मालिक का पैसे {@out}बाहर निकालना है। ये equity को {@shrink}घटाते हैं, पर profit को {@touch}कभी नहीं छूते।"
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "{@trick}ये रही trick। {@journal}Journal पैसे को {@date}तारीख़ के हिसाब से sort करता है। लेकिन मीरा का सवाल एक {@account}account के बारे में है — {@cash}{p@cash}Cash। तो चलिए एक {@second}दूसरे तरीके से sort करते हैं: {@account#2}account के हिसाब से।"
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "[curious] क्या आपको वो {@account}account jars याद हैं। {@watch}{p@watch}देखिए। {@each}हर {@jar}jar एक छोटी {@book}book बन जाता है। {@cash}Cash को एक मिलती है। {@bank}Bank को एक। Sales, Rent, रवि मामा का loan — {@every}हर account को अपना अलग {@page}page मिलता है, जिसमें debit side {@left}left पर है, और credit side {@right}right {p@right}पर। इन सारी books के set को {@ledger}ledger कहते {p@ledger}हैं। और आपके सारे accounts की list, type के हिसाब से group की हुई, {@chart}chart of accounts कहलाती है। [playful] याद है, हमारे दोस्त को {@khata}खाता क्यों कहते हैं? {@means}खाता का मतलब है {@account#3}account।"
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "{@journal}Journal की हर line को उसके account के page पर copy करना {@posting}posting कहलाता {p@posting}है। और rule आसान है। Journal का एक {@debit}debit, उस {@account}account की {@left}left side पर जाता {p@account}है। एक {@credit}credit {@right}right side पर।"
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "सबसे {@first}पहली entry देखिए। {@cash}Cash, {@debit}debit, पचास हज़ार — Cash की {@left}left side पर। {@capital}Capital, {@credit}credit, पचास हज़ार — Capital की {@right}right side {p@capital#2}पर। हर amount के बगल में, खाता {@date}तारीख़ और {@other}दूसरा account लिखता है, ताकि आप हमेशा पता लगा सकें कि वो {@from}कहाँ से {p@from}आया। फिर खाता journal line पर {@ticks}tick लगाता है, ताकि कुछ भी {@twice}दो बार post न हो।"
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 2.4,
+  "text": "{@now}अब बाक़ी सब। {@seventeen}सत्रह entries, एक-एक line करके। {@left}Left… {@right}right। {@left#2}Left… {@right#2}right।"
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "अब {@cash}Cash का page खोलिए। {@left}Left side पर — जो कुछ भी अंदर {p@in}आया। {@fifty}पचास हज़ार {@meera}मीरा से। {@thirty}तीस हज़ार {@mama}रवि मामा से। {@sales}Sales के दो batches — {@eighteen}अठारह हज़ार, और {@twenty-two}बाईस हज़ार। और चार हज़ार रुपये का {@advance}{p@advance}advance। {@total}Total: एक {@lakh}लाख चौबीस हज़ार रुपये।"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 1.4,
+  "text": "{@right}Right side पर — जो कुछ भी {@out}बाहर गया। {@cart}Cart, {@stock}stock, {@rent}rent, {@bank}bank deposit, {@gopal}गोपाल, रवि मामा का {@loan}loan, उनका {@interest}interest, और मीरा के {@drawings}{p@drawings}drawings। {@total}Total: तिहत्तर हज़ार तीन {@hundred}{p@hundred}सौ। {@left}Left side {@heavier}भारी है। तो कितना cash {@left#2}बचा?"
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "पचास हज़ार सात सौ {@rupees}{p@rupees}रुपये। Page को {@level}बराबर करने के लिए, खाता वो {@difference}फ़र्क {@lighter}हल्की side पर लिखता है, ताकि दोनों sides का total एक {@lakh}लाख चौबीस हज़ार हो जाए। यही {@balance}balance {@carried}carried {@down}down {p@down}है। फिर वो {@drops}नीचे उतरकर {@heavier}heavier side पर आ जाता है, ताकि {@may}May की शुरुआत हो {p@may}सके। Balance हमेशा heavier side का {@belongs}होता {p@side#3}है। तो Cash का {@debit}debit {@balance#3}balance है, पचास हज़ार सात सौ।"
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 1.0,
+  "text": "मीरा {@counts}galla गिनती हैं। [excited] {@fifty}पचास हज़ार सात सौ! {@ledger}Ledger और {@galla#2}galla, दोनों {@agree}एक ही बात कह रहे हैं।"
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 2.4,
+  "text": "[inviting] मीरा की {@turn}बारी। {@gopal}गोपाल Dairy का page। {@third}तीन अप्रैल — {@eight}आठ हज़ार का {@stock}stock, उधार पर, {@right}right side पर। {@twentieth}बीस अप्रैल — वो {@five}पाँच हज़ार देती हैं, {@left}left side पर। {@heavier}कौन सी side भारी है, और {@balance}balance क्या है?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "{@right}Right side। {@three}तीन हज़ार रुपये — एक {@credit}credit {@balance}balance।"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.4,
+  "text": "{@meera}मीरा {@beams}खिल उठती हैं। एक {@credit}credit balance! ये तो {@sounds}उनके लिए {@money}पैसे जैसा लगता है।"
+ },
+ {
+  "id": "s06d",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "[firmly] {@nope}नहीं। गोपाल के page पर, {@credit}credit balance का मतलब है कि stall पर अब भी गोपाल के तीन हज़ार रुपये {@owes}बकाया {p@rupees}हैं। गोपाल एक {@liability}liability है, और liability का {@home}home {@right}right side है। Balance आम तौर पर वहीं {@sits}बैठता {p@sits}है।"
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 3.2,
+  "text": "[excited] आपकी {@turn}बारी। Infotech का page। {@left}Left side पर — {@six}छह हज़ार, {@sixteenth}सोलह अप्रैल को, और {@four}चार हज़ार, {@thirtieth}तीस अप्रैल को। {@right}Right side पर — {@four#2}चार हज़ार, {@twenty-fifth}पच्चीस अप्रैल को। {@balance}Balance क्या है, और कौन सी {@side}side?"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "{@six}छह हज़ार {@rupees}रुपये, {@left}left side पर — एक {@debit}debit {@balance}{p@balance}balance। Infotech को अब भी stall के छह हज़ार रुपये {@owes}चुकाने हैं। ये एक {@asset}asset है, जो अपनी {@home}home side पर बैठा {p@side}है। और यही है {@pattern}pattern: हर account का balance {@usually}आम तौर पर अपनी home side पर {@lands}आता है।"
+ },
+ {
+  "id": "s08",
+  "scene": 8,
+  "gap_after": 0.6,
+  "text": "तो — {@ledger}ledger हर account को उसका अपना page देता है। {@posting}Posting हर journal line को वहाँ ले जाती है: {@debits}debits left पर, {@credits}credits right पर। और {@balancing}balancing आपको बताता है कि हर account में क्या बचा है, {@number}एक number में।"
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.8,
+  "text": "[inviting] आपकी {@turn}बारी। {@three}तीन छोटे {@ones}{p@ones}सवाल। {@one}एक। {@sales}Sales account का balance क्या {p@account}है? {@two}दो। {@bank}Bank account का balance क्या {p@account#2}है? {@three#2}तीन। एक liability का balance आम तौर पर किस तरफ़ बैठता है — {@debit}debit side पर, या {@credit}credit side {p@side#2}पर? {@answers}जवाब अगले lesson की शुरुआत में।"
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 1.0,
+  "text": "[teasing] {@next}अगली बार, मीरा {@adds}अप्रैल का {@profit}profit जोड़ती हैं। {@thirty-six}छत्तीस हज़ार सात सौ रुपये! {@reaches}वो {@confetti}confetti की ओर हाथ बढ़ाती हैं… और खाता {@clears}गला साफ़ करता है। {@fast}इतनी जल्दी नहीं।"
+ }
+]

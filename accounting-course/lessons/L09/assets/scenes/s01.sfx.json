@@ -1,0 +1,128 @@
+[
+ {
+  "sfx": "galla_clack",
+  "at": {
+   "scene": "s01",
+   "t": 0.35
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01a",
+   "word": "@galla",
+   "offset": 0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "page_flurry",
+  "at": {
+   "seg": "s01a",
+   "word": "@journal",
+   "offset": 0.5
+  },
+  "vol": 0.5,
+  "dur": 2.6
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01a",
+   "word": "@first",
+   "offset": 0.15
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01a",
+   "word": "@second",
+   "offset": 0.15
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "page_flip",
+  "at": {
+   "seg": "s01a",
+   "word": "@fifteenth",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01a",
+   "word": "@fifteenth",
+   "offset": 0.15
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "page_flip",
+  "at": {
+   "seg": "s01a",
+   "word": "@twentieth",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01a",
+   "word": "@twentieth",
+   "offset": 0.15
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01b",
+   "word": "@seventeen",
+   "offset": -0.2
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01b",
+   "word": "@seventeen",
+   "offset": 0.6
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01b",
+   "word": "@seventeen",
+   "offset": 0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s01b",
+   "word": "@twelve",
+   "offset": 0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s01c",
+   "edge": "end",
+   "offset": 0.1
+  },
+  "vol": 0.45
+ }
+]
