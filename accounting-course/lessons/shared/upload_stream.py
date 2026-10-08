@@ -24,7 +24,9 @@ MANIFEST = LESSONS / "shared" / "stream-uploads.json"
 SERIES = "Hisaab Kitaab"
 TITLES = {"L01": "Why Bother?", "L02": "What You Have, What You Owe", "L03": "The Scale That Never Tips",
           "L04": "Making Money", "L05": "Profit Is Not Cash", "L06": "Debit and Credit",
-          "L07": "The Golden Rules, Decoded"}
+          "L07": "The Golden Rules, Decoded", "L08": "The Journal", "L09": "The Ledger",
+          "L10": "Month-End Surprises", "L11": "The Trial Balance", "L12": "The Profit & Loss Statement",
+          "L13": "The Balance Sheet", "L14": "Where Did the Money Go?"}
 LANG_NAME = {"en": "English", "hi": "Hindi"}
 CHUNK = 50 * 1024 * 1024          # 50 MB: docs' recommendation; multiple of 256 KiB
 

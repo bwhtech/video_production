@@ -625,7 +625,8 @@
           ["L", "R"].forEach((kk) => { const P = pans[kk]; if (P.chipBoost) tl.to(P.chipBoost, { scale: b, y: 62, svgOrigin: O, duration: dur, ease }, t); tl.to(P.labelsG, { autoAlpha: 0, duration: 0.2 }, t); });
           tl.to(eqOuter, { autoAlpha: 0, duration: 0.2 }, t);
         } else {
-          tl.to(outer, { x: 0, y: 0, scale: 1, svgOrigin: `${x} ${y}`, duration: dur, ease }, t);
+          // no svgOrigin here: re-sending it while scaled makes GSAP "compensate" x/y and fling the rig off-frame
+          tl.to(outer, { x: 0, y: 0, scale: 1, duration: dur, ease }, t);
           ["L", "R"].forEach((kk) => { const P = pans[kk]; if (P.chipBoost) tl.to(P.chipBoost, { scale: 1, y: 0, svgOrigin: O, duration: dur, ease }, t); tl.to(P.labelsG, { autoAlpha: 1, duration: 0.25 }, t + dur * 0.6); });
           tl.to(eqOuter, { autoAlpha: 1, duration: 0.25 }, t + dur * 0.6);
         }

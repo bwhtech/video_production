@@ -18,7 +18,9 @@ man = json.loads((LESSONS / "shared/stream-uploads.json").read_text())
 
 # poster frame per lesson: (scene, fraction through it) — the same story beat in both languages
 POSTER = {"L01": ("s01", 0.92), "L02": ("s01", 0.92), "L03": ("s01", 0.75), "L04": ("s01", 0.15),
-          "L05": ("s01", 0.15), "L06": ("s01", 0.15), "L07": ("s01", 0.15)}
+          "L05": ("s01", 0.15), "L06": ("s01", 0.15), "L07": ("s01", 0.15), "L08": ("s01", 0.55),
+          "L09": ("s01", 0.92), "L10": ("s01", 0.92), "L11": ("s01", 0.55), "L12": ("s01", 0.15),
+          "L13": ("s01", 0.92), "L14": ("s01", 0.92)}
 
 
 def poster(L, lang):
