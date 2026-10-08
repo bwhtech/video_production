@@ -1,0 +1,110 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06a",
+   "word": "@sell",
+   "offset": -0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s06b",
+   "word": "@nope",
+   "offset": 0.1
+  },
+  "vol": 0.8
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06b",
+   "word": "@more",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06b",
+   "word": "@less",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s06b",
+   "word": "@spreads",
+   "offset": 0.0
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06c",
+   "word": "@two",
+   "offset": 0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "note_rustle",
+  "at": {
+   "seg": "s06c",
+   "word": "@aside",
+   "offset": -0.4
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "stamp_thunk",
+  "at": {
+   "seg": "s06d",
+   "word": "@nope",
+   "offset": 0.1
+  },
+  "vol": 0.8
+ },
+ {
+  "sfx": "galla_clack",
+  "at": {
+   "seg": "s06d",
+   "word": "@galla",
+   "offset": 0.0
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06d",
+   "word": "@before",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s06d",
+   "word": "@after",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s06d",
+   "word": "@after",
+   "offset": -0.6
+  },
+  "vol": 0.3
+ }
+]

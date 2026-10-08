@@ -1,0 +1,227 @@
+[
+ {
+  "sfx": "envelope_drop",
+  "at": {
+   "scene": "s03",
+   "t": 0.1
+  },
+  "vol": 1.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03a",
+   "word": "@galla",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03a",
+   "word": "@galla",
+   "offset": 0.45
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03b",
+   "word": "@surprise",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03b",
+   "word": "@bill",
+   "offset": 0.55
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03b",
+   "word": "@due",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03b",
+   "word": "@may",
+   "offset": -0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03b",
+   "word": "@may",
+   "offset": 0.0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s03b",
+   "edge": "end",
+   "offset": 0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03c",
+   "word": "@april's",
+   "offset": 0.0
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03c",
+   "word": "@lights",
+   "offset": 0.0
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "kettle_bubble",
+  "at": {
+   "seg": "s03c",
+   "word": "@lights",
+   "offset": 0.3
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s03c",
+   "word": "@adjustments",
+   "offset": 0.0
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "sparkle",
+  "at": {
+   "seg": "s03c",
+   "word": "@adjustments",
+   "offset": 0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "boing_hop",
+  "at": {
+   "seg": "s03d",
+   "word": "@khata",
+   "offset": 0.25
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s03d",
+   "word": "@khata",
+   "offset": 0.55
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "scale_creak",
+  "at": {
+   "seg": "s03d",
+   "word": "@writes",
+   "offset": 0.1
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s03d",
+   "edge": "end",
+   "offset": 0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s03e",
+   "word": "@debit",
+   "offset": -0.05
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s03e",
+   "word": "@debit",
+   "offset": 0.8
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s03e",
+   "word": "@payable",
+   "offset": 0.1
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s03e",
+   "word": "@credit",
+   "offset": -0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s03e",
+   "word": "@credit",
+   "offset": 0.8
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "gauge_tick",
+  "at": {
+   "seg": "s03e",
+   "word": "@slipped",
+   "offset": -0.1
+  },
+  "vol": 0.5,
+  "dur": 0.5
+ },
+ {
+  "sfx": "scale_settle",
+  "at": {
+   "seg": "s03e",
+   "word": "@slipped",
+   "offset": 0.7
+  },
+  "vol": 0.35
+ }
+]

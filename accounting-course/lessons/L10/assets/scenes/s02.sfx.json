@@ -1,0 +1,128 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s02a",
+   "edge": "start",
+   "offset": -0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s02b",
+   "edge": "start",
+   "offset": -0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s02c",
+   "edge": "start",
+   "offset": -0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s02a",
+   "word": "@fifty",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s02b",
+   "word": "@fifteen",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s02b",
+   "word": "@four",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s02b",
+   "word": "@eight",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s02b",
+   "word": "@eleven",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s02c",
+   "word": "@home",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s02a",
+   "edge": "end",
+   "offset": -0.15
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s02b",
+   "edge": "end",
+   "offset": -0.15
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s02c",
+   "word": "@home",
+   "offset": 0.9
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s02c",
+   "word": "@meet",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "envelope_drop",
+  "at": {
+   "seg": "s02c",
+   "edge": "end",
+   "offset": 0.2
+  },
+  "vol": 1.2
+ }
+]

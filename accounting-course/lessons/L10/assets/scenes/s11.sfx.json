@@ -1,0 +1,74 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s11",
+   "word": "@twenty",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "boing_hop",
+  "at": {
+   "seg": "s11",
+   "word": "@twenty",
+   "offset": 0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "card_deal",
+  "at": {
+   "seg": "s11",
+   "word": "@nineteen",
+   "offset": 0.1
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "page_flurry",
+  "at": {
+   "seg": "s11",
+   "word": "@nineteen",
+   "offset": 0.3
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@nineteen",
+   "offset": 1.6
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "weight_clunk",
+  "at": {
+   "seg": "s11",
+   "word": "@mistake",
+   "offset": -0.6
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s11",
+   "word": "@sheet",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "book_thump",
+  "at": {
+   "seg": "s11",
+   "edge": "end",
+   "offset": -0.18
+  },
+  "vol": 0.8
+ }
+]

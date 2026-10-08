@@ -1,0 +1,204 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05a",
+   "word": "@surprise",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05a",
+   "word": "@cart",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05a",
+   "word": "@second",
+   "offset": 0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s05a",
+   "edge": "end",
+   "offset": 0.05
+  },
+  "vol": 0.2,
+  "dur": 1.8
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05b",
+   "word": "@wears",
+   "offset": 0.0
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05b",
+   "word": "@three",
+   "offset": 0.1
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05b",
+   "word": "@divided",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05b",
+   "word": "@month",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s05c",
+   "word": "@depreciation",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "coin_clink",
+  "at": {
+   "seg": "s05c",
+   "word": "@depreciation",
+   "offset": 0.65
+  },
+  "vol": 0.25
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s05c",
+   "edge": "end",
+   "offset": 0.05
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s05d",
+   "word": "@accumulated",
+   "offset": 1.0
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s05d",
+   "word": "@debit",
+   "offset": -0.05
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s05d",
+   "word": "@debit",
+   "offset": 0.8
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05d",
+   "word": "@own",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "bwomp_no",
+  "at": {
+   "seg": "s05d",
+   "word": "@own",
+   "offset": 1.25
+  },
+  "vol": 0.3
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s05d",
+   "word": "@page",
+   "offset": -0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_whoosh",
+  "at": {
+   "seg": "s05d",
+   "word": "@accumulated",
+   "offset": 0.1
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s05d",
+   "word": "@credit",
+   "offset": -0.15,
+   "nth": 2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s05d",
+   "word": "@credit",
+   "offset": 0.8,
+   "nth": 2
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s05d",
+   "word": "@book",
+   "offset": -0.2
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "gauge_tick",
+  "at": {
+   "seg": "s05d",
+   "word": "@now",
+   "offset": 0.2
+  },
+  "vol": 0.5,
+  "dur": 0.5
+ }
+]

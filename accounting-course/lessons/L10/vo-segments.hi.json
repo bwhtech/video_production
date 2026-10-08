@@ -1,0 +1,194 @@
+[
+ {
+  "id": "s01a",
+  "scene": 1,
+  "gap_after": 0.6,
+  "text": "[playful] तीस अप्रैल। भीड़ ख़त्म हो गई है, और मीरा हिसाब ख़ुद लगाने के लिए एक {@napkin}napkin उठाती हैं। {@sales}Sales — पचास हज़ार रुपये। माइनस {@rent}किराया, पाँच हज़ार। माइनस {@salary}राजू की salary, आठ हज़ार। माइनस रवि मामा का {@interest}interest, तीन सौ। {@leaves}बचते हैं… {@profit}छत्तीस हज़ार सात सौ रुपये का profit!"
+ },
+ {
+  "id": "s01b",
+  "scene": 1,
+  "gap_after": 1.0,
+  "text": "[excited] उनका बिल्कुल {@first}पहला {@month}महीना!"
+ },
+ {
+  "id": "s01c",
+  "scene": 1,
+  "gap_after": 0.8,
+  "text": "[teasing] {@fast}इतनी जल्दी नहीं। {@khata}Khata को उस napkin में {@three}तीन {@things}चीज़ें {@missing}ग़ायब दिखी हैं। और उनमें से कोई भी, {@galla}गल्ले से एक रुपया भी बाहर नहीं निकालती।"
+ },
+ {
+  "id": "s02a",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "पहले, पिछली बार के तीन सवाल। {@one}एक। {@sales}Sales का {@balance}balance कितना है? {@fifty}पचास हज़ार रुपये — {@credit}credit side पर।"
+ },
+ {
+  "id": "s02b",
+  "scene": 2,
+  "gap_after": 0.6,
+  "text": "{@two}दो। {@bank}Bank? {@fifteen}पंद्रह हज़ार अंदर, {@four}चार हज़ार अंदर, {@eight}आठ हज़ार बाहर। यानी {@eleven}ग्यारह हज़ार रुपये — एक {@debit}debit balance।"
+ },
+ {
+  "id": "s02c",
+  "scene": 2,
+  "gap_after": 0.8,
+  "text": "{@three}तीन। Liability का balance आमतौर पर किस side पर {@sit}होता है? Credit side पर — उसकी {@home}home side। आप एक बिल्कुल नए liability से {@meet}मिलने वाले हैं।"
+ },
+ {
+  "id": "s03a",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "आज का {@idea}idea ये है। April के कुछ ख़र्चे April में गल्ले से {@galla}बाहर जाते ही नहीं। वो बस महीने के {@last}आख़िरी दिन दिखाई देते हैं।"
+ },
+ {
+  "id": "s03b",
+  "scene": 3,
+  "gap_after": 2.0,
+  "text": "{@surprise}पहली हैरानी। {@bill}एक bill आता है — April की {@electricity}बिजली का, {@thousand}एक हज़ार रुपये। लेकिन उसे {@due}चुकाना {@may}May में है। [curious] तो ये {@whose}किसका ख़र्चा है? April का, या May का?"
+ },
+ {
+  "id": "s03c",
+  "scene": 3,
+  "gap_after": 0.6,
+  "text": "{@april's}April का। April में {@lights}बत्तियाँ जल रही थीं। ये फिर वही {@accrual}accrual है, lesson पाँच वाला — expense तब गिना जाता है जब वो {@used}इस्तेमाल हो, तब नहीं जब वो चुकाया {p@paid}जाए। तो {@thirty}तीस अप्रैल को, accountants कुछ extra {@journal}journal entries जोड़ते हैं, जिन्हें कहते हैं {@adjustments}{p@adjustments}adjustments। {@adjustments#2}Adjustments पक्का करते हैं कि April की books April की {@whole}पूरी कहानी सुनाएँ।"
+ },
+ {
+  "id": "s03d",
+  "scene": 3,
+  "gap_after": 2.0,
+  "text": "तो {@khata}Khata adjustment {@writes}लिखता है। [curious] {@which}कौन सी दो चीज़ें बदलीं?"
+ },
+ {
+  "id": "s03e",
+  "scene": 3,
+  "gap_after": 0.8,
+  "text": "एक expense बढ़ा — {@debit}debit {@electricity}Electricity, एक {@thousand}हज़ार। और मीरा अब बिजली कंपनी की {@owes}देनदार हैं। ये है नया liability: Electricity {@payable}{p@payable}payable। {@credit}Credit, एक {p@thousand#2}हज़ार। {@galla}गल्ला नहीं हिला। लेकिन April का {@profit}profit अभी {@slipped}फिसलकर पैंतीस हज़ार सात सौ पर आ गया।"
+ },
+ {
+  "id": "s04a",
+  "scene": 4,
+  "gap_after": 0.6,
+  "text": "{@surprise}दूसरी हैरानी {@stock}stock के jar में छिपी है। Stock — या {@inventory}inventory, जैसा बड़े businesses कहते हैं। April में, मीरा ने {@six}छह हज़ार रुपये की {@tea}चायपत्ती, दूध और चीनी cash से ख़रीदी — और {@eight}आठ हज़ार की और, गोपाल Dairy से उधार पर। {@fourteen}चौदह हज़ार अंदर गए।"
+ },
+ {
+  "id": "s04b",
+  "scene": 4,
+  "gap_after": 2.4,
+  "text": "तीस अप्रैल को, वो shelf पर {@counts}बचा हुआ गिनती हैं। {@four}चार हज़ार रुपये का। तो उन्होंने असल में कितना {@use}इस्तेमाल किया?"
+ },
+ {
+  "id": "s04c",
+  "scene": 4,
+  "gap_after": 0.5,
+  "text": "{@ten}दस हज़ार। {@fourteen}चौदह अंदर, {@four}चार बचे, दस {@used}इस्तेमाल {p@used}हुए। Stock एक {@asset}asset है जब तक वो shelf पर इंतज़ार करता है। एक बार वो चाय के कप में {@poured}डाल दिया गया, तो वो {@gone}गया।"
+ },
+ {
+  "id": "s04d",
+  "scene": 4,
+  "gap_after": 2.0,
+  "text": "इस बार adjustment {@meera}मीरा ख़ुद लिखती हैं। [curious] {@which}कौन सी दो चीज़ें बदलीं?"
+ },
+ {
+  "id": "s04e",
+  "scene": 4,
+  "gap_after": 2.6,
+  "text": "उन्हें एक बात का {@sure}पक्का है: stock jar दस {@thousand}हज़ार घट {p@thousand}गया। यहाँ {@pause}pause कीजिए। जो दस हज़ार उन्होंने इस्तेमाल किए — क्या वो {@stay}Stock में रहते हैं, या एक {@expense}expense बन गए हैं?"
+ },
+ {
+  "id": "s04f",
+  "scene": 4,
+  "gap_after": 0.8,
+  "text": "{@expense}{p@expense}Expense। इस्तेमाल हो चुके {@assets}assets, {@expenses}expenses बन जाते {p@expenses}हैं। {@debit}Debit {@cost}Cost of supplies used, दस हज़ार। और {@stock}Stock घटता है — {@credit}credit, दस हज़ार। {@profit}Profit फिर {@slips}फिसलता है, पच्चीस हज़ार सात सौ पर।"
+ },
+ {
+  "id": "s05a",
+  "scene": 5,
+  "gap_after": 1.8,
+  "text": "{@surprise}तीसरी हैरानी सबसे {@sneakiest}छुपी हुई है। {@second}दो अप्रैल को, मीरा ने अपनी {@cart}cart, चूल्हे, केतलियों और गिलासों के लिए छत्तीस हज़ार रुपये दिए थे। {@lesson}Lesson चार में हमने कहा था कि वो {@expense}expense नहीं है। [curious] लेकिन क्या ये बिल्कुल वही cart है जो {@day}पहले दिन थी?"
+ },
+ {
+  "id": "s05b",
+  "scene": 5,
+  "gap_after": 0.6,
+  "text": "{@quite}पूरी तरह नहीं। हर महीने, ये थोड़ा-सा {@wears}घिसता {p@little}है। ये सामान लगभग {@three}तीन साल चलना चाहिए — छत्तीस {@months}महीने। तो हर महीने को उसकी cost का एक सही {@slice}हिस्सा मिलता {p@cost}है। छत्तीस हज़ार, {@divided}छत्तीस से भाग… एक हज़ार रुपये {@month}महीना।"
+ },
+ {
+  "id": "s05c",
+  "scene": 5,
+  "gap_after": 2.0,
+  "text": "उस मासिक हिस्से को कहते हैं {@depreciation}{p@depreciation}depreciation। एक और इस्तेमाल हो चुका asset, {@expense}expense बन रहा {p@expense}है। [curious] {@which}कौन सी दो चीज़ें बदलीं?"
+ },
+ {
+  "id": "s05d",
+  "scene": 5,
+  "gap_after": 0.8,
+  "text": "{@debit}Debit {@depreciation}Depreciation, एक हज़ार। और {@credit}credit? Cart के {@own}अपने page पर नहीं — वो अपनी original कीमत रखता है, छत्तीस हज़ार। घिसावट एक {@page}अलग page पर जमा होती है, जिसका नाम है {@accumulated}Accumulated {p@depreciation#2}depreciation। {@credit#2}Credit, एक हज़ार। {@paper}काग़ज़ पर — यानी उसकी {@book}book value — अब ये सामान {@now}पैंतीस हज़ार का है।"
+ },
+ {
+  "id": "s06a",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "{@careful}सावधान — depreciation में दो {@traps}जाल हैं। जाल {@one}एक। Book value, पैंतीस {@thousand}{p@thousand}हज़ार। तो क्या cart इतने में ही {@sell}बिकेगी, {@right}है ना?"
+ },
+ {
+  "id": "s06b",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "[firmly] {@nope}नहीं। Book value कोई {@selling}बिकने की कीमत नहीं है। एक {@buyer}ख़रीदार {@more}ज़्यादा भी दे सकता है, या {@less}कम। Depreciation बस cost को उन महीनों में {@spreads}बाँट देता है जो इसे इस्तेमाल करते हैं।"
+ },
+ {
+  "id": "s06c",
+  "scene": 6,
+  "gap_after": 0.6,
+  "text": "जाल {@two}दो। तो क्या मीरा हर महीने एक हज़ार रुपये {@aside}अलग रख देती हैं?"
+ },
+ {
+  "id": "s06d",
+  "scene": 6,
+  "gap_after": 0.8,
+  "text": "[firmly] {@nope}फिर नहीं। {@galla}गल्ले में देखिए। {@before}पहले पचास हज़ार सात सौ रुपये। {@after}बाद में भी पचास हज़ार सात सौ। Depreciation एक भी {@coin}सिक्का नहीं हिलाता।"
+ },
+ {
+  "id": "s07a",
+  "scene": 7,
+  "gap_after": 0.6,
+  "text": "तो — चलिए मीरा की {@napkin}napkin ठीक करते हैं। छत्तीस हज़ार सात {p@hundred}सौ। माइनस {@electricity}बिजली का bill… {@thirty-five}पैंतीस हज़ार सात {p@hundred#2}सौ। माइनस वो {@supplies}supplies जो उन्होंने इस्तेमाल कीं… {@twenty-five}पच्चीस हज़ार सात {p@hundred#3}सौ। माइनस {@depreciation}depreciation… {@twenty-four}चौबीस हज़ार सात सौ रुपये।"
+ },
+ {
+  "id": "s07b",
+  "scene": 7,
+  "gap_after": 0.8,
+  "text": "[warmly] napkin ने जो कहा था उससे {@twelve}बारह हज़ार कम — और फिर भी एक {@healthy}अच्छा profit। बस अब एक {@honest}ईमानदार profit। और तीनों adjustments के दौरान, {@galla}गल्ला कभी नहीं हिला।"
+ },
+ {
+  "id": "s08a",
+  "scene": 8,
+  "gap_after": 3.2,
+  "text": "[inviting] अब आपकी बारी। {@imagine}कल्पना कीजिए, April का {@water}पानी का bill — {@five}पाँच सौ रुपये — {@second}दो May को आता है। क्या इससे April का {@profit}profit बदलता है? और अगर बदलता है — तो {@which}कौन सी दो चीज़ें बदलीं?"
+ },
+ {
+  "id": "s08b",
+  "scene": 8,
+  "gap_after": 0.8,
+  "text": "{@yes}{p@yes}हाँ। पानी April में चला था, इसलिए ये April की {@cost}cost {p@cost}है। एक expense बढ़ा — {@debit}debit Water, पाँच सौ। और मीरा पानी की company की {@owes}देनदार हैं — {@credit}credit {@payable}Water payable, पाँच सौ। April का {@profit}profit, पाँच सौ कम।"
+ },
+ {
+  "id": "s09",
+  "scene": 9,
+  "gap_after": 0.6,
+  "text": "तो — April के कुछ ख़र्चे सिर्फ़ तीस अप्रैल को दिखते हैं। एक {@bill}bill जो अभी चुकाया नहीं। {@stock}Stock जो इस्तेमाल हो चुका। आपके equipment पर एक महीने की {@wear}घिसावट। {@adjustments}Adjustments इन्हें वापस April की कहानी में रख देते हैं — बिना कोई {@cash}cash हिलाए।"
+ },
+ {
+  "id": "s10",
+  "scene": 10,
+  "gap_after": 0.8,
+  "text": "[inviting] आपकी {@turn}बारी। तीन छोटे {@ones}{p@ones}सवाल। {@one}एक। May में मीरा की depreciation कितनी {@may}{p@may}होगी? {@two}दो। अगर उन्होंने चार की जगह पाँच हज़ार रुपये का stock बचा हुआ गिना होता, तो कितना इस्तेमाल {@use}{p@use}किया? {@three}तीन। May में, मीरा April का बिजली bill चुकाती हैं। क्या ये एक May {@expense}expense {p@expense}है? {@answers}जवाब अगले lesson की शुरुआत में।"
+ },
+ {
+  "id": "s11",
+  "scene": 11,
+  "gap_after": 1.0,
+  "text": "[teasing] अगली बार — {@twenty}बीस transactions। {@nineteen}उन्नीस accounts। क्या मीरा से कोई {@mistake}ग़लती हुई? काग़ज़ की {@sheet}एक शीट हमें बता सकती है। {@well}ख़ैर… {@almost}लगभग।"
+ }
+]

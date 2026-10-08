@@ -1,0 +1,112 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08a",
+   "word": "@water",
+   "offset": -0.1
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08a",
+   "word": "@second",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tick_tock",
+  "at": {
+   "seg": "s08a",
+   "edge": "end",
+   "offset": 0.1
+  },
+  "vol": 0.3,
+  "dur": 3.1
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s08b",
+   "word": "@yes",
+   "offset": 0.0
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08b",
+   "word": "@yes",
+   "offset": 0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s08b",
+   "word": "@debit",
+   "offset": -0.05
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_low",
+  "at": {
+   "seg": "s08b",
+   "word": "@debit",
+   "offset": 0.8
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pencil_write",
+  "at": {
+   "seg": "s08b",
+   "word": "@credit",
+   "offset": -0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "tink_high",
+  "at": {
+   "seg": "s08b",
+   "word": "@credit",
+   "offset": 0.5
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s08b",
+   "word": "@payable",
+   "offset": 0.0
+  },
+  "vol": 0.35
+ },
+ {
+  "sfx": "gauge_tick",
+  "at": {
+   "seg": "s08b",
+   "word": "@profit",
+   "offset": 0.1
+  },
+  "vol": 0.35,
+  "dur": 0.5
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s08b",
+   "edge": "end",
+   "offset": -0.1
+  },
+  "vol": 0.35
+ }
+]

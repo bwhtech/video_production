@@ -1,0 +1,65 @@
+[
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s09",
+   "word": "@bill",
+   "offset": -0.1
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s09",
+   "word": "@stock",
+   "offset": -0.1
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s09",
+   "word": "@wear",
+   "offset": -0.1
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "rise_three",
+  "at": {
+   "seg": "s09",
+   "word": "@adjustments",
+   "offset": 0.0
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s09",
+   "word": "@cash",
+   "offset": -0.5
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ding_yes",
+  "at": {
+   "seg": "s09",
+   "word": "@cash",
+   "offset": 0.6
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "boing_hop",
+  "at": {
+   "seg": "s09",
+   "edge": "end",
+   "offset": -1.2
+  },
+  "vol": 0.35
+ }
+]

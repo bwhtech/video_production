@@ -1,0 +1,47 @@
+[
+ {
+  "sfx": "card_deal",
+  "at": {
+   "seg": "s10",
+   "word": "@turn",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@one",
+   "offset": 0.05
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@two",
+   "offset": 0.05
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s10",
+   "word": "@three",
+   "offset": 0.05
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s10",
+   "word": "@answers",
+   "offset": -0.2
+  },
+  "vol": 0.4
+ }
+]

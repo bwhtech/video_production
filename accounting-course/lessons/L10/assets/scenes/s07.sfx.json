@@ -1,0 +1,131 @@
+[
+ {
+  "sfx": "paper_slide",
+  "at": {
+   "seg": "s07a",
+   "word": "@napkin",
+   "offset": -0.3
+  },
+  "vol": 0.45
+ },
+ {
+  "sfx": "pencil_scribble",
+  "at": {
+   "seg": "s07a",
+   "word": "@napkin",
+   "offset": 0.3
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pencil_scribble",
+  "at": {
+   "seg": "s07a",
+   "word": "@napkin",
+   "offset": 0.85
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pencil_scribble",
+  "at": {
+   "seg": "s07a",
+   "word": "@electricity",
+   "offset": -0.4
+  },
+  "vol": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07a",
+   "word": "@electricity",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "gauge_tick",
+  "at": {
+   "seg": "s07a",
+   "word": "@thirty-five",
+   "offset": -0.05
+  },
+  "vol": 0.45,
+  "dur": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07a",
+   "word": "@supplies",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "gauge_tick",
+  "at": {
+   "seg": "s07a",
+   "word": "@twenty-five",
+   "offset": -0.05
+  },
+  "vol": 0.45,
+  "dur": 0.5
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07a",
+   "word": "@depreciation",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "gauge_tick",
+  "at": {
+   "seg": "s07a",
+   "word": "@twenty-four",
+   "offset": -0.05
+  },
+  "vol": 0.45,
+  "dur": 0.5
+ },
+ {
+  "sfx": "pencil_scribble",
+  "at": {
+   "seg": "s07a",
+   "word": "@twenty-four",
+   "offset": 1.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "pop",
+  "at": {
+   "seg": "s07b",
+   "word": "@twelve",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "ka_ching",
+  "at": {
+   "seg": "s07b",
+   "word": "@healthy",
+   "offset": 0.1
+  },
+  "vol": 0.4
+ },
+ {
+  "sfx": "sparkle",
+  "at": {
+   "seg": "s07b",
+   "word": "@honest",
+   "offset": 0.0
+  },
+  "vol": 0.4
+ }
+]
