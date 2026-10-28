@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/tokens.css" />
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         "frappectl" title card — plays on "let's get started".
+         A full-frame white panel slides up over the talking head, the title
+         types in, and real frappectl commands drift past in the background
+         (fainter = slower, for a little depth). Panel slides back down.
+         Light theme, flat colors. Transparent outside the panel.
+         Sibling of split-api-vs-frappectl.html (same panel + curves).
+         ------------------------------------------------------------------ */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+      #root { position: relative; width: 1920px; height: 1080px; background: transparent;
+        font-family: var(--font-text); color: var(--ink-gray-9); }
+      .stage { position: absolute; inset: 0; }
+      .panel { position: absolute; inset: 0; overflow: hidden; background: var(--surface-base); }
+
+      .title { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+      .word { font: 800 220px/1 var(--font-mono); letter-spacing: -0.04em; font-variant-ligatures: none;
+        white-space: pre; }
+
+      .chip { position: absolute; font: 500 30px/1 var(--font-mono); padding: 18px 24px; border-radius: 14px;
+        white-space: nowrap; background: var(--surface-gray-1); border: 2px solid var(--outline-gray-2);
+        color: var(--ink-gray-5); font-variant-ligatures: none; }
+      .chip b { color: var(--brand); font-weight: 700; margin-right: 12px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-theme="light" data-composition-id="main"
+         data-start="0" data-duration="4.3" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="stage clip" id="stage" data-start="0" data-duration="4.3" data-track-index="0">
+        <div class="panel" id="panel">
+          <div id="chips"></div>
+          <div class="title"><span class="word" id="word">frappectl</span></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        slideIn: 0.7,     // panel rises from below
+        chipsAt: 0.3,     // chips start fading in (staggered)
+        typeAt: 0.55,     // title starts typing
+        typeFor: 0.6,     // 9 characters
+        exitAt: 3.6,      // panel slides back down
+        slideOut: 0.7,
+        end: 4.3,
+      };
+      // [html, left, top, opacity, drift px over the whole card]
+      // Fainter chips drift less, so they read as further away.
+      const CHIPS = [
+        ['<b>$</b>fr doc list "Sales Invoice"', 120, 110, 1, 70],
+        ['<b>$</b>fr guide', 1180, 150, 0.7, -50],
+        ['--json', 1460, 300, 0.55, 40],
+        ['<b>$</b>fr auth login', 640, 250, 0.5, -35],
+        ['<b>$</b>fr doctype show Customer', 90, 790, 0.6, 45],
+        ['<b>$</b>fr doc submit "Sales Invoice" SINV-0041', 760, 840, 1, -70],
+        ['-f status=Overdue', 1500, 720, 0.55, -40],
+        ['--fields name,customer', 240, 330, 0.45, 30],
+        ['<b>$</b>fr report run', 1320, 950, 0.5, 35],
+      ];
+
+      // ------------------------------------------------------------- curves
+      function bezier(x1, y1, x2, y2) {
+        const c = (a, b, t) => 3 * (1 - t) * (1 - t) * t * a + 3 * (1 - t) * t * t * b + t * t * t;
+        return (x) => {
+          let lo = 0, hi = 1, t = x;
+          for (let i = 0; i < 30; i++) {
+            t = (lo + hi) / 2;
+            if (c(x1, x2, t) < x) lo = t; else hi = t;
+          }
+          return c(y1, y2, t);
+        };
+      }
+      const easeOut = bezier(0.23, 1, 0.32, 1);
+      const easeInOut = bezier(0.77, 0, 0.175, 1);
+      const typed = (n) => (p) => Math.floor(p * n) / n;
+
+      // --------------------------------------------------------------- build
+      const holder = document.getElementById('chips');
+      const chipEls = CHIPS.map(([html, x, y]) => {
+        const el = document.createElement('div');
+        el.className = 'chip';
+        el.innerHTML = html;
+        el.style.left = x + 'px';
+        el.style.top = y + 'px';
+        holder.appendChild(el);
+        return el;
+      });
+
+      // ----------------------------------------------------------- timeline
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Entry — panel slides up from below the frame.
+      tl.fromTo('#panel', { yPercent: 100 }, { yPercent: 0, duration: CFG.slideIn, ease: easeOut }, 0);
+
+      // Chips fade up in a light stagger, then drift at constant speed for the whole card.
+      chipEls.forEach((el, i) => {
+        const [, , , op, drift] = CHIPS[i];
+        tl.fromTo(el, { opacity: 0, y: 16 }, { opacity: op, y: 0, duration: 0.6, ease: easeOut }, CFG.chipsAt + i * 0.05);
+        tl.fromTo(el, { x: 0 }, { x: drift, duration: CFG.end, ease: 'none' }, 0);
+      });
+
+      // Title types itself, one character at a time.
+      const n = document.getElementById('word').textContent.length;
+      tl.fromTo('#word', { clipPath: 'inset(-10% 100% -10% 0)' },
+        { clipPath: 'inset(-10% 0% -10% 0)', duration: CFG.typeFor, ease: typed(n), immediateRender: true }, CFG.typeAt);
+
+      // Exit the way it entered.
+      tl.to('#panel', { yPercent: 100, duration: CFG.slideOut, ease: easeInOut }, CFG.exitAt);
+      tl.set({}, {}, CFG.end);
+
+      window.__timelines['main'] = tl;
+    </script>
+  </body>
+</html>

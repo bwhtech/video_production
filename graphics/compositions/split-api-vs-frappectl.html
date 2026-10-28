@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+    <link rel="stylesheet" href="theme/tokens.css" />
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         REST API v2 vs frappectl — what the LLM writes and reads.
+         Agent bar on top, ERPNext bar at the bottom, both shared. The middle
+         splits in two. Left: the requests code the model has to generate
+         (writes) and the docs + raw {"data": …} it has to take in (reads).
+         Right: one frappectl command and its compact JSON rows.
+         Light theme, flat colors: no gradients, glows or shadows.
+         Storyboard: projects/frappectl-explainer/storyboard.html
+         ------------------------------------------------------------------ */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+      #root { position: relative; width: 1920px; height: 1080px; background: transparent;
+        color: var(--ink-gray-9); font-family: var(--font-text); }
+      .stage { position: absolute; inset: 0; }
+      /* The whole diagram rides on one full-frame panel that slides up over the
+         talking head and back down at the end. Only the slide shows footage. */
+      .panel { position: absolute; inset: 0; overflow: hidden; background: var(--surface-base); }
+      svg.lucide { stroke-width: 1.75; }
+
+      /* shared top + bottom bars */
+      .bar { position: absolute; left: 80px; right: 80px; height: 100px; border-radius: 24px;
+        display: flex; align-items: center; justify-content: center; gap: 22px;
+        background: var(--surface-gray-2); border: 2px solid var(--outline-gray-3);
+        font-size: 44px; font-weight: 650; letter-spacing: -0.01em; }
+      .bar.top { top: 36px; }
+      .bar.bot { bottom: 36px; }
+      .bar svg { width: 54px; height: 54px; color: var(--ink-gray-7); }
+      .bar img { width: 62px; height: 62px; }
+
+      /* the split middle */
+      .col { position: absolute; top: 156px; bottom: 156px; width: 840px; }
+      .col.l { left: 80px; }
+      .col.r { right: 80px; }
+      .divider { position: absolute; left: 959px; top: 156px; bottom: 156px; width: 2px;
+        background: var(--outline-gray-2); transform-origin: 50% 0; }
+      .inner { position: absolute; top: 14px; left: 56px; right: 0; display: flex; flex-direction: column; gap: 10px; }
+      .hd { display: flex; align-items: center; justify-content: space-between; height: 48px;
+        font: 700 32px/1 var(--font-mono); color: var(--ink-gray-7); }
+      .col.r .hd { color: var(--brand-ink); }
+
+      /* connectors: agent ↔ ERPNext through each column */
+      .pipe { position: absolute; top: -20px; bottom: -20px; left: 18px; width: 0; transform-origin: 50% 0; }
+      .pipe.gray { border-left: 4px dashed var(--outline-gray-4); }
+      .pipe.brand { border-left: 4px solid var(--brand); }
+
+      /* writes / reads */
+      .sec { display: flex; align-items: center; justify-content: space-between; height: 40px; margin-top: 4px; }
+      .lb { display: inline-flex; align-items: center; gap: 12px; font: 600 26px/1 var(--font-text); color: var(--ink-gray-8); }
+      .lb svg { width: 30px; height: 30px; color: var(--ink-gray-6); }
+      .lb em { font-style: normal; font-weight: 500; color: var(--ink-gray-6); }
+      .box { border-radius: 16px; background: var(--surface-gray-1); border: 2px solid var(--outline-gray-3);
+        padding: 14px 22px; font: 400 22px/1.45 var(--font-mono); color: var(--ink-gray-8);
+        font-variant-ligatures: none; overflow: hidden; }
+      .box.code { height: 351px; padding-inline: 18px; }
+      .box.cmd { font-size: 26px; color: var(--ink-gray-9); }
+      .box.small { font-size: 20px; }
+      .box.live { border-color: var(--brand); background: var(--surface-violet-1); }
+      .ln { display: block; width: max-content; white-space: pre; }
+      .p { color: var(--brand); font-weight: 700; }
+      mark { background: transparent; color: inherit; border-radius: 6px; padding: 0 4px; margin: 0 -4px; }
+      .pill { display: inline-flex; align-self: flex-start; align-items: center; gap: 12px; height: 52px; padding: 0 20px;
+        border-radius: 12px; background: var(--surface-gray-2); border: 2px solid var(--outline-gray-3);
+        font: 500 24px/1 var(--font-mono); color: var(--ink-gray-8); }
+      .pill svg { width: 28px; height: 28px; color: var(--ink-gray-6); }
+      .pill small { font: 500 22px/1 var(--font-text); color: var(--ink-gray-6); }
+
+      .badge { font: 600 22px/1 var(--font-text); padding: 9px 16px; border-radius: 999px; white-space: nowrap;
+        display: inline-flex; align-items: center; gap: 8px; }
+      .badge svg { width: 24px; height: 24px; color: currentColor; }
+      .badge.red { background: var(--surface-red-2); color: var(--ink-red-8); }
+      .badge.amber { background: var(--surface-amber-2); color: var(--ink-amber-9); }
+      .badge.green { background: var(--surface-green-2); color: var(--ink-green-9); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-theme="light" data-composition-id="main"
+         data-start="0" data-duration="32.7" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="stage clip" id="stage" data-start="0" data-duration="32.7" data-track-index="0">
+      <div class="panel" id="panel">
+
+        <div class="bar top" id="agent"><i data-lucide="bot"></i>Agent</div>
+
+        <div class="col l" id="colL">
+          <div class="pipe gray" id="pipeL"></div>
+          <div class="inner">
+            <div class="hd" id="hdL"><span>REST API v2</span></div>
+            <div class="sec" id="wL"><span class="lb"><i data-lucide="arrow-down"></i>LLM writes <em>· tool call</em></span>
+              <span class="badge red" id="hall"><i data-lucide="triangle-alert"></i>hallucinate</span></div>
+            <div class="box code" id="code"></div>
+            <div class="sec" id="rL"><span class="lb"><i data-lucide="arrow-up"></i>LLM reads <em>· into context</em></span>
+              <span class="badge amber" id="tokens"><i data-lucide="coins"></i>tokens</span></div>
+            <span class="pill" id="docs"><i data-lucide="book-open"></i>REST API v2 docs <small>pasted in</small></span>
+            <div class="box small" id="raw"></div>
+          </div>
+        </div>
+
+        <div class="divider" id="divider"></div>
+
+        <div class="col r" id="colR">
+          <div class="pipe gray" id="pipeRg"></div>
+          <div class="pipe brand" id="pipeR"></div>
+          <div class="inner">
+            <div class="hd" id="hdR"><span>$ frappectl</span>
+              <span class="badge green" id="handled"><i data-lucide="check"></i>plumbing handled</span></div>
+            <div class="sec" id="wR"><span class="lb"><i data-lucide="arrow-down"></i>LLM writes <em>· tool call</em></span></div>
+            <div class="box cmd" id="cmd"></div>
+            <div class="sec" id="rR"><span class="lb"><i data-lucide="arrow-up"></i>LLM reads <em>· into context</em></span></div>
+            <span class="pill" id="guide"><i data-lucide="terminal"></i>fr guide <small>one screen</small></span>
+            <div class="box small" id="clean"></div>
+          </div>
+        </div>
+
+        <div class="bar bot" id="erp"><img src="assets/img/erpnext-logo.svg" alt="" />ERPNext</div>
+      </div>
+      </div>
+
+      <!-- VO slice (api-vs-frappectl.wav 8.40s → end), for sync review; drop for a silent render -->
+      <audio id="vo" src="assets/api-vs-frappectl-vo.wav"
+             data-start="0" data-duration="29.36" data-track-index="1" data-volume="1"></audio>
+    </div>
+
+    <script>
+      lucide.createIcons();
+
+      // ---------------------------------------------------------------- knobs
+      // Cue times are SOURCE seconds in api-vs-frappectl.wav (Scribe word
+      // starts). SRC_AT is where this graphic starts in that file.
+      const SRC_AT = 8.4;
+      const CFG = {
+        cues: {
+          open: 9.24,          // "And then you might ask"
+          type: 16.08,         // "plumbing" — the model starts writing the call
+          headers: 18.30,      // "HTTP headers"
+          auth: 19.18,         // "authentication"
+          url: 20.62,          // "URL paths"
+          clear: 22.56,        // "First thing" — highlights clear
+          tokens: 23.22,       // "wasting tokens"
+          hall: 25.58,         // "hallucinate"
+          docs: 27.12,         // "documentation"
+          parse: 29.16,        // "parse"
+          request: 30.86,      // "request"
+          response: 31.32,     // "response"
+          encaps: 34.20,       // "encapsulated"
+          ctl: 36.30,          // "Frappe CTL"
+        },
+        lead: 0.1,             // visuals land a hair before the word
+        cps: 110,              // typing speed, chars/second (the model streaming)
+        dimTo: 0.5,            // left column once frappectl takes over
+        offTo: 0.25,           // right column before it is introduced
+        slideIn: 0.8,          // panel rises into place, landing just before "And then"
+        exitAt: 40.4,          // source time the panel starts sliding back down
+        slideOut: 0.7,
+        end: 41.1,             // exit done; ~4s hold after the last word
+      };
+      const T = (src) => src - SRC_AT - CFG.lead;
+
+      // ------------------------------------------------------------- curves
+      function bezier(x1, y1, x2, y2) {
+        const c = (a, b, t) => 3 * (1 - t) * (1 - t) * t * a + 3 * (1 - t) * t * t * b + t * t * t;
+        return (x) => {
+          let lo = 0, hi = 1, t = x;
+          for (let i = 0; i < 30; i++) {
+            t = (lo + hi) / 2;
+            if (c(x1, x2, t) < x) lo = t; else hi = t;
+          }
+          return c(y1, y2, t);
+        };
+      }
+      const easeOut = bezier(0.23, 1, 0.32, 1);
+      const easeInOut = bezier(0.77, 0, 0.175, 1);
+      // One character at a time: a linear reveal snapped to whole characters.
+      const typed = (n) => (p) => Math.floor(p * n) / n;
+
+      // --------------------------------------------------------------- text
+      // Lines are [html, group]. <m>…</m> marks the span a cue highlights.
+      const CODE = [
+        ['import requests, json', 'a'],
+        ['r = requests.get(', 'a'],
+        ['  f"{SITE}<m data-k="url">/api/v2/document/Sales Invoice</m>",', 'a'],
+        ['  headers={', 'a'],
+        ['    <m data-k="auth">"Authorization": f"token {KEY}:{SECRET}"</m>,', 'a'],
+        ['    <m data-k="headers">"Accept": "application/json"</m>},', 'a'],
+        ['  params={', 'b'],
+        ['    "filters": <m data-k="request">json.dumps</m>([["status", "=", "Overdue"]]),', 'b'],
+        ['    "fields": <m data-k="request">json.dumps</m>(["name", "customer"])})', 'b'],
+        ['rows = <m data-k="response">r.json()["data"]</m>', 'b'],
+      ];
+      const RAW = [
+        '{"data": [{"name": "SINV-0041", "customer": "Acme Corp"},',
+        '          {"name": "SINV-0042", "customer": "Globex"}],',
+        ' "has_next_page": false}',
+      ];
+      const CMD = [
+        '<span class="p">$</span> fr doc list "Sales Invoice" \\',
+        '    -f status=Overdue --fields name,customer',
+      ];
+      const CLEAN = [
+        '[{"name":"SINV-0041","customer":"Acme Corp"},',
+        ' {"name":"SINV-0042","customer":"Globex"}]',
+      ];
+      const fill = (el, lines) => {
+        el.innerHTML = lines.map((h) => `<span class="ln">${h.replace(/<m /g, '<mark ').replace(/<\/m>/g, '</mark>')}</span>`).join('');
+        return [...el.children];
+      };
+      const codeLines = fill(document.getElementById('code'), CODE.map(([h]) => h));
+      const rawLines = fill(document.getElementById('raw'), RAW);
+      const cmdLines = fill(document.getElementById('cmd'), CMD);
+      const cleanLines = fill(document.getElementById('clean'), CLEAN);
+      const chars = (el) => el.textContent.length;
+
+      // Highlight colour, resolved once from the light-theme token.
+      const HL = getComputedStyle(document.getElementById('root')).getPropertyValue('--surface-violet-3').trim();
+      const marks = (k) => [...document.querySelectorAll('mark')].filter((m) => m.dataset.k === k);
+
+      // ----------------------------------------------------------- timeline
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const c = CFG.cues;
+      const $ = (id) => document.getElementById(id);
+
+      // Types lines one after another from `at`; returns when the last one ends.
+      function typeLines(lines, at) {
+        let t = at;
+        for (const el of lines) {
+          const n = chars(el);
+          const d = Math.max(n / CFG.cps, 0.05);
+          tl.fromTo(el, { clipPath: 'inset(0 100% 0 0)' }, { clipPath: 'inset(0 0% 0 0)', duration: d, ease: typed(n), immediateRender: true }, t);
+          t += d;
+        }
+        return t;
+      }
+      const pop = (el, at, from = { y: 12 }) =>
+        tl.fromTo(el, { opacity: 0, scale: 0.96, ...from }, { opacity: 1, scale: 1, x: 0, y: 0, duration: 0.45, ease: easeOut }, at);
+      const hl = (k, at) => tl.fromTo(marks(k), { backgroundColor: 'rgba(0,0,0,0)' }, { backgroundColor: HL, duration: 0.3, ease: easeOut, immediateRender: false }, at);
+      const unhl = (k, at) => tl.to(marks(k), { backgroundColor: 'rgba(0,0,0,0)', duration: 0.4, ease: easeOut }, at);
+
+      // Everything that arrives later starts hidden, so a seek to 0 shows a clean frame.
+      tl.set(['#colL .inner > *', '#colR .inner > *', '#hall', '#tokens', '#handled'], { opacity: 0 }, 0);
+      tl.set('#colR', { opacity: CFG.offTo }, 0);
+
+      // 1 · open — divider and pipes draw down, left column fills in.
+      const o = T(c.open);
+      // 0 · entry — the panel (bars already on it) slides up from below the frame.
+      tl.fromTo('#panel', { yPercent: 100 }, { yPercent: 0, duration: CFG.slideIn, ease: easeOut }, 0);
+      tl.fromTo('#divider', { scaleY: 0 }, { scaleY: 1, duration: 0.7, ease: easeInOut }, o + 0.2);
+      tl.fromTo(['#pipeL', '#pipeRg'], { scaleY: 0 }, { scaleY: 1, duration: 0.8, ease: easeInOut }, o + 0.25);
+      tl.fromTo(['#hdL', '#wL', '#code', '#rL'], { opacity: 0, y: 12 },
+        { opacity: 1, y: 0, duration: 0.45, ease: easeOut, stagger: 0.06 }, o + 0.4);
+      tl.fromTo('#hdR', { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.45, ease: easeOut }, o + 0.5);
+      tl.set(codeLines, { clipPath: 'inset(0 100% 0 0)' }, 0);
+
+      // 2 · plumbing — the model streams the call; highlights land on each word.
+      typeLines(codeLines.slice(0, 6), T(c.type));
+      hl('headers', T(c.headers));
+      hl('auth', T(c.auth));
+      hl('url', T(c.url));
+      ['headers', 'auth', 'url'].forEach((k) => unhl(k, T(c.clear)));
+
+      // 3 · costs — tokens on the reads side, hallucinate on the writes side, docs pasted in.
+      pop('#tokens', T(c.tokens), { x: 12, y: 0 });
+      pop('#hall', T(c.hall), { x: 12, y: 0 });
+      pop('#docs', T(c.docs));
+
+      // 4 · parse — json.dumps / r.json() stream in, raw response lands in context.
+      tl.set(rawLines, { clipPath: 'inset(0 100% 0 0)' }, 0);
+      typeLines(codeLines.slice(6), T(c.parse));
+      hl('request', T(c.request));
+      hl('response', T(c.response));
+      pop('#raw', T(c.response));
+      typeLines(rawLines, T(c.response) + 0.15);
+      ['request', 'response'].forEach((k) => unhl(k, T(c.encaps)));
+
+      // 5 · frappectl — left steps back, right column wakes, one command types.
+      tl.to('#colL', { opacity: CFG.dimTo, duration: 0.6, ease: easeInOut }, T(c.encaps));
+      const r = T(c.ctl) - 0.3;
+      tl.to('#colR', { opacity: 1, duration: 0.5, ease: easeOut }, r);
+      tl.fromTo('#pipeR', { scaleY: 0 }, { scaleY: 1, duration: 0.8, ease: easeInOut }, r);
+      tl.fromTo(['#wR', '#cmd'], { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.45, ease: easeOut, stagger: 0.06 }, r + 0.15);
+      tl.set(cmdLines, { clipPath: 'inset(0 100% 0 0)' }, 0);
+      tl.set('#cmd', { className: 'box cmd live' }, r + 0.2);
+      const cmdDone = typeLines(cmdLines, T(c.ctl) + 0.1);
+
+      // 6 · reads — guide + compact rows, then the verdict badge. Hold.
+      tl.set('#cmd', { className: 'box cmd' }, cmdDone + 0.25);
+      tl.fromTo(['#rR', '#guide'], { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.45, ease: easeOut, stagger: 0.08 }, cmdDone + 0.25);
+      tl.set(cleanLines, { clipPath: 'inset(0 100% 0 0)' }, 0);
+      tl.set('#clean', { className: 'box small live' }, cmdDone + 0.6);
+      pop('#clean', cmdDone + 0.6);
+      const cleanDone = typeLines(cleanLines, cmdDone + 0.75);
+      pop('#handled', cleanDone + 0.3, { x: 12, y: 0 });
+
+      // 7 · exit the way it entered: back down below the frame.
+      tl.to('#panel', { yPercent: 100, duration: CFG.slideOut, ease: easeInOut }, CFG.exitAt - SRC_AT);
+      tl.set({}, {}, CFG.end - SRC_AT); // pad timeline to the full duration
+      window.__timelines['main'] = tl;
+    </script>
+  </body>
+</html>

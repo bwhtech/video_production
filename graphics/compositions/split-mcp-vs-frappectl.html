@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+    <link rel="stylesheet" href="theme/tokens.css" />
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         MCP vs frappectl — "not mutually exclusive".
+         Same split as split-api-vs-frappectl.html: Agent top, ERPNext bottom.
+         Left: MCP needs a server installed + configured on the site, then
+         exposes tools (doc list, doc get, …). Right: the frappectl commands
+         that do the same thing, lined up row for row with "=" between them.
+         Full-frame white panel slides up over the talking head and back down.
+         Light theme, flat colors.
+         ------------------------------------------------------------------ */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: transparent; }
+      #root { position: relative; width: 1920px; height: 1080px; background: transparent;
+        color: var(--ink-gray-9); font-family: var(--font-text); }
+      .stage { position: absolute; inset: 0; }
+      .panel { position: absolute; inset: 0; overflow: hidden; background: var(--surface-base); }
+      svg.lucide { stroke-width: 1.75; }
+
+      .bar { position: absolute; left: 80px; right: 80px; height: 100px; border-radius: 24px;
+        display: flex; align-items: center; justify-content: center; gap: 22px;
+        background: var(--surface-gray-2); border: 2px solid var(--outline-gray-3);
+        font-size: 44px; font-weight: 650; letter-spacing: -0.01em; }
+      .bar.top { top: 36px; }
+      .bar.bot { bottom: 36px; }
+      .bar svg { width: 54px; height: 54px; color: var(--ink-gray-7); }
+      .bar img { width: 62px; height: 62px; }
+
+      .col { position: absolute; top: 156px; bottom: 156px; width: 840px; }
+      .col.l { left: 80px; }
+      .col.r { right: 80px; }
+      .divider { position: absolute; left: 959px; top: 156px; bottom: 156px; width: 2px;
+        background: var(--outline-gray-2); transform-origin: 50% 0; }
+      .pipe { position: absolute; top: -20px; bottom: -20px; left: 18px; width: 0; transform-origin: 50% 0; }
+      .pipe.gray { border-left: 4px dashed var(--outline-gray-4); }
+      .pipe.solid { border-left: 4px solid var(--ink-gray-6); }
+      .pipe.brand { border-left: 4px solid var(--brand); }
+
+      .hd { position: absolute; top: 14px; left: 56px; right: 0; height: 48px; display: flex; align-items: center;
+        font: 700 32px/1 var(--font-mono); color: var(--ink-gray-7); }
+      .col.r .hd { color: var(--brand-ink); }
+      .lb { position: absolute; left: 56px; display: inline-flex; align-items: center; gap: 12px;
+        font: 600 26px/1 var(--font-text); color: var(--ink-gray-8); }
+      .lb em { font-style: normal; font-weight: 500; color: var(--ink-gray-6); }
+      .lb svg { width: 30px; height: 30px; color: var(--ink-gray-6); }
+
+      .step { position: absolute; left: 56px; right: 0; height: 80px; display: flex; align-items: center; gap: 20px;
+        padding: 0 26px; border-radius: 16px; background: var(--surface-gray-1); border: 2px solid var(--outline-gray-3);
+        font: 500 30px/1 var(--font-text); color: var(--ink-gray-8); }
+      .step svg { width: 36px; height: 36px; color: var(--ink-gray-6); }
+      .step .ok { margin-left: auto; display: flex; }
+      .step .ok svg { color: var(--ink-green-8); }
+
+      .row { position: absolute; left: 56px; right: 0; height: 84px; display: flex; align-items: center; gap: 18px;
+        padding: 0 26px; border-radius: 16px; background: var(--surface-gray-1); border: 2px solid var(--outline-gray-3);
+        font: 500 30px/1 var(--font-mono); color: var(--ink-gray-9); font-variant-ligatures: none; }
+      .row svg { width: 32px; height: 32px; color: var(--ink-gray-6); }
+      .row .p { color: var(--brand); font-weight: 700; }
+      .row.ghost { background: transparent; border-style: dashed; color: var(--ink-gray-6); }
+
+      .eq { position: absolute; left: 960px; width: 56px; height: 56px; margin: -28px 0 0 -28px; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center; background: var(--surface-base);
+        border: 2px solid var(--outline-gray-3); font: 700 30px/1 var(--font-mono); color: var(--ink-gray-7); }
+      .verdict { position: absolute; left: 960px; top: 880px; display: inline-flex; align-items: center; gap: 12px;
+        padding: 16px 28px; border-radius: 999px; background: var(--surface-violet-2); color: var(--brand-ink);
+        font: 600 30px/1 var(--font-text); white-space: nowrap; transform: translate(-50%, -50%); }
+      .verdict svg { width: 32px; height: 32px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-theme="light" data-composition-id="main"
+         data-start="0" data-duration="19.3" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="stage clip" id="stage" data-start="0" data-duration="19.3" data-track-index="0">
+      <div class="panel" id="panel">
+
+        <div class="bar top"><i data-lucide="bot"></i>Agent</div>
+
+        <!-- rows sit at the same y in both columns so they line up across the divider -->
+        <div class="col l" id="colL">
+          <div class="pipe gray" id="pipeLg"></div>
+          <div class="pipe solid" id="pipeL"></div>
+          <div class="hd" id="hdL">MCP</div>
+          <div class="lb" id="setupLb" style="top:84px"><i data-lucide="server"></i>Setup <em>· on your Frappe site</em></div>
+          <div class="step" id="install" style="top:134px"><i data-lucide="download"></i>Install MCP server<span class="ok" id="okInstall"><i data-lucide="check"></i></span></div>
+          <div class="step" id="configure" style="top:228px"><i data-lucide="settings"></i>Configure it<span class="ok" id="okConfigure"><i data-lucide="check"></i></span></div>
+          <div class="lb" id="toolsLb" style="top:326px"><i data-lucide="wrench"></i>Tools exposed</div>
+          <div class="row" id="t1" style="top:382px"><i data-lucide="wrench"></i>doc list</div>
+          <div class="row" id="t2" style="top:480px"><i data-lucide="wrench"></i>doc get</div>
+          <div class="row ghost" id="t3" style="top:578px">…</div>
+        </div>
+
+        <div class="divider" id="divider"></div>
+
+        <div class="col r" id="colR">
+          <div class="pipe gray" id="pipeRg"></div>
+          <div class="pipe brand" id="pipeR"></div>
+          <div class="hd" id="hdR">$ frappectl</div>
+          <div class="lb" id="cmdsLb" style="top:326px"><i data-lucide="terminal"></i>Commands</div>
+          <div class="row" id="c1" style="top:382px"><span class="p">$</span>fr doc list</div>
+          <div class="row" id="c2" style="top:480px"><span class="p">$</span>fr doc get</div>
+          <div class="row ghost" id="c3" style="top:578px">…</div>
+        </div>
+
+        <div class="eq" id="eq1" style="top:580px">=</div>
+        <div class="eq" id="eq2" style="top:678px">=</div>
+        <div class="verdict" id="verdict"><i data-lucide="plus"></i>not mutually exclusive</div>
+
+        <div class="bar bot"><img src="assets/img/erpnext-logo.svg" alt="" />ERPNext</div>
+      </div>
+      </div>
+
+      <!-- VO (mcp-vs-this.wav, whole clip), for sync review; drop for the alpha render -->
+      <audio id="vo" src="assets/mcp-vs-this.wav"
+             data-start="0" data-duration="15.7" data-track-index="1" data-volume="1"></audio>
+    </div>
+
+    <script>
+      lucide.createIcons();
+
+      // ---------------------------------------------------------------- knobs
+      // Cue times are seconds in mcp-vs-this.wav (Scribe word starts). The
+      // composition starts at the clip's 0, so SRC_AT = 0.
+      const SRC_AT = 0;
+      const CFG = {
+        cues: {
+          first: 0.50,       // "First thing"
+          install: 1.22,     // "install"
+          server: 2.00,      // "server" — install ticks
+          configure: 2.68,   // "configure"
+          site: 4.14,        // "site" — configure ticks
+          agent: 5.24,       // "for the agent to use it" — MCP line goes live
+          exposes: 7.12,     // "exposes this set of tools"
+          list: 10.06,       // "doc list"
+          get: 10.84,        // "doc get"
+          etc: 11.58,        // "et cetera"
+          same: 13.20,       // "the same thing"
+          exclusive: 14.60,  // "not mutually exclusive"
+        },
+        lead: 0.1,
+        slideIn: 0.7,
+        offTo: 0.25,         // frappectl column before "the same thing"
+        exitAt: 18.6,        // ~3s hold after the last word
+        slideOut: 0.7,
+        end: 19.3,
+      };
+      const T = (src) => src - SRC_AT - CFG.lead;
+
+      // ------------------------------------------------------------- curves
+      function bezier(x1, y1, x2, y2) {
+        const c = (a, b, t) => 3 * (1 - t) * (1 - t) * t * a + 3 * (1 - t) * t * t * b + t * t * t;
+        return (x) => {
+          let lo = 0, hi = 1, t = x;
+          for (let i = 0; i < 30; i++) {
+            t = (lo + hi) / 2;
+            if (c(x1, x2, t) < x) lo = t; else hi = t;
+          }
+          return c(y1, y2, t);
+        };
+      }
+      const easeOut = bezier(0.23, 1, 0.32, 1);
+      const easeInOut = bezier(0.77, 0, 0.175, 1);
+
+      // ----------------------------------------------------------- timeline
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const c = CFG.cues;
+      const up = (targets, at, stagger = 0) =>
+        tl.fromTo(targets, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.45, ease: easeOut, stagger }, at);
+      const pop = (targets, at, from = { scale: 0.9 }) =>
+        tl.fromTo(targets, { opacity: 0, ...from }, { opacity: 1, scale: 1, x: 0, y: 0, duration: 0.4, ease: easeOut }, at);
+      const draw = (targets, at, d = 0.8) =>
+        tl.fromTo(targets, { scaleY: 0 }, { scaleY: 1, duration: d, ease: easeInOut }, at);
+
+      // Hidden until their cue, so a seek to 0 shows a clean frame.
+      tl.set(['#hdL', '#hdR', '#setupLb', '#install', '#configure', '#okInstall', '#okConfigure',
+        '#toolsLb', '#t1', '#t2', '#t3', '#cmdsLb', '#c1', '#c2', '#c3', '#eq1', '#eq2', '#verdict'], { opacity: 0 }, 0);
+      tl.set(['#pipeL', '#pipeR'], { scaleY: 0 }, 0);
+      tl.set('#colR', { opacity: CFG.offTo }, 0);
+
+      // 0 · entry — full-frame panel slides up; divider and dashed lines draw down.
+      tl.fromTo('#panel', { yPercent: 100 }, { yPercent: 0, duration: CFG.slideIn, ease: easeOut }, 0);
+      draw('#divider', 0.35, 0.7);
+      draw(['#pipeLg', '#pipeRg'], 0.4);
+      up(['#hdL', '#hdR'], 0.45, 0.06);
+
+      // 1 · setup — rows on "install" / "configure", ticks on "server" / "site".
+      up('#setupLb', T(c.first));
+      up('#install', T(c.install));
+      pop('#okInstall', T(c.server));
+      up('#configure', T(c.configure));
+      pop('#okConfigure', T(c.site));
+      draw('#pipeL', T(c.agent));               // solid line over the dashed one: the agent can use it
+
+      // 2 · tools — one row per spoken tool; "et cetera" is the dashed row.
+      up('#toolsLb', T(c.exposes));
+      up('#t1', T(c.list));
+      up('#t2', T(c.get));
+      up('#t3', T(c.etc));
+
+      // 3 · same thing — frappectl wakes, matching commands line up, "=" lands between.
+      const s = T(c.same) - 0.3;
+      tl.to('#colR', { opacity: 1, duration: 0.5, ease: easeOut }, s);
+      draw('#pipeR', s);
+      up(['#cmdsLb', '#c1', '#c2', '#c3'], s + 0.1, 0.07);
+      pop(['#eq1', '#eq2'], T(c.same) + 0.25);
+
+      // 4 · not mutually exclusive — the verdict lands on the divider.
+      pop('#verdict', T(c.exclusive), { y: 16, scale: 0.96 });
+
+      // Exit the way it entered.
+      tl.to('#panel', { yPercent: 100, duration: CFG.slideOut, ease: easeInOut }, CFG.exitAt);
+      tl.set({}, {}, CFG.end);
+      window.__timelines['main'] = tl;
+    </script>
+  </body>
+</html>

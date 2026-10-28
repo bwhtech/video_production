@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/tokens.css" />
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Feature transition title.
+         Remake of the Remotion TitleSlide in bwh-video. A plain dark panel
+         wipes in from the left, the title settles in, then everything
+         leaves back the way it came (symmetric path, mirrored curve).
+         Title only. Transparent outside the panel: render with alpha and
+         overlay between two features.
+         ------------------------------------------------------------------ */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: var(--font-text);
+      }
+
+      .card {
+        position: absolute; inset: 0; overflow: hidden;
+        background: var(--surface-base);
+        clip-path: inset(0 100% 0 0);
+        display: flex; align-items: center; justify-content: center;
+      }
+      .title {
+        max-width: 1500px; text-align: center;
+        font-size: 128px; line-height: 1.05;
+        font-weight: var(--fw-bold); letter-spacing: -0.035em;
+        color: var(--ink-gray-9);
+        font-optical-sizing: auto;
+      }
+      .title .word { display: inline-block; will-change: transform, opacity, filter; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="3" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="card clip" id="card"
+           data-start="0" data-duration="3" data-track-index="0">
+        <h1 class="title" id="title"></h1>
+      </div>
+
+      <!-- whip transient (25ms into the file) lands on each wipe's peak velocity -->
+      <audio id="whip-in" src="assets/sfx/whip.wav"
+             data-start="0.24" data-duration="0.17" data-track-index="1" data-volume="0.8"></audio>
+      <audio id="whip-out" src="assets/sfx/whip.wav"
+             data-start="2.59" data-duration="0.17" data-track-index="2" data-volume="0.8"></audio>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        title: "Disable Apps",
+        wipe: 0.55,      // panel travel, in and out
+        titleAt: 0.2,    // title starts while the panel is still arriving
+        exitAt: 2.2,     // title starts leaving
+        panelOutAt: 2.35,
+      };
+      // Retiming? Keep data-duration on #root/#card in sync, and each whip's
+      // data-start = wipe start + wipe * 0.477 - 0.025 (curve peak minus transient).
+
+      // ------------------------------------------------------------- curves
+      // Strong ease-in-out for on-screen travel: cubic-bezier(0.77, 0, 0.175, 1)
+      function bezier(x1, y1, x2, y2) {
+        const c = (a, b, t) => 3 * (1 - t) * (1 - t) * t * a + 3 * (1 - t) * t * t * b + t * t * t;
+        return (x) => {
+          let lo = 0, hi = 1, t = x;
+          for (let i = 0; i < 30; i++) {
+            t = (lo + hi) / 2;
+            if (c(x1, x2, t) < x) lo = t; else hi = t;
+          }
+          return c(y1, y2, t);
+        };
+      }
+      const easeInOut = bezier(0.77, 0, 0.175, 1);
+      // Mirrored ease-out for the exit, so the way out retraces the way in
+      const easeOutMirror = bezier(0.68, 0, 0.77, 0);
+
+      // Critically damped spring (damping 1.0, response 0.4s), mapped onto a tween
+      const SPRING_DUR = 0.8; // residual at 0.8s ≈ 0.00004 — settled
+      const omega = (2 * Math.PI) / 0.4;
+      const spring = (p) => {
+        const t = p * SPRING_DUR;
+        return p >= 1 ? 1 : 1 - (1 + omega * t) * Math.exp(-omega * t);
+      };
+
+      // ------------------------------------------------------------- title
+      const titleEl = document.getElementById("title");
+      CFG.title.split(" ").forEach((word, i, all) => {
+        const s = document.createElement("span");
+        s.className = "word";
+        s.textContent = word;
+        titleEl.appendChild(s);
+        if (i < all.length - 1) titleEl.appendChild(document.createTextNode(" "));
+      });
+      const words = [...titleEl.querySelectorAll(".word")];
+
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+
+      // one painter for the clip, so seeking in any direction stays exact
+      const panel = { p: 0 }; // 0 = hidden, 1 = covering the frame
+      const paint = () => gsap.set("#card", { clipPath: `inset(0 ${(1 - panel.p) * 100}% 0 0)` });
+      paint();
+      tl.eventCallback("onUpdate", paint);
+
+      // --- entry: panel travels in from the left
+      tl.to(panel, { p: 1, duration: CFG.wipe, ease: easeInOut }, 0);
+
+      // title follows the panel's direction and settles on a critically damped spring
+      tl.fromTo(words, { x: -48, scale: 0.97 },
+        { x: 0, scale: 1, duration: SPRING_DUR, ease: spring, stagger: 0.05 }, CFG.titleAt);
+      tl.fromTo(words, { opacity: 0 },
+        { opacity: 1, duration: 0.25, ease: bezier(0.23, 1, 0.32, 1), stagger: 0.05 }, CFG.titleAt);
+      // motion blur only while it's moving fast
+      tl.fromTo(words, { filter: "blur(6px)" },
+        { filter: "blur(0px)", duration: 0.3, ease: bezier(0.23, 1, 0.32, 1), stagger: 0.05 }, CFG.titleAt);
+
+      // --- exit: retrace the path — title and panel go back left
+      tl.to([...words].reverse(), {
+        x: -48, scale: 0.97, opacity: 0, filter: "blur(6px)",
+        duration: 0.3, ease: easeOutMirror, stagger: 0.05,
+      }, CFG.exitAt);
+      tl.to(panel, { p: 0, duration: CFG.wipe, ease: easeInOut }, CFG.panelOutAt);
+    </script>
+  </body>
+</html>

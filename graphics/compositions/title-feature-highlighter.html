@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape" data-theme="dark"
+      data-composition-variables='[
+        {"id":"title","type":"string","label":"Title","default":"Disable Apps"},
+        {"id":"hue","type":"enum","label":"Marker hue","default":"violet","options":[
+          {"value":"violet","label":"Violet"},{"value":"blue","label":"Blue"},
+          {"value":"green","label":"Green"},{"value":"amber","label":"Amber"},
+          {"value":"pink","label":"Pink"}]}
+      ]'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/tokens.css" />
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Feature transition title — "Highlighter" variant.
+         Built on title-feature-wipe.html. A plain dark panel wipes in from
+         the left, the title settles, then a marker stroke in a frappe-ui
+         badge hue swipes behind the title (or its last word). On exit the
+         stroke un-draws back to the left, the words leave, and the panel
+         retracts the way it came. Transparent outside the panel.
+         ------------------------------------------------------------------ */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: var(--font-text);
+      }
+
+      .card {
+        position: absolute; inset: 0; overflow: hidden;
+        background: var(--surface-base);
+        clip-path: inset(0 100% 0 0);
+        display: flex; align-items: center; justify-content: center;
+      }
+      .title {
+        text-align: center; white-space: nowrap;
+        font-size: 128px; line-height: 1.05;
+        font-weight: var(--fw-bold); letter-spacing: -0.035em;
+        color: var(--ink-gray-9);
+        font-optical-sizing: auto;
+      }
+      .title .word {
+        display: inline-block; position: relative; z-index: 1;
+        will-change: transform, opacity, filter;
+      }
+
+      /* the stroke sits behind the words it marks; sized in em so it follows the type */
+      .mark { display: inline-block; position: relative; margin-left: 0.08em; }
+      .hl {
+        position: absolute; z-index: 0;
+        top: 0.40em; bottom: 0.02em; left: -0.06em; right: -0.14em;
+        background: var(--hl);
+        border-radius: 0.14em 0.22em 0.18em 0.1em;  /* uneven ends read as a hand-drawn stroke */
+        will-change: transform;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="3.4" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="card clip" id="card"
+           data-start="0" data-duration="3.4" data-track-index="0">
+        <h1 class="title" id="title"></h1>
+      </div>
+
+      <!-- whip transient (25ms into the file) lands on each wipe's peak velocity -->
+      <audio id="whip-in" src="assets/sfx/whip.wav"
+             data-start="0.24" data-duration="0.17" data-track-index="1" data-volume="0.8"></audio>
+      <!-- soft whoosh under the stroke; its peak (75ms in) meets the stroke's fastest moment -->
+      <audio id="stroke-in" src="assets/sfx/whoosh.wav"
+             data-start="0.73" data-duration="0.15" data-track-index="3" data-volume="0.35"></audio>
+      <audio id="whip-out" src="assets/sfx/whip.wav"
+             data-start="2.99" data-duration="0.17" data-track-index="2" data-volume="0.8"></audio>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        title: "Disable Apps",
+        hue: "violet",     // violet | blue | green | amber | pink — frappe-ui badge ramp
+        mark: "last",      // "last" = highlight the last word, "title" = the whole title
+        wipe: 0.55,        // panel travel, in and out
+        titleAt: 0.2,      // title starts while the panel is still arriving
+        strokeAt: 0.8,     // marker swipes in once the title has settled
+        strokeDur: 0.45,
+        strokeOutAt: 2.3,  // marker un-draws first...
+        exitAt: 2.6,       // ...then the words leave
+        panelOutAt: 2.75,
+      };
+      // per-render overrides: --variables '{"title":"…","hue":"blue"}' (or --batch)
+      const VARS = window.__hyperframes?.getVariables?.() || {};
+      if (VARS.title) CFG.title = VARS.title;
+      if (VARS.hue) CFG.hue = VARS.hue;
+      // Retiming? Keep data-duration on #root/#card in sync, and each whip's
+      // data-start = wipe start + wipe * 0.477 - 0.025 (curve peak minus transient).
+      // stroke-in data-start = strokeAt - 0.07.
+
+      // Step 6 of the dark ramp: saturated enough to read as colour, dark enough
+      // that --ink-gray-9 on top stays well above AA for large text.
+      const HUES = {
+        violet: "var(--surface-violet-6)",
+        blue: "var(--surface-blue-6)",
+        green: "var(--surface-green-6)",
+        amber: "var(--surface-amber-6)",
+        pink: "var(--surface-pink-6)",
+      };
+      document.documentElement.style.setProperty("--hl", HUES[CFG.hue] || HUES.violet);
+
+      // ------------------------------------------------------------- curves
+      function bezier(x1, y1, x2, y2) {
+        const c = (a, b, t) => 3 * (1 - t) * (1 - t) * t * a + 3 * (1 - t) * t * t * b + t * t * t;
+        return (x) => {
+          let lo = 0, hi = 1, t = x;
+          for (let i = 0; i < 30; i++) {
+            t = (lo + hi) / 2;
+            if (c(x1, x2, t) < x) lo = t; else hi = t;
+          }
+          return c(y1, y2, t);
+        };
+      }
+      // Strong ease-in-out for on-screen travel
+      const easeInOut = bezier(0.77, 0, 0.175, 1);
+      // Strong ease-out for entrances
+      const easeOut = bezier(0.23, 1, 0.32, 1);
+      // Mirrored ease-out for exits, so the way out retraces the way in
+      const easeOutMirror = bezier(0.68, 0, 0.77, 0);
+
+      // Critically damped spring (damping 1.0, response 0.4s), mapped onto a tween
+      const SPRING_DUR = 0.8; // residual at 0.8s ≈ 0.00004 — settled
+      const omega = (2 * Math.PI) / 0.4;
+      const spring = (p) => {
+        const t = p * SPRING_DUR;
+        return p >= 1 ? 1 : 1 - (1 + omega * t) * Math.exp(-omega * t);
+      };
+
+      // ------------------------------------------------------------- title
+      const titleEl = document.getElementById("title");
+      const parts = CFG.title.split(" ");
+      const markFrom = CFG.mark === "title" ? 0 : parts.length - 1;
+
+      const mark = document.createElement("span");
+      mark.className = "mark";
+      const hl = document.createElement("span");
+      hl.className = "hl";
+      mark.appendChild(hl);
+
+      parts.forEach((word, i) => {
+        const s = document.createElement("span");
+        s.className = "word";
+        s.textContent = word;
+        const host = i >= markFrom ? mark : titleEl;
+        if (i === markFrom) titleEl.appendChild(mark);
+        host.appendChild(s);
+        if (i < parts.length - 1) host.appendChild(document.createTextNode(" "));
+      });
+      const words = [...titleEl.querySelectorAll(".word")];
+
+      // keep long titles on one line: shrink from 128px only as far as needed
+      const MAX_W = 1680, MIN_PX = 96;
+      const fit = () => {
+        titleEl.style.fontSize = "";
+        const w0 = titleEl.getBoundingClientRect().width;
+        if (w0 > MAX_W) titleEl.style.fontSize = Math.max(MIN_PX, 128 * MAX_W / w0) + "px";
+      };
+      fit();
+      document.fonts.ready.then(fit); // re-measure once Inter is in, fallback metrics differ
+
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+
+      // one painter for the clip, so seeking in any direction stays exact
+      const panel = { p: 0 }; // 0 = hidden, 1 = covering the frame
+      const paint = () => gsap.set("#card", { clipPath: `inset(0 ${(1 - panel.p) * 100}% 0 0)` });
+      paint();
+      tl.eventCallback("onUpdate", paint);
+
+      // --- entry: panel travels in from the left
+      tl.to(panel, { p: 1, duration: CFG.wipe, ease: easeInOut }, 0);
+
+      // title follows the panel's direction and settles on a critically damped spring
+      tl.fromTo(words, { x: -48, scale: 0.97 },
+        { x: 0, scale: 1, duration: SPRING_DUR, ease: spring, stagger: 0.05 }, CFG.titleAt);
+      tl.fromTo(words, { opacity: 0 },
+        { opacity: 1, duration: 0.25, ease: easeOut, stagger: 0.05 }, CFG.titleAt);
+      tl.fromTo(words, { filter: "blur(6px)" },
+        { filter: "blur(0px)", duration: 0.3, ease: easeOut, stagger: 0.05 }, CFG.titleAt);
+
+      // --- the stroke: drawn left→right like a marker, slightly tilted
+      gsap.set(hl, { transformOrigin: "0% 50%", rotation: -1.5, skewX: -8 });
+      tl.fromTo(hl, { scaleX: 0 }, { scaleX: 1, duration: CFG.strokeDur, ease: easeOut }, CFG.strokeAt);
+
+      // --- exit: un-draw the stroke back to where it started, then retrace the entry
+      tl.to(hl, { scaleX: 0, duration: 0.3, ease: easeOutMirror }, CFG.strokeOutAt);
+      tl.to([...words].reverse(), {
+        x: -48, scale: 0.97, opacity: 0, filter: "blur(6px)",
+        duration: 0.3, ease: easeOutMirror, stagger: 0.05,
+      }, CFG.exitAt);
+      tl.to(panel, { p: 0, duration: CFG.wipe, ease: easeInOut }, CFG.panelOutAt);
+    </script>
+  </body>
+</html>

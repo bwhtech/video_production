@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Word grid that lights up on cue.
+         Every word is on screen from frame 0 in a dimmed grey — no entrance —
+         and snaps to full ink at the moment the voiceover names it. Same palette as
+         title-bouncing-ball.html and list-walking-dot.html.
+         ------------------------------------------------------------------ */
+      :root {
+        --card-bg: #ececec;
+        --ink: #212121;
+        --ink-dim: #888888;   /* unspoken words — 3:1 on the card bg */
+        --accent: #0a8df7;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: "Inter", system-ui, sans-serif;
+      }
+
+      .card {
+        position: absolute; inset: 0; overflow: hidden;
+        background: var(--card-bg);
+      }
+
+      .stack {
+        position: absolute; left: 0; right: 0;
+        top: 50%; transform: translateY(-50%);
+        display: flex; flex-direction: column; align-items: center;
+      }
+
+      /* rows are explicit so the grid stays balanced instead of wrapping
+         wherever the longest word happens to land */
+      .row {
+        display: flex; justify-content: center; align-items: baseline;
+        gap: 132px;
+      }
+      .row + .row { margin-top: 88px; }
+
+      .word {
+        font-size: 76px; font-weight: 700; letter-spacing: -0.004em;
+        color: var(--ink-dim);
+        white-space: nowrap;
+        will-change: color;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="9.566" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="card clip" id="card"
+           data-start="0" data-duration="9.566" data-track-index="0">
+        <div class="stack">
+          <div id="grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        // one array per row — rows are explicit so the grid stays balanced
+        rows: [
+          ["Items", "Customers", "Suppliers"],
+          ["Chart of Accounts", "Warehouses"],
+        ],
+
+        // seconds at which each word is SPOKEN, in reading order (row by row).
+        // The highlight starts slightly before this so it lands on the word.
+        cues: [1.68, 2.16, 2.72, 3.28, 4.08],
+        lead: 0.1,       // start the highlight this early
+        hit: 0.28,       // how long a word takes to reach full ink
+
+        inkDim: "#888888",  // must match --ink-dim
+        inkLit: "#212121",  // must match --ink
+      };
+
+      const DUR = 9.566; // keep in sync with data-duration on #root and #card
+
+      // -------------------------------------------------------------- layout
+      const gridEl = document.getElementById("grid");
+      const words = [];
+      CFG.rows.forEach((row) => {
+        const rowEl = document.createElement("div");
+        rowEl.className = "row";
+        row.forEach((text) => {
+          const el = document.createElement("div");
+          el.className = "word";
+          el.textContent = text;
+          rowEl.appendChild(el);
+          words.push(el);
+        });
+        gridEl.appendChild(rowEl);
+      });
+
+      // ------------------------------------------------------------ timeline
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+
+      // each word snaps from dim to full ink as it is spoken; the previous
+      // word stays lit, so the grid fills in as he lists them
+      words.forEach((el, i) => {
+        const at = Math.max(0, CFG.cues[i] - CFG.lead);
+        tl.to(
+          el,
+          { color: CFG.inkLit, duration: CFG.hit, ease: "power2.out" },
+          at
+        );
+      });
+    </script>
+  </body>
+</html>

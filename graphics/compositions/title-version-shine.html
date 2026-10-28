@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape" data-theme="dark"
+      data-composition-variables='[
+        {"id":"title","type":"string","label":"Version","default":"v16.50"}
+      ]'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/tokens.css" />
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Version release title — "Shine" variant.
+         Same panel wipe + spring-settled title as title-feature-highlighter,
+         but the version reads as a shiny object: gold type, a lucide sparkle
+         pops in at its top-right corner, one hard-edged sheen band sweeps
+         across the digits, a small second sparkle glints once, then
+         everything holds still and retraces out. Flat token colours only.
+         ------------------------------------------------------------------ */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: var(--font-text);
+      }
+
+      .card {
+        position: absolute; inset: 0; overflow: hidden;
+        background: var(--surface-base);
+        clip-path: inset(0 100% 0 0);
+        display: flex; align-items: center; justify-content: center;
+      }
+      .title {
+        position: relative;
+        white-space: nowrap;
+        font-size: 240px; line-height: 1;
+        font-weight: var(--fw-bold); letter-spacing: -0.04em;
+        font-variant-numeric: tabular-nums;
+        font-optical-sizing: auto;
+        will-change: transform, opacity, filter;
+      }
+      .ink { color: var(--ink-amber-8); }
+      /* exact copy of the text, shown only inside the moving band */
+      .sheen {
+        position: absolute; inset: 0;
+        color: var(--ink-gray-9);
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      }
+
+      .spark {
+        position: absolute; display: block;
+        fill: var(--ink-amber-9);
+        will-change: transform, opacity;
+      }
+      /* sized in em so the sparkles follow the type */
+      .spark.big { width: 0.55em; height: 0.55em; top: -0.24em; right: -0.52em; }
+      .spark.small { width: 0.24em; height: 0.24em; top: 0.38em; right: -0.74em; fill: var(--ink-amber-10); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="3.5" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="card clip" id="card"
+           data-start="0" data-duration="3.5" data-track-index="0">
+        <h1 class="title" id="title">
+          <span class="ink" id="ink"></span>
+          <span class="sheen" id="sheen" aria-hidden="true"></span>
+          <!-- lucide "sparkle" (lucide-static 0.460.0), filled -->
+          <svg class="spark big" id="spark" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+          </svg>
+          <svg class="spark small" id="spark2" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+          </svg>
+        </h1>
+      </div>
+
+      <!-- whip transient (25ms into the file) lands on each wipe's peak velocity -->
+      <audio id="whip-in" src="assets/sfx/whip.wav"
+             data-start="0.24" data-duration="0.17" data-track-index="1" data-volume="0.8"></audio>
+      <!-- glint has a 4ms attack, so it starts right on the sparkle pop -->
+      <audio id="glint" src="assets/sfx/glint.wav"
+             data-start="0.85" data-duration="0.7" data-track-index="3" data-volume="0.3"></audio>
+      <audio id="whip-out" src="assets/sfx/whip.wav"
+             data-start="3.09" data-duration="0.17" data-track-index="2" data-volume="0.8"></audio>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        title: "v16.50",
+        wipe: 0.55,        // panel travel, in and out
+        titleAt: 0.2,      // title starts while the panel is still arriving
+        sparkAt: 0.85,     // sparkle pops once the title has settled
+        sheenAt: 0.95,     // band sweeps left→right across the digits
+        sheenDur: 0.65,
+        sheenW: 18,        // band width, % of the title width
+        sheenSlant: 10,    // horizontal offset top→bottom, % of the title width
+        glintAt: 1.45,     // small sparkle glints once, as the band leaves
+        exitAt: 2.6,       // sparkles go first, then the title...
+        panelOutAt: 2.85,  // ...then the panel retracts
+      };
+      const VARS = window.__hyperframes?.getVariables?.() || {};
+      if (VARS.title) CFG.title = VARS.title;
+      // Retiming? Keep data-duration on #root/#card = panelOutAt + wipe + 0.1,
+      // whip-out data-start = panelOutAt + wipe * 0.477 - 0.025, glint data-start = sparkAt.
+
+      document.getElementById("ink").textContent = CFG.title;
+      document.getElementById("sheen").textContent = CFG.title;
+
+      // ------------------------------------------------------------- curves
+      function bezier(x1, y1, x2, y2) {
+        const c = (a, b, t) => 3 * (1 - t) * (1 - t) * t * a + 3 * (1 - t) * t * t * b + t * t * t;
+        return (x) => {
+          let lo = 0, hi = 1, t = x;
+          for (let i = 0; i < 30; i++) {
+            t = (lo + hi) / 2;
+            if (c(x1, x2, t) < x) lo = t; else hi = t;
+          }
+          return c(y1, y2, t);
+        };
+      }
+      const easeInOut = bezier(0.77, 0, 0.175, 1);
+      const easeOut = bezier(0.23, 1, 0.32, 1);
+      const easeOutMirror = bezier(0.68, 0, 0.77, 0);
+
+      // Critically damped spring (damping 1.0, response 0.4s) for the title
+      const SPRING_DUR = 0.8;
+      const omega = (2 * Math.PI) / 0.4;
+      const spring = (p) => {
+        const t = p * SPRING_DUR;
+        return p >= 1 ? 1 : 1 - (1 + omega * t) * Math.exp(-omega * t);
+      };
+      // Under-damped spring (damping 0.6, response 0.4s) for the sparkle pop:
+      // one small overshoot (~9%) so it lands like a struck object, then settles
+      const POP_DUR = 0.9;
+      const zeta = 0.6, w0 = (2 * Math.PI) / 0.4, wd = w0 * Math.sqrt(1 - zeta * zeta);
+      const pop = (p) => {
+        if (p >= 1) return 1;
+        const t = p * POP_DUR;
+        return 1 - Math.exp(-zeta * w0 * t) * (Math.cos(wd * t) + (zeta * w0 / wd) * Math.sin(wd * t));
+      };
+
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+
+      // painters for the clip-paths, so seeking in any direction stays exact
+      const panel = { p: 0 };       // 0 = hidden, 1 = covering the frame
+      const band = { x: -30 };      // left edge of the band, % of title width
+      const paint = () => {
+        gsap.set("#card", { clipPath: `inset(0 ${(1 - panel.p) * 100}% 0 0)` });
+        const a = band.x, w = CFG.sheenW, s = CFG.sheenSlant;
+        gsap.set("#sheen", {
+          clipPath: `polygon(${a + s}% 0, ${a + s + w}% 0, ${a + w}% 100%, ${a}% 100%)`,
+        });
+      };
+      paint();
+      tl.eventCallback("onUpdate", paint);
+
+      // --- entry: panel travels in from the left, title follows and springs in
+      tl.to(panel, { p: 1, duration: CFG.wipe, ease: easeInOut }, 0);
+      tl.fromTo("#title", { x: -64, scale: 0.97 },
+        { x: 0, scale: 1, duration: SPRING_DUR, ease: spring }, CFG.titleAt);
+      tl.fromTo("#title", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: easeOut }, CFG.titleAt);
+      tl.fromTo("#title", { filter: "blur(6px)" },
+        { filter: "blur(0px)", duration: 0.3, ease: easeOut }, CFG.titleAt);
+
+      // --- the shine: sparkle pops with a quarter turn, band sweeps, small sparkle glints
+      gsap.set(["#spark", "#spark2"], { transformOrigin: "50% 50%", opacity: 0 });
+      tl.fromTo("#spark", { scale: 0.4, rotation: -90 },
+        { scale: 1, rotation: 0, duration: POP_DUR, ease: pop }, CFG.sparkAt);
+      tl.fromTo("#spark", { opacity: 0 }, { opacity: 1, duration: 0.15, ease: easeOut }, CFG.sparkAt);
+
+      tl.fromTo(band, { x: -30 }, { x: 120, duration: CFG.sheenDur, ease: easeInOut }, CFG.sheenAt);
+
+      tl.fromTo("#spark2", { scale: 0.4, rotation: -45, opacity: 0 },
+        { scale: 1, rotation: 0, opacity: 1, duration: 0.25, ease: easeOut }, CFG.glintAt);
+      tl.to("#spark2", { scale: 0.6, opacity: 0, duration: 0.35, ease: easeOutMirror }, CFG.glintAt + 0.35);
+
+      // --- exit: sparkle leaves first, then the title retraces its entry, then the panel
+      tl.to("#spark", { scale: 0.6, rotation: 45, opacity: 0, duration: 0.25, ease: easeOutMirror }, CFG.exitAt);
+      tl.to("#title", {
+        x: -64, scale: 0.97, opacity: 0, filter: "blur(6px)",
+        duration: 0.3, ease: easeOutMirror,
+      }, CFG.exitAt + 0.1);
+      tl.to(panel, { p: 0, duration: CFG.wipe, ease: easeInOut }, CFG.panelOutAt);
+    </script>
+  </body>
+</html>

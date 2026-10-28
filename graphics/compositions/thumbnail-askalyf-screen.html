@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/tokens.css" />
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Frappe App Review — Ask Alyf thumbnail, screen + face variant.
+         Background: frame 07:02 of final.mp4 (facecam inset bottom-left,
+         mouth closed, looking at camera; Ask ALYF pie chart on screen),
+         cropped 16:9 from the bottom-left (source x0-1600, y180-1080) and
+         scaled 1.2 to fill. A dark title panel sits in the top-left over
+         the app grid; the inset and the pie chart stay clear.
+         The inset itself (src x24-346, y637-1055) is covered with a crop of
+         frame 00:04.90 (same frame as thumbnail A): eyes to camera, lips
+         closed. In 07:02 the eyes look up and the hands are cramped.
+         ------------------------------------------------------------------ */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: var(--surface-base);
+        font-family: var(--font-text);
+      }
+      .bg { position: absolute; inset: 0; background: var(--surface-base); }
+      .frame {
+        position: absolute; left: 0; top: 0; width: 1920px; height: 1080px;
+        transform-origin: 0 0;
+        transform: scale(1.2) translate(0, -180px);
+      }
+
+      /* inset face: src rect scaled 1.2 and shifted -180 → (28.8, 548.4) 386.4×501.6 */
+      .inset {
+        position: absolute; left: 28px; top: 547px; width: 389px; height: 505px;
+        border-radius: 8px; overflow: hidden;
+      }
+      .inset img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+      .panel {
+        position: absolute; left: 0; top: 0; width: 1130px; height: 536px;
+        background: var(--surface-base);
+        border-bottom-right-radius: 56px;
+        padding: 64px 0 0 96px;
+      }
+      .series {
+        font-size: 72px; line-height: 1;
+        font-weight: var(--fw-black); letter-spacing: -0.035em;
+        color: var(--ink-gray-9); white-space: nowrap;
+      }
+      .mark { display: inline-block; position: relative; margin-left: 0.18em; }
+      .mark > span { position: relative; z-index: 1; }
+      .mark::before {
+        content: ""; position: absolute; z-index: 0;
+        top: 0.18em; bottom: -0.06em; left: -0.17em; right: -0.21em;
+        background: var(--brand); border-radius: 0.1em;
+        transform: skewX(-6deg);
+      }
+      .app { margin-top: 48px; display: flex; align-items: center; gap: 32px; }
+      .app img { width: 176px; height: 176px; flex: none; }
+      .app h1 {
+        font-size: 184px; line-height: 0.9;
+        font-weight: var(--fw-black); letter-spacing: -0.045em;
+        color: var(--ink-gray-9); white-space: nowrap;
+      }
+      .pitch {
+        margin-top: 44px; margin-left: 4px;
+        font-size: 60px; line-height: 1.1;
+        font-weight: var(--fw-semibold); letter-spacing: -0.025em;
+        color: var(--ink-gray-6); white-space: nowrap;
+      }
+      .pitch b { color: var(--ink-gray-9); font-weight: var(--fw-bold); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="1" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="bg"></div>
+      <img class="frame" src="assets/img/askalyf-screen-face-422.png" alt="" />
+      <div class="inset"><img src="assets/img/askalyf-inset-face.png" alt="" /></div>
+
+      <div class="panel">
+        <div class="series">Tutorial and<span class="mark"><span>Review</span></span></div>
+        <div class="app">
+          <img src="assets/img/ask-alyf-logo.png" alt="" />
+          <h1>Ask ALYF</h1>
+        </div>
+        <div class="pitch">AI chatbot <b>inside ERPNext</b></div>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

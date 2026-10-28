@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/tokens.css" />
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         "What's New in Frappe Framework" — August 2026 thumbnail.
+         Left: "What's new in" (smaller, violet marker stroke from the
+         in-video title cards) over the primary FRAPPE / FRAMEWORK stack.
+         Right: the real frame, room kept, fading into the surface on the
+         left. No cutout, so no matte holes.
+         ------------------------------------------------------------------ */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: var(--surface-base);
+        font-family: var(--font-text);
+      }
+
+      /* Native plate (1920x1080): subject centre x880, head top y173, thumbs
+         L x500..690 / R x1090..1290. Scaled 1.10 from the top-left, shifted
+         (420, -70): subject centre x1388, head top y120, thumbs x970..1839. */
+      .photo-wrap {
+        position: absolute; inset: 0;
+        -webkit-mask-image: linear-gradient(90deg, transparent 30%, #000 47%);
+                mask-image: linear-gradient(90deg, transparent 30%, #000 47%);
+      }
+      .photo {
+        position: absolute; left: 0; top: 0; width: 1920px; height: 1080px;
+        transform-origin: 0 0;
+        transform: translate(420px, -70px) scale(1.10);
+      }
+
+      .col {
+        position: absolute; left: 110px; top: 0; bottom: 0; width: 900px;
+        display: flex; flex-direction: column; justify-content: center;
+      }
+      .kicker {
+        font-size: 72px; line-height: 1.05;
+        font-weight: var(--fw-bold); letter-spacing: -0.03em;
+        color: var(--ink-gray-9);
+        margin-left: 8px;
+      }
+      /* marker stroke — same geometry as the title cards */
+      .mark { display: inline-block; position: relative; margin-right: 0.14em; }
+      .mark > span { position: relative; z-index: 1; }
+      .mark::before {
+        content: ""; position: absolute; z-index: 0;
+        top: 0.40em; bottom: 0.02em; left: -0.06em; right: -0.14em;
+        background: var(--surface-violet-6);
+        border-radius: 0.14em 0.22em 0.18em 0.1em;
+        transform: rotate(-1.5deg) skewX(-8deg);
+      }
+      .headline {
+        margin-top: 26px;
+        font-size: 164px; line-height: 0.9;
+        font-weight: 800; letter-spacing: -0.05em;
+        color: var(--ink-gray-9);
+      }
+      .headline span { display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="1" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="photo-wrap">
+        <img class="photo" src="assets/img/hussain-plate-aug-full-graded.png" alt="" />
+      </div>
+
+      <div class="col">
+        <div class="kicker"><span class="mark"><span>What's new</span></span> in</div>
+        <h1 class="headline"><span>Frappe</span><span>Framework</span></h1>
+      </div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

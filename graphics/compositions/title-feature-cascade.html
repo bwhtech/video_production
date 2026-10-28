@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/tokens.css" />
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Feature transition title — "hue cascade" variant.
+         Same panel as title-feature-wipe.html. The title arrives letter by
+         letter, each letter tinted in a frappe-ui badge hue, and each one
+         resolves to neutral ink just after it lands — a wave of colour runs
+         across the word and settles. The exit retraces it right→left.
+         Transparent outside the panel: render with alpha.
+         ------------------------------------------------------------------ */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: var(--font-text);
+      }
+
+      .card {
+        position: absolute; inset: 0; overflow: hidden;
+        background: var(--surface-base);
+        clip-path: inset(0 100% 0 0);
+        display: flex; align-items: center; justify-content: center;
+      }
+      .title {
+        max-width: 1720px; text-align: center;
+        font-size: 128px; line-height: 1.05;
+        font-weight: var(--fw-bold); letter-spacing: -0.035em;
+        color: var(--ink-gray-9);
+        font-optical-sizing: auto;
+      }
+      .word { display: inline-block; white-space: nowrap; }
+      /* two stacked copies per letter: neutral base + tint on top */
+      .ch { display: inline-block; position: relative; will-change: transform, opacity; }
+      .ch .tint { position: absolute; left: 0; top: 0; color: var(--hue); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="3" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="card clip" id="card"
+           data-start="0" data-duration="3" data-track-index="0">
+        <h1 class="title" id="title"></h1>
+      </div>
+
+      <!-- whip transient (25ms into the file) lands on each wipe's peak velocity -->
+      <audio id="whip-in" src="assets/sfx/whip.wav"
+             data-start="0.24" data-duration="0.17" data-track-index="1" data-volume="0.8"></audio>
+      <audio id="whip-out" src="assets/sfx/whip.wav"
+             data-start="2.64" data-duration="0.17" data-track-index="2" data-volume="0.8"></audio>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        title: "Disable Apps",
+        fontSize: 128,    // px
+        // frappe-ui badge hues (dark ramp), cycled per letter
+        hues: ["--ink-violet-8", "--ink-blue-8", "--ink-green-8", "--ink-amber-8", "--ink-pink-8"],
+        wipe: 0.55,       // panel travel, in and out
+        lettersAt: 0.2,   // first letter starts while the panel is still arriving
+        stagger: 0.035,   // per letter
+        exitStagger: 0.03,
+        tintHold: 0.25,   // colour stays this long after a letter starts
+        tintFade: 0.35,   // colour → neutral
+        exitAt: 2.1,      // colour wave starts running back
+        panelOutAt: 2.4,
+      };
+      // Retiming? Keep data-duration on #root/#card in sync, and each whip's
+      // data-start = wipe start + wipe * 0.477 - 0.025 (curve peak minus transient).
+
+      // ------------------------------------------------------------- curves
+      function bezier(x1, y1, x2, y2) {
+        const c = (a, b, t) => 3 * (1 - t) * (1 - t) * t * a + 3 * (1 - t) * t * t * b + t * t * t;
+        return (x) => {
+          let lo = 0, hi = 1, t = x;
+          for (let i = 0; i < 30; i++) {
+            t = (lo + hi) / 2;
+            if (c(x1, x2, t) < x) lo = t; else hi = t;
+          }
+          return c(y1, y2, t);
+        };
+      }
+      const easeInOut = bezier(0.77, 0, 0.175, 1);   // on-screen travel
+      const easeOut = bezier(0.23, 1, 0.32, 1);      // enter
+      const easeOutMirror = bezier(0.68, 0, 0.77, 0); // exit retraces the entry
+
+      // Critically damped spring (damping 1.0, response 0.4s), mapped onto a tween
+      const SPRING_DUR = 0.8;
+      const omega = (2 * Math.PI) / 0.4;
+      const spring = (p) => {
+        const t = p * SPRING_DUR;
+        return p >= 1 ? 1 : 1 - (1 + omega * t) * Math.exp(-omega * t);
+      };
+
+      // ------------------------------------------------------------- title
+      const titleEl = document.getElementById("title");
+      titleEl.style.fontSize = CFG.fontSize + "px";
+      const letters = [];
+      CFG.title.split(" ").forEach((word, wi, all) => {
+        const w = document.createElement("span");
+        w.className = "word";
+        [...word].forEach((c) => {
+          const ch = document.createElement("span");
+          ch.className = "ch";
+          ch.textContent = c;
+          const tint = document.createElement("span");
+          tint.className = "tint";
+          tint.textContent = c;
+          tint.style.setProperty("--hue", `var(${CFG.hues[letters.length % CFG.hues.length]})`);
+          ch.appendChild(tint);
+          w.appendChild(ch);
+          letters.push(ch);
+        });
+        titleEl.appendChild(w);
+        if (wi < all.length - 1) titleEl.appendChild(document.createTextNode(" "));
+      });
+      const tints = letters.map((l) => l.querySelector(".tint"));
+
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+
+      // one painter for the clip, so seeking in any direction stays exact
+      const panel = { p: 0 }; // 0 = hidden, 1 = covering the frame
+      const paint = () => gsap.set("#card", { clipPath: `inset(0 ${(1 - panel.p) * 100}% 0 0)` });
+      paint();
+      tl.eventCallback("onUpdate", paint);
+
+      // --- entry: panel travels in from the left
+      tl.to(panel, { p: 1, duration: CFG.wipe, ease: easeInOut }, 0);
+
+      // letters rise on a critically damped spring, tinted, then settle to neutral
+      const S = CFG.stagger, T0 = CFG.lettersAt;
+      tl.fromTo(letters, { yPercent: 40, scale: 0.97 },
+        { yPercent: 0, scale: 1, duration: SPRING_DUR, ease: spring, stagger: S }, T0);
+      tl.fromTo(letters, { opacity: 0 },
+        { opacity: 1, duration: 0.2, ease: easeOut, stagger: S }, T0);
+      tl.fromTo(tints, { opacity: 1 },
+        { opacity: 0, duration: CFG.tintFade, ease: easeInOut, stagger: S }, T0 + CFG.tintHold);
+
+      // --- exit: colour wave runs back right→left, letters dip and fade
+      const rev = (a) => [...a].reverse();
+      const XS = CFG.exitStagger;
+      tl.fromTo(rev(tints), { opacity: 0 },
+        { opacity: 1, duration: 0.12, ease: easeOut, stagger: XS, immediateRender: false }, CFG.exitAt);
+      tl.fromTo(rev(letters), { yPercent: 0, scale: 1, opacity: 1 },
+        { yPercent: 30, scale: 0.97, opacity: 0, duration: 0.3, ease: easeOutMirror,
+          stagger: XS, immediateRender: false }, CFG.exitAt + 0.08);
+      tl.to(panel, { p: 0, duration: CFG.wipe, ease: easeInOut }, CFG.panelOutAt);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Chapter 10 — Item template vs. variants.
+         Left: the template item (dashed violet phone = a blueprint, not a
+         real thing). Middle: the attribute the variants are cut on. Right:
+         three concrete variants that fill in once the narration says "color".
+         Cue times come from the Scribe transcript of assets/ch10-variant.mp3
+         (assets/edit/transcripts/ch10-variant.json), each set ~0.1s before
+         its word so the element has landed as the word is spoken.
+         ------------------------------------------------------------------ */
+      /* Same light palette as title-bouncing-ball / list-walking-dot, so
+         this slide sits in that series. */
+      :root {
+        --card-bg: #ececec;
+        --panel: #ffffff;
+        --line: #d6d6d6;
+        --ink: #212121;
+        --ink-muted: #6f6f6f;
+        --accent: #0a8df7;
+        --accent-soft: #e0f0fe;
+        --accent-ink: #0b6fc2;
+        --font-text: "Inter", system-ui, sans-serif;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: var(--font-text);
+        color: var(--ink);
+      }
+
+      .stage {
+        position: absolute; inset: 0; overflow: hidden;
+        background: var(--card-bg);
+      }
+      .grid {
+        position: absolute; inset: 0;
+        background-image: radial-gradient(#d2d2d2 1.5px, transparent 1.5px);
+        background-size: 48px 48px;
+        opacity: 0.5;
+      }
+
+      /* Every box is absolutely placed from the same constants the SVG
+         connectors use, so lines meet card edges exactly. */
+      .card {
+        position: absolute;
+        display: flex; align-items: center; gap: 28px;
+        padding: 0 40px;
+        border-radius: 20px;
+        background: var(--panel);
+        border: 1.5px solid var(--line);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+        will-change: transform, opacity;
+      }
+      .card .phone { flex: none; }
+      .card .label {
+        display: flex; flex-direction: column; gap: 10px;
+      }
+      .card .name {
+        font-size: 44px; line-height: 1.1;
+        font-weight: 600; letter-spacing: -0.014em;
+        white-space: nowrap;
+      }
+      .card .sub {
+        font-size: 24px; line-height: 1.2;
+        font-weight: 500;
+        color: var(--ink-muted);
+        white-space: nowrap;
+      }
+
+      /* template card — bigger, hero of the left column */
+      .template { width: 560px; height: 300px; gap: 36px; }
+      .template .name { font-size: 56px; }
+
+      .pill {
+        display: inline-flex; align-items: center; gap: 10px;
+        align-self: flex-start;
+        padding: 8px 18px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent-ink);
+        font-size: 24px; font-weight: 600;
+        letter-spacing: 0.02em; white-space: nowrap;
+        will-change: transform, opacity;
+      }
+
+      /* variant cards — three stacked on the right */
+      .variant { width: 580px; height: 200px; }
+      .variant .name { font-size: 40px; }
+      .variant .swatch {
+        width: 18px; height: 18px; border-radius: 50%;
+        display: inline-block; vertical-align: middle;
+        margin-right: 10px;
+        border: 1.5px solid rgba(0, 0, 0, 0.18);
+      }
+
+      /* the empty slot a variant fills into (outline-only ghost) */
+      .ghost {
+        position: absolute;
+        border-radius: 20px;
+        border: 2px dashed #bdbdbd;
+        will-change: opacity;
+      }
+
+      /* attribute chips in the middle column */
+      .chip {
+        position: absolute;
+        display: flex; align-items: center; justify-content: center; gap: 12px;
+        border-radius: 999px;
+        font-size: 28px; font-weight: 600;
+        white-space: nowrap;
+        will-change: transform, opacity;
+      }
+      .chip.empty {
+        border: 2px dashed #a9a9a9;
+        color: var(--ink-muted);
+        font-weight: 500;
+      }
+      .chip.active {
+        background: var(--accent);
+        color: #ffffff;
+        box-shadow: 0 10px 28px rgba(10, 141, 247, 0.32);
+      }
+      .chip.muted {
+        background: var(--panel);
+        border: 1.5px solid var(--line);
+        color: var(--ink-muted);
+        font-size: 24px; font-weight: 500;
+      }
+
+      .wires { position: absolute; inset: 0; overflow: visible; }
+      .wires path {
+        fill: none;
+        stroke: #b9b9b9;
+        stroke-width: 3;
+        stroke-linecap: round;
+      }
+      .wires path.trunk { stroke: var(--accent); }
+
+      .kicker {
+        position: absolute; left: 120px; top: 96px;
+        font-size: 26px; font-weight: 600;
+        letter-spacing: 0.14em; text-transform: uppercase;
+        color: var(--ink-muted);
+        will-change: opacity, transform;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="9.4" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="stage clip" id="stage"
+           data-start="0" data-duration="9.4" data-track-index="0">
+        <div class="grid"></div>
+        <div class="kicker" id="kicker">Item template &amp; variants</div>
+
+        <svg class="wires" id="wires" viewBox="0 0 1920 1080" width="1920" height="1080"></svg>
+
+        <div class="card template" id="template">
+          <svg class="phone" id="template-phone" width="120" height="176" viewBox="0 0 60 88"></svg>
+          <div class="label">
+            <div class="name">iPhone 15</div>
+            <div class="pill" id="pill">Template item</div>
+          </div>
+        </div>
+
+        <div class="chip empty" id="chip-empty">Attribute</div>
+        <div class="chip active" id="chip-color">Color</div>
+        <div class="chip muted" id="chip-memory">Memory</div>
+        <div class="chip muted" id="chip-config">Configuration</div>
+
+        <div id="slots"></div>
+        <div id="variants"></div>
+      </div>
+
+      <audio id="vo" src="assets/ch10-variant.mp3"
+             data-start="0" data-duration="7.87"
+             data-track-index="10" data-volume="1"></audio>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        // geometry (all px in the 1920×1080 frame)
+        template: { x: 160, y: 390, w: 560, h: 300 },
+        chip: { cx: 1000, cy: 540, w: 200, h: 68 },
+        chipStack: 84,                 // gap between attribute chips
+        variants: { x: 1270, w: 580, h: 200, cys: [270, 540, 810] },
+
+        items: [
+          { name: "iPhone 15 White",     body: "#f4f4f4", screen: "#1c1c1e", ink: "#f4f4f4" },
+          { name: "iPhone 15 Black",     body: "#1c1c1e", screen: "#0a0a0a", ink: "#1c1c1e" },
+          { name: "iPhone 15 Rose Gold", body: "#e5b8a5", screen: "#1c1c1e", ink: "#e5b8a5" },
+        ],
+
+        // cues (seconds) — word start minus ~0.1s
+        t: {
+          templateIn: 0.45,   // "iPhone"        0.60
+          pillIn:     1.28,   // "template"      1.38
+          trunk:      2.15,   // "against which" 2.24
+          chipIn:     2.85,   // "attributes"    2.98
+          fan:        3.65,   // "selected"      3.74
+          slotsIn:    4.45,   // "properties"    4.58
+          color:      5.25,   // "color"         5.34
+          memory:     5.85,   // "memory"        5.92
+          config:     7.02,   // "configuration" 7.12
+        },
+        stagger: 0.14,
+      };
+
+      // --------------------------------------------------------------- build
+      const T = CFG.template, C = CFG.chip, V = CFG.variants;
+
+      function phoneSVG(svg, { body, screen, dashed, edge }) {
+        // A simple two-layer phone: body rect + inset screen + camera pill.
+        // Same shape for the template (dashed outline) and each variant
+        // (solid, coloured), so the variants read as instances of the template.
+        svg.innerHTML = `
+          <rect x="3" y="3" width="54" height="82" rx="10" ry="10"
+                fill="${dashed ? "none" : body}"
+                stroke="${dashed ? "var(--accent)" : (edge || "rgba(0,0,0,0.3)")}"
+                stroke-width="${dashed ? 2.5 : 1.5}"
+                ${dashed ? 'stroke-dasharray="6 5"' : ""} />
+          <rect x="9" y="11" width="42" height="66" rx="5" ry="5"
+                fill="${dashed ? "none" : screen}"
+                stroke="${dashed ? "var(--accent)" : "none"}"
+                stroke-width="1.5" opacity="${dashed ? 0.55 : 1}" />
+          <rect x="24" y="14" width="12" height="4" rx="2"
+                fill="${dashed ? "var(--accent)" : body}" opacity="0.9" />
+        `;
+      }
+
+      const templateEl = document.getElementById("template");
+      Object.assign(templateEl.style, {
+        left: T.x + "px", top: T.y + "px", width: T.w + "px", height: T.h + "px",
+      });
+      phoneSVG(document.getElementById("template-phone"), { dashed: true });
+
+      function placeChip(el, row) {
+        const w = row === 0 ? C.w : C.w - 16;
+        const h = row === 0 ? C.h : C.h - 12;
+        Object.assign(el.style, {
+          left: C.cx - w / 2 + "px",
+          top: C.cy - h / 2 + row * CFG.chipStack + "px",
+          width: w + "px", height: h + "px",
+        });
+      }
+      const chipEmpty  = document.getElementById("chip-empty");
+      const chipColor  = document.getElementById("chip-color");
+      const chipMemory = document.getElementById("chip-memory");
+      const chipConfig = document.getElementById("chip-config");
+      placeChip(chipEmpty, 0);
+      placeChip(chipColor, 0);
+      placeChip(chipMemory, 1);
+      placeChip(chipConfig, 2);
+
+      const slotsEl = document.getElementById("slots");
+      const variantsEl = document.getElementById("variants");
+      const slots = [], cards = [];
+      CFG.items.forEach((it, i) => {
+        const top = V.cys[i] - V.h / 2;
+
+        const ghost = document.createElement("div");
+        ghost.className = "ghost";
+        ghost.id = "slot-" + i;
+        Object.assign(ghost.style, {
+          left: V.x + "px", top: top + "px", width: V.w + "px", height: V.h + "px",
+        });
+        slotsEl.appendChild(ghost);
+        slots.push(ghost);
+
+        const card = document.createElement("div");
+        card.className = "card variant";
+        card.id = "variant-" + i;
+        Object.assign(card.style, {
+          left: V.x + "px", top: top + "px", width: V.w + "px", height: V.h + "px",
+        });
+        card.innerHTML = `
+          <svg class="phone" width="78" height="114" viewBox="0 0 60 88"></svg>
+          <div class="label">
+            <div class="name">${it.name}</div>
+            <div class="sub"><span class="swatch" style="background:${it.ink}"></span>Variant</div>
+          </div>`;
+        phoneSVG(card.querySelector("svg"), it);
+        variantsEl.appendChild(card);
+        cards.push(card);
+      });
+
+      // connectors: template → chip (trunk), chip → each slot (fan)
+      const wires = document.getElementById("wires");
+      const NS = "http://www.w3.org/2000/svg";
+      function wire(d, cls) {
+        const p = document.createElementNS(NS, "path");
+        p.setAttribute("d", d);
+        if (cls) p.setAttribute("class", cls);
+        wires.appendChild(p);
+        return p;
+      }
+      const trunkX0 = T.x + T.w, trunkX1 = C.cx - C.w / 2;
+      const trunk = wire(`M ${trunkX0} ${C.cy} L ${trunkX1} ${C.cy}`, "trunk");
+      const fanX0 = C.cx + C.w / 2, fanX1 = V.x;
+      const midX = (fanX0 + fanX1) / 2;
+      const fans = V.cys.map((cy) =>
+        wire(`M ${fanX0} ${C.cy} C ${midX} ${C.cy}, ${midX} ${cy}, ${fanX1} ${cy}`)
+      );
+      // Fixed dash lengths so nothing is measured off the DOM during playback.
+      const TRUNK_LEN = trunkX1 - trunkX0;
+      const FAN_LEN = 520;
+      [trunk].forEach((p) => p.style.strokeDasharray = p.style.strokeDashoffset = TRUNK_LEN);
+      fans.forEach((p) => p.style.strokeDasharray = p.style.strokeDashoffset = FAN_LEN);
+
+      // ------------------------------------------------------------ timeline
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+      const t = CFG.t;
+
+      // rest state — everything hidden except the stage
+      gsap.set([templateEl, chipEmpty, chipColor, chipMemory, chipConfig, ...cards, ...slots],
+               { autoAlpha: 0 });
+      gsap.set("#pill", { autoAlpha: 0 });
+      gsap.set("#kicker", { autoAlpha: 0 });
+
+      tl.fromTo("#kicker", { autoAlpha: 0, y: -12 },
+        { autoAlpha: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.1);
+
+      // 1. the template lands
+      tl.fromTo(templateEl, { autoAlpha: 0, y: 36, scale: 0.94 },
+        { autoAlpha: 1, y: 0, scale: 1, duration: 0.6, ease: "back.out(1.5)" }, t.templateIn);
+      tl.fromTo("#pill", { autoAlpha: 0, scale: 0.6 },
+        { autoAlpha: 1, scale: 1, duration: 0.42, ease: "back.out(1.7)" }, t.pillIn);
+
+      // 2. "against which attributes" — trunk draws, the empty attribute slot appears
+      tl.to(trunk, { strokeDashoffset: 0, duration: 0.5, ease: "power2.inOut" }, t.trunk);
+      tl.fromTo(chipEmpty, { autoAlpha: 0, x: -20 },
+        { autoAlpha: 1, x: 0, duration: 0.4, ease: "power3.out" }, t.chipIn);
+
+      // 3. "selected based on the properties" — fan out to three empty slots
+      tl.to(fans, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut", stagger: 0.08 }, t.fan);
+      tl.fromTo(slots, { autoAlpha: 0, x: -16 },
+        { autoAlpha: 1, x: 0, duration: 0.4, ease: "power3.out", stagger: 0.08 }, t.slotsIn);
+
+      // 4. "color" — the attribute resolves, the slots fill with real variants
+      tl.to(chipEmpty, { autoAlpha: 0, scale: 0.9, duration: 0.25, ease: "power2.in", overwrite: "auto" }, t.color - 0.05);
+      tl.fromTo(chipColor, { autoAlpha: 0, scale: 0.7 },
+        { autoAlpha: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, t.color);
+      tl.to(slots, { autoAlpha: 0, duration: 0.3, ease: "power2.in", stagger: CFG.stagger }, t.color + 0.1);
+      tl.fromTo(cards, { autoAlpha: 0, y: 18, scale: 0.96 },
+        { autoAlpha: 1, y: 0, scale: 1, duration: 0.5, ease: "back.out(1.5)", stagger: CFG.stagger },
+        t.color + 0.12);
+
+      // 5. "memory, and other configuration" — the other attributes stack underneath
+      tl.fromTo(chipMemory, { autoAlpha: 0, y: -14 },
+        { autoAlpha: 1, y: 0, duration: 0.4, ease: "power3.out" }, t.memory);
+      tl.fromTo(chipConfig, { autoAlpha: 0, y: -14 },
+        { autoAlpha: 1, y: 0, duration: 0.4, ease: "power3.out" }, t.config);
+    </script>
+  </body>
+</html>

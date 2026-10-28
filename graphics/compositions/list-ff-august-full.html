@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/tokens.css" />
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Agenda list — full screen, "marker" highlight (What's New in FF).
+         Same dark panel + violet marker stroke as title-feature-highlighter.
+         The panel wipes in, four rows land, then the marker strokes behind
+         whichever item the VO is on, one badge hue per item. Numbers never
+         move or resize. Transparent outside the panel.
+         ------------------------------------------------------------------ */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: var(--font-text);
+      }
+
+      .card {
+        position: absolute; inset: 0; overflow: hidden;
+        background: var(--surface-base);
+        clip-path: inset(0 100% 0 0);
+        display: flex; align-items: center; justify-content: center;
+      }
+      .block { display: flex; flex-direction: column; align-items: flex-start; }
+
+      .row {
+        display: flex; align-items: center;
+        height: 150px;
+        will-change: transform, opacity, filter;
+      }
+      .num {
+        position: relative;
+        width: 124px; flex: none;
+        font-size: 40px; font-weight: var(--fw-semibold);
+        font-variant-numeric: tabular-nums;
+        color: var(--ink-gray-5);
+      }
+      .label {
+        position: relative;
+        font-size: 96px; line-height: 1.05;
+        font-weight: var(--fw-bold); letter-spacing: -0.035em;
+        color: var(--ink-gray-9);
+        white-space: nowrap;
+      }
+      .label .txt { position: relative; z-index: 1; }
+      .hl {
+        position: absolute; z-index: 0;
+        top: 0.40em; bottom: 0.02em; left: -0.08em; right: -0.12em;
+        background: var(--surface-violet-6);  /* per-row hue set from CFG.hues */
+        border-radius: 0.14em 0.22em 0.18em 0.1em;  /* uneven ends read hand-drawn */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="27.8" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="card clip" id="card"
+           data-start="0" data-duration="27.8" data-track-index="0">
+        <div class="block" id="block"></div>
+      </div>
+
+      <audio id="vo" src="assets/index-list.wav"
+             data-start="0" data-duration="26.733" data-track-index="1" data-volume="1"></audio>
+      <audio id="whip-in" src="assets/sfx/whip.wav"
+             data-start="0.24" data-duration="0.17" data-track-index="2" data-volume="0.5"></audio>
+      <audio id="whip-out" src="assets/sfx/whip.wav"
+             data-start="27.24" data-duration="0.17" data-track-index="3" data-volume="0.5"></audio>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        items: [
+          "Disable Apps",
+          "Doc Events in Recorder",
+          "Awesome Bar Search Hook",
+          "Custom SVG Icons",
+        ],
+        // VO word starts (index-list.wav): First 2.10, Second 7.04, Third 13.78, And last 20.46.
+        // The marker starts LEAD earlier so it lands on the word.
+        cues: [2.10, 7.04, 13.78, 20.46],
+        // marker hue per item — frappe-ui badge ramp, step 6 keeps white text above AA
+        hues: ["violet", "blue", "green", "amber"],
+        lead: 0.15,
+        dimTo: 0.32,     // opacity of rows that aren't being talked about
+        wipe: 0.55,
+        rowsAt: 0.3,
+        stagger: 0.08,
+        exitAt: 26.9,
+        panelOutAt: 27.25,
+      };
+      // Retiming? keep data-duration on #root/#card = panelOutAt + wipe,
+      // whip-out data-start = panelOutAt - 0.01.
+
+      // ------------------------------------------------------------- curves
+      function bezier(x1, y1, x2, y2) {
+        const c = (a, b, t) => 3 * (1 - t) * (1 - t) * t * a + 3 * (1 - t) * t * t * b + t * t * t;
+        return (x) => {
+          let lo = 0, hi = 1, t = x;
+          for (let i = 0; i < 30; i++) {
+            t = (lo + hi) / 2;
+            if (c(x1, x2, t) < x) lo = t; else hi = t;
+          }
+          return c(y1, y2, t);
+        };
+      }
+      const easeInOut = bezier(0.77, 0, 0.175, 1);
+      const easeOut = bezier(0.23, 1, 0.32, 1);
+      const easeOutMirror = bezier(0.68, 0, 0.77, 0);
+      const SPRING_DUR = 0.8;
+      const omega = (2 * Math.PI) / 0.4;
+      const spring = (p) => {
+        const t = p * SPRING_DUR;
+        return p >= 1 ? 1 : 1 - (1 + omega * t) * Math.exp(-omega * t);
+      };
+
+      // -------------------------------------------------------------- build
+      const block = document.getElementById("block");
+      const rows = CFG.items.map((text, i) => {
+        const row = document.createElement("div");
+        row.className = "row";
+        row.innerHTML =
+          `<div class="num"><span class="n">${String(i + 1).padStart(2, "0")}</span></div>` +
+          `<div class="label"><span class="hl"></span><span class="txt"></span></div>`;
+        row.querySelector(".txt").textContent = text;
+        row.querySelector(".hl").style.background = `var(--surface-${CFG.hues[i % CFG.hues.length]}-6)`;
+        block.appendChild(row);
+        return {
+          row,
+          n: row.querySelector(".n"),
+          hl: row.querySelector(".hl"),
+          label: row.querySelector(".label"),
+        };
+      });
+
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+
+      const panel = { p: 0 };
+      const paint = () => gsap.set("#card", { clipPath: `inset(0 ${(1 - panel.p) * 100}% 0 0)` });
+      paint();
+      tl.eventCallback("onUpdate", paint);
+
+      // --- entry
+      tl.to(panel, { p: 1, duration: CFG.wipe, ease: easeInOut }, 0);
+      const entering = rows.map((r) => r.row);
+      tl.fromTo(entering, { x: -48, scale: 0.97 },
+        { x: 0, scale: 1, duration: SPRING_DUR, ease: spring, stagger: CFG.stagger }, CFG.rowsAt);
+      tl.fromTo(entering, { opacity: 0, filter: "blur(6px)" },
+        { opacity: 1, filter: "blur(0px)", duration: 0.3, ease: easeOut, stagger: CFG.stagger }, CFG.rowsAt);
+
+      // --- highlight walk
+      rows.forEach((r) => gsap.set(r.hl, { transformOrigin: "0% 50%", rotation: -1.2, skewX: -8, scaleX: 0 }));
+      CFG.cues.forEach((cue, i) => {
+        const at = cue - CFG.lead;
+        const cur = rows[i];
+        if (i > 0) {
+          const prev = rows[i - 1];
+          // marker lifts off the previous item, which steps back
+          tl.to(prev.hl, { scaleX: 0, transformOrigin: "100% 50%", duration: 0.25, ease: easeOutMirror }, at - 0.2);
+          tl.to([prev.label, prev.n], { opacity: CFG.dimTo, duration: 0.35, ease: easeOut }, at - 0.05);
+        } else {
+          // first cue: everything but item 1 steps back
+          tl.to(rows.slice(1).flatMap((r) => [r.label, r.n]), { opacity: CFG.dimTo, duration: 0.35, ease: easeOut }, at);
+        }
+        tl.to([cur.label, cur.n], { opacity: 1, duration: 0.35, ease: easeOut }, at);
+        tl.fromTo(cur.hl, { scaleX: 0, transformOrigin: "0% 50%" },
+          { scaleX: 1, duration: 0.45, ease: easeOut, immediateRender: false }, at + 0.05);
+      });
+
+      // --- exit: marker off, rows retrace, panel retracts
+      const last = rows[rows.length - 1];
+      tl.to(last.hl, { scaleX: 0, transformOrigin: "100% 50%", duration: 0.25, ease: easeOutMirror }, CFG.exitAt - 0.25);
+      tl.to([...entering].reverse(), {
+        x: -48, scale: 0.97, opacity: 0, filter: "blur(6px)",
+        duration: 0.3, ease: easeOutMirror, stagger: 0.04,
+      }, CFG.exitAt);
+      tl.to(panel, { p: 0, duration: CFG.wipe, ease: easeInOut }, CFG.panelOutAt);
+    </script>
+  </body>
+</html>

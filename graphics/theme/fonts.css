@@ -16,3 +16,12 @@
   font-display: block;
   src: url("fonts/Inter-Italic.var.woff2") format("woff2");
 }
+/* JetBrains Mono Variable (latin, @fontsource-variable/jetbrains-mono 5.2.8) —
+   matches --font-mono in tokens.css; self-hosted for the same reason. */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: block;
+  src: url("fonts/JetBrainsMono.var.woff2") format("woff2");
+}

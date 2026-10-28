@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         What's New in FF (August) — cross-promo overlay for "my talk from
+         the Frappeverse … now out on YouTube". Same card as
+         overlay-ch14-accounting-basics. TRANSPARENT: render with alpha and
+         lay it over the facecam. Top-left: clear of the face in both framings
+         (the cut at ~29s moves the speaker right, and he points up-left).
+         Composition starts at SOURCE 00:20.00 in "FF August.mov"; cues are source − 20.0.
+         ------------------------------------------------------------------ */
+      :root {
+        --panel: #ffffff;
+        --line: #d6d6d6;
+        --ink: #212121;
+        --ink-muted: #6f6f6f;
+        --accent: #0a8df7;
+        --accent-soft: #e0f0fe;
+        --accent-ink: #0b6fc2;
+        --font-text: "Inter", system-ui, sans-serif;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: var(--font-text);
+        color: var(--ink);
+      }
+      .stage { position: absolute; inset: 0; overflow: hidden; background: transparent; }
+
+      .card {
+        position: absolute;
+        display: flex; flex-direction: column; gap: 12px;
+        padding: 14px 14px 16px;
+        border-radius: 20px;
+        background: var(--panel);
+        border: 1.5px solid var(--line);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+        will-change: transform, opacity;
+      }
+      .thumb {
+        position: relative;
+        width: 560px; height: 291px;  /* thumbnail is 1.93:1, not 16:9 — keep it uncropped */
+        border-radius: 12px; overflow: hidden;
+        background: #eee;
+      }
+      .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .thumb .play {
+        position: absolute; left: 61.5%; top: 50%;  /* gap between the talk title and the photo */
+        width: 64px; height: 64px; margin: -32px 0 0 -32px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.92);
+        display: flex; align-items: center; justify-content: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+        will-change: transform, opacity;
+      }
+      .thumb .play svg { width: 26px; height: 26px; margin-left: 3px; fill: var(--ink); }
+      .foot { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 6px; }
+      .meta { display: flex; flex-direction: column; gap: 2px; font-size: 18px; line-height: 1.2; color: var(--ink-muted); white-space: nowrap; }
+      .meta b { font-weight: 600; color: var(--ink); font-size: 21px; }
+
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="10.6" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="stage clip" id="stage"
+           data-start="0" data-duration="10.6" data-track-index="0">
+        <div class="card" id="card">
+          <div class="thumb">
+            <img src="assets/img/frappeverse-2026-talk-thumb.jpg" alt="" />
+            <div class="play" id="play"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></div>
+          </div>
+          <div class="foot">
+            <div class="meta"><b>My Frappeverse 2026 talk</b><span>Frappe · YouTube</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VO slice (FF August.mov 20.00s → 30.60s) so the render lines up by waveform -->
+      <audio id="vo" src="assets/aug-talk-promo.wav"
+             data-start="0" data-duration="10.6" data-track-index="1" data-volume="1"></audio>
+    </div>
+
+    <script>
+      const CFG = {
+        card: { left: 100, top: 100, w: 588 },
+        t: {
+          cardIn: 0.78,   // "talk"            20.93
+          playIn: 6.60,   // "YouTube"         26.70
+          nudge:  8.80,   // "here" (points)   28.90
+          out:    9.90,   // after "as well."  29.37 — before "Let's get started" 32.04
+        },
+      };
+
+      const card = document.getElementById("card");
+      Object.assign(card.style, { left: CFG.card.left + "px", width: CFG.card.w + "px" });
+
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+      const t = CFG.t;
+
+      gsap.set([card, "#play"], { autoAlpha: 0 });
+      gsap.set(card, { top: CFG.card.top });
+
+      // enters from the near (left) edge
+      gsap.set(card, { transformOrigin: "0% 0%" });
+      tl.fromTo(card, { autoAlpha: 0, x: -60, scale: 0.96 },
+        { autoAlpha: 1, x: 0, scale: 1, duration: 0.6, ease: "back.out(1.4)" }, t.cardIn);
+      tl.fromTo("#play", { autoAlpha: 0, scale: 0.6 },
+        { autoAlpha: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, t.playIn);
+
+      // small lift when he points at it
+      tl.to(card, { scale: 1.035, duration: 0.25, ease: "power2.out" }, t.nudge);
+      tl.to(card, { scale: 1, duration: 0.45, ease: "power2.inOut" }, t.nudge + 0.25);
+
+      tl.to(card, { autoAlpha: 0, x: -40, duration: 0.4, ease: "power2.in" }, t.out);
+    </script>
+  </body>
+</html>

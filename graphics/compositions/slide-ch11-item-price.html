@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Chapter 11 — Item Price. Same light palette + card language as
+         slide-ch10-item-variants. Left: one item. Right: two price lists,
+         each carrying its own rate for that item. Cue times come from the
+         Scribe transcript of assets/ch11-price-list.mp3
+         (assets/edit/transcripts/ch11-price-list.json); the VO starts at
+         AUDIO_AT so the item card is on screen before the first word.
+         ------------------------------------------------------------------ */
+      :root {
+        --card-bg: #ececec;
+        --panel: #ffffff;
+        --line: #d6d6d6;
+        --ink: #212121;
+        --ink-muted: #6f6f6f;
+        --accent: #0a8df7;
+        --accent-soft: #e0f0fe;
+        --accent-ink: #0b6fc2;
+        --warn: #a75b05;
+        --warn-soft: #fdf1df;
+        --font-text: "Inter", system-ui, sans-serif;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: var(--font-text);
+        color: var(--ink);
+      }
+
+      .stage {
+        position: absolute; inset: 0; overflow: hidden;
+        background: var(--card-bg);
+      }
+      .grid {
+        position: absolute; inset: 0;
+        background-image: radial-gradient(#d2d2d2 1.5px, transparent 1.5px);
+        background-size: 48px 48px;
+        opacity: 0.5;
+      }
+
+      .kicker {
+        position: absolute; left: 120px; top: 96px;
+        font-size: 26px; font-weight: 600;
+        letter-spacing: 0.14em; text-transform: uppercase;
+        color: var(--ink-muted);
+        will-change: opacity, transform;
+      }
+
+      .card {
+        position: absolute;
+        display: flex; align-items: center; gap: 28px;
+        padding: 0 40px;
+        border-radius: 20px;
+        background: var(--panel);
+        border: 1.5px solid var(--line);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+        will-change: transform, opacity;
+      }
+      .card .label { display: flex; flex-direction: column; gap: 10px; }
+      .card .name {
+        font-size: 44px; line-height: 1.1;
+        font-weight: 600; letter-spacing: -0.014em;
+        white-space: nowrap;
+      }
+      .card .sub {
+        font-size: 24px; line-height: 1.2; font-weight: 500;
+        color: var(--ink-muted); white-space: nowrap;
+      }
+
+      /* the item — left column hero */
+      .item { gap: 36px; }
+      .item .name { font-size: 56px; }
+
+      .pill {
+        display: inline-flex; align-items: center; gap: 10px;
+        align-self: flex-start;
+        padding: 8px 18px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent-ink);
+        font-size: 24px; font-weight: 600;
+        letter-spacing: 0.02em; white-space: nowrap;
+        will-change: transform, opacity;
+      }
+
+      /* price-list cards — right column */
+      .plist { justify-content: space-between; }
+      .plist .lead { display: flex; align-items: center; gap: 24px; }
+      .plist .icon {
+        flex: none; width: 84px; height: 84px; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        background: var(--accent-soft); color: var(--accent-ink);
+      }
+      .plist .icon svg { width: 44px; height: 44px; }
+      .plist .name { font-size: 36px; }
+      .plist .rate {
+        flex: none;
+        display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+      }
+      .plist .amount {
+        font-size: 52px; line-height: 1; font-weight: 700;
+        letter-spacing: -0.02em; color: var(--accent);
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+        will-change: transform, opacity;
+      }
+      .plist .extra {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 6px 14px; border-radius: 999px;
+        background: var(--warn-soft); color: var(--warn);
+        font-size: 22px; font-weight: 600; white-space: nowrap;
+        will-change: transform, opacity;
+      }
+      .plist .extra svg { width: 22px; height: 22px; }
+
+      .wires { position: absolute; inset: 0; overflow: visible; }
+      .wires path {
+        fill: none; stroke: #b9b9b9; stroke-width: 3; stroke-linecap: round;
+      }
+      .wires path.hot { stroke: var(--accent); stroke-width: 4; }
+
+      /* footer: the takeaway + the criteria chips */
+      .footer {
+        position: absolute; left: 0; right: 0; top: 880px;
+        text-align: center;
+        font-size: 40px; font-weight: 600; letter-spacing: -0.012em;
+        will-change: transform, opacity;
+      }
+      .footer .accent { color: var(--accent-ink); }
+      .criteria {
+        position: absolute; left: 0; right: 0; top: 952px;
+        display: flex; justify-content: center; gap: 16px;
+      }
+      .chip {
+        padding: 10px 22px; border-radius: 999px;
+        background: var(--panel); border: 1.5px solid var(--line);
+        color: var(--ink-muted);
+        font-size: 24px; font-weight: 500; white-space: nowrap;
+        will-change: transform, opacity;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="19.6" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="stage clip" id="stage"
+           data-start="0" data-duration="19.6" data-track-index="0">
+        <div class="grid"></div>
+        <div class="kicker" id="kicker">Item price</div>
+
+        <svg class="wires" id="wires" viewBox="0 0 1920 1080" width="1920" height="1080"></svg>
+
+        <div class="card item" id="item">
+          <svg id="item-phone" width="120" height="176" viewBox="0 0 60 88"></svg>
+          <div class="label">
+            <div class="name">iPhone 15</div>
+          </div>
+        </div>
+
+        <div id="plists"></div>
+
+        <div class="footer" id="footer">
+          One item <span class="accent">·</span> Multiple prices
+        </div>
+        <div class="criteria" id="criteria"></div>
+      </div>
+
+      <!-- VO muxed in the edit for now. Re-enable to render with sound:
+      <audio id="vo" src="assets/ch11-price-list.mp3"
+             data-start="0.5" data-duration="16.67"
+             data-track-index="10" data-volume="1"></audio>
+      -->
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const AUDIO_AT = 0.5;      // where the VO starts in the edit (data-start on #vo when enabled)
+      const LEAD = 0.1;          // cues land this much before the word
+
+      const CFG = {
+        item:   { x: 160, y: 390, w: 560, h: 300 },
+        plists: { x: 1040, w: 780, h: 220, cys: [390, 690] },
+
+        lists: [
+          {
+            id: "ny", name: "New York", sub: "Price list",
+            amount: "$999", icon: "pin",
+          },
+          {
+            id: "out", name: "Outside New York", sub: "Price list",
+            amount: "$1,049", icon: "globe",
+            extra: "+ transportation",
+          },
+        ],
+
+        criteria: ["Price list", "Customer", "UOM", "Valid dates"],  // all fields on the Item Price doctype
+
+        // word start times from the transcript (audio-local seconds)
+        w: {
+          newYork:   0.84,   // "New York"
+          oneRate:   1.82,   // "one rate"
+          priceList: 4.36,   // "price list"
+          outside:   6.08,   // "outside New York"
+          diffRate:  8.42,   // "different rate"
+          rise:      9.86,   // "prices rise"
+          transport: 11.24,  // "transportation"
+          oneItem:   12.78,  // "one item"
+          multiple:  13.74,  // "multiple prices"
+          criteria:  15.42,  // "different criteria"
+        },
+      };
+      const cue = (k) => AUDIO_AT + CFG.w[k] - LEAD;
+
+      // ---------------------------------------------------------------- icons
+      // Lucide outlines (map-pin, globe, truck) — 24-unit viewBox, stroke 2.
+      const ICON = {
+        pin: `<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>`,
+        globe: `<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>`,
+        truck: `<path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/>`,
+      };
+      const svgIcon = (name) =>
+        `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">${ICON[name]}</svg>`;
+
+      // --------------------------------------------------------------- build
+      const I = CFG.item, P = CFG.plists;
+
+      const itemEl = document.getElementById("item");
+      Object.assign(itemEl.style, {
+        left: I.x + "px", top: I.y + "px", width: I.w + "px", height: I.h + "px",
+      });
+      // Same two-layer phone as the variants slide — a concrete item, so solid.
+      document.getElementById("item-phone").innerHTML = `
+        <rect x="3" y="3" width="54" height="82" rx="10" ry="10"
+              fill="#1c1c1e" stroke="rgba(0,0,0,0.3)" stroke-width="1.5" />
+        <rect x="9" y="11" width="42" height="66" rx="5" ry="5" fill="#0a0a0a" />
+        <rect x="24" y="14" width="12" height="4" rx="2" fill="#1c1c1e" opacity="0.9" />`;
+
+      const plistsEl = document.getElementById("plists");
+      const cards = CFG.lists.map((l, i) => {
+        const card = document.createElement("div");
+        card.className = "card plist";
+        card.id = "plist-" + l.id;
+        Object.assign(card.style, {
+          left: P.x + "px", top: P.cys[i] - P.h / 2 + "px",
+          width: P.w + "px", height: P.h + "px",
+        });
+        card.innerHTML = `
+          <div class="lead">
+            <div class="icon">${svgIcon(l.icon)}</div>
+            <div class="label">
+              <div class="name">${l.name}</div>
+              <div class="pill" id="pill-${l.id}">${l.sub}</div>
+            </div>
+          </div>
+          <div class="rate">
+            <div class="amount" id="amount-${l.id}">${l.amount}</div>
+            ${l.extra ? `<div class="extra" id="extra-${l.id}">${svgIcon("truck")}<span>${l.extra}</span></div>` : ""}
+          </div>`;
+        plistsEl.appendChild(card);
+        return card;
+      });
+      const amounts = cards.map((c) => c.querySelector(".amount"));
+      const extraEl = document.getElementById("extra-out");
+      const pillNY = document.getElementById("pill-ny");
+
+      const criteriaEl = document.getElementById("criteria");
+      const chips = CFG.criteria.map((t) => {
+        const el = document.createElement("div");
+        el.className = "chip";
+        el.textContent = t;
+        criteriaEl.appendChild(el);
+        return el;
+      });
+
+      // connectors: item right edge → each price-list card's left edge.
+      // Two copies per wire: a grey one that draws in, and an accent one that
+      // fades over it on "one item … multiple prices".
+      const wires = document.getElementById("wires");
+      const NS = "http://www.w3.org/2000/svg";
+      const x0 = I.x + I.w, y0 = I.y + I.h / 2, x1 = P.x, midX = (x0 + x1) / 2;
+      const WIRE_LEN = 560;   // fixed — nothing measured off the DOM at tween time
+      function wire(cy, cls) {
+        const p = document.createElementNS(NS, "path");
+        p.setAttribute("d", `M ${x0} ${y0} C ${midX} ${y0}, ${midX} ${cy}, ${x1} ${cy}`);
+        if (cls) p.setAttribute("class", cls);
+        p.style.strokeDasharray = p.style.strokeDashoffset = WIRE_LEN;
+        wires.appendChild(p);
+        return p;
+      }
+      const greyWires = P.cys.map((cy) => wire(cy));
+      const hotWires = P.cys.map((cy) => wire(cy, "hot"));
+
+      // ------------------------------------------------------------ timeline
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+
+      gsap.set([itemEl, ...cards, ...amounts, extraEl, "#footer", ...chips, "#kicker"],
+               { autoAlpha: 0 });
+      gsap.set(hotWires, { autoAlpha: 0, strokeDashoffset: 0 });
+
+      const enter = (el, at, extra = {}) =>
+        tl.fromTo(el, { autoAlpha: 0, y: 24, scale: 0.96 },
+          { autoAlpha: 1, y: 0, scale: 1, duration: 0.55, ease: "back.out(1.5)", ...extra }, at);
+      const pop = (el, at) =>
+        tl.fromTo(el, { autoAlpha: 0, scale: 0.6 },
+          { autoAlpha: 1, scale: 1, duration: 0.45, ease: "back.out(1.7)" }, at);
+
+      tl.fromTo("#kicker", { autoAlpha: 0, y: -12 },
+        { autoAlpha: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.05);
+
+      // "When we sell in New York" — the item is already here; NY list lands
+      enter(itemEl, 0.05);
+      tl.to(greyWires[0], { strokeDashoffset: 0, duration: 0.45, ease: "power2.inOut" }, cue("newYork") - 0.3);
+      enter(cards[0], cue("newYork"));
+
+      // "we have one rate" → the rate pops in
+      pop(amounts[0], cue("oneRate"));
+
+      // "tracked in the New York price list" → nudge the pill so the eye lands on it
+      tl.fromTo(pillNY, { scale: 1 }, { scale: 1.12, duration: 0.22, ease: "power2.out", yoyo: true, repeat: 1 }, cue("priceList"));
+
+      // "But when we sell outside New York" → second list lands
+      tl.to(greyWires[1], { strokeDashoffset: 0, duration: 0.45, ease: "power2.inOut" }, cue("outside") - 0.3);
+      enter(cards[1], cue("outside"));
+
+      // "apply a different rate"
+      pop(amounts[1], cue("diffRate"));
+
+      // "prices rise due to transportation costs" — the rate nudges up, then the reason lands
+      tl.fromTo(amounts[1], { y: 0 }, { y: -8, duration: 0.25, ease: "power2.out", yoyo: true, repeat: 1 }, cue("rise"));
+      tl.fromTo(extraEl, { autoAlpha: 0, x: 16 },
+        { autoAlpha: 1, x: 0, duration: 0.4, ease: "power3.out" }, cue("transport"));
+
+      // "one item can have multiple prices" — wires go hot, the takeaway lands
+      tl.to(hotWires, { autoAlpha: 1, duration: 0.4, ease: "power2.out", stagger: 0.1 }, cue("oneItem"));
+      tl.fromTo("#footer", { autoAlpha: 0, y: 18 },
+        { autoAlpha: 1, y: 0, duration: 0.5, ease: "power3.out" }, cue("multiple"));
+
+      // "based on different criteria"
+      tl.fromTo(chips, { autoAlpha: 0, y: 14 },
+        { autoAlpha: 1, y: 0, duration: 0.4, ease: "power3.out", stagger: 0.08 }, cue("criteria"));
+    </script>
+  </body>
+</html>

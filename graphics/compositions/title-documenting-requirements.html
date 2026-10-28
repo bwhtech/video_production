@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js"></script>
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Bouncing-ball title card.
+         Recreated from the "Chapter 1 — Frappe/ERPNext course" intro.
+         A blue ball is launched from the left edge and bounces along the
+         cap-height line of the title while the title types itself in.
+         Vertical motion comes from a matter.js rigid-body sim baked to
+         one position-per-frame table at load time, so the timeline stays
+         seekable and the render stays deterministic.
+         ------------------------------------------------------------------ */
+      :root {
+        --card-bg: #ececec;
+        --title-ink: #212121;
+        --ball: #0a8df7;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: "Inter", system-ui, sans-serif;
+      }
+
+      .card {
+        position: absolute; inset: 0; overflow: hidden;
+        background: var(--card-bg);
+      }
+
+      /* line-height:1 so the cap-height line is a fixed offset from .title top */
+      .title {
+        position: absolute; left: 0; right: 0;
+        top: 485px;                 /* cap-height line lands at y = 496 */
+        font-size: 88px; line-height: 1;   /* 33 chars — 100px runs edge to edge */
+        font-weight: 700; letter-spacing: 0;
+        color: var(--title-ink);
+        text-align: center; white-space: pre;
+      }
+      .title .ch { display: inline-block; opacity: 0; }
+
+      .ball {
+        position: absolute; left: 0; top: 0;
+        /* size + centering offset are set from CFG.ballR at load */
+        border-radius: 50%;
+        background: var(--ball);
+        z-index: 5;                 /* the ball passes in FRONT of the text */
+        will-change: transform, filter;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="4.22" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="card clip" id="card"
+           data-start="0" data-duration="4.22" data-track-index="0">
+        <div class="title" id="title"></div>
+        <div class="ball" id="ball" data-layout-allow-overflow></div>
+      </div>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        text: "Documenting Customer Requirements",
+
+        fps: 30,
+        capLine: 496,      // y of the title's cap-height line — the bounce floor
+        ballR: 13,         // the ball rests ON this line, it never sinks past it
+
+        charFrames: 3,     // one character every 3 frames (100ms)
+        fadeFrames: 7,     // 233ms — longer than charFrames, so ~2-3 letters are
+                           // mid-fade at once and the trailing edge reads soft
+
+        // ball crosses the full frame in typingFrames * crossRatio
+        crossRatio: 1.08,
+
+        gravity: 4.2,      // px / frame^2
+        launchVy: 38,      // px / frame, upward, at the left edge
+        restitution: 0.93,
+
+        // Optional: once past the end of the title the ball takes one soft hop
+        // and coasts out of frame. Off by default — it kills the bounce rhythm
+        // in the last stretch, and the ball reads as slowing down.
+        floatOut: false,
+        floatGravity: 0.18,      // gravity multiplier after that hop
+        floatRestitution: 0.35,  // restitution of that last, soft contact
+        floatDamp: 0.72,         // per-frame vertical damping while floating
+
+        // motion blur: softens with speed — the ball itself never deforms
+        blurPerV: 0.13,
+      };
+
+      const FPS = CFG.fps;
+      const DUR = 4.22; // keep in sync with data-duration on #root and #card
+      const TOTAL = Math.round(DUR * FPS);
+
+      // ------------------------------------------------------------ the title
+      const titleEl = document.getElementById("title");
+      const chars = [...CFG.text].map((c) => {
+        const s = document.createElement("span");
+        s.className = "ch";
+        // kerned pairs overlap by design — see applyKerning()
+        s.setAttribute("data-layout-allow-overlap", "");
+        s.textContent = c;
+        titleEl.appendChild(s);
+        return s;
+      });
+
+      // Each glyph is its own inline-block, so the browser drops kern pairs
+      // ("Y o" opens up). Measure the kerned pair advance on a canvas and give
+      // each span the difference as a negative margin. Re-run once fonts are
+      // ready — it only moves x, never timeline state, so it stays seek-safe.
+      function applyKerning() {
+        const cs = getComputedStyle(titleEl);
+        const ctx = document.createElement("canvas").getContext("2d");
+        ctx.font = `${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+        const w = (t) => ctx.measureText(t).width;
+        for (let i = 1; i < chars.length; i++) {
+          const a = CFG.text[i - 1], b = CFG.text[i];
+          const kernPx = w(a + b) - w(a) - w(b);
+          chars[i].style.marginLeft = kernPx.toFixed(3) + "px";
+        }
+      }
+      applyKerning();
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(applyKerning);
+      }
+
+      const typingFrames = chars.length * CFG.charFrames;
+      const crossFrames = Math.round(typingFrames * CFG.crossRatio);
+      const vx = 1920 / crossFrames; // px per frame
+
+      // right edge of the finished title — where the ball runs out of ground
+      const textRight = chars[chars.length - 1].getBoundingClientRect().right;
+
+      // ------------------------------------------- bake the ball with matter.js
+      // Two passes. Pass 1 finds where the ball actually lands, so pass 2 knows
+      // which contact is the last one still over the title; that contact is
+      // softened and the ball floats out of frame after it instead of bouncing
+      // on empty background.
+      const { Engine, Bodies, Composite, Body } = Matter;
+      const SUB = 1000 / 60;                          // two 60Hz substeps / frame
+      const gBase = (CFG.gravity * FPS * FPS) / 1e6;  // px/frame^2 -> px/ms^2
+
+      function bake(softContactFrame) {
+        const engine = Engine.create();
+        engine.gravity.y = 1;
+        engine.gravity.scale = gBase;
+
+        // ground surface sits exactly on the cap line, so the ball's underside
+        // kisses the top of the glyphs instead of overlapping them
+        const ball = Bodies.circle(0, CFG.capLine - CFG.ballR, CFG.ballR, {
+          restitution: CFG.restitution,
+          friction: 0, frictionAir: 0, frictionStatic: 0,
+          slop: 0.01, inertia: Infinity,
+        });
+        const ground = Bodies.rectangle(960, CFG.capLine + 300, 8000, 600, {
+          isStatic: true, restitution: CFG.restitution, friction: 0, slop: 0.01,
+        });
+        Composite.add(engine.world, [ball, ground]);
+        // matter velocities are px per 1/60s, so halve the per-frame values
+        Body.setVelocity(ball, { x: vx / 2, y: -CFG.launchVy / 2 });
+
+        const path = [];
+        const contacts = [];
+        let prevY = ball.position.y, prevDy = 0, floating = false;
+
+        for (let f = 0; f <= TOTAL; f++) {
+          const y = ball.position.y;
+          const dy = y - prevY;
+          if (prevDy > 0 && dy < 0) contacts.push({ f, x: ball.position.x });
+
+          if (softContactFrame !== null) {
+            ball.restitution = ground.restitution =
+              f === softContactFrame ? CFG.floatRestitution : CFG.restitution;
+            if (f > softContactFrame && !floating) {
+              floating = true;
+              engine.gravity.scale = gBase * CFG.floatGravity;
+            }
+            if (floating) {
+              Body.setVelocity(ball, { x: vx / 2, y: ball.velocity.y * CFG.floatDamp });
+            }
+          }
+
+          path.push({ x: ball.position.x, y, vy: dy });
+          prevY = y;
+          prevDy = dy;
+          Engine.update(engine, SUB);
+          Engine.update(engine, SUB);
+        }
+        return { path, contacts };
+      }
+
+      let softContact = null;
+      if (CFG.floatOut) {
+        const probe = bake(null);
+        const overText = probe.contacts.filter((c) => c.x <= textRight + CFG.ballR * 4);
+        if (overText.length) softContact = overText[overText.length - 1].f;
+      }
+      const path = bake(softContact).path;
+
+      // ------------------------------------------------------------- timeline
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+
+      chars.forEach((el, i) => {
+        tl.fromTo(
+          el,
+          { opacity: 0 },
+          { opacity: 1, duration: CFG.fadeFrames / FPS, ease: "none" },
+          (i * CFG.charFrames) / FPS
+        );
+      });
+
+      const ballEl = document.getElementById("ball");
+      ballEl.style.width = ballEl.style.height = CFG.ballR * 2 + "px";
+      ballEl.style.margin = -CFG.ballR + "px 0 0 " + -CFG.ballR + "px";
+      const cursor = { f: 0 };
+      tl.to(
+        cursor,
+        {
+          f: TOTAL,
+          duration: DUR,
+          ease: "none",
+          onUpdate() {
+            const f = Math.min(TOTAL, Math.max(0, cursor.f));
+            const i = Math.min(path.length - 2, Math.floor(f));
+            const t = f - i;
+            const a = path[i], b = path[i + 1];
+            const x = a.x + (b.x - a.x) * t;
+            const y = a.y + (b.y - a.y) * t;
+            const vyF = a.vy + (b.vy - a.vy) * t;   // px per frame, signed
+            const speed = Math.hypot(vx, vyF);
+
+            gsap.set(ballEl, {
+              x, y,
+              filter: "blur(" + (speed * CFG.blurPerV).toFixed(2) + "px)",
+            });
+          },
+        },
+        0
+      );
+    </script>
+  </body>
+</html>

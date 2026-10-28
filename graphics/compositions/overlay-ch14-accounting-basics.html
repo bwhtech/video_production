@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Chapter 14 — cross-promo overlay for "my video with Hussain on
+         accounting fundamentals". TRANSPARENT: render with `--format mov`
+         and lay it over the facecam. The card sits on the right, where the
+         wall is empty; the speaker is centred.
+         Composition starts at SOURCE 00:27.00; cues are source − 27.0. 4s, top-right, no CTA (the description graphic carries that).
+         ------------------------------------------------------------------ */
+      :root {
+        --panel: #ffffff;
+        --line: #d6d6d6;
+        --ink: #212121;
+        --ink-muted: #6f6f6f;
+        --accent: #0a8df7;
+        --accent-soft: #e0f0fe;
+        --accent-ink: #0b6fc2;
+        --font-text: "Inter", system-ui, sans-serif;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: var(--font-text);
+        color: var(--ink);
+      }
+      .stage { position: absolute; inset: 0; overflow: hidden; background: transparent; }
+
+      .card {
+        position: absolute;
+        display: flex; flex-direction: column; gap: 12px;
+        padding: 14px 14px 16px;
+        border-radius: 20px;
+        background: var(--panel);
+        border: 1.5px solid var(--line);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+        will-change: transform, opacity;
+      }
+      .thumb {
+        position: relative;
+        width: 440px; height: 248px;
+        border-radius: 12px; overflow: hidden;
+        background: #eee;
+      }
+      .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .thumb .play {
+        position: absolute; left: 50%; top: 50%;
+        width: 64px; height: 64px; margin: -32px 0 0 -32px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.92);
+        display: flex; align-items: center; justify-content: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+        will-change: transform, opacity;
+      }
+      .thumb .play svg { width: 26px; height: 26px; margin-left: 3px; fill: var(--ink); }
+      .foot { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 6px; }
+      .meta { display: flex; flex-direction: column; gap: 2px; font-size: 18px; line-height: 1.2; color: var(--ink-muted); white-space: nowrap; }
+      .meta b { font-weight: 600; color: var(--ink); font-size: 21px; }
+
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="4" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="stage clip" id="stage"
+           data-start="0" data-duration="4" data-track-index="0">
+        <div class="card" id="card">
+          <div class="thumb">
+            <img src="assets/img/accounting-basics-thumb.jpg" alt="" />
+            <div class="play" id="play"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></div>
+          </div>
+          <div class="foot">
+            <div class="meta"><b>Let's Learn ERPNext!</b><span>Build With Hussain · YouTube</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const CFG = {
+        card: { right: 1820, top: 100, w: 468 },
+        t: {
+          cardIn: 0.72,   // "video"        27.82
+          playIn: 1.20,   // "Hussain"      28.24
+          out:    3.50,   // clear before "link" (31.24) — the description graphic takes over
+        },
+      };
+
+      const card = document.getElementById("card");
+      Object.assign(card.style, { left: CFG.card.right - CFG.card.w + "px", width: CFG.card.w + "px" });
+
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+      const t = CFG.t;
+
+      gsap.set([card, "#play"], { autoAlpha: 0 });
+      gsap.set(card, { top: CFG.card.top });
+
+      tl.fromTo(card, { autoAlpha: 0, x: 60, scale: 0.96 },
+        { autoAlpha: 1, x: 0, scale: 1, duration: 0.6, ease: "back.out(1.4)" }, t.cardIn);
+      tl.fromTo("#play", { autoAlpha: 0, scale: 0.6 },
+        { autoAlpha: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, t.playIn);
+
+      tl.to(card, { autoAlpha: 0, x: 40, duration: 0.4, ease: "power2.in" }, t.out);
+    </script>
+  </body>
+</html>

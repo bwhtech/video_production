@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Chapter 14 outro — the two certifications and who each is for.
+         Two cards land on their names, each gets an audience pill on
+         "functional consultants" / "framework developers", then a footer
+         slot fills with "Frappe School" on the words.
+         Cues come from the Scribe transcript of the delivered chapter-14 edit
+         (edit/local/transcripts/sf-wa-014-a-end-of-course.json). The
+         composition starts at SOURCE 06:37.00 (397.0s); every cue below is
+         source time − 397.0, set ~0.1s before its word.
+         ------------------------------------------------------------------ */
+      /* Same light palette as title-bouncing-ball / slide-ch10 / timeline. */
+      :root {
+        --card-bg: #ececec;
+        --panel: #ffffff;
+        --line: #d6d6d6;
+        --ink: #212121;
+        --ink-muted: #6f6f6f;
+        --accent: #0a8df7;
+        --accent-soft: #e0f0fe;
+        --accent-ink: #0b6fc2;
+        --font-text: "Inter", system-ui, sans-serif;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: var(--font-text);
+        color: var(--ink);
+      }
+
+      .stage {
+        position: absolute; inset: 0; overflow: hidden;
+        background: var(--card-bg);
+      }
+      .grid {
+        position: absolute; inset: 0;
+        background-image: radial-gradient(#d2d2d2 1.5px, transparent 1.5px);
+        background-size: 48px 48px;
+        opacity: 0.5;
+      }
+
+      .kicker {
+        position: absolute; left: 210px; top: 150px;
+        font-size: 26px; font-weight: 600;
+        letter-spacing: 0.14em; text-transform: uppercase;
+        color: var(--ink-muted);
+        will-change: opacity, transform;
+      }
+
+      .card {
+        position: absolute;
+        display: flex; flex-direction: column; justify-content: space-between;
+        padding: 48px 52px;
+        border-radius: 26px;
+        background: var(--panel);
+        border: 1.5px solid var(--line);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+        will-change: transform, opacity;
+      }
+      .card .top { display: flex; align-items: center; gap: 32px; }
+      .card .tile {
+        flex: none;
+        width: 120px; height: 120px; border-radius: 30px;
+        display: flex; align-items: center; justify-content: center;
+        background: var(--accent-soft);
+        color: var(--accent-ink);
+      }
+      .card .tile svg { width: 64px; height: 64px; }
+      .card .name {
+        font-size: 50px; line-height: 1.12; font-weight: 600;
+        letter-spacing: -0.016em;
+      }
+      .card .name .sub { display: block; color: var(--ink-muted); font-weight: 500; }
+
+      /* audience row: a dashed slot that the pill fills */
+      .who { position: relative; height: 84px; }
+      .who .slot {
+        position: absolute; left: 0; top: 0;
+        height: 84px; width: 460px;
+        border-radius: 999px;
+        border: 2px dashed #bdbdbd;
+        will-change: opacity;
+      }
+      .who .pill {
+        position: absolute; left: 0; top: 0;
+        display: inline-flex; align-items: center; gap: 16px;
+        height: 84px; padding: 0 34px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #fff;
+        font-size: 32px; font-weight: 600; letter-spacing: 0.01em;
+        white-space: nowrap;
+        box-shadow: 0 12px 30px rgba(10, 141, 247, 0.32);
+        will-change: transform, opacity;
+      }
+      .who .pill svg { width: 36px; height: 36px; }
+      .who .for {
+        position: absolute; left: 0; top: -44px;
+        font-size: 24px; font-weight: 600; letter-spacing: 0.1em;
+        text-transform: uppercase; color: var(--ink-muted);
+        will-change: opacity;
+      }
+
+      /* footer: "Frappe School" */
+      .school-slot {
+        position: absolute;
+        border-radius: 999px;
+        border: 2px dashed #bdbdbd;
+        will-change: opacity;
+      }
+      .school {
+        position: absolute;
+        display: flex; align-items: center; gap: 20px;
+        height: 96px; padding: 0 40px;
+        border-radius: 999px;
+        background: var(--ink);
+        color: #fff;
+        font-size: 36px; font-weight: 600; letter-spacing: -0.01em;
+        white-space: nowrap;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+        will-change: transform, opacity;
+      }
+      .school img { width: 54px; height: 54px; border-radius: 14px; }
+      .school .url {
+        margin-left: 12px; padding-left: 24px;
+        border-left: 1.5px solid rgba(255, 255, 255, 0.28);
+        font-weight: 500; color: rgba(255, 255, 255, 0.78);
+        display: inline-flex; align-items: center; gap: 8px;
+      }
+      .school .url svg { width: 30px; height: 30px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="14" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="stage clip" id="stage"
+           data-start="0" data-duration="14" data-track-index="0">
+        <div class="grid"></div>
+        <div class="kicker" id="kicker">Get certified</div>
+        <div id="cards"></div>
+        <div class="school-slot" id="school-slot"></div>
+        <div class="school" id="school"></div>
+      </div>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        card: { w: 700, h: 470, top: 240, xs: [210, 1010] },
+        certs: [
+          { name: "ERPNext",          sub: "Certification", icon: "badgeCheck",
+            who: "Functional consultants", whoIcon: "users" },
+          { name: "Frappe Framework", sub: "Certification", icon: "codeXml",
+            who: "Framework developers",   whoIcon: "codeXml" },
+        ],
+        school: { cy: 850, w: 760 },
+
+        // cues (seconds, composition-local = source − 397.0)
+        t: {
+          kicker:  0.10,
+          card:    [0.90, 4.65],    // "ERPNext" 398.00, "Frappe" 401.74
+          slot:    [2.30, 6.10],    // "designed for" 399.76, "for" 403.48
+          who:     [3.50, 6.72],    // "functional" 400.60, "framework" 403.80
+          learn:   8.50,            // "learn more" 405.58 — footer slot appears
+          school: 11.32,            // "Frappe School" 408.42
+        },
+      };
+
+      // ---------------------------------------------------------------- icons
+      // Lucide outlines, 24-unit viewBox.
+      const ICON = {
+        badgeCheck: `<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m16 9-5.5 5.5L8 12"/>`,
+        codeXml: `<path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>`,
+        users: `<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/>`,
+        graduationCap: `<path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>`,
+        arrowUpRight: `<path d="M7 7h10v10"/><path d="M7 17 17 7"/>`,
+      };
+      const svgIcon = (name) =>
+        `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">${ICON[name]}</svg>`;
+
+      // --------------------------------------------------------------- build
+      const C = CFG.card;
+      const px = (el, o) => Object.assign(el.style, Object.fromEntries(
+        Object.entries(o).map(([k, v]) => [k, v + "px"])));
+
+      const cardsEl = document.getElementById("cards");
+      const cards = [], slots = [], pills = [], fors = [];
+      CFG.certs.forEach((c, i) => {
+        const el = document.createElement("div");
+        el.className = "card";
+        el.id = "card-" + i;
+        px(el, { left: C.xs[i], top: C.top, width: C.w, height: C.h });
+        el.innerHTML = `
+          <div class="top">
+            <div class="tile">${svgIcon(c.icon)}</div>
+            <div class="name">${c.name}<span class="sub">${c.sub}</span></div>
+          </div>
+          <div class="who">
+            <div class="for">Designed for</div>
+            <div class="slot"></div>
+            <div class="pill">${svgIcon(c.whoIcon)}<span>${c.who}</span></div>
+          </div>`;
+        cardsEl.appendChild(el);
+        cards.push(el);
+        slots.push(el.querySelector(".slot"));
+        pills.push(el.querySelector(".pill"));
+        fors.push(el.querySelector(".for"));
+      });
+
+      const schoolSlot = document.getElementById("school-slot");
+      px(schoolSlot, { left: 960 - CFG.school.w / 2, top: CFG.school.cy - 48,
+                       width: CFG.school.w, height: 96 });
+      const school = document.getElementById("school");
+      school.innerHTML = `<img src="assets/img/frappe-school-logo.png" alt="" /><span>Frappe School</span>
+        <span class="url">school.frappe.io ${svgIcon("arrowUpRight")}</span>`;
+      px(school, { left: 960, top: CFG.school.cy - 48 });
+
+      // ------------------------------------------------------------ timeline
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+      const t = CFG.t;
+
+      // rest state
+      gsap.set(["#kicker", ...cards, ...slots, ...pills, ...fors, schoolSlot, school], { autoAlpha: 0 });
+      gsap.set(school, { xPercent: -50 });
+
+      tl.fromTo("#kicker", { autoAlpha: 0, y: -12 },
+        { autoAlpha: 1, y: 0, duration: 0.5, ease: "power2.out" }, t.kicker);
+
+      cards.forEach((card, i) => {
+        // 1. the certification card lands on its name
+        tl.fromTo(card, { autoAlpha: 0, y: 40, scale: 0.94 },
+          { autoAlpha: 1, y: 0, scale: 1, duration: 0.6, ease: "back.out(1.5)" }, t.card[i]);
+        // 2. "designed for" — an empty slot opens…
+        tl.fromTo([fors[i], slots[i]], { autoAlpha: 0, x: -14 },
+          { autoAlpha: 1, x: 0, duration: 0.4, ease: "power3.out", stagger: 0.06 }, t.slot[i]);
+        // 3. …and the audience fills it on the word
+        tl.to(slots[i], { autoAlpha: 0, duration: 0.25, ease: "power2.in" }, t.who[i]);
+        tl.fromTo(pills[i], { autoAlpha: 0, scale: 0.85, x: -10 },
+          { autoAlpha: 1, scale: 1, x: 0, duration: 0.45, ease: "back.out(1.6)" }, t.who[i]);
+      });
+
+      // 4. "learn more" — a footer slot opens; "Frappe School" fills it on the words
+      tl.fromTo(schoolSlot, { autoAlpha: 0, y: 14 },
+        { autoAlpha: 1, y: 0, duration: 0.4, ease: "power3.out" }, t.learn);
+      tl.to(schoolSlot, { autoAlpha: 0, duration: 0.25, ease: "power2.in" }, t.school);
+      tl.fromTo(school, { autoAlpha: 0, y: 18, scale: 0.92 },
+        { autoAlpha: 1, y: 0, scale: 1, duration: 0.5, ease: "back.out(1.5)" }, t.school);
+    </script>
+  </body>
+</html>

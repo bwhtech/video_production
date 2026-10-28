@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Bullet list with a walking dot.
+         The list sits centred in frame and a blue dot rides down the left
+         gutter, landing on one item at a time with an elastic settle.
+         Same palette and ball as title-bouncing-ball.html.
+         ------------------------------------------------------------------ */
+      :root {
+        --card-bg: #ececec;
+        --ink: #212121;
+        --dot: #0a8df7;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: "Inter", system-ui, sans-serif;
+      }
+
+      .card {
+        position: absolute; inset: 0; overflow: hidden;
+        background: var(--card-bg);
+      }
+
+      /* Positioned from JS constants so the dot's stops are arithmetic,
+         never measured off the DOM at tween time. */
+      .list { position: absolute; left: 0; top: 0; }
+      .title {
+        position: absolute; left: 0;
+        font-size: 62px; font-weight: 600; letter-spacing: -0.004em;
+        color: var(--ink);
+        white-space: nowrap;
+        opacity: 0;
+      }
+      .item {
+        position: absolute; left: 0;
+        font-size: 54px; font-weight: 500; letter-spacing: 0.004em;
+        color: var(--ink);
+        white-space: nowrap;
+        opacity: 0;
+      }
+
+      .dot {
+        position: absolute; left: 0; top: 0;
+        border-radius: 50%;
+        background: var(--dot);
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="8.567" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="card clip" id="card"
+           data-start="0" data-duration="8.567" data-track-index="0">
+        <div class="title" id="title"></div>
+        <div class="list" id="list"></div>
+        <div class="dot" id="dot"></div>
+      </div>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        title: "Sales Order",  // heading above the list
+        titleSize: 62,
+        titleGap: 74,    // space between the heading and the first item
+
+        items: [
+          "Customer",
+          "Items & Prices",
+          "Tax Accounts",
+          "Tax Rates",
+        ],
+
+        textX: 210,      // left edge of the text column
+        lineStep: 116,   // baseline-to-baseline spacing
+        dotR: 11,
+        dotGap: 52,      // dot centre sits this far left of the text
+
+        // list entrance
+        itemFade: 0.5,
+        itemStagger: 0.12,
+
+        // the walking dot.
+        // cues: explicit seconds at which the dot LANDS on items 2..n — use it
+        // to sync to a voiceover. null falls back to firstMoveAt + dwell.
+        // Ticks in the VO at 1.60 / 5.00 / 6.20s; "item" is spoken at 2.92s with no
+        // tick. elastic.out first reaches the target ~0.13s in, so each hop
+        // starts that much before its cue to LAND on the tick.
+        cues: [2.79, 4.87, 6.07],
+        dotIn: 1.55,       // dot pops onto item 1 on the first tick (1.60s)
+
+        // whoosh at 7.70s: the whole card slides up and out, leaving alpha
+        exitAt: 7.70,
+        exitDur: 0.45,
+        firstMoveAt: 1.6,  // when it leaves item 1
+        dwell: 1.6,        // time on each item after that
+        moveDur: 0.95,
+        elastic: "elastic.out(1, 0.55)",
+      };
+
+      const DUR = 8.567; // keep in sync with data-duration on #root and #card
+
+      // -------------------------------------------------------------- layout
+      // Every coordinate is computed once, here — nothing is read back off the
+      // DOM while the timeline is running.
+      const n = CFG.items.length;
+      const hasTitle = CFG.title.length > 0;
+      const titleH = hasTitle ? Math.round(CFG.titleSize * 1.3) : 0;
+      const headH = hasTitle ? titleH + CFG.titleGap : 0;
+      const blockH = headH + n * CFG.lineStep;
+      const blockTop = Math.round((1080 - blockH) / 2);
+      const itemY = (i) => blockTop + headH + i * CFG.lineStep;
+      const dotY = (i) => itemY(i) + CFG.lineStep / 2 - CFG.dotR;
+
+      const titleEl = document.getElementById("title");
+      if (hasTitle) {
+        titleEl.textContent = CFG.title;
+        titleEl.style.left = CFG.textX + "px";
+        titleEl.style.top = blockTop + "px";
+        titleEl.style.height = titleH + "px";
+        titleEl.style.lineHeight = titleH + "px";
+        titleEl.style.fontSize = CFG.titleSize + "px";
+      }
+
+      const listEl = document.getElementById("list");
+      const items = CFG.items.map((text, i) => {
+        const el = document.createElement("div");
+        el.className = "item";
+        el.textContent = text;
+        el.style.left = CFG.textX + "px";
+        el.style.top = itemY(i) + "px";
+        el.style.height = CFG.lineStep + "px";
+        el.style.lineHeight = CFG.lineStep + "px";
+        listEl.appendChild(el);
+        return el;
+      });
+
+      const dotEl = document.getElementById("dot");
+      dotEl.style.width = dotEl.style.height = CFG.dotR * 2 + "px";
+      dotEl.style.left = CFG.textX - CFG.dotGap - CFG.dotR + "px";
+      dotEl.style.top = dotY(0) + "px";
+
+      // ------------------------------------------------------------ timeline
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+
+      if (hasTitle) {
+        tl.fromTo(
+          titleEl,
+          { opacity: 0, y: 14 },
+          { opacity: 1, y: 0, duration: CFG.itemFade, ease: "power2.out" },
+          0
+        );
+      }
+
+      items.forEach((el, i) => {
+        tl.fromTo(
+          el,
+          { opacity: 0, y: 14 },
+          { opacity: 1, y: 0, duration: CFG.itemFade, ease: "power2.out" },
+          (hasTitle ? CFG.itemStagger : 0) + i * CFG.itemStagger
+        );
+      });
+
+      const dotIn = CFG.dotIn ??
+        (hasTitle ? CFG.itemStagger : 0) + (n - 1) * CFG.itemStagger + CFG.itemFade * 0.4;
+      tl.fromTo(
+        dotEl,
+        { opacity: 0, scale: 0.3 },
+        { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2.2)" },
+        dotIn
+      );
+
+      // walk down the list, one elastic hop per item
+      for (let i = 1; i < n; i++) {
+        const at = CFG.cues
+          ? CFG.cues[i - 1]
+          : CFG.firstMoveAt + (i - 1) * CFG.dwell;
+        tl.to(
+          dotEl,
+          {
+            y: dotY(i) - dotY(0),
+            duration: CFG.moveDur,
+            ease: CFG.elastic,
+          },
+          at
+        );
+      }
+
+      // exit: card leaves through the top edge; body is transparent behind it
+      if (CFG.exitAt != null) {
+        tl.to(
+          document.getElementById("card"),
+          { y: -1080, duration: CFG.exitDur, ease: "power3.in" },
+          CFG.exitAt
+        );
+      }
+    </script>
+  </body>
+</html>

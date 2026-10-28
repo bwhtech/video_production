@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1200, height=630" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/tokens.css" />
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* OG card — "Bookkeeping with ERPNext" blog post.
+         Same base as og-donna-v5 (1200x630, frappe-ui tokens; light theme) with the
+         element count cut to three: logo lockup, title, site footer. */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1200px; height: 630px; overflow: hidden;
+        background: var(--surface-base);
+        font-family: var(--font-text);
+      }
+
+      .bg { position: absolute; inset: 0; background: var(--surface-base); }
+      .glow {
+        position: absolute; bottom: -300px; right: -200px;
+        width: 900px; height: 700px;
+        border-radius: 9999px;
+        background: radial-gradient(ellipse,
+          color-mix(in srgb, var(--brand) 12%, transparent) 0%, transparent 68%);
+      }
+
+      .stage {
+        position: absolute; inset: 0; z-index: 2;
+        padding: 64px 72px;
+        display: flex; flex-direction: column; justify-content: space-between;
+      }
+
+      /* ---- logo lockup ---- */
+      .lockup { display: flex; align-items: center; }
+      .lockup img { width: 84px; height: 84px; display: block; border-radius: 22px; }
+
+      /* ---- title ---- */
+      .title {
+        font-size: 104px; line-height: 1.02;
+        font-weight: var(--fw-bold); letter-spacing: -0.025em;
+        color: var(--ink-gray-9);
+      }
+      .title .accent { color: var(--ink-gray-6); }
+
+      /* ---- footer ---- */
+      .site {
+        font-size: 28px; font-weight: var(--fw-medium); letter-spacing: 0.01em;
+        color: var(--ink-gray-5);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root" data-theme="light" data-composition-id="main" data-start="0" data-duration="1"
+         data-fps="30" data-width="1200" data-height="630">
+      <div class="bg"><div class="glow"></div></div>
+
+      <div class="stage">
+        <div class="lockup">
+          <img src="assets/img/erpnext-logo.svg" alt="" />
+        </div>
+
+        <h1 class="title">Bookkeeping<br />with <span class="accent">ERPNext</span></h1>
+
+        <div class="site">school.bwh.tech</div>
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Chapter 14 — Chart of Accounts structure.
+         Root "Chart of Accounts" → four sides (Asset, Liability, Income,
+         Expense) → the first two group into Balance Sheet, the last two into
+         Profit & Loss → only the Balance Sheet side needs opening balances.
+         Cues come from the Scribe transcript of the delivered chapter-14 edit
+         (edit/local/transcripts/sf-wa-014-a-end-of-course.json). The
+         composition starts at SOURCE 00:09.00, ~0.2s before "Chart of
+         accounts"; every cue below is source time minus 9.0, set ~0.06–0.1s
+         before its word so the element has landed as the word is spoken.
+         ------------------------------------------------------------------ */
+      /* Same light palette as title-bouncing-ball / slide-ch10 / timeline. */
+      :root {
+        --card-bg: #ececec;
+        --panel: #ffffff;
+        --line: #d6d6d6;
+        --ink: #212121;
+        --ink-muted: #6f6f6f;
+        --accent: #0a8df7;
+        --accent-soft: #e0f0fe;
+        --accent-ink: #0b6fc2;
+        --font-text: "Inter", system-ui, sans-serif;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: var(--font-text);
+        color: var(--ink);
+      }
+
+      .stage {
+        position: absolute; inset: 0; overflow: hidden;
+        background: var(--card-bg);
+      }
+      .grid {
+        position: absolute; inset: 0;
+        background-image: radial-gradient(#d2d2d2 1.5px, transparent 1.5px);
+        background-size: 48px 48px;
+        opacity: 0.5;
+      }
+
+      .layer { position: absolute; inset: 0; overflow: visible; }
+
+      /* root node */
+      .root {
+        position: absolute;
+        display: flex; align-items: center; justify-content: center; gap: 24px;
+        border-radius: 22px;
+        background: var(--panel);
+        border: 1.5px solid var(--line);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+        font-size: 46px; font-weight: 600; letter-spacing: -0.014em;
+        white-space: nowrap;
+        will-change: transform, opacity;
+      }
+      .root svg { width: 48px; height: 48px; color: var(--accent-ink); }
+
+      /* leaf cards — icon tile above the label */
+      .ghost {
+        position: absolute;
+        border-radius: 22px;
+        border: 2px dashed #bdbdbd;
+        will-change: opacity;
+      }
+      .leaf {
+        position: absolute;
+        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px;
+        border-radius: 22px;
+        background: var(--panel);
+        border: 1.5px solid var(--line);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+        will-change: transform, opacity;
+      }
+      .leaf .tile {
+        width: 92px; height: 92px; border-radius: 24px;
+        display: flex; align-items: center; justify-content: center;
+        background: var(--accent-soft);
+        color: var(--accent-ink);
+      }
+      .leaf .tile svg { width: 48px; height: 48px; }
+      .leaf .name {
+        font-size: 36px; line-height: 1; font-weight: 600;
+        letter-spacing: -0.012em; white-space: nowrap;
+      }
+
+      /* group containers: SVG rect (draws itself) + HTML header */
+      .box rect {
+        fill: rgba(255, 255, 255, 0.5);
+        stroke: #bfbfbf;
+        stroke-width: 3;
+      }
+      .head {
+        position: absolute;
+        display: flex; align-items: center; gap: 16px;
+        font-size: 38px; font-weight: 600; letter-spacing: -0.012em;
+        color: var(--ink);
+        white-space: nowrap;
+        will-change: transform, opacity;
+      }
+      .head svg { width: 40px; height: 40px; }
+
+      .wires path {
+        fill: none;
+        stroke: #b9b9b9;
+        stroke-width: 3;
+        stroke-linecap: round;
+      }
+
+      /* verdict pills under each group */
+      .pill {
+        position: absolute;
+        display: flex; align-items: center; justify-content: center; gap: 14px;
+        padding: 0 32px; height: 74px;
+        border-radius: 999px;
+        font-size: 30px; font-weight: 600; letter-spacing: 0.01em;
+        white-space: nowrap;
+        will-change: transform, opacity;
+      }
+      .pill svg { width: 34px; height: 34px; }
+      .pill.yes {
+        background: var(--accent);
+        color: #ffffff;
+        box-shadow: 0 12px 30px rgba(10, 141, 247, 0.32);
+      }
+      .pill.no {
+        background: var(--panel);
+        border: 1.5px solid var(--line);
+        color: var(--ink-muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="17" data-fps="30"
+         data-width="1920" data-height="1080">
+      <div class="stage clip" id="stage"
+           data-start="0" data-duration="17" data-track-index="0">
+        <div class="grid"></div>
+
+        <svg class="layer box" id="boxes" viewBox="0 0 1920 1080" width="1920" height="1080"></svg>
+        <svg class="layer wires" id="wires" viewBox="0 0 1920 1080" width="1920" height="1080"></svg>
+
+        <div class="root" id="coa"></div>
+        <div id="heads"></div>
+        <div id="ghosts"></div>
+        <div id="leaves"></div>
+        <div id="pills"></div>
+      </div>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        root:  { cx: 960, top: 150, w: 600, h: 124 },
+        leaf:  { w: 280, h: 230, top: 530 },
+        // one entry per side; `group` = which container it belongs to
+        sides: [
+          { name: "Asset",     icon: "briefcase",  cx: 420,  group: 0 },
+          { name: "Liability", icon: "landmark",   cx: 740,  group: 0 },
+          { name: "Income",    icon: "trendingUp", cx: 1180, group: 1 },
+          { name: "Expense",   icon: "creditCard", cx: 1500, group: 1 },
+        ],
+        groups: [
+          { name: "Balance Sheet", icon: "scale",       x: 240,  yes: true,
+            pill: "Opening balances required", pillIcon: "circleCheck" },
+          { name: "Profit & Loss", icon: "chartColumn", x: 1000, yes: false,
+            pill: "No opening balances",       pillIcon: "circleMinus" },
+        ],
+        box:   { top: 410, w: 680, h: 420, r: 26, headTop: 450 },
+        pillCy: 920,
+
+        // cues (seconds, composition-local = source − 9.0)
+        t: {
+          rootIn:    0.12,   // "Chart"          9.20
+          wires:     1.36,   // "four"          10.42
+          ghosts:    1.58,   // "sides"         10.66
+          fill:      [2.38, 2.96, 3.84, 4.62], // asset / liability / income / expense
+          bsPulse:   [5.68, 6.36],   // "Asset" 14.76, "liability" 15.44
+          bsGroup:   7.28,   // "gives"         16.34
+          bsHead:    7.78,   // "balance sheet" 16.84
+          plPulse:   [8.96, 9.76],   // "Income" 18.02, "expenses" 18.82
+          plGroup:   10.58,  // "gives"         19.64
+          plHead:    11.20,  // "profit"        20.26
+          only:      14.28,  // "only"          23.34
+          yesPill:   14.70,  // "balance sheet" 23.76
+          noPill:    15.30,
+        },
+      };
+
+      // ---------------------------------------------------------------- icons
+      // Lucide outlines, 24-unit viewBox.
+      const ICON = {
+        listTree: `<path d="M8 5h13"/><path d="M13 12h8"/><path d="M13 19h8"/><path d="M3 10a2 2 0 0 0 2 2h3"/><path d="M3 5v12a2 2 0 0 0 2 2h3"/>`,
+        briefcase: `<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/>`,
+        landmark: `<path d="M10 18v-7"/><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/>`,
+        trendingUp: `<path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/>`,
+        creditCard: `<rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/>`,
+        scale: `<path d="M12 3v18"/><path d="m19 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/><path d="m5 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M7 21h10"/>`,
+        chartColumn: `<path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/>`,
+        circleCheck: `<circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/>`,
+        circleMinus: `<circle cx="12" cy="12" r="10"/><path d="M8 12h8"/>`,
+      };
+      const svgIcon = (name) =>
+        `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">${ICON[name]}</svg>`;
+
+      // --------------------------------------------------------------- build
+      const R = CFG.root, L = CFG.leaf, B = CFG.box;
+      const NS = "http://www.w3.org/2000/svg";
+      const px = (el, o) => Object.assign(el.style, Object.fromEntries(
+        Object.entries(o).map(([k, v]) => [k, v + "px"])));
+
+      // root node
+      const coa = document.getElementById("coa");
+      px(coa, { left: R.cx - R.w / 2, top: R.top, width: R.w, height: R.h });
+      coa.innerHTML = `${svgIcon("listTree")}<span>Chart of Accounts</span>`;
+      const rootBottom = R.top + R.h;
+
+      // leaves + ghosts
+      const ghostsEl = document.getElementById("ghosts");
+      const leavesEl = document.getElementById("leaves");
+      const ghosts = [], leaves = [], tiles = [];
+      CFG.sides.forEach((s, i) => {
+        const g = document.createElement("div");
+        g.className = "ghost";
+        px(g, { left: s.cx - L.w / 2, top: L.top, width: L.w, height: L.h });
+        ghostsEl.appendChild(g);
+        ghosts.push(g);
+
+        const c = document.createElement("div");
+        c.className = "leaf";
+        c.id = "leaf-" + i;
+        px(c, { left: s.cx - L.w / 2, top: L.top, width: L.w, height: L.h });
+        c.innerHTML = `<div class="tile">${svgIcon(s.icon)}</div><div class="name">${s.name}</div>`;
+        leavesEl.appendChild(c);
+        leaves.push(c);
+        tiles.push(c.querySelector(".tile"));
+      });
+
+      // group boxes (SVG rect that draws itself) + headers + pills
+      const boxes = document.getElementById("boxes");
+      const headsEl = document.getElementById("heads");
+      const pillsEl = document.getElementById("pills");
+      const rects = [], heads = [], pills = [];
+      const BOX_LEN = 2 * (B.w + B.h);   // ≥ perimeter; whole outline shows at offset 0
+      CFG.groups.forEach((gr, i) => {
+        const r = document.createElementNS(NS, "rect");
+        r.setAttribute("x", gr.x); r.setAttribute("y", B.top);
+        r.setAttribute("width", B.w); r.setAttribute("height", B.h);
+        r.setAttribute("rx", B.r); r.setAttribute("ry", B.r);
+        r.style.strokeDasharray = BOX_LEN;
+        r.style.strokeDashoffset = BOX_LEN;
+        boxes.appendChild(r);
+        rects.push(r);
+
+        const h = document.createElement("div");
+        h.className = "head";
+        h.id = "head-" + i;
+        h.innerHTML = `${svgIcon(gr.icon)}<span>${gr.name}</span>`;
+        px(h, { left: gr.x + 36, top: B.headTop });
+        headsEl.appendChild(h);
+        heads.push(h);
+
+        const p = document.createElement("div");
+        p.className = "pill " + (gr.yes ? "yes" : "no");
+        p.id = "pill-" + i;
+        p.innerHTML = `${svgIcon(gr.pillIcon)}<span>${gr.pill}</span>`;
+        px(p, { left: gr.x + B.w / 2, top: CFG.pillCy - 37 });
+        pillsEl.appendChild(p);
+        pills.push(p);
+      });
+
+      // wires: root → each leaf; later the two wires of a group morph into one
+      // trunk root → box top. Same command count so the `d` attr tweens.
+      const wires = document.getElementById("wires");
+      const WIRE_LEN = 600;
+      const leafPath = (cx) => {
+        const my = (rootBottom + L.top) / 2;
+        return `M ${R.cx} ${rootBottom} C ${R.cx} ${my}, ${cx} ${my}, ${cx} ${L.top}`;
+      };
+      const trunkPath = (gx) => {
+        const cx = gx + B.w / 2, my = (rootBottom + B.top) / 2;
+        return `M ${R.cx} ${rootBottom} C ${R.cx} ${my}, ${cx} ${my}, ${cx} ${B.top}`;
+      };
+      const wirePaths = CFG.sides.map((s) => {
+        const p = document.createElementNS(NS, "path");
+        p.setAttribute("d", leafPath(s.cx));
+        p.style.strokeDasharray = WIRE_LEN;
+        p.style.strokeDashoffset = WIRE_LEN;
+        wires.appendChild(p);
+        return p;
+      });
+      const groupWires = (gi) => wirePaths.filter((_, i) => CFG.sides[i].group === gi);
+      const groupLeaves = (gi) => leaves.filter((_, i) => CFG.sides[i].group === gi);
+      const groupTiles = (gi) => tiles.filter((_, i) => CFG.sides[i].group === gi);
+
+      // ------------------------------------------------------------ timeline
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+      const t = CFG.t;
+
+      // rest state
+      gsap.set([coa, ...ghosts, ...leaves, ...heads, ...pills], { autoAlpha: 0 });
+      gsap.set(pills, { xPercent: -50 });
+      gsap.set(rects, { attr: { "fill-opacity": 0 } });
+
+      // 1. "Chart of accounts" — the root lands
+      tl.fromTo(coa, { autoAlpha: 0, y: -28, scale: 0.94 },
+        { autoAlpha: 1, y: 0, scale: 1, duration: 0.6, ease: "back.out(1.5)" }, t.rootIn);
+
+      // 2. "has four sides" — four wires branch out to four empty slots
+      tl.to(wirePaths, { strokeDashoffset: 0, duration: 0.55, ease: "power2.inOut", stagger: 0.06 }, t.wires);
+      tl.fromTo(ghosts, { autoAlpha: 0, y: 14 },
+        { autoAlpha: 1, y: 0, duration: 0.4, ease: "power3.out", stagger: 0.06 }, t.ghosts);
+
+      // 3. "asset, liability, income, and expense" — each slot fills on its word
+      leaves.forEach((leaf, i) => {
+        tl.to(ghosts[i], { autoAlpha: 0, duration: 0.25, ease: "power2.in" }, t.fill[i]);
+        tl.fromTo(leaf, { autoAlpha: 0, y: 16, scale: 0.92 },
+          { autoAlpha: 1, y: 0, scale: 1, duration: 0.5, ease: "back.out(1.5)" }, t.fill[i]);
+      });
+
+      // a group forms: its two leaves nod on their words, then the two wires
+      // merge into one trunk while the box draws itself around them
+      function formGroup(gi, pulseAt, groupAt, headAt) {
+        const gl = groupLeaves(gi);
+        gl.forEach((leaf, k) => {
+          tl.to(leaf, { scale: 1.05, duration: 0.18, ease: "power2.out" }, pulseAt[k]);
+          tl.to(leaf, { scale: 1, duration: 0.3, ease: "power2.inOut" }, pulseAt[k] + 0.18);
+        });
+        const trunk = trunkPath(CFG.groups[gi].x);
+        tl.to(groupWires(gi), { attr: { d: trunk }, duration: 0.55, ease: "power3.inOut" }, groupAt);
+        tl.to(rects[gi], { strokeDashoffset: 0, duration: 0.75, ease: "power2.inOut" }, groupAt);
+        tl.to(rects[gi], { attr: { "fill-opacity": 1 }, duration: 0.5, ease: "power2.out" }, groupAt + 0.2);
+        tl.fromTo(heads[gi], { autoAlpha: 0, x: -16 },
+          { autoAlpha: 1, x: 0, duration: 0.42, ease: "power3.out" }, headAt);
+      }
+      formGroup(0, t.bsPulse, t.bsGroup, t.bsHead);
+      formGroup(1, t.plPulse, t.plGroup, t.plHead);
+
+      // 4. "only for balance sheet accounts" — the Balance Sheet side lights up,
+      //    the P&L side steps back, then each gets its verdict pill
+      tl.to(rects[0], { attr: { stroke: "#0a8df7" }, duration: 0.35, ease: "power2.out" }, t.only);
+      tl.to(groupWires(0), { attr: { stroke: "#0a8df7" }, duration: 0.35, ease: "power2.out" }, t.only);
+      tl.to(heads[0], { color: "#0b6fc2", duration: 0.35, ease: "power2.out" }, t.only);
+      tl.to(groupTiles(0), { backgroundColor: "#0a8df7", color: "#ffffff", duration: 0.35,
+        ease: "power2.out", stagger: 0.06 }, t.only);
+      tl.to(groupLeaves(0), { borderColor: "#9dcbf5", duration: 0.35, ease: "power2.out" }, t.only);
+
+      tl.to(rects[1], { attr: { stroke: "#d6d6d6", "stroke-dasharray": "14 12" },
+        duration: 0.35, ease: "power2.out" }, t.only);
+      tl.to(heads[1], { color: "#8e8e8e", duration: 0.35, ease: "power2.out" }, t.only);
+      tl.to(groupLeaves(1), { opacity: 0.65, duration: 0.35, ease: "power2.out" }, t.only);
+      tl.to(groupTiles(1), { backgroundColor: "#eeeeee", color: "#8a8a8a", duration: 0.35,
+        ease: "power2.out" }, t.only);
+      tl.to(groupWires(1), { opacity: 0.5, duration: 0.35, ease: "power2.out" }, t.only);
+
+      tl.fromTo(pills[0], { autoAlpha: 0, y: 18, scale: 0.9 },
+        { autoAlpha: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, t.yesPill);
+      tl.fromTo(pills[1], { autoAlpha: 0, y: 12 },
+        { autoAlpha: 1, y: 0, duration: 0.4, ease: "power3.out" }, t.noPill);
+    </script>
+  </body>
+</html>

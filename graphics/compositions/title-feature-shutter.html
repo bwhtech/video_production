@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="theme/tokens.css" />
+    <link rel="stylesheet" href="theme/fonts.css" />
+    <style>
+      /* ------------------------------------------------------------------
+         Feature transition title — "color shutter" variant.
+         Same card as title-feature-wipe.html, plus four full-height layers
+         in frappe-ui badge hues that travel in just AHEAD of the dark panel,
+         like a colorful shutter. The panel lands on top and covers them.
+         Exit retraces the path: panel retracts left first, the colors follow
+         it back, so they flash once more on the way out.
+         Transparent outside the layers: render with alpha.
+         ------------------------------------------------------------------ */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: transparent;
+        font-family: var(--font-text);
+      }
+
+      .layer {
+        position: absolute; inset: 0; overflow: hidden;
+        clip-path: inset(0 100% 0 0);
+      }
+      .s-violet { background: var(--surface-violet-7); }
+      .s-blue   { background: var(--surface-blue-7); }
+      .s-green  { background: var(--surface-green-7); }
+      .s-amber  { background: var(--surface-amber-7); }
+
+      .card {
+        background: var(--surface-base);
+        display: flex; align-items: center; justify-content: center;
+      }
+      .title {
+        max-width: 1500px; text-align: center;
+        font-size: 128px; line-height: 1.05;
+        font-weight: var(--fw-bold); letter-spacing: -0.035em;
+        color: var(--ink-gray-9);
+        font-optical-sizing: auto;
+      }
+      .title .word { display: inline-block; will-change: transform, opacity, filter; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main"
+         data-start="0" data-duration="3.2" data-fps="30"
+         data-width="1920" data-height="1080">
+      <!-- bottom → top: the first color to arrive sits lowest, the panel on top -->
+      <div class="layer clip s-violet" id="s0" data-start="0" data-duration="3.2" data-track-index="0"></div>
+      <div class="layer clip s-blue"   id="s1" data-start="0" data-duration="3.2" data-track-index="1"></div>
+      <div class="layer clip s-green"  id="s2" data-start="0" data-duration="3.2" data-track-index="2"></div>
+      <div class="layer clip s-amber"  id="s3" data-start="0" data-duration="3.2" data-track-index="3"></div>
+      <div class="layer card clip" id="card" data-start="0" data-duration="3.2" data-track-index="4">
+        <h1 class="title" id="title"></h1>
+      </div>
+
+      <!-- whip transient (25ms into the file) lands on the cascade's peak velocity -->
+      <audio id="whip-in" src="assets/sfx/whip.wav"
+             data-start="0.33" data-duration="0.17" data-track-index="5" data-volume="0.8"></audio>
+      <audio id="whip-out" src="assets/sfx/whip.wav"
+             data-start="2.68" data-duration="0.17" data-track-index="6" data-volume="0.8"></audio>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------- knobs
+      const CFG = {
+        title: "Disable Apps",
+        wipe: 0.55,       // travel time of every layer, in and out
+        gap: 0.045,       // stagger between layers (4 colors + panel)
+        titleAt: 0.38,    // title starts while the panel is still arriving
+        exitAt: 2.2,      // title starts leaving
+        panelOutAt: 2.35, // panel retracts first, colors follow
+      };
+      // Retiming? Keep data-duration on #root and every layer in sync, and each
+      // whip's data-start = middle layer's start + wipe * 0.477 - 0.025.
+
+      // ------------------------------------------------------------- curves
+      // Strong ease-in-out for on-screen travel: cubic-bezier(0.77, 0, 0.175, 1)
+      function bezier(x1, y1, x2, y2) {
+        const c = (a, b, t) => 3 * (1 - t) * (1 - t) * t * a + 3 * (1 - t) * t * t * b + t * t * t;
+        return (x) => {
+          let lo = 0, hi = 1, t = x;
+          for (let i = 0; i < 30; i++) {
+            t = (lo + hi) / 2;
+            if (c(x1, x2, t) < x) lo = t; else hi = t;
+          }
+          return c(y1, y2, t);
+        };
+      }
+      const easeInOut = bezier(0.77, 0, 0.175, 1);
+      const easeOut = bezier(0.23, 1, 0.32, 1);
+      // Mirrored ease-out for the title exit, so the way out retraces the way in
+      const easeOutMirror = bezier(0.68, 0, 0.77, 0);
+
+      // Critically damped spring (damping 1.0, response 0.4s), mapped onto a tween
+      const SPRING_DUR = 0.8; // residual at 0.8s ≈ 0.00004 — settled
+      const omega = (2 * Math.PI) / 0.4;
+      const spring = (p) => {
+        const t = p * SPRING_DUR;
+        return p >= 1 ? 1 : 1 - (1 + omega * t) * Math.exp(-omega * t);
+      };
+
+      // ------------------------------------------------------------- title
+      const titleEl = document.getElementById("title");
+      CFG.title.split(" ").forEach((word, i, all) => {
+        const s = document.createElement("span");
+        s.className = "word";
+        s.textContent = word;
+        titleEl.appendChild(s);
+        if (i < all.length - 1) titleEl.appendChild(document.createTextNode(" "));
+      });
+      const words = [...titleEl.querySelectorAll(".word")];
+
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+
+      // one progress proxy per layer (0 = hidden, 1 = covering the frame),
+      // one painter for all of them so seeking in any direction stays exact
+      const ids = ["s0", "s1", "s2", "s3", "card"];
+      const layers = ids.map((id) => ({ el: document.getElementById(id), p: 0 }));
+      const paint = () => layers.forEach((l) =>
+        gsap.set(l.el, { clipPath: `inset(0 ${(1 - l.p) * 100}% 0 0)` }));
+      paint();
+      tl.eventCallback("onUpdate", paint);
+
+      // --- entry: colors lead, the dark panel lands last
+      layers.forEach((l, i) => {
+        tl.to(l, { p: 1, duration: CFG.wipe, ease: easeInOut }, i * CFG.gap);
+      });
+      // colors are fully covered once the panel lands — drop them
+      tl.set(layers.slice(0, 4).map((l) => l.el), { opacity: 0 }, 4 * CFG.gap + CFG.wipe);
+
+      // title follows the panel's direction and settles on a critically damped spring
+      tl.fromTo(words, { x: -48, scale: 0.97 },
+        { x: 0, scale: 1, duration: SPRING_DUR, ease: spring, stagger: 0.05 }, CFG.titleAt);
+      tl.fromTo(words, { opacity: 0 },
+        { opacity: 1, duration: 0.25, ease: easeOut, stagger: 0.05 }, CFG.titleAt);
+      // motion blur only while it's moving fast
+      tl.fromTo(words, { filter: "blur(6px)" },
+        { filter: "blur(0px)", duration: 0.3, ease: easeOut, stagger: 0.05 }, CFG.titleAt);
+
+      // --- exit: retrace the path — panel retracts first, colors follow it back
+      tl.to([...words].reverse(), {
+        x: -48, scale: 0.97, opacity: 0, filter: "blur(6px)",
+        duration: 0.3, ease: easeOutMirror, stagger: 0.05,
+      }, CFG.exitAt);
+      tl.set(layers.slice(0, 4).map((l) => l.el), { opacity: 1 }, CFG.panelOutAt);
+      [...layers].reverse().forEach((l, i) => {
+        tl.to(l, { p: 0, duration: CFG.wipe, ease: easeInOut }, CFG.panelOutAt + i * CFG.gap);
+      });
+    </script>
+  </body>
+</html>
