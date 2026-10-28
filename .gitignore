@@ -10,7 +10,7 @@ graphics/renders/
 
 # accounting-course: heavy build products stay local; VO + SFX mp3s are tracked so cloud agents can build without the TTS key
 accounting-course/lessons/*/renders
-accounting-course/lessons/*/snapshots/
+accounting-course/lessons/*/snapshots
 accounting-course/lessons/*/review/
 accounting-course/lessons/*/icon-lab/
 accounting-course/lessons/shared/kit/*-test/snapshots/
