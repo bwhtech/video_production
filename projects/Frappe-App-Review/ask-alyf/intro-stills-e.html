@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Marketplace Pick Headers</title>
+<link rel="stylesheet" href="../../../graphics/theme/tokens.css" />
+<link rel="stylesheet" href="../../../graphics/theme/fonts.css" />
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<style>
+/* Direction E (marketplace pick), four header treatments for "Tutorial and Review".
+   Same tile grid in each; only the header changes. Flat tokens, no gradients. */
+body { margin: 0; background: var(--surface-gray-1); color: var(--ink-gray-8); font-family: var(--font-text); padding: 32px 16px 64px; }
+h1 { font-size: 20px; font-weight: 600; max-width: 1400px; margin: 0 auto 4px; }
+.sub { font-size: 14px; color: var(--ink-gray-5); max-width: 1400px; margin: 0 auto 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 640px), 1fr)); gap: 32px 24px; max-width: 1400px; margin: 0 auto; }
+.frame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; border: 1px solid var(--outline-gray-2); }
+.lbl { font-size: 15px; font-weight: 600; color: var(--ink-gray-9); margin-top: 10px; }
+.beat { font-size: 13px; line-height: 1.5; color: var(--ink-gray-6); margin-top: 4px; }
+
+.stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; transform: scale(var(--s, 0.3));
+  background: var(--surface-base); color: var(--ink-gray-9); overflow: hidden; font-family: var(--font-text); }
+.stage svg.lucide { stroke-width: 1.75; }
+.a { position: absolute; }
+
+/* shared tile grid: 5 × 2, centred, 280px tiles */
+.tiles { left: 188px; top: 330px; display: grid; grid-template-columns: repeat(5, 280px); gap: 36px; }
+.t { height: 280px; border-radius: 44px; background: var(--surface-gray-1); border: 2px solid var(--outline-gray-2);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; color: var(--ink-gray-4); }
+.t svg { width: 88px; height: 88px; color: var(--ink-gray-4); }
+.t.dim { opacity: 0.45; }
+.t.pick { background: var(--brand); border-color: var(--brand); color: var(--ink-gray-9); transform: scale(1.08); outline: 8px solid var(--surface-violet-3); outline-offset: 10px; }
+.t.pick svg { color: var(--ink-gray-9); }
+.t.pick span { font-size: 38px; font-weight: 700; letter-spacing: -0.02em; }
+
+/* E1 · plain big title */
+.h1 { left: 188px; top: 150px; font-size: 104px; font-weight: 800; letter-spacing: -0.035em; line-height: 1; white-space: nowrap; }
+.h1 .and { color: var(--brand-ink); }
+
+/* E2 · solid violet badge */
+.h2 { left: 188px; top: 160px; display: flex; align-items: center; gap: 20px; padding: 22px 40px 24px 30px; border-radius: 999px;
+  background: var(--brand); font-size: 60px; font-weight: 700; letter-spacing: -0.02em; line-height: 1; white-space: nowrap; }
+.h2 svg { width: 60px; height: 60px; stroke-width: 2.25; }
+
+/* E3 · two-tier: small context + big title */
+.h3k { left: 192px; top: 92px; font-size: 40px; font-weight: 600; letter-spacing: 0.04em; color: var(--ink-gray-5); white-space: nowrap; }
+.h3 { left: 188px; top: 170px; font-size: 96px; font-weight: 800; letter-spacing: -0.035em; line-height: 1; white-space: nowrap; }
+
+/* E4 · highlighter stroke behind "Review" */
+.h4 { left: 188px; top: 150px; font-size: 104px; font-weight: 800; letter-spacing: -0.035em; line-height: 1; white-space: nowrap; }
+.h4 .hl { position: relative; z-index: 0; margin-left: 0.18em; }
+.h4 .hl::before { content: ""; position: absolute; z-index: -1; left: -18px; right: -22px; top: 18%; bottom: -6%;
+  background: var(--brand); border-radius: 10px; transform: skewX(-6deg); }
+</style>
+</head>
+<body>
+<h1>Marketplace pick · header treatments</h1>
+<p class="sub">Header text is now "Tutorial and Review", with normal tracking and much bigger and bolder type. The tile grid is the same in every frame. In motion, the header lands on the first downbeat (0.26s) before the tiles pop in.</p>
+
+<div class="grid">
+
+  <div>
+    <div class="frame"><div class="stage">
+      <div class="a h1">Tutorial <span class="and">and</span> Review</div>
+      <div class="a tiles" data-tiles></div>
+    </div></div>
+    <div class="lbl">E1 · Big title</div>
+    <div class="beat">White 104px extra-bold with "and" in violet. Plain and loud. Words drop in one per beat.</div>
+  </div>
+
+  <div>
+    <div class="frame"><div class="stage">
+      <div class="a h2"><i data-lucide="circle-play"></i>Tutorial and Review</div>
+      <div class="a tiles" data-tiles></div>
+    </div></div>
+    <div class="lbl">E2 · Violet badge</div>
+    <div class="beat">A solid violet pill with a play icon. Reads like a label stamped on the marketplace. The pill scales in on the downbeat.</div>
+  </div>
+
+  <div>
+    <div class="frame"><div class="stage">
+      <div class="a h3k">Frappe App</div>
+      <div class="a h3">Tutorial and Review</div>
+      <div class="a tiles" data-tiles></div>
+    </div></div>
+    <div class="lbl">E3 · Two-tier</div>
+    <div class="beat">A small grey "Frappe App" above a big white title, so the Frappe context stays without the wide-tracked caps.</div>
+  </div>
+
+  <div>
+    <div class="frame"><div class="stage">
+      <div class="a h4">Tutorial and <span class="hl">Review</span></div>
+      <div class="a tiles" data-tiles></div>
+    </div></div>
+    <div class="lbl">E4 · Highlighter</div>
+    <div class="beat">A violet marker stroke behind "Review", the same family as the feature-title highlighter you picked before. The stroke sweeps left to right on a beat.</div>
+  </div>
+
+</div>
+
+<script>
+const icons = ['headset', 'users', 'chart-column', 'graduation-cap', 'folder', 'calendar', null, 'shopping-cart', 'layout-template', 'receipt'];
+document.querySelectorAll('[data-tiles]').forEach(g => {
+  g.innerHTML = icons.map(i => i
+    ? `<div class="t dim"><i data-lucide="${i}"></i></div>`
+    : `<div class="t pick"><i data-lucide="message-square-text"></i><span>Ask Alyf</span></div>`).join('');
+});
+lucide.createIcons();
+function fit() { document.querySelectorAll('.frame').forEach(f => f.querySelector('.stage').style.setProperty('--s', f.clientWidth / 1920)); }
+addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>

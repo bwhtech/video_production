@@ -1,0 +1,105 @@
+<title>MCP vs frappectl Stills</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&display=swap">
+<style>
+/*TOKENS*/
+</style>
+<style>
+/* Keyframes for the "MCP vs this" graphic. Same split layout as the API vs
+   frappectl graphic: Agent top, ERPNext bottom, MCP left, frappectl right. */
+:root { color-scheme: light; }
+body { margin: 0; background: var(--surface-gray-2); font-family: var(--font-text); padding: 32px 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 640px), 1fr)); gap: 24px; max-width: 1400px; margin: 0 auto; }
+.frame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; border: 1px solid var(--outline-gray-3); }
+.lbl { font: 600 13px/1.4 var(--font-mono); color: var(--ink-gray-7); margin-top: 8px; }
+.stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; transform: scale(var(--s, 0.3));
+  background: var(--surface-base); color: var(--ink-gray-9); overflow: hidden; font-family: var(--font-text); }
+svg.lucide { stroke-width: 1.75; }
+
+.bar { position: absolute; left: 80px; right: 80px; height: 100px; border-radius: 24px; display: flex; align-items: center; justify-content: center; gap: 22px;
+  background: var(--surface-gray-2); border: 2px solid var(--outline-gray-3); font-size: 44px; font-weight: 650; }
+.bar.top { top: 36px; } .bar.bot { bottom: 36px; }
+.bar svg { width: 54px; height: 54px; color: var(--ink-gray-7); }
+.bar .erp { width: 62px; height: 62px; }
+.col { position: absolute; top: 156px; bottom: 156px; width: 840px; }
+.col.l { left: 80px; } .col.r { right: 80px; }
+.divider { position: absolute; left: 959px; top: 156px; bottom: 156px; width: 2px; background: var(--outline-gray-2); }
+.pipe { position: absolute; top: -20px; bottom: -20px; left: 18px; width: 0; }
+.pipe.gray { border-left: 4px dashed var(--outline-gray-4); }
+.pipe.solid { border-left: 4px solid var(--ink-gray-6); }
+.pipe.brand { border-left: 4px solid var(--brand); }
+.hd { position: absolute; top: 14px; left: 56px; right: 0; height: 48px; display: flex; align-items: center; font: 700 32px/1 var(--font-mono); color: var(--ink-gray-7); }
+.col.r .hd { color: var(--brand-ink); }
+.lb { position: absolute; left: 56px; display: inline-flex; align-items: center; gap: 12px; font: 600 26px/1 var(--font-text); color: var(--ink-gray-8); }
+.lb em { font-style: normal; font-weight: 500; color: var(--ink-gray-6); }
+.lb svg { width: 30px; height: 30px; color: var(--ink-gray-6); }
+.off { opacity: 0.25; }
+
+/* setup steps */
+.step { position: absolute; left: 56px; right: 0; height: 80px; display: flex; align-items: center; gap: 20px; padding: 0 26px; border-radius: 16px;
+  background: var(--surface-gray-1); border: 2px solid var(--outline-gray-3); font: 500 30px/1 var(--font-text); color: var(--ink-gray-8); }
+.step svg { width: 36px; height: 36px; color: var(--ink-gray-6); }
+.step .ok { margin-left: auto; color: var(--ink-green-8); }
+/* tool rows: same y on both sides so they line up across the divider */
+.row { position: absolute; left: 56px; right: 0; height: 84px; display: flex; align-items: center; gap: 18px; padding: 0 26px; border-radius: 16px;
+  background: var(--surface-gray-1); border: 2px solid var(--outline-gray-3); font: 500 30px/1 var(--font-mono); color: var(--ink-gray-9); }
+.row svg { width: 32px; height: 32px; color: var(--ink-gray-6); }
+.row .p { color: var(--brand); font-weight: 700; }
+.row.ghost { background: transparent; border-style: dashed; color: var(--ink-gray-5); }
+.eq { position: absolute; left: 960px; transform: translate(-50%, -50%); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  background: var(--surface-base); border: 2px solid var(--outline-gray-3); font: 700 30px/1 var(--font-mono); color: var(--ink-gray-7); }
+.verdict { position: absolute; left: 960px; top: 880px; transform: translate(-50%, -50%); display: inline-flex; align-items: center; gap: 12px;
+  padding: 16px 28px; border-radius: 999px; background: var(--surface-violet-2); color: var(--brand-ink); font: 600 30px/1 var(--font-text); white-space: nowrap; }
+.verdict svg { width: 32px; height: 32px; }
+</style>
+
+<div class="grid" id="grid"></div>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script>
+document.documentElement.setAttribute('data-sb-light', '');
+const ERP = `<span class="erp">/*ERPLOGO*/</span>`;
+const ROWS = [424, 522, 620];               // tool / command rows, stage y inside the column
+const TOOLS = ['doc list', 'doc get', '…'];
+const CMDS = ['fr doc list', 'fr doc get', '…'];
+
+function stage(s) {
+  const setup = `
+    <div class="lb" style="top:84px"><i data-lucide="server"></i>Setup <em>· on your Frappe site</em></div>
+    <div class="step" style="top:134px"><i data-lucide="download"></i>Install MCP server${s.install ? '<i data-lucide="check" class="ok"></i>' : ''}</div>
+    ${s.configure ? `<div class="step" style="top:228px"><i data-lucide="settings"></i>Configure it<i data-lucide="check" class="ok"></i></div>` : ''}`;
+  const tools = s.tools ? `
+    <div class="lb" style="top:${ROWS[0] - 98}px"><i data-lucide="wrench"></i>Tools exposed</div>
+    ${TOOLS.slice(0, s.tools).map((t, i) => `<div class="row ${t === '…' ? 'ghost' : ''}" style="top:${ROWS[i] - 42}px">${t === '…' ? '' : '<i data-lucide="wrench"></i>'}${t}</div>`).join('')}` : '';
+  const cmds = s.same ? `
+    <div class="lb" style="top:${ROWS[0] - 98}px"><i data-lucide="terminal"></i>Commands</div>
+    ${CMDS.map((t, i) => `<div class="row ${t === '…' ? 'ghost' : ''}" style="top:${ROWS[i] - 42}px">${t === '…' ? '' : '<span class="p">$</span>'}${t}</div>`).join('')}` : '';
+  const eqs = s.same ? ROWS.slice(0, 2).map((y) => `<div class="eq" style="top:${156 + y}px">=</div>`).join('') : '';
+  return `<div class="stage">
+    <div class="bar top"><i data-lucide="bot"></i>Agent</div>
+    <div class="col l"><div class="pipe ${s.agentUses ? 'solid' : 'gray'}"></div><div class="hd">MCP</div>${setup}${tools}</div>
+    <div class="divider"></div>
+    <div class="col r ${s.same ? '' : 'off'}"><div class="pipe ${s.same ? 'brand' : 'gray'}"></div><div class="hd">$ frappectl</div>${cmds}</div>
+    ${eqs}
+    ${s.verdict ? '<div class="verdict"><i data-lucide="plus"></i>not mutually exclusive</div>' : ''}
+    <div class="bar bot">${ERP}ERPNext</div></div>`;
+}
+
+const FRAMES = [
+  [{ install: 1, configure: 1, agentUses: 1 }, '1 · 1.22 install · 2.68 configure · 5.24 "for the agent to use it" — setup rows tick, MCP line goes solid'],
+  [{ install: 1, configure: 1, agentUses: 1, tools: 3 }, '2 · 7.12 "exposes this set of tools" · 10.06 doc list · 10.84 doc get · 11.72 et cetera'],
+  [{ install: 1, configure: 1, agentUses: 1, tools: 3, same: 1 }, '3 · 12.94–13.44 "do the same thing" — frappectl wakes, matching commands line up, = marks land'],
+  [{ install: 1, configure: 1, agentUses: 1, tools: 3, same: 1, verdict: 1 }, '4 · 14.60 "not mutually exclusive" — verdict pill on the divider, hold'],
+];
+document.getElementById('grid').innerHTML = FRAMES.map(([s, l]) => `<div><div class="frame">${stage(s)}</div><div class="lbl">${l}</div></div>`).join('');
+
+const solo = /^#frame(\d+)$/.exec(location.hash);
+if (solo) {
+  const st = document.querySelectorAll('.stage')[solo[1] - 1];
+  st.style.transform = 'none';
+  document.body.replaceChildren(st);
+  document.body.style.cssText = 'padding:0;margin:0;width:1920px;height:1080px;overflow:hidden;position:relative';
+}
+const fit = () => document.querySelectorAll('.frame').forEach(f => f.style.setProperty('--s', f.clientWidth / 1920));
+new ResizeObserver(fit).observe(document.body); fit();
+try { lucide.createIcons(); } catch (e) {}
+</script>

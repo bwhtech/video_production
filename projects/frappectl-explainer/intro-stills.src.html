@@ -1,0 +1,118 @@
+<title>frappectl Intro Stills</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&display=swap">
+<style>
+/*TOKENS*/
+</style>
+<style>
+/* Four still directions for the "let's get started" title card. Same title in
+   each; only the floating background differs. Light, flat, no gradients. */
+:root { color-scheme: light; }
+body { margin: 0; background: var(--surface-gray-2); font-family: var(--font-text); padding: 32px 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 640px), 1fr)); gap: 24px; max-width: 1400px; margin: 0 auto; }
+.frame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; border: 1px solid var(--outline-gray-3); }
+.lbl { font: 600 13px/1.4 var(--font-mono); color: var(--ink-gray-7); margin-top: 8px; }
+
+.stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; transform: scale(var(--s, 0.3));
+  background: var(--surface-base); color: var(--ink-gray-9); overflow: hidden; }
+svg.lucide { stroke-width: 1.75; }
+.title { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font: 800 220px/1 var(--font-mono); letter-spacing: -0.04em; font-variant-ligatures: none; }
+.title .p { color: var(--brand); margin-right: 0.35em; }
+.cursor { display: inline-block; width: 0.5em; height: 0.9em; background: var(--brand); margin-left: 0.08em; }
+.a { position: absolute; }
+
+/* A · command chips */
+.chip { position: absolute; font: 500 30px/1 var(--font-mono); padding: 18px 24px; border-radius: 14px; white-space: nowrap;
+  background: var(--surface-gray-1); border: 2px solid var(--outline-gray-2); color: var(--ink-gray-5); font-variant-ligatures: none; }
+.chip b { color: var(--brand); font-weight: 700; margin-right: 12px; }
+
+/* B · icon tiles */
+.tile { position: absolute; width: 112px; height: 112px; border-radius: 28px; display: flex; align-items: center; justify-content: center;
+  background: var(--surface-gray-1); border: 2px solid var(--outline-gray-2); }
+.tile svg { width: 52px; height: 52px; color: var(--ink-gray-5); }
+.tile.v { background: var(--surface-violet-1); border-color: var(--surface-violet-3); }
+.tile.v svg { color: var(--brand); }
+.tile img, .tile .erp { width: 56px; height: 56px; }
+
+/* C · JSON rows */
+.row { position: absolute; left: -40px; white-space: nowrap; font: 400 30px/1 var(--font-mono); color: var(--ink-gray-3); font-variant-ligatures: none; }
+
+/* D · orbit */
+.orbit { position: absolute; left: 190px; top: 190px; width: 1540px; height: 700px; border: 3px dashed var(--outline-gray-3); border-radius: 50%; }
+.node { position: absolute; display: flex; align-items: center; gap: 16px; padding: 20px 28px; border-radius: 20px; transform: translate(-50%, -50%);
+  background: var(--surface-base); border: 2px solid var(--outline-gray-3); font: 600 34px/1 var(--font-text); color: var(--ink-gray-8); }
+.node svg { width: 40px; height: 40px; color: var(--ink-gray-6); }
+.node .erp { width: 44px; height: 44px; }
+.node.mono { font: 500 28px/1 var(--font-mono); color: var(--ink-gray-6); }
+</style>
+
+<div class="grid" id="grid">
+
+  <!-- A -->
+  <div><div class="frame"><div class="stage">
+    <div class="chip" style="left:120px;top:110px"><b>$</b>fr doc list "Sales Invoice"</div>
+    <div class="chip" style="left:1180px;top:150px;opacity:.7"><b>$</b>fr guide</div>
+    <div class="chip" style="left:1460px;top:300px;opacity:.55">--json</div>
+    <div class="chip" style="left:640px;top:250px;opacity:.5"><b>$</b>fr auth login</div>
+    <div class="chip" style="left:90px;top:790px;opacity:.6"><b>$</b>fr doctype show Customer</div>
+    <div class="chip" style="left:760px;top:840px"><b>$</b>fr doc submit "Sales Invoice" SINV-0041</div>
+    <div class="chip" style="left:1500px;top:720px;opacity:.55">-f status=Overdue</div>
+    <div class="chip" style="left:240px;top:330px;opacity:.45">--fields name,customer</div>
+    <div class="chip" style="left:1320px;top:950px;opacity:.5"><b>$</b>fr report run</div>
+    <div class="title">frappectl</div>
+  </div></div><div class="lbl">A · Command drift — real frappectl commands float past</div></div>
+
+  <!-- B -->
+  <div><div class="frame"><div class="stage">
+    <div class="tile" style="left:180px;top:140px"><i data-lucide="bot"></i></div>
+    <div class="tile" style="left:520px;top:210px;opacity:.6"><i data-lucide="braces"></i></div>
+    <div class="tile v" style="left:1560px;top:170px"><i data-lucide="terminal"></i></div>
+    <div class="tile" style="left:1230px;top:120px;opacity:.55"><i data-lucide="key-round"></i></div>
+    <div class="tile" style="left:1680px;top:520px;opacity:.7"><i data-lucide="database"></i></div>
+    <div class="tile" style="left:110px;top:520px;opacity:.55"><i data-lucide="file-json"></i></div>
+    <div class="tile" style="left:300px;top:830px"><span class="erp">/*ERPLOGO*/</span></div>
+    <div class="tile" style="left:760px;top:860px;opacity:.5"><i data-lucide="list"></i></div>
+    <div class="tile" style="left:1180px;top:820px;opacity:.65"><i data-lucide="shield-check"></i></div>
+    <div class="tile" style="left:1520px;top:860px;opacity:.5"><i data-lucide="file-text"></i></div>
+    <div class="title">frappectl</div>
+  </div></div><div class="lbl">B · Icon field — agent, terminal, JSON, keys, ERPNext as tiles</div></div>
+
+  <!-- C -->
+  <div><div class="frame"><div class="stage">
+    <div class="row" style="top:90px">{"name":"SINV-0041","customer":"Acme Corp","grand_total":1180.0,"status":"Overdue"} {"name":"SINV-0042","customer":"Globex"</div>
+    <div class="row" style="top:170px;left:-320px">"customer":"Initech","grand_total":2300.0},{"name":"SINV-0044","customer":"Umbrella","grand_total":415.5},{"name":</div>
+    <div class="row" style="top:250px;left:-120px">[{"name":"CUST-0007","customer_name":"Acme Corp","territory":"India"},{"name":"CUST-0008","customer_name":</div>
+    <div class="row" style="top:330px;left:-460px">"docstatus":1,"modified":"2026-09-29 10:42:11"},{"name":"SINV-0045","customer":"Hooli","grand_total":990.0}</div>
+    <div class="row" style="top:710px;left:-260px">{"name":"ToDo-0193","description":"Follow up","priority":"High","status":"Open"},{"name":"ToDo-0194"</div>
+    <div class="row" style="top:790px">[{"name":"SO-0012","customer":"Acme Corp","delivery_date":"2026-10-04","per_billed":0},{"name":"SO-0013",</div>
+    <div class="row" style="top:870px;left:-380px">"item_code":"WIDGET-01","qty":12,"rate":45.0,"amount":540.0},{"item_code":"WIDGET-02","qty":3,"rate":120.0</div>
+    <div class="row" style="top:950px;left:-60px">{"name":"PE-0031","payment_type":"Receive","paid_amount":1180.0,"reference_name":"SINV-0041"}]</div>
+    <div class="title"><span class="p">$</span>frappectl<span class="cursor"></span></div>
+  </div></div><div class="lbl">C · Prompt — "$ frappectl" with cursor over faint JSON rows</div></div>
+
+  <!-- D -->
+  <div><div class="frame"><div class="stage">
+    <div class="orbit"></div>
+    <div class="node" style="left:420px;top:280px"><i data-lucide="bot"></i>Agent</div>
+    <div class="node" style="left:1500px;top:800px"><span class="erp">/*ERPLOGO*/</span>ERPNext</div>
+    <div class="node mono" style="left:1560px;top:300px">fr doc list</div>
+    <div class="node mono" style="left:360px;top:780px">fr guide</div>
+    <div class="node mono" style="left:960px;top:190px">--json</div>
+    <div class="title">frappectl</div>
+  </div></div><div class="lbl">D · Orbit — Agent, ERPNext and commands circle the title</div></div>
+</div>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script>
+document.documentElement.setAttribute('data-sb-light', '');
+const solo = /^#frame(\d+)$/.exec(location.hash);
+if (solo) {
+  const st = document.querySelectorAll('.stage')[solo[1] - 1];
+  st.style.transform = 'none';
+  document.body.replaceChildren(st);
+  document.body.style.cssText = 'padding:0;margin:0;width:1920px;height:1080px;overflow:hidden;position:relative';
+}
+const fit = () => document.querySelectorAll('.frame').forEach(f => f.style.setProperty('--s', f.clientWidth / 1920));
+new ResizeObserver(fit).observe(document.body); fit();
+try { lucide.createIcons(); } catch (e) {}
+</script>

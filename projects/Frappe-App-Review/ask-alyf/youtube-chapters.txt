@@ -1,0 +1,13 @@
+00:00:00 New series: Frappe app tutorials & reviews
+00:00:45 Ask Alyf: an AI chatbot inside ERPNext
+00:01:05 GitHub repo & install (Frappe Cloud Marketplace)
+00:01:50 Settings: LLM provider, vision model & access
+00:02:50 Global settings, roles & system prompt
+00:03:41 Generate code with AI (server script demo)
+00:05:20 Ask mode: who's on leave today?
+00:06:12 Sales by customer + charts
+00:07:12 Ask mode vs agent mode
+00:07:58 Skills: teach the agent a workflow
+00:08:43 Agent demo: expense claim from a bill photo
+00:11:05 My take: where Ask Alyf fits
+00:12:36 Outro: suggest the next app

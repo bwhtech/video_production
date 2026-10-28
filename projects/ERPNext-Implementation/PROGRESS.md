@@ -1,6 +1,6 @@
 # ERPNext Implementation — transcription log
 
-**Course:** ERPNext implementation best practices. Presenter **Umair Syed** (Frappe).
+**Course:** ERPNext implementation best practices. Presenter **Umair Sayed** (Frappe).
 Running case study: **James / Gizmo World**, a US consumer-durables retail + trading
 business, implemented by Frappe partner **Nexus Solution**.
 
@@ -230,3 +230,28 @@ at the SSD so future batches never touch internal storage. Batch 2 transcribed (
 Structural issues surfaced: duplicate item-master takes, `014-b`/`014` order inversion,
 the unresolved FY2025 bug ending `014`, and a missing goals-assessment segment.
 Camera Footage not started.
+
+## Batch 4 — `chapter 14 A (end of course) Augst final.mp4` ✅ (2026-09-10)
+
+Delivered edit of **Ch 14 accounts opening + course outro**. 1920×1080 @ 30fps, 7:07,
+2,071 words, single speaker, **no retakes, no crew chatter** — already cut.
+
+- **Source:** `~/Downloads/chapter 14 A (end of course) Augst final .mp4` (note trailing space in name)
+- **Transcript:** `edit/local/transcripts/sf-wa-014-a-end-of-course.json` + `edit/local/takes_packed.md`
+  — written **locally** because the SSD was not mounted (`edit/transcripts` symlink was dead).
+  Move to `/Volumes/Extreme SSD/ERPNext Implementation/edit/transcripts/` when it's back.
+
+| TC | Beat |
+|---|---|
+| 00:04–01:42 | Balance-sheet primer (4 sides, BS vs P&L, Temporary Opening, closed $80k sheet, not mandatory day one). Mentions *"my video with Hussain on accounting fundamentals — link in description"*. |
+| 01:42–02:28 | Walk the GizmoWorld balance sheet; stock already done via Stock Reconciliation; receivables/payables get their own tool; rest via Journal Entry. |
+| 02:28–03:48 | **Journal Entry**: electronics 30k, bank 20k, deposits 12k (Dr); retained earnings 18k, secured loans (Cr); difference → Temporary Opening. Posting date 1 Jan. Submit. |
+| 03:48–04:32 | Balance sheet FY2026 refresh — 60k/60k but 10k mismatch remains. |
+| 04:32–06:12 | **Opening Invoice Creation Tool**: sales → Google + Tech Retail Solution 5k each; purchase → Nvidia + Sony split 20k. |
+| 06:12–06:22 | Reload → **tallies, Temporary Opening = 0**. ✅ Resolves the `sf-wa-014` unresolved-bug ending. |
+| 06:22–07:00 | Ready for go-live → certification pitch (ERPNext cert, Frappe Framework cert, Frappe School) → ratings/feedback → *"Till then."* |
+| 07:01–07:11 | Outro music. |
+
+Supersedes both `sf-wa-014` (accounts opening) and `sf-wa-the-end` (outro) — they are
+merged into this one file. Graphics candidates: balance-sheet 4-sides diagram, Temporary
+Opening "zeroes out" animation, journal-entry Dr/Cr table, tally reveal.

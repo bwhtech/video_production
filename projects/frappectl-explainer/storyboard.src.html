@@ -1,0 +1,253 @@
+<title>API vs frappectl Storyboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+/* frappe-ui espresso tokens (graphics/theme/tokens.css), inlined at build */
+/*TOKENS*/
+</style>
+<style>
+/* Layout: beat strip, then the keyframes of one two-column split in time order.
+   Whole board is committed light to match the video frames (frappe-ui light tokens).
+   Flat colors only: no gradients, glows or shadows. */
+:root { color-scheme: light; }
+body {
+  background: var(--surface-gray-1); color: var(--ink-gray-8);
+  font: 15px/1.55 var(--font-text); margin: 0;
+  padding-inline: clamp(16px, 4vw, 56px); padding-block: 40px 80px;
+}
+.wrap { max-width: 1680px; margin: 0 auto; display: grid; gap: 48px; }
+h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 700; letter-spacing: -0.02em; color: var(--ink-gray-9); margin: 12px 0 0; text-wrap: balance; }
+h2 { font-size: 22px; font-weight: 650; color: var(--ink-gray-9); margin: 0; letter-spacing: -0.01em; }
+.lede { max-width: 72ch; color: var(--ink-gray-6); margin: 8px 0 0; }
+.eyebrow { font: 600 12px/1 var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand-ink); }
+code { font-family: var(--font-mono); }
+
+/* beat strip */
+.beats { background: var(--surface-base); border: 1px solid var(--outline-gray-2); border-radius: 16px; padding: 20px 20px 16px; display: grid; gap: 14px; }
+.beats-scroll { overflow-x: auto; }
+.track { position: relative; min-width: 1100px; height: 132px; }
+.track .axis { position: absolute; left: 0; right: 0; top: 64px; height: 2px; background: var(--outline-gray-3); }
+.band { position: absolute; top: 60px; height: 10px; border-radius: 4px; }
+.band.l { background: var(--outline-gray-4); }
+.band.r { background: var(--brand); }
+.beat { position: absolute; top: 0; transform: translateX(-1px); display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.beat .t { font: 500 11px/1 var(--font-mono); color: var(--ink-gray-5); font-variant-numeric: tabular-nums; }
+.beat .w { font-size: 12.5px; font-weight: 600; color: var(--ink-gray-8); white-space: nowrap; }
+.beat .tick { position: absolute; top: 58px; left: 0; width: 2px; height: 14px; background: var(--ink-gray-5); }
+.beat.hi .tick { background: var(--ink-gray-9); height: 22px; top: 54px; }
+.beat.hi .w { color: var(--ink-gray-9); }
+.beat.low { top: 80px; }
+.beat.low .tick { top: -22px; }
+.beat.end { align-items: flex-end; transform: translateX(-100%); }
+.beat.end .tick { left: auto; right: 0; }
+.key { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 12.5px; color: var(--ink-gray-6); }
+.key span { display: inline-flex; align-items: center; gap: 8px; }
+.key i { width: 18px; height: 8px; border-radius: 3px; display: inline-block; }
+
+/* frames */
+.frames { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); gap: 28px 20px; }
+.cell { display: grid; gap: 10px; align-content: start; min-width: 0; }
+.frame { position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 10px; overflow: hidden; border: 1px solid var(--outline-gray-3); }
+.stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; transform: scale(var(--s, 0.2)); }
+.cap { display: grid; gap: 4px; min-width: 0; }
+.cap .when { font: 500 12px/1.3 var(--font-mono); color: var(--brand-ink); font-variant-numeric: tabular-nums; }
+.cap .vo { color: var(--ink-gray-8); font-size: 14px; }
+.cap .mo { color: var(--ink-gray-5); font-size: 13px; }
+.notes { display: grid; gap: 10px; max-width: 80ch; margin: 0; padding-left: 20px; color: var(--ink-gray-7); }
+.notes b { color: var(--ink-gray-9); font-weight: 600; }
+
+/* ============ inside the 1920x1080 stage ============ */
+.stage { background: var(--surface-base); color: var(--ink-gray-9); font-family: var(--font-text); }
+svg.lucide { stroke-width: 1.75; }
+
+/* shared top + bottom bars */
+.bar { position: absolute; left: 80px; right: 80px; height: 100px; border-radius: 24px; display: flex; align-items: center; justify-content: center; gap: 22px;
+  background: var(--surface-gray-2); border: 2px solid var(--outline-gray-3); font-size: 44px; font-weight: 650; letter-spacing: -0.01em; }
+.bar.top { top: 36px; }
+.bar.bot { bottom: 36px; }
+.bar svg { width: 54px; height: 54px; color: var(--ink-gray-7); }
+.bar .erp { width: 62px; height: 62px; }
+
+/* the split middle */
+.col { position: absolute; top: 156px; bottom: 156px; width: 840px; }
+.col.l { left: 80px; }
+.col.r { right: 80px; }
+.divider { position: absolute; left: 959px; top: 156px; bottom: 156px; width: 2px; background: var(--outline-gray-2); }
+.inner { position: absolute; top: 14px; left: 56px; right: 0; display: flex; flex-direction: column; gap: 10px; }
+.hd { display: flex; align-items: center; justify-content: space-between; height: 48px; font: 700 32px/1 var(--font-mono); color: var(--ink-gray-7); }
+.col.r .hd { color: var(--brand-ink); }
+.off { opacity: 0.25; }
+.faded { opacity: 0.5; }
+
+/* connectors: agent ↔ ERPNext through each column */
+.pipe { position: absolute; top: -20px; bottom: -20px; left: 18px; width: 0; }
+.pipe.gray { border-left: 4px dashed var(--outline-gray-4); }
+.pipe.brand { border-left: 4px solid var(--brand); }
+
+/* writes / reads sections */
+.sec { display: flex; align-items: center; justify-content: space-between; height: 40px; margin-top: 4px; }
+.sec .lb { display: inline-flex; align-items: center; gap: 12px; font: 600 26px/1 var(--font-text); color: var(--ink-gray-8); }
+.sec .lb svg { width: 30px; height: 30px; color: var(--ink-gray-6); }
+.sec .lb em { font-style: normal; font-weight: 500; color: var(--ink-gray-5); }
+.box { border-radius: 16px; background: var(--surface-gray-1); border: 2px solid var(--outline-gray-3); padding: 14px 22px;
+  font: 400 22px/1.45 var(--font-mono); color: var(--ink-gray-8); white-space: pre; overflow: hidden; }
+.box.cmd { font-size: 26px; color: var(--ink-gray-9); }
+.box.live { border-color: var(--brand); background: var(--surface-violet-1); }
+.box .p { color: var(--brand); font-weight: 700; }
+.box mark { background: var(--surface-violet-2); color: var(--ink-gray-9); border-radius: 6px; padding: 0 4px; margin: 0 -4px; }
+.box .ph { color: var(--outline-gray-3); }
+.pill { display: inline-flex; align-self: flex-start; align-items: center; gap: 12px; height: 52px; padding: 0 20px; border-radius: 12px;
+  background: var(--surface-gray-2); border: 2px solid var(--outline-gray-3); font: 500 24px/1 var(--font-mono); color: var(--ink-gray-8); }
+.pill svg { width: 28px; height: 28px; color: var(--ink-gray-6); }
+.pill small { font: 500 22px/1 var(--font-text); color: var(--ink-gray-5); }
+
+.badge { font: 600 22px/1 var(--font-text); padding: 9px 16px; border-radius: 999px; background: var(--surface-gray-3); color: var(--ink-gray-7); white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; }
+.badge svg { width: 24px; height: 24px; color: currentColor; }
+.badge.red { background: var(--surface-red-2); color: var(--ink-red-7); }
+.badge.amber { background: var(--surface-amber-2); color: var(--ink-amber-7); }
+.badge.green { background: var(--surface-green-2); color: var(--ink-green-7); }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">projects/frappectl-explainer · 37.8s VO · 1920×1080</div>
+    <h1>API vs frappectl — what the LLM writes and reads</h1>
+    <p class="lede">Agent across the top, ERPNext across the bottom. Each column shows the two things that pass through the model. <b>Writes</b>: the tool call it has to generate. <b>Reads</b>: what lands in its context. Left: raw REST API v2 through Python <code>requests</code>. Right: <code>frappectl</code>.</p>
+  </header>
+
+  <section class="beats" aria-label="Beat map">
+    <div class="eyebrow">Beat map · word-level from Scribe</div>
+    <div class="beats-scroll"><div class="track" id="track"><div class="axis"></div></div></div>
+    <div class="key"><span><i style="background:var(--outline-gray-4)"></i>left column builds</span><span><i style="background:var(--brand)"></i>right column (frappectl)</span></div>
+  </section>
+
+  <section class="frames" id="frames" aria-label="Keyframes"></section>
+
+  <section>
+    <h2>Notes</h2>
+    <ul class="notes" style="margin-top:12px">
+      <li><b>Accurate to frappectl's source.</b> A piped run prints compact JSON with one row per line (<code>output.py</code>). <code>fr guide</code> is its one-screen agent primer (README). The left code is what an agent would write with <code>requests</code> against <code>/api/v2/document/</code>.</li>
+      <li><b>The read side is honest.</b> The row data is about the same on both sides. The difference is the docs the model needs and the <code>{"data": …}</code> wrapper it has to unpack. The big gap is on the write side.</li>
+      <li><b>The right column gets only about 3.6s of VO</b> (34.2 → 37.8). Hold the graphic about 3s past this clip, or let it run over what you say next.</li>
+      <li>The graphic starts at 9.24. The first 9s ("Rest API V2 ships with V16+") play without it.</li>
+    </ul>
+  </section>
+</div>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script>
+document.documentElement.setAttribute('data-sb-light', '');
+const ERP = `<span class="erp">/*ERPLOGO*/</span>`;
+
+/* Left "writes": the requests code, line by line. The key says which beat
+   types (and highlights) that line; unkeyed lines arrive with the first beat. */
+const CODE = [
+  ['import requests, json'],
+  ['r = requests.get('],
+  ['  f"{SITE}<m>/api/v2/document/Sales Invoice</m>",', 'url'],
+  ['  headers={'],
+  ['    <m>"Authorization": f"token {KEY}:{SECRET}"</m>,', 'auth'],
+  ['    <m>"Accept": "application/json"</m>},', 'headers'],
+  ['  params={'],
+  ['    "filters": <m>json.dumps</m>([["status", "=", "Overdue"]]),', 'parse'],
+  ['    "fields": <m>json.dumps</m>(["name", "customer"])})', 'parse'],
+  ['rows = <m>r.json()["data"]</m>', 'parse'],
+];
+const RAW = `{"data": [{"name": "SINV-0041", "customer": "Acme Corp"},
+          {"name": "SINV-0042", "customer": "Globex"}],
+ "has_next_page": false}`;
+const CLEAN = `[{"name":"SINV-0041","customer":"Acme Corp"},
+ {"name":"SINV-0042","customer":"Globex"}]`;
+const CMD = `<span class="p">$</span> fr doc list "Sales Invoice" \\
+    -f status=Overdue --fields name,customer`;
+
+function code(shown, hl) {
+  return CODE.map(([txt, key = 'base']) => {
+    if (shown !== 'all' && !shown.includes(key)) return '<span class="ph">' + txt.replace(/<\/?m>/g, '').replace(/\S/g, '·') + '</span>';
+    return txt.replace(/<m>(.*?)<\/m>/g, hl.includes(key) ? '<mark>$1</mark>' : '$1');
+  }).join('\n');
+}
+
+function stage(s) {
+  const left = `
+    <div class="col l ${s.leftFade ? 'faded' : ''}"><div class="pipe gray"></div><div class="inner">
+      <div class="hd"><span>REST API v2</span></div>
+      <div class="sec"><span class="lb"><i data-lucide="arrow-down"></i>LLM writes <em>· tool call</em></span>${s.hall ? '<span class="badge red"><i data-lucide="triangle-alert"></i>hallucinate</span>' : ''}</div>
+      <div class="box">${code(s.code || [], s.hl || [])}</div>
+      <div class="sec"><span class="lb"><i data-lucide="arrow-up"></i>LLM reads <em>· into context</em></span>${s.tokens ? '<span class="badge amber"><i data-lucide="coins"></i>tokens</span>' : ''}</div>
+      ${s.docs ? '<span class="pill"><i data-lucide="book-open"></i>REST API v2 docs <small>pasted in</small></span>' : ''}
+      ${s.raw ? `<div class="box" style="font-size:20px">${RAW}</div>` : ''}
+    </div></div>`;
+  const right = `
+    <div class="col r ${s.right ? '' : 'off'}"><div class="pipe ${s.right ? 'brand' : 'gray'}"></div><div class="inner">
+      <div class="hd"><span>$ frappectl</span>${s.right >= 2 ? '<span class="badge green"><i data-lucide="check"></i>plumbing handled</span>' : ''}</div>
+      ${s.right ? `
+      <div class="sec"><span class="lb"><i data-lucide="arrow-down"></i>LLM writes <em>· tool call</em></span></div>
+      <div class="box cmd ${s.right === 1 ? 'live' : ''}">${CMD}</div>` : ''}
+      ${s.right >= 2 ? `
+      <div class="sec"><span class="lb"><i data-lucide="arrow-up"></i>LLM reads <em>· into context</em></span></div>
+      <span class="pill"><i data-lucide="terminal"></i>fr guide <small>one screen</small></span>
+      <div class="box live" style="font-size:20px">${CLEAN}</div>` : ''}
+    </div></div>`;
+  return `<div class="stage">
+    <div class="bar top"><i data-lucide="bot"></i>Agent</div>
+    ${left}<div class="divider"></div>${right}
+    <div class="bar bot">${ERP}ERPNext</div></div>`;
+}
+
+const FRAMES = [
+  [{}, '9.24 → 13.24 · "agents can directly use the API, can\'t they?"',
+   'Agent bar drops in, ERPNext rises, left column opens with an empty code box.',
+   'Right column sits at 25% so the viewer knows a second path is coming.'],
+  [{ code: ['base', 'headers', 'auth', 'url'], hl: ['headers', 'auth', 'url'] }, '18.30 · 19.18 · 20.62',
+   'headers · authentication · URL paths',
+   'The model "types" the requests call. Each highlight lands on its spoken word.'],
+  [{ code: ['base', 'headers', 'auth', 'url'], hall: 1, tokens: 1, docs: 1 }, '23.22 · 25.58 · 27.12',
+   'wasting tokens · hallucinate · documentation',
+   '"tokens" on the reads side (First), "hallucinate" on the writes side (Second), docs pill drops into reads.'],
+  [{ code: 'all', hl: ['parse'], hall: 1, tokens: 1, docs: 1, raw: 1 }, '29.16 → 31.32',
+   'parse · output · input · request · response',
+   'json.dumps lines type in (request), raw {"data": …} lands in reads (response), r.json()["data"] lights up.'],
+  [{ code: 'all', hall: 1, tokens: 1, docs: 1, raw: 1, leftFade: 1, right: 1 }, '34.20 → 36.30 · "encapsulated in a tool, which is Frappe CTL"',
+   'Left dims on "encapsulated". Violet line draws down the right column, the command types on "Frappe CTL".',
+   'One call replaces the whole writes box.'],
+  [{ code: 'all', hall: 1, tokens: 1, docs: 1, raw: 1, leftFade: 1, right: 2 }, '36.60 → ~40 (hold past VO)',
+   'Reads side fills: fr guide pill, then the compact rows. Badge lands.',
+   'End frame. Export with storyboard.html#frame6.'],
+];
+
+document.getElementById('frames').innerHTML = FRAMES.map(([s, when, vo, mo]) =>
+  `<div class="cell"><div class="frame">${stage(s)}</div><div class="cap"><span class="when">${when}</span><span class="vo">${vo}</span><span class="mo">${mo}</span></div></div>`).join('');
+
+const DUR = 37.8;
+const BEATS = [
+  [2.40,'Rest API V2'],[4.10,'V16+',0,1],[10.20,'agents…use the API?',1],[16.08,'plumbing',1],
+  [18.30,'headers',1],[19.18,'auth',1,1],[20.62,'URL paths',1],
+  [23.22,'wasting tokens',1,1],[25.58,'hallucinate',1],[27.12,'docs',0,1],
+  [30.86,'request',1],[31.32,'response',1,1],[34.20,'encapsulated',1],[36.30,'Frappe CTL',1,1,1]
+];
+const track = document.getElementById('track');
+[[9.24,31.9,'l'],[34.2,DUR,'r']].forEach(([a,b,c]) => {
+  const d = document.createElement('div'); d.className = 'band ' + c;
+  d.style.left = (a/DUR*100)+'%'; d.style.width = ((b-a)/DUR*100)+'%'; track.appendChild(d);
+});
+for (const [t, w, hi, low, end] of BEATS) {
+  const el = document.createElement('div');
+  el.className = 'beat' + (hi ? ' hi' : '') + (low ? ' low' : '') + (end ? ' end' : '');
+  el.style.left = (t / DUR * 100) + '%';
+  el.innerHTML = low ? `<span class="tick"></span><span class="w">${w}</span><span class="t">${t.toFixed(2)}</span>`
+                     : `<span class="tick"></span><span class="t">${t.toFixed(2)}</span><span class="w">${w}</span>`;
+  track.appendChild(el);
+}
+// #frameN shows keyframe N alone at 1920x1080, for full-res export.
+const solo = /^#frame(\d+)$/.exec(location.hash);
+if (solo) {
+  const st = document.querySelectorAll('.stage')[solo[1] - 1];
+  st.style.transform = 'none';
+  document.body.replaceChildren(st);
+  document.body.style.cssText = 'padding:0;margin:0;width:1920px;height:1080px;overflow:hidden;position:relative';
+}
+const fit = () => document.querySelectorAll('.frame').forEach(f => f.style.setProperty('--s', f.clientWidth / 1920));
+new ResizeObserver(fit).observe(document.body); fit();
+try { lucide.createIcons(); } catch (e) {}
+</script>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ask Alyf Intro Stills</title>
+<link rel="stylesheet" href="../../../graphics/theme/tokens.css" />
+<link rel="stylesheet" href="../../../graphics/theme/fonts.css" />
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<style>
+/* Five layout directions for the "Frappe App Review — Ask Alyf" intro.
+   Each frame = the hero still (the moment the lockup is fully on screen,
+   just before the wipe-off reveal). Dark, flat frappe-ui tokens, no gradients. */
+body { margin: 0; background: var(--surface-gray-1); color: var(--ink-gray-8); font-family: var(--font-text); padding: 32px 16px 64px; }
+h1 { font-size: 20px; font-weight: 600; max-width: 1400px; margin: 0 auto 4px; }
+.sub { font-size: 14px; color: var(--ink-gray-5); max-width: 1400px; margin: 0 auto 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 640px), 1fr)); gap: 32px 24px; max-width: 1400px; margin: 0 auto; }
+.frame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; border: 1px solid var(--outline-gray-2); }
+.lbl { font-size: 15px; font-weight: 600; color: var(--ink-gray-9); margin-top: 10px; }
+.beat { font-size: 13px; line-height: 1.5; color: var(--ink-gray-6); margin-top: 4px; }
+
+.stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; transform: scale(var(--s, 0.3));
+  background: var(--surface-base); color: var(--ink-gray-9); overflow: hidden; font-family: var(--font-text); }
+.stage svg.lucide { stroke-width: 1.75; }
+.a { position: absolute; }
+
+.kicker { font-size: 34px; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; color: var(--brand-ink); }
+.meta { font-size: 30px; font-weight: 500; color: var(--ink-gray-5); letter-spacing: 0.02em; }
+
+/* A · Kicker stack */
+.A .wrap { left: 200px; top: 50%; transform: translateY(-50%); }
+.A .title { font-size: 240px; font-weight: 700; line-height: 1; letter-spacing: -0.04em; margin: 28px 0 40px -10px; }
+.A .title b { color: var(--brand-ink); font-weight: 700; }
+.A .rule { width: 120px; height: 6px; background: var(--brand); border-radius: 3px; margin-bottom: 28px; }
+
+/* B · App-store card */
+.B .pill { left: 50%; top: 200px; transform: translateX(-50%); padding: 16px 30px; border-radius: 999px;
+  background: var(--surface-violet-2); color: var(--brand-ink); font-size: 30px; font-weight: 600; display: flex; align-items: center; gap: 14px; white-space: nowrap; }
+.B .pill svg { width: 30px; height: 30px; }
+.B .card { left: 50%; top: 340px; transform: translateX(-50%); width: 1100px; padding: 64px 72px; border-radius: 48px;
+  background: var(--surface-gray-1); border: 2px solid var(--outline-gray-2); display: flex; gap: 64px; align-items: center; }
+.B .icon { width: 260px; height: 260px; border-radius: 64px; background: var(--brand); display: flex; align-items: center; justify-content: center; flex: none; }
+.B .icon svg { width: 130px; height: 130px; color: var(--ink-gray-9); }
+.B .name { font-size: 140px; font-weight: 700; letter-spacing: -0.04em; line-height: 1; }
+.B .by { font-size: 34px; color: var(--ink-gray-5); margin: 18px 0 34px; font-weight: 500; }
+.B .stars { display: flex; gap: 18px; }
+.B .stars svg { width: 58px; height: 58px; color: var(--outline-gray-4); }
+.B .stars .on svg { color: var(--brand-ink); fill: var(--brand-ink); }
+
+/* C · Kinetic type wall */
+.C .wall { left: 130px; top: 90px; font-size: 270px; font-weight: 800; line-height: 0.88; letter-spacing: -0.05em; color: var(--ink-gray-3); text-transform: uppercase; }
+.C .stamp { right: 130px; bottom: 90px; padding: 36px 64px 44px; border-radius: 40px; background: var(--brand);
+  font-size: 170px; font-weight: 700; letter-spacing: -0.04em; line-height: 1; color: var(--ink-gray-9); }
+
+/* D · Ask prompt */
+.D .kick { left: 50%; top: 300px; transform: translateX(-50%); white-space: nowrap; }
+.D .bar { left: 50%; top: 400px; transform: translateX(-50%); width: 1360px; height: 260px; border-radius: 130px;
+  background: var(--surface-gray-1); border: 3px solid var(--outline-gray-3); display: flex; align-items: center; padding: 0 44px 0 96px; }
+.D .typed { font-size: 150px; font-weight: 700; letter-spacing: -0.04em; flex: 1; display: flex; align-items: center; }
+.D .caret { width: 10px; height: 140px; background: var(--brand); margin-left: 14px; border-radius: 5px; }
+.D .send { width: 172px; height: 172px; border-radius: 50%; background: var(--brand); display: flex; align-items: center; justify-content: center; }
+.D .send svg { width: 84px; height: 84px; color: var(--ink-gray-9); stroke-width: 2.5; }
+.D .meta { left: 50%; top: 720px; transform: translateX(-50%); }
+
+/* E · Marketplace pick */
+.E .head { left: 130px; top: 150px; }
+.E .tiles { left: 130px; top: 250px; display: grid; grid-template-columns: repeat(5, 300px); gap: 40px; }
+.E .t { height: 300px; border-radius: 48px; background: var(--surface-gray-1); border: 2px solid var(--outline-gray-2);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; color: var(--ink-gray-4); font-size: 30px; font-weight: 600; }
+.E .t svg { width: 92px; height: 92px; color: var(--ink-gray-4); }
+.E .t.pick { background: var(--brand); border-color: var(--brand); color: var(--ink-gray-9); transform: scale(1.08); outline: 8px solid var(--surface-violet-3); outline-offset: 10px; }
+.E .t.pick svg { color: var(--ink-gray-9); }
+.E .t.pick span { font-size: 38px; font-weight: 700; }
+.E .t.dim { opacity: 0.45; }
+</style>
+</head>
+<body>
+<h1>Frappe App Review — Ask Alyf · intro layouts</h1>
+<p class="sub">Hero still of each direction (lockup fully on). All exit with a wipe/zoom reveal to transparent on the music's peak (~6.0s). Music: 176 BPM, quiet groove 0–4.3s, build 4.3–6.8s. App icon is a placeholder until we have the Ask Alyf logo.</p>
+
+<div class="grid">
+
+  <div>
+    <div class="frame"><div class="stage A">
+      <div class="a wrap">
+        <div class="kicker">Frappe App Review</div>
+        <div class="title">Ask <b>Alyf</b></div>
+        <div class="rule"></div>
+        <div class="meta">Episode 01</div>
+      </div>
+    </div></div>
+    <div class="lbl">A · Kicker stack</div>
+    <div class="beat">Left-aligned, closest to the existing intro cards. Kicker words land on beats 1–3, "Ask" / "Alyf" slam on the next two, rule draws through the build, card wipes off left on the peak.</div>
+  </div>
+
+  <div>
+    <div class="frame"><div class="stage B">
+      <div class="a pill"><i data-lucide="star"></i>Frappe App Review</div>
+      <div class="a card">
+        <div class="icon"><i data-lucide="message-square-text"></i></div>
+        <div>
+          <div class="name">Ask Alyf</div>
+          <div class="by">by ALYF · Frappe Marketplace</div>
+          <div class="stars"><span class="on"><i data-lucide="star"></i></span><span class="on"><i data-lucide="star"></i></span><span class="on"><i data-lucide="star"></i></span><span><i data-lucide="star"></i></span><span><i data-lucide="star"></i></span></div>
+        </div>
+      </div>
+    </div></div>
+    <div class="lbl">B · App-store card</div>
+    <div class="beat">An app listing card. Icon pops, name rises, then stars light one per beat through the build — they keep cycling and never settle on a score (the verdict is in the video). Card zooms through on the peak.</div>
+  </div>
+
+  <div>
+    <div class="frame"><div class="stage C">
+      <div class="a wall">Frappe<br>App<br>Review</div>
+      <div class="a stamp">Ask Alyf</div>
+    </div></div>
+    <div class="lbl">C · Kinetic type wall</div>
+    <div class="beat">Loudest option. FRAPPE / APP / REVIEW slam one per beat in full white, then dim back as the violet "Ask Alyf" block stamps in on the build. Rows slide off in alternating directions on the peak.</div>
+  </div>
+
+  <div>
+    <div class="frame"><div class="stage D">
+      <div class="a kicker kick">Frappe App Review</div>
+      <div class="a bar"><div class="typed">Ask Alyf<span class="caret"></span></div><div class="send"><i data-lucide="arrow-up"></i></div></div>
+      <div class="a meta">Episode 01</div>
+    </div></div>
+    <div class="lbl">D · Ask prompt</div>
+    <div class="beat">Plays on the app name — a chat input. Bar slides up, "Ask Alyf" types one letter per 8th-note, send button pops on the downbeat, then the bar zooms through toward camera to reveal the footage.</div>
+  </div>
+
+  <div>
+    <div class="frame"><div class="stage E">
+      <div class="a kicker head">Frappe App Review</div>
+      <div class="a tiles">
+        <div class="t dim"><i data-lucide="headset"></i></div>
+        <div class="t dim"><i data-lucide="users"></i></div>
+        <div class="t dim"><i data-lucide="chart-column"></i></div>
+        <div class="t dim"><i data-lucide="graduation-cap"></i></div>
+        <div class="t dim"><i data-lucide="folder"></i></div>
+        <div class="t dim"><i data-lucide="calendar"></i></div>
+        <div class="t pick"><i data-lucide="message-square-text"></i><span>Ask Alyf</span></div>
+        <div class="t dim"><i data-lucide="shopping-cart"></i></div>
+        <div class="t dim"><i data-lucide="layout-template"></i></div>
+        <div class="t dim"><i data-lucide="receipt"></i></div>
+      </div>
+    </div></div>
+    <div class="lbl">E · Marketplace pick</div>
+    <div class="beat">A grid of app tiles (series concept: "today's pick"). Tiles pop in on beats, a violet highlight hops tile-to-tile on each beat, lands on Ask Alyf on the build, then we zoom into that tile to reveal.</div>
+  </div>
+
+</div>
+
+<script>
+lucide.createIcons();
+function fit() { document.querySelectorAll('.frame').forEach(f => f.querySelector('.stage').style.setProperty('--s', f.clientWidth / 1920)); }
+addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>
